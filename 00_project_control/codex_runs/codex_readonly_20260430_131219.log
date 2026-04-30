@@ -1,0 +1,6 @@
+Codex read-only run
+Timestamp: 20260430_131219
+Workspace: /mnt/d/profile/research/workspace
+Prompt: /mnt/d/profile/research/workspace/00_project_control/codex_prompts/test_readonly_prompt.txt
+
+Not inside a trusted directory and --skip-git-repo-check was not specified.

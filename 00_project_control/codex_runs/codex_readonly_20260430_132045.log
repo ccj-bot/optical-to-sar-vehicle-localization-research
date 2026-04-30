@@ -1,0 +1,931 @@
+Codex read-only run
+Timestamp: 20260430_132045
+Workspace: /mnt/d/profile/research/workspace
+Prompt: /mnt/d/profile/research/workspace/00_project_control/codex_prompts/test_readonly_prompt.txt
+
+OpenAI Codex v0.125.0 (research preview)
+--------
+workdir: /mnt/d/profile/research/workspace
+model: gpt-5.5
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: none
+reasoning summaries: none
+session id: 019ddcd5-1485-7712-8c37-cc7c1b71a32e
+--------
+user
+Read only. Do not edit files. Do not run experiments.
+
+Inspect the project-control files under:
+
+/mnt/d/profile/research/workspace/00_project_control
+
+Summarize:
+1. the data hierarchy;
+2. why the 231 samples are only an evaluation subset;
+3. what Stage 1/2/3 mean;
+4. the current blocker;
+5. forbidden actions.
+
+codex
+I’ll inspect the control documents only and avoid edits or experiments. I’m going to list the relevant files first, then read the likely project notes and summarize the governance constraints.
+exec
+/bin/bash -lc 'rg --files /mnt/d/profile/research/workspace/00_project_control' in /mnt/d/profile/research/workspace
+ succeeded in 0ms:
+/mnt/d/profile/research/workspace/00_project_control/09_REDESIGN_REVIEW_MEMO.md
+/mnt/d/profile/research/workspace/00_project_control/08_RAG_SOURCE_INDEX.md
+/mnt/d/profile/research/workspace/00_project_control/07_NEXT_RESEARCH_TASK.md
+/mnt/d/profile/research/workspace/00_project_control/06_AGENT_RULES_AND_STAGE_GATES.md
+/mnt/d/profile/research/workspace/00_project_control/05_CURRENT_STATE_AND_OPEN_QUESTIONS.md
+/mnt/d/profile/research/workspace/00_project_control/04_RESEARCH_DIRECTIONS_AND_DESIGN_SPACE.md
+/mnt/d/profile/research/workspace/00_project_control/03_PRIOR_WORK_AS_EVIDENCE.md
+/mnt/d/profile/research/workspace/00_project_control/02_AVAILABLE_DATA_AND_ASSUMPTIONS.md
+/mnt/d/profile/research/workspace/00_project_control/01_DATA_HIERARCHY_AND_CONTEXT.md
+/mnt/d/profile/research/workspace/00_project_control/00_RESEARCH_BRIEF.md
+/mnt/d/profile/research/workspace/00_project_control/10_CURRENT_VERIFICATION_CHECKLIST.md
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md
+/mnt/d/profile/research/workspace/00_project_control/README.md
+/mnt/d/profile/research/workspace/00_project_control/bin/run_codex_readonly.sh
+/mnt/d/profile/research/workspace/00_project_control/bin/run_codex_readonly.shE
+/mnt/d/profile/research/workspace/00_project_control/prompts/HERMES_RESEARCH_COORDINATOR_PROMPT.md
+/mnt/d/profile/research/workspace/00_project_control/prompts/CODEX_RESEARCH_EXECUTOR_TEMPLATE.md
+/mnt/d/profile/research/workspace/00_project_control/prompts/REVIEWER_PROMPT_TEMPLATE.md
+/mnt/d/profile/research/workspace/00_project_control/templates/REPORT_TEMPLATE.md
+/mnt/d/profile/research/workspace/00_project_control/templates/TASK_TEMPLATE.md
+/mnt/d/profile/research/workspace/00_project_control/codex_prompts/test_readonly_prompt.txt
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131219.log
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.md
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_132045.log
+/mnt/d/profile/research/workspace/00_project_control/skills/SKILL_OUTPUT_AUDITOR.md
+/mnt/d/profile/research/workspace/00_project_control/skills/SKILL_CODEX_PROMPT_WRITER.md
+/mnt/d/profile/research/workspace/00_project_control/skills/SKILL_RESEARCH_DESIGN_REVIEW.md
+
+exec
+/bin/bash -lc "find /mnt/d/profile/research/workspace/00_project_control -maxdepth 2 -type f -printf '%p\\n'" in /mnt/d/profile/research/workspace
+ succeeded in 0ms:
+/mnt/d/profile/research/workspace/00_project_control/00_RESEARCH_BRIEF.md
+/mnt/d/profile/research/workspace/00_project_control/01_DATA_HIERARCHY_AND_CONTEXT.md
+/mnt/d/profile/research/workspace/00_project_control/02_AVAILABLE_DATA_AND_ASSUMPTIONS.md
+/mnt/d/profile/research/workspace/00_project_control/03_PRIOR_WORK_AS_EVIDENCE.md
+/mnt/d/profile/research/workspace/00_project_control/04_RESEARCH_DIRECTIONS_AND_DESIGN_SPACE.md
+/mnt/d/profile/research/workspace/00_project_control/05_CURRENT_STATE_AND_OPEN_QUESTIONS.md
+/mnt/d/profile/research/workspace/00_project_control/06_AGENT_RULES_AND_STAGE_GATES.md
+/mnt/d/profile/research/workspace/00_project_control/07_NEXT_RESEARCH_TASK.md
+/mnt/d/profile/research/workspace/00_project_control/08_RAG_SOURCE_INDEX.md
+/mnt/d/profile/research/workspace/00_project_control/09_REDESIGN_REVIEW_MEMO.md
+/mnt/d/profile/research/workspace/00_project_control/10_CURRENT_VERIFICATION_CHECKLIST.md
+/mnt/d/profile/research/workspace/00_project_control/bin/run_codex_readonly.sh
+/mnt/d/profile/research/workspace/00_project_control/bin/run_codex_readonly.shE
+/mnt/d/profile/research/workspace/00_project_control/codex_prompts/test_readonly_prompt.txt
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131219.log
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.md
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_132045.log
+/mnt/d/profile/research/workspace/00_project_control/prompts/CODEX_RESEARCH_EXECUTOR_TEMPLATE.md
+/mnt/d/profile/research/workspace/00_project_control/prompts/HERMES_RESEARCH_COORDINATOR_PROMPT.md
+/mnt/d/profile/research/workspace/00_project_control/prompts/REVIEWER_PROMPT_TEMPLATE.md
+/mnt/d/profile/research/workspace/00_project_control/README.md
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md
+/mnt/d/profile/research/workspace/00_project_control/skills/SKILL_CODEX_PROMPT_WRITER.md
+/mnt/d/profile/research/workspace/00_project_control/skills/SKILL_OUTPUT_AUDITOR.md
+/mnt/d/profile/research/workspace/00_project_control/skills/SKILL_RESEARCH_DESIGN_REVIEW.md
+/mnt/d/profile/research/workspace/00_project_control/templates/REPORT_TEMPLATE.md
+/mnt/d/profile/research/workspace/00_project_control/templates/TASK_TEMPLATE.md
+
+codex
+The control pack is a compact markdown set, with numbered files that look authoritative. I’m reading the brief, hierarchy, assumptions, state, rules, task, and verification checklist, then I’ll cross-check the 231-sample language across the pack.
+exec
+/bin/bash -lc "sed -n '1,220p' /mnt/d/profile/research/workspace/00_project_control/00_RESEARCH_BRIEF.md" in /mnt/d/profile/research/workspace
+ succeeded in 0ms:
+# Research Brief: Full-Stream Optical-to-SAR Vehicle Transfer
+
+## Research Purpose
+
+This project studies how to transfer vehicle information from optical imagery into SAR space.
+
+The final research object is **not** only the 231 GT-reviewed car samples and not only the Stage 1 subset. The final research object is the **complete temporal stream of three scenes**, each roughly 15 seconds long, with optical frames, SAR gray frames, SAR pseudo-color frames, DepthPro outputs, and available track/candidate context.
+
+The goal is to design a physically interpretable, batch-deployable optical-to-SAR vehicle transfer method that can eventually operate over complete scene streams.
+
+## Data-Level Framing
+
+The research must keep these levels separate:
+
+- **Level 0:** Complete three-scene temporal streams.
+- **Level 1:** All vehicle detections, tracks, candidates, and optical/SAR transfer opportunities in the full stream.
+- **Level 2:** 231 GT-reviewed car samples used as supervised evaluation and diagnostic windows.
+- **Level 3:** Stage 1 / Stage 2 / Stage 3 controlled subsets inside the 231 GT-reviewed subset.
+- **Level 4:** Individual diagnostic samples, such as `gm_rm019_00006` or `gm_rm017_00080`.
+
+Every future task, table, report, and conclusion must explicitly state which level it addresses.
+
+## Core Physical Idea
+
+Optical and SAR observe the same physical vehicle in the same scene, but through different sensing mechanisms.
+
+Optical information should not be copied into SAR as a final box. Optical information should provide bounded search constraints, vehicle-state interpretation, uncertainty estimates, and temporal consistency cues.
+
+SAR evidence must confirm the final vehicle support.
+
+## Working Model
+
+The current physically plausible model is:
+
+**empirical optical-to-SAR azimuth mapping + weak relative depth/range hints + optical vehicle-state interpretation + SAR local evidence confirmation**.
+
+This is not a strict 3D projection model because the project does not have calibrated camera intrinsics or calibrated camera-to-radar extrinsics.
+
+## Operating Principle
+
+**Strong optical search-space compression, escapable SAR final decision.**
+
+The optical side should strongly reduce where SAR needs to search. The SAR side must confirm final vehicle support through local SAR evidence.
+
+## What This Project Is Not
+
+This project should not be reduced to:
+
+- ROI repair;
+- hard-sample rescue;
+- Stage 1-only debugging;
+- threshold tuning;
+- oracle-guided fitting;
+- 231-only optimization;
+- automatic replacement chasing.
+
+Previous work is evidence and experience, not a binding methodology.
+
+exec
+/bin/bash -lc "sed -n '1,260p' /mnt/d/profile/research/workspace/00_project_control/02_AVAILABLE_DATA_AND_ASSUMPTIONS.md" in /mnt/d/profile/research/workspace
+ succeeded in 0ms:
+# Available Data and Assumptions
+
+## Available Data
+
+The project has:
+
+- complete optical frame sequences for three scenes;
+- SAR gray frame sequences;
+- SAR pseudo-color frame sequences;
+- DepthPro outputs;
+- track context where available;
+- SAR candidate pools;
+- empirical optical-to-SAR azimuth mapping;
+- 231 GT-reviewed car samples with manually reviewed SAR boxes;
+- prior ROI, range, candidate, and SAR evidence experiments.
+
+## Missing Calibration
+
+The project does not have:
+
+- calibrated camera intrinsics;
+- calibrated camera-to-radar extrinsics;
+- strict metric 3D camera-to-SAR projection.
+
+Camera and radar are physically close and roughly similar in height, which supports empirical directional constraints but not exact metric projection.
+
+## Optical Information That Can Transfer
+
+Optical information may provide bounded constraints and state cues:
+
+1. vehicle center direction;
+2. approximate heading or heading uncertainty;
+3. visible vehicle support;
+4. vehicle size range;
+5. field-of-view position;
+6. bottom truncation;
+7. side truncation;
+8. edge contact;
+9. occlusion state;
+10. nearby-object ambiguity;
+11. track stability;
+12. possible identity drift;
+13. short-window temporal consistency;
+14. weak relative depth or near/middle/far cues from DepthPro.
+
+## Optical Information That Cannot Transfer Directly
+
+Optical information cannot directly provide:
+
+1. final SAR box;
+2. SAR pseudo-color intensity;
+3. radar return strength;
+4. exact SAR range;
+5. exact vehicle boundary in SAR;
+6. optical texture, color, or shadow as SAR evidence.
+
+## SAR Evidence Must Confirm
+
+SAR evidence should confirm:
+
+- compact vehicle-sized body support;
+- side evidence;
+- corner evidence;
+- end-cap evidence;
+- near-side response;
+- local contrast;
+- consistency with expected vehicle footprint;
+- temporal consistency where available.
+
+SAR evidence should reject:
+
+- isolated peaks;
+- road-edge-like long structures;
+- static background clutter;
+- diffuse support;
+- support leakage outside vehicle-sized footprint;
+- cap-only rescue;
+- nearby wrong vehicle-like structures.
+
+exec
+/bin/bash -lc "sed -n '1,260p' /mnt/d/profile/research/workspace/00_project_control/01_DATA_HIERARCHY_AND_CONTEXT.md" in /mnt/d/profile/research/workspace
+ succeeded in 0ms:
+# Data Hierarchy and Context
+
+## Level 0: Complete Three-Scene Temporal Streams
+
+The full research universe consists of three complete temporal scenes. Each scene is roughly 15 seconds long and includes:
+
+- optical frame sequence;
+- SAR gray frame sequence;
+- SAR pseudo-color frame sequence;
+- DepthPro output sequence;
+- available track context;
+- available candidate context.
+
+The final method should return to this level.
+
+## Level 1: Full-Stream Transfer Opportunities
+
+Level 1 consists of all possible vehicle transfer opportunities in the complete temporal stream:
+
+- optical detections;
+- optical tracks;
+- SAR candidates;
+- optical/SAR correspondence opportunities;
+- local temporal windows;
+- track-level continuity cues.
+
+This is the operational transfer space.
+
+## Level 2: 231 GT-Reviewed Car Samples
+
+The 231 reviewed car samples are **not the full dataset**.
+
+They are the subset with GT or manually reviewed SAR boxes. They are used for:
+
+- supervised evaluation;
+- quantitative diagnosis;
+- controlled experiments;
+- failure analysis;
+- validating or rejecting proposed logic.
+
+They are a measurement window into the larger full-stream problem.
+
+## Level 3: Stage Subsets
+
+Stage 1 / Stage 2 / Stage 3 are controlled diagnostic subsets inside Level 2.
+
+They should never replace the Level 0/1 full-stream research objective.
+
+- Stage 1: reliable or widened old range-anchor samples; currently used as a debugging gate.
+- Stage 2: bottom-truncated or near-field range-shift samples; should not run until Stage 1 passes.
+- Stage 3: multi-range compact hypothesis samples; should not run until Stage 1 and Stage 2 are understood.
+
+## Level 4: Individual Diagnostic Samples
+
+Individual samples are useful as failure case studies but must not become general rules without Level 2/3 validation.
+
+Important examples:
+
+- `gm_rm019_00006`: known structured-clutter false-positive caution case.
+- `gm_rm017_00080`: diagnostic-only unless stronger reliable evidence exists.
+
+## Reporting Rule
+
+Every result must state its level:
+
+- L0 complete stream;
+- L1 transfer opportunities;
+- L2 231 GT-reviewed subset;
+- L3 Stage subset;
+- L4 diagnostic sample.
+
+exec
+/bin/bash -lc "sed -n '1,280p' /mnt/d/profile/research/workspace/00_project_control/06_AGENT_RULES_AND_STAGE_GATES.md" in /mnt/d/profile/research/workspace
+ succeeded in 0ms:
+# Agent Rules and Stage Gates
+
+## Data-Level Rules
+
+Every task must declare its data-level scope:
+
+- L0 complete three-scene temporal streams;
+- L1 all transfer opportunities;
+- L2 231 GT-reviewed samples;
+- L3 Stage subset;
+- L4 individual diagnostic sample.
+
+Agents must not confuse these levels.
+
+## Forbidden Runtime Evidence
+
+The following are offline-only and must never become runtime evidence:
+
+- ground truth;
+- offline overlap;
+- oracle-best;
+- already-good labels;
+- old-overcompression labels;
+- oracle-high/runtime-low labels.
+
+## Stage Gates
+
+Stage 2 must not run until Stage 1 passes.
+
+Stage 3 must not run until Stage 1 and Stage 2 are understood.
+
+No selector may be promoted unless:
+
+1. relevant evaluation level improves;
+2. already-good damage is zero;
+3. known false-positive cases remain protected;
+4. accepted replacements are explainable by runtime evidence;
+5. no forbidden evidence is used.
+
+## Current Gate
+
+Current phase:
+
+Full-stream transfer opportunity inventory and positive SAR evidence audit design.
+
+Allowed:
+
+- inventory design;
+- evidence-space audit;
+- full-stream context organization;
+- blocked-candidate analysis;
+- positive evidence taxonomy;
+- prompt generation;
+- report design.
+
+Not allowed:
+
+- Stage 2;
+- Stage 3;
+- selector promotion;
+- threshold relaxation;
+- oracle-guided fitting;
+- treating 231 as full universe;
+- treating Stage 1 as full task;
+- new ROI repair rules unless explicitly requested.
+
+## Reporting Requirements
+
+Every output must include:
+
+1. files read;
+2. data-level scope;
+3. what was run;
+4. what was not run;
+5. runtime evidence versus offline-only evidence;
+6. level-tagged conclusions;
+7. gate status;
+8. next safe step.
+
+exec
+/bin/bash -lc "sed -n '1,320p' /mnt/d/profile/research/workspace/00_project_control/10_CURRENT_VERIFICATION_CHECKLIST.md" in /mnt/d/profile/research/workspace
+ succeeded in 0ms:
+# Current Verification Checklist
+
+Before any future task begins, verify:
+
+1. Which data level is being addressed:
+   - L0 full three-scene temporal stream;
+   - L1 all transfer opportunities;
+   - L2 231 GT-reviewed samples;
+   - L3 Stage subset;
+   - L4 individual diagnostic sample.
+2. Whether the task is research design, inventory, audit, scorer rerun, or production replacement.
+3. Whether the task uses runtime-observable evidence only.
+4. Whether offline overlap, oracle, or ground truth are used only after decisions for diagnosis.
+5. Whether the task accidentally treats Stage 1 or the 231 samples as the full universe.
+6. Whether the task states what was not run.
+7. Whether the task outputs source files read and post log.
+8. Whether the task changes the stage gate.
+9. Whether the task produces conclusions tagged by data level.
+10. Whether the next safe step is research design, diagnostic audit, or controlled experiment.
+
+exec
+/bin/bash -lc "sed -n '1,320p' /mnt/d/profile/research/workspace/00_project_control/07_NEXT_RESEARCH_TASK.md" in /mnt/d/profile/research/workspace
+ succeeded in 0ms:
+# Next Research Task
+
+## Task Name
+
+Full-stream transfer opportunity inventory and positive SAR evidence audit design.
+
+## Purpose
+
+The project should shift from Stage 1 rerun attempts to full-stream research design.
+
+Stage 1 repaired rerun showed safety but no improvement. The likely missing component is positive SAR vehicle evidence, not another threshold adjustment.
+
+## Task Goals
+
+1. Define the Level 0 full-stream inventory that future tasks need.
+2. Define Level 1 transfer opportunities: detections, tracks, candidates, optical/SAR correspondence windows.
+3. Map the 231 GT-reviewed samples back to scene, frame, track, and candidate context.
+4. Use Stage 1 outcomes as diagnostic evidence, not as the main pipeline.
+5. Define a positive SAR vehicle evidence taxonomy.
+6. Separate positive evidence gaps from candidate generation gaps and guard over-blocking.
+7. Produce a safe next experimental plan.
+
+## Required Outputs
+
+1. full-stream inventory design;
+2. Level 0/1/2/3/4 scope table;
+3. transfer opportunity schema;
+4. 231-to-full-stream mapping requirements;
+5. positive SAR vehicle evidence taxonomy;
+6. structured-clutter rejection versus positive vehicle evidence comparison;
+7. Stage 1 lessons translated into full-stream design constraints;
+8. next controlled experiment proposal;
+9. post log;
+10. files-read table.
+
+## Forbidden Actions
+
+Do not:
+
+1. run Stage 2;
+2. run Stage 3;
+3. rerun selector unless explicitly requested;
+4. relax thresholds;
+5. tune to oracle or overlap;
+6. promote the selector;
+7. treat 231 as the full universe;
+8. treat Stage 1 as the full task.
+
+exec
+/bin/bash -lc 'rg -n "231|Stage 1|Stage 2|Stage 3|blocker|blocked|Forbidden|Not allowed|forbidden|Current Gate|current blocker|Blocker" /mnt/d/profile/research/workspace/00_project_control' in /mnt/d/profile/research/workspace
+ succeeded in 0ms:
+/mnt/d/profile/research/workspace/00_project_control/08_RAG_SOURCE_INDEX.md:24:- latest Stage 1 repaired-policy rerun report;
+/mnt/d/profile/research/workspace/00_project_control/08_RAG_SOURCE_INDEX.md:25:- latest Stage 1 repaired-policy rerun post log;
+/mnt/d/profile/research/workspace/00_project_control/08_RAG_SOURCE_INDEX.md:27:- latest Stage 1 rerun preflight validation report;
+/mnt/d/profile/research/workspace/00_project_control/README.md:5:It reframes the project around the complete three-scene temporal stream while preserving the 231 GT-reviewed samples as evaluation and diagnostic anchors.
+/mnt/d/profile/research/workspace/00_project_control/README.md:26:Do not run experiments. Do not edit files. Read the project-control files under /mnt/d/profile/research/workspace/00_project_control and summarize the data hierarchy, research purpose, current blocker, forbidden actions, and next safe task.
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:12:The final research object is **not** only the 231 GT-reviewed car samples and not only the Stage 1 subset. The final research object is the **complete temporal stream of three scenes**, each roughly 15 seconds long, with optical frames, SAR gray frames, SAR pseudo-color frames, DepthPro outputs, and available track/candidate context.
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:22:- **Level 2:** 231 GT-reviewed car samples used as supervised evaluation and diagnostic windows.
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:23:- **Level 3:** Stage 1 / Stage 2 / Stage 3 controlled subsets inside the 231 GT-reviewed subset.
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:56:- Stage 1-only debugging;
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:59:- 231-only optimization;
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:96:## Level 2: 231 GT-Reviewed Car Samples
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:98:The 231 reviewed car samples are **not the full dataset**.
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:112:Stage 1 / Stage 2 / Stage 3 are controlled diagnostic subsets inside Level 2.
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:116:- Stage 1: reliable or widened old range-anchor samples; currently used as a debugging gate.
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:117:- Stage 2: bottom-truncated or near-field range-shift samples; should not run until Stage 1 passes.
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:118:- Stage 3: multi-range compact hypothesis samples; should not run until Stage 1 and Stage 2 are understood.
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:135:- L2 231 GT-reviewed subset;
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:156:- 231 GT-reviewed car samples with manually reviewed SAR boxes;
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:241:8. The 231 GT-reviewed samples are valuable as a Level 2 evaluation and diagnostic subset.
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:245:Stage 1 repaired rerun:
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:256:The latest Stage 1 evidence suggests that the current blocker is missing positive SAR vehicle evidence.
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:269:- treating Stage 1 as the project center;
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:270:- treating the 231 samples as the complete research universe.
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:272:## Forbidden Runtime Evidence
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:291:The project should be redesigned around the complete three-scene temporal stream, while using the 231 GT-reviewed samples as evaluation and diagnostic anchors.
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:293:The next stage should not blindly continue the latest Stage 1 pipeline. It should first clarify the full-stream transfer opportunity inventory and the missing positive SAR vehicle evidence.
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:388:The project should not continue the current Stage 1 path unchanged.
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:390:The latest repaired Stage 1 rerun was a Level 3 controlled diagnostic result. It showed safety but no improvement:
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:392:- all-231 current mean: 0.491366;
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:393:- all-231 with Stage 1 fallback mean: 0.491366;
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:394:- Stage 1 current mean: 0.452578;
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:395:- Stage 1 rerun mean: 0.452578;
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:399:- structured-clutter blocked candidate rows: 12973 across 36 samples;
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:413:## Current Blocker
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:415:The likely blocker is missing positive SAR vehicle evidence.
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:422:2. How do the 231 GT-reviewed samples map back to Level 0/1 scene, frame, track, and candidate context?
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:427:7. How should Level 3 Stage 1 evidence feed back into Level 0/1 design?
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:434:Do not run Stage 2, Stage 3, or threshold relaxation.
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:448:- L2 231 GT-reviewed samples;
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:454:## Forbidden Runtime Evidence
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:467:Stage 2 must not run until Stage 1 passes.
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:469:Stage 3 must not run until Stage 1 and Stage 2 are understood.
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:477:5. no forbidden evidence is used.
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:479:## Current Gate
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:490:- blocked-candidate analysis;
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:495:Not allowed:
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:497:- Stage 2;
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:498:- Stage 3;
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:502:- treating 231 as full universe;
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:503:- treating Stage 1 as full task;
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:531:The project should shift from Stage 1 rerun attempts to full-stream research design.
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:533:Stage 1 repaired rerun showed safety but no improvement. The likely missing component is positive SAR vehicle evidence, not another threshold adjustment.
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:539:3. Map the 231 GT-reviewed samples back to scene, frame, track, and candidate context.
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:540:4. Use Stage 1 outcomes as diagnostic evidence, not as the main pipeline.
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:550:4. 231-to-full-stream mapping requirements;
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:553:7. Stage 1 lessons translated into full-stream design constraints;
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:558:## Forbidden Actions
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:562:1. run Stage 2;
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:563:2. run Stage 3;
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:568:7. treat 231 as the full universe;
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:569:8. treat Stage 1 as the full task.
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:598:- latest Stage 1 repaired-policy rerun report;
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:599:- latest Stage 1 repaired-policy rerun post log;
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:601:- latest Stage 1 rerun preflight validation report;
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:631:Previous control files over-centered the project on the 231 reviewed samples and Stage 1.
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:635:The true research object is the complete three-scene temporal stream, not only the 231 GT-reviewed samples and not the 37 Stage 1 samples.
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:641:**231 / Stage 1 centered repair control**
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:658:- repaired Stage 1 is safe but too conservative;
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:661:Prior work does not prove that the latest Stage 1 pipeline should continue unchanged.
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:668:- Stage 1-only debugging;
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:671:- 231-only optimization;
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:693:   - L2 231 GT-reviewed samples;
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:699:5. Whether the task accidentally treats Stage 1 or the 231 samples as the full universe.
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:714:It reframes the project around the complete three-scene temporal stream while preserving the 231 GT-reviewed samples as evaluation and diagnostic anchors.
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:735:Do not run experiments. Do not edit files. Read the project-control files under /mnt/d/profile/research/workspace/00_project_control and summarize the data hierarchy, research purpose, current blocker, forbidden actions, and next safe task.
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:762:- [ ] L2 231 GT-reviewed samples
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:780:## Forbidden Actions
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:784:1. run Stage 2;
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:785:2. run Stage 3;
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:789:6. treat 231 as the full universe;
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:790:7. treat Stage 1 as the full task;
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:851:- **L2:** The 231 GT-reviewed car samples are a supervised evaluation and diagnostic window.
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:852:- **L3:** Stage 1/2/3 are controlled diagnostic subsets inside Level 2.
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:861:- running Stage 2 before Stage 1 passes;
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:862:- running Stage 3 before Stage 1 and Stage 2 are understood;
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:865:- treating Stage 1 or the 231 reviewed samples as the full research object.
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:888:1. treats the 231 GT-reviewed samples as the complete research object;
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:889:2. treats Stage 1 as the full task;
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:891:4. recommends running Stage 2 or Stage 3 before gates;
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:929:5. forbidden actions;
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:951:2. all-231 not mistaken as full universe;
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:952:3. Stage 1 not mistaken as full task;
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:975:3. Does it treat the 231 samples as evaluation/diagnostic subset only?
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:976:4. Does it avoid treating Stage 1 as the main project?
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:1008:[Explicit forbidden or skipped actions]
+/mnt/d/profile/research/workspace/00_project_control/research_control_pack_v3_all_markdown.md:1068:## Forbidden Actions
+/mnt/d/profile/research/workspace/00_project_control/03_PRIOR_WORK_AS_EVIDENCE.md:16:8. The 231 GT-reviewed samples are valuable as a Level 2 evaluation and diagnostic subset.
+/mnt/d/profile/research/workspace/00_project_control/03_PRIOR_WORK_AS_EVIDENCE.md:20:Stage 1 repaired rerun:
+/mnt/d/profile/research/workspace/00_project_control/03_PRIOR_WORK_AS_EVIDENCE.md:31:The latest Stage 1 evidence suggests that the current blocker is missing positive SAR vehicle evidence.
+/mnt/d/profile/research/workspace/00_project_control/03_PRIOR_WORK_AS_EVIDENCE.md:44:- treating Stage 1 as the project center;
+/mnt/d/profile/research/workspace/00_project_control/03_PRIOR_WORK_AS_EVIDENCE.md:45:- treating the 231 samples as the complete research universe.
+/mnt/d/profile/research/workspace/00_project_control/03_PRIOR_WORK_AS_EVIDENCE.md:47:## Forbidden Runtime Evidence
+/mnt/d/profile/research/workspace/00_project_control/02_AVAILABLE_DATA_AND_ASSUMPTIONS.md:14:- 231 GT-reviewed car samples with manually reviewed SAR boxes;
+/mnt/d/profile/research/workspace/00_project_control/01_DATA_HIERARCHY_AND_CONTEXT.md:29:## Level 2: 231 GT-Reviewed Car Samples
+/mnt/d/profile/research/workspace/00_project_control/01_DATA_HIERARCHY_AND_CONTEXT.md:31:The 231 reviewed car samples are **not the full dataset**.
+/mnt/d/profile/research/workspace/00_project_control/01_DATA_HIERARCHY_AND_CONTEXT.md:45:Stage 1 / Stage 2 / Stage 3 are controlled diagnostic subsets inside Level 2.
+/mnt/d/profile/research/workspace/00_project_control/01_DATA_HIERARCHY_AND_CONTEXT.md:49:- Stage 1: reliable or widened old range-anchor samples; currently used as a debugging gate.
+/mnt/d/profile/research/workspace/00_project_control/01_DATA_HIERARCHY_AND_CONTEXT.md:50:- Stage 2: bottom-truncated or near-field range-shift samples; should not run until Stage 1 passes.
+/mnt/d/profile/research/workspace/00_project_control/01_DATA_HIERARCHY_AND_CONTEXT.md:51:- Stage 3: multi-range compact hypothesis samples; should not run until Stage 1 and Stage 2 are understood.
+/mnt/d/profile/research/workspace/00_project_control/01_DATA_HIERARCHY_AND_CONTEXT.md:68:- L2 231 GT-reviewed subset;
+/mnt/d/profile/research/workspace/00_project_control/05_CURRENT_STATE_AND_OPEN_QUESTIONS.md:5:The project should not continue the current Stage 1 path unchanged.
+/mnt/d/profile/research/workspace/00_project_control/05_CURRENT_STATE_AND_OPEN_QUESTIONS.md:7:The latest repaired Stage 1 rerun was a Level 3 controlled diagnostic result. It showed safety but no improvement:
+/mnt/d/profile/research/workspace/00_project_control/05_CURRENT_STATE_AND_OPEN_QUESTIONS.md:9:- all-231 current mean: 0.491366;
+/mnt/d/profile/research/workspace/00_project_control/05_CURRENT_STATE_AND_OPEN_QUESTIONS.md:10:- all-231 with Stage 1 fallback mean: 0.491366;
+/mnt/d/profile/research/workspace/00_project_control/05_CURRENT_STATE_AND_OPEN_QUESTIONS.md:11:- Stage 1 current mean: 0.452578;
+/mnt/d/profile/research/workspace/00_project_control/05_CURRENT_STATE_AND_OPEN_QUESTIONS.md:12:- Stage 1 rerun mean: 0.452578;
+/mnt/d/profile/research/workspace/00_project_control/05_CURRENT_STATE_AND_OPEN_QUESTIONS.md:16:- structured-clutter blocked candidate rows: 12973 across 36 samples;
+/mnt/d/profile/research/workspace/00_project_control/05_CURRENT_STATE_AND_OPEN_QUESTIONS.md:30:## Current Blocker
+/mnt/d/profile/research/workspace/00_project_control/05_CURRENT_STATE_AND_OPEN_QUESTIONS.md:32:The likely blocker is missing positive SAR vehicle evidence.
+/mnt/d/profile/research/workspace/00_project_control/05_CURRENT_STATE_AND_OPEN_QUESTIONS.md:39:2. How do the 231 GT-reviewed samples map back to Level 0/1 scene, frame, track, and candidate context?
+/mnt/d/profile/research/workspace/00_project_control/05_CURRENT_STATE_AND_OPEN_QUESTIONS.md:44:7. How should Level 3 Stage 1 evidence feed back into Level 0/1 design?
+/mnt/d/profile/research/workspace/00_project_control/05_CURRENT_STATE_AND_OPEN_QUESTIONS.md:51:Do not run Stage 2, Stage 3, or threshold relaxation.
+/mnt/d/profile/research/workspace/00_project_control/06_AGENT_RULES_AND_STAGE_GATES.md:9:- L2 231 GT-reviewed samples;
+/mnt/d/profile/research/workspace/00_project_control/06_AGENT_RULES_AND_STAGE_GATES.md:15:## Forbidden Runtime Evidence
+/mnt/d/profile/research/workspace/00_project_control/06_AGENT_RULES_AND_STAGE_GATES.md:28:Stage 2 must not run until Stage 1 passes.
+/mnt/d/profile/research/workspace/00_project_control/06_AGENT_RULES_AND_STAGE_GATES.md:30:Stage 3 must not run until Stage 1 and Stage 2 are understood.
+/mnt/d/profile/research/workspace/00_project_control/06_AGENT_RULES_AND_STAGE_GATES.md:38:5. no forbidden evidence is used.
+/mnt/d/profile/research/workspace/00_project_control/06_AGENT_RULES_AND_STAGE_GATES.md:40:## Current Gate
+/mnt/d/profile/research/workspace/00_project_control/06_AGENT_RULES_AND_STAGE_GATES.md:51:- blocked-candidate analysis;
+/mnt/d/profile/research/workspace/00_project_control/06_AGENT_RULES_AND_STAGE_GATES.md:56:Not allowed:
+/mnt/d/profile/research/workspace/00_project_control/06_AGENT_RULES_AND_STAGE_GATES.md:58:- Stage 2;
+/mnt/d/profile/research/workspace/00_project_control/06_AGENT_RULES_AND_STAGE_GATES.md:59:- Stage 3;
+/mnt/d/profile/research/workspace/00_project_control/06_AGENT_RULES_AND_STAGE_GATES.md:63:- treating 231 as full universe;
+/mnt/d/profile/research/workspace/00_project_control/06_AGENT_RULES_AND_STAGE_GATES.md:64:- treating Stage 1 as full task;
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_132045.log:26:2. why the 231 samples are only an evaluation subset;
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_132045.log:27:3. what Stage 1/2/3 mean;
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_132045.log:28:4. the current blocker;
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_132045.log:29:5. forbidden actions.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_132045.log:98:The control pack is a compact markdown set, with numbered files that look authoritative. I’m reading the brief, hierarchy, assumptions, state, rules, task, and verification checklist, then I’ll cross-check the 231-sample language across the pack.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_132045.log:108:The final research object is **not** only the 231 GT-reviewed car samples and not only the Stage 1 subset. The final research object is the **complete temporal stream of three scenes**, each roughly 15 seconds long, with optical frames, SAR gray frames, SAR pseudo-color frames, DepthPro outputs, and available track/candidate context.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_132045.log:118:- **Level 2:** 231 GT-reviewed car samples used as supervised evaluation and diagnostic windows.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_132045.log:119:- **Level 3:** Stage 1 / Stage 2 / Stage 3 controlled subsets inside the 231 GT-reviewed subset.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_132045.log:152:- Stage 1-only debugging;
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_132045.log:155:- 231-only optimization;
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_132045.log:176:- 231 GT-reviewed car samples with manually reviewed SAR boxes;
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_132045.log:273:## Level 2: 231 GT-Reviewed Car Samples
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_132045.log:275:The 231 reviewed car samples are **not the full dataset**.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_132045.log:289:Stage 1 / Stage 2 / Stage 3 are controlled diagnostic subsets inside Level 2.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_132045.log:293:- Stage 1: reliable or widened old range-anchor samples; currently used as a debugging gate.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_132045.log:294:- Stage 2: bottom-truncated or near-field range-shift samples; should not run until Stage 1 passes.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_132045.log:295:- Stage 3: multi-range compact hypothesis samples; should not run until Stage 1 and Stage 2 are understood.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_132045.log:312:- L2 231 GT-reviewed subset;
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_132045.log:327:- L2 231 GT-reviewed samples;
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_132045.log:333:## Forbidden Runtime Evidence
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_132045.log:346:Stage 2 must not run until Stage 1 passes.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_132045.log:348:Stage 3 must not run until Stage 1 and Stage 2 are understood.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_132045.log:356:5. no forbidden evidence is used.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_132045.log:358:## Current Gate
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_132045.log:369:- blocked-candidate analysis;
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_132045.log:374:Not allowed:
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_132045.log:376:- Stage 2;
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_132045.log:377:- Stage 3;
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_132045.log:381:- treating 231 as full universe;
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_132045.log:382:- treating Stage 1 as full task;
+/mnt/d/profile/research/workspace/00_project_control/07_NEXT_RESEARCH_TASK.md:9:The project should shift from Stage 1 rerun attempts to full-stream research design.
+/mnt/d/profile/research/workspace/00_project_control/07_NEXT_RESEARCH_TASK.md:11:Stage 1 repaired rerun showed safety but no improvement. The likely missing component is positive SAR vehicle evidence, not another threshold adjustment.
+/mnt/d/profile/research/workspace/00_project_control/07_NEXT_RESEARCH_TASK.md:17:3. Map the 231 GT-reviewed samples back to scene, frame, track, and candidate context.
+/mnt/d/profile/research/workspace/00_project_control/07_NEXT_RESEARCH_TASK.md:18:4. Use Stage 1 outcomes as diagnostic evidence, not as the main pipeline.
+/mnt/d/profile/research/workspace/00_project_control/07_NEXT_RESEARCH_TASK.md:28:4. 231-to-full-stream mapping requirements;
+/mnt/d/profile/research/workspace/00_project_control/07_NEXT_RESEARCH_TASK.md:31:7. Stage 1 lessons translated into full-stream design constraints;
+/mnt/d/profile/research/workspace/00_project_control/07_NEXT_RESEARCH_TASK.md:36:## Forbidden Actions
+/mnt/d/profile/research/workspace/00_project_control/07_NEXT_RESEARCH_TASK.md:40:1. run Stage 2;
+/mnt/d/profile/research/workspace/00_project_control/07_NEXT_RESEARCH_TASK.md:41:2. run Stage 3;
+/mnt/d/profile/research/workspace/00_project_control/07_NEXT_RESEARCH_TASK.md:46:7. treat 231 as the full universe;
+/mnt/d/profile/research/workspace/00_project_control/07_NEXT_RESEARCH_TASK.md:47:8. treat Stage 1 as the full task.
+/mnt/d/profile/research/workspace/00_project_control/skills/SKILL_RESEARCH_DESIGN_REVIEW.md:9:3. Does it treat the 231 samples as evaluation/diagnostic subset only?
+/mnt/d/profile/research/workspace/00_project_control/skills/SKILL_RESEARCH_DESIGN_REVIEW.md:10:4. Does it avoid treating Stage 1 as the main project?
+/mnt/d/profile/research/workspace/00_project_control/04_RESEARCH_DIRECTIONS_AND_DESIGN_SPACE.md:5:The project should be redesigned around the complete three-scene temporal stream, while using the 231 GT-reviewed samples as evaluation and diagnostic anchors.
+/mnt/d/profile/research/workspace/00_project_control/04_RESEARCH_DIRECTIONS_AND_DESIGN_SPACE.md:7:The next stage should not blindly continue the latest Stage 1 pipeline. It should first clarify the full-stream transfer opportunity inventory and the missing positive SAR vehicle evidence.
+/mnt/d/profile/research/workspace/00_project_control/templates/TASK_TEMPLATE.md:23:## Forbidden Actions
+/mnt/d/profile/research/workspace/00_project_control/00_RESEARCH_BRIEF.md:7:The final research object is **not** only the 231 GT-reviewed car samples and not only the Stage 1 subset. The final research object is the **complete temporal stream of three scenes**, each roughly 15 seconds long, with optical frames, SAR gray frames, SAR pseudo-color frames, DepthPro outputs, and available track/candidate context.
+/mnt/d/profile/research/workspace/00_project_control/00_RESEARCH_BRIEF.md:17:- **Level 2:** 231 GT-reviewed car samples used as supervised evaluation and diagnostic windows.
+/mnt/d/profile/research/workspace/00_project_control/00_RESEARCH_BRIEF.md:18:- **Level 3:** Stage 1 / Stage 2 / Stage 3 controlled subsets inside the 231 GT-reviewed subset.
+/mnt/d/profile/research/workspace/00_project_control/00_RESEARCH_BRIEF.md:51:- Stage 1-only debugging;
+/mnt/d/profile/research/workspace/00_project_control/00_RESEARCH_BRIEF.md:54:- 231-only optimization;
+/mnt/d/profile/research/workspace/00_project_control/skills/SKILL_OUTPUT_AUDITOR.md:8:2. all-231 not mistaken as full universe;
+/mnt/d/profile/research/workspace/00_project_control/skills/SKILL_OUTPUT_AUDITOR.md:9:3. Stage 1 not mistaken as full task;
+/mnt/d/profile/research/workspace/00_project_control/10_CURRENT_VERIFICATION_CHECKLIST.md:8:   - L2 231 GT-reviewed samples;
+/mnt/d/profile/research/workspace/00_project_control/10_CURRENT_VERIFICATION_CHECKLIST.md:14:5. Whether the task accidentally treats Stage 1 or the 231 samples as the full universe.
+/mnt/d/profile/research/workspace/00_project_control/templates/REPORT_TEMPLATE.md:21:[Explicit forbidden or skipped actions]
+/mnt/d/profile/research/workspace/00_project_control/prompts/REVIEWER_PROMPT_TEMPLATE.md:7:1. treats the 231 GT-reviewed samples as the complete research object;
+/mnt/d/profile/research/workspace/00_project_control/prompts/REVIEWER_PROMPT_TEMPLATE.md:8:2. treats Stage 1 as the full task;
+/mnt/d/profile/research/workspace/00_project_control/prompts/REVIEWER_PROMPT_TEMPLATE.md:10:4. recommends running Stage 2 or Stage 3 before gates;
+/mnt/d/profile/research/workspace/00_project_control/codex_prompts/test_readonly_prompt.txt:9:2. why the 231 samples are only an evaluation subset;
+/mnt/d/profile/research/workspace/00_project_control/codex_prompts/test_readonly_prompt.txt:10:3. what Stage 1/2/3 mean;
+/mnt/d/profile/research/workspace/00_project_control/codex_prompts/test_readonly_prompt.txt:11:4. the current blocker;
+/mnt/d/profile/research/workspace/00_project_control/codex_prompts/test_readonly_prompt.txt:12:5. forbidden actions.
+/mnt/d/profile/research/workspace/00_project_control/09_REDESIGN_REVIEW_MEMO.md:5:Previous control files over-centered the project on the 231 reviewed samples and Stage 1.
+/mnt/d/profile/research/workspace/00_project_control/09_REDESIGN_REVIEW_MEMO.md:9:The true research object is the complete three-scene temporal stream, not only the 231 GT-reviewed samples and not the 37 Stage 1 samples.
+/mnt/d/profile/research/workspace/00_project_control/09_REDESIGN_REVIEW_MEMO.md:15:**231 / Stage 1 centered repair control**
+/mnt/d/profile/research/workspace/00_project_control/09_REDESIGN_REVIEW_MEMO.md:32:- repaired Stage 1 is safe but too conservative;
+/mnt/d/profile/research/workspace/00_project_control/09_REDESIGN_REVIEW_MEMO.md:35:Prior work does not prove that the latest Stage 1 pipeline should continue unchanged.
+/mnt/d/profile/research/workspace/00_project_control/09_REDESIGN_REVIEW_MEMO.md:42:- Stage 1-only debugging;
+/mnt/d/profile/research/workspace/00_project_control/09_REDESIGN_REVIEW_MEMO.md:45:- 231-only optimization;
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.md:9:- **L2:** The **231 GT-reviewed car samples**. These are supervised evaluation and diagnostic windows, not the full dataset.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.md:10:- **L3:** Stage 1 / Stage 2 / Stage 3 controlled subsets inside the 231 samples.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.md:13:**2. Why the 231 Samples Are Only an Evaluation Subset**
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.md:15:The full research object is the complete three-scene stream, not the 231 samples. The 231 are only the subset with GT or manually reviewed SAR boxes, used for supervised evaluation, diagnosis, controlled experiments, failure analysis, and validating logic. They are a measurement window into the larger L0/L1 transfer problem.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.md:17:**3. What Stage 1/2/3 Mean**
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.md:19:- **Stage 1:** Reliable or widened old range-anchor samples. Currently used as a debugging gate.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.md:20:- **Stage 2:** Bottom-truncated or near-field range-shift samples. Must not run until Stage 1 passes.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.md:21:- **Stage 3:** Multi-range compact hypothesis samples. Must not run until Stage 1 and Stage 2 are understood.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.md:25:**4. Current Blocker**
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.md:27:The repaired Stage 1 rerun was safe but did not improve results: accepted replacements were zero, and all rejected replacements stayed rejected. The likely blocker is **missing positive SAR vehicle evidence**. The system can reject structured clutter, but cannot yet identify trustworthy replacement candidates.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.md:31:**5. Forbidden Actions**
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.md:33:Forbidden or currently not allowed:
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.md:35:- Run Stage 2.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.md:36:- Run Stage 3.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.md:41:- Treat the 231 samples as the full universe.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.md:42:- Treat Stage 1 as the full task.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.md:43:- Use forbidden runtime evidence: ground truth, offline overlap, oracle-best, already-good labels, old-overcompression labels, oracle-high/runtime-low labels.
+/mnt/d/profile/research/workspace/00_project_control/prompts/CODEX_RESEARCH_EXECUTOR_TEMPLATE.md:21:- [ ] L2 231 GT-reviewed samples
+/mnt/d/profile/research/workspace/00_project_control/prompts/CODEX_RESEARCH_EXECUTOR_TEMPLATE.md:39:## Forbidden Actions
+/mnt/d/profile/research/workspace/00_project_control/prompts/CODEX_RESEARCH_EXECUTOR_TEMPLATE.md:43:1. run Stage 2;
+/mnt/d/profile/research/workspace/00_project_control/prompts/CODEX_RESEARCH_EXECUTOR_TEMPLATE.md:44:2. run Stage 3;
+/mnt/d/profile/research/workspace/00_project_control/prompts/CODEX_RESEARCH_EXECUTOR_TEMPLATE.md:48:6. treat 231 as the full universe;
+/mnt/d/profile/research/workspace/00_project_control/prompts/CODEX_RESEARCH_EXECUTOR_TEMPLATE.md:49:7. treat Stage 1 as the full task;
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:26:2. why the 231 samples are only an evaluation subset;
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:27:3. what Stage 1/2/3 mean;
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:28:4. the current blocker;
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:29:5. forbidden actions.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:33:I’ll inspect the project-control documents only and keep this read-only. I’m going to identify the relevant files first, then read the ones that define scope, stages, blockers, and constraints.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:103:It reframes the project around the complete three-scene temporal stream while preserving the 231 GT-reviewed samples as evaluation and diagnostic anchors.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:124:Do not run experiments. Do not edit files. Read the project-control files under /mnt/d/profile/research/workspace/00_project_control and summarize the data hierarchy, research purpose, current blocker, forbidden actions, and next safe task.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:158:## Level 2: 231 GT-Reviewed Car Samples
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:160:The 231 reviewed car samples are **not the full dataset**.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:174:Stage 1 / Stage 2 / Stage 3 are controlled diagnostic subsets inside Level 2.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:178:- Stage 1: reliable or widened old range-anchor samples; currently used as a debugging gate.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:179:- Stage 2: bottom-truncated or near-field range-shift samples; should not run until Stage 1 passes.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:180:- Stage 3: multi-range compact hypothesis samples; should not run until Stage 1 and Stage 2 are understood.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:197:- L2 231 GT-reviewed subset;
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:210:The final research object is **not** only the 231 GT-reviewed car samples and not only the Stage 1 subset. The final research object is the **complete temporal stream of three scenes**, each roughly 15 seconds long, with optical frames, SAR gray frames, SAR pseudo-color frames, DepthPro outputs, and available track/candidate context.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:220:- **Level 2:** 231 GT-reviewed car samples used as supervised evaluation and diagnostic windows.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:221:- **Level 3:** Stage 1 / Stage 2 / Stage 3 controlled subsets inside the 231 GT-reviewed subset.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:254:- Stage 1-only debugging;
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:257:- 231-only optimization;
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:278:- 231 GT-reviewed car samples with manually reviewed SAR boxes;
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:345:The first pass confirms the hierarchy and the key distinction: the 231 reviewed samples are a supervised measurement window, not the full research object. I’m now reading the stage-gate and current-state files for the blocker and explicit forbidden actions.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:353:The project should not continue the current Stage 1 path unchanged.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:355:The latest repaired Stage 1 rerun was a Level 3 controlled diagnostic result. It showed safety but no improvement:
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:357:- all-231 current mean: 0.491366;
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:358:- all-231 with Stage 1 fallback mean: 0.491366;
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:359:- Stage 1 current mean: 0.452578;
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:360:- Stage 1 rerun mean: 0.452578;
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:364:- structured-clutter blocked candidate rows: 12973 across 36 samples;
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:378:## Current Blocker
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:380:The likely blocker is missing positive SAR vehicle evidence.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:387:2. How do the 231 GT-reviewed samples map back to Level 0/1 scene, frame, track, and candidate context?
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:392:7. How should Level 3 Stage 1 evidence feed back into Level 0/1 design?
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:399:Do not run Stage 2, Stage 3, or threshold relaxation.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:412:The project should shift from Stage 1 rerun attempts to full-stream research design.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:414:Stage 1 repaired rerun showed safety but no improvement. The likely missing component is positive SAR vehicle evidence, not another threshold adjustment.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:420:3. Map the 231 GT-reviewed samples back to scene, frame, track, and candidate context.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:421:4. Use Stage 1 outcomes as diagnostic evidence, not as the main pipeline.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:431:4. 231-to-full-stream mapping requirements;
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:434:7. Stage 1 lessons translated into full-stream design constraints;
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:439:## Forbidden Actions
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:443:1. run Stage 2;
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:444:2. run Stage 3;
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:449:7. treat 231 as the full universe;
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:450:8. treat Stage 1 as the full task.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:463:- L2 231 GT-reviewed samples;
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:469:## Forbidden Runtime Evidence
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:482:Stage 2 must not run until Stage 1 passes.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:484:Stage 3 must not run until Stage 1 and Stage 2 are understood.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:492:5. no forbidden evidence is used.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:494:## Current Gate
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:505:- blocked-candidate analysis;
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:510:Not allowed:
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:512:- Stage 2;
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:513:- Stage 3;
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:517:- treating 231 as full universe;
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:518:- treating Stage 1 as full task;
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:544:   - L2 231 GT-reviewed samples;
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:550:5. Whether the task accidentally treats Stage 1 or the 231 samples as the full universe.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:566:- **L2:** The **231 GT-reviewed car samples**. These are supervised evaluation and diagnostic windows, not the full dataset.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:567:- **L3:** Stage 1 / Stage 2 / Stage 3 controlled subsets inside the 231 samples.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:570:**2. Why the 231 Samples Are Only an Evaluation Subset**
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:572:The full research object is the complete three-scene stream, not the 231 samples. The 231 are only the subset with GT or manually reviewed SAR boxes, used for supervised evaluation, diagnosis, controlled experiments, failure analysis, and validating logic. They are a measurement window into the larger L0/L1 transfer problem.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:574:**3. What Stage 1/2/3 Mean**
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:576:- **Stage 1:** Reliable or widened old range-anchor samples. Currently used as a debugging gate.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:577:- **Stage 2:** Bottom-truncated or near-field range-shift samples. Must not run until Stage 1 passes.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:578:- **Stage 3:** Multi-range compact hypothesis samples. Must not run until Stage 1 and Stage 2 are understood.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:582:**4. Current Blocker**
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:584:The repaired Stage 1 rerun was safe but did not improve results: accepted replacements were zero, and all rejected replacements stayed rejected. The likely blocker is **missing positive SAR vehicle evidence**. The system can reject structured clutter, but cannot yet identify trustworthy replacement candidates.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:588:**5. Forbidden Actions**
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:590:Forbidden or currently not allowed:
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:592:- Run Stage 2.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:593:- Run Stage 3.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:598:- Treat the 231 samples as the full universe.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:599:- Treat Stage 1 as the full task.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:600:- Use forbidden runtime evidence: ground truth, offline overlap, oracle-best, already-good labels, old-overcompression labels, oracle-high/runtime-low labels.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:615:- **L2:** The **231 GT-reviewed car samples**. These are supervised evaluation and diagnostic windows, not the full dataset.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:616:- **L3:** Stage 1 / Stage 2 / Stage 3 controlled subsets inside the 231 samples.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:619:**2. Why the 231 Samples Are Only an Evaluation Subset**
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:621:The full research object is the complete three-scene stream, not the 231 samples. The 231 are only the subset with GT or manually reviewed SAR boxes, used for supervised evaluation, diagnosis, controlled experiments, failure analysis, and validating logic. They are a measurement window into the larger L0/L1 transfer problem.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:623:**3. What Stage 1/2/3 Mean**
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:625:- **Stage 1:** Reliable or widened old range-anchor samples. Currently used as a debugging gate.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:626:- **Stage 2:** Bottom-truncated or near-field range-shift samples. Must not run until Stage 1 passes.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:627:- **Stage 3:** Multi-range compact hypothesis samples. Must not run until Stage 1 and Stage 2 are understood.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:631:**4. Current Blocker**
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:633:The repaired Stage 1 rerun was safe but did not improve results: accepted replacements were zero, and all rejected replacements stayed rejected. The likely blocker is **missing positive SAR vehicle evidence**. The system can reject structured clutter, but cannot yet identify trustworthy replacement candidates.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:637:**5. Forbidden Actions**
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:639:Forbidden or currently not allowed:
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:641:- Run Stage 2.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:642:- Run Stage 3.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:647:- Treat the 231 samples as the full universe.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:648:- Treat Stage 1 as the full task.
+/mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_131519.log:649:- Use forbidden runtime evidence: ground truth, offline overlap, oracle-best, already-good labels, old-overcompression labels, oracle-high/runtime-low labels.
+/mnt/d/profile/research/workspace/00_project_control/prompts/HERMES_RESEARCH_COORDINATOR_PROMPT.md:24:- **L2:** The 231 GT-reviewed car samples are a supervised evaluation and diagnostic window.
+/mnt/d/profile/research/workspace/00_project_control/prompts/HERMES_RESEARCH_COORDINATOR_PROMPT.md:25:- **L3:** Stage 1/2/3 are controlled diagnostic subsets inside Level 2.
+/mnt/d/profile/research/workspace/00_project_control/prompts/HERMES_RESEARCH_COORDINATOR_PROMPT.md:34:- running Stage 2 before Stage 1 passes;
+/mnt/d/profile/research/workspace/00_project_control/prompts/HERMES_RESEARCH_COORDINATOR_PROMPT.md:35:- running Stage 3 before Stage 1 and Stage 2 are understood;
+/mnt/d/profile/research/workspace/00_project_control/prompts/HERMES_RESEARCH_COORDINATOR_PROMPT.md:38:- treating Stage 1 or the 231 reviewed samples as the full research object.
+/mnt/d/profile/research/workspace/00_project_control/skills/SKILL_CODEX_PROMPT_WRITER.md:11:5. forbidden actions;
+
+exec
+/bin/bash -lc "sed -n '1,320p' /mnt/d/profile/research/workspace/00_project_control/05_CURRENT_STATE_AND_OPEN_QUESTIONS.md" in /mnt/d/profile/research/workspace
+ succeeded in 0ms:
+# Current State and Open Questions
+
+## Current State
+
+The project should not continue the current Stage 1 path unchanged.
+
+The latest repaired Stage 1 rerun was a Level 3 controlled diagnostic result. It showed safety but no improvement:
+
+- all-231 current mean: 0.491366;
+- all-231 with Stage 1 fallback mean: 0.491366;
+- Stage 1 current mean: 0.452578;
+- Stage 1 rerun mean: 0.452578;
+- accepted replacements: 0;
+- rejected replacements: 37;
+- already-good damage count: 0;
+- structured-clutter blocked candidate rows: 12973 across 36 samples;
+- boundary-overlap selected count: 17, accepted 0;
+- weak-fallback usage count: 1;
+- `gm_rm019_00006` stayed protected;
+- `gm_rm017_00080` stayed diagnostic-only.
+
+## Interpretation
+
+This proves the repaired policy can prevent known false positives and avoid damage.
+
+It does not prove the selector can improve the task.
+
+The current system is safe but too conservative.
+
+## Current Blocker
+
+The likely blocker is missing positive SAR vehicle evidence.
+
+The system can reject structured clutter but cannot yet identify trustworthy replacement candidates.
+
+## Open Questions
+
+1. What are all Level 1 transfer opportunities in the full three-scene stream?
+2. How do the 231 GT-reviewed samples map back to Level 0/1 scene, frame, track, and candidate context?
+3. Is the current candidate generation adequate, or does it miss positive vehicle structures?
+4. Are structured-clutter guards over-blocking, or are candidates genuinely weak?
+5. What positive vehicle-shape evidence is missing?
+6. How should temporal consistency contribute without becoming a standalone selector?
+7. How should Level 3 Stage 1 evidence feed back into Level 0/1 design?
+8. Should the current direction be partially redesigned before more selector experiments?
+
+## Current Recommendation
+
+Partially redesign the research direction before running more selector experiments.
+
+Do not run Stage 2, Stage 3, or threshold relaxation.
+
+codex
+Read-only inspection only. I did not edit files or run experiments.
+
+Files read:
+[00_RESEARCH_BRIEF.md](/mnt/d/profile/research/workspace/00_project_control/00_RESEARCH_BRIEF.md), [01_DATA_HIERARCHY_AND_CONTEXT.md](/mnt/d/profile/research/workspace/00_project_control/01_DATA_HIERARCHY_AND_CONTEXT.md), [02_AVAILABLE_DATA_AND_ASSUMPTIONS.md](/mnt/d/profile/research/workspace/00_project_control/02_AVAILABLE_DATA_AND_ASSUMPTIONS.md), [05_CURRENT_STATE_AND_OPEN_QUESTIONS.md](/mnt/d/profile/research/workspace/00_project_control/05_CURRENT_STATE_AND_OPEN_QUESTIONS.md), [06_AGENT_RULES_AND_STAGE_GATES.md](/mnt/d/profile/research/workspace/00_project_control/06_AGENT_RULES_AND_STAGE_GATES.md), [07_NEXT_RESEARCH_TASK.md](/mnt/d/profile/research/workspace/00_project_control/07_NEXT_RESEARCH_TASK.md), [10_CURRENT_VERIFICATION_CHECKLIST.md](/mnt/d/profile/research/workspace/00_project_control/10_CURRENT_VERIFICATION_CHECKLIST.md).
+
+**1. Data Hierarchy**
+- **L0:** Complete three-scene temporal streams, roughly 15 seconds each, including optical frames, SAR gray frames, SAR pseudo-color frames, DepthPro outputs, and available track/candidate context.
+- **L1:** Full-stream transfer opportunities: optical detections/tracks, SAR candidates, correspondence opportunities, temporal windows, and track continuity cues.
+- **L2:** The 231 GT-reviewed car samples. These are supervised evaluation and diagnostic windows.
+- **L3:** Stage 1/2/3 controlled subsets inside the 231 samples.
+- **L4:** Individual diagnostic samples such as `gm_rm019_00006` or `gm_rm017_00080`.
+
+**2. Why The 231 Samples Are Only An Evaluation Subset**
+The full research object is the complete three-scene temporal stream, not the 231 reviewed samples. The 231 are only the subset with GT or manually reviewed SAR boxes, used for supervised evaluation, quantitative diagnosis, controlled experiments, failure analysis, and validating or rejecting logic. They are a measurement window into the larger L0/L1 transfer problem.
+
+**3. Stage 1/2/3**
+- **Stage 1:** Reliable or widened old range-anchor samples; currently used as a debugging gate.
+- **Stage 2:** Bottom-truncated or near-field range-shift samples; must not run until Stage 1 passes.
+- **Stage 3:** Multi-range compact hypothesis samples; must not run until Stage 1 and Stage 2 are understood.
+
+**4. Current Blocker**
+The current blocker is likely missing positive SAR vehicle evidence. The latest repaired Stage 1 rerun was safe but showed no improvement: accepted replacements were `0`, already-good damage was `0`, and known false-positive cases stayed protected. The system can reject structured clutter, but cannot yet identify trustworthy replacement candidates.
+
+**5. Forbidden Actions**
+Forbidden or currently not allowed:
+- Run Stage 2.
+- Run Stage 3.
+- Rerun selector unless explicitly requested.
+- Relax thresholds.
+- Tune to oracle, overlap, or ground truth.
+- Promote the selector.
+- Treat the 231 samples as the full universe.
+- Treat Stage 1 as the full task.
+- Use forbidden runtime evidence: ground truth, offline overlap, oracle-best, already-good labels, old-overcompression labels, or oracle-high/runtime-low labels.
+- Add new ROI repair rules unless explicitly requested.
+2026-04-30T05:21:23.636500Z ERROR codex_core::session: failed to record rollout items: thread 019ddcd5-1485-7712-8c37-cc7c1b71a32e not found
+tokens used
+28,149
+Read-only inspection only. I did not edit files or run experiments.
+
+Files read:
+[00_RESEARCH_BRIEF.md](/mnt/d/profile/research/workspace/00_project_control/00_RESEARCH_BRIEF.md), [01_DATA_HIERARCHY_AND_CONTEXT.md](/mnt/d/profile/research/workspace/00_project_control/01_DATA_HIERARCHY_AND_CONTEXT.md), [02_AVAILABLE_DATA_AND_ASSUMPTIONS.md](/mnt/d/profile/research/workspace/00_project_control/02_AVAILABLE_DATA_AND_ASSUMPTIONS.md), [05_CURRENT_STATE_AND_OPEN_QUESTIONS.md](/mnt/d/profile/research/workspace/00_project_control/05_CURRENT_STATE_AND_OPEN_QUESTIONS.md), [06_AGENT_RULES_AND_STAGE_GATES.md](/mnt/d/profile/research/workspace/00_project_control/06_AGENT_RULES_AND_STAGE_GATES.md), [07_NEXT_RESEARCH_TASK.md](/mnt/d/profile/research/workspace/00_project_control/07_NEXT_RESEARCH_TASK.md), [10_CURRENT_VERIFICATION_CHECKLIST.md](/mnt/d/profile/research/workspace/00_project_control/10_CURRENT_VERIFICATION_CHECKLIST.md).
+
+**1. Data Hierarchy**
+- **L0:** Complete three-scene temporal streams, roughly 15 seconds each, including optical frames, SAR gray frames, SAR pseudo-color frames, DepthPro outputs, and available track/candidate context.
+- **L1:** Full-stream transfer opportunities: optical detections/tracks, SAR candidates, correspondence opportunities, temporal windows, and track continuity cues.
+- **L2:** The 231 GT-reviewed car samples. These are supervised evaluation and diagnostic windows.
+- **L3:** Stage 1/2/3 controlled subsets inside the 231 samples.
+- **L4:** Individual diagnostic samples such as `gm_rm019_00006` or `gm_rm017_00080`.
+
+**2. Why The 231 Samples Are Only An Evaluation Subset**
+The full research object is the complete three-scene temporal stream, not the 231 reviewed samples. The 231 are only the subset with GT or manually reviewed SAR boxes, used for supervised evaluation, quantitative diagnosis, controlled experiments, failure analysis, and validating or rejecting logic. They are a measurement window into the larger L0/L1 transfer problem.
+
+**3. Stage 1/2/3**
+- **Stage 1:** Reliable or widened old range-anchor samples; currently used as a debugging gate.
+- **Stage 2:** Bottom-truncated or near-field range-shift samples; must not run until Stage 1 passes.
+- **Stage 3:** Multi-range compact hypothesis samples; must not run until Stage 1 and Stage 2 are understood.
+
+**4. Current Blocker**
+The current blocker is likely missing positive SAR vehicle evidence. The latest repaired Stage 1 rerun was safe but showed no improvement: accepted replacements were `0`, already-good damage was `0`, and known false-positive cases stayed protected. The system can reject structured clutter, but cannot yet identify trustworthy replacement candidates.
+
+**5. Forbidden Actions**
+Forbidden or currently not allowed:
+- Run Stage 2.
+- Run Stage 3.
+- Rerun selector unless explicitly requested.
+- Relax thresholds.
+- Tune to oracle, overlap, or ground truth.
+- Promote the selector.
+- Treat the 231 samples as the full universe.
+- Treat Stage 1 as the full task.
+- Use forbidden runtime evidence: ground truth, offline overlap, oracle-best, already-good labels, old-overcompression labels, or oracle-high/runtime-low labels.
+- Add new ROI repair rules unless explicitly requested.
+
+Final message saved to: /mnt/d/profile/research/workspace/00_project_control/codex_runs/codex_readonly_20260430_132045.md

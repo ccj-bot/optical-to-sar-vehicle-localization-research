@@ -1,0 +1,14 @@
+# Codex workspace gitignore — keep repo light
+*.jpg
+*.png
+*.npy
+*.pt
+*.pth
+*.pkl
+*.h5
+*.mp4
+*.avi
+__pycache__/
+*.pyc
+.venv/
+node_modules/

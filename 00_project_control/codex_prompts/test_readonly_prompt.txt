@@ -1,0 +1,12 @@
+Read only. Do not edit files. Do not run experiments.
+
+Inspect the project-control files under:
+
+/mnt/d/profile/research/workspace/00_project_control
+
+Summarize:
+1. the data hierarchy;
+2. why the 231 samples are only an evaluation subset;
+3. what Stage 1/2/3 mean;
+4. the current blocker;
+5. forbidden actions.

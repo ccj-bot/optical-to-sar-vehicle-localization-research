@@ -11,4 +11,8 @@
 __pycache__/
 *.pyc
 .venv/
+venv/
+output/
+artifacts/
+.codex/
 node_modules/

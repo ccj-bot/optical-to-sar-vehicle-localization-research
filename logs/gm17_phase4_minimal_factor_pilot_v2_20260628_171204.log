@@ -1,0 +1,8 @@
+[2026-06-28T17:12:04] Starting GM_RM017-only minimal factor pilot v2.
+[2026-06-28T17:12:04] Interpreter: D:\MINICONDA\envs\py311\python.exe
+[2026-06-28T17:12:04] A001: D:\profile\research\workspace\output\clean_no_gt_localizer_2026-05-31_gm17_hard_candidate_expansion_v2\candidate_bank_inference.csv
+[2026-06-28T17:12:04] A005: D:\profile\research\workspace\output\clean_no_gt_localizer_2026-05-31_boundary_tables\gm17_temporal_inference.csv
+[2026-06-28T17:12:10] Wrote ranked candidates: D:\profile\research\workspace\output\gm17_phase4_minimal_factor_pilot_v2_20260628_171204\pilot_v2_candidates_ranked.csv
+[2026-06-28T17:12:10] Wrote selected rank1 by variant: D:\profile\research\workspace\output\gm17_phase4_minimal_factor_pilot_v2_20260628_171204\pilot_v2_selected_rank1_by_variant.csv
+[2026-06-28T17:12:10] Wrote manifest: D:\profile\research\workspace\output\gm17_phase4_minimal_factor_pilot_v2_20260628_171204\pilot_v2_manifest.json
+[2026-06-28T17:12:10] Completed v2 pilot. No GT/eval fields were read or used for ranking.

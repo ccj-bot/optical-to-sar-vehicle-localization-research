@@ -1,0 +1,12 @@
+[2026-06-28T17:12:26] Starting v2 post-inference evaluation for D:\profile\research\workspace\output\gm17_phase4_minimal_factor_pilot_v2_20260628_171204
+[2026-06-28T17:12:27] Confirmed v2 output exists before reading A019/A021.
+[2026-06-28T17:12:27] Read A019 post-inference: rows=442
+[2026-06-28T17:12:27] Read A021 post-inference: rows=442
+[2026-06-28T17:13:02] Starting v2 post-inference evaluation for D:\profile\research\workspace\output\gm17_phase4_minimal_factor_pilot_v2_20260628_171204
+[2026-06-28T17:13:02] Confirmed v2 output exists before reading A019/A021.
+[2026-06-28T17:13:02] Read A019 post-inference: rows=442
+[2026-06-28T17:13:02] Read A021 post-inference: rows=442
+[2026-06-28T17:13:04] Wrote v2 evaluation summary: D:\profile\research\workspace\output\gm17_phase4_minimal_factor_pilot_v2_20260628_171204\evaluation_v2_summary.json
+[2026-06-28T17:13:04] Wrote v2 run summary doc: D:\profile\research\workspace\docs\gm17_phase4_minimal_factor_pilot_v2_run_summary_20260628_171204.md
+[2026-06-28T17:13:04] Completed v2 post-inference evaluation and figures.
+[2026-06-28T17:13:05] Repair note: first evaluation run failed while writing Markdown because optional pandas dependency tabulate was unavailable; fixed script to use internal Markdown table writer only. No ranking rule, metric, threshold, input, or evaluation policy changed.

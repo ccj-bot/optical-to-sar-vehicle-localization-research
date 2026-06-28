@@ -1,0 +1,7 @@
+[2026-06-28T11:32:24] Starting GM_RM017-only minimal factor pilot v1 diagnostic analysis.
+[2026-06-28T11:32:24] Loaded ranked candidates: rows=58251
+[2026-06-28T11:32:24] Loaded evaluation_per_target: rows=205
+[2026-06-28T11:32:25] Merged A001 provenance fields for diagnostics only: ['candidate_source', 'candidate_detail', 'candidate_expansion_state', 'candidate_expansion_reason', 'gm17_anchor_strength']
+[2026-06-28T11:32:26] Wrote diagnostics output directory: D:\profile\research\workspace\output\gm17_phase4_minimal_factor_pilot_v1_diagnostics_20260628_113224
+[2026-06-28T11:32:26] Wrote markdown summary: D:\profile\research\workspace\docs\gm17_phase4_minimal_factor_pilot_v1_diagnostic_summary_20260628_113224.md
+[2026-06-28T11:32:26] Completed v1 diagnostic analysis without rerunning selection or generating v2 ranking.

@@ -1,0 +1,7 @@
+[2026-06-28T11:08:12] Starting post-inference evaluation for pilot_dir=output\gm17_phase4_minimal_factor_pilot_20260628_110447
+[2026-06-28T11:08:13] Read A019 only after pilot output existed: rows=442, cols=11
+[2026-06-28T11:08:13] Read A021 only after pilot output existed: rows=442, cols=7
+[2026-06-28T11:08:13] Wrote evaluation summary: output\gm17_phase4_minimal_factor_pilot_20260628_110447\evaluation_summary.json
+[2026-06-28T11:08:13] Wrote per-target evaluation: output\gm17_phase4_minimal_factor_pilot_20260628_110447\evaluation_per_target.csv
+[2026-06-28T11:08:13] Wrote condition grouping: output\gm17_phase4_minimal_factor_pilot_20260628_110447\evaluation_condition_groups.csv
+[2026-06-28T11:08:13] Completed post-inference evaluation without modifying pilot ranking.

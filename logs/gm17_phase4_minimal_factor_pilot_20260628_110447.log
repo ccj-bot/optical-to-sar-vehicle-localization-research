@@ -1,0 +1,10 @@
+[2026-06-28T11:04:47] Starting GM_RM017-only minimal factor pilot selection.
+[2026-06-28T11:04:47] A001: D:\profile\research\workspace\output\clean_no_gt_localizer_2026-05-31_gm17_hard_candidate_expansion_v2\candidate_bank_inference.csv
+[2026-06-28T11:04:47] A005: D:\profile\research\workspace\output\clean_no_gt_localizer_2026-05-31_boundary_tables\gm17_temporal_inference.csv
+[2026-06-28T11:04:47] Forbidden fields present but excluded from ranking loads: {'A001': ['temporal_factor_score', 'delta_r_from_pred', 'delta_cross_from_pred', 'delta_az_from_pred', 'candidate_source', 'candidate_detail', 'candidate_expansion_state', 'candidate_expansion_reason', 'gm17_anchor_strength'], 'A005': ['temporal_factor_score', 'pred_cx', 'pred_cy', 'pred_w', 'pred_h', 'pred_heading_deg', 'score', 'lr_score', 'sar_factor_score', 'gm17_temporal_source', 'gm17_temporal_decision', 'gm17_anchor_strength', 'gm17_track_size', 'gm17_anchor_n', 'n_candidates']}
+[2026-06-28T11:04:47] Loaded A001 safe columns only: rows=58251, cols=13
+[2026-06-28T11:04:47] Loaded A005 safe columns only: rows=205, cols=7
+[2026-06-28T11:04:48] Wrote ranked candidates: D:\profile\research\workspace\output\gm17_phase4_minimal_factor_pilot_20260628_110447\pilot_candidates_ranked.csv
+[2026-06-28T11:04:48] Wrote rank1 selected candidates: D:\profile\research\workspace\output\gm17_phase4_minimal_factor_pilot_20260628_110447\pilot_selected_rank1.csv
+[2026-06-28T11:04:48] Wrote manifest: D:\profile\research\workspace\output\gm17_phase4_minimal_factor_pilot_20260628_110447\pilot_manifest.json
+[2026-06-28T11:04:48] Completed minimal factor pilot selection without GT/evaluation inputs.

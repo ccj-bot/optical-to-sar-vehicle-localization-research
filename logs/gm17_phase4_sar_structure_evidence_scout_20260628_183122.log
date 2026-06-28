@@ -1,0 +1,15 @@
+2026-06-28 18:31:22,527 INFO Using diagnostic-only SAR structure evidence scout.
+2026-06-28 18:31:22,527 INFO Interpreter boundary: use the active py311 environment supplied by the caller.
+2026-06-28 18:31:22,527 INFO No old_work paths are required.
+2026-06-28 18:31:22,528 INFO Repair note: One small script repair was made before the final recorded run: panel labels used escaped newline text, which made patch titles crowded. The repair changed only visual label line breaks and the recorded repair note; it did not change inputs, case selection, feature logic, ranking, thresholds, or metrics.
+2026-06-28 18:31:22,528 INFO Reading output\gm17_phase4_minimal_factor_pilot_20260628_110447\evaluation_per_target.csv
+2026-06-28 18:31:22,538 INFO Reading output\gm17_phase4_minimal_factor_pilot_20260628_110447\pilot_candidates_ranked.csv
+2026-06-28 18:31:22,679 INFO Reading output\gm17_phase4_minimal_factor_pilot_v1_diagnostics_20260628_113224\diagnostic_per_target.csv
+2026-06-28 18:31:22,684 INFO Reading output\gm17_phase4_minimal_factor_pilot_v2_20260628_171204\evaluation_v2_per_target_by_variant.csv
+2026-06-28 18:31:22,692 INFO Reading output\gm17_phase4_minimal_factor_pilot_v2_20260628_171204\pilot_v2_candidates_ranked.csv
+2026-06-28 18:31:23,191 INFO Selected 40 cases.
+2026-06-28 18:32:00,976 INFO Output directory: output\gm17_phase4_sar_structure_evidence_scout_20260628_183122
+2026-06-28 18:32:00,976 INFO Markdown summary: docs\gm17_phase4_sar_structure_evidence_scout_summary_20260628_183122.md
+2026-06-28 18:32:00,976 INFO Panels generated: 40
+2026-06-28 18:32:00,977 INFO SAR images read: 40
+2026-06-28 18:32:00,977 INFO Done.

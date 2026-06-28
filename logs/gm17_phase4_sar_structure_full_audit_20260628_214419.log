@@ -1,0 +1,20 @@
+2026-06-28 21:44:19,896 INFO GM17 Phase4S SAR structure full audit started.
+2026-06-28 21:44:19,896 INFO Interpreter expected by caller: D:\MINICONDA\envs\py311\python.exe
+2026-06-28 21:44:19,896 INFO Boundary: diagnostic separability audit only; no v3 ranking or selected output.
+2026-06-28 21:44:19,896 INFO Repair note: Repair 1: fixed panel queue status-column merge so an existing target-level image_read_status/path_status is preserved without pandas suffixing. This did not change inputs, feature definitions, thresholds, ranking, or audit logic.
+2026-06-28 21:44:19,897 INFO Reading output\gm17_phase4_minimal_factor_pilot_20260628_110447\pilot_candidates_ranked.csv
+2026-06-28 21:44:20,124 INFO Reading output\gm17_phase4_minimal_factor_pilot_20260628_110447\pilot_selected_rank1.csv
+2026-06-28 21:44:20,127 INFO Reading output\gm17_phase4_minimal_factor_pilot_20260628_110447\evaluation_per_target.csv
+2026-06-28 21:44:20,132 INFO Reading output\gm17_phase4_minimal_factor_pilot_v1_diagnostics_20260628_113224\diagnostic_per_target.csv
+2026-06-28 21:44:20,137 INFO Reading output\gm17_phase4_minimal_factor_pilot_v2_20260628_171204\pilot_v2_candidates_ranked.csv
+2026-06-28 21:44:20,456 INFO Reading output\gm17_phase4_minimal_factor_pilot_v2_20260628_171204\evaluation_v2_per_target_by_variant.csv
+2026-06-28 21:44:20,468 INFO Reading output\hermes_annotation_consolidation_2026-05-20\00_tables\final_gt_working.csv
+2026-06-28 21:44:20,473 INFO Reading output\hermes_annotation_consolidation_2026-05-20\00_tables\visibility_condition_working.csv
+2026-06-28 21:44:20,476 INFO A019 SAR path column selected: sar_pseudocolor_path
+2026-06-28 21:45:46,392 INFO Output directory: output\gm17_phase4_sar_structure_full_audit_20260628_214419
+2026-06-28 21:45:46,393 INFO Markdown summary: docs\gm17_phase4_sar_structure_full_audit_summary_20260628_214419.md
+2026-06-28 21:45:46,393 INFO Targets: 205
+2026-06-28 21:45:46,393 INFO Unique candidates: 4356
+2026-06-28 21:45:46,393 INFO SAR image read success rate: 1.0000
+2026-06-28 21:45:46,393 INFO Panel count: 45
+2026-06-28 21:45:46,393 INFO Support structure-only fixed pilot: True

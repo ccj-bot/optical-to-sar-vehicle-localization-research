@@ -1,0 +1,316 @@
+{
+  "experiment_id": "phase5B_first_diagnostic_run_v0",
+  "target_set_id": "phase4D_gm_rm017_205_target_set",
+  "route_config_id": "phase5B_diag_v0_predeclared",
+  "config_status": "frozen_before_generation",
+  "diagnostic_only_flag": true,
+  "config_intent": "first diagnostic proposal-generation configuration only; not an experiment result and not tuned from evaluation metrics",
+  "sources": {
+    "target_set_source": "output/gm17_phase4D_candidate_pool_ceiling_audit_20260629_001655/candidate_pool_ceiling_per_target.csv",
+    "shell_source_id": "gm17_temporal_inference_proxy",
+    "shell_source_path": "output/clean_no_gt_localizer_2026-05-31_boundary_tables/gm17_temporal_inference.csv",
+    "sar_image_source_id": "gm17_sarframes_gray_display_png",
+    "sar_image_source_path_policy": "D:/profile/research/data/GM_RM017/GM_RM017_SARframes_gray/<sar_frame>.png",
+    "sar_image_fallback_source_id": "gm17_sarframes_pseudocolor_display_png",
+    "sar_image_fallback_path_field": "sar_pseudocolor_path",
+    "valid_support_source_id": "image_bounds_only_display_png",
+    "coordinate_convention_id": "full_image_xy_display_png_v1",
+    "output_bundle_id": "phase5B_first_diagnostic_run_v0",
+    "leakage_audit_policy": "pre_inference_fields_only_no_A019_A021_GT_oracle_panel"
+  },
+  "allowed_input_fields": {
+    "phase4D_target_source": [
+      "target_identity",
+      "scene",
+      "sar_frame_num",
+      "gm17_track_id"
+    ],
+    "a005_temporal_proxy": [
+      "target_identity",
+      "scene",
+      "sar_frame",
+      "sar_frame_num",
+      "sar_pseudocolor_path",
+      "pred_cx",
+      "pred_cy",
+      "pred_w",
+      "pred_h",
+      "pred_r",
+      "pred_az",
+      "pred_cross",
+      "gm17_track_id"
+    ],
+    "image_source": [
+      "path_exists",
+      "png_width",
+      "png_height",
+      "pixel_values_for_future_generation_only"
+    ]
+  },
+  "forbidden_fields": [
+    "A019 final_*",
+    "A021 condition labels",
+    "GT boxes",
+    "oracle labels",
+    "IoU labels",
+    "center-error labels",
+    "panel review outcomes",
+    "post-hoc failure labels",
+    "selection_limited",
+    "pool_limited",
+    "oracle_usable",
+    "oracle_high_quality",
+    "best_iou",
+    "best_center_error",
+    "c3_rank1_iou",
+    "c3_rank1_center_error",
+    "c4_rank1_iou",
+    "c4_rank1_center_error",
+    "score",
+    "lr_score",
+    "sar_factor_score",
+    "temporal_factor_score",
+    "gm17_temporal_decision"
+  ],
+  "global_generation_limits": {
+    "max_total_proposals_per_target": 37,
+    "max_total_proposals_per_target_rationale": "27 shell-grid proposals plus 5 energy/contrast and 5 connected-component hypotheses keeps the first diagnostic bounded while allowing shell and SAR-evidence routes to coexist.",
+    "deduplicate_across_routes": true,
+    "deduplicate_across_routes_policy": "merge exact same route_config_id target_identity cx cy w h theta after full-image coordinate conversion; preserve all contributing route names in provenance",
+    "deduplicate_across_routes_rationale": "prevents accidental duplicate inflation without using GT or Phase5C metrics."
+  },
+  "shared_policies": {
+    "crop_policy_id": "a005_centered_512px_square_clipped_to_image_bounds_v0",
+    "crop_policy": {
+      "type": "square_crop_centered_on_a005_proxy_center",
+      "crop_size_px": 512,
+      "clip_to_image_bounds": true,
+      "store_crop_origin": true,
+      "rationale": "512 px gives SAR evidence room around the A005 proxy without turning the diagnostic into unconstrained full-image search; the value is fixed before any GT/oracle review."
+    },
+    "coordinate_policy": {
+      "output_coordinates": "full_image_xy",
+      "crop_coordinates_allowed_internally": true,
+      "must_store_crop_origin": true,
+      "rationale": "Phase5C evaluation and A005 proxy fields use full-image pixel coordinates, so crop-local evidence must be mapped back before output."
+    },
+    "valid_support_policy": {
+      "valid_support_source_id": "image_bounds_only_display_png",
+      "valid_x_min": 0,
+      "valid_y_min": 0,
+      "valid_x_max_exclusive": "image_width",
+      "valid_y_max_exclusive": "image_height",
+      "rationale": "no frozen fan-valid mask exists, so first-run A/B/C use image bounds only and avoid Route D fan/range claims."
+    },
+    "theta_policy": {
+      "theta_source": "a005_pred_heading_deg_metadata_only",
+      "theta_modes": [
+        "a005_pred_heading_deg"
+      ],
+      "theta_not_sar_derived": true,
+      "rationale": "first-round routes diagnose center/extent hypotheses; theta is carried only to satisfy schema and must not be interpreted as SAR long-axis evidence."
+    }
+  },
+  "route_list": [
+    "shell_grid",
+    "energy_contrast_peak",
+    "connected_component"
+  ],
+  "routes": {
+    "shell_grid": {
+      "enabled": true,
+      "role": "coverage_baseline",
+      "proposal_source": "shell_grid",
+      "max_proposals_per_target": 27,
+      "max_proposals_per_target_rationale": "3 scales times a 3x3 symmetric offset grid gives a bounded coverage baseline without dense brute-force search.",
+      "crop_policy_id": "a005_centered_512px_square_clipped_to_image_bounds_v0",
+      "shell_margin_policy": {
+        "type": "crop_limited_by_shared_crop_policy",
+        "bbox_shell_bounds_generated": false,
+        "center_offsets_must_remain_inside_crop": true,
+        "rationale": "shell bounds are not precomputed; the A005-centered crop defines the local diagnostic search region."
+      },
+      "scale_set": [
+        {
+          "w_scale": 0.75,
+          "h_scale": 0.75,
+          "label": "compact"
+        },
+        {
+          "w_scale": 1.0,
+          "h_scale": 1.0,
+          "label": "a005_prior"
+        },
+        {
+          "w_scale": 1.25,
+          "h_scale": 1.25,
+          "label": "expanded"
+        }
+      ],
+      "scale_set_rationale": "three symmetric extent hypotheses test smaller, prior-sized, and larger support without tuning to target outcomes.",
+      "offset_grid": {
+        "dx_multipliers_of_pred_w": [
+          -0.5,
+          0.0,
+          0.5
+        ],
+        "dy_multipliers_of_pred_h": [
+          -0.5,
+          0.0,
+          0.5
+        ],
+        "grid_shape": "3x3",
+        "clip_centers_to_crop_and_image_bounds": true
+      },
+      "offset_grid_rationale": "offsets are relative to A005 prior size, symmetric around the proxy center, and fixed before any evaluation.",
+      "theta_modes": [
+        "a005_pred_heading_deg_metadata_only"
+      ],
+      "theta_modes_rationale": "no rotated or SAR-derived orientation claim is made in the first diagnostic round.",
+      "uses_sar_pixel_values": false,
+      "uses_gt_or_eval": false
+    },
+    "energy_contrast_peak": {
+      "enabled": true,
+      "role": "sar_center_hypothesis",
+      "proposal_source": "energy_contrast_peak",
+      "max_proposals_per_target": 5,
+      "max_proposals_per_target_rationale": "five peaks are enough to expose multiple SAR-supported center hypotheses while preventing the route from becoming dense search.",
+      "energy_peak_count": 5,
+      "energy_peak_count_rationale": "fixed top-k count avoids threshold tuning from Phase5C metrics.",
+      "local_background_policy": {
+        "type": "crop_robust_background",
+        "statistic": "median_and_mad_on_selected_grayscale_crop",
+        "minimum_mad": 1.0,
+        "border_exclusion_px": 8,
+        "rationale": "robust crop-local contrast is simple, reproducible, and does not require GT labels; border exclusion reduces crop-edge artifacts without tuning to outcomes."
+      },
+      "peak_suppression_policy": {
+        "type": "non_max_suppression",
+        "radius_px": 32,
+        "radius_rationale": "32 px is smaller than the A005 vehicle-width prior scale but large enough to avoid repeated samples on one bright blob.",
+        "sort_key": "local_contrast_then_intensity",
+        "tie_breaker": "distance_to_shell_center_ascending"
+      },
+      "window_extent_policy": {
+        "type": "a005_prior_extent",
+        "w_scale": 1.0,
+        "h_scale": 1.0,
+        "rationale": "energy peaks define centers only; using the A005 prior extent prevents this route from silently tuning box size."
+      },
+      "uses_sar_pixel_values": true,
+      "uses_gt_or_eval": false
+    },
+    "connected_component": {
+      "enabled": true,
+      "role": "visible_support_extent_hypothesis",
+      "proposal_source": "connected_component",
+      "max_proposals_per_target": 5,
+      "max_proposals_per_target_rationale": "five components cap clutter-driven output while leaving room for fragmented visible SAR support.",
+      "component_threshold_family": {
+        "methods": [
+          "otsu_within_crop",
+          "percentile_90_within_crop"
+        ],
+        "rationale": "Otsu and a fixed high-percentile threshold are simple, label-free threshold families; no Phase5C metric selects between them."
+      },
+      "component_size_filter": {
+        "min_area_fraction_of_a005_prior_box": 0.05,
+        "max_area_fraction_of_crop": 0.50,
+        "min_side_px": 4,
+        "rationale": "relative area limits avoid tiny speckle and full-crop clutter while staying tied to prior/crop scale rather than GT boxes."
+      },
+      "component_selection_policy": {
+        "sort_order": [
+          "area_descending",
+          "distance_to_shell_center_ascending"
+        ],
+        "max_components_after_filter": 5,
+        "rationale": "selection is deterministic and inference-side; it does not use IoU, center error, or condition labels."
+      },
+      "component_merge_policy": {
+        "type": "no_merge_v0_report_fragmentation_flag",
+        "rationale": "first run records fragmentation instead of tuning merge rules from post-hoc quality metrics."
+      },
+      "boundary_touching_policy": {
+        "keep_component": true,
+        "add_uncertainty_flag": "boundary_touching_component",
+        "rationale": "fan-edge and partial support may touch boundaries, so first run should flag rather than discard these cases."
+      },
+      "uses_sar_pixel_values": true,
+      "uses_gt_or_eval": false
+    }
+  },
+  "disabled_routes": {
+    "radial_range_profile": {
+      "enabled": false,
+      "reason": "fan/range convention and valid support mapping not frozen"
+    },
+    "ridge_long_axis": {
+      "enabled": false,
+      "reason": "orientation/long-axis convention not ready for first center_extent diagnostic"
+    },
+    "learned_model": {
+      "enabled": false,
+      "reason": "training/calibration held"
+    },
+    "factor_graph_over_generated_proposals": {
+      "enabled": false,
+      "reason": "Phase5D only after proposal ceiling audit"
+    },
+    "active_c3_c4_integration": {
+      "enabled": false,
+      "reason": "Phase5B diagnostic outputs must remain separate from C3/C4"
+    },
+    "hybrid_shell_sar_ranker": {
+      "enabled": false,
+      "reason": "hybrid scoring can become hidden ranker tuning before proposal ceiling audit"
+    }
+  },
+  "output_schema": {
+    "proposal_candidates_csv_required_fields": [
+      "proposal_id",
+      "target_identity",
+      "scene",
+      "sar_frame_num",
+      "gm17_track_id",
+      "cx",
+      "cy",
+      "w",
+      "h",
+      "theta",
+      "proposal_source",
+      "route_name",
+      "route_config_id",
+      "optical_prior_score",
+      "sar_observation_score",
+      "uncertainty_flags",
+      "parent_shell_id",
+      "source_crop_id",
+      "provenance",
+      "leakage_audit_status",
+      "diagnostic_only_flag"
+    ],
+    "proposal_id_policy": "new Phase5B proposal ids only; do not reuse A001 candidate_id",
+    "diagnostic_only_flag_required_value": true
+  },
+  "post_hoc_phase5C_boundary": {
+    "a019_a021_join_allowed_only_after_proposal_output_frozen": true,
+    "metrics_cannot_modify_same_run_config": true,
+    "phase5C_outputs_must_remain_separate_from_phase5B_generation": true,
+    "forbidden_feedback": [
+      "changing v0 thresholds after seeing Phase5C metrics",
+      "moving generated proposals into C3/C4",
+      "using condition labels to select route parameters"
+    ]
+  },
+  "boundary_assertions": {
+    "proposal_generated_by_this_config_creation": false,
+    "candidate_generated_by_this_config_creation": false,
+    "a019_a021_joined_by_this_config_creation": false,
+    "gt_or_oracle_metrics_computed_by_this_config_creation": false,
+    "threshold_tuning_performed": false,
+    "training_performed": false,
+    "calibration_performed": false
+  }
+}

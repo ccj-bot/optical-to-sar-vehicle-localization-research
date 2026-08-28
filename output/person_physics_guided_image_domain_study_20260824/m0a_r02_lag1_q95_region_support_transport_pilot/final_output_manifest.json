@@ -1,0 +1,229 @@
+{
+  "schema": "PERSON_M0A_FINAL_OUTPUT_MANIFEST_V1",
+  "created_at": "2026-08-28T15:42:15+08:00",
+  "study_role": "M0_SAR_TEMPORAL_PREREQUISITE",
+  "final_m0a_state": "M0A_REGION_SUPPORT_TRANSPORT_WITH_P0_GAIN",
+  "starting_head": "edd7c1ba91577f18fa54877f82ee92eb779aab33",
+  "protocol_sha256": "0A2116AD3FCBF7C77751B365BFE0063C7FD91A6C77AE64346FAE80D52281E025",
+  "pre_reference_freeze_payload_sha256": "99FE416DCDB9A817BDF5D79DC76CAB1F0D691119B5DC2C740132B0619F602831",
+  "pair_count": 22,
+  "frame_count": 23,
+  "q95_node_count": 1117,
+  "matrix_rows": 102996,
+  "matched_alternative_rows": 257490,
+  "reference_supported_base_edges": 6,
+  "reference_supported_all_shared_or_unresolved": true,
+  "synthetic_tests": "PASS_5_OF_5",
+  "pre_reference_validation": "PASS_14_OF_14",
+  "final_validation": "PASS_12_OF_12",
+  "reference_loaded_only_after_pre_reference_freeze": true,
+  "prohibited_claims": {
+    "optical_sar_motion_consistency_established": false,
+    "cross_modal_ambiguity_reduced": false,
+    "person_dynamic_association_established": false,
+    "runtime_identity_established": false,
+    "final_sar_localization_established": false
+  },
+  "files": [
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/m0a_r02_lag1_q95_region_support_transport_pilot/execution_ledger.json",
+      "sha256": "6BD9A8867674E6560939E8F6DD8E4D3D31CC1BF6BACAAC3ABE739044388EB7B5",
+      "bytes": 1800
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/m0a_r02_lag1_q95_region_support_transport_pilot/figures/post_reference/01_p0_clearly_better_than_zero.png",
+      "sha256": "D5D46639A63CFAC997F4CC238EBCDC8EA299FE053F44EA94287D80801E1E954C",
+      "bytes": 1081125
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/m0a_r02_lag1_q95_region_support_transport_pilot/figures/post_reference/02_p0_approx_equal_zero.png",
+      "sha256": "FC390BB59D7C16BDACF2C2FBD012607C656CD66E539B8A43217D3F80515E2C01",
+      "bytes": 3123888
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/m0a_r02_lag1_q95_region_support_transport_pilot/figures/post_reference/03_zero_better_than_p0.png",
+      "sha256": "0F219E492F11E740E326BD14A876690CC627D0B681270197E58E99EE68EDF5FB",
+      "bytes": 1696692
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/m0a_r02_lag1_q95_region_support_transport_pilot/figures/post_reference/04_strong_q95_continuation.png",
+      "sha256": "AFFD5B7039EE0BB4EC051E034A5C815B3000813C5F1BAB5B9B495D62FA084A22",
+      "bytes": 1766139
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/m0a_r02_lag1_q95_region_support_transport_pilot/figures/post_reference/05_q95_weak_q90_envelope_continues.png",
+      "sha256": "897365B9DE5B6C7EA652A2F9E55CC84CA007A44FFDEDCC19533FF535BAF48532",
+      "bytes": 1845251
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/m0a_r02_lag1_q95_region_support_transport_pilot/figures/post_reference/06_q975_core_changes_q95_continues.png",
+      "sha256": "3BB7EDD3785A88D528AC8BA5521A759F89290F958FCC695A20888D2243249765",
+      "bytes": 2171542
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/m0a_r02_lag1_q95_region_support_transport_pilot/figures/post_reference/07_split_like.png",
+      "sha256": "FA3C0D6FD4BFBFFF065F9DBB964D6A6A90BC34BC15EFA25DF2AACA106206273D",
+      "bytes": 1034530
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/m0a_r02_lag1_q95_region_support_transport_pilot/figures/post_reference/08_merge_like.png",
+      "sha256": "8C9869AEC78E85950056814469C62BD24A257071477295BC28665D81F86D403A",
+      "bytes": 962007
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/m0a_r02_lag1_q95_region_support_transport_pilot/figures/post_reference/09_boundary_or_truncated.png",
+      "sha256": "91D657FC5B6CBDDEAC54CFE21F9F81FB21E1B8A06A3C03BE77AF8F13AD718D98",
+      "bytes": 483072
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/m0a_r02_lag1_q95_region_support_transport_pilot/figures/post_reference/10_reference_supported_ranks_well.png",
+      "sha256": "1B4EE262EEDEF4AC77399380C402E4BC124DA2FA119928642E56C9A4F065435E",
+      "bytes": 1406671
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/m0a_r02_lag1_q95_region_support_transport_pilot/figures/post_reference/11_reference_supported_ranks_poorly.png",
+      "sha256": "A6AEF422E9139490D39BEF9B9A4785DFA99D4E5F5DC6D22A490D9B22074E440E",
+      "bytes": 2058646
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/m0a_r02_lag1_q95_region_support_transport_pilot/figures/post_reference/12_matched_alternative_deceptively_strong.png",
+      "sha256": "C9998EC9863F655A4BEFF4BFF46945BAF398765B3443805E55E7A27CCD0EDB1B",
+      "bytes": 2058592
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/m0a_r02_lag1_q95_region_support_transport_pilot/figures/pre_reference/01_p0_clearly_better_than_zero.png",
+      "sha256": "5F83184ADA10533D6B6EC9EB1455EC17B3052BF27F945DCB93763BE51C9E2577",
+      "bytes": 1080429
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/m0a_r02_lag1_q95_region_support_transport_pilot/figures/pre_reference/02_p0_approx_equal_zero.png",
+      "sha256": "61A739B4BFFB55E737B68F1D4290152AC7A7CB6A181CCEF1588EC661A0705365",
+      "bytes": 3117149
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/m0a_r02_lag1_q95_region_support_transport_pilot/figures/pre_reference/03_zero_better_than_p0.png",
+      "sha256": "E71676FE28617CF8BF7E0904F811B5E7CA42BBDB1D9F79A3B9574F350A84E3EC",
+      "bytes": 1695990
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/m0a_r02_lag1_q95_region_support_transport_pilot/figures/pre_reference/04_strong_q95_continuation.png",
+      "sha256": "E7AD9165CEA7D9F9AFE0E34AC5578189E43F3E06B02BC1CA60C68F885A84D88B",
+      "bytes": 2150188
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/m0a_r02_lag1_q95_region_support_transport_pilot/figures/pre_reference/05_q95_weak_q90_envelope_continues.png",
+      "sha256": "B10E7E62035F93AE22D1DB833EC8E17DCBC48C4994AFBC3AAC96CCC98A8504B3",
+      "bytes": 1869109
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/m0a_r02_lag1_q95_region_support_transport_pilot/figures/pre_reference/06_q975_core_changes_q95_continues.png",
+      "sha256": "CE4126F9967B937B109968741341D537CED965D004BCE8A5A1DC2A311174D159",
+      "bytes": 2163009
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/m0a_r02_lag1_q95_region_support_transport_pilot/figures/pre_reference/07_split_like.png",
+      "sha256": "A811314E187FB92AF425D2B15DA5B6DE5224F8FE7E9C3600C17D1F52FF0E4172",
+      "bytes": 1033841
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/m0a_r02_lag1_q95_region_support_transport_pilot/figures/pre_reference/08_merge_like.png",
+      "sha256": "9BEB004F1A8AD1433A8A82FAB967E89D3E3C39551C1CA57EEB122B8E47F42B30",
+      "bytes": 1049929
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/m0a_r02_lag1_q95_region_support_transport_pilot/figures/pre_reference/09_boundary_or_truncated.png",
+      "sha256": "6FBCA4F8D2F7E518DF86F2827ACB4F2B5B652C0AE38961ED2423637BFE9E51D6",
+      "bytes": 481916
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/m0a_r02_lag1_q95_region_support_transport_pilot/final_validation.json",
+      "sha256": "5443FE501312B3177810BAC90478BE96652593C47528183E82C773B0A1CFA55D",
+      "bytes": 2287
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/m0a_r02_lag1_q95_region_support_transport_pilot/M0A_R02_LAG1_Q95_REGION_SUPPORT_TRANSPORT_PROTOCOL_FROZEN_BEFORE_RUN.md",
+      "sha256": "0A2116AD3FCBF7C77751B365BFE0063C7FD91A6C77AE64346FAE80D52281E025",
+      "bytes": 14334
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/m0a_r02_lag1_q95_region_support_transport_pilot/M0A_R02_LAG1_Q95_REGION_SUPPORT_TRANSPORT_REPORT.html",
+      "sha256": "DA6432C4597A2B05BBD9D89118EC6701BCB154FDF0B3175100DC9AE1C2F58CB6",
+      "bytes": 7926
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/m0a_r02_lag1_q95_region_support_transport_pilot/post_reference_case_registry.csv",
+      "sha256": "2DB194CF960017AC4A57E07455FD74FCCA843D25F6CCFA831A59E7D1CA16EA27",
+      "bytes": 1092
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/m0a_r02_lag1_q95_region_support_transport_pilot/post_reference_matched_alternative_evaluation.csv",
+      "sha256": "850182F2492C633D537EA211408AAB48D4A58E3F10D4EC91FF2497C69452F104",
+      "bytes": 20897
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/m0a_r02_lag1_q95_region_support_transport_pilot/post_reference_summary.json",
+      "sha256": "5A6C56A74054BB20DCA94DF157E75D7E87C5EB718A1AE5ED580FC4072C4FA6FD",
+      "bytes": 3686
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/m0a_r02_lag1_q95_region_support_transport_pilot/post_reference_supported_explanations.csv",
+      "sha256": "741C5316C65F66CD1BAC55D5320C22A862EA8766A864675E8B56A9E67B58FC09",
+      "bytes": 21444
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/m0a_r02_lag1_q95_region_support_transport_pilot/pre_reference_case_registry.csv",
+      "sha256": "99EC7EA9F9D5D0F2313661140D3BB7F7832487F6982BBC73CF4A6C22647CDCFF",
+      "bytes": 2768
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/m0a_r02_lag1_q95_region_support_transport_pilot/pre_reference_compatibility_matrix.csv",
+      "sha256": "7AEFF02A0026D79A073F35DC2CCEBCE9000433FCE686165EAA80ACD3A906B67A",
+      "bytes": 102273906
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/m0a_r02_lag1_q95_region_support_transport_pilot/pre_reference_execution_ledger.json",
+      "sha256": "698E043BD25F873602FFA222C2F7604E1BB2BD87D003C51E1416A4E0D59992EF",
+      "bytes": 1179
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/m0a_r02_lag1_q95_region_support_transport_pilot/pre_reference_manifest.json",
+      "sha256": "56476D020013A36D845DB279CBE5A549071F8B22A4BF76A2DF9FD02ECB8722BF",
+      "bytes": 2428
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/m0a_r02_lag1_q95_region_support_transport_pilot/pre_reference_matched_alternative_sets.csv",
+      "sha256": "444A75C272E9A3AF112496C98A861BC6CE162FA763234F6791288150D4E4B65F",
+      "bytes": 94686740
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/m0a_r02_lag1_q95_region_support_transport_pilot/pre_reference_output_hashes.json",
+      "sha256": "567CAF82773F9A73BBD126A24D15AB19BF7D6C3D9E8A09CF56377CDB14C6156A",
+      "bytes": 5285
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/m0a_r02_lag1_q95_region_support_transport_pilot/pre_reference_region_nodes.csv",
+      "sha256": "68A8D80AFD92468829B594B50F2DDD4685F4C3FB9B34DCF98DD666C89CA7F950",
+      "bytes": 407699
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/m0a_r02_lag1_q95_region_support_transport_pilot/pre_reference_validation.json",
+      "sha256": "78E52542BEC380DAC49EF40EB18F38F7FC47EA7FF65046E21C0F0E8CDFBC3AB3",
+      "bytes": 2395
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/m0a_r02_lag1_q95_region_support_transport_pilot/protocol_freeze.json",
+      "sha256": "79DF5D34A3A34EBB2D318AA327F30EA658DF74CEBE38126AA481C43DBD226C5B",
+      "bytes": 19544
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/m0a_r02_lag1_q95_region_support_transport_pilot/report_browser_qa_top.png",
+      "sha256": "CB994B06A33238A50D3A145FE5759B7485C6047E07BB65CDC8399117F4E8C969",
+      "bytes": 90514
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/m0a_r02_lag1_q95_region_support_transport_pilot/warp_synthetic_tests.json",
+      "sha256": "7E020B62BBDD14FEBD524E7B2F6D3F32C5ED144BA346245C25520AFA83D4422C",
+      "bytes": 5368
+    }
+  ]
+}

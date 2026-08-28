@@ -1,0 +1,89 @@
+{
+  "schema": "PERSON_M0A_FINAL_VALIDATION_V1",
+  "status": "PASS",
+  "checks_passed": 12,
+  "checks_total": 12,
+  "checks": [
+    {
+      "name": "pre_reference_validation_still_passes",
+      "status": "PASS",
+      "details": "PASS"
+    },
+    {
+      "name": "pre_reference_freeze_payload_hash",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "name": "pre_reference_files_unchanged",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "name": "required_post_reference_files",
+      "status": "PASS",
+      "details": []
+    },
+    {
+      "name": "supported_p0_zero_parity",
+      "status": "PASS",
+      "details": {
+        "rows": 12
+      }
+    },
+    {
+      "name": "deterministic_supported_ranks",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "name": "manual_centers_post_only_materialized",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "name": "matched_alternatives_preserved_after_reveal",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "name": "final_state_and_semantic_boundary",
+      "status": "PASS",
+      "details": "M0A_REGION_SUPPORT_TRANSPORT_WITH_P0_GAIN"
+    },
+    {
+      "name": "real_case_figure_count",
+      "status": "PASS",
+      "details": {
+        "pre": 9,
+        "post": 12
+      }
+    },
+    {
+      "name": "post_reference_case_registry",
+      "status": "PASS",
+      "details": [
+        "REFERENCE_SUPPORTED_RANKS_WELL",
+        "REFERENCE_SUPPORTED_RANKS_POORLY",
+        "MATCHED_ALTERNATIVE_DECEPTIVELY_STRONG"
+      ]
+    },
+    {
+      "name": "reference_reveal_order",
+      "status": "PASS",
+      "details": [
+        "PROTOCOL_AND_CODE_HASHES_VERIFIED",
+        "SYNTHETIC_WARP_TESTS_PASS_5_OF_5",
+        "RUNTIME_INPUTS_LOADED_WITHOUT_REFERENCE",
+        "Q95_NODES_MATERIALIZED",
+        "P0_AND_ZERO_COMPLETE_PAIR_MATRICES_MATERIALIZED",
+        "MATCHED_STRUCTURAL_ALTERNATIVES_FROZEN",
+        "PRE_REFERENCE_CASE_REGISTRY_FROZEN",
+        "REFERENCE_NOT_LOADED_PRE_REFERENCE_PHASE_CLOSED",
+        "PRE_REFERENCE_OUTPUTS_HASH_FROZEN",
+        "MANUAL_REFERENCE_REVEALED_AFTER_FREEZE",
+        "POST_REFERENCE_EVALUATION_COMPLETE"
+      ]
+    }
+  ]
+}

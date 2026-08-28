@@ -659,3 +659,79 @@
 - README 已加入上述两份文档入口并改为当前权威状态。两份 M0 文档均为 `NOT_EXECUTED`；本轮没有生成新实验产物。
 - 下一真正最小可执行实验建议为 `M0A_R02_LAG1_Q95_SUPPORT_WARP_PILOT`：只用已有 comparable adjacent pairs，冻结一个 soft forward mask-warp contract，枚举全部 q95→q95 edges，比较 P0/zero/time-shift/matched-wrong，先物化再评价；不做 tracker 或 identity。
 - Git 提交应使用 message `Establish P1E observation interface exploratory baseline`，tag `p1e-observation-interface-baseline-20260828`；提交 SHA、push 与最终 divergence 在完成 staged diff 审阅后由最终交付记录。
+
+## M0A R02 lag1 q95 region-support transport pilot 启动（2026-08-28）
+
+- 起始 baseline/HEAD=`edd7c1ba91577f18fa54877f82ee92eb779aab33`，branch=`main`，tag=`p1e-observation-interface-baseline-20260828`，`origin/main` 一致，起始 divergence `0/0`。
+- 本轮科学角色固定为 `M0_SAR_TEMPORAL_PREREQUISITE`：只检验 R02 adjacent lag1 q95 region-support continuity、结构匹配 alternatives 的排序信息，以及 frozen P0 相对 ZERO transport 的增量。
+- 明确不验证 Optical–SAR motion consistency，不报告跨模态 ambiguity reduction，不进入 raw optical angular dynamics、M0B、tracker、identity assignment、classifier、score fusion 或 SAR localization。
+- 活动目录固定为 `D:\profile\research\workspace`；解释器固定为 `D:\MINICONDA\envs\py311\python.exe`；不读取或依赖 `old_work`。
+- R02 response-region 当前覆盖 F472–F494 共 23 帧；B0R lag1 M1 为 22/22 model available 且 `pair_comparable=True`。
+- 正式 pre-run protocol 已先建立于 `output\person_physics_guided_image_domain_study_20260824\m0a_r02_lag1_q95_region_support_transport_pilot\M0A_R02_LAG1_Q95_REGION_SUPPORT_TRANSPORT_PROTOCOL_FROZEN_BEFORE_RUN.md`；当前尚为 implementation-hash 待填状态，任何 synthetic test 或数据实验均未运行。
+- warp 计划收窄为 frozen lag1 M1 source→destination OpenCV soft affine occupancy warp；必须先通过 identity、integer、subpixel、boundary-loss、P0 point-vs-mask 5 项 synthetic tests，并独立保存 source-total 与 conditional-valid denominators。
+
+## M0A protocol/code 正式冻结、等待运行（2026-08-28 14:52 +08:00）
+
+- 解释器固定为 `D:\MINICONDA\envs\py311\python.exe`；活动目录仍为 `D:\profile\research\workspace`，未读取或依赖 `old_work`。
+- protocol 状态已从 `PRE_IMPLEMENTATION_DRAFT_NOT_RUN` 改为 `FROZEN_BEFORE_RUN`；协议 SHA256=`9C461A58659B775D0C21B9E35403A82E859FA0BB383335D6246202861E5DB56F`。
+- `protocol_freeze.json` 已物化：冻结 starting HEAD、22 个 adjacent lag1 pairs、4 个 implementation hashes、56 个逐文件 dependency hashes、工具链版本与 `reference_loaded=false` policy。
+- 四个实现 SHA256：runner=`6B2A193D11B15DD8B5FC633925AB70DB0282983605D4A864BCE41309DA63DE40`；synthetic tests=`AA82E876F4E0D8103EEB25100C966C261A7339B2C23C0EEEF8318D3723297374`；independent validator=`B0523DFAC749F92F3DF9FE7DBCB18995F6853BCECCF3DFD8C8F50F868812C018`；renderer/report=`54656541AC38DF4C32D143AC1E8E1E62BDC898A5FA9C1CC3850ECFBD3779F945`。
+- freeze 前已修正 CSV boolean parsing 与 supported-rank tie break；同 retention 时固定按 destination region ID 升序。源码 compile/import read-test 均通过，尚未生成 synthetic 或实验结果。
+
+## M0A preflight cardinality 修正并重新冻结（2026-08-28）
+
+- 首次 synthetic 命令在第 5 项读取 R02 runtime inputs 时，于 F477 被错误的全帧常数断言阻断；metadata 与按冻结 valid-mask 公式重算逐帧完全一致，F477/F478/F484/F490 为 `364950`，其余为 `364951`。这不是 warp 数值失败，也没有写出 `warp_synthetic_tests.json` 或任何实验矩阵。
+- 最小修复仅移除 `EXPECTED_VALID_PIXELS=364951` 的跨帧常数断言；继续保留每帧重算值必须与该帧 `omega_single_pixel_count` 完全一致的审计。没有改 valid-mask 公式、P0、warp、descriptor、control 或 outcome rule。
+- 已在任何正式 synthetic/实验结果生成前重新冻结为 `REV1_AFTER_VALID_MASK_CARDINALITY_ASSERTION_FIX`：runner SHA256=`752046236AAC98D0B12CB878193F923A702D83936BB57903425E489D13803EA0`，新 protocol SHA256=`2B14EDC408AFFDF153ACACDEE110FA0A25BB41F481BFB853D7F2970DB17CD311`；其余 3 个实现及全部输入哈希不变。
+
+## M0A pre-reference 图像冻结范围补全（2026-08-28）
+
+- 首次 pre-reference 物化得到预期 23 帧、22 pairs、1117 nodes、102,996 matrix rows 和 257,490 matched rows，且未加载 reference；但复核 freeze 函数发现其未把 9 张 pre-reference case PNG 纳入 hash freeze。
+- 因 reference 尚未 reveal，该批表仅作为预检产物，不作为正式冻结输出。已补充“先渲染 9 张无人工 overlay 病例图→独立验证→表与图一起 freeze”的要求并重新冻结为 REV2。
+- REV2 protocol SHA256=`89D2AE5884255F7E0D03187E80BF49E99CFBD31F03C5BBC54F86EBC707FC74E3`；runner SHA256=`4ABA5781293EAE950DC78D530F33FC5191B81B7163AFCEC0AD38BFC030213FDC`；validator SHA256=`70D77D3363FCE0F596A583921E2F910660C6E3AC044277DAAD658A3ED0365946`。synthetic tester、renderer 与 frozen inputs 不变；将从 synthetic/pre-reference 阶段重新运行。
+
+## M0A merge-like 可视化侧别修正（2026-08-28）
+
+- REV2 pre-reference 表重跑后，renderer 在 merge-like case 发现 registry 的 related IDs 是 source regions，而旧绘图路径错误按 destination region 查找并停止。该错误只影响未冻结的病例 PNG；matrix、matched sets、case selection 与 reference boundary 均未改变，manual reference 仍未加载。
+- 最小修复为 merge-like related IDs 在 source frame 绘制；split-like 与 post-reference alternative 仍在 destination frame 绘制。重新冻结为 REV3：protocol SHA256=`B85F9C4D42200B97B7E5374A05168904B5BB7848C06AAE6E10113ACE63042E43`，renderer SHA256=`C6AF40E4DDDEE7B06FC97AA0D1584C42FAE0007E260DF108D5C1A79DBC929FEE`；其余实现与输入哈希不变。
+
+## M0A independent validator 性能等价修正（2026-08-28）
+
+- REV3 已成功生成 9/9 pre-reference figures；独立 validator 未报科学检查错误，但逐 primary edge 扫描全部 51,498 条 P0 matrix，形成不必要的高复杂度。已停止该只读验证进程，未生成 validation JSON，reference 仍未加载。
+- 仅把 source pool 查找改成预建 `(pair_index, source_region_id)` 分组索引；structural distance、top-5 tie order、denominator checks 与 PASS 条件完全不变。
+- 重新冻结为 REV4：protocol SHA256=`0A2116AD3FCBF7C77751B365BFE0063C7FD91A6C77AE64346FAE80D52281E025`，validator SHA256=`F2E4297F2EBB6E9AA34FD33C52249F997607E76BA5918651DA0179A45539BDC6`；其余实现与输入哈希不变。
+
+## M0A R02 lag1 q95 region-support transport pilot 完成（2026-08-28）
+
+### 执行与完整性
+
+- 最终冻结 revision=`REV4_VALIDATOR_GROUP_INDEX_PERFORMANCE_ONLY`；protocol SHA256=`0A2116AD3FCBF7C77751B365BFE0063C7FD91A6C77AE64346FAE80D52281E025`。
+- 正式纳入 R02 F472–F494 共 23 帧、22/22 adjacent lag1 comparable pairs、1117 q95 nodes；完整 P0/ZERO matrix 各 51,498 rows，matched structural alternatives 257,490 rows。
+- 5/5 warp synthetic tests PASS：identity/integer/subpixel/boundary-loss 数值符合冻结定义；9 个真实 representative points 的 P0 point-prediction vs mask-warp 最大误差 `0.0155228 px < 0.05 px`。
+- pre-reference independent validation=`PASS 14/14`；完整矩阵 expected/actual 均 102,996，denominator 最大闭合误差 `1.11e-16`，matched structural distance 最大复算差 `8.88e-15`，禁止人工字段 0，9/9 pre-reference PNG 可读。
+- pre-reference 17 个表/manifest/ledger/validation/PNG 已在 reference reveal 前冻结，freeze payload SHA256=`99FE416DCDB9A817BDF5D79DC76CAB1F0D691119B5DC2C740132B0619F602831`；final validation=`PASS 12/12`，确认 reveal 后这些文件未变化。
+- reference reveal 后生成 12 张 post-reference case PNG、HTML、post tables/summary 和 execution ledger；Edge headless 1600×1100 首屏已实际检查，结论卡、denominator、q97.5/q90 与禁止结论边界正常显示。直接人工检查了 P0>ZERO、ZERO>P0、split-like、merge-like、deceptive alternative 5 张病例。
+
+### 主要结果
+
+- 冻结 outcome rule 得到 `M0A_REGION_SUPPORT_TRANSPORT_WITH_P0_GAIN`。6 个 reference-supported base edges 的 P0 q95 source-total retention median=`0.909324`，ZERO median=`0.841774`；P0−ZERO median=`+0.055026`，P0 better=`5/6`、ZERO better=`1/6`、tie=`0/6`。
+- supported P0 在同 source 全 destination pool 的 rank median=`1`；5/6 rank1，1/6 rank2。对 reference-unsupported frozen matched alternatives，P0 win/tie/loss=`29/0/1`，win rate=`96.7%`；ZERO win rate同样为 `96.7%`，说明 continuity 本身很强，而 P0-specific gain 是较小的附加量。
+- 仅有 3 个相邻 frame pairs（472→473、482→483、487→488）同时具备连续 q95 reference mapping，共 6 个 base edges；6/6 都支持两个 manual targets，`shared_or_unresolved=100%`。因此该 outcome 有明显 sample sparsity 与 shared-region 限制。
+- GT-blind 每 source 的最佳 P0 destination retention（1064 source nodes）median=`0.6838`，ZERO median=`0.6378`，best-delta median=`0`、mean=`+0.0293`；大量完整 matrix edges 为零交集，不能把 all-edge median 0 误写为 continuity failure。
+- supported q97.5→q97.5 median=`0.9001`，supported q90 envelope median=`0.9121`；相对 q95 median差约 `-0.0122/-0.0038`。它们主要揭示局部 core/envelope 重排，而不是稳定提高 aggregate retention。
+- supported edges 的 valid transport fraction 全部为 1，所以本 slice 中 source-total 与 conditional-valid 数值相同；boundary/truncated 分母公式已在全矩阵验证，但没有 reference-supported boundary evidence。
+
+### 真实病例与限制
+
+- F477→F478 `P0_CLEARLY_BETTER_THAN_ZERO`：P0 `0.8229` vs ZERO `0`，但 source q95 只有 6 pixels；它证明 warp direction/局部对齐可产生大差值，不代表稳健 PERSON continuity。
+- F491→F492 `ZERO_BETTER_THAN_P0`：P0 `0.3294` vs ZERO `1.0`，source 19 pixels；优先诊断小 region、region resegmentation 与 lag1 M1 尺度，不修改 P0。
+- F478→F479 split-like：1969-pixel extended source 对两个 destination lobes均有明显解释，主 edge P0 `0.4336`、ZERO `0.4190`，q90 `0.9075`；是 envelope continuity 明显高于单一 q95 lobe 的真实结构变化病例。
+- F479→F480 merge-like：主 edge P0 `0.9416`、ZERO `0.9245`，q97.5 `0.9693`；两个 source lobes进入同一 extended destination region，支持“merge-like image-domain response”描述，不支持物理目标融合或 identity conclusion。
+- F472→F473 P01/P02 supported edge：P0 q95 `0.2650`、ZERO `0.2685`、rank2；一个 frozen reference-unsupported matched alternative 达 `0.3134`，margin=`0.0484`。同时 q90 envelope=`0.8719`，表明弱层 continuity 强而 q95 主 region ordering 有一例被 alternative 反超。
+- deterministic `P0_APPROX_EQUAL_ZERO` 选到了 `0 vs 0`，因为全 matrix q75 为 0；boundary case 是 1-pixel truncated source。两者是病例选择受 sparse/tiny regions 支配的真实方法限制，应在未来协议中加入完全 GT-blind minimum support stratum，但本轮结果保持不改。
+
+### 停止点
+
+- 当前只能称为 SAR image-domain one-step region-support temporal prerequisite，不能称 Optical–SAR motion consistency：本轮没有 raw optical angular dynamics，没有 `Δtheta_optical↔Δtheta_SAR`，没有 GT-blind admissibility pruning，没有 assignment/identity，也没有 SAR range/box output。
+- 有理由讨论一个独立冻结、仍然最小的 M0B，因为 supported ordering 与 P0-specific gain 达到预注册条件；但必须以 6-edge/3-pair sparsity、100% shared explanations、tiny-region case-selection sensitivity 和 `TIME_SYNC_NOT_CALIBRATED` 为前置风险，不应直接进入 tracker 或最终定位。
+- 本轮到此停止：未运行 lag3/lag5、M0B、optical angular dynamics、tracker、Hungarian、identity assignment、classifier、score fusion 或 SAR localization；未读取/依赖 `old_work`，未修改原始图像/标注、冻结 P0/B0R/C0–C3 或人工 SAR reference。

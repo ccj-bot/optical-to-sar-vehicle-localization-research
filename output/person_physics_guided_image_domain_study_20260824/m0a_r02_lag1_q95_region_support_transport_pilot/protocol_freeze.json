@@ -1,0 +1,425 @@
+{
+  "schema": "PERSON_M0A_PROTOCOL_FREEZE_V1",
+  "status": "FROZEN_BEFORE_RUN",
+  "created_at": "2026-08-28T15:09:28+08:00",
+  "study_role": "M0_SAR_TEMPORAL_PREREQUISITE",
+  "starting_head": "edd7c1ba91577f18fa54877f82ee92eb779aab33",
+  "baseline_tag": "p1e-observation-interface-baseline-20260828",
+  "protocol_path": "output/person_physics_guided_image_domain_study_20260824/m0a_r02_lag1_q95_region_support_transport_pilot/M0A_R02_LAG1_Q95_REGION_SUPPORT_TRANSPORT_PROTOCOL_FROZEN_BEFORE_RUN.md",
+  "protocol_sha256": "0A2116AD3FCBF7C77751B365BFE0063C7FD91A6C77AE64346FAE80D52281E025",
+  "implementation_hashes": [
+    {
+      "path": "tasks/person_physics_guided_image_domain_study_20260824/run_m0a_r02_lag1_q95_region_support_transport.py",
+      "sha256": "4ABA5781293EAE950DC78D530F33FC5191B81B7163AFCEC0AD38BFC030213FDC",
+      "bytes": 67115
+    },
+    {
+      "path": "tasks/person_physics_guided_image_domain_study_20260824/test_m0a_mask_warp.py",
+      "sha256": "AA82E876F4E0D8103EEB25100C966C261A7339B2C23C0EEEF8318D3723297374",
+      "bytes": 6815
+    },
+    {
+      "path": "tasks/person_physics_guided_image_domain_study_20260824/validate_m0a_r02_lag1_q95_region_support_transport.py",
+      "sha256": "F2E4297F2EBB6E9AA34FD33C52249F997607E76BA5918651DA0179A45539BDC6",
+      "bytes": 14198
+    },
+    {
+      "path": "tasks/person_physics_guided_image_domain_study_20260824/render_m0a_r02_lag1_q95_region_support_report.py",
+      "sha256": "C6AF40E4DDDEE7B06FC97AA0D1584C42FAE0007E260DF108D5C1A79DBC929FEE",
+      "bytes": 20331
+    }
+  ],
+  "dependency_hashes": [
+    {
+      "path": "tasks/person_physics_guided_image_domain_study_20260824/run_p0_common_apparent_motion.py",
+      "sha256": "0AB671B6A33A48CA2E3160A201629FA2DD341EF052A29B8D2CCBC2DFB26DCFD8",
+      "bytes": 79765
+    },
+    {
+      "path": "tasks/person_physics_guided_image_domain_study_20260824/run_p1e_candidate_recall_audit.py",
+      "sha256": "84CCAEBB9A195D184B6C34393CC71A7699E5F190D4D5FC253C16E337855CF0F8",
+      "bytes": 40131
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/p1e_sar_only_response_interface/b0r_minimal/b0r_model_parameters_R02_R03.jsonl",
+      "sha256": "265ADC67D62C466F2D9523FDD06F0503BC9B4AE1343D1A63CCCC3D5FE8FF5E2D",
+      "bytes": 240069
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/p1e_sar_only_response_interface/b0r_minimal/b0r_pair_metrics_R02_R03.csv",
+      "sha256": "862BA1FEEE5A4A540DA03230F8A15192DE117BA002AB6FE67C2E8C2EFF0D042C",
+      "bytes": 162372
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/p1e_sar_only_response_interface/b0r_minimal/b0r_pair_comparability_R02_R03.csv",
+      "sha256": "4D0B454A7131212221AD3911B8A9652B93BF0BECDC35F1B9E54B19B4F5735D13",
+      "bytes": 28699
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/p1e_sar_only_response_interface/runtime_track_response_region_minimal_v1/response_region_table_pre_reference.csv",
+      "sha256": "A2BB425C366EA0DE461C427113E8E836A556F65250677146B6F26129E853C339",
+      "bytes": 27371729
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/p1e_sar_only_response_interface/shell_uncertainty_region_topology_v1/optical_shell_uncertainty_decomposition_pre_reference.csv",
+      "sha256": "2AE24955FD8A4989A04DE38D91F2671BA6D6741DD7F6EE3FB09068BBEA5E3854",
+      "bytes": 12101707
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/p1e_sar_only_response_interface/shell_uncertainty_region_topology_v1/gt_blind_region_nodes_pre_reference.csv",
+      "sha256": "A475A73F20E96F0CA95D4902B8F940E494CB7424EE39B75C18CAEBCC48D46E8D",
+      "bytes": 82904922
+    },
+    {
+      "path": "output/pseudocolor_azimuth_calibration_20260803/geometry/fan_geometry_report.json",
+      "sha256": "B8A166D2ABCF57B1B3868692651D68610B5FA5B135E6D0BC48DC1D2CDB3F5A93",
+      "bytes": 18859
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/p1e_sar_only_response_interface/candidate_recall_semantic_split_v1/single_frame_candidate_recall/manual_reference_candidate_interpretation_v2.csv",
+      "sha256": "796F20EB3080C5B45CDEBBCC71584CC95C65691F056D46C4A31704A3D86E8EC7",
+      "bytes": 405203
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/p1e_sar_only_response_interface/runtime_track_response_region_minimal_v1/response_region_masks/R02ZF_SARF000472.npz",
+      "sha256": "D8FB25424CA7C2B5D3ACF63B352FBAF779F88C0DB6CFB97EAB619A11FE6ABDEE",
+      "bytes": 21143
+    },
+    {
+      "path": "output/pseudocolor_labelstudio_prep_20260722/frames/sar_pseudocolor/R02ZF/frame_000472_t015733ms.jpg",
+      "sha256": "6C88A27146CD669B40D5E8BEBD5AC060842DBB18B7AEAAA71A2E6E1ADC11F7F9",
+      "bytes": 202522
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/p1e_sar_only_response_interface/runtime_track_response_region_minimal_v1/response_region_masks/R02ZF_SARF000473.npz",
+      "sha256": "B672687CEEF4730E1F942C789DB5ABF086F2BB1CB60308BE564F62B495574F46",
+      "bytes": 20840
+    },
+    {
+      "path": "output/pseudocolor_labelstudio_prep_20260722/frames/sar_pseudocolor/R02ZF/frame_000473_t015767ms.jpg",
+      "sha256": "C206D271326F22C6D08D4F318EDE3392C8A6A10AADD8CC5DA4BE4617E330712A",
+      "bytes": 191217
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/p1e_sar_only_response_interface/runtime_track_response_region_minimal_v1/response_region_masks/R02ZF_SARF000474.npz",
+      "sha256": "B20C01ECF92ED8A4665F5E695DBA64C03E69A29E12C4FD10AB946436651F2ABD",
+      "bytes": 19840
+    },
+    {
+      "path": "output/pseudocolor_labelstudio_prep_20260722/frames/sar_pseudocolor/R02ZF/frame_000474_t015800ms.jpg",
+      "sha256": "21D8FACE6617B438658A50D3D6C84266A30828A4709E23D8E38EEBF652E0799C",
+      "bytes": 188654
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/p1e_sar_only_response_interface/runtime_track_response_region_minimal_v1/response_region_masks/R02ZF_SARF000475.npz",
+      "sha256": "3DB6A9CD35C66D76C241C0A5DE054E8AAF1DD23A07440D197E0212D07E1BD71A",
+      "bytes": 20263
+    },
+    {
+      "path": "output/pseudocolor_labelstudio_prep_20260722/frames/sar_pseudocolor/R02ZF/frame_000475_t015833ms.jpg",
+      "sha256": "19B8D49B980CEBE06B9C403D9345166EC8E02CB607D5E0FB47AE93A1A622E9ED",
+      "bytes": 199195
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/p1e_sar_only_response_interface/runtime_track_response_region_minimal_v1/response_region_masks/R02ZF_SARF000476.npz",
+      "sha256": "CEE86BA4F4B48400D5E6F8473789A4B51D0C06071CDB624828900D2283E96623",
+      "bytes": 20154
+    },
+    {
+      "path": "output/pseudocolor_labelstudio_prep_20260722/frames/sar_pseudocolor/R02ZF/frame_000476_t015867ms.jpg",
+      "sha256": "08B9C828D8C422FF52050B8A9159BD4DFD5D90600D70B1A72A7DB24B521F3934",
+      "bytes": 170508
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/p1e_sar_only_response_interface/runtime_track_response_region_minimal_v1/response_region_masks/R02ZF_SARF000477.npz",
+      "sha256": "B2D4434A5D1E0EC3237BEE77FD4863B4A59E3AFCC4AC5C1216E9D22DCB4CAC3E",
+      "bytes": 20032
+    },
+    {
+      "path": "output/pseudocolor_labelstudio_prep_20260722/frames/sar_pseudocolor/R02ZF/frame_000477_t015900ms.jpg",
+      "sha256": "F1F4EA45E35ED16BC9A5AD42212BB38DA51BF23C4D6450920320EB35E4BAE16C",
+      "bytes": 87806
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/p1e_sar_only_response_interface/runtime_track_response_region_minimal_v1/response_region_masks/R02ZF_SARF000478.npz",
+      "sha256": "A958AC3CAA30465A70CCA41C9D99E03DC0B5BD0C7EFE4B7AF255A58E0FE9F0B0",
+      "bytes": 21589
+    },
+    {
+      "path": "output/pseudocolor_labelstudio_prep_20260722/frames/sar_pseudocolor/R02ZF/frame_000478_t015933ms.jpg",
+      "sha256": "0F9DD40D5D40749C7273E1C8DC1CA4B6543AB0D9CB9BC88C545C7D053C5C0F8F",
+      "bytes": 81982
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/p1e_sar_only_response_interface/runtime_track_response_region_minimal_v1/response_region_masks/R02ZF_SARF000479.npz",
+      "sha256": "D952BE5146A0E9ECC3050444D85857ED0BB3AE232B97DC2F9868AA1347C2AC1B",
+      "bytes": 20859
+    },
+    {
+      "path": "output/pseudocolor_labelstudio_prep_20260722/frames/sar_pseudocolor/R02ZF/frame_000479_t015967ms.jpg",
+      "sha256": "47E64F13235B61B4BB774F085F84A6CF9E85D305E75300BA57A65F89EA490A25",
+      "bytes": 87229
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/p1e_sar_only_response_interface/runtime_track_response_region_minimal_v1/response_region_masks/R02ZF_SARF000480.npz",
+      "sha256": "B95AA76850A1E0BEEC141C18B540F9E8D1216FA638EB89EFC03B604110AB1B44",
+      "bytes": 20169
+    },
+    {
+      "path": "output/pseudocolor_labelstudio_prep_20260722/frames/sar_pseudocolor/R02ZF/frame_000480_t016000ms.jpg",
+      "sha256": "C4EF07CD359C87715283C4B625D9C869CF03EDE683A103EA244C05BE474A4D8B",
+      "bytes": 85278
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/p1e_sar_only_response_interface/runtime_track_response_region_minimal_v1/response_region_masks/R02ZF_SARF000481.npz",
+      "sha256": "B897DB62B6B6A046126164541A6538BC3B958AF1CAB904B920778829845F26AC",
+      "bytes": 19505
+    },
+    {
+      "path": "output/pseudocolor_labelstudio_prep_20260722/frames/sar_pseudocolor/R02ZF/frame_000481_t016033ms.jpg",
+      "sha256": "F49D69DC56B6357F620B39A3514DB22DC1E4DFD7729EBE2EAB7359C19DF0F4F1",
+      "bytes": 80809
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/p1e_sar_only_response_interface/runtime_track_response_region_minimal_v1/response_region_masks/R02ZF_SARF000482.npz",
+      "sha256": "264AFDBD621A80E017404E4FB3C7E1ABCD13E2AA00F856DE700AF6D649334486",
+      "bytes": 19679
+    },
+    {
+      "path": "output/pseudocolor_labelstudio_prep_20260722/frames/sar_pseudocolor/R02ZF/frame_000482_t016067ms.jpg",
+      "sha256": "CFF6D5C829AD9403D727F42426F5CA8383E73772B57E06B7F9443C95FEED2D7F",
+      "bytes": 82406
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/p1e_sar_only_response_interface/runtime_track_response_region_minimal_v1/response_region_masks/R02ZF_SARF000483.npz",
+      "sha256": "81C4CA0C4B91BAB1B32D8DDA550D02D5FFC21C50175FC4A0BEFEFEE16F1CA014",
+      "bytes": 19916
+    },
+    {
+      "path": "output/pseudocolor_labelstudio_prep_20260722/frames/sar_pseudocolor/R02ZF/frame_000483_t016100ms.jpg",
+      "sha256": "E475CD2B5DAE464F9CCF4E7912EB6722A7057DF48A67C4BF6BE1C03E3FCCFB76",
+      "bytes": 80048
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/p1e_sar_only_response_interface/runtime_track_response_region_minimal_v1/response_region_masks/R02ZF_SARF000484.npz",
+      "sha256": "52E6C47A8967B182F3242B3FFC6739E0A18C949A062142C2032228B03C664C00",
+      "bytes": 20298
+    },
+    {
+      "path": "output/pseudocolor_labelstudio_prep_20260722/frames/sar_pseudocolor/R02ZF/frame_000484_t016133ms.jpg",
+      "sha256": "83808CB8CC5F09B3578DB5DA1A0E25C7E477ADF113CFFE19FABFC71D35166CEB",
+      "bytes": 83790
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/p1e_sar_only_response_interface/runtime_track_response_region_minimal_v1/response_region_masks/R02ZF_SARF000485.npz",
+      "sha256": "9A3B4DF1AC27AE8252F78C6D6F3C9E3B3442EFD61F014DBDC32580DC36FD7BAD",
+      "bytes": 19978
+    },
+    {
+      "path": "output/pseudocolor_labelstudio_prep_20260722/frames/sar_pseudocolor/R02ZF/frame_000485_t016167ms.jpg",
+      "sha256": "06CBF3B0760BEBC369FE5D02A6326FD9DA0EE29152FF7BFA6EFDF469309DE6EE",
+      "bytes": 99216
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/p1e_sar_only_response_interface/runtime_track_response_region_minimal_v1/response_region_masks/R02ZF_SARF000486.npz",
+      "sha256": "23CCD03AFD4CD40E51BE76C406D6901C5E192A3A061F68B47E5DF3633C18A516",
+      "bytes": 20544
+    },
+    {
+      "path": "output/pseudocolor_labelstudio_prep_20260722/frames/sar_pseudocolor/R02ZF/frame_000486_t016200ms.jpg",
+      "sha256": "8B86773B783E8396533CE97B869DC882F070D60613EACB79D17E64A2C63C0A79",
+      "bytes": 121542
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/p1e_sar_only_response_interface/runtime_track_response_region_minimal_v1/response_region_masks/R02ZF_SARF000487.npz",
+      "sha256": "38203B4C812700D41370880FA820D2F911935B7C0A0A0453436D347CDB599636",
+      "bytes": 21502
+    },
+    {
+      "path": "output/pseudocolor_labelstudio_prep_20260722/frames/sar_pseudocolor/R02ZF/frame_000487_t016233ms.jpg",
+      "sha256": "721437C5BA1900A81F07236208269B0D5D8C5C5C943DC829FF4C608EF1931A92",
+      "bytes": 112011
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/p1e_sar_only_response_interface/runtime_track_response_region_minimal_v1/response_region_masks/R02ZF_SARF000488.npz",
+      "sha256": "DF8FBB4F0D1DB5FF1296437D254B7976BF78DDFBBA4F713E49F014F78A0666EF",
+      "bytes": 19434
+    },
+    {
+      "path": "output/pseudocolor_labelstudio_prep_20260722/frames/sar_pseudocolor/R02ZF/frame_000488_t016267ms.jpg",
+      "sha256": "D7BF979A73AE3E6A1FD7BC015FD2B02A5286FA857DD1F56B9D59939EBF74D07D",
+      "bytes": 154182
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/p1e_sar_only_response_interface/runtime_track_response_region_minimal_v1/response_region_masks/R02ZF_SARF000489.npz",
+      "sha256": "99A168000D2A173D0BF6975F421F206AE733C872FB782DD932817D7857E174AD",
+      "bytes": 20196
+    },
+    {
+      "path": "output/pseudocolor_labelstudio_prep_20260722/frames/sar_pseudocolor/R02ZF/frame_000489_t016300ms.jpg",
+      "sha256": "0C5EC672D74FD53B1DF3AECC9505436E86B577A18A4FF1AD42B35500B667E38A",
+      "bytes": 177205
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/p1e_sar_only_response_interface/runtime_track_response_region_minimal_v1/response_region_masks/R02ZF_SARF000490.npz",
+      "sha256": "276A1031E17E6D27EE4DA7C3D9C2DFE6BC1E92F3F5329B0EE5455011749B2F5E",
+      "bytes": 20083
+    },
+    {
+      "path": "output/pseudocolor_labelstudio_prep_20260722/frames/sar_pseudocolor/R02ZF/frame_000490_t016333ms.jpg",
+      "sha256": "DE247EB94FACC50A15A6721B368EADC52599258060215FFD0A38D1F7B6359DD4",
+      "bytes": 188718
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/p1e_sar_only_response_interface/runtime_track_response_region_minimal_v1/response_region_masks/R02ZF_SARF000491.npz",
+      "sha256": "CCFC12E4F4A83B2D13A8B3EE452FF303623541948ED0EA85DEFC10463367110C",
+      "bytes": 20469
+    },
+    {
+      "path": "output/pseudocolor_labelstudio_prep_20260722/frames/sar_pseudocolor/R02ZF/frame_000491_t016367ms.jpg",
+      "sha256": "0B9C1163E3646D5C9C185401C18AF786AEA4A98256B77EA74F77E22717923A96",
+      "bytes": 189283
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/p1e_sar_only_response_interface/runtime_track_response_region_minimal_v1/response_region_masks/R02ZF_SARF000492.npz",
+      "sha256": "59C718345309C908A9D6A973ED9710C7DAD9B55D8B23D2E1AB3225C9351D79C1",
+      "bytes": 20309
+    },
+    {
+      "path": "output/pseudocolor_labelstudio_prep_20260722/frames/sar_pseudocolor/R02ZF/frame_000492_t016400ms.jpg",
+      "sha256": "FA5B0FDE1E9BB6F7CB0A106A18D134202E7174B85AC690E0CB346EEB56811B04",
+      "bytes": 203178
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/p1e_sar_only_response_interface/runtime_track_response_region_minimal_v1/response_region_masks/R02ZF_SARF000493.npz",
+      "sha256": "32CE7EE79A9BE84E6286860F9250FE815CBDD7BE98622B3822C983CC68F5A72B",
+      "bytes": 20762
+    },
+    {
+      "path": "output/pseudocolor_labelstudio_prep_20260722/frames/sar_pseudocolor/R02ZF/frame_000493_t016433ms.jpg",
+      "sha256": "DB41D6D972FB18F59331F183537DD40E3E94C0149A7D0009CDBB066041090286",
+      "bytes": 197510
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/p1e_sar_only_response_interface/runtime_track_response_region_minimal_v1/response_region_masks/R02ZF_SARF000494.npz",
+      "sha256": "DE768927CEAF9907877A87FDC9DA9B6D99970A0DE267DBA31AF6B1CB8F863501",
+      "bytes": 20280
+    },
+    {
+      "path": "output/pseudocolor_labelstudio_prep_20260722/frames/sar_pseudocolor/R02ZF/frame_000494_t016467ms.jpg",
+      "sha256": "B8DF7C8C09BB3CC0AAF808ED3C244FCC46B95843420BA8169181B3D1A342A5C4",
+      "bytes": 198603
+    }
+  ],
+  "pair_set": [
+    {
+      "from_frame": 472,
+      "to_frame": 473
+    },
+    {
+      "from_frame": 473,
+      "to_frame": 474
+    },
+    {
+      "from_frame": 474,
+      "to_frame": 475
+    },
+    {
+      "from_frame": 475,
+      "to_frame": 476
+    },
+    {
+      "from_frame": 476,
+      "to_frame": 477
+    },
+    {
+      "from_frame": 477,
+      "to_frame": 478
+    },
+    {
+      "from_frame": 478,
+      "to_frame": 479
+    },
+    {
+      "from_frame": 479,
+      "to_frame": 480
+    },
+    {
+      "from_frame": 480,
+      "to_frame": 481
+    },
+    {
+      "from_frame": 481,
+      "to_frame": 482
+    },
+    {
+      "from_frame": 482,
+      "to_frame": 483
+    },
+    {
+      "from_frame": 483,
+      "to_frame": 484
+    },
+    {
+      "from_frame": 484,
+      "to_frame": 485
+    },
+    {
+      "from_frame": 485,
+      "to_frame": 486
+    },
+    {
+      "from_frame": 486,
+      "to_frame": 487
+    },
+    {
+      "from_frame": 487,
+      "to_frame": 488
+    },
+    {
+      "from_frame": 488,
+      "to_frame": 489
+    },
+    {
+      "from_frame": 489,
+      "to_frame": 490
+    },
+    {
+      "from_frame": 490,
+      "to_frame": 491
+    },
+    {
+      "from_frame": 491,
+      "to_frame": 492
+    },
+    {
+      "from_frame": 492,
+      "to_frame": 493
+    },
+    {
+      "from_frame": 493,
+      "to_frame": 494
+    }
+  ],
+  "pair_set_sha256": "697F7E34EEECD3B18D0E8DA9C2FE2E1CAFA06E9DAD7DB2EBAF01ED9F25AF7BC3",
+  "environment": {
+    "python": "3.11.14",
+    "opencv": "4.13.0",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "interpreter": "D:/MINICONDA/envs/py311/python.exe"
+  },
+  "aggregate_audit": {
+    "region_mask_count": 23,
+    "protocol_recorded_region_mask_aggregate_sha256": "0C4D10144D42986382F689BA14DCCC3AFFAD4E5DA0B43F57ED57DCC7CED37863",
+    "sar_image_count": 23,
+    "protocol_recorded_sar_image_aggregate_sha256": "1E8ED461192685DC7473D01B08D955B6DCB8FDC8D46DBA46B522ACA3E7F60658",
+    "individual_file_hashes_frozen": true
+  },
+  "reference_policy": {
+    "reference_loaded": false,
+    "reference_region_path_frozen_but_not_opened_by_pre_reference_phase": true,
+    "manual_center_path_frozen_but_not_opened_by_pre_reference_phase": true
+  },
+  "freeze_revision": "REV4_VALIDATOR_GROUP_INDEX_PERFORMANCE_ONLY"
+}

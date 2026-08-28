@@ -1,0 +1,57 @@
+{
+  "schema": "PERSON_M0A_EXECUTION_LEDGER_V1",
+  "events": [
+    {
+      "stage": "PROTOCOL_AND_CODE_HASHES_VERIFIED",
+      "completed_at": "2026-08-28T15:10:05+08:00"
+    },
+    {
+      "stage": "SYNTHETIC_WARP_TESTS_PASS_5_OF_5",
+      "completed_at": "2026-08-28T15:10:05+08:00"
+    },
+    {
+      "stage": "RUNTIME_INPUTS_LOADED_WITHOUT_REFERENCE",
+      "completed_at": "2026-08-28T15:10:05+08:00"
+    },
+    {
+      "stage": "Q95_NODES_MATERIALIZED",
+      "completed_at": "2026-08-28T15:12:55+08:00",
+      "rows": 1117
+    },
+    {
+      "stage": "P0_AND_ZERO_COMPLETE_PAIR_MATRICES_MATERIALIZED",
+      "completed_at": "2026-08-28T15:12:55+08:00",
+      "rows": 102996
+    },
+    {
+      "stage": "MATCHED_STRUCTURAL_ALTERNATIVES_FROZEN",
+      "completed_at": "2026-08-28T15:12:55+08:00",
+      "rows": 257490
+    },
+    {
+      "stage": "PRE_REFERENCE_CASE_REGISTRY_FROZEN",
+      "completed_at": "2026-08-28T15:12:55+08:00",
+      "rows": 9
+    },
+    {
+      "stage": "REFERENCE_NOT_LOADED_PRE_REFERENCE_PHASE_CLOSED",
+      "completed_at": "2026-08-28T15:12:55+08:00"
+    },
+    {
+      "stage": "PRE_REFERENCE_OUTPUTS_HASH_FROZEN",
+      "completed_at": "2026-08-28T15:31:11+08:00",
+      "reference_loaded": false
+    },
+    {
+      "stage": "MANUAL_REFERENCE_REVEALED_AFTER_FREEZE",
+      "completed_at": "2026-08-28T15:31:27+08:00",
+      "reference_sha256": "4522FE9B65249180B073EA16E87BF11A528DC079B3831348CD7610E3685B7353",
+      "reference_center_sha256": "796F20EB3080C5B45CDEBBCC71584CC95C65691F056D46C4A31704A3D86E8EC7"
+    },
+    {
+      "stage": "POST_REFERENCE_EVALUATION_COMPLETE",
+      "completed_at": "2026-08-28T15:31:27+08:00",
+      "final_m0a_state": "M0A_REGION_SUPPORT_TRANSPORT_WITH_P0_GAIN"
+    }
+  ]
+}

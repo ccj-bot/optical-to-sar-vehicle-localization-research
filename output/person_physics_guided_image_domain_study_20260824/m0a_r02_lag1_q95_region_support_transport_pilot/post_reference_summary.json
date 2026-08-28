@@ -1,0 +1,112 @@
+{
+  "schema": "PERSON_M0A_POST_REFERENCE_SUMMARY_V1",
+  "created_at": "2026-08-28T15:31:27+08:00",
+  "study_role": "M0_SAR_TEMPORAL_PREREQUISITE",
+  "final_m0a_state": "M0A_REGION_SUPPORT_TRANSPORT_WITH_P0_GAIN",
+  "not_optical_sar_motion_consistency": true,
+  "reference_sha256": "4522FE9B65249180B073EA16E87BF11A528DC079B3831348CD7610E3685B7353",
+  "reference_center_sha256": "796F20EB3080C5B45CDEBBCC71584CC95C65691F056D46C4A31704A3D86E8EC7",
+  "pre_reference_freeze_payload_sha256": "99FE416DCDB9A817BDF5D79DC76CAB1F0D691119B5DC2C740132B0619F602831",
+  "reference_supported_explanation_rows": 12,
+  "reference_supported_unique_base_edges": 6,
+  "reference_supported_target_transitions": 6,
+  "shared_supported_edge_fraction": 1.0,
+  "p0_supported_q95_source_total_retention": {
+    "count": 6,
+    "median": 0.9093242812814,
+    "p25": 0.77404666445144,
+    "p75": 0.9405834854893512,
+    "mean": 0.7881361074231239
+  },
+  "zero_supported_q95_source_total_retention": {
+    "count": 6,
+    "median": 0.8417744910188235,
+    "p25": 0.7258164963798064,
+    "p75": 0.8549157530522635,
+    "mean": 0.7288289319097432
+  },
+  "p0_supported_q95_conditional_valid_retention": {
+    "count": 6,
+    "median": 0.9093242812814,
+    "p25": 0.77404666445144,
+    "p75": 0.9405834854893512,
+    "mean": 0.7881361074231239
+  },
+  "p0_valid_transport_fraction": {
+    "count": 6,
+    "median": 1.0,
+    "p25": 1.0,
+    "p75": 1.0,
+    "mean": 1.0
+  },
+  "p0_supported_rank": {
+    "count": 6,
+    "median": 1.0,
+    "p25": 1.0,
+    "p75": 1.0,
+    "mean": 1.1666666666666667
+  },
+  "p0_supported_rank_percentile": {
+    "count": 6,
+    "median": 1.0,
+    "p25": 1.0,
+    "p75": 1.0,
+    "mean": 0.9971751412429378
+  },
+  "p0_vs_zero": {
+    "paired_count": 6,
+    "p0_better_fraction": 0.8333333333333334,
+    "tie_fraction": 0.0,
+    "zero_better_fraction": 0.16666666666666666,
+    "median_source_total_retention_delta": 0.05502556206211878,
+    "mean_source_total_retention_delta": 0.05930717551338069
+  },
+  "matched_reference_unsupported": {
+    "p0_comparison_count": 30,
+    "p0_supported_win_rate": 0.9666666666666667,
+    "p0_tie_rate": 0.0,
+    "p0_alternative_win_rate": 0.03333333333333333,
+    "zero_comparison_count": 30,
+    "zero_supported_win_rate": 0.9666666666666667
+  },
+  "q975_and_q90": {
+    "p0_q975_to_q95_core_retention": {
+      "count": 6,
+      "median": 0.9910764482211081,
+      "p25": 0.8956963552928863,
+      "p75": 0.9969439236807784,
+      "mean": 0.8745470169946103
+    },
+    "p0_q975_to_q975_core_retention": {
+      "count": 6,
+      "median": 0.9001460160317896,
+      "p25": 0.7905365893304577,
+      "p75": 0.9482436656757582,
+      "mean": 0.7955178419766996
+    },
+    "p0_q90_weak_envelope_retention": {
+      "count": 6,
+      "median": 0.9120622614824532,
+      "p25": 0.6771351617017443,
+      "p75": 0.9540731377205987,
+      "mean": 0.8278648038662525
+    },
+    "q95_minus_q975_median": -0.012163977116851105,
+    "q90_minus_q95_median": -0.0037752232364117733
+  },
+  "outcome_rule_inputs": {
+    "discrimination": true,
+    "p0_gain": true,
+    "p0_supported_win_rate_vs_reference_unsupported": 0.9666666666666667,
+    "supported_rank_percentile_median": 1.0,
+    "p0_better_fraction": 0.8333333333333334,
+    "p0_minus_zero_median": 0.05502556206211878
+  },
+  "prohibited_claims": {
+    "optical_sar_motion_consistency_established": false,
+    "cross_modal_ambiguity_reduced": false,
+    "person_dynamic_association_established": false,
+    "runtime_identity_established": false,
+    "final_sar_localization_established": false
+  }
+}

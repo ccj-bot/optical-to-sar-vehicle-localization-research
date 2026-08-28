@@ -1,10 +1,33 @@
 # Optical–SAR Motion Consistency Minimal Study（M0）草案
 
 - 文档日期：2026-08-28
-- 状态：`DRAFT_ONLY / NOT_EXECUTED`
+- 状态：`M0A_EXECUTED / M0B_NOT_EXECUTED / OPTICAL_SAR_MOTION_CONSISTENCY_NOT_ESTABLISHED`
 - 依赖审计：`M0_TIME_COORDINATE_AND_INTERFACE_AUDIT.md`
 - 当前权威状态：`P0_FROZEN_PASS / P1E_EXPLORATORY_OBSERVATION_INTERFACES_ESTABLISHED / RUNTIME_IDENTITY_NOT_ESTABLISHED / P2_NOT_ESTABLISHED`
 - 本文不实现 tracker、identity assignment、classifier、learned fusion、SAR box 或最终定位
+
+## 2026-08-28 M0A 执行语义收窄
+
+本 draft 原先把 `M0A_R02_LAG1_Q95_SUPPORT_WARP_PILOT` 与后续跨模态 ambiguity reduction 连续描述。正式执行前现收窄为：
+
+`M0A_R02_LAG1_Q95_REGION_SUPPORT_TRANSPORT_PILOT = M0 SAR-temporal prerequisite`
+
+M0A 只检验相邻 SAR 帧 q95 region-support continuity、matched-alternative ordering，以及 frozen P0 相对 ZERO 的增量。它不读取 raw optical angular dynamics，不验证 `Δtheta_optical ↔ Δtheta_SAR`，不报告 dynamic ambiguity reduction ratio，也不回答 `static many-to-many -> dynamic fewer-to-fewer`。
+
+只有 M0A 建立可解释的 SAR temporal structure 后，下一轮 M0B 才可在独立冻结协议中加入 raw optical angular dynamics，并定义完全 GT-blind dynamic admissibility rule。M0A 无论结果为何，都不能称为 Optical–SAR motion consistency、PERSON dynamic association、runtime identity 或最终 SAR localization。
+
+本 draft 中 soft forward bilinear splat 只是一项早期设计建议，不再视为既成 contract。正式 M0A 以结果生成前冻结的 `M0A_R02_LAG1_Q95_REGION_SUPPORT_TRANSPORT_PROTOCOL_FROZEN_BEFORE_RUN.md` 为权威。
+
+## 2026-08-28 M0A 执行结果
+
+- 正式状态：`M0A_REGION_SUPPORT_TRANSPORT_WITH_P0_GAIN`，仅按冻结 M0A 解释规则成立，不是 P1/P2 PASS。
+- R02 F472–F494 共纳入 22/22 adjacent comparable lag1 pairs；1117 个 q95 nodes，P0/ZERO 各 51,498 条完整 compatibility rows。
+- 5/5 warp synthetic tests 通过；9 个代表点的 point-vs-mask 最大误差 `0.01553 px`，冻结容差 `0.05 px`。
+- reference reveal 前 17 个表/manifest/ledger/validation/病例图已 hash freeze；pre-reference validation `14/14 PASS`，post-reference final validation `12/12 PASS`。
+- 6 个 reference-supported base edges 的 q95 source-total retention：P0 median `0.9093`，ZERO median `0.8418`，paired median delta `+0.0550`；P0 对 reference-unsupported matched alternatives win rate `29/30=96.7%`，supported destination rank median `1`。
+- 但 supported evidence 仅来自 3 个相邻 frame pairs、6 个 base edges，且 `6/6` 均为 shared/unresolved region explanations；不能据此声称 PERSON identity、ambiguity reduction 或一般化动态关联。
+- q97.5 core median retention `0.9001`，q90 envelope median `0.9121`，相对 q95 的 median delta 分别约 `-0.0122/-0.0038`；它们提供 case-level morphology 解释，没有形成稳定的额外 aggregate gain。
+- 有理由讨论一个独立冻结的最小 M0B，因为 SAR 时序排序与 P0-specific gain 在当前 reference slice 上均达到预注册条件；但 M0B 必须正面处理 sample sparsity、100% shared explanations、tiny-region deterministic cases 和尚未校准的时间语义，不能直接进入 tracker/identity/localization。
 
 ## 0. 最小研究问题
 

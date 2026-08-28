@@ -1,0 +1,42 @@
+{
+  "schema": "PERSON_M0A_PRE_REFERENCE_EXECUTION_LEDGER_V1",
+  "reference_loaded": false,
+  "events": [
+    {
+      "stage": "PROTOCOL_AND_CODE_HASHES_VERIFIED",
+      "completed_at": "2026-08-28T15:10:05+08:00"
+    },
+    {
+      "stage": "SYNTHETIC_WARP_TESTS_PASS_5_OF_5",
+      "completed_at": "2026-08-28T15:10:05+08:00"
+    },
+    {
+      "stage": "RUNTIME_INPUTS_LOADED_WITHOUT_REFERENCE",
+      "completed_at": "2026-08-28T15:10:05+08:00"
+    },
+    {
+      "stage": "Q95_NODES_MATERIALIZED",
+      "completed_at": "2026-08-28T15:12:55+08:00",
+      "rows": 1117
+    },
+    {
+      "stage": "P0_AND_ZERO_COMPLETE_PAIR_MATRICES_MATERIALIZED",
+      "completed_at": "2026-08-28T15:12:55+08:00",
+      "rows": 102996
+    },
+    {
+      "stage": "MATCHED_STRUCTURAL_ALTERNATIVES_FROZEN",
+      "completed_at": "2026-08-28T15:12:55+08:00",
+      "rows": 257490
+    },
+    {
+      "stage": "PRE_REFERENCE_CASE_REGISTRY_FROZEN",
+      "completed_at": "2026-08-28T15:12:55+08:00",
+      "rows": 9
+    },
+    {
+      "stage": "REFERENCE_NOT_LOADED_PRE_REFERENCE_PHASE_CLOSED",
+      "completed_at": "2026-08-28T15:12:55+08:00"
+    }
+  ]
+}

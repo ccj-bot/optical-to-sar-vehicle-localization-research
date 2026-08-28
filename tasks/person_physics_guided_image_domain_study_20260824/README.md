@@ -207,3 +207,14 @@
 - 下一阶段最小研究设计草案：`docs/M0_OPTICAL_SAR_MOTION_CONSISTENCY_MINIMAL_STUDY_DRAFT.md`。
 - 两份 M0 文档状态均为 `DOCS_ONLY / NOT_EXECUTED`；本轮未运行新 motion-consistency 实验，未实现 tracker、identity assignment、classifier、SAR box 或最终定位。
 - 下一轮建议先做极小的 `R02 lag1 q95 support-warp pilot`：冻结一个 mask-warp contract，枚举全部 GT-blind q95→q95 compatibility edges，比较 P0/zero/matched-null，先物化再离线评价；不直接进入 tracker。
+
+## M0A R02 lag1 q95 region-support transport pilot（2026-08-28）
+
+- 结果目录：`output/person_physics_guided_image_domain_study_20260824/m0a_r02_lag1_q95_region_support_transport_pilot`。
+- 最终解释状态：`M0A_REGION_SUPPORT_TRANSPORT_WITH_P0_GAIN`；仍保持 `OPTICAL_SAR_MOTION_CONSISTENCY_NOT_ESTABLISHED / RUNTIME_IDENTITY_NOT_ESTABLISHED / P2_NOT_ESTABLISHED`。
+- 22/22 adjacent comparable pairs；1117 q95 nodes；P0/ZERO 各 51,498 条完整矩阵；matched alternatives 257,490 rows。
+- warp synthetic tests `5/5 PASS`；point prediction vs mask warp 最大误差 `0.01553 px`；pre-reference independent validation `14/14 PASS`；final validation `12/12 PASS`。
+- 6 个 reference-supported base edges：P0 q95 source-total median `0.9093`，ZERO `0.8418`，median delta `+0.0550`；P0 matched-alternative win `29/30`，rank median `1`。
+- 证据限制：仅 3 个有连续人工 reference 的 frame pairs，6/6 supported edges 全部 shared/unresolved；病例选择还暴露 tiny-region 极值与 zero-zero approximate-equal case，不能扩写为 identity 或 ambiguity solved。
+- 正式 HTML：`M0A_R02_LAG1_Q95_REGION_SUPPORT_TRANSPORT_REPORT.html`；pre/post real-case figures 为 `9/12` 张，manual magenta overlay 只出现在 post-reference 版本。
+- 本轮到此停止，不运行 lag3/lag5、M0B、optical angular dynamics、tracker、assignment、classifier、score fusion 或 SAR localization。

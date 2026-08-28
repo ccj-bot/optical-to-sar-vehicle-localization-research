@@ -1,0 +1,106 @@
+{
+  "schema": "PERSON_M0A_PRE_REFERENCE_VALIDATION_V1",
+  "status": "PASS",
+  "checks_passed": 14,
+  "checks_total": 14,
+  "checks": [
+    {
+      "name": "required_pre_reference_files",
+      "status": "PASS",
+      "details": []
+    },
+    {
+      "name": "synthetic_tests_5_of_5",
+      "status": "PASS",
+      "details": 5
+    },
+    {
+      "name": "node_and_frame_count",
+      "status": "PASS",
+      "details": {
+        "nodes": 1117,
+        "frames": 23
+      }
+    },
+    {
+      "name": "matrix_conditions",
+      "status": "PASS",
+      "details": [
+        "P0",
+        "ZERO"
+      ]
+    },
+    {
+      "name": "complete_all_by_all_matrix",
+      "status": "PASS",
+      "details": {
+        "actual": 102996,
+        "expected": 102996
+      }
+    },
+    {
+      "name": "p0_zero_edge_parity",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "name": "no_manual_fields_pre_reference",
+      "status": "PASS",
+      "details": []
+    },
+    {
+      "name": "reference_not_loaded",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "name": "denominator_formula_audit",
+      "status": "PASS",
+      "details": {
+        "transport": 0.0,
+        "valid_fraction": 1.1102230246251565e-16,
+        "conditional": 1.1102230246251565e-16,
+        "source_total": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "q95_denominators_positive",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "name": "intersection_bounded_by_valid_support",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "name": "matched_structural_alternatives_exact",
+      "status": "PASS",
+      "details": {
+        "max_distance_error": 8.881784197001252e-15
+      }
+    },
+    {
+      "name": "nine_deterministic_pre_reference_cases",
+      "status": "PASS",
+      "details": [
+        "P0_CLEARLY_BETTER_THAN_ZERO",
+        "P0_APPROX_EQUAL_ZERO",
+        "ZERO_BETTER_THAN_P0",
+        "STRONG_Q95_CONTINUATION",
+        "Q95_WEAK_Q90_ENVELOPE_CONTINUES",
+        "Q975_CORE_CHANGES_Q95_CONTINUES",
+        "SPLIT_LIKE",
+        "MERGE_LIKE",
+        "BOUNDARY_OR_TRUNCATED"
+      ]
+    },
+    {
+      "name": "nine_pre_reference_figures_readable",
+      "status": "PASS",
+      "details": {
+        "count": 9
+      }
+    }
+  ]
+}

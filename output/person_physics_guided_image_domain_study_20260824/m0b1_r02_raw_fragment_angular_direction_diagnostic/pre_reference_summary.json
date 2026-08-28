@@ -1,0 +1,40 @@
+{
+  "schema": "PERSON_M0B1_PRE_REFERENCE_SUMMARY_V1",
+  "created_at": "2026-08-28T19:14:09+08:00",
+  "reference_loaded": false,
+  "process_note": {
+    "explorer_container_loaded": true,
+    "annotation_content_used": false,
+    "strict_process_isolation_claimed": false,
+    "sanitized_keys": [
+      "frame_index",
+      "frame_uid",
+      "geometry",
+      "nominal_optical_frame_index",
+      "nominal_optical_timestamp_ms",
+      "run_id",
+      "sar_timestamp_ms",
+      "sync_status",
+      "theta_high_deg",
+      "theta_low_deg"
+    ]
+  },
+  "query_rows": 115,
+  "static_relation_rows": 2557,
+  "hypothesis_rows": 308600,
+  "hard_feasible_rows": 66260,
+  "dynamic_available_rows": 11252,
+  "same_optical_sample_rows": 8674,
+  "fragment_break_rows": 46334,
+  "observation_unavailable_rows": 6455,
+  "static_infeasible_rows": 242340,
+  "optical_determinate_rows": 0,
+  "nominal_pixel_topology_key_parity": true,
+  "nominal_expected_key_count": 521,
+  "nominal_observed_key_count": 521,
+  "raw_fragment_control_rows": 8735,
+  "static_shell_matched_control_rows": 9201,
+  "pareto_pruning_performed": false,
+  "hypotheses_deleted": false,
+  "prohibited_pre_reference_fields_used": false
+}

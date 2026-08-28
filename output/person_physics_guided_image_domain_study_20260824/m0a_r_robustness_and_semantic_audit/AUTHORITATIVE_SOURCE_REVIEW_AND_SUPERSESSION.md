@@ -76,3 +76,22 @@
 - M0B is a draft for incremental raw-fragment angular evidence. It has not been
   executed and does not authorize a tracker, assignment, timing fit, weighted
   score, factor-graph inference, or final SAR box.
+
+## 2026-08-28 M0B1 executable supersession
+
+The historical M0B draft remains unchanged. The executable direction-only
+pilot is governed by:
+
+`output/person_physics_guided_image_domain_study_20260824/m0b1_r02_raw_fragment_angular_direction_diagnostic/M0B1_R02_RAW_FRAGMENT_ANGULAR_DIRECTION_PROTOCOL_FROZEN_BEFORE_RUN.md`.
+
+That frozen protocol supersedes the draft only for this pilot:
+
+- Pareto is not used for pruning or ambiguity reduction;
+- only interval angular direction is executed;
+- same optical sample and raw-fragment break are unavailable states;
+- static feasibility is rebuilt with pixel-level q95 shell intersection for
+  every fixed timing condition;
+- post-reference support labels the SAR edge while the raw branch remains
+  unresolved;
+- magnitude, monotonicity, dynamic pruning, M0B2, assignment, tracker, timing
+  calibration, and final localization remain blocked.

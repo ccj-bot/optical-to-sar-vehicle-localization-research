@@ -1,0 +1,76 @@
+{
+  "schema": "PERSON_M0B1_PROTOCOL_FREEZE_V1",
+  "status": "FROZEN_BEFORE_RUN",
+  "frozen_at": "2026-08-28T19:09:36+08:00",
+  "starting_head": "69d7b5c97f391a37f8f986c66739dc982f4a1fb5",
+  "protocol_sha256": "702277348913B3E7CBA6A4CEBF56ACA08807021F91C2E202236EDD3573973278",
+  "original_runner_sha256": "2E047D7379080C09201316EB637390E60590BC53A681D3B979109C86EEC8BEC3",
+  "runner_sha256": "71DD0B223A5C906FC45118339EE0B2FA3B3BF76F8D55D4DD5DB5DDDF42F91ADB",
+  "validator_sha256": "79D7EE38D3E7C1662FC6D72299A8249A5BE952649D0EFB43F51216BD901A1674",
+  "amendments": [
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_r02_raw_fragment_angular_direction_diagnostic\\AMENDMENT_01_POST_REFERENCE_CASE_RENDER_SERIES_NAME_COLLISION.md",
+      "sha256": "211FCCC188B88BB9D7083532AEA03E30532DDADEAE57F6E89AC1238CC0FEC138",
+      "scope": "POST_REFERENCE_CASE_RENDER_ALL_CONFLICTING_TO_FRAME_ACCESSES_EXPLICIT_ONLY",
+      "scientific_rules_changed": false
+    }
+  ],
+  "input_hashes": [
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0a_r02_lag1_q95_region_support_transport_pilot\\M0A_R02_LAG1_Q95_REGION_SUPPORT_TRANSPORT_PROTOCOL_FROZEN_BEFORE_RUN.md",
+      "sha256": "0A2116AD3FCBF7C77751B365BFE0063C7FD91A6C77AE64346FAE80D52281E025"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0a_r02_lag1_q95_region_support_transport_pilot\\pre_reference_compatibility_matrix.csv",
+      "sha256": "7AEFF02A0026D79A073F35DC2CCEBCE9000433FCE686165EAA80ACD3A906B67A"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0a_r02_lag1_q95_region_support_transport_pilot\\pre_reference_region_nodes.csv",
+      "sha256": "68A8D80AFD92468829B594B50F2DDD4685F4C3FB9B34DCF98DD666C89CA7F950"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0a_r02_lag1_q95_region_support_transport_pilot\\pre_reference_matched_alternative_sets.csv",
+      "sha256": "444A75C272E9A3AF112496C98A861BC6CE162FA763234F6791288150D4E4B65F"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0a_r02_lag1_q95_region_support_transport_pilot\\pre_reference_case_registry.csv",
+      "sha256": "99EC7EA9F9D5D0F2313661140D3BB7F7832487F6982BBC73CF4A6C22647CDCFF"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0a_r_robustness_and_semantic_audit\\M0A_R_ROBUSTNESS_AND_SEMANTIC_AUDIT_PROTOCOL_FROZEN_BEFORE_RUN.md",
+      "sha256": "BA73E645F3342FE0CFE37206E9108F99BC0FA87C541D966A80AB705B793ED6A2"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0a_r_robustness_and_semantic_audit\\audit_summary.json",
+      "sha256": "34EC52F09CD29620E88D1BC3BD4ACB3AEE9F7F1BFAB9579A807DDB3E3FC8545D"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\shell_uncertainty_region_topology_v1\\00_SHELL_UNCERTAINTY_REGION_TOPOLOGY_PROTOCOL_FROZEN_BEFORE_RUN.md",
+      "sha256": "16F6A4D16AFCC54641F798FB64568D254CAA6AA1106E782B34D9F3C6F189CB37"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\shell_uncertainty_region_topology_v1\\gt_blind_shell_region_pixel_edges_pre_reference.csv",
+      "sha256": "699B140FA93A7BCDB49AE7D4747CEF18E65A6306BAA378C974DD40106F1A0305"
+    },
+    {
+      "path": "output\\person_optical_guided_sar_annotation_full_20260823\\optical_person_frame_hypotheses.parquet",
+      "sha256": "15D65A299762E87BFD6F21E811C754D1DF062AC6AFC1840A1C1A9B162AB8B478"
+    },
+    {
+      "path": "output\\person_multidimensional_response_explorer_20260823\\explorer_data.js",
+      "sha256": "C39E60EB478FF7D815EFE6984D3BCF36600737E2EC3D1FF76D04020DED54EF7D"
+    }
+  ],
+  "timing_conditions": [
+    "NOMINAL",
+    "SAR_SHIFT_MINUS_1",
+    "SAR_SHIFT_PLUS_1",
+    "OPTICAL_SHIFT_MINUS_1_NOMINAL_STEP",
+    "OPTICAL_SHIFT_PLUS_1_NOMINAL_STEP"
+  ],
+  "numerical_tolerance_deg": 1e-12,
+  "optical_guard_static_feasibility_deg_each_side": 6.0,
+  "direction_uses_guard": false,
+  "pareto_role": "NOT_EXECUTED_DESCRIPTIVE_ONLY_NO_PRUNING",
+  "m0b2_executed": false
+}

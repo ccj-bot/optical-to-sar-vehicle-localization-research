@@ -1,0 +1,6 @@
+﻿timing_condition,N_total_hypothesis_records,N_hard_feasible,N_dynamic_available,N_same_optical_sample,N_fragment_break,N_observation_unavailable,N_static_shell_infeasible,N_direction_indeterminate,N_direction_concordant,N_direction_contradictory,N_direction_unavailable,dynamic_availability_rate_of_total,determinate_direction_rate_of_dynamic_available
+NOMINAL,62073,13685,2303,1795,9587,0,48388,2303,0,0,59770,0.03710147729286485,0.0
+SAR_SHIFT_MINUS_1,61299,12721,2377,1509,8835,3540,48578,2377,0,0,58922,0.03877714155206447,0.0
+SAR_SHIFT_PLUS_1,61515,12950,1950,1856,9144,2915,48565,1950,0,0,59565,0.03169958546695928,0.0
+OPTICAL_SHIFT_MINUS_1_NOMINAL_STEP,60624,11995,2196,1661,8138,0,48629,2196,0,0,58428,0.03622327790973872,0.0
+OPTICAL_SHIFT_PLUS_1_NOMINAL_STEP,63089,14909,2426,1853,10630,0,48180,2426,0,0,60663,0.03845361314967744,0.0

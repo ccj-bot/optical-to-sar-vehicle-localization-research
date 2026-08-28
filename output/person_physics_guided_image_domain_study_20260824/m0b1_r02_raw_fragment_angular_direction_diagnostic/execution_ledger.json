@@ -1,0 +1,69 @@
+{
+  "schema": "PERSON_M0B1_EXECUTION_LEDGER_V1",
+  "events": [
+    {
+      "stage": "PROTOCOL_CODE_INPUT_HASHES_FROZEN",
+      "completed_at": "2026-08-28T19:09:36+08:00"
+    },
+    {
+      "stage": "REFERENCE_NOT_LOADED",
+      "completed_at": "2026-08-28T19:09:36+08:00"
+    },
+    {
+      "stage": "TIMING_QUERIES_MATERIALIZED_PRE_REFERENCE",
+      "completed_at": "2026-08-28T19:14:10+08:00"
+    },
+    {
+      "stage": "PIXEL_LEVEL_STATIC_RELATIONS_MATERIALIZED_PRE_REFERENCE",
+      "completed_at": "2026-08-28T19:14:10+08:00"
+    },
+    {
+      "stage": "ALL_DIRECTION_HYPOTHESIS_RECORDS_MATERIALIZED_PRE_REFERENCE",
+      "completed_at": "2026-08-28T19:14:10+08:00"
+    },
+    {
+      "stage": "DIRECTION_FREE_CONTROLS_FROZEN_PRE_REFERENCE",
+      "completed_at": "2026-08-28T19:14:10+08:00"
+    },
+    {
+      "stage": "PRE_REFERENCE_MANIFEST_FROZEN_REFERENCE_STILL_NOT_LOADED",
+      "completed_at": "2026-08-28T19:14:10+08:00"
+    },
+    {
+      "stage": "POST_REFERENCE_CASE_RENDER_FAILED_SERIES_TO_FRAME_NAME_COLLISION",
+      "completed_at": "2026-08-28T19:17:28+08:00"
+    },
+    {
+      "stage": "FROZEN_EXECUTION_AMENDMENT_01_RECORDED_NO_SCIENTIFIC_RULE_CHANGE",
+      "completed_at": "2026-08-28T19:19:29+08:00"
+    },
+    {
+      "stage": "POST_REFERENCE_CASE_RENDER_SECOND_TO_FRAME_COLLISION_FOUND",
+      "completed_at": "2026-08-28T19:20:26+08:00"
+    },
+    {
+      "stage": "FROZEN_EXECUTION_AMENDMENT_01_EXPANDED_TO_ALL_CONFLICTING_RENDER_ACCESSES",
+      "completed_at": "2026-08-28T19:21:34+08:00"
+    },
+    {
+      "stage": "PRE_REFERENCE_HASHES_VERIFIED",
+      "completed_at": "2026-08-28T19:23:25+08:00"
+    },
+    {
+      "stage": "MANUAL_REFERENCE_REVEALED_AFTER_FREEZE",
+      "completed_at": "2026-08-28T19:23:25+08:00"
+    },
+    {
+      "stage": "POST_REFERENCE_SAR_EDGE_EVALUATION_COMPLETE_RAW_BRANCH_UNRESOLVED",
+      "completed_at": "2026-08-28T19:23:25+08:00"
+    },
+    {
+      "stage": "TWELVE_DETERMINISTIC_CASE_SLOTS_RENDERED_PAIRED",
+      "completed_at": "2026-08-28T19:23:25+08:00"
+    },
+    {
+      "stage": "M0B1_COMPLETE_STOP_NO_M0B2",
+      "completed_at": "2026-08-28T19:23:25+08:00"
+    }
+  ]
+}

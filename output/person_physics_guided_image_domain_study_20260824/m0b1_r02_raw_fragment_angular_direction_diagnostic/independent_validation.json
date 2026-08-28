@@ -1,0 +1,120 @@
+{
+  "schema": "PERSON_M0B1_POST_REFERENCE_VALIDATION_V1",
+  "status": "PASS",
+  "checks_passed": 15,
+  "checks_total": 15,
+  "checks": [
+    {
+      "name": "pre_reference_validation_still_passes",
+      "status": "PASS",
+      "details": "PASS"
+    },
+    {
+      "name": "all_timing_conditions_reported",
+      "status": "PASS",
+      "details": [
+        "NOMINAL",
+        "OPTICAL_SHIFT_MINUS_1_NOMINAL_STEP",
+        "OPTICAL_SHIFT_PLUS_1_NOMINAL_STEP",
+        "SAR_SHIFT_MINUS_1",
+        "SAR_SHIFT_PLUS_1"
+      ]
+    },
+    {
+      "name": "full_direction_denominators",
+      "status": "PASS",
+      "details": []
+    },
+    {
+      "name": "twelve_deterministic_case_slots",
+      "status": "PASS",
+      "details": 12
+    },
+    {
+      "name": "paired_case_figures_readable",
+      "status": "PASS",
+      "details": {
+        "pre": 12,
+        "post": 12
+      }
+    },
+    {
+      "name": "no_unsupported_incremental_claim",
+      "status": "PASS",
+      "details": "M0B1_ANGULAR_DIRECTION_OBSERVABILITY_INSUFFICIENT"
+    },
+    {
+      "name": "pareto_and_direction_do_not_prune",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "name": "raw_fragment_post_reference_interface_honest",
+      "status": "PASS",
+      "details": "NOT_ESTABLISHED"
+    },
+    {
+      "name": "timing_not_fit_or_selected",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "name": "stop_before_m0b2",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "name": "prohibited_claims_false",
+      "status": "PASS",
+      "details": {
+        "optical_sar_motion_consistency_established": false,
+        "person_specific_region_continuation": false,
+        "runtime_identity": false,
+        "ambiguity_reduction": false,
+        "dynamic_pruning": false,
+        "timing_calibration": false,
+        "final_sar_localization": false
+      }
+    },
+    {
+      "name": "reference_reveal_order",
+      "status": "PASS",
+      "details": [
+        "PROTOCOL_CODE_INPUT_HASHES_FROZEN",
+        "REFERENCE_NOT_LOADED",
+        "TIMING_QUERIES_MATERIALIZED_PRE_REFERENCE",
+        "PIXEL_LEVEL_STATIC_RELATIONS_MATERIALIZED_PRE_REFERENCE",
+        "ALL_DIRECTION_HYPOTHESIS_RECORDS_MATERIALIZED_PRE_REFERENCE",
+        "DIRECTION_FREE_CONTROLS_FROZEN_PRE_REFERENCE",
+        "PRE_REFERENCE_MANIFEST_FROZEN_REFERENCE_STILL_NOT_LOADED",
+        "POST_REFERENCE_CASE_RENDER_FAILED_SERIES_TO_FRAME_NAME_COLLISION",
+        "FROZEN_EXECUTION_AMENDMENT_01_RECORDED_NO_SCIENTIFIC_RULE_CHANGE",
+        "POST_REFERENCE_CASE_RENDER_SECOND_TO_FRAME_COLLISION_FOUND",
+        "FROZEN_EXECUTION_AMENDMENT_01_EXPANDED_TO_ALL_CONFLICTING_RENDER_ACCESSES",
+        "PRE_REFERENCE_HASHES_VERIFIED",
+        "MANUAL_REFERENCE_REVEALED_AFTER_FREEZE",
+        "POST_REFERENCE_SAR_EDGE_EVALUATION_COMPLETE_RAW_BRANCH_UNRESOLVED",
+        "TWELVE_DETERMINISTIC_CASE_SLOTS_RENDERED_PAIRED",
+        "M0B1_COMPLETE_STOP_NO_M0B2"
+      ]
+    },
+    {
+      "name": "final_manifest_hashes_and_boundaries",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "name": "five_timing_summary_rows",
+      "status": "PASS",
+      "details": 5
+    },
+    {
+      "name": "supported_cluster_accounting",
+      "status": "PASS",
+      "details": {
+        "edges": 6,
+        "pairs": 3
+      }
+    }
+  ]
+}

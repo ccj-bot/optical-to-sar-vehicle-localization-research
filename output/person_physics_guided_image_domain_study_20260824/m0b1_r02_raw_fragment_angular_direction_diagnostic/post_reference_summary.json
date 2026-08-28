@@ -1,0 +1,37 @@
+{
+  "schema": "PERSON_M0B1_POST_REFERENCE_SUMMARY_V1",
+  "created_at": "2026-08-28T19:23:24+08:00",
+  "state": "M0B1_ANGULAR_DIRECTION_OBSERVABILITY_INSUFFICIENT",
+  "secondary_states": [
+    "M0B1_RUNTIME_OPTICAL_TEMPORAL_SAMPLING_BLOCKED",
+    "M0B1_POST_REFERENCE_RAW_FRAGMENT_EVALUATION_INTERFACE_NOT_ESTABLISHED"
+  ],
+  "frozen_m0a_state": "M0A_REGION_SUPPORT_TRANSPORT_WITH_P0_GAIN",
+  "frozen_m0ar_state": "M0A_R_TRANSPORT_VALID_BUT_PERSON_SPECIFICITY_NOT_ESTABLISHED",
+  "reference_supported_base_edge_count": 6,
+  "reference_supported_frame_pair_cluster_count": 3,
+  "nominal_supported_hypothesis_records": 26,
+  "nominal_supported_dynamic_available": 10,
+  "nominal_supported_determinate_direction": 0,
+  "nominal_supported_determinate_frame_pair_clusters": 0,
+  "nominal_supported_determinate_raw_fragment_clusters": 0,
+  "nominal_supported_sampling_block_fraction": 0.5769230769230769,
+  "incremental_angular_signal_observed": false,
+  "static_geometry_reexpression_assessment": "NOT_IDENTIFIABLE_BECAUSE_INTERVAL_DIRECTION_IS_NOT_DETERMINATE",
+  "timing_calibrated": false,
+  "timing_shift_selected": false,
+  "pareto_pruning_performed": false,
+  "hypothesis_rejection_by_direction": false,
+  "raw_fragment_target_evaluator_status": "NOT_ESTABLISHED",
+  "recommend_m0b2": false,
+  "recommended_next_action": "DIAGNOSE_INTERVAL_WIDTH_OPTICAL_SAMPLING_RAW_FRAGMENT_CONTINUITY_SYNC_AND_MAPPING_SLOPE_BEFORE_MAGNITUDE_OR_ADMISSIBILITY",
+  "prohibited_claims": {
+    "optical_sar_motion_consistency_established": false,
+    "person_specific_region_continuation": false,
+    "runtime_identity": false,
+    "ambiguity_reduction": false,
+    "dynamic_pruning": false,
+    "timing_calibration": false,
+    "final_sar_localization": false
+  }
+}

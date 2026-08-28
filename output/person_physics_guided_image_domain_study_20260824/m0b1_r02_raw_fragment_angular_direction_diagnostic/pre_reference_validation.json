@@ -1,0 +1,151 @@
+{
+  "schema": "PERSON_M0B1_PRE_REFERENCE_VALIDATION_V1",
+  "status": "PASS",
+  "checks_passed": 26,
+  "checks_total": 26,
+  "checks": [
+    {
+      "name": "protocol_frozen",
+      "status": "PASS",
+      "details": "FROZEN_BEFORE_RUN"
+    },
+    {
+      "name": "protocol_hash",
+      "status": "PASS",
+      "details": "702277348913B3E7CBA6A4CEBF56ACA08807021F91C2E202236EDD3573973278"
+    },
+    {
+      "name": "runner_hash",
+      "status": "PASS",
+      "details": "2E047D7379080C09201316EB637390E60590BC53A681D3B979109C86EEC8BEC3"
+    },
+    {
+      "name": "validator_hash",
+      "status": "PASS",
+      "details": "79D7EE38D3E7C1662FC6D72299A8249A5BE952649D0EFB43F51216BD901A1674"
+    },
+    {
+      "name": "frozen_inputs_unchanged",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "name": "pre_reference_schema_no_reference_or_stitched_identity",
+      "status": "PASS",
+      "details": []
+    },
+    {
+      "name": "pre_reference_reference_false",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "name": "no_identity_assignment",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "name": "no_hypothesis_pruning",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "name": "five_timing_conditions",
+      "status": "PASS",
+      "details": [
+        "NOMINAL",
+        "OPTICAL_SHIFT_MINUS_1_NOMINAL_STEP",
+        "OPTICAL_SHIFT_PLUS_1_NOMINAL_STEP",
+        "SAR_SHIFT_MINUS_1",
+        "SAR_SHIFT_PLUS_1"
+      ]
+    },
+    {
+      "name": "complete_timing_query_denominator",
+      "status": "PASS",
+      "details": 115
+    },
+    {
+      "name": "nominal_pixel_topology_exact_key_parity",
+      "status": "PASS",
+      "details": {
+        "expected": 521,
+        "observed": 521
+      }
+    },
+    {
+      "name": "pixel_intersection_only",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "name": "feasible_availability_categories",
+      "status": "PASS",
+      "details": [
+        "ANGULAR_DYNAMIC_AVAILABLE",
+        "ANGULAR_DYNAMIC_UNAVAILABLE_FRAGMENT_BREAK",
+        "ANGULAR_DYNAMIC_UNAVAILABLE_SAME_OPTICAL_SAMPLE"
+      ]
+    },
+    {
+      "name": "same_sample_not_zero_motion",
+      "status": "PASS",
+      "details": 8674
+    },
+    {
+      "name": "fragment_break_requires_distinct_raw_ids",
+      "status": "PASS",
+      "details": 46334
+    },
+    {
+      "name": "dynamic_available_distinct_sample_same_raw_fragment",
+      "status": "PASS",
+      "details": 11252
+    },
+    {
+      "name": "optical_interval_formula",
+      "status": "PASS",
+      "details": 7.105427357601002e-15
+    },
+    {
+      "name": "sar_interval_formula",
+      "status": "PASS",
+      "details": 7.105427357601002e-15
+    },
+    {
+      "name": "optical_direction_classification",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "name": "sar_direction_classification",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "name": "raw_controls_direction_blind",
+      "status": "PASS",
+      "details": 8735
+    },
+    {
+      "name": "static_controls_direction_blind",
+      "status": "PASS",
+      "details": 9201
+    },
+    {
+      "name": "controls_reference_blind",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "name": "pre_reference_manifest_and_hashes",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "name": "summary_reports_topology_parity",
+      "status": "PASS",
+      "details": true
+    }
+  ]
+}

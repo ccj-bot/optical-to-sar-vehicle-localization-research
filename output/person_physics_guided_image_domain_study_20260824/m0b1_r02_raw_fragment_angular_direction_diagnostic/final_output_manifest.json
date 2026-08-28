@@ -1,0 +1,181 @@
+{
+  "schema": "PERSON_M0B1_FINAL_OUTPUT_MANIFEST_V1",
+  "created_at": "2026-08-28T19:23:24+08:00",
+  "reference_loaded": true,
+  "files": [
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_r02_raw_fragment_angular_direction_diagnostic\\post_reference_hypothesis_evaluation.csv",
+      "sha256": "2A85701191914B2FC16D595A057340E1A3DE0FE3EAF2C731EDB2E8980DAE518E",
+      "bytes": 261020526
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_r02_raw_fragment_angular_direction_diagnostic\\direction_state_summary.csv",
+      "sha256": "0E2C0568AB26F547C5CBDDED20ADB3F47BF3D3E3AFA18328E3CA00FE1FE0EEEA",
+      "bytes": 1432
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_r02_raw_fragment_angular_direction_diagnostic\\per_frame_pair_cluster.csv",
+      "sha256": "20AAFAB2C4B26EA0654354F6852A85E13BBD8B3877C21890736E1596CA2E9C5B",
+      "bytes": 3630
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_r02_raw_fragment_angular_direction_diagnostic\\per_raw_fragment_cluster.csv",
+      "sha256": "636058F8AD903C0A583582CB30DDF50CFCB3C3F23C20CFC3C5AC1CCFDD45A6A1",
+      "bytes": 22955
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_r02_raw_fragment_angular_direction_diagnostic\\timing_sensitivity.csv",
+      "sha256": "4748D7D89D2F66806A83017A0CF24070A9BE574F53EBB5D6F02D750AAAF96DDA",
+      "bytes": 851
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_r02_raw_fragment_angular_direction_diagnostic\\sar_only_angular_cross_tab.csv",
+      "sha256": "E244F79952880B7813CF5DCC9D3F0080354E5B5FA04799A579F5506C6247C30B",
+      "bytes": 1329
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_r02_raw_fragment_angular_direction_diagnostic\\static_shell_tautology_control.csv",
+      "sha256": "C9EAAEBF8FC66264F859B2A3F38B5DA28E010A221D60947F1DAAF7D324E58717",
+      "bytes": 2577
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_r02_raw_fragment_angular_direction_diagnostic\\real_case_registry.csv",
+      "sha256": "EC92DCC9CC7ADA000A18FFC8021AD88386BBCA1922927E2C6D1E892F328FF155",
+      "bytes": 16648
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_r02_raw_fragment_angular_direction_diagnostic\\post_reference_summary.json",
+      "sha256": "ECF3A757CC6A6A33FE3A4F999E8FCFE9C693ABFA79E1E939BD664B2BB543C523",
+      "bytes": 1785
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_r02_raw_fragment_angular_direction_diagnostic\\M0B1_R02_RAW_FRAGMENT_ANGULAR_DIRECTION_REPORT.md",
+      "sha256": "107B0EFE3A6E3D7EF07905CED6EC26C28A6AA62101305F623EA58F2841F535F3",
+      "bytes": 5204
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_r02_raw_fragment_angular_direction_diagnostic\\figures\\pre_reference_no_manual_overlay\\01_supported_concordant.png",
+      "sha256": "04DCC88761769E71A3AD83E969FA32B5FA547F56E2B2154EBAC4B93FE7E3C49A",
+      "bytes": 579120
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_r02_raw_fragment_angular_direction_diagnostic\\figures\\pre_reference_no_manual_overlay\\02_supported_contradictory.png",
+      "sha256": "78A7AF63C3412F587315FC7D743830DE8E5F4161D519101F7FDC2EE4101623DC",
+      "bytes": 579285
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_r02_raw_fragment_angular_direction_diagnostic\\figures\\pre_reference_no_manual_overlay\\03_supported_indeterminate.png",
+      "sha256": "7A25B247E3FFD3451148CB74F56C9E56D0F392998F60B9635E05F6751A0C07F4",
+      "bytes": 939683
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_r02_raw_fragment_angular_direction_diagnostic\\figures\\pre_reference_no_manual_overlay\\04_same_optical_sample.png",
+      "sha256": "BAF1490EC455217E4CDB9E912770C32D47F23DE41DB3149CF0472BCCCA98D0B2",
+      "bytes": 936350
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_r02_raw_fragment_angular_direction_diagnostic\\figures\\pre_reference_no_manual_overlay\\05_raw_fragment_break.png",
+      "sha256": "56584AF87B83434272D81A608A8891F27D057C97EA1F59561642E57B5F24B74A",
+      "bytes": 939742
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_r02_raw_fragment_angular_direction_diagnostic\\figures\\pre_reference_no_manual_overlay\\06_matched_wrong_concordant.png",
+      "sha256": "858FDF0CC4B1F5D49CDF3B52B9A85E5F84AF7346263310D4B2A26B38E257F010",
+      "bytes": 575347
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_r02_raw_fragment_angular_direction_diagnostic\\figures\\pre_reference_no_manual_overlay\\07_matched_wrong_contradictory.png",
+      "sha256": "8A67C80E243BBDCA8005874E19B9B2F4B7DFC2EC571964918D7310796EA34D55",
+      "bytes": 575763
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_r02_raw_fragment_angular_direction_diagnostic\\figures\\pre_reference_no_manual_overlay\\08_split_like_sar.png",
+      "sha256": "91E96CDD5F2FC0FAEDA0D21585DC392ABE0493DBE3B99BB0CBE441AA07D67B05",
+      "bytes": 918010
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_r02_raw_fragment_angular_direction_diagnostic\\figures\\pre_reference_no_manual_overlay\\09_merge_or_shared_sar.png",
+      "sha256": "C4F588201B7935D20D2F79CDAF12313208E2AF80A2136C86FAD5545C087B53BC",
+      "bytes": 942446
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_r02_raw_fragment_angular_direction_diagnostic\\figures\\pre_reference_no_manual_overlay\\10_timing_state_change.png",
+      "sha256": "9417901E62817133EA52EC81B8FCF4F026192D1B34092C8C67D818742E7087C7",
+      "bytes": 938003
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_r02_raw_fragment_angular_direction_diagnostic\\figures\\pre_reference_no_manual_overlay\\11_static_shell_tautology.png",
+      "sha256": "CD6F367742F531B6D9C0ED3AE31EF43DFBCA97ED5AB914C27AC054C6E7585E9B",
+      "bytes": 939611
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_r02_raw_fragment_angular_direction_diagnostic\\figures\\pre_reference_no_manual_overlay\\12_best_incremental_direction.png",
+      "sha256": "89866C0F44C94F53337353A82DF3D1C759F9531179797177CE387D0C3FF3C4B4",
+      "bytes": 910861
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_r02_raw_fragment_angular_direction_diagnostic\\figures\\post_reference_manual_overlay\\01_supported_concordant.png",
+      "sha256": "8EFA812B03CCA962F0497D3658F07BD8948B2100A21C2114CD9C24FABACFA963",
+      "bytes": 584695
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_r02_raw_fragment_angular_direction_diagnostic\\figures\\post_reference_manual_overlay\\02_supported_contradictory.png",
+      "sha256": "47C02CDE4F1AA87890405263261BFBA28D117850952457A712F887CC87DCFF6F",
+      "bytes": 584883
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_r02_raw_fragment_angular_direction_diagnostic\\figures\\post_reference_manual_overlay\\03_supported_indeterminate.png",
+      "sha256": "2F84C34980C6700BDF248FD8AE3D4AA71E79D3D4BC9AF63CD66BE47834FC9920",
+      "bytes": 944958
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_r02_raw_fragment_angular_direction_diagnostic\\figures\\post_reference_manual_overlay\\04_same_optical_sample.png",
+      "sha256": "156F2AEEC1AC306EACD2C45F99BF9FE64664CB616F99AC227198F75214348AC8",
+      "bytes": 942063
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_r02_raw_fragment_angular_direction_diagnostic\\figures\\post_reference_manual_overlay\\05_raw_fragment_break.png",
+      "sha256": "33424088B14460321404BFF8187285916BDEAAB5872B3650C1DCE565BC7D7D74",
+      "bytes": 945484
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_r02_raw_fragment_angular_direction_diagnostic\\figures\\post_reference_manual_overlay\\06_matched_wrong_concordant.png",
+      "sha256": "02D13E24DF3A89ED47309E9AFF1473C13CC3A653A68DFE1A3F4F650ACE5E130D",
+      "bytes": 580952
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_r02_raw_fragment_angular_direction_diagnostic\\figures\\post_reference_manual_overlay\\07_matched_wrong_contradictory.png",
+      "sha256": "C8CD273FAF0EC1E869AD17152AC724C3DB608C972CA071877EFCAD74A261C72D",
+      "bytes": 581390
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_r02_raw_fragment_angular_direction_diagnostic\\figures\\post_reference_manual_overlay\\08_split_like_sar.png",
+      "sha256": "0E4FD9BBF5E8FE40F251E50DBADB270FF39BF37451F6F8E41F75DC28A2B1CE44",
+      "bytes": 923702
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_r02_raw_fragment_angular_direction_diagnostic\\figures\\post_reference_manual_overlay\\09_merge_or_shared_sar.png",
+      "sha256": "8642C20A7349FA314AC5E5D4B7E2017E38AA297EC0BA29D8DF1A231C8D1955C2",
+      "bytes": 947674
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_r02_raw_fragment_angular_direction_diagnostic\\figures\\post_reference_manual_overlay\\10_timing_state_change.png",
+      "sha256": "EB5D644F5467FDBBB0870CA398BA8F4B202FBDFD85A02A4DA17E2317A0837897",
+      "bytes": 943702
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_r02_raw_fragment_angular_direction_diagnostic\\figures\\post_reference_manual_overlay\\11_static_shell_tautology.png",
+      "sha256": "8951E61A2FADF2700EDAE65E6EEC9E37B266F66F3E816BD2AE6D36849B2200F7",
+      "bytes": 944888
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_r02_raw_fragment_angular_direction_diagnostic\\figures\\post_reference_manual_overlay\\12_best_incremental_direction.png",
+      "sha256": "29AB85FA59C37465407F664A0198696115B3771BF58EBAFED924EAC43739D526",
+      "bytes": 916499
+    }
+  ],
+  "protocol_sha256": "702277348913B3E7CBA6A4CEBF56ACA08807021F91C2E202236EDD3573973278",
+  "pre_reference_manifest_sha256": "D7779EB65A6CB267C29D873097E3DD71E7BE56ADD10638B8DC88689DFE54AC89",
+  "m0b2_executed": false,
+  "hypotheses_pruned": false
+}

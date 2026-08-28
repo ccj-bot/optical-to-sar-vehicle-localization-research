@@ -233,3 +233,18 @@
 - 权威源与 supersession 台账：`output/person_physics_guided_image_domain_study_20260824/m0a_r_robustness_and_semantic_audit/AUTHORITATIVE_SOURCE_REVIEW_AND_SUPERSESSION.md`。
 - M0B 草案：`docs/M0B_OPTICAL_SAR_ANGULAR_DYNAMIC_CONSISTENCY_PROTOCOL_DRAFT.md`，状态 `DRAFT_NOT_EXECUTED`。主对象固定为 `raw_track_fragment_id`，先 hard feasibility，再分离 evidence families 和 Pareto/partial-order；固定 SAR-only、direction、magnitude、timing ablations，不拟合最佳 shift，不实现 tracker/assignment/唯一 path。
 - 若以后显式批准执行，最小 pilot 仍限 R02 F472-F494 的 22 个 lag1 pairs，以 angular direction 为首个增量因素；M0B 本轮没有运行。
+
+## M0B1 R02 raw-fragment angular-direction diagnostic（2026-08-28）
+
+- 新冻结协议：`output/person_physics_guided_image_domain_study_20260824/m0b1_r02_raw_fragment_angular_direction_diagnostic/M0B1_R02_RAW_FRAGMENT_ANGULAR_DIRECTION_PROTOCOL_FROZEN_BEFORE_RUN.md`；历史 M0B draft 保留不覆盖。
+- 主状态：`M0B1_ANGULAR_DIRECTION_OBSERVABILITY_INSUFFICIENT`；次级状态为 `M0B1_RUNTIME_OPTICAL_TEMPORAL_SAMPLING_BLOCKED` 与 `M0B1_POST_REFERENCE_RAW_FRAGMENT_EVALUATION_INTERFACE_NOT_ESTABLISHED`。
+- 完整 pre-reference bank 为 308,600 条记录，其中 66,260 条静态可行、11,252 条同 raw fragment 且不同 optical sample 的动态记录、8,674 条 same-sample unavailable、46,334 条 fragment-break unavailable；所有 11,252 条可用 optical displacement intervals 均包含 0，确定方向数为 0。
+- 名义 timing 下 reference-supported 层为 26 条记录：10 条动态可用、15 条 raw-fragment break、1 条静态不可行；concordant/contradictory 均为 0。matched SAR null 为 105 条，其中 35 条动态可用，也全部 direction-indeterminate。
+- 五个固定 timing conditions 均没有产生任何 determinate optical direction；没有搜索或选择 best shift，也没有写回同步参数。SAR ±1 的边界 observation unavailable 被保留在完整分母中。
+- reference 只能支持 6 个 SAR base edges、来自 3 个 frame-pair clusters；仓库没有合法的 raw-fragment→manual-target evaluator，因此 raw branch 不被 reference 选择或修复。
+- 13 个 static-shell-matched supported/control pairs 的方向状态全部同为 indeterminate。由于方向本身不可观测，本轮不能区分它是新增动态信息还是静态 shell containment 的重新表达。
+- 12 个确定性病例槽全部生成 paired figures；缺失的 supported/matched concordant、contradictory 和 best-incremental 类别均明确标记 deterministic fallback。pre 12 张无 manual overlay，post 12 张只在合法 supported-edge 映射处显示 magenta reference；人工视觉 QA 通过。
+- 独立验证：pre-reference `PASS (26/26)`；post-reference `PASS (15/15)`。
+- post-reference 首次渲染暴露 `pandas.Series.to_frame` 同名冲突；`AMENDMENT_01_POST_REFERENCE_CASE_RENDER_SERIES_NAME_COLLISION.md` 只把渲染时 `to_frame` 改为显式列访问，未改变 timing、pixel relations、hypotheses、controls、direction states、case rules 或 outcome thresholds。
+- 没有执行 Pareto pruning、hypothesis deletion、angular magnitude/monotonicity、weighted score、classifier、factor graph、tracker、Hungarian、identity assignment、timing calibration、lag3/lag5、M0B2、P2 或最终 SAR localization。
+- 当前不建议进入 M0B2。若以后另行授权，先诊断 optical interval width、18/30 FPS sampling、raw-fragment continuity、sync 与 mapping slope；光学继续只提供 time/azimuth prior，SAR 保留最终定位权。

@@ -1,0 +1,78 @@
+{
+  "schema": "PERSON_PHYSICS_GUIDED_IMAGE_DOMAIN_RESEARCH_CONTRACT_V1",
+  "created_at": "2026-08-24T10:42:26+08:00",
+  "status": "P0_PROTOCOL_FROZEN_NOT_RUN",
+  "workspace": "D:\\profile\\research\\workspace",
+  "interpreter": "D:\\MINICONDA\\envs\\py311\\python.exe",
+  "old_work_dependency": false,
+  "research_positioning": "SAR成像机理与物理尺度约束下的光学-SAR PERSON目标图像表征、时序关联与定位研究",
+  "observation_semantics": {
+    "sar_target_feature": "CONDITIONAL_IMAGE_DOMAIN_OBSERVED_RESPONSE",
+    "sar_track": "IMAGE_COORDINATE_OBSERVATION_PATH_NOT_TARGET_INDEPENDENT_MOTION",
+    "common_motion": "IMAGE_DOMAIN_COMMON_APPARENT_MOTION_NOT_PLATFORM_TRAJECTORY",
+    "optical_role": "TEMPORAL_BEHAVIOR_AND_AZIMUTH_SEARCH_PRIOR_ONLY",
+    "sar_role": "FINAL_LOCAL_RESPONSE_LOCALIZATION_INSIDE_SEARCH_SHELL",
+    "similarity": "DISPLAY_REPEATABILITY_SOFT_EVIDENCE_ONLY"
+  },
+  "input_snapshot": [
+    {
+      "path": "D:\\browser\\person_SAR_fullframe_interpolation_review_1787483093904.json",
+      "sha256": "E3CA1F07552030F46770420EED16AEF362E9DD74C909A6BEB23C54D29F79AF8A"
+    },
+    {
+      "path": "D:\\profile\\research\\workspace\\output\\person_multidimensional_response_explorer_20260823\\explorer_data.js",
+      "sha256": "C39E60EB478FF7D815EFE6984D3BCF36600737E2EC3D1FF76D04020DED54EF7D"
+    },
+    {
+      "path": "D:\\profile\\research\\workspace\\output\\pseudocolor_azimuth_calibration_20260803\\geometry\\fan_geometry_report.json",
+      "sha256": "B8A166D2ABCF57B1B3868692651D68610B5FA5B135E6D0BC48DC1D2CDB3F5A93"
+    }
+  ],
+  "available_data": {
+    "runs": ["R01ZF", "R02ZF", "R03ZF", "R04ZF"],
+    "sar_frames": 398,
+    "run_scoped_person_ids": 11,
+    "accepted_boxes": 852,
+    "manual_native_boxes": 251,
+    "linear_interpolation_boxes": 600,
+    "manual_adjusted_interpolation_boxes": 1,
+    "raw_amplitude": false,
+    "complex_phase": false,
+    "platform_pose_velocity_attitude": false,
+    "physical_sync_verified": false
+  },
+  "invalidated_probe": {
+    "path": "D:\\profile\\research\\workspace\\output\\person_sar_motion_evidence_20260824\\motion_evidence_summary.json",
+    "sha256": "5150F3EFFC884912A5A229E2FFD1F6DC011DC8BEE8297F2D4B6F3E06E7FD2801",
+    "status": "INVALID_FOR_PHYSICAL_TARGET_MOTION_INTERPRETATION",
+    "allowed_use": "BOX_CONDITIONED_PSEUDOCOLOR_DISPLAY_REPEATABILITY_ONLY"
+  },
+  "stages": [
+    {
+      "stage": "P0",
+      "name": "COMMON_APPARENT_MOTION_OBSERVABILITY",
+      "discovery_run": "R01ZF",
+      "heldout_run": "R04ZF",
+      "status": "NEXT"
+    },
+    {
+      "stage": "P1",
+      "name": "PERSON_RESPONSE_AFTER_COMMON_MOTION_COMPENSATION",
+      "status": "BLOCKED_UNTIL_P0_PASS"
+    },
+    {
+      "stage": "P2",
+      "name": "OPTICAL_PRIOR_TO_SAR_CANDIDATE_ASSOCIATION",
+      "status": "BLOCKED_UNTIL_P1_EVIDENCE_CONTRACT"
+    }
+  ],
+  "forbidden_claims": [
+    "PSEUDOCOLOR_PIXEL_IS_RCS_OR_COMPLEX_SCATTERING",
+    "SAME_SENSOR_PIXEL_IS_FIXED_PHYSICAL_BACKGROUND",
+    "ANNOTATED_BOX_TRACK_IS_TARGET_INDEPENDENT_MOTION",
+    "HIGH_LOCAL_SIMILARITY_PROVES_PERSON_IDENTITY",
+    "OPTICAL_TRACK_DIRECTLY_DETERMINES_FINAL_SAR_BOX",
+    "GLOBAL_HISTOGRAM_CHANGE_PROVES_DISPLAY_GAIN_CHANGE"
+  ]
+}
+

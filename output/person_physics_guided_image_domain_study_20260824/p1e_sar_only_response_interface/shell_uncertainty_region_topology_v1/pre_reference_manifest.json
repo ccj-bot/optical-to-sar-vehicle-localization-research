@@ -1,0 +1,28 @@
+{
+  "generated_at": "2026-08-27T11:35:15.686462Z",
+  "shell_table_sha256": "2AE24955FD8A4989A04DE38D91F2671BA6D6741DD7F6EE3FB09068BBEA5E3854",
+  "edge_table_sha256": "699B140FA93A7BCDB49AE7D4747CEF18E65A6306BAA378C974DD40106F1A0305",
+  "component_table_sha256": "4560200B785D638953440E94AC2D0221C1CE67710CB02DC510866B46E00251B6",
+  "reference_loaded": false,
+  "process_note": {
+    "explorer_container_loaded": true,
+    "explorer_annotation_content_used": false,
+    "sanitized_frame_keys": [
+      "geometry",
+      "nominal_optical_frame_index",
+      "nominal_optical_timestamp_ms",
+      "run_id",
+      "sar_frame_index",
+      "sar_frame_uid",
+      "sar_height_px",
+      "sar_image_url",
+      "sar_timestamp_ms",
+      "sar_width_px",
+      "sync_status",
+      "theta_high_deg",
+      "theta_low_deg"
+    ],
+    "strict_sealed_process_isolation_claimed": false,
+    "reason": "The existing explorer container includes annotations, but this function drops them before shell/region computation."
+  }
+}

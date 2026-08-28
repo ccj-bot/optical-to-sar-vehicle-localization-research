@@ -1,0 +1,477 @@
+{
+  "schema": "PERSON_P1E_SHELL_UNCERTAINTY_REGION_TOPOLOGY_REPORT_VALIDATION_V1",
+  "created_at": "2026-08-27T20:01:55+08:00",
+  "status": "PASS",
+  "checks_passed": 18,
+  "checks_total": 18,
+  "report_path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\shell_uncertainty_region_topology_v1\\P1E_SHELL_UNCERTAINTY_REGION_TOPOLOGY_REPORT.html",
+  "report_sha256": "1784553864685880CACDDDB0AFA125C067039628E15C43EC256AD784E02B6A02",
+  "analysis_script_sha256": "18AABE0BF28B71719323944366F6973B73E8F789559C275313431ECE52293027",
+  "report_script_sha256": "1990C657585A15F0F37F0777FD60D590C0CFA26AC4C385D3F9F53321671F6A42",
+  "validation_script_sha256": "BE61EDDB73E7A15A050A8F947B28C5E211A67C6C43CBE30BB388ED4F6EB0B287",
+  "checks": [
+    {
+      "name": "required_inputs_tables_scripts_and_report_exist",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "all_frozen_input_sha256_values_match",
+      "pass": true,
+      "detail": [
+        {
+          "path": "D:\\profile\\research\\workspace\\tasks\\person_physics_guided_image_domain_study_20260824\\run_p1e_runtime_track_response_region_minimal.py",
+          "expected_sha256": "051B414753B73118CF77712A35DF86EC5FB05C12B2C00217EB14BFE81DFDCBBA",
+          "actual_sha256": "051B414753B73118CF77712A35DF86EC5FB05C12B2C00217EB14BFE81DFDCBBA",
+          "match": true
+        },
+        {
+          "path": "D:\\profile\\research\\workspace\\tasks\\person_physics_guided_image_domain_study_20260824\\run_p1e_candidate_recall_audit.py",
+          "expected_sha256": "84CCAEBB9A195D184B6C34393CC71A7699E5F190D4D5FC253C16E337855CF0F8",
+          "actual_sha256": "84CCAEBB9A195D184B6C34393CC71A7699E5F190D4D5FC253C16E337855CF0F8",
+          "match": true
+        },
+        {
+          "path": "D:\\profile\\research\\workspace\\tasks\\person_physics_guided_image_domain_study_20260824\\run_p1e_optical_shell_information_gain.py",
+          "expected_sha256": "2C71440DF9C22FDCE17A3C4050E4E0054F6B7CA4542C44C134E2DEA3478A2203",
+          "actual_sha256": "2C71440DF9C22FDCE17A3C4050E4E0054F6B7CA4542C44C134E2DEA3478A2203",
+          "match": true
+        },
+        {
+          "path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\runtime_track_response_region_minimal_v1\\track_shell_definition_table.csv",
+          "expected_sha256": "B6C58404F54F542133EE5678EBB93B97758BE85EFE71CA252C41FD3018C061C5",
+          "actual_sha256": "B6C58404F54F542133EE5678EBB93B97758BE85EFE71CA252C41FD3018C061C5",
+          "match": true
+        },
+        {
+          "path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\runtime_track_response_region_minimal_v1\\response_region_table_pre_reference.csv",
+          "expected_sha256": "A2BB425C366EA0DE461C427113E8E836A556F65250677146B6F26129E853C339",
+          "actual_sha256": "A2BB425C366EA0DE461C427113E8E836A556F65250677146B6F26129E853C339",
+          "match": true
+        },
+        {
+          "path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\runtime_track_response_region_minimal_v1\\candidate_recomputation_parity.csv",
+          "expected_sha256": "21FA3270E268EEC460E603C07F1D840182780E0FB671B0ABFC04E12256C35329",
+          "actual_sha256": "21FA3270E268EEC460E603C07F1D840182780E0FB671B0ABFC04E12256C35329",
+          "match": true
+        },
+        {
+          "path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\runtime_track_response_region_minimal_v1\\offline_reference_response_region_evaluation.csv",
+          "expected_sha256": "4522FE9B65249180B073EA16E87BF11A528DC079B3831348CD7610E3685B7353",
+          "actual_sha256": "4522FE9B65249180B073EA16E87BF11A528DC079B3831348CD7610E3685B7353",
+          "match": true
+        },
+        {
+          "path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\observation_model_diagnostic_v1\\observation_condition_table.csv",
+          "expected_sha256": "DE65B9705A353F0DF783E0D4A59D0274FD05547362ABE463C50C9C5469D80C21",
+          "actual_sha256": "DE65B9705A353F0DF783E0D4A59D0274FD05547362ABE463C50C9C5469D80C21",
+          "match": true
+        },
+        {
+          "path": "D:\\profile\\research\\workspace\\output\\person_optical_guided_sar_annotation_full_20260823\\optical_person_frame_hypotheses.parquet",
+          "expected_sha256": "15D65A299762E87BFD6F21E811C754D1DF062AC6AFC1840A1C1A9B162AB8B478",
+          "actual_sha256": "15D65A299762E87BFD6F21E811C754D1DF062AC6AFC1840A1C1A9B162AB8B478",
+          "match": true
+        },
+        {
+          "path": "D:\\profile\\research\\workspace\\output\\r01_person_azimuth_pilot_20260819\\model_summary.json",
+          "expected_sha256": "3463FFF0A8D1507ECA383356E0FB108BD60E1226A19890B62EA8C8FD5090BA42",
+          "actual_sha256": "3463FFF0A8D1507ECA383356E0FB108BD60E1226A19890B62EA8C8FD5090BA42",
+          "match": true
+        },
+        {
+          "path": "D:\\profile\\research\\workspace\\output\\r04_person_crossrun_validation_20260820\\validation_report.json",
+          "expected_sha256": "24D0CEE627B272EA76A64BC245C0779DA2F6ED428E885C77490A177DBE470A14",
+          "actual_sha256": "24D0CEE627B272EA76A64BC245C0779DA2F6ED428E885C77490A177DBE470A14",
+          "match": true
+        },
+        {
+          "path": "D:\\profile\\research\\workspace\\output\\person_multidimensional_response_explorer_20260823\\explorer_data.js",
+          "expected_sha256": "C39E60EB478FF7D815EFE6984D3BCF36600737E2EC3D1FF76D04020DED54EF7D",
+          "actual_sha256": "C39E60EB478FF7D815EFE6984D3BCF36600737E2EC3D1FF76D04020DED54EF7D",
+          "match": true
+        }
+      ]
+    },
+    {
+      "name": "all_398_frozen_region_masks_match_aggregate_sha256",
+      "pass": true,
+      "detail": {
+        "mask_count": 398,
+        "expected_mask_count": 398,
+        "aggregate_sha256": "0D9E10C41DB2EE02E060E9AF789AC59C6CD80591B11DC591222CA2B400656CB1",
+        "expected_aggregate_sha256": "0D9E10C41DB2EE02E060E9AF789AC59C6CD80591B11DC591222CA2B400656CB1"
+      }
+    },
+    {
+      "name": "all_materialized_row_counts_match_frozen_summary",
+      "pass": true,
+      "detail": {
+        "actual": {
+          "shell_rows": 14607,
+          "frame_shell_summary_rows": 7164,
+          "pixel_edge_rows": 97219,
+          "shell_node_rows": 6927,
+          "region_node_rows": 207603,
+          "component_rows": 136391,
+          "frame_topology_rows": 3582,
+          "reference_evaluation_rows": 4518,
+          "r02_pair_rows": 324
+        },
+        "expected": {
+          "shell_rows": 14607,
+          "frame_shell_summary_rows": 7164,
+          "pixel_edge_rows": 97219,
+          "shell_node_rows": 6927,
+          "region_node_rows": 207603,
+          "component_rows": 136391,
+          "frame_topology_rows": 3582,
+          "reference_evaluation_rows": 4518,
+          "r02_pair_rows": 324
+        },
+        "summary": {
+          "shell_rows": 14607,
+          "frame_shell_summary_rows": 7164,
+          "pixel_edge_rows": 97219,
+          "shell_node_rows": 6927,
+          "region_node_rows": 207603,
+          "component_rows": 136391,
+          "frame_topology_rows": 3582,
+          "reference_evaluation_rows": 4518,
+          "r02_pair_rows": 324
+        }
+      }
+    },
+    {
+      "name": "shell_width_decomposition_closes_to_machine_precision",
+      "pass": true,
+      "detail": {
+        "max_abs_direct_reconstruction_error_deg": 1.4210854715202004e-14,
+        "max_abs_recorded_reconstruction_error_deg": 7.105427357601002e-15,
+        "max_abs_difference_from_recorded_error_deg": 1.4210854715202004e-14
+      }
+    },
+    {
+      "name": "temporal_windows_obey_registered_bounds_and_causal_policies_use_no_future",
+      "pass": true,
+      "detail": {
+        "all_source_timestamps_within_policy_bounds": true,
+        "future_flag_matches_source_timestamps": true,
+        "same_frame_and_past_only_have_no_future": true,
+        "future_rows_by_policy": {
+          "BUFFERED_100MS": 2064,
+          "CENTERED_100MS": 2064,
+          "CENTERED_250MS": 2289,
+          "CENTERED_500MS": 2652,
+          "PAST_ONLY_250MS": 0,
+          "SAME_FRAME": 0
+        }
+      }
+    },
+    {
+      "name": "pre_reference_products_precede_manual_reference_materialization",
+      "pass": true,
+      "detail": {
+        "stage_order": [
+          "FROZEN_DEPENDENCY_AND_MASK_HASH_CHECK",
+          "OPTICAL_RAW_FRAGMENT_PROVENANCE_LOADED_WITHOUT_SAR_REFERENCE",
+          "ALL_SHELL_UNCERTAINTY_VARIANTS_GENERATED_WITHOUT_SAR_REFERENCE",
+          "ALL_PIXEL_EDGES_AND_BIPARTITE_TOPOLOGY_GENERATED_WITHOUT_SAR_REFERENCE",
+          "GT_BLIND_CANDIDATE_SAMPLED_P0_AND_FRAME_DISPLAY_CONDITIONS_ATTACHED",
+          "MANUAL_REFERENCE_MATERIALIZED_ONLY_FOR_OFFLINE_INTERPRETATION"
+        ],
+        "manifest_generated_at": "2026-08-27T11:35:15.686462Z",
+        "manual_reference_stage_at": "2026-08-27T11:39:22.587265Z",
+        "manifest_reference_loaded": false,
+        "manifest_hashes_match_current_tables": true,
+        "latest_core_pre_reference_mtime": "2026-08-27T11:35:15.686463+00:00",
+        "earliest_offline_reference_mtime": "2026-08-27T11:39:22.243723+00:00",
+        "strict_sealed_process_isolation_claimed": false
+      }
+    },
+    {
+      "name": "runtime_shell_region_edge_topology_products_remain_gt_blind",
+      "pass": true,
+      "detail": {
+        "forbidden_columns": {},
+        "physical_target_id_used_shell_rows": 0,
+        "sar_reference_used_shell_rows": 0,
+        "sar_range_assigned_by_optical_rows": 0,
+        "strict_runtime_identity_claimed_rows": 0,
+        "physical_target_id_used_edge_rows": 0,
+        "sar_reference_used_edge_rows": 0
+      }
+    },
+    {
+      "name": "all_shell_and_region_local_degrees_equal_unique_pixel_edge_counts",
+      "pass": true,
+      "detail": {
+        "shell_nodes": 6927,
+        "shell_degree_mismatches": 0,
+        "region_nodes": 207603,
+        "region_degree_mismatches": 0
+      }
+    },
+    {
+      "name": "all_edges_join_one_component_and_component_counts_topology_recompute",
+      "pass": true,
+      "detail": {
+        "edge_rows": 97219,
+        "edge_component_mismatches": 0,
+        "component_rows": 136391,
+        "component_count_mismatches": 0,
+        "component_topology_mismatches": 0
+      }
+    },
+    {
+      "name": "all_854_centered_250ms_raw_shells_match_previous_frozen_interface_exactly",
+      "pass": true,
+      "detail": {
+        "legacy_rows": 854,
+        "current_rows": 854,
+        "merged_rows": 854,
+        "merge_states": [
+          "both"
+        ],
+        "max_width_abs_error_deg": 0.0,
+        "max_area_abs_error_px": 0.0,
+        "intervals_exact": true,
+        "stored_parity_table_exact": true
+      }
+    },
+    {
+      "name": "r02_shell_width_retention_and_burden_headlines_recompute",
+      "pass": true,
+      "detail": {
+        "width_metrics": {
+          "same_frame_single_box_median_deg": 2.6857457106655698,
+          "same_frame_guard_increment_median_deg": 12.0,
+          "same_frame_effective_width_median_deg": 14.685745710665572,
+          "centered_time_union_increment_median_deg": 6.906202442233113,
+          "centered_effective_width_median_deg": 21.61905661093268
+        },
+        "policy_metrics": {
+          "SAME_FRAME": {
+            "reference_retention": 0.8333333333333334,
+            "union_burden_median": 0.2832654246734493,
+            "union_burden_display_percent": 28.3
+          },
+          "PAST_ONLY_250MS": {
+            "reference_retention": 0.9166666666666666,
+            "union_burden_median": 0.2897046452811473,
+            "union_burden_display_percent": 29.0
+          },
+          "BUFFERED_100MS": {
+            "reference_retention": 0.9444444444444444,
+            "union_burden_median": 0.297681058553066,
+            "union_burden_display_percent": 29.8
+          },
+          "CENTERED_250MS": {
+            "reference_retention": 0.9444444444444444,
+            "union_burden_median": 0.3194894657090952,
+            "union_burden_display_percent": 31.9
+          }
+        }
+      }
+    },
+    {
+      "name": "r02_q95_local_region_degree_headlines_recompute",
+      "pass": true,
+      "detail": {
+        "SAME_FRAME": [
+          257,
+          46,
+          161,
+          50
+        ],
+        "PAST_ONLY_250MS": [
+          273,
+          40,
+          151,
+          82
+        ],
+        "CENTERED_250MS": [
+          307,
+          39,
+          108,
+          160
+        ]
+      }
+    },
+    {
+      "name": "f482_f490_peak_missing_region_present_semantics_are_preserved",
+      "pass": true,
+      "detail": [
+        {
+          "frame_index": 482,
+          "target_id": "R02ZF_SARPERSON02",
+          "temporal_policy": "SAME_FRAME",
+          "representation_state": "PEAK_MISSING_REGION_PRESENT",
+          "nearest_region_id": "R02ZF_SARF000482__Q095__R0012",
+          "region_degree_shell_count": 2.0,
+          "topology_state": "MULTIPLE_SHELLS_MULTIPLE_REGIONS"
+        },
+        {
+          "frame_index": 482,
+          "target_id": "R02ZF_SARPERSON02",
+          "temporal_policy": "PAST_ONLY_250MS",
+          "representation_state": "PEAK_MISSING_REGION_PRESENT",
+          "nearest_region_id": "R02ZF_SARF000482__Q095__R0012",
+          "region_degree_shell_count": 2.0,
+          "topology_state": "MULTIPLE_SHELLS_MULTIPLE_REGIONS"
+        },
+        {
+          "frame_index": 482,
+          "target_id": "R02ZF_SARPERSON02",
+          "temporal_policy": "CENTERED_250MS",
+          "representation_state": "PEAK_MISSING_REGION_PRESENT",
+          "nearest_region_id": "R02ZF_SARF000482__Q095__R0012",
+          "region_degree_shell_count": 3.0,
+          "topology_state": "MULTIPLE_SHELLS_MULTIPLE_REGIONS"
+        },
+        {
+          "frame_index": 490,
+          "target_id": "R02ZF_SARPERSON02",
+          "temporal_policy": "SAME_FRAME",
+          "representation_state": "PEAK_MISSING_REGION_PRESENT",
+          "nearest_region_id": "R02ZF_SARF000490__Q095__R0012",
+          "region_degree_shell_count": 3.0,
+          "topology_state": "MULTIPLE_SHELLS_MULTIPLE_REGIONS"
+        },
+        {
+          "frame_index": 490,
+          "target_id": "R02ZF_SARPERSON02",
+          "temporal_policy": "PAST_ONLY_250MS",
+          "representation_state": "PEAK_MISSING_REGION_PRESENT",
+          "nearest_region_id": "R02ZF_SARF000490__Q095__R0012",
+          "region_degree_shell_count": 3.0,
+          "topology_state": "MULTIPLE_SHELLS_MULTIPLE_REGIONS"
+        },
+        {
+          "frame_index": 490,
+          "target_id": "R02ZF_SARPERSON02",
+          "temporal_policy": "CENTERED_250MS",
+          "representation_state": "PEAK_MISSING_REGION_PRESENT",
+          "nearest_region_id": "R02ZF_SARF000490__Q095__R0012",
+          "region_degree_shell_count": 3.0,
+          "topology_state": "MULTIPLE_SHELLS_MULTIPLE_REGIONS"
+        }
+      ]
+    },
+    {
+      "name": "html_links_and_all_12_formal_visualizations_are_readable",
+      "pass": true,
+      "detail": {
+        "local_reference_count": 19,
+        "formal_image_count": 12,
+        "case_count": 7,
+        "missing_references": [],
+        "unreadable_images": [],
+        "image_dimensions": {
+          "visualizations/r02_shell_width_decomposition.png": [
+            1600,
+            800
+          ],
+          "visualizations/r02_guard_time_jaccard.png": [
+            1920,
+            768
+          ],
+          "visualizations/r02_latency_retention_burden.png": [
+            1280,
+            864
+          ],
+          "visualizations/fragmentation_and_clipping.png": [
+            1920,
+            752
+          ],
+          "visualizations/r02_q95_local_region_degree.png": [
+            1440,
+            800
+          ],
+          "visualizations/case_R02_F472_LOW_RANK_AND_SHARED.png": [
+            2400,
+            1350
+          ],
+          "visualizations/case_R02_F482_PEAK_MISSING_REGION_PRESENT.png": [
+            2400,
+            1350
+          ],
+          "visualizations/case_R02_F490_PEAK_MISSING_REGION_PRESENT.png": [
+            2400,
+            1350
+          ],
+          "visualizations/case_R03_F489_ONE_SHELL_ONE_CORE.png": [
+            2400,
+            1350
+          ],
+          "visualizations/case_R03_F494_EDGE_OBSERVABLE.png": [
+            2400,
+            1350
+          ],
+          "visualizations/case_R04_F014_ONE_SHELL_MULTI_REGION.png": [
+            2400,
+            1350
+          ],
+          "visualizations/case_R04_F191_MULTI_MULTI.png": [
+            2400,
+            1350
+          ]
+        }
+      }
+    },
+    {
+      "name": "report_keeps_semantic_boundaries_and_answers_both_registered_questions",
+      "pass": true,
+      "detail": {
+        "required_phrases": {
+          "这轮没有建立 P2": true,
+          "q95 region 不是 PERSON box": true,
+          "不进入 P2": true,
+          "不生成 SAR range/box": true,
+          "SAR 保留 range 与最终定位权": true,
+          "不是 PERSON identity 或最终定位": true,
+          "GT-blind 可计算": true,
+          "只能 reference-conditioned 离线解释": true,
+          "0° 并不是可部署壳": true,
+          "不是最优窗口选择": true
+        },
+        "forbidden_positive_claims": {
+          "P2 已经成立": false,
+          "P2_PASS": false,
+          "生成了最终 PERSON 框": false,
+          "严格 runtime identity 已建立": false,
+          "盲验证通过": false,
+          "证明物理散射融合": false
+        }
+      }
+    },
+    {
+      "name": "machine_summary_status_and_fixed_boundaries_are_preserved",
+      "pass": true,
+      "detail": {
+        "main_optical_interface": "RAW_DETECTED_FRAGMENT_ALL",
+        "runtime_optical_identity_established": false,
+        "parent_stitched_id_semantics": "GT_BLIND_OFFLINE_CONTINUITY_PROVENANCE_ONLY",
+        "physical_target_id_used_for_runtime_products": false,
+        "sar_reference_used_for_shell_region_edge_or_topology": false,
+        "reference_materialized_after_topology": true,
+        "response_region_is_person_box": false,
+        "sar_range_generated": false,
+        "new_total_score_or_classifier": false,
+        "p2_claim": false
+      }
+    },
+    {
+      "name": "analysis_hash_matches_report_record_and_artifacts_stay_in_active_workspace",
+      "pass": true,
+      "detail": {
+        "derived_analysis_sha256": "18AABE0BF28B71719323944366F6973B73E8F789559C275313431ECE52293027",
+        "actual_analysis_sha256": "18AABE0BF28B71719323944366F6973B73E8F789559C275313431ECE52293027",
+        "report_script_sha256": "1990C657585A15F0F37F0777FD60D590C0CFA26AC4C385D3F9F53321671F6A42",
+        "report_sha256": "1784553864685880CACDDDB0AFA125C067039628E15C43EC256AD784E02B6A02",
+        "workspace": "D:\\profile\\research\\workspace",
+        "output_dir": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\shell_uncertainty_region_topology_v1"
+      }
+    }
+  ]
+}

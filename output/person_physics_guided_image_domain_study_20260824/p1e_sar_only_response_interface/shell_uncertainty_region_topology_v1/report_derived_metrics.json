@@ -1,0 +1,95 @@
+{
+  "status": "COMPLETE_NO_NEW_PASS_FAIL_NO_P2_CLAIM",
+  "r02_same_frame_current": {
+    "single_box_width_median_deg": 2.69,
+    "guard_increment_median_deg": 12.0,
+    "retention": 0.8333333333333334
+  },
+  "guard_table": [
+    {
+      "guard": "当前 ±6°",
+      "retention": "83.3%",
+      "union_burden": "28.3%",
+      "P01_P02": "0.635",
+      "P01_P02_n": "9/9",
+      "P03_P04": "0.517",
+      "P03_P04_n": "4/9"
+    },
+    {
+      "guard": "几何敏感性 ±2.652°",
+      "retention": "80.6%",
+      "union_burden": "19.0%",
+      "P01_P02": "0.415",
+      "P01_P02_n": "9/9",
+      "P03_P04": "0.325",
+      "P03_P04_n": "4/9"
+    },
+    {
+      "guard": "raw-box 下界 0°",
+      "retention": "69.4%",
+      "union_burden": "9.6%",
+      "P01_P02": "0.000",
+      "P01_P02_n": "9/9",
+      "P03_P04": "0.025",
+      "P03_P04_n": "4/9"
+    }
+  ],
+  "degree_table": [
+    {
+      "policy": "同帧",
+      "intersected": 257,
+      "degree1": 46,
+      "degree2": 161,
+      "degree3plus": 50,
+      "multi_fraction": "82.1%"
+    },
+    {
+      "policy": "因果过去 250 ms",
+      "intersected": 273,
+      "degree1": 40,
+      "degree2": 151,
+      "degree3plus": 82,
+      "multi_fraction": "85.3%"
+    },
+    {
+      "policy": "居中 ±250 ms",
+      "intersected": 307,
+      "degree1": 39,
+      "degree2": 108,
+      "degree3plus": 160,
+      "multi_fraction": "87.3%"
+    }
+  ],
+  "shared_table": [
+    {
+      "policy": "同帧",
+      "shared_ref_rows": 34,
+      "no_shell": 6,
+      "one_shell": 4,
+      "multi_shell": 24,
+      "component_multi_multi": 24
+    },
+    {
+      "policy": "因果过去 250 ms",
+      "shared_ref_rows": 34,
+      "no_shell": 0,
+      "one_shell": 6,
+      "multi_shell": 28,
+      "component_multi_multi": 34
+    },
+    {
+      "policy": "居中 ±250 ms",
+      "shared_ref_rows": 34,
+      "no_shell": 0,
+      "one_shell": 4,
+      "multi_shell": 30,
+      "component_multi_multi": 34
+    }
+  ],
+  "case_count": 7,
+  "component_state_absences": {
+    "MULTIPLE_SHELLS_ONE_REGION_component": 0,
+    "SHELL_NO_REGION_component": 0
+  },
+  "analysis_script_sha256": "18AABE0BF28B71719323944366F6973B73E8F789559C275313431ECE52293027"
+}

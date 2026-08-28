@@ -1,0 +1,80 @@
+{
+  "schema": "PERSON_P1E_DYNAMIC_EVIDENCE_RUNTIME_GRAPH_V1",
+  "created_at": "2026-08-26T15:52:09+08:00",
+  "run_id": "R02ZF",
+  "frame_count": 23,
+  "pair_count": 22,
+  "static_node_count": 6457,
+  "conditions": [
+    "CORRECT_P0",
+    "ZERO_TRANSPORT",
+    "REVERSE_P0",
+    "TANGENTIAL_PLUS_0_75M",
+    "SHUFFLED_SOURCE_SHIFT7"
+  ],
+  "edge_count_within_3sigma": 52926,
+  "mutual_edge_count": 17129,
+  "manual_reference_loaded_during_runtime_graph": false,
+  "physical_target_id_used": false,
+  "interpolated_trajectory_used": false,
+  "optical_track_used": false,
+  "candidate_topk_truncation": null,
+  "input_hash_checks": [
+    {
+      "kind": "input_snapshot",
+      "path": "D:\\browser\\person_SAR_fullframe_interpolation_review_1787483093904.json",
+      "expected_sha256": "E3CA1F07552030F46770420EED16AEF362E9DD74C909A6BEB23C54D29F79AF8A",
+      "actual_sha256": "E3CA1F07552030F46770420EED16AEF362E9DD74C909A6BEB23C54D29F79AF8A",
+      "match": true
+    },
+    {
+      "kind": "input_snapshot",
+      "path": "D:\\profile\\research\\workspace\\output\\person_multidimensional_response_explorer_20260823\\explorer_data.js",
+      "expected_sha256": "C39E60EB478FF7D815EFE6984D3BCF36600737E2EC3D1FF76D04020DED54EF7D",
+      "actual_sha256": "C39E60EB478FF7D815EFE6984D3BCF36600737E2EC3D1FF76D04020DED54EF7D",
+      "match": true
+    },
+    {
+      "kind": "input_snapshot",
+      "path": "D:\\profile\\research\\workspace\\output\\pseudocolor_azimuth_calibration_20260803\\geometry\\fan_geometry_report.json",
+      "expected_sha256": "B8A166D2ABCF57B1B3868692651D68610B5FA5B135E6D0BC48DC1D2CDB3F5A93",
+      "actual_sha256": "B8A166D2ABCF57B1B3868692651D68610B5FA5B135E6D0BC48DC1D2CDB3F5A93",
+      "match": true
+    },
+    {
+      "kind": "invalidated_probe_reference",
+      "path": "D:\\profile\\research\\workspace\\output\\person_sar_motion_evidence_20260824\\motion_evidence_summary.json",
+      "expected_sha256": "5150F3EFFC884912A5A229E2FFD1F6DC011DC8BEE8297F2D4B6F3E06E7FD2801",
+      "actual_sha256": "5150F3EFFC884912A5A229E2FFD1F6DC011DC8BEE8297F2D4B6F3E06E7FD2801",
+      "match": true,
+      "allowed_use": "BOX_CONDITIONED_PSEUDOCOLOR_DISPLAY_REPEATABILITY_ONLY"
+    }
+  ],
+  "frozen_hashes": {
+    "D:\\profile\\research\\workspace\\tasks\\person_physics_guided_image_domain_study_20260824\\run_p0_common_apparent_motion.py": "0AB671B6A33A48CA2E3160A201629FA2DD341EF052A29B8D2CCBC2DFB26DCFD8",
+    "D:\\profile\\research\\workspace\\tasks\\person_physics_guided_image_domain_study_20260824\\run_p1e_single_frame_position_specificity.py": "98468B9DEA391E9FE9A209268CEFE7BE32BE40A7D7742B9DBE7D54C3539B9BB1",
+    "D:\\profile\\research\\workspace\\tasks\\person_physics_guided_image_domain_study_20260824\\run_b0r_minimal_applicability.py": "3C0DFB20B58D445D224DAD7426AEB0E6DA5E065DB07059B462F1FE528CFC8ABF",
+    "D:\\profile\\research\\workspace\\tasks\\person_physics_guided_image_domain_study_20260824\\run_p1e_candidate_recall_audit.py": "84CCAEBB9A195D184B6C34393CC71A7699E5F190D4D5FC253C16E337855CF0F8",
+    "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\candidate_recall_semantic_split_v1\\single_frame_candidate_recall\\gt_blind_candidates_all_processed_frames.csv": "D2F1673A247FDB3AB1DD884F989ADC0ABE4E33A86AEFE45B5DFB4BE286FD6EC0",
+    "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\candidate_recall_semantic_split_v1\\single_frame_candidate_recall\\manual_reference_candidate_interpretation_v2.csv": "796F20EB3080C5B45CDEBBCC71584CC95C65691F056D46C4A31704A3D86E8EC7",
+    "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\b0r_minimal\\b0r_background_anchor_metrics_R02_R03.csv": "CFEFB6D4239CDB290F0689A5E79437986FCD744FCE7F023B8F2CCBCAA8367385",
+    "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\b0r_minimal\\b0r_model_parameters_R02_R03.jsonl": "265ADC67D62C466F2D9523FDD06F0503BC9B4AE1343D1A63CCCC3D5FE8FF5E2D",
+    "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\b0r_minimal\\b0r_pair_metrics_R02_R03.csv": "862BA1FEEE5A4A540DA03230F8A15192DE117BA002AB6FE67C2E8C2EFF0D042C"
+  },
+  "parameters": {
+    "local_competitor_radius_m": 1.25,
+    "density_radii_m": [
+      1.0,
+      2.0
+    ],
+    "structure_radius_m": 0.9,
+    "local_anchor_radius_px": 144.0,
+    "local_anchor_min_count": 8,
+    "uncertainty_floor_px": 0.5,
+    "model_support_radius_m": 0.3,
+    "perturbation_tangential_m": 0.75,
+    "shuffle_pair_shift": 7,
+    "edge_export_max_sigma": 3.0,
+    "thread_mutual_max_sigma": 2.0
+  }
+}

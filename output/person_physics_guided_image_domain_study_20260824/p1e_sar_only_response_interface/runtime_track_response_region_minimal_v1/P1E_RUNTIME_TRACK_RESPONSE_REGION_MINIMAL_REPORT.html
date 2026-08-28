@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PERSON P1E · runtime optical track 壳与 C2 response-region 最小实验</title>
+  <style>
+    :root { --ink:#13283b; --muted:#5b6a78; --paper:#f4f7fa; --card:#fff; --line:#d8e1e9; --blue:#276fbf; --green:#16866f; --orange:#c36a24; --pink:#b63d72; --purple:#7656a5; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font:15px/1.7 "Segoe UI","Microsoft YaHei",sans-serif; }
+    header { padding:48px max(24px,calc((100vw - 1220px)/2)); color:white; background:linear-gradient(126deg,#10283c,#1d5366 58%,#17725e); }
+    header h1 { margin:0 0 12px; font-size:clamp(30px,4vw,50px); line-height:1.14; }
+    header p { max-width:1000px; margin:8px 0; color:#dcecf1; font-size:17px; }
+    .status { display:inline-block; margin-top:14px; padding:7px 12px; border:1px solid #81cbb7; border-radius:999px; background:#0b5143; font-weight:800; }
+    nav { position:sticky; top:0; z-index:6; display:flex; gap:8px; overflow:auto; padding:10px max(20px,calc((100vw - 1220px)/2)); background:#ffffffee; border-bottom:1px solid var(--line); backdrop-filter:blur(8px); }
+    nav a { color:#284760; text-decoration:none; white-space:nowrap; padding:5px 9px; border-radius:7px; } nav a:hover { background:#e8f0f6; }
+    main { width:min(1220px,calc(100% - 32px)); margin:28px auto 80px; }
+    section,.case-block { margin:24px 0; padding:26px; background:var(--card); border:1px solid var(--line); border-radius:16px; box-shadow:0 8px 28px #18334b08; }
+    .case-block { padding:20px; background:#fbfcfe; }
+    h2 { margin:0 0 16px; font-size:28px; } h3 { margin:0 0 8px; font-size:19px; }
+    .lead { font-size:17px; color:#354c60; }
+    .grid-2 { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; }
+    .grid-4 { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; }
+    .card { padding:18px; border:1px solid var(--line); border-radius:12px; background:#fbfcfe; }
+    .metric { padding:16px; border-left:4px solid var(--blue); border-radius:10px; background:#f1f6fc; }
+    .metric strong { display:block; font-size:26px; color:#174f91; }
+    .callout { margin:16px 0; padding:16px 18px; border-left:5px solid var(--green); background:#edf9f5; border-radius:10px; }
+    .warning { border-left-color:var(--orange); background:#fff6eb; }
+    .negative { border-left-color:var(--pink); background:#fff1f6; }
+    .purple { border-left-color:var(--purple); background:#f6f1fb; }
+    .table-wrap { overflow:auto; margin:14px 0; } table { width:100%; border-collapse:collapse; min-width:760px; } th,td { padding:9px 10px; border-bottom:1px solid var(--line); text-align:left; vertical-align:top; } th { position:sticky; top:0; background:#edf3f7; color:#31485c; }
+    .figure-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; }
+    .evidence-figure { margin:0; padding:12px; border:1px solid var(--line); border-radius:12px; background:#fbfcfe; } .evidence-figure img { display:block; width:100%; height:auto; border-radius:8px; } figcaption { padding:10px 3px 2px; color:var(--muted); }
+    code { padding:2px 5px; border-radius:5px; background:#edf2f6; }
+    .answer .q { color:var(--blue); font-weight:800; margin-bottom:6px; }
+    .file-links { display:flex; flex-wrap:wrap; gap:9px; } .file-links a { padding:7px 10px; border:1px solid var(--line); border-radius:8px; color:#215586; text-decoration:none; background:#f8fbff; }
+    .foot { color:var(--muted); font-size:13px; }
+    @media (max-width:880px) { .grid-2,.grid-4,.figure-grid { grid-template-columns:1fr; } section,.case-block { padding:19px; } }
+  </style>
+</head>
+<body>
+<header>
+  <h1>运行时光学 track 壳与 C2 response-region：两个接口是否已经站得住</h1>
+  <p>本轮没有进入 P2，也没有建立复杂 tracker。它只回答两个更基础的问题：自动 optical tracklet 能否独立缩小 SAR 方位搜索；冻结 C2 连续场能否比 local-max/NMS 离散峰更忠实地表达图像中已经存在的条件性响应。</p>
+  <span class="status">COMPLETE_NO_NEW_PASS_FAIL_NO_P2_CLAIM</span>
+</header>
+<nav><a href="#conclusion">结论</a><a href="#boundary">接口边界</a><a href="#tracks">optical track</a><a href="#time">时间窗</a><a href="#r02">R02</a><a href="#regions">response-region</a><a href="#cases">病例</a><a href="#answers">直接回答</a><a href="#audit">审计</a></nav>
+<main>
+  <section id="conclusion">
+    <h2>一、结论先行</h2>
+    <div class="callout"><strong>C2 response-region 接口获得了明确的语义增益：</strong>在已暴露开发语料上，q95 region 直接覆盖 PERSON reference 为 98.0%，0.30 m 邻近覆盖为 99.2%；F482/F490 两条原来的 candidate missing 都变成 <code>PEAK_MISSING_REGION_PRESENT</code>。这说明离散峰曾漏掉图像中已存在的连续响应，不表示已经生成 PERSON 框。</div>
+    <div class="callout warning"><strong>runtime optical identity 仍未建立：</strong>主接口是全部自动 detected raw fragments；R02 有 33 个 fragment，而 stitched accepted 只有 9 条且 ambiguous stitch 合计 10。stitched 结果只能作为 GT-blind offline continuity proxy，不能冒充严格在线 track identity。</div>
+    <div class="grid-4">
+      <div class="metric"><span>398 帧 region 覆盖</span><strong>398 / 398</strong><small>连续 S(x) 与 region masks</small></div>
+      <div class="metric"><span>q95 直接覆盖</span><strong>98.0%</strong><small>PERSON reference；posthoc 开发语料</small></div>
+      <div class="metric"><span>q95 共享比例</span><strong>37.5%</strong><small>R02 为 94.4%</small></div>
+      <div class="metric"><span>RAW ±250 ms 保留</span><strong>87.3%</strong><small>union burden 中位 35.9%</small></div>
+    </div>
+    <div class="callout negative"><strong>仍未解决：</strong>local competing response 的 q95 直接覆盖仍达 63.3%，R02 P03/P04 继续 shared；因此 response-region 支持“候选响应存在/形状如何”，没有建立单帧唯一定位。光学 track 壳只缩小方位问题，不直接决定 SAR range、中心或最终响应位置。</div>
+  </section>
+
+  <section id="boundary">
+    <h2>二、两个接口必须严格分开</h2>
+    <div class="grid-2">
+      <div class="card"><h3>Optical track-shell 接口</h3><ul><li>输入：自动光学检测/tracklet、固定 optical→SAR 方位映射、固定 guard、预定义时间半窗、SAR 扇面几何；</li><li>输出：每条 track 独立的粗 azimuth shell；</li><li>禁止：人工 <code>physical_target_id</code>、SAR reference、SAR range GT、人工选“正确 track”；</li><li>所有 track 分支均先输出，reference 只在最后离线评价。</li></ul></div>
+      <div class="card"><h3>SAR response-region 接口</h3><ul><li>输入：冻结 C2 的实际候选场 <code>S(x)=fixed_support_mean_v2(C2)</code>；</li><li>规则：全有效域 q90/q95/q97.5、4096-bin percentile、8-connectivity；</li><li>不做：形态学桥接、面积删除、watershed、PERSON 个案调阈值；</li><li>region 是显示域条件性响应，不是 PERSON 框，也不是人体固有 RCS 或稳定散射中心。</li></ul></div>
+    </div>
+    <p class="callout purple"><strong>“runtime”准确口径：</strong>raw fragment 来源最接近现有运行时可获得的自动 tracklet；但本轮 ±100/250/500 ms 使用居中窗口，可能包含未来光学观测。因此它是带缓冲/离线时间不确定度诊断，不是已经完成的零延迟 causal online tracker。</p>
+  </section>
+
+  <section id="tracks">
+    <h2>三、现有 optical track identity 到底能提供什么</h2>
+    <div class="table-wrap"><table><thead><tr><th>run</th><th>raw fragment tracks</th><th>stitched accepted tracks</th><th>stitched ambiguous 合计</th><th>含 posthoc 插值的 stitched tracks</th></tr></thead><tbody><tr><td>R01ZF</td><td>12</td><td>6</td><td>2</td><td>0</td></tr><tr><td>R02ZF</td><td>33</td><td>9</td><td>10</td><td>3</td></tr><tr><td>R03ZF</td><td>5</td><td>2</td><td>3</td><td>0</td></tr><tr><td>R04ZF</td><td>11</td><td>5</td><td>2</td><td>0</td></tr></tbody></table></div>
+    <p class="lead">R01/R04 的碎片化相对可控；R02 是主要断点。raw 与 stitched 在当前短时间窗内的 reference coverage/retention 几乎相同，说明离线 stitching 尚未产生明确的壳几何增益。它的价值目前是诊断连续性上限，不是已经建立了可靠 runtime identity。</p>
+    
+    <figure class="evidence-figure">
+      <a href="visualizations/report_optical_track_provenance.png" target="_blank" rel="noopener">
+        <img src="visualizations/report_optical_track_provenance.png" alt="Track provenance 与断点" loading="lazy">
+      </a>
+      <figcaption><strong>Track provenance 与断点</strong><br>所有 raw fragments 都进入主接口；accepted tier 没有被用来过滤主接口。</figcaption>
+    </figure>
+    
+  </section>
+
+  <section id="time">
+    <h2>四、时间不确定度：保留率与搜索负担同时增长</h2>
+    <div class="table-wrap"><table><thead><tr><th>半窗/ms</th><th>track prior 可用</th><th>reference 候选保留</th><th>单 track burden 中位</th><th>union burden 中位</th><th>分支 burden 求和</th><th>分支重复比例</th></tr></thead><tbody><tr><td>0</td><td>95.2%</td><td>76.9%</td><td>14.5%</td><td>28.2%</td><td>31.7%</td><td>0.0%</td></tr><tr><td>100</td><td>96.4%</td><td>81.7%</td><td>16.4%</td><td>31.5%</td><td>36.2%</td><td>0.0%</td></tr><tr><td>250</td><td>97.6%</td><td>87.3%</td><td>22.0%</td><td>35.9%</td><td>53.9%</td><td>16.8%</td></tr><tr><td>500</td><td>99.2%</td><td>93.2%</td><td>25.8%</td><td>41.0%</td><td>79.6%</td><td>40.9%</td></tr></tbody></table></div>
+    <p class="callout warning"><strong>不能把 500 ms 读成“最好”。</strong>0→500 ms 时 reference 候选保留由 76.9% 增到 93.2%，但单 track burden 由 14.5% 增到 25.8%，union burden 由 28.2% 增到 41.0%，分支重复也从 0 增到约 40.9%。同步精度的价值正体现在这条曲线上：更窄的可信时间窗可以减少壳宽与分支负担，而不是让 SAR 让渡最终定位权。</p>
+    
+    <figure class="evidence-figure">
+      <a href="visualizations/report_time_window_retention_burden_tradeoff.png" target="_blank" rel="noopener">
+        <img src="visualizations/report_time_window_retention_burden_tradeoff.png" alt="时间窗保留率—候选负担" loading="lazy">
+      </a>
+      <figcaption><strong>时间窗保留率—候选负担</strong><br>窗口是运行结果前固定的 0/100/250/500 ms；没有看完结果再挑一个最漂亮的值。</figcaption>
+    </figure>
+    
+  </section>
+
+  <section id="r02">
+    <h2>五、R02：track-conditioned 搜索更小，但 identity / shared 未解决</h2>
+    <div class="table-wrap"><table><thead><tr><th>PERSON</th><th>reference 帧数</th><th>global→union→offline best-track rank 中位</th><th>有 rank 的帧</th><th>任一 track 保留</th></tr></thead><tbody><tr><td>P01</td><td>9</td><td>11 → 3 → 2</td><td>9/9</td><td>100.0%</td></tr><tr><td>P02</td><td>9</td><td>18 → 6 → 4</td><td>7/9</td><td>77.8%</td></tr><tr><td>P03</td><td>9</td><td>1 → 1 → 1</td><td>8/9</td><td>88.9%</td></tr><tr><td>P04</td><td>9</td><td>1 → 1 → 1</td><td>7/9</td><td>77.8%</td></tr></tbody></table></div>
+    <div class="grid-2">
+      <div class="card"><h3>P01 / P02</h3><p>P01 的 11→3→2、P02 的 18→6→4 表明：相对 all-person union shell，每条 track 独立出壳还能进一步降低部分全扇面竞争。但 P02 仍只有 7/9 帧有 0.8 m 离散峰；这不是唯一定位已经成立。</p></div>
+      <div class="card"><h3>P03 / P04</h3><p>二者仍为 1→1→1，但当前壳本身没有稳定分离。offline-associated 两壳的角度 Jaccard 在多个窗口仍约 0.5–0.6，且窗口/fragment 可用帧数不同。因而当前还不能形成“光学壳已清楚分开、SAR 却只有同一 response”的强证据。</p></div>
+    </div>
+    <div class="table-wrap"><table><thead><tr><th>离线配对</th><th>半窗/ms</th><th>可配对帧</th><th>Jaccard 中位</th><th>IQR</th></tr></thead><tbody><tr><td>P01/P02</td><td>0</td><td>9</td><td>0.635</td><td>0.629–0.644</td></tr><tr><td>P01/P02</td><td>100</td><td>9</td><td>0.672</td><td>0.660–0.674</td></tr><tr><td>P01/P02</td><td>250</td><td>9</td><td>0.735</td><td>0.731–0.741</td></tr><tr><td>P01/P02</td><td>500</td><td>9</td><td>0.793</td><td>0.775–0.802</td></tr><tr><td>P03/P04</td><td>0</td><td>4</td><td>0.517</td><td>0.452–0.581</td></tr><tr><td>P03/P04</td><td>100</td><td>4</td><td>0.553</td><td>0.530–0.596</td></tr><tr><td>P03/P04</td><td>250</td><td>7</td><td>0.560</td><td>0.536–0.653</td></tr><tr><td>P03/P04</td><td>500</td><td>9</td><td>0.532</td><td>0.532–0.532</td></tr></tbody></table></div>
+    <div class="figure-grid">
+      
+    <figure class="evidence-figure">
+      <a href="visualizations/report_r02_global_union_track_rank.png" target="_blank" rel="noopener">
+        <img src="visualizations/report_r02_global_union_track_rank.png" alt="R02 global→union→track rank" loading="lazy">
+      </a>
+      <figcaption><strong>R02 global→union→track rank</strong><br>offline best-track 只用于评价 track-conditioned 上限；运行时没有用 reference 选择这条 track。</figcaption>
+    </figure>
+    
+      
+    <figure class="evidence-figure">
+      <a href="visualizations/report_r02_track_shell_jaccard.png" target="_blank" rel="noopener">
+        <img src="visualizations/report_r02_track_shell_jaccard.png" alt="R02 track 壳重叠" loading="lazy">
+      </a>
+      <figcaption><strong>R02 track 壳重叠</strong><br>每个窗口的 n 不同，不能把曲线解释成纯时间窗因果。</figcaption>
+    </figure>
+    
+    </div>
+  </section>
+
+  <section id="regions">
+    <h2>六、从“峰”到“响应区域”，究竟修正了什么</h2>
+    <div class="table-wrap"><table><thead><tr><th>离线位置实体</th><th>行数</th><th>直接落入 q95 region</th><th>0.30 m 内有 q95 region</th></tr></thead><tbody><tr><td>PERSON reference</td><td>251</td><td>98.0%</td><td>99.2%</td></tr><tr><td>固定径向/切向偏移</td><td>1004</td><td>1.8%</td><td>12.1%</td></tr><tr><td>几何匹配空间对照</td><td>1243</td><td>3.9%</td><td>16.2%</td></tr><tr><td>局部竞争响应</td><td>251</td><td>63.3%</td><td>76.1%</td></tr></tbody></table></div>
+    <div class="grid-2">
+      <div class="card"><h3>修正 candidate missing 语义</h3><p>251 条 PERSON reference 中，249 条本来就有 0.8 m 离散峰；F482/F490 两条没有峰但都有 q95 region。另有 R02 F494 P01、R04 F35 P01 只在 q90 有 region；q90 内完全无 region 的 reference 为 0。</p></div>
+      <div class="card"><h3>没有修正局部竞争与 shared</h3><p>q95 direct coverage：PERSON 98.0%，固定偏移 1.8%，几何匹配对照 3.9%，局部竞争响应 63.3%。对远离 reference 的对照有明显位置优势，但 local competing 仍高，不能授予唯一性。</p></div>
+    </div>
+    <div class="table-wrap"><table><thead><tr><th>frame</th><th>PERSON</th><th>C2 percentile</th><th>最近峰 rank</th><th>峰距/m</th><th>q95 area/m²</th><th>major/m</th><th>结构</th><th>shared</th></tr></thead><tbody><tr><td>R02ZF_SARF000482</td><td>P02</td><td>0.959</td><td>14</td><td>1.159</td><td>1.362</td><td>2.257</td><td>EXTENDED_OR_RIDGE_RESPONSE</td><td>是</td></tr><tr><td>R02ZF_SARF000490</td><td>P02</td><td>0.993</td><td>14</td><td>0.820</td><td>2.148</td><td>4.094</td><td>EXTENDED_OR_RIDGE_RESPONSE</td><td>是</td></tr></tbody></table></div>
+    <h3>q90-only 弱状态</h3>
+    <div class="table-wrap"><table><thead><tr><th>frame</th><th>PERSON</th><th>C2 percentile</th><th>最近峰 rank</th><th>峰距/m</th></tr></thead><tbody><tr><td>R02ZF_SARF000494</td><td>P01</td><td>0.907</td><td>24</td><td>0.698</td></tr><tr><td>R04ZF_SARF000035</td><td>P01</td><td>0.916</td><td>86</td><td>0.491</td></tr></tbody></table></div>
+    
+    <figure class="evidence-figure">
+      <a href="visualizations/report_q95_reference_control_region_coverage.png" target="_blank" rel="noopener">
+        <img src="visualizations/report_q95_reference_control_region_coverage.png" alt="q95 reference 与空间对照" loading="lazy">
+      </a>
+      <figcaption><strong>q95 reference 与空间对照</strong><br>所有位置实体都在 region 完整生成后才离线评价；这不是盲验证。</figcaption>
+    </figure>
+    
+    <p class="callout"><strong>最稳妥的新接口描述：</strong>response-region 能区分 <code>PEAK_PRESENT</code>、<code>PEAK_MISSING_REGION_PRESENT</code>、q90-only 弱状态、extended/ridge、shared 与 censored/unobservable；这些仍是 reference-conditioned 离线解释标签，不是已经完成的 GT-blind runtime 状态分类器。</p>
+  </section>
+
+  <section id="cases">
+    <h2>七、七个直接病例：先看真实图像，再看汇总</h2>
+    <p class="lead">每个病例同时提供局部放大和全扇面六联图。局部图聚焦用户指定的 PERSON 组；全扇面图用于确认模型没有只截取有利局部、没有忽略扇面边界，也没有把 reference 用于生成 region、peak 或 shell。</p>
+    <article class="case-block"><h3>病例 01 · R02ZF_SARF000482</h3><p>P02 reference 处 C2 percentile 0.959；最近离散峰 rank 14、距 1.159 m，但 reference 直接落入 q95 extended region。该 region 与 P01 共享，表示 response present / peak missing，而不是唯一定位。</p><div class="figure-grid">
+    <figure class="evidence-figure">
+      <a href="visualizations/local_zoom_case_01_R02_F482_PEAK_MISSING_REGION.png" target="_blank" rel="noopener">
+        <img src="visualizations/local_zoom_case_01_R02_F482_PEAK_MISSING_REGION.png" alt="局部放大" loading="eager">
+      </a>
+      <figcaption><strong>局部放大</strong><br>原图、实际 S(x)、q90/q95/q97.5 和全部 RAW track 壳；reference 仅离线叠加。</figcaption>
+    </figure>
+    
+    <figure class="evidence-figure">
+      <a href="visualizations/case_01_R02_F482_PEAK_MISSING_REGION.png" target="_blank" rel="noopener">
+        <img src="visualizations/case_01_R02_F482_PEAK_MISSING_REGION.png" alt="全扇面六联图" loading="lazy">
+      </a>
+      <figcaption><strong>全扇面六联图</strong><br>用于同时核查扇面边界、全局 C2 结构、全部 track 壳和 response-region 敏感性。</figcaption>
+    </figure>
+    </div></article><article class="case-block"><h3>病例 02 · R02ZF_SARF000490</h3><p>P02 percentile 0.993；最近峰距 0.820 m，刚超过固定 0.8 m。q95 region 主轴约 4.09 m，包含多个既有 peak，说明固定峰半径对 missing 语义敏感。</p><div class="figure-grid">
+    <figure class="evidence-figure">
+      <a href="visualizations/local_zoom_case_02_R02_F490_RADIUS_SENSITIVE_REGION.png" target="_blank" rel="noopener">
+        <img src="visualizations/local_zoom_case_02_R02_F490_RADIUS_SENSITIVE_REGION.png" alt="局部放大" loading="lazy">
+      </a>
+      <figcaption><strong>局部放大</strong><br>原图、实际 S(x)、q90/q95/q97.5 和全部 RAW track 壳；reference 仅离线叠加。</figcaption>
+    </figure>
+    
+    <figure class="evidence-figure">
+      <a href="visualizations/case_02_R02_F490_RADIUS_SENSITIVE_REGION.png" target="_blank" rel="noopener">
+        <img src="visualizations/case_02_R02_F490_RADIUS_SENSITIVE_REGION.png" alt="全扇面六联图" loading="lazy">
+      </a>
+      <figcaption><strong>全扇面六联图</strong><br>用于同时核查扇面边界、全局 C2 结构、全部 track 壳和 response-region 敏感性。</figcaption>
+    </figure>
+    </div></article><article class="case-block"><h3>病例 03 · R02ZF_SARF000483</h3><p>P03/P04 同处一个 compact q95 region；P01/P02 同时处于另一 shared extended region。这里只能描述图像域 shared / 未分离，不能声称物理散射融合。</p><div class="figure-grid">
+    <figure class="evidence-figure">
+      <a href="visualizations/local_zoom_case_03_R02_P03_P04_SHARED_REGION.png" target="_blank" rel="noopener">
+        <img src="visualizations/local_zoom_case_03_R02_P03_P04_SHARED_REGION.png" alt="局部放大" loading="lazy">
+      </a>
+      <figcaption><strong>局部放大</strong><br>原图、实际 S(x)、q90/q95/q97.5 和全部 RAW track 壳；reference 仅离线叠加。</figcaption>
+    </figure>
+    
+    <figure class="evidence-figure">
+      <a href="visualizations/case_03_R02_P03_P04_SHARED_REGION.png" target="_blank" rel="noopener">
+        <img src="visualizations/case_03_R02_P03_P04_SHARED_REGION.png" alt="全扇面六联图" loading="lazy">
+      </a>
+      <figcaption><strong>全扇面六联图</strong><br>用于同时核查扇面边界、全局 C2 结构、全部 track 壳和 response-region 敏感性。</figcaption>
+    </figure>
+    </div></article><article class="case-block"><h3>病例 04 · R03ZF_SARF000458</h3><p>R03 F458 距最大距离边界约 0.888 m，冻结 P0 为 EXTENDED；但单帧 q95 region 与 peak 都存在，直接说明 P0 transport core 与单帧可观察域不是同一个 mask。</p><div class="figure-grid">
+    <figure class="evidence-figure">
+      <a href="visualizations/local_zoom_case_04_R03_OUTER_RANGE_BOUNDARY_OBSERVATION.png" target="_blank" rel="noopener">
+        <img src="visualizations/local_zoom_case_04_R03_OUTER_RANGE_BOUNDARY_OBSERVATION.png" alt="局部放大" loading="lazy">
+      </a>
+      <figcaption><strong>局部放大</strong><br>原图、实际 S(x)、q90/q95/q97.5 和全部 RAW track 壳；reference 仅离线叠加。</figcaption>
+    </figure>
+    
+    <figure class="evidence-figure">
+      <a href="visualizations/case_04_R03_OUTER_RANGE_BOUNDARY_OBSERVATION.png" target="_blank" rel="noopener">
+        <img src="visualizations/case_04_R03_OUTER_RANGE_BOUNDARY_OBSERVATION.png" alt="全扇面六联图" loading="lazy">
+      </a>
+      <figcaption><strong>全扇面六联图</strong><br>用于同时核查扇面边界、全局 C2 结构、全部 track 壳和 response-region 敏感性。</figcaption>
+    </figure>
+    </div></article><article class="case-block"><h3>病例 05 · R04ZF_SARF000000</h3><p>清晰的 PEAK_PRESENT 对照病例，用于说明 region 表示并非只为修补困难帧；离散峰与紧凑 region 可以一致。</p><div class="figure-grid">
+    <figure class="evidence-figure">
+      <a href="visualizations/local_zoom_case_05_R04_F0_CLEAR_PEAK_PRESENT.png" target="_blank" rel="noopener">
+        <img src="visualizations/local_zoom_case_05_R04_F0_CLEAR_PEAK_PRESENT.png" alt="局部放大" loading="lazy">
+      </a>
+      <figcaption><strong>局部放大</strong><br>原图、实际 S(x)、q90/q95/q97.5 和全部 RAW track 壳；reference 仅离线叠加。</figcaption>
+    </figure>
+    
+    <figure class="evidence-figure">
+      <a href="visualizations/case_05_R04_F0_CLEAR_PEAK_PRESENT.png" target="_blank" rel="noopener">
+        <img src="visualizations/case_05_R04_F0_CLEAR_PEAK_PRESENT.png" alt="全扇面六联图" loading="lazy">
+      </a>
+      <figcaption><strong>全扇面六联图</strong><br>用于同时核查扇面边界、全局 C2 结构、全部 track 壳和 response-region 敏感性。</figcaption>
+    </figure>
+    </div></article><article class="case-block"><h3>病例 06 · R04ZF_SARF000035</h3><p>P01 reference percentile 0.916、最近峰 rank 86；0.30 m 内只有 q90 region，没有 q95 region。它保留弱/边缘状态，而不是通过调阈值把病例强行救成 q95。</p><div class="figure-grid">
+    <figure class="evidence-figure">
+      <a href="visualizations/local_zoom_case_06_R04_F35_Q90_ONLY_BORDERLINE.png" target="_blank" rel="noopener">
+        <img src="visualizations/local_zoom_case_06_R04_F35_Q90_ONLY_BORDERLINE.png" alt="局部放大" loading="lazy">
+      </a>
+      <figcaption><strong>局部放大</strong><br>原图、实际 S(x)、q90/q95/q97.5 和全部 RAW track 壳；reference 仅离线叠加。</figcaption>
+    </figure>
+    
+    <figure class="evidence-figure">
+      <a href="visualizations/case_06_R04_F35_Q90_ONLY_BORDERLINE.png" target="_blank" rel="noopener">
+        <img src="visualizations/case_06_R04_F35_Q90_ONLY_BORDERLINE.png" alt="全扇面六联图" loading="lazy">
+      </a>
+      <figcaption><strong>全扇面六联图</strong><br>用于同时核查扇面边界、全局 C2 结构、全部 track 壳和 response-region 敏感性。</figcaption>
+    </figure>
+    </div></article><article class="case-block"><h3>病例 07 · R02ZF_SARF000488</h3><p>R02 P01 低 rank 病例：全部 runtime track 壳先产生，随后离线查看 global→union→track 的问题压缩；这不是人工选择正确 track 的运行时算法。</p><div class="figure-grid">
+    <figure class="evidence-figure">
+      <a href="visualizations/local_zoom_case_07_R02_P01_LOW_RANK_TRACK_SHELL.png" target="_blank" rel="noopener">
+        <img src="visualizations/local_zoom_case_07_R02_P01_LOW_RANK_TRACK_SHELL.png" alt="局部放大" loading="lazy">
+      </a>
+      <figcaption><strong>局部放大</strong><br>原图、实际 S(x)、q90/q95/q97.5 和全部 RAW track 壳；reference 仅离线叠加。</figcaption>
+    </figure>
+    
+    <figure class="evidence-figure">
+      <a href="visualizations/case_07_R02_P01_LOW_RANK_TRACK_SHELL.png" target="_blank" rel="noopener">
+        <img src="visualizations/case_07_R02_P01_LOW_RANK_TRACK_SHELL.png" alt="全扇面六联图" loading="lazy">
+      </a>
+      <figcaption><strong>全扇面六联图</strong><br>用于同时核查扇面边界、全局 C2 结构、全部 track 壳和 response-region 敏感性。</figcaption>
+    </figure>
+    </div></article>
+  </section>
+
+  <section id="answers">
+    <h2>八、这轮最重要的六个直接回答</h2>
+    <div class="grid-2">
+      <article class="card answer" id="q1"><div class="q">Q1 · 现有光学链是否已有可靠 runtime track identity？</div><h3>还没有</h3><p>自动 raw fragments 可以作为主运行时近似输入，但 R02 碎片化严重；stitched accepted 是全 run Hungarian stitching 与短缺口插值的 GT-blind offline proxy，不能替代严格 causal runtime identity。</p></article>
+      <article class="card answer" id="q2"><div class="q">Q2 · 每条 track 独立出壳是否比 all-person union 更有用？</div><h3>对 P01/P02 有额外搜索压缩</h3><p>P01 11→3→2，P02 18→6→4；说明 track-conditioned 壳能把全场竞争进一步缩小。但它依赖 tracklet 可用性和重叠，不保证唯一定位。</p></article>
+      <article class="card answer" id="q3"><div class="q">Q3 · P03/P04 的 optical shells 是否已经分离？</div><h3>没有稳定分离</h3><p>当前 guard、时间不确定度、fragment availability 使两壳仍明显重叠；因此 shared SAR region 与 optical identity 的关系还不能被强判定。</p></article>
+      <article class="card answer" id="q4"><div class="q">Q4 · response-region 是否比 peak node 更忠实？</div><h3>是，尤其对 response-present / peak-missing</h3><p>F482/F490 被一致修正为 q95 region present；q95 reference direct coverage 98.0%，固定/几何空间对照显著更低。它更忠实地表达连续 C2 field，但不是 PERSON 框。</p></article>
+      <article class="card answer" id="q5"><div class="q">Q5 · 它是否解决 shared / 空间未分离？</div><h3>没有，而且明确保留了 shared 状态</h3><p>总体 q95 shared 37.5%，R02 94.4%；P03/P04 仍可落在同一 compact region。shared region 只表示图像域重叠，不能直接声称物理散射融合。</p></article>
+      <article class="card answer" id="q6"><div class="q">Q6 · 接口清楚后，下一步是什么？</div><h3>先补 runtime track/sync，再做最小 region-shell 时序相交</h3><p>最有价值的是把 centered diagnostic 变成可量化的 causal/buffered track uncertainty，并验证 track 分支连续性；之后才研究 <code>optical track shell ∩ SAR response region + 冻结 P0 region propagation</code>。本轮没有实现 region tracker，也没有进入 P2。</p></article>
+    </div>
+  </section>
+
+  <section id="audit">
+    <h2>九、可复核边界与数据覆盖</h2>
+    <div class="grid-2">
+      <div class="card"><h3>候选 artifact 覆盖</h3><p>旧 GT-blind candidate artifact 只覆盖 126/398 帧；这 126 帧的数量、rank、坐标、score、support 全部精确复现，最大浮点差约 1.11e−16。其余 272 帧标记为 <code>NO_LEGACY_CANDIDATE_ARTIFACT_FOR_FRAME</code>，绝不解释为“零候选”。连续 response-region 则覆盖 398/398 帧。</p></div>
+      <div class="card"><h3>明确没有做</h3><ul><li>没有重拟合或调参冻结 P0；</li><li>没有修改 B0R、C0–C3 或旧结果；</li><li>没有用人工 physical_target_id 生成 runtime track；</li><li>没有让光学指定 SAR range、中心或框；</li><li>没有把 response region 当最终 PERSON 框；</li><li>没有把 RGB/JET 当独立雷达物理通道或人体固有 RCS；</li><li>没有授予 P1/P2 PASS，不声称盲验证。</li></ul></div>
+    </div>
+    <p class="callout warning"><strong>停止点：</strong>本报告只是已暴露 R01–R04 开发语料上的最小接口诊断。状态仍为 <code>COMPLETE_NO_NEW_PASS_FAIL_NO_P2_CLAIM</code>；SAR 保留 range 与最终定位权，不生成 SAR 框，不自动进入复杂多模态 tracker。</p>
+    <div class="file-links"><a href="00_RUNTIME_TRACK_RESPONSE_REGION_PROTOCOL_FROZEN_BEFORE_RUN.md" target="_blank" rel="noopener">00_RUNTIME_TRACK_RESPONSE_REGION_PROTOCOL_FROZEN_BEFORE_RUN.md</a><a href="00A_PRE_RUN_OPTICAL_IDENTITY_PROVENANCE_AMENDMENT.md" target="_blank" rel="noopener">00A_PRE_RUN_OPTICAL_IDENTITY_PROVENANCE_AMENDMENT.md</a><a href="00B_PRE_RUN_REGION_RULE_CLARIFICATION.md" target="_blank" rel="noopener">00B_PRE_RUN_REGION_RULE_CLARIFICATION.md</a><a href="diagnostic_summary.json" target="_blank" rel="noopener">diagnostic_summary.json</a><a href="report_derived_metrics.json" target="_blank" rel="noopener">report_derived_metrics.json</a><a href="time_uncertainty_track_shell_tradeoff.csv" target="_blank" rel="noopener">time_uncertainty_track_shell_tradeoff.csv</a><a href="optical_track_interface_provenance.csv" target="_blank" rel="noopener">optical_track_interface_provenance.csv</a><a href="track_frame_branch_burden_summary.csv" target="_blank" rel="noopener">track_frame_branch_burden_summary.csv</a><a href="offline_reference_track_summary.csv" target="_blank" rel="noopener">offline_reference_track_summary.csv</a><a href="offline_one_to_one_track_reference_assignment.csv" target="_blank" rel="noopener">offline_one_to_one_track_reference_assignment.csv</a><a href="response_region_table.csv" target="_blank" rel="noopener">response_region_table.csv</a><a href="offline_reference_response_region_evaluation.csv" target="_blank" rel="noopener">offline_reference_response_region_evaluation.csv</a><a href="offline_observation_entity_response_region_evaluation.csv" target="_blank" rel="noopener">offline_observation_entity_response_region_evaluation.csv</a><a href="observation_entity_response_region_summary.csv" target="_blank" rel="noopener">observation_entity_response_region_summary.csv</a><a href="response_region_track_shell_intersection.csv" target="_blank" rel="noopener">response_region_track_shell_intersection.csv</a><a href="track_shell_overlap_table.csv" target="_blank" rel="noopener">track_shell_overlap_table.csv</a><a href="candidate_recomputation_parity.csv" target="_blank" rel="noopener">candidate_recomputation_parity.csv</a><a href="case_registry.csv" target="_blank" rel="noopener">case_registry.csv</a></div>
+    <p class="foot">分析脚本 SHA256：<code>051B414753B73118CF77712A35DF86EC5FB05C12B2C00217EB14BFE81DFDCBBA</code><br>报告生成器 SHA256：<code>A9FE022A044718E3A376BEF39FE5F15273405008E305EB3D1FD77489EF082BAE</code><br>报告生成时间：2026-08-27T18:19:30+08:00</p>
+  </section>
+
+  <section><h2>附：五张汇总图</h2><div class="figure-grid">
+    <figure class="evidence-figure">
+      <a href="visualizations/report_optical_track_provenance.png" target="_blank" rel="noopener">
+        <img src="visualizations/report_optical_track_provenance.png" alt="光学 track provenance" loading="eager">
+      </a>
+      <figcaption><strong>光学 track provenance</strong><br>raw fragment 是主运行时近似接口；stitched accepted 只是全 run 的 GT-blind offline continuity proxy。</figcaption>
+    </figure>
+    
+    <figure class="evidence-figure">
+      <a href="visualizations/report_time_window_retention_burden_tradeoff.png" target="_blank" rel="noopener">
+        <img src="visualizations/report_time_window_retention_burden_tradeoff.png" alt="时间窗的保留率—负担权衡" loading="eager">
+      </a>
+      <figcaption><strong>时间窗的保留率—负担权衡</strong><br>窗口增大同时提高保留率、壳宽、候选负担和分支重复；不能看 SAR 结果后选择所谓最优窗口。</figcaption>
+    </figure>
+    
+    <figure class="evidence-figure">
+      <a href="visualizations/report_q95_reference_control_region_coverage.png" target="_blank" rel="noopener">
+        <img src="visualizations/report_q95_reference_control_region_coverage.png" alt="q95 response-region 的 reference/control 覆盖" loading="lazy">
+      </a>
+      <figcaption><strong>q95 response-region 的 reference/control 覆盖</strong><br>PERSON reference 的直接覆盖很高，但 local competing response 也高，说明区域表示恢复 response presence，不授予唯一性。</figcaption>
+    </figure>
+    
+    <figure class="evidence-figure">
+      <a href="visualizations/report_r02_global_union_track_rank.png" target="_blank" rel="noopener">
+        <img src="visualizations/report_r02_global_union_track_rank.png" alt="R02 global→union→track rank" loading="lazy">
+      </a>
+      <figcaption><strong>R02 global→union→track rank</strong><br>P01/P02 进一步变简单；P03/P04 仍是高 rank shared，track 壳没有解决 SAR 局部未分离。</figcaption>
+    </figure>
+    
+    <figure class="evidence-figure">
+      <a href="visualizations/report_r02_track_shell_jaccard.png" target="_blank" rel="noopener">
+        <img src="visualizations/report_r02_track_shell_jaccard.png" alt="R02 两 track 壳重叠" loading="lazy">
+      </a>
+      <figcaption><strong>R02 两 track 壳重叠</strong><br>离线 reference 只在全部壳生成后用于配对评价；窗口分母不同，图只用于说明壳没有形成稳定空间分离。</figcaption>
+    </figure>
+    </div></section>
+</main>
+</body>
+</html>

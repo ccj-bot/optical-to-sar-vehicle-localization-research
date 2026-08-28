@@ -1,0 +1,450 @@
+{
+  "schema": "PERSON_P1E_RUNTIME_TRACK_RESPONSE_REGION_REPORT_DERIVED_V1",
+  "created_at": "2026-08-27T18:19:30+08:00",
+  "status": "REPORT_LAYER_ONLY_NO_EXPERIMENT_RETUNING",
+  "analysis_summary_status": "COMPLETE_NO_NEW_PASS_FAIL_NO_P2_CLAIM",
+  "analysis_script_sha256": "051B414753B73118CF77712A35DF86EC5FB05C12B2C00217EB14BFE81DFDCBBA",
+  "report_script_sha256": "A9FE022A044718E3A376BEF39FE5F15273405008E305EB3D1FD77489EF082BAE",
+  "provenance_by_run": [
+    {
+      "run_id": "R01ZF",
+      "raw_fragment_tracks": 12,
+      "stitched_accepted_tracks": 6,
+      "stitched_ambiguous_count_sum": 2,
+      "stitched_tracks_with_interpolation": 0
+    },
+    {
+      "run_id": "R02ZF",
+      "raw_fragment_tracks": 33,
+      "stitched_accepted_tracks": 9,
+      "stitched_ambiguous_count_sum": 10,
+      "stitched_tracks_with_interpolation": 3
+    },
+    {
+      "run_id": "R03ZF",
+      "raw_fragment_tracks": 5,
+      "stitched_accepted_tracks": 2,
+      "stitched_ambiguous_count_sum": 3,
+      "stitched_tracks_with_interpolation": 0
+    },
+    {
+      "run_id": "R04ZF",
+      "raw_fragment_tracks": 11,
+      "stitched_accepted_tracks": 5,
+      "stitched_ambiguous_count_sum": 2,
+      "stitched_tracks_with_interpolation": 0
+    }
+  ],
+  "time_uncertainty_raw_interface": [
+    {
+      "interface_kind": "RAW_DETECTED_FRAGMENT_ALL",
+      "time_window_half_width_ms": 0,
+      "frame_count_total": 398,
+      "frame_count_with_shell": 355,
+      "frame_shell_availability_fraction": 0.8919597989949749,
+      "track_shell_count_median_given_available": 2.0,
+      "candidate_artifact_frame_count": 126,
+      "candidate_artifact_frame_fraction": 0.3165829145728643,
+      "candidate_artifact_frame_count_with_shell": 114,
+      "candidate_artifact_shell_availability_fraction": 0.9047619047619048,
+      "single_track_candidate_burden_median_given_artifact_and_shell": 0.1448426864677043,
+      "all_track_union_candidate_burden_median_given_artifact_and_shell": 0.2820564332024473,
+      "sum_track_branch_burden_median_given_artifact_and_shell": 0.3167176573426573,
+      "duplicate_branch_fraction_median_given_artifact_and_shell": 0.0,
+      "all_track_union_candidate_burden_mean_on_artifact_frames_zero_if_shell_unavailable": 0.2268152708048592,
+      "reference_count_total": 251,
+      "reference_count_with_track_prior": 239,
+      "reference_track_prior_availability_fraction": 0.952191235059761,
+      "reference_any_track_coverage": 0.7808764940239044,
+      "reference_any_track_candidate_retention_0p8m": 0.7689243027888446,
+      "reference_any_track_coverage_given_prior_available": 0.8200836820083682,
+      "reference_any_track_candidate_retention_0p8m_given_prior_available": 0.8075313807531381,
+      "reference_covering_track_count_median_given_available": 1.0,
+      "best_track_local_rank_median_offline_eval_given_available": 1.0,
+      "union_local_rank_median_given_available": 1.0
+    },
+    {
+      "interface_kind": "RAW_DETECTED_FRAGMENT_ALL",
+      "time_window_half_width_ms": 100,
+      "frame_count_total": 398,
+      "frame_count_with_shell": 358,
+      "frame_shell_availability_fraction": 0.8994974874371859,
+      "track_shell_count_median_given_available": 2.0,
+      "candidate_artifact_frame_count": 126,
+      "candidate_artifact_frame_fraction": 0.3165829145728643,
+      "candidate_artifact_frame_count_with_shell": 117,
+      "candidate_artifact_shell_availability_fraction": 0.9285714285714286,
+      "single_track_candidate_burden_median_given_artifact_and_shell": 0.1642335766423357,
+      "all_track_union_candidate_burden_median_given_artifact_and_shell": 0.3154362416107382,
+      "sum_track_branch_burden_median_given_artifact_and_shell": 0.3623693379790941,
+      "duplicate_branch_fraction_median_given_artifact_and_shell": 0.0,
+      "all_track_union_candidate_burden_mean_on_artifact_frames_zero_if_shell_unavailable": 0.2636320864049513,
+      "reference_count_total": 251,
+      "reference_count_with_track_prior": 242,
+      "reference_track_prior_availability_fraction": 0.9641434262948207,
+      "reference_any_track_coverage": 0.8087649402390438,
+      "reference_any_track_candidate_retention_0p8m": 0.8167330677290837,
+      "reference_any_track_coverage_given_prior_available": 0.8388429752066116,
+      "reference_any_track_candidate_retention_0p8m_given_prior_available": 0.8471074380165289,
+      "reference_covering_track_count_median_given_available": 1.0,
+      "best_track_local_rank_median_offline_eval_given_available": 1.0,
+      "union_local_rank_median_given_available": 1.0
+    },
+    {
+      "interface_kind": "RAW_DETECTED_FRAGMENT_ALL",
+      "time_window_half_width_ms": 250,
+      "frame_count_total": 398,
+      "frame_count_with_shell": 373,
+      "frame_shell_availability_fraction": 0.9371859296482412,
+      "track_shell_count_median_given_available": 2.0,
+      "candidate_artifact_frame_count": 126,
+      "candidate_artifact_frame_fraction": 0.3165829145728643,
+      "candidate_artifact_frame_count_with_shell": 120,
+      "candidate_artifact_shell_availability_fraction": 0.9523809523809524,
+      "single_track_candidate_burden_median_given_artifact_and_shell": 0.2195767482138991,
+      "all_track_union_candidate_burden_median_given_artifact_and_shell": 0.3587701612903226,
+      "sum_track_branch_burden_median_given_artifact_and_shell": 0.5390003604469542,
+      "duplicate_branch_fraction_median_given_artifact_and_shell": 0.1676814988290398,
+      "all_track_union_candidate_burden_mean_on_artifact_frames_zero_if_shell_unavailable": 0.347928658222341,
+      "reference_count_total": 251,
+      "reference_count_with_track_prior": 245,
+      "reference_track_prior_availability_fraction": 0.9760956175298804,
+      "reference_any_track_coverage": 0.8804780876494024,
+      "reference_any_track_candidate_retention_0p8m": 0.8725099601593626,
+      "reference_any_track_coverage_given_prior_available": 0.9020408163265308,
+      "reference_any_track_candidate_retention_0p8m_given_prior_available": 0.8938775510204081,
+      "reference_covering_track_count_median_given_available": 1.0,
+      "best_track_local_rank_median_offline_eval_given_available": 1.0,
+      "union_local_rank_median_given_available": 1.0
+    },
+    {
+      "interface_kind": "RAW_DETECTED_FRAGMENT_ALL",
+      "time_window_half_width_ms": 500,
+      "frame_count_total": 398,
+      "frame_count_with_shell": 396,
+      "frame_shell_availability_fraction": 0.9949748743718592,
+      "track_shell_count_median_given_available": 3.0,
+      "candidate_artifact_frame_count": 126,
+      "candidate_artifact_frame_fraction": 0.3165829145728643,
+      "candidate_artifact_frame_count_with_shell": 124,
+      "candidate_artifact_shell_availability_fraction": 0.984126984126984,
+      "single_track_candidate_burden_median_given_artifact_and_shell": 0.2584280573484891,
+      "all_track_union_candidate_burden_median_given_artifact_and_shell": 0.4100174612815062,
+      "sum_track_branch_burden_median_given_artifact_and_shell": 0.7955901856763926,
+      "duplicate_branch_fraction_median_given_artifact_and_shell": 0.4085889319155039,
+      "all_track_union_candidate_burden_mean_on_artifact_frames_zero_if_shell_unavailable": 0.45683203017768,
+      "reference_count_total": 251,
+      "reference_count_with_track_prior": 249,
+      "reference_track_prior_availability_fraction": 0.9920318725099602,
+      "reference_any_track_coverage": 0.9402390438247012,
+      "reference_any_track_candidate_retention_0p8m": 0.9322709163346612,
+      "reference_any_track_coverage_given_prior_available": 0.9477911646586346,
+      "reference_any_track_candidate_retention_0p8m_given_prior_available": 0.9397590361445785,
+      "reference_covering_track_count_median_given_available": 1.0,
+      "best_track_local_rank_median_offline_eval_given_available": 1.0,
+      "union_local_rank_median_given_available": 2.0
+    }
+  ],
+  "q95_entity_coverage": [
+    {
+      "entity_kind": "PERSON_REFERENCE",
+      "label": "PERSON reference",
+      "rows": 251,
+      "direct_inside": 0.9800796812749004,
+      "near_0p30m": 0.9920318725099602
+    },
+    {
+      "entity_kind": "FIXED_OFFSET_CONTROL",
+      "label": "固定径向/切向偏移",
+      "rows": 1004,
+      "direct_inside": 0.017928286852589643,
+      "near_0p30m": 0.1205179282868526
+    },
+    {
+      "entity_kind": "GEOMETRY_MATCHED_CONTROL",
+      "label": "几何匹配空间对照",
+      "rows": 1243,
+      "direct_inside": 0.038616251005631534,
+      "near_0p30m": 0.16170555108608206
+    },
+    {
+      "entity_kind": "LOCAL_COMPETING_CONTROL",
+      "label": "局部竞争响应",
+      "rows": 251,
+      "direct_inside": 0.6334661354581673,
+      "near_0p30m": 0.7609561752988048
+    }
+  ],
+  "r02_rank_summary": [
+    {
+      "person": "P01",
+      "reference_rows": 9,
+      "global_rank_median": 11.0,
+      "union_rank_median": 3.0,
+      "track_rank_median": 2.0,
+      "retention_fraction": 1.0,
+      "valid_rank_rows": 9
+    },
+    {
+      "person": "P02",
+      "reference_rows": 9,
+      "global_rank_median": 18.0,
+      "union_rank_median": 6.0,
+      "track_rank_median": 4.0,
+      "retention_fraction": 0.7777777777777778,
+      "valid_rank_rows": 7
+    },
+    {
+      "person": "P03",
+      "reference_rows": 9,
+      "global_rank_median": 1.0,
+      "union_rank_median": 1.0,
+      "track_rank_median": 1.0,
+      "retention_fraction": 0.8888888888888888,
+      "valid_rank_rows": 8
+    },
+    {
+      "person": "P04",
+      "reference_rows": 9,
+      "global_rank_median": 1.0,
+      "union_rank_median": 1.0,
+      "track_rank_median": 1.0,
+      "retention_fraction": 0.7777777777777778,
+      "valid_rank_rows": 7
+    }
+  ],
+  "r02_offline_associated_shell_jaccard": [
+    {
+      "pair": "P01/P02",
+      "window_ms": 0,
+      "frame_rows": 9,
+      "median": 0.6349461043585767,
+      "q25": 0.6294945488160483,
+      "q75": 0.6438625037672571,
+      "semantics": "OFFLINE_ONE_TO_ONE_REFERENCE_ASSOCIATION_USED_ONLY_AFTER_ALL_RUNTIME_SHELLS_EXIST"
+    },
+    {
+      "pair": "P01/P02",
+      "window_ms": 100,
+      "frame_rows": 9,
+      "median": 0.6716871692847429,
+      "q25": 0.6598108989538909,
+      "q75": 0.6741609072099124,
+      "semantics": "OFFLINE_ONE_TO_ONE_REFERENCE_ASSOCIATION_USED_ONLY_AFTER_ALL_RUNTIME_SHELLS_EXIST"
+    },
+    {
+      "pair": "P01/P02",
+      "window_ms": 250,
+      "frame_rows": 9,
+      "median": 0.7347371186745641,
+      "q25": 0.7309198822478234,
+      "q75": 0.7414209390126225,
+      "semantics": "OFFLINE_ONE_TO_ONE_REFERENCE_ASSOCIATION_USED_ONLY_AFTER_ALL_RUNTIME_SHELLS_EXIST"
+    },
+    {
+      "pair": "P01/P02",
+      "window_ms": 500,
+      "frame_rows": 9,
+      "median": 0.7934647263142733,
+      "q25": 0.7752740753306867,
+      "q75": 0.8015000630008031,
+      "semantics": "OFFLINE_ONE_TO_ONE_REFERENCE_ASSOCIATION_USED_ONLY_AFTER_ALL_RUNTIME_SHELLS_EXIST"
+    },
+    {
+      "pair": "P03/P04",
+      "window_ms": 0,
+      "frame_rows": 4,
+      "median": 0.517130423466459,
+      "q25": 0.452414078016414,
+      "q75": 0.5807392563380532,
+      "semantics": "OFFLINE_ONE_TO_ONE_REFERENCE_ASSOCIATION_USED_ONLY_AFTER_ALL_RUNTIME_SHELLS_EXIST"
+    },
+    {
+      "pair": "P03/P04",
+      "window_ms": 100,
+      "frame_rows": 4,
+      "median": 0.5527249229626717,
+      "q25": 0.5295089006493565,
+      "q75": 0.5962298406146737,
+      "semantics": "OFFLINE_ONE_TO_ONE_REFERENCE_ASSOCIATION_USED_ONLY_AFTER_ALL_RUNTIME_SHELLS_EXIST"
+    },
+    {
+      "pair": "P03/P04",
+      "window_ms": 250,
+      "frame_rows": 7,
+      "median": 0.5602318337760542,
+      "q25": 0.5358494391557607,
+      "q75": 0.6533478967069796,
+      "semantics": "OFFLINE_ONE_TO_ONE_REFERENCE_ASSOCIATION_USED_ONLY_AFTER_ALL_RUNTIME_SHELLS_EXIST"
+    },
+    {
+      "pair": "P03/P04",
+      "window_ms": 500,
+      "frame_rows": 9,
+      "median": 0.5322924236269255,
+      "q25": 0.5322924236269255,
+      "q75": 0.5322924236269255,
+      "semantics": "OFFLINE_ONE_TO_ONE_REFERENCE_ASSOCIATION_USED_ONLY_AFTER_ALL_RUNTIME_SHELLS_EXIST"
+    }
+  ],
+  "q95_shared_fraction_by_run": {
+    "R01ZF": 0.6060606060606061,
+    "R02ZF": 0.9444444444444444,
+    "R03ZF": 0.0,
+    "R04ZF": 0.0
+  },
+  "peak_missing_region_present_rows": [
+    {
+      "frame_uid": "R02ZF_SARF000482",
+      "target_id": "R02ZF_SARPERSON02",
+      "reference_C2_percentile_existing": 0.9587554931640624,
+      "nearest_peak_rank_existing": 14,
+      "nearest_peak_distance_m_existing": 1.159195725743191,
+      "nearest_region_area_m2": 1.362375339076719,
+      "nearest_region_major_extent_m": 2.2570155565034344,
+      "nearest_region_structure_state": "EXTENDED_OR_RIDGE_RESPONSE",
+      "shared_region_flag": true
+    },
+    {
+      "frame_uid": "R02ZF_SARF000490",
+      "target_id": "R02ZF_SARPERSON02",
+      "reference_C2_percentile_existing": 0.9928719401359558,
+      "nearest_peak_rank_existing": 14,
+      "nearest_peak_distance_m_existing": 0.8199497171749737,
+      "nearest_region_area_m2": 2.148229124085708,
+      "nearest_region_major_extent_m": 4.093607758474095,
+      "nearest_region_structure_state": "EXTENDED_OR_RIDGE_RESPONSE",
+      "shared_region_flag": true
+    }
+  ],
+  "q090_only_rows": [
+    {
+      "frame_uid": "R02ZF_SARF000494",
+      "target_id": "R02ZF_SARPERSON01",
+      "reference_C2_percentile_existing": 0.9069463610649108,
+      "nearest_peak_rank_existing": 24,
+      "nearest_peak_distance_m_existing": 0.6975820941551837
+    },
+    {
+      "frame_uid": "R04ZF_SARF000035",
+      "target_id": "R04ZF_SARPERSON01",
+      "reference_C2_percentile_existing": 0.9164277911186218,
+      "nearest_peak_rank_existing": 86,
+      "nearest_peak_distance_m_existing": 0.4912213230677658
+    }
+  ],
+  "candidate_artifact_coverage": {
+    "covered_frames": 126,
+    "uncovered_frames": 272,
+    "covered_all_exact_match": true,
+    "uncovered_semantics": "NO_LEGACY_CANDIDATE_ARTIFACT_FOR_FRAME_NOT_ZERO_CANDIDATES"
+  },
+  "summary_figures": [
+    "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\runtime_track_response_region_minimal_v1\\visualizations\\report_optical_track_provenance.png",
+    "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\runtime_track_response_region_minimal_v1\\visualizations\\report_time_window_retention_burden_tradeoff.png",
+    "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\runtime_track_response_region_minimal_v1\\visualizations\\report_q95_reference_control_region_coverage.png",
+    "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\runtime_track_response_region_minimal_v1\\visualizations\\report_r02_global_union_track_rank.png",
+    "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\runtime_track_response_region_minimal_v1\\visualizations\\report_r02_track_shell_jaccard.png"
+  ],
+  "local_cases": [
+    {
+      "case_index": 1,
+      "frame_uid": "R02ZF_SARF000482",
+      "case_slug": "R02_F482_PEAK_MISSING_REGION",
+      "focus_targets": [
+        "P02",
+        "P01"
+      ],
+      "local_visualization_path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\runtime_track_response_region_minimal_v1\\visualizations\\local_zoom_case_01_R02_F482_PEAK_MISSING_REGION.png",
+      "full_visualization_path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\runtime_track_response_region_minimal_v1\\visualizations\\case_01_R02_F482_PEAK_MISSING_REGION.png",
+      "detail_lines": [
+        "P02: PEAK_MISSING_REGION_PRESENT / SHARED; C2 pct=0.959; peak r=14/1.16m; region=EXTENDED_OR_RIDGE_RESPONSE; global→union→track=—→—→—",
+        "P01: PEAK_PRESENT / SHARED; C2 pct=0.975; peak r=14/0.65m; region=EXTENDED_OR_RIDGE_RESPONSE; global→union→track=14→3→2"
+      ]
+    },
+    {
+      "case_index": 2,
+      "frame_uid": "R02ZF_SARF000490",
+      "case_slug": "R02_F490_RADIUS_SENSITIVE_REGION",
+      "focus_targets": [
+        "P02",
+        "P01"
+      ],
+      "local_visualization_path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\runtime_track_response_region_minimal_v1\\visualizations\\local_zoom_case_02_R02_F490_RADIUS_SENSITIVE_REGION.png",
+      "full_visualization_path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\runtime_track_response_region_minimal_v1\\visualizations\\case_02_R02_F490_RADIUS_SENSITIVE_REGION.png",
+      "detail_lines": [
+        "P02: PEAK_MISSING_REGION_PRESENT / SHARED; C2 pct=0.993; peak r=14/0.82m; region=EXTENDED_OR_RIDGE_RESPONSE; global→union→track=—→—→—",
+        "P01: PEAK_PRESENT / SHARED; C2 pct=0.992; peak r=14/0.33m; region=EXTENDED_OR_RIDGE_RESPONSE; global→union→track=13→5→3"
+      ]
+    },
+    {
+      "case_index": 3,
+      "frame_uid": "R02ZF_SARF000483",
+      "case_slug": "R02_P03_P04_SHARED_REGION",
+      "focus_targets": [
+        "P04",
+        "P03"
+      ],
+      "local_visualization_path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\runtime_track_response_region_minimal_v1\\visualizations\\local_zoom_case_03_R02_P03_P04_SHARED_REGION.png",
+      "full_visualization_path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\runtime_track_response_region_minimal_v1\\visualizations\\case_03_R02_P03_P04_SHARED_REGION.png",
+      "detail_lines": [
+        "P04: PEAK_PRESENT / SHARED; C2 pct=0.997; peak r=1/0.56m; region=COMPACT_OR_UNRESOLVED_SHAPE; global→union→track=1→1→1",
+        "P03: PEAK_PRESENT / SHARED; C2 pct=1.000; peak r=1/0.19m; region=COMPACT_OR_UNRESOLVED_SHAPE; global→union→track=1→1→1"
+      ]
+    },
+    {
+      "case_index": 4,
+      "frame_uid": "R03ZF_SARF000458",
+      "case_slug": "R03_OUTER_RANGE_BOUNDARY_OBSERVATION",
+      "focus_targets": [
+        "P01"
+      ],
+      "local_visualization_path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\runtime_track_response_region_minimal_v1\\visualizations\\local_zoom_case_04_R03_OUTER_RANGE_BOUNDARY_OBSERVATION.png",
+      "full_visualization_path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\runtime_track_response_region_minimal_v1\\visualizations\\case_04_R03_OUTER_RANGE_BOUNDARY_OBSERVATION.png",
+      "detail_lines": [
+        "P01: PEAK_PRESENT; C2 pct=0.990; peak r=18/0.02m; region=COMPACT_OR_UNRESOLVED_SHAPE; global→union→track=18→1→1"
+      ]
+    },
+    {
+      "case_index": 5,
+      "frame_uid": "R04ZF_SARF000000",
+      "case_slug": "R04_F0_CLEAR_PEAK_PRESENT",
+      "focus_targets": [
+        "P01"
+      ],
+      "local_visualization_path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\runtime_track_response_region_minimal_v1\\visualizations\\local_zoom_case_05_R04_F0_CLEAR_PEAK_PRESENT.png",
+      "full_visualization_path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\runtime_track_response_region_minimal_v1\\visualizations\\case_05_R04_F0_CLEAR_PEAK_PRESENT.png",
+      "detail_lines": [
+        "P01: PEAK_PRESENT; C2 pct=1.000; peak r=1/0.10m; region=COMPACT_OR_UNRESOLVED_SHAPE; global→union→track=1→1→1"
+      ]
+    },
+    {
+      "case_index": 6,
+      "frame_uid": "R04ZF_SARF000035",
+      "case_slug": "R04_F35_Q90_ONLY_BORDERLINE",
+      "focus_targets": [
+        "P01"
+      ],
+      "local_visualization_path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\runtime_track_response_region_minimal_v1\\visualizations\\local_zoom_case_06_R04_F35_Q90_ONLY_BORDERLINE.png",
+      "full_visualization_path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\runtime_track_response_region_minimal_v1\\visualizations\\case_06_R04_F35_Q90_ONLY_BORDERLINE.png",
+      "detail_lines": [
+        "P01: PEAK_PRESENT; C2 pct=0.916; peak r=86/0.49m; region=NO_NEAR_REGION; global→union→track=86→49→33"
+      ]
+    },
+    {
+      "case_index": 7,
+      "frame_uid": "R02ZF_SARF000488",
+      "case_slug": "R02_P01_LOW_RANK_TRACK_SHELL",
+      "focus_targets": [
+        "P02",
+        "P01"
+      ],
+      "local_visualization_path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\runtime_track_response_region_minimal_v1\\visualizations\\local_zoom_case_07_R02_P01_LOW_RANK_TRACK_SHELL.png",
+      "full_visualization_path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\runtime_track_response_region_minimal_v1\\visualizations\\case_07_R02_P01_LOW_RANK_TRACK_SHELL.png",
+      "detail_lines": [
+        "P02: PEAK_PRESENT / SHARED; C2 pct=0.988; peak r=24/0.03m; region=EXTENDED_OR_RIDGE_RESPONSE; global→union→track=24→7→4",
+        "P01: PEAK_PRESENT / SHARED; C2 pct=0.969; peak r=24/0.58m; region=EXTENDED_OR_RIDGE_RESPONSE; global→union→track=11→4→2"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,245 @@
+{
+  "schema": "PERSON_B0R_MINIMAL_FROZEN_P0_APPLICABILITY_V1",
+  "created_at": "2026-08-25T18:52:52+08:00",
+  "status": "B0R_MINIMAL_COMPLETE_NO_P0_RETUNING",
+  "runs": [
+    "R02ZF",
+    "R03ZF"
+  ],
+  "interpreter": "D:\\MINICONDA\\envs\\py311\\python.exe",
+  "frozen_P0_script_sha256": "0AB671B6A33A48CA2E3160A201629FA2DD341EF052A29B8D2CCBC2DFB26DCFD8",
+  "frozen_P0_freeze_payload_sha256": "0F9F8D26CEDBA676ED70C9BF7DBEB9FEBD62290557FE03B0410E77B665A7A20B",
+  "selected_model_by_lag": {
+    "1": "M1",
+    "3": "M2",
+    "5": "M2"
+  },
+  "display_change_thresholds_by_lag": {
+    "1": {
+      "elevated_threshold": 0.060146244680902336,
+      "high_threshold": 0.0850768041479532,
+      "source": "R01_EMPIRICAL_QUANTILES_FROZEN_BEFORE_R04"
+    },
+    "3": {
+      "elevated_threshold": 0.2167579136443354,
+      "high_threshold": 0.35419517543363765,
+      "source": "R01_EMPIRICAL_QUANTILES_FROZEN_BEFORE_R04"
+    },
+    "5": {
+      "elevated_threshold": 0.23482004855088207,
+      "high_threshold": 0.4615401170831696,
+      "source": "R01_EMPIRICAL_QUANTILES_FROZEN_BEFORE_R04"
+    }
+  },
+  "input_hash_checks": [
+    {
+      "kind": "input_snapshot",
+      "path": "D:\\browser\\person_SAR_fullframe_interpolation_review_1787483093904.json",
+      "expected_sha256": "E3CA1F07552030F46770420EED16AEF362E9DD74C909A6BEB23C54D29F79AF8A",
+      "actual_sha256": "E3CA1F07552030F46770420EED16AEF362E9DD74C909A6BEB23C54D29F79AF8A",
+      "match": true
+    },
+    {
+      "kind": "input_snapshot",
+      "path": "D:\\profile\\research\\workspace\\output\\person_multidimensional_response_explorer_20260823\\explorer_data.js",
+      "expected_sha256": "C39E60EB478FF7D815EFE6984D3BCF36600737E2EC3D1FF76D04020DED54EF7D",
+      "actual_sha256": "C39E60EB478FF7D815EFE6984D3BCF36600737E2EC3D1FF76D04020DED54EF7D",
+      "match": true
+    },
+    {
+      "kind": "input_snapshot",
+      "path": "D:\\profile\\research\\workspace\\output\\pseudocolor_azimuth_calibration_20260803\\geometry\\fan_geometry_report.json",
+      "expected_sha256": "B8A166D2ABCF57B1B3868692651D68610B5FA5B135E6D0BC48DC1D2CDB3F5A93",
+      "actual_sha256": "B8A166D2ABCF57B1B3868692651D68610B5FA5B135E6D0BC48DC1D2CDB3F5A93",
+      "match": true
+    },
+    {
+      "kind": "invalidated_probe_reference",
+      "path": "D:\\profile\\research\\workspace\\output\\person_sar_motion_evidence_20260824\\motion_evidence_summary.json",
+      "expected_sha256": "5150F3EFFC884912A5A229E2FFD1F6DC011DC8BEE8297F2D4B6F3E06E7FD2801",
+      "actual_sha256": "5150F3EFFC884912A5A229E2FFD1F6DC011DC8BEE8297F2D4B6F3E06E7FD2801",
+      "match": true,
+      "allowed_use": "BOX_CONDITIONED_PSEUDOCOLOR_DISPLAY_REPEATABILITY_ONLY"
+    }
+  ],
+  "local_support_rule": {
+    "radius_px": 144.0,
+    "radius_source": "3_X_FROZEN_P0_SPLIT_CELL_PX",
+    "minimum_local_holdout_anchors": 8,
+    "minimum_source": "FROZEN_P0_MIN_HOLDOUT_ANCHORS",
+    "requires_radial_bracketing": true,
+    "requires_azimuth_bracketing": true,
+    "local_error_budget": "MAX(LOCAL_HOLDOUT_P90, GLOBAL_PAIR_HOLDOUT_P90)",
+    "maximum_usable_local_error_budget_px": 9.252182006835938,
+    "maximum_budget_source": "0.5_X_P0_R04_PERSON_SHORT_AXIS_MEDIAN",
+    "P0_R04_PERSON_short_axis_median_px": 18.504364013671875,
+    "target_motion_used": false
+  },
+  "run_summaries": [
+    {
+      "run_id": "R02ZF",
+      "scheduled_frame_pairs": 60,
+      "globally_comparable_frame_pairs": 59,
+      "selected_model_available_frame_pairs": 59,
+      "global_comparable_fraction": 0.9833333333333333,
+      "selected_model_improvement_fraction_vs_M0": 1.0,
+      "local_target_pair_count": 240,
+      "local_status_counts": {
+        "INSUFFICIENT_BACKGROUND_SUPPORT": 4,
+        "P0_COMPENSATION_COMPARABLE": 75,
+        "P0_COMPENSATION_NOT_COMPARABLE": 161
+      },
+      "local_comparable_fraction": 0.3125,
+      "display_stratum_counts": {
+        "BASELINE_GLOBAL_DISPLAY_DISTRIBUTION": 35,
+        "ELEVATED_GLOBAL_DISPLAY_DISTRIBUTION_CHANGE": 4,
+        "HIGH_GLOBAL_DISPLAY_DISTRIBUTION_CHANGE": 21
+      },
+      "comparability_reason_counts": {
+        "COMPARABLE": 59,
+        "INSUFFICIENT_FIT_ANCHORS": 1
+      }
+    },
+    {
+      "run_id": "R03ZF",
+      "scheduled_frame_pairs": 102,
+      "globally_comparable_frame_pairs": 102,
+      "selected_model_available_frame_pairs": 102,
+      "global_comparable_fraction": 1.0,
+      "selected_model_improvement_fraction_vs_M0": 0.9607843137254902,
+      "local_target_pair_count": 102,
+      "local_status_counts": {
+        "P0_COMPENSATION_COMPARABLE": 8,
+        "P0_COMPENSATION_NOT_COMPARABLE": 94
+      },
+      "local_comparable_fraction": 0.0784313725490196,
+      "display_stratum_counts": {
+        "BASELINE_GLOBAL_DISPLAY_DISTRIBUTION": 91,
+        "ELEVATED_GLOBAL_DISPLAY_DISTRIBUTION_CHANGE": 6,
+        "HIGH_GLOBAL_DISPLAY_DISTRIBUTION_CHANGE": 5
+      },
+      "comparability_reason_counts": {
+        "COMPARABLE": 102
+      }
+    }
+  ],
+  "overall_local_status_counts": {
+    "INSUFFICIENT_BACKGROUND_SUPPORT": 4,
+    "P0_COMPENSATION_COMPARABLE": 83,
+    "P0_COMPENSATION_NOT_COMPARABLE": 255
+  },
+  "overall_local_reason_counts": {
+    "INSUFFICIENT_FIT_ANCHORS": 4,
+    "INSUFFICIENT_LOCAL_HOLDOUT_ANCHORS": 166,
+    "LOCAL_ERROR_BUDGET_EXCEEDS_HALF_P0_REFERENCE_SHORT_AXIS": 19,
+    "LOCAL_HELDOUT_SUPPORT_AVAILABLE": 83,
+    "LOCAL_HOLDOUT_NOT_TWO_SIDED_IN_RANGE_AZIMUTH": 64,
+    "REFERENCE_POSITION_OUTSIDE_FROZEN_P0_VALID_MASK": 6
+  },
+  "visual_case_registry": [
+    {
+      "rank": 1,
+      "run_id": "R02ZF",
+      "from_frame_uid": "R02ZF_SARF000491",
+      "to_frame_uid": "R02ZF_SARF000492",
+      "lag": 1,
+      "target_id": "R02ZF_SARPERSON02",
+      "status": "P0_COMPENSATION_COMPARABLE",
+      "reason": "LOCAL_HELDOUT_SUPPORT_AVAILABLE",
+      "local_error_budget_px": 0.2681864009293762,
+      "visual_path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\b0r_minimal\\visualizations\\case_01_R02ZF_000491_000492_lag1_R02ZF_SARPERSON02.jpg"
+    },
+    {
+      "rank": 2,
+      "run_id": "R02ZF",
+      "from_frame_uid": "R02ZF_SARF000487",
+      "to_frame_uid": "R02ZF_SARF000490",
+      "lag": 3,
+      "target_id": "R02ZF_SARPERSON02",
+      "status": "P0_COMPENSATION_COMPARABLE",
+      "reason": "LOCAL_HELDOUT_SUPPORT_AVAILABLE",
+      "local_error_budget_px": 8.339814327611032,
+      "visual_path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\b0r_minimal\\visualizations\\case_02_R02ZF_000487_000490_lag3_R02ZF_SARPERSON02.jpg"
+    },
+    {
+      "rank": 3,
+      "run_id": "R02ZF",
+      "from_frame_uid": "R02ZF_SARF000476",
+      "to_frame_uid": "R02ZF_SARF000481",
+      "lag": 5,
+      "target_id": "R02ZF_SARPERSON01",
+      "status": "INSUFFICIENT_BACKGROUND_SUPPORT",
+      "reason": "INSUFFICIENT_FIT_ANCHORS",
+      "local_error_budget_px": null,
+      "visual_path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\b0r_minimal\\visualizations\\case_03_R02ZF_000476_000481_lag5_R02ZF_SARPERSON01.jpg"
+    },
+    {
+      "rank": 4,
+      "run_id": "R02ZF",
+      "from_frame_uid": "R02ZF_SARF000476",
+      "to_frame_uid": "R02ZF_SARF000477",
+      "lag": 1,
+      "target_id": "R02ZF_SARPERSON03",
+      "status": "P0_COMPENSATION_NOT_COMPARABLE",
+      "reason": "INSUFFICIENT_LOCAL_HOLDOUT_ANCHORS",
+      "local_error_budget_px": null,
+      "visual_path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\b0r_minimal\\visualizations\\case_04_R02ZF_000476_000477_lag1_R02ZF_SARPERSON03.jpg"
+    },
+    {
+      "rank": 5,
+      "run_id": "R02ZF",
+      "from_frame_uid": "R02ZF_SARF000478",
+      "to_frame_uid": "R02ZF_SARF000481",
+      "lag": 3,
+      "target_id": "R02ZF_SARPERSON03",
+      "status": "P0_COMPENSATION_NOT_COMPARABLE",
+      "reason": "LOCAL_ERROR_BUDGET_EXCEEDS_HALF_P0_REFERENCE_SHORT_AXIS",
+      "local_error_budget_px": 9.605253440864034,
+      "visual_path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\b0r_minimal\\visualizations\\case_05_R02ZF_000478_000481_lag3_R02ZF_SARPERSON03.jpg"
+    },
+    {
+      "rank": 6,
+      "run_id": "R02ZF",
+      "from_frame_uid": "R02ZF_SARF000472",
+      "to_frame_uid": "R02ZF_SARF000473",
+      "lag": 1,
+      "target_id": "R02ZF_SARPERSON03",
+      "status": "P0_COMPENSATION_NOT_COMPARABLE",
+      "reason": "LOCAL_HOLDOUT_NOT_TWO_SIDED_IN_RANGE_AZIMUTH",
+      "local_error_budget_px": 0.3344888747534928,
+      "visual_path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\b0r_minimal\\visualizations\\case_06_R02ZF_000472_000473_lag1_R02ZF_SARPERSON03.jpg"
+    },
+    {
+      "rank": 7,
+      "run_id": "R03ZF",
+      "from_frame_uid": "R03ZF_SARF000490",
+      "to_frame_uid": "R03ZF_SARF000491",
+      "lag": 1,
+      "target_id": "R03ZF_SARPERSON01",
+      "status": "P0_COMPENSATION_COMPARABLE",
+      "reason": "LOCAL_HELDOUT_SUPPORT_AVAILABLE",
+      "local_error_budget_px": 0.23658170963289035,
+      "visual_path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\b0r_minimal\\visualizations\\case_07_R03ZF_000490_000491_lag1_R03ZF_SARPERSON01.jpg"
+    },
+    {
+      "rank": 8,
+      "run_id": "R03ZF",
+      "from_frame_uid": "R03ZF_SARF000484",
+      "to_frame_uid": "R03ZF_SARF000487",
+      "lag": 3,
+      "target_id": "R03ZF_SARPERSON01",
+      "status": "P0_COMPENSATION_COMPARABLE",
+      "reason": "LOCAL_HELDOUT_SUPPORT_AVAILABLE",
+      "local_error_budget_px": 3.471417154800542,
+      "visual_path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\b0r_minimal\\visualizations\\case_08_R03ZF_000484_000487_lag3_R03ZF_SARPERSON01.jpg"
+    }
+  ],
+  "semantic_boundaries": {
+    "P0_retuned": false,
+    "target_regions_used_for_fitting_or_model_selection": false,
+    "target_motion_used_to_set_temporal_tolerance": false,
+    "SAR_boxes_created_or_moved": 0,
+    "P1_PASS_claimed": false,
+    "P2_started": false
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "schema": "PERSON_P0_OUTPUT_VALIDATION_REPORT_V1",
+  "created_at": "2026-08-27T20:06:21+08:00",
+  "status": "PASS",
+  "check_count": 18,
+  "passed_check_count": 18,
+  "checks": [
+    {
+      "name": "required_files_exist",
+      "passed": true,
+      "detail": {
+        "missing": []
+      }
+    },
+    {
+      "name": "frozen_input_hashes_match",
+      "passed": true,
+      "detail": [
+        {
+          "path": "D:\\browser\\person_SAR_fullframe_interpolation_review_1787483093904.json",
+          "expected": "E3CA1F07552030F46770420EED16AEF362E9DD74C909A6BEB23C54D29F79AF8A",
+          "actual": "E3CA1F07552030F46770420EED16AEF362E9DD74C909A6BEB23C54D29F79AF8A",
+          "match": true
+        },
+        {
+          "path": "D:\\profile\\research\\workspace\\output\\person_multidimensional_response_explorer_20260823\\explorer_data.js",
+          "expected": "C39E60EB478FF7D815EFE6984D3BCF36600737E2EC3D1FF76D04020DED54EF7D",
+          "actual": "C39E60EB478FF7D815EFE6984D3BCF36600737E2EC3D1FF76D04020DED54EF7D",
+          "match": true
+        },
+        {
+          "path": "D:\\profile\\research\\workspace\\output\\pseudocolor_azimuth_calibration_20260803\\geometry\\fan_geometry_report.json",
+          "expected": "B8A166D2ABCF57B1B3868692651D68610B5FA5B135E6D0BC48DC1D2CDB3F5A93",
+          "actual": "B8A166D2ABCF57B1B3868692651D68610B5FA5B135E6D0BC48DC1D2CDB3F5A93",
+          "match": true
+        }
+      ]
+    },
+    {
+      "name": "main_script_matches_R01_freeze",
+      "passed": true,
+      "detail": {
+        "current": "0AB671B6A33A48CA2E3160A201629FA2DD341EF052A29B8D2CCBC2DFB26DCFD8",
+        "frozen": "0AB671B6A33A48CA2E3160A201629FA2DD341EF052A29B8D2CCBC2DFB26DCFD8"
+      }
+    },
+    {
+      "name": "R04_links_to_R01_freeze",
+      "passed": true,
+      "detail": "0F9F8D26CEDBA676ED70C9BF7DBEB9FEBD62290557FE03B0410E77B665A7A20B"
+    },
+    {
+      "name": "final_links_to_quantitative_file",
+      "passed": true,
+      "detail": "ADDA17A8D030B640396926D2F96A970C8A4FE8EFBAAFAB7D901A1A05F73B44A3"
+    },
+    {
+      "name": "final_links_to_manual_review",
+      "passed": true,
+      "detail": {
+        "status": "PASS",
+        "path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p0_common_apparent_motion\\MULTIMODAL_WORST_FRAME_REVIEW.md",
+        "sha256": "2F48929F5524AC13352817B3A08905C1CA1DD524C3EFDB6DA4AB1E3E29D79DB9"
+      }
+    },
+    {
+      "name": "final_decision_is_P0_PASS",
+      "passed": true,
+      "detail": "P0_PASS"
+    },
+    {
+      "name": "all_final_gates_pass",
+      "passed": true,
+      "detail": {
+        "R04_comparable_fraction_at_least_frozen_minimum": true,
+        "R04_background_improvement_fraction_at_least_0_75": true,
+        "R04_person_all_accepted_P90_below_short_axis_median": true,
+        "R04_person_all_accepted_P90_lower_than_uncompensated": true,
+        "manual_and_all_accepted_direction_consistent": true,
+        "manual_person_pair_count_sufficient": true,
+        "no_PERSON_or_fan_boundary_anchors_used": true,
+        "R04_not_used_for_tuning": true,
+        "target_regions_not_used_for_fitting_or_selection": true,
+        "difficult_pairs_not_deleted": true,
+        "manual_multimodal_worst_frame_review_pass": true
+      }
+    },
+    {
+      "name": "stopped_before_P1",
+      "passed": true,
+      "detail": {
+        "P1_started": false,
+        "P2_started": false,
+        "sar_boxes_created_or_moved": 0,
+        "physical_platform_trajectory_claimed": false,
+        "target_independent_motion_claimed": false
+      }
+    },
+    {
+      "name": "no_SAR_boxes_created_or_moved",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "name": "only_R01_R04_used",
+      "passed": true,
+      "detail": {
+        "pair": [
+          "R01ZF",
+          "R04ZF"
+        ],
+        "anchors": [
+          "R01ZF",
+          "R04ZF"
+        ],
+        "person": [
+          "R01ZF",
+          "R04ZF"
+        ],
+        "comparability": [
+          "R01ZF",
+          "R04ZF"
+        ]
+      }
+    },
+    {
+      "name": "comparability_counts_match_protocol_run_pairs",
+      "passed": true,
+      "detail": {
+        "R01ZF": 417,
+        "R04ZF": 579
+      }
+    },
+    {
+      "name": "R04_selected_pair_count_and_improvement_match",
+      "passed": true,
+      "detail": {
+        "selected_pair_count": 579,
+        "improved_count": 578
+      }
+    },
+    {
+      "name": "selected_models_match_freeze",
+      "passed": true,
+      "detail": {
+        "1": [
+          "M1"
+        ],
+        "3": [
+          "M2"
+        ],
+        "5": [
+          "M2"
+        ]
+      }
+    },
+    {
+      "name": "mask_integrity_zero_violations",
+      "passed": true,
+      "detail": {
+        "person": 0,
+        "boundary": 0,
+        "target_pixels": 0
+      }
+    },
+    {
+      "name": "PERSON_selected_counts_match",
+      "passed": true,
+      "detail": {
+        "all_accepted": 1050,
+        "manual_endpoints": 120
+      }
+    },
+    {
+      "name": "all_visual_assets_readable",
+      "passed": true,
+      "detail": {
+        "image_count": 26,
+        "unreadable": []
+      }
+    },
+    {
+      "name": "no_old_work_dependency_in_task_code",
+      "passed": true,
+      "detail": []
+    }
+  ]
+}

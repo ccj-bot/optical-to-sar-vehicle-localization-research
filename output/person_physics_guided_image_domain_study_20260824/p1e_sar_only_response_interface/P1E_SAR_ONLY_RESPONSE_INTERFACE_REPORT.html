@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<title>P1E SAR-only PERSON 响应接口探索</title>
+<style>
+:root { color-scheme: light; --ink:#172033; --muted:#5a6578; --line:#d9dfeb; --panel:#f6f8fc; --warn:#8a3d14; --good:#135f46; }
+* { box-sizing:border-box; }
+body { margin:0; font-family:"Segoe UI","Microsoft YaHei",sans-serif; color:var(--ink); background:#fff; line-height:1.65; }
+main { max-width:1220px; margin:0 auto; padding:34px 28px 70px; }
+h1 { font-size:2rem; margin:0 0 8px; } h2 { margin-top:42px; border-bottom:1px solid var(--line); padding-bottom:8px; }
+.status { display:inline-block; padding:5px 10px; border-radius:999px; background:#fff1e8; color:var(--warn); font-weight:700; }
+.lead { font-size:1.12rem; background:var(--panel); border-left:5px solid #315ea8; padding:18px 20px; margin:22px 0; }
+.grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; }
+.card { border:1px solid var(--line); border-radius:12px; padding:16px 18px; background:#fff; }
+.card strong { color:var(--good); }
+.table-wrap { overflow-x:auto; border:1px solid var(--line); border-radius:10px; }
+table { width:100%; border-collapse:collapse; font-size:.93rem; } th,td { padding:9px 10px; border-bottom:1px solid var(--line); text-align:left; white-space:nowrap; } th { background:#edf2fa; } tr:last-child td { border-bottom:0; }
+figure { margin:26px 0 34px; border:1px solid var(--line); border-radius:12px; overflow:hidden; background:#fff; } figure img { width:100%; display:block; } figcaption { padding:12px 16px; color:var(--muted); }
+code { background:#eef2f8; padding:2px 5px; border-radius:4px; }
+.note { color:var(--muted); font-size:.93rem; }
+@media (max-width:800px) { main { padding:22px 14px 50px; } .grid { grid-template-columns:1fr; } }
+</style>
+</head>
+<body><main>
+<h1>P1E SAR-only PERSON 响应接口探索</h1>
+<div class='status'>条件性信号存在，但不足以冻结为通用定位接口</div>
+<p class='note'>现有四个 run 全部是开发语料；本报告不授予 P1_PASS，也未进入时序。</p>
+<div class='lead'>目前已经能生成运行时可计算的 SAR-only S(x)，其中 C2 对孤立、紧凑 PERSON 响应具有明确位置优势；但尚不能构成跨条件稳定、可直接用于后续定位的通用接口。决定性失败来自 R02 的多人/长亮链场景：C2 对局部最强硬背景仅 47.2%，峰到参考位置的中位距离约 0.57 m，且 P01/P02 的目标级硬背景中位优势为负。</div>
+
+<div class='grid'>
+<div class='card'><strong>目前最有希望：</strong><br>C2 紧凑 JET＋梯度共识。孤立、紧凑响应中位置集中明显。</div>
+<div class='card'><strong>决定性阻断：</strong><br>R02 多人/长亮链中最强硬背景经常胜出，峰位漂离参考位置。</div>
+<div class='card'><strong>最小修复结论：</strong><br>固定支持均值、冻结 P0 掩膜和物理尺度消除了饱和与边界伪成功。</div>
+<div class='card'><strong>时序决定：</strong><br>不进入。单帧一般位置特异性没有建立。</div>
+</div>
+
+<h2>这次到底测试什么</h2>
+<p>对有效扇面内任意候选位置 <code>x</code>，只用 SAR 伪彩图像、扇面几何、固定物理尺度和有效区计算 <code>S(x)</code>。PERSON 框中心、宽高和 physical_target_id 只在响应图生成后用于离线采样和评价。</p>
+<div class='table-wrap'><table><thead><tr><th>候选</th><th>测什么</th><th>为什么可能位置特异</th><th>主要失败方式</th></tr></thead><tbody><tr><td>C0</td><td>JET 代理中心支持减外环</td><td>紧凑亮团高于邻域</td><td>任何紧凑强散射体都会触发；R02 硬背景失败</td></tr><tr><td>C1</td><td>距离带归一后的多尺度顶帽</td><td>压制距离依赖和宽弧</td><td>连接到长链时会被开运算保留或漏检</td></tr><tr><td>C2</td><td>紧凑 JET 与局部梯度共识</td><td>同时要求亮核与内部边/脊支持</td><td>当前最强；多人亮链中峰会漂移</td></tr><tr><td>C3</td><td>Hessian 双向负曲率＋结构张量长脊惩罚</td><td>偏好二维紧凑核、抑制长弧</td><td>改善 R04，但 R02 仍不稳定，且会压低部分真实延展响应</td></tr></tbody></table></div>
+
+<h2>B0R：哪里以后可以做时序</h2>
+<div class='table-wrap'><table><thead><tr><th>run</th><th>lag</th><th>可做时序位置</th><th>不可比较</th><th>背景支持不足</th></tr></thead><tbody><tr><td>R02ZF</td><td>1</td><td>56</td><td>32</td><td>0</td></tr><tr><td>R02ZF</td><td>3</td><td>19</td><td>61</td><td>0</td></tr><tr><td>R02ZF</td><td>5</td><td>0</td><td>68</td><td>4</td></tr><tr><td>R03ZF</td><td>1</td><td>7</td><td>29</td><td>0</td></tr><tr><td>R03ZF</td><td>3</td><td>1</td><td>33</td><td>0</td></tr><tr><td>R03ZF</td><td>5</td><td>0</td><td>32</td><td>0</td></tr></tbody></table></div>
+<p>R02 主要只有 lag1 和少量 lag3；R03 基本只适合作为单帧边界语料。B0R 已完成最低门控，不继续扩大审计。</p>
+
+<h2>审核发现与修正</h2>
+<ul>
+<li>移除“9 px 内最大值”主评价，改为固定 0.30 m 支持盘均值，并单列峰距。</li>
+<li>直接复用冻结 P0 有效掩膜；R03 F458 现在明确弃权。</li>
+<li>移除来自 PERSON 框短轴的尺度，改用 0.30/0.55/0.90 m 固定物理尺度。</li>
+<li>匹配背景使用固定米制切向偏移；四方向偏移分开；硬背景报告整个候选池。</li>
+<li>病例选择改为含硬背景的公平效用，并直接展示 C2/C3 成功与失败。</li>
+</ul>
+
+<h2>四个候选的整体结果</h2>
+<div class='table-wrap'><table><thead><tr><th>候选</th><th>可评价</th><th>弃权</th><th>胜最强硬背景</th><th>中位 Δhard</th><th>中位 Δhard-P95</th><th>峰距中位 m</th><th>峰距 P90 m</th></tr></thead><tbody><tr><td>C0 中心—外环 JET 对比</td><td>240</td><td>11</td><td>78.3%</td><td>0.267</td><td>0.382</td><td>0.096</td><td>0.349</td></tr><tr><td>C1 距离归一紧凑顶帽</td><td>240</td><td>11</td><td>63.3%</td><td>0.073</td><td>0.145</td><td>0.148</td><td>0.588</td></tr><tr><td>C2 紧凑 JET＋梯度共识</td><td>240</td><td>11</td><td>85.4%</td><td>0.187</td><td>0.329</td><td>0.132</td><td>0.452</td></tr><tr><td>C3 各向同性亮核＋长脊惩罚</td><td>240</td><td>11</td><td>72.5%</td><td>0.160</td><td>0.284</td><td>0.135</td><td>0.470</td></tr></tbody></table></div>
+
+<h2>首选 C2 的跨 run 结果</h2>
+<div class='table-wrap'><table><thead><tr><th>run</th><th>可评价</th><th>弃权</th><th>胜最强硬背景</th><th>中位 Δhard-P95</th><th>峰距中位 m</th><th>峰距 P90 m</th></tr></thead><tbody><tr><td>R01ZF</td><td>94</td><td>5</td><td>96.8%</td><td>0.417</td><td>0.196</td><td>0.356</td></tr><tr><td>R02ZF</td><td>36</td><td>0</td><td>47.2%</td><td>0.133</td><td>0.570</td><td>0.633</td></tr><tr><td>R03ZF</td><td>2</td><td>2</td><td>100.0%</td><td>0.511</td><td>0.099</td><td>0.109</td></tr><tr><td>R04ZF</td><td>108</td><td>4</td><td>88.0%</td><td>0.266</td><td>0.088</td><td>0.156</td></tr></tbody></table></div>
+<p><strong>关键不是 85.4% 的总体数，而是 R02 的 47.2%。</strong> R02 中位数仍高于硬背景池 P95，说明响应有显著性；但它经常不是附近唯一最强位置，因此不能直接承担最终定位。</p>
+
+<h2>C2 的逐目标效应</h2>
+<div class='table-wrap'><table><thead><tr><th>run</th><th>目标</th><th>框数</th><th>中位 Δhard</th><th>中位 Δhard-P95</th><th>胜最强硬背景</th><th>峰距中位 m</th></tr></thead><tbody><tr><td>R01ZF</td><td>01</td><td>39</td><td>0.313</td><td>0.456</td><td>97.3%</td><td>0.086</td></tr><tr><td>R01ZF</td><td>02</td><td>30</td><td>0.316</td><td>0.426</td><td>100.0%</td><td>0.243</td></tr><tr><td>R01ZF</td><td>03</td><td>30</td><td>0.280</td><td>0.389</td><td>92.9%</td><td>0.317</td></tr><tr><td>R02ZF</td><td>01</td><td>9</td><td>-0.153</td><td>-0.018</td><td>0.0%</td><td>0.628</td></tr><tr><td>R02ZF</td><td>02</td><td>9</td><td>-0.070</td><td>0.125</td><td>22.2%</td><td>0.221</td></tr><tr><td>R02ZF</td><td>03</td><td>9</td><td>0.156</td><td>0.225</td><td>77.8%</td><td>0.263</td></tr><tr><td>R02ZF</td><td>04</td><td>9</td><td>0.187</td><td>0.251</td><td>88.9%</td><td>0.569</td></tr><tr><td>R03ZF</td><td>01</td><td>4</td><td>0.415</td><td>0.511</td><td>100.0%</td><td>0.099</td></tr><tr><td>R04ZF</td><td>01</td><td>37</td><td>0.214</td><td>0.338</td><td>94.3%</td><td>0.079</td></tr><tr><td>R04ZF</td><td>02</td><td>17</td><td>0.197</td><td>0.322</td><td>93.8%</td><td>0.098</td></tr><tr><td>R04ZF</td><td>03</td><td>58</td><td>0.084</td><td>0.205</td><td>82.5%</td><td>0.087</td></tr></tbody></table></div>
+
+<h2>直接图像证据与失败病例</h2>
+<figure><a href='single_frame/manual_v4_physical_scale_p0_mask/visualizations/case_01_R04_COMPACT_RESPONSE_R04ZF_SARF000100_R04ZF_SARPERSON03.png'><img loading='lazy' src='single_frame/manual_v4_physical_scale_p0_mask/visualizations/case_01_R04_COMPACT_RESPONSE_R04ZF_SARF000100_R04ZF_SARPERSON03.png' alt='成功：R04 F100/P03。原图有孤立紧凑亮核，C2/C3 都把响应集中到参考位置附近。'></a><figcaption>成功：R04 F100/P03。原图有孤立紧凑亮核，C2/C3 都把响应集中到参考位置附近。</figcaption></figure><figure><a href='single_frame/manual_v4_physical_scale_p0_mask/visualizations/case_06_R02_REFERENCE_WEAK_P03_R02ZF_SARF000490_R02ZF_SARPERSON03.png'><img loading='lazy' src='single_frame/manual_v4_physical_scale_p0_mask/visualizations/case_06_R02_REFERENCE_WEAK_P03_R02ZF_SARF000490_R02ZF_SARPERSON03.png' alt='条件性成功：R02 F490/P03。C3 捕捉到紧凑核，C2 仅略高于最强硬背景，说明候选间存在形态依赖。'></a><figcaption>条件性成功：R02 F490/P03。C3 捕捉到紧凑核，C2 仅略高于最强硬背景，说明候选间存在形态依赖。</figcaption></figure><figure><a href='single_frame/manual_v4_physical_scale_p0_mask/visualizations/case_09_R04_VISIBLE_CORE_OPERATOR_MISS_R04ZF_SARF000090_R04ZF_SARPERSON03.png'><img loading='lazy' src='single_frame/manual_v4_physical_scale_p0_mask/visualizations/case_09_R04_VISIBLE_CORE_OPERATOR_MISS_R04ZF_SARF000090_R04ZF_SARPERSON03.png' alt='最小修复有效：R04 F90/P03。旧顶帽算子漏检；连续尺度的 C2/C3 恢复了参考亮核，证明部分失败确属表示问题。'></a><figcaption>最小修复有效：R04 F90/P03。旧顶帽算子漏检；连续尺度的 C2/C3 恢复了参考亮核，证明部分失败确属表示问题。</figcaption></figure><figure><a href='single_frame/manual_v4_physical_scale_p0_mask/visualizations/case_04_R02_GROUP_CLUTTER_P01_R02ZF_SARF000472_R02ZF_SARPERSON01.png'><img loading='lazy' src='single_frame/manual_v4_physical_scale_p0_mask/visualizations/case_04_R02_GROUP_CLUTTER_P01_R02ZF_SARF000472_R02ZF_SARPERSON01.png' alt='失败：R02 F472/P01。参考位置嵌在多人/背景亮链中，局部峰漂到约 0.6 m 外，硬背景更强。'></a><figcaption>失败：R02 F472/P01。参考位置嵌在多人/背景亮链中，局部峰漂到约 0.6 m 外，硬背景更强。</figcaption></figure><figure><a href='single_frame/manual_v4_physical_scale_p0_mask/visualizations/case_12_R02ZF_C3_WORST_FAIR_R02ZF_SARF000494_R02ZF_SARPERSON01.png'><img loading='lazy' src='single_frame/manual_v4_physical_scale_p0_mask/visualizations/case_12_R02ZF_C3_WORST_FAIR_R02ZF_SARF000494_R02ZF_SARPERSON01.png' alt='不可分辨失败：R02 F494/P01。参考点落在长亮链上，C0–C3 均被更强局部结构压过。'></a><figcaption>不可分辨失败：R02 F494/P01。参考点落在长亮链上，C0–C3 均被更强局部结构压过。</figcaption></figure><figure><a href='single_frame/manual_v4_physical_scale_p0_mask/visualizations/case_15_R04ZF_C3_WORST_FAIR_R04ZF_SARF000032_R04ZF_SARPERSON02.png'><img loading='lazy' src='single_frame/manual_v4_physical_scale_p0_mask/visualizations/case_15_R04ZF_C3_WORST_FAIR_R04ZF_SARF000032_R04ZF_SARPERSON02.png' alt='剩余失败：R04 F32/P02。响应沿边界附近斜向结构延展，C2/C3 对最强硬背景没有优势。'></a><figcaption>剩余失败：R04 F32/P02。响应沿边界附近斜向结构延展，C2/C3 对最强硬背景没有优势。</figcaption></figure><figure><a href='single_frame/manual_v4_physical_scale_p0_mask/visualizations/case_07_R03_BOUNDARY_EARLY_R03ZF_SARF000458_R03ZF_SARPERSON01.png'><img loading='lazy' src='single_frame/manual_v4_physical_scale_p0_mask/visualizations/case_07_R03_BOUNDARY_EARLY_R03ZF_SARF000458_R03ZF_SARPERSON01.png' alt='弃权：R03 F458。冻结 P0 的 1.0 m 外边界退让使参考支持区无效；病例保留展示但不计成功。'></a><figcaption>弃权：R03 F458。冻结 P0 的 1.0 m 外边界退让使参考支持区无效；病例保留展示但不计成功。</figcaption></figure><figure><a href='single_frame/manual_v4_physical_scale_p0_mask/visualizations/case_08_R03_BOUNDARY_RECOVERY_R03ZF_SARF000494_R03ZF_SARPERSON01.png'><img loading='lazy' src='single_frame/manual_v4_physical_scale_p0_mask/visualizations/case_08_R03_BOUNDARY_RECOVERY_R03ZF_SARF000494_R03ZF_SARPERSON01.png' alt='边界恢复：R03 F494。进入有效区后 C2 出现集中响应；但 R03 只有 2 个可评价人工框，不能承担稳定性结论。'></a><figcaption>边界恢复：R03 F494。进入有效区后 C2 出现集中响应；但 R03 只有 2 个可评价人工框，不能承担稳定性结论。</figcaption></figure>
+
+<h2>最终研究判断</h2>
+<ul>
+<li><strong>能否构造运行时 S(x)：</strong>能。</li>
+<li><strong>能否构造稳定通用、足以进入后续定位的 S(x)：</strong>目前不能。</li>
+<li><strong>优势来自：</strong>孤立紧凑亮核、局部梯度/曲率共同支持、参考峰距较小。</li>
+<li><strong>成立条件：</strong>完整有效支持区，PERSON 响应未与长弧/亮链融合，局部不存在更强同尺度散射体。</li>
+<li><strong>失败位置：</strong>R02 P01/P02 的多人/亮链、R04 边界邻近延展响应，以及冻结 P0 支持区外的 R03 早期帧。</li>
+<li><strong>主要阻断：</strong>场景强散射与 PERSON 条件响应在当前伪彩空间分辨下缺乏可分离的位置结构；表示问题只解释其中一部分。</li>
+</ul>
+<p>因此保留 C2 为 P1E 首选探索候选、C3 为结构诊断候选；不融合、不继续堆特征、不运行时序。下一步若继续，应先做覆盖孤立/拥挤条件的新采集，并在新数据前冻结公式和弃权规则。</p>
+
+<h2>可复核文件</h2>
+<ul>
+<li><a href='b0r_minimal/b0r_summary.json'>B0R 机器可读摘要</a></li>
+<li><a href='single_frame/manual_v4_physical_scale_p0_mask/p1e_single_frame_summary_manual.json'>P1E 单帧摘要</a></li>
+<li><a href='single_frame/manual_v4_physical_scale_p0_mask/p1e_single_frame_metrics_manual.csv'>逐框指标</a></li>
+<li><a href='single_frame/manual_v4_physical_scale_p0_mask/p1e_run_target_time_block_effects_manual.csv'>逐 run×target×time-block 指标</a></li>
+<li><a href='P1E_EXPLORATORY_CONCLUSION.md'>Markdown 结论</a></li>
+</ul>
+</main></body></html>

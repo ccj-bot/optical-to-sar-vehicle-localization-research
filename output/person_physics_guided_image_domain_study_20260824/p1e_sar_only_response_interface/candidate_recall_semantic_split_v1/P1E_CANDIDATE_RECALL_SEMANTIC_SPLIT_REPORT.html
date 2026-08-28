@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang='zh-CN'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><title>PERSON P1E 候选召回语义拆分</title><style>
+    :root { --ink:#172033; --muted:#5d687a; --line:#d9dfeb; --blue:#315a9b; --green:#19714c; --red:#a53535; --paper:#fff; --wash:#f4f7fb; }
+    * { box-sizing:border-box; } body { margin:0; color:var(--ink); background:var(--wash); font-family:"Segoe UI","Microsoft YaHei",Arial,sans-serif; line-height:1.65; }
+    main { max-width:1500px; margin:0 auto; background:var(--paper); padding:34px 46px 72px; box-shadow:0 0 40px rgba(24,38,64,.08); }
+    h1 { font-size:30px; margin:0 0 8px; } h2 { margin-top:38px; padding-top:18px; border-top:1px solid var(--line); font-size:23px; } h3 { margin-top:25px; font-size:18px; }
+    p, li { max-width:1100px; } .lede { font-size:18px; } .meta { color:var(--muted); font-size:14px; }
+    .verdict { border-left:6px solid var(--blue); background:#edf4ff; padding:18px 22px; margin:22px 0; }
+    .stop { border-left-color:var(--red); background:#fff0f0; } .good { border-left-color:var(--green); background:#edf9f3; }
+    code { background:#eef1f6; padding:2px 5px; border-radius:4px; } a { color:#174f9f; }
+    .table-wrap { overflow:auto; margin:14px 0 22px; } table { border-collapse:collapse; min-width:760px; font-size:14px; } th,td { border:1px solid var(--line); padding:8px 10px; text-align:left; vertical-align:top; } th { background:#edf2f8; white-space:nowrap; }
+    figure { margin:24px 0 38px; } figure img { width:100%; height:auto; border:1px solid var(--line); background:white; } figcaption { color:var(--muted); font-size:14px; margin-top:8px; }
+    .small { font-size:13px; color:var(--muted); } .links li { margin:6px 0; }
+    @media (max-width:800px) { main { padding:22px 18px 50px; } h1 { font-size:25px; } }
+    </style></head>
+<body><main>
+<h1>PERSON P1E：候选存在性与单帧唯一定位性语义拆分</h1>
+<p class='meta'>版本：candidate_recall_semantic_split_v1 · 数据角色：R01/R02/R03/R04 均为已暴露开发语料 · 不授予 P1_PASS · 未运行时序</p>
+<div class='verdict'>
+<strong>本轮结论：</strong>R02 不是单一的“PERSON 响应不存在”，也不是整体的“Top-5 候选召回已经成立”。P03/P04 属于候选已进入高响应短名单但共享响应/唯一性不足；P01/P02 多数帧存在参考附近的低 rank 局部峰，却 0/9 进入 Top-5，P02 还有 2/9 个 0.8 m 半径级缺失。预注册时序入口门槛未通过，因此本轮不运行 lag1/lag3 时序。
+</div>
+
+<h2>1. 先把三层问题分开</h2>
+<ol>
+<li><strong>原始峰存在：</strong>整幅 S(x) 经 GT-blind 局部极大值与 NMS 后，参考位置 0.8 m 内是否有任意候选峰。这说明算子附近有峰，但不等于它进入可用短名单。</li>
+<li><strong>候选短名单召回：</strong>固定 K=1/2/3/5 后的 Recall@K(r)。这是本轮决定是否值得做最小时序消歧的核心。</li>
+<li><strong>单帧唯一定位：</strong>参考能否击败局部最强竞争响应、是否为 Top-1、以及同一峰是否覆盖多个参考中心。原 hard-background 应解释为 <em>local competing-response pool</em>，不保证是纯背景。</li>
+</ol>
+<p>原 <code>peak_to_reference_center_offset</code> 只表示 S(x) 的局部高分位置相对人工框几何中心的偏移；它不能直接当作物理空间分辨率、真实散射中心误差或融合机制的因果证明。</p>
+
+<h2>2. R02 的直接答案</h2>
+<p class='lede'>C2 的 R02 Recall@1/3/5(0.8 m) 为 <strong>27.8% / 44.4% / 44.4%</strong>。Top-1 到 Top-5 只恢复 16.7%，而且 Top-3 到 Top-5 没有继续恢复。</p>
+<div class='table-wrap'><table><thead><tr><th>R02 target</th><th>n</th><th>R@1</th><th>R@3</th><th>R@5</th><th>any-rank peak &lt;=0.8m</th><th>median rank</th><th>radius misses</th><th>any shared peak</th><th>best peak shared</th></tr></thead><tbody><tr><td>P01</td><td>9</td><td>0.0%</td><td>0.0%</td><td>0.0%</td><td>100.0%</td><td>14.0</td><td>0</td><td>77.8%</td><td>33.3%</td></tr><tr><td>P02</td><td>9</td><td>0.0%</td><td>0.0%</td><td>0.0%</td><td>77.8%</td><td>14.0</td><td>2</td><td>77.8%</td><td>77.8%</td></tr><tr><td>P03</td><td>9</td><td>55.6%</td><td>88.9%</td><td>88.9%</td><td>100.0%</td><td>1.0</td><td>0</td><td>100.0%</td><td>100.0%</td></tr><tr><td>P04</td><td>9</td><td>55.6%</td><td>88.9%</td><td>88.9%</td><td>100.0%</td><td>1.0</td><td>0</td><td>100.0%</td><td>100.0%</td></tr></tbody></table></div>
+<ul>
+<li><strong>P01：</strong>9/9 帧在 0.8 m 内有某个 C2 峰，但最近峰 rank 中位数 14.0，Top-5 为 0/9。</li>
+<li><strong>P02：</strong>7/9 帧在 0.8 m 内有峰，最近 rank 中位数 14.0；另 2/9 是半径级候选缺失/当前表示未捕捉。</li>
+<li><strong>P03/P04：</strong>各 8/9 进入 Top-5、5/9 为 Top-1，但 9/9 均有候选同时落入多个 reference 的 0.8 m 邻域，故位置唯一性不足。</li>
+</ul>
+<div class='verdict good'>更准确的说法是：P01/P02 的“原始局部峰存在性”多数成立，但“高响应 Top-5 短名单召回”不成立；P03/P04 的短名单召回成立，但主要落在共享/融合响应上。<code>response_merging_suspected</code> 只是图像域重叠诊断，不是物理融合证明。</div>
+<figure><img src='single_frame_candidate_recall/visualizations_v2/c2_recall_at_k_summary.png' alt='C2 Recall at K summary'><figcaption>固定 K 与 0.8 m 半径的 GT-blind 候选召回。所有候选先于 GT 评价生成。</figcaption></figure>
+
+<h2>3. 跨 run 与候选池规模</h2>
+<div class='table-wrap'><table><thead><tr><th>run</th><th>references</th><th>R@1 0.8m</th><th>R@3 0.8m</th><th>R@5 0.8m</th><th>any-rank peak &lt;=0.8m</th><th>median nearest rank</th><th>merging suspected</th></tr></thead><tbody><tr><td>R01ZF</td><td>99</td><td>49.5%</td><td>86.9%</td><td>90.9%</td><td>100.0%</td><td>2.0</td><td>60.6%</td></tr><tr><td>R02ZF</td><td>36</td><td>27.8%</td><td>44.4%</td><td>44.4%</td><td>94.4%</td><td>8.0</td><td>88.9%</td></tr><tr><td>R03ZF</td><td>4</td><td>0.0%</td><td>0.0%</td><td>25.0%</td><td>100.0%</td><td>9.5</td><td>0.0%</td></tr><tr><td>R04ZF</td><td>112</td><td>17.0%</td><td>51.8%</td><td>67.0%</td><td>100.0%</td><td>3.0</td><td>0.0%</td></tr></tbody></table></div>
+<p>完整逐帧候选数已保存在 CSV。C2 每帧通常有数百个局部极大值，因此“0.8 m 内有任意峰”与“进入全扇面 Top-5”是不同强度的结论。</p>
+<div class='table-wrap'><table><thead><tr><th>run</th><th>operator</th><th>frames</th><th>candidate count min/median/max</th><th>spacing min/median (m)</th></tr></thead><tbody><tr><td>R01ZF</td><td>C2</td><td>39</td><td>251 / 285 / 312</td><td>0.451 / 0.460</td></tr><tr><td>R01ZF</td><td>C3</td><td>39</td><td>375 / 397 / 426</td><td>0.451 / 0.451</td></tr><tr><td>R02ZF</td><td>C2</td><td>23</td><td>219 / 294 / 327</td><td>0.451 / 0.471</td></tr><tr><td>R02ZF</td><td>C3</td><td>23</td><td>334 / 399 / 422</td><td>0.451 / 0.451</td></tr><tr><td>R03ZF</td><td>C2</td><td>4</td><td>331 / 338 / 346</td><td>0.451 / 0.452</td></tr><tr><td>R03ZF</td><td>C3</td><td>4</td><td>413 / 431 / 444</td><td>0.451 / 0.452</td></tr><tr><td>R04ZF</td><td>C2</td><td>60</td><td>244 / 305 / 334</td><td>0.451 / 0.460</td></tr><tr><td>R04ZF</td><td>C3</td><td>60</td><td>381 / 418 / 445</td><td>0.451 / 0.451</td></tr></tbody></table></div>
+
+<h2>4. C3 诊断没有修复 P01/P02</h2>
+<div class='table-wrap'><table><thead><tr><th>R02 target</th><th>R@1</th><th>R@5</th><th>any-rank peak &lt;=0.8m</th><th>median rank</th></tr></thead><tbody><tr><td>P01</td><td>0.0%</td><td>0.0%</td><td>100.0%</td><td>121.0</td></tr><tr><td>P02</td><td>0.0%</td><td>0.0%</td><td>100.0%</td><td>99.0</td></tr><tr><td>P03</td><td>77.8%</td><td>88.9%</td><td>100.0%</td><td>1.0</td></tr><tr><td>P04</td><td>77.8%</td><td>88.9%</td><td>100.0%</td><td>46.0</td></tr></tbody></table></div>
+<p>C3 在 P01/P02 的 Recall@5 仍为 0，最近 rank 中位数约 121/99。它没有把两者提升到高响应短名单，因此本轮不把 C3 解释为修复。</p>
+
+<h2>5. Omega_single 与 Omega_temporal 必须分开</h2>
+<p><code>Omega_single_v1</code> 只要求真实扇面内仍有单帧观测且固定支持核有效；<code>Omega_temporal</code> 还要求冻结 P0 公共输运和局部误差预算可用。后者是前者子集，P0 不可比较不等于单帧不可观察。</p>
+<div class='table-wrap'><table><thead><tr><th>frame</th><th>old frozen-P0 P1E status</th><th>Omega_single_v1</th><th>nearest d (m)</th><th>rank</th><th>Top5</th></tr></thead><tbody><tr><td>458</td><td>ABSTAIN_LOW_VALID_SUPPORT</td><td>FULL</td><td>0.021</td><td>18</td><td>no</td></tr><tr><td>462</td><td>ABSTAIN_LOW_VALID_SUPPORT</td><td>FULL</td><td>0.102</td><td>13</td><td>no</td></tr><tr><td>488</td><td>EVALUABLE</td><td>FULL</td><td>0.086</td><td>5</td><td>yes</td></tr><tr><td>494</td><td>EVALUABLE</td><td>FULL</td><td>0.111</td><td>6</td><td>no</td></tr></tbody></table></div>
+<p>F458 是最直接反例：旧 frozen-P0-mask P1E 因低有效支持而弃权，新单帧域为 FULL，C2 在约 0.02 m 处确有峰，但 rank=18。它证明语义拆分必要，却不证明 Top-5 候选召回足够。</p>
+
+<h2>6. 预注册时序入口：未打开</h2>
+<div class='table-wrap'><table><thead><tr><th>frozen check</th><th>observed</th><th>result</th></tr></thead><tbody><tr><td>R02 C2 Recall@5(0.8m) &gt;= 60%</td><td>44.4%</td><td>fail</td></tr><tr><td>Top5 - Top1 &gt;= 20 percentage points</td><td>16.7%</td><td>fail</td></tr><tr><td>reference - fixed-offset median &gt;= 10 points</td><td>44.4%</td><td>pass</td></tr><tr><td>P01 or P02 Recall@5 &gt;= 50%</td><td>P01=0.0%, P02=0.0%</td><td>fail</td></tr></tbody></table></div>
+<div class='verdict stop'><strong>停止决定：</strong>四项门槛中三项失败。按照运行前冻结规则，不执行 lag1，也不追加 lag3。因而本轮不能回答“P0 输运是否改善 rank”，更不能声称时序提供了新增信息；这些问题保持未检验，而不是阴性结果。</div>
+
+<h2>7. 真实病例：原图、全局响应、局部响应与 GT-blind 候选</h2>
+<p class='small'>病例图是结果后的解释性选择，只用于展示成功/失败结构，不参与候选生成、阈值选择或时序入口判定。局部图只画实际落入裁剪区且属于 Top-5、靠近参考或被多个参考共享的候选；不会再把裁剪区外 marker 标签画进局部图。</p>
+<figure><img src='single_frame_candidate_recall/visualizations_v2/case_v2_01_r02_f472_p01_shared_low_rank.png' alt='R02ZF_SARF000472 / P01: C2 nearest rank 7, d=0.659 m, Top5=no, shared=yes. P01/P02 share a low-ranked C2 peak while P03/P04 share a Top-2 peak in the same frame.'><figcaption>R02ZF_SARF000472 / P01: C2 nearest rank 7, d=0.659 m, Top5=no, shared=yes. P01/P02 share a low-ranked C2 peak while P03/P04 share a Top-2 peak in the same frame.</figcaption></figure><figure><img src='single_frame_candidate_recall/visualizations_v2/case_v2_02_r02_f482_p02_missing.png' alt='R02ZF_SARF000482 / P02: C2 nearest rank 14, d=1.159 m, Top5=no, shared=no. P02 has no C2 candidate within 0.8 m; P03/P04 still share the Top-1 response.'><figcaption>R02ZF_SARF000482 / P02: C2 nearest rank 14, d=1.159 m, Top5=no, shared=no. P02 has no C2 candidate within 0.8 m; P03/P04 still share the Top-1 response.</figcaption></figure><figure><img src='single_frame_candidate_recall/visualizations_v2/case_v2_03_r02_f494_p01_long_chain.png' alt='R02ZF_SARF000494 / P01: C2 nearest rank 24, d=0.698 m, Top5=no, shared=yes. P01/P02 share rank 24 on the long response chain; P03/P04 share rank 1.'><figcaption>R02ZF_SARF000494 / P01: C2 nearest rank 24, d=0.698 m, Top5=no, shared=yes. P01/P02 share rank 24 on the long response chain; P03/P04 share rank 1.</figcaption></figure><figure><img src='single_frame_candidate_recall/visualizations_v2/case_v2_04_r02_f483_p03_top1_shared.png' alt='R02ZF_SARF000483 / P03: C2 nearest rank 1, d=0.186 m, Top5=yes, shared=yes. P03/P04 are both covered by the same Top-1 C2 peak: candidate existence is strong, uniqueness is not.'><figcaption>R02ZF_SARF000483 / P03: C2 nearest rank 1, d=0.186 m, Top5=yes, shared=yes. P03/P04 are both covered by the same Top-1 C2 peak: candidate existence is strong, uniqueness is not.</figcaption></figure><figure><img src='single_frame_candidate_recall/visualizations_v2/case_v2_05_r02_f490_p03_shared_rank12.png' alt='R02ZF_SARF000490 / P03: C2 nearest rank 12, d=0.759 m, Top5=no, shared=yes. The shared P03/P04 response falls to rank 12, showing frame-dependent shortlist instability.'><figcaption>R02ZF_SARF000490 / P03: C2 nearest rank 12, d=0.759 m, Top5=no, shared=yes. The shared P03/P04 response falls to rank 12, showing frame-dependent shortlist instability.</figcaption></figure><figure><img src='single_frame_candidate_recall/visualizations_v2/case_v2_06_r03_f458_single_frame_full.png' alt='R03ZF_SARF000458 / P01: C2 nearest rank 18, d=0.021 m, Top5=no, shared=no. Omega_single_v1 is FULL and a C2 peak lies about 0.02 m from reference, but only at rank 18.'><figcaption>R03ZF_SARF000458 / P01: C2 nearest rank 18, d=0.021 m, Top5=no, shared=no. Omega_single_v1 is FULL and a C2 peak lies about 0.02 m from reference, but only at rank 18.</figcaption></figure><figure><img src='single_frame_candidate_recall/visualizations_v2/case_v2_07_r03_f488_top5_boundary.png' alt='R03ZF_SARF000488 / P01: C2 nearest rank 5, d=0.086 m, Top5=yes, shared=no. Boundary-scene single-frame observation is FULL and the nearby C2 peak reaches rank 5.'><figcaption>R03ZF_SARF000488 / P01: C2 nearest rank 5, d=0.086 m, Top5=yes, shared=no. Boundary-scene single-frame observation is FULL and the nearby C2 peak reaches rank 5.</figcaption></figure><figure><img src='single_frame_candidate_recall/visualizations_v2/case_v2_08_r04_f000_isolated_top1.png' alt='R04ZF_SARF000000 / P01: C2 nearest rank 1, d=0.097 m, Top5=yes, shared=no. An isolated response case where both C2 and C3 place rank 1 near the reference.'><figcaption>R04ZF_SARF000000 / P01: C2 nearest rank 1, d=0.097 m, Top5=yes, shared=no. An isolated response case where both C2 and C3 place rank 1 near the reference.</figcaption></figure>
+
+<h2>8. 研究边界与可复核文件</h2>
+<ul class='links'>
+<li><a href='00_CANDIDATE_RECALL_PROTOCOL_FROZEN_BEFORE_RUN.md'>运行前冻结协议</a></li>
+<li><a href='single_frame_candidate_recall/manual_reference_candidate_recall.csv'>原始逐 reference Recall@K CSV（不修改）</a></li>
+<li><a href='single_frame_candidate_recall/manual_reference_candidate_interpretation_v2.csv'>语义解释 v2 CSV（新增 any-rank 共享候选层）</a></li>
+<li><a href='single_frame_candidate_recall/gt_blind_candidates_all_processed_frames.csv'>全部 GT-blind 候选 CSV</a></li>
+<li><a href='single_frame_candidate_recall/candidate_count_by_frame.csv'>逐帧候选数 CSV</a></li>
+<li><a href='single_frame_candidate_recall/fixed_offset_candidate_coverage.csv'>固定空间偏移覆盖 CSV</a></li>
+<li><a href='single_frame_candidate_recall/candidate_semantic_interpretation_v2.json'>机器可读语义总结 JSON</a></li>
+<li><a href='single_frame_candidate_recall/report_validation.json'>报告链接与图片校验 JSON</a></li>
+</ul>
+<p class='small'>冻结 P0 未重拟合；B0R 与旧 P1E 结果未删除或覆盖；C0-C3 未修改；真实框、ID、光学/插值轨迹未用于候选生成或时序边；本轮未创建/移动 SAR 框，未授予 P1_PASS，四个 run 仍为开发语料。</p>
+</main></body></html>

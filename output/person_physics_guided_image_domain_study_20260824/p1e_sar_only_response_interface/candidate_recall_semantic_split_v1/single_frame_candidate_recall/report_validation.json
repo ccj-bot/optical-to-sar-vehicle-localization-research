@@ -1,0 +1,12 @@
+{
+  "schema": "PERSON_P1E_CANDIDATE_RECALL_REPORT_VALIDATION_V1",
+  "html_path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\candidate_recall_semantic_split_v1\\P1E_CANDIDATE_RECALL_SEMANTIC_SPLIT_REPORT.html",
+  "html_local_reference_count": 17,
+  "missing_local_references": [],
+  "case_image_count": 9,
+  "unreadable_case_images": [],
+  "status": "PASS",
+  "report_script_sha256": "A1D2870B8026358FB5BCBB65B7E3DD2A3C92684BD3B79C6D9284A648E048FDDB",
+  "interpretation_csv_sha256": "796F20EB3080C5B45CDEBBCC71584CC95C65691F056D46C4A31704A3D86E8EC7",
+  "summary_json_sha256": "2CFD7C3FBB35599BB4476A00D5DA68725AB6345E393859DC567A27452BF9D27A"
+}

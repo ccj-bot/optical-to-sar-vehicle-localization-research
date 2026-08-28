@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang='zh-CN'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><title>PERSON P1E 动态证据最小时序信息增益</title><style>
+    :root { --ink:#172033; --muted:#5d687a; --line:#d8dfeb; --blue:#315a9b; --green:#19714c; --red:#a53535; --paper:#fff; --wash:#f4f7fb; }
+    * { box-sizing:border-box; } body { margin:0; color:var(--ink); background:var(--wash); font-family:"Segoe UI","Microsoft YaHei",Arial,sans-serif; line-height:1.65; }
+    main { max-width:1520px; margin:0 auto; background:var(--paper); padding:34px 46px 72px; box-shadow:0 0 40px rgba(24,38,64,.08); }
+    h1 { font-size:30px; margin:0 0 8px; } h2 { margin-top:38px; padding-top:18px; border-top:1px solid var(--line); font-size:23px; } h3 { margin-top:25px; font-size:18px; }
+    p, li { max-width:1160px; } .lede { font-size:18px; } .meta { color:var(--muted); font-size:14px; }
+    .verdict { border-left:6px solid var(--blue); background:#edf4ff; padding:18px 22px; margin:22px 0; } .negative { border-left-color:var(--red); background:#fff1f1; } .positive { border-left-color:var(--green); background:#edf9f3; }
+    code { background:#eef1f6; padding:2px 5px; border-radius:4px; } a { color:#174f9f; }
+    .table-wrap { overflow:auto; margin:14px 0 22px; } table { border-collapse:collapse; min-width:800px; font-size:14px; } th,td { border:1px solid var(--line); padding:8px 10px; text-align:left; vertical-align:top; } th { background:#edf2f8; white-space:nowrap; }
+    figure { margin:24px 0 38px; } figure img { width:100%; height:auto; border:1px solid var(--line); background:white; } figcaption { color:var(--muted); font-size:14px; margin-top:8px; }
+    .small { font-size:13px; color:var(--muted); } .links li { margin:6px 0; }
+    @media (max-width:800px) { main { padding:22px 18px 50px; } h1 { font-size:25px; } }
+    </style></head>
+<body><main>
+<h1>PERSON P1E：动态证据状态与最小时序信息增益</h1>
+<p class='meta'>版本：dynamic_evidence_temporal_v1 / lag1_r02 · R02ZF 为已暴露开发语料 · 不设单帧资格 gate · 不授予 P1_PASS</p>
+<div class='verdict'>
+<strong>直接结论：</strong>透明的动态证据图已经建立，并证明真实序列中存在持续响应结构、gross 错误输运会破坏这种结构；但<strong>冻结 P0 相对不输运的特异信息增益尚未建立</strong>。在最强的 zero 对照下，incoming-max 中位优势仅 1.5 名，正确更好/平/更差为 53.3% / 16.7% / 30.0%；全部候选的 max/sum/mean 排序 Spearman 中位又高达 0.9756 / 0.9794 / 0.9916。当前主要时序信息来自慢变化/近同坐标持续性，而不是已被分离出来的 P0-specific 位移信息。
+</div>
+<ul>
+<li><strong>P01/P02：</strong>相对各自单帧 rank，P01 有 6/8 帧改善，中位改善 3.0 名；P02 有 4/6 帧改善，中位改善 5.0 名。但相对 zero transport，P01 仅 4/8 更好，P02 仅 2/6 更好，并存在 F483、F487、F490 的严重反例。</li>
+<li><strong>P03/P04：</strong>0.8 m 邻域图没有观察到分离；正确 P0 的完整与互为最近邻 2σ 图中八个 manual 间隔都为 SHARED，zero 也完全相同。F490/F494 的 max/sum 排名严重下降，但 mean 仍为 3/2、线程仍长 23，说明动态证据向量内部是混合状态，不是“所有时序量共同失败”。</li>
+<li><strong>候选缺失：</strong>P02 F482 在 0.8 m 下确实缺节点；F490 最近候选约 0.820 m，只比 0.8 m 多约 2 cm，是固定半径边界病例。当前 lag1 图不能创造缺失节点，也没有跨缺失帧的显式 missing-state bridge。</li>
+</ul>
+
+<h2>1. 这次到底检验了什么</h2>
+<p>每帧先由既有 SAR-only C2 响应独立产生全部候选，不截断 Top-K。每个候选保留图像证据向量；冻结 P0 只把候选输运为一个带局部不确定度的可能区域；相邻帧候选再产生 incoming/outgoing 支持、歧义计数和透明短线程。reference 的数值内容没有参与节点、边或线程计算，ID 和固定偏移只用于图完成后的离线评价。</p>
+<p class='small'>审计边界：运行前哈希检查读取过 reference CSV 的字节，且含 annotation 字段的 explorer 容器在图计算前已整体加载；图函数没有访问这些 annotation 字段。因此准确表述是“reference 内容未参与图计算”，而不是“相关数据从未被读取或加载”。本轮是计算依赖 GT-blind，不声称严格 sealed-data process isolation。</p>
+<p>所以本实验问的是“候选证据状态如何变化”，不是“先过单帧 gate 才有资格看时序”，也不是把 P0 当真实平台轨迹或把伪彩亮度当人体固有 RCS。</p>
+
+<h2>2. 图像、物理与时序各自贡献什么</h2>
+<ol>
+<li><strong>图像证据：</strong>C2 score、候选池 percentile/rank、局部竞争差、候选密度、C3 与局部结构各向异性。它告诉我们“这一帧哪里有响应、响应有多强、是否紧凑或共享”。</li>
+<li><strong>物理/几何约束：</strong>扇面位置、固定物理尺度、支持区、冻结 P0 公共表观输运和局部背景残差。它只限定合理接续区域，不提供真实目标位移。</li>
+<li><strong>时序证据：</strong>incoming support max/sum/mean、前驱/后继数、互为最近邻线程、共享/分叉状态。它允许弱候选得到支持，也允许强候选被后续证据降级。</li>
+</ol>
+<p><code>max</code> 读最强前驱，<code>sum</code> 累积全部前驱，二者都使用 <code>source_C2 × geometry</code>，没有乘入 destination C2，因此不是融合 posterior；<code>mean</code> 再除以几何权重和，弱化候选数量影响，但相对 zero 有 83.3% reference 配对持平。帧内与 1σ 前驱数的 Spearman 中位约为 max=0.804、sum=0.790、mean=0.204。所以 max/sum 也混有“候选机会数/局部密度”，三者必须并列。</p>
+<p class='small'>离线 <code>metric_best_within</code> 会为 image/max/sum/mean 各自在 0.8 m 邻域内重新选择最优节点；“image rank → temporal rank”是 reference 邻域覆盖与重排序诊断，不是运行时同一个候选不可逆地更新成新总分。</p>
+
+<h2>3. R02 分目标动态状态</h2>
+<div class='table-wrap'><table><thead><tr><th>target</th><th>refs</th><th>missing</th><th>incoming n</th><th>image median rank</th><th>correct median rank</th><th>image→correct median gain</th><th>improved vs image</th><th>zero-correct median</th><th>correct better than zero</th><th>worsened ≥50 ranks</th></tr></thead><tbody><tr><td>P01</td><td>9</td><td>0</td><td>8</td><td>11.0</td><td>10.0</td><td>3.0</td><td>75.0%</td><td>2.0</td><td>50.0%</td><td>1</td></tr><tr><td>P02</td><td>9</td><td>2</td><td>6</td><td>18.0</td><td>15.5</td><td>5.0</td><td>66.7%</td><td>-3.5</td><td>33.3%</td><td>2</td></tr><tr><td>P03</td><td>9</td><td>0</td><td>8</td><td>1.0</td><td>1.0</td><td>0.0</td><td>12.5%</td><td>2.5</td><td>62.5%</td><td>2</td></tr><tr><td>P04</td><td>9</td><td>0</td><td>8</td><td>1.0</td><td>1.0</td><td>0.0</td><td>12.5%</td><td>2.5</td><td>62.5%</td><td>2</td></tr></tbody></table></div>
+<figure><img src='lag1_r02/post_analysis_v1/visualizations/manual_reference_rank_dynamics.png' alt='manual rank dynamics'><figcaption>逐 manual 帧的单帧 rank、正确 P0 incoming-max rank 与 zero-transport rank。纵轴为对数且 rank 1 在上方；所有困难帧都保留。</figcaption></figure>
+
+<h2>4. 正确 P0 是否提供了单帧之外的新增信息</h2>
+<div class='table-wrap'><table><thead><tr><th>component</th><th>control</th><th>paired n</th><th>median control-correct rank</th><th>correct better</th><th>tie</th><th>correct worse</th></tr></thead><tbody><tr><td>max</td><td>No transport</td><td>30</td><td>1.5</td><td>53.3%</td><td>16.7%</td><td>30.0%</td></tr><tr><td>max</td><td>Reverse P0</td><td>30</td><td>7.5</td><td>73.3%</td><td>0.0%</td><td>26.7%</td></tr><tr><td>max</td><td>+0.75 m tangential</td><td>30</td><td>85.0</td><td>76.7%</td><td>0.0%</td><td>23.3%</td></tr><tr><td>max</td><td>Shuffled source</td><td>30</td><td>142.0</td><td>86.7%</td><td>0.0%</td><td>13.3%</td></tr><tr><td>sum</td><td>No transport</td><td>30</td><td>1.5</td><td>53.3%</td><td>13.3%</td><td>33.3%</td></tr><tr><td>sum</td><td>Reverse P0</td><td>30</td><td>8.5</td><td>83.3%</td><td>0.0%</td><td>16.7%</td></tr><tr><td>sum</td><td>+0.75 m tangential</td><td>30</td><td>103.0</td><td>76.7%</td><td>0.0%</td><td>23.3%</td></tr><tr><td>sum</td><td>Shuffled source</td><td>30</td><td>140.0</td><td>86.7%</td><td>0.0%</td><td>13.3%</td></tr><tr><td>mean</td><td>No transport</td><td>30</td><td>0.0</td><td>10.0%</td><td>83.3%</td><td>6.7%</td></tr><tr><td>mean</td><td>Reverse P0</td><td>30</td><td>0.0</td><td>16.7%</td><td>76.7%</td><td>6.7%</td></tr><tr><td>mean</td><td>+0.75 m tangential</td><td>30</td><td>9.0</td><td>63.3%</td><td>23.3%</td><td>13.3%</td></tr><tr><td>mean</td><td>Shuffled source</td><td>30</td><td>41.5</td><td>73.3%</td><td>0.0%</td><td>26.7%</td></tr></tbody></table></div>
+<p>incoming-max 下，正确 P0 相对 reverse 的中位优势为 7.5 名、相对 +0.75 m 扰动为 85.0 名、相对打乱帧为 142.0 名。它说明 gross 错位和错误时序会破坏结构；但 +0.75 m 约为当前 lag1 位移的 7.3 倍、且有 4.5% 预测落出目标帧有效区；shuffle 又只有一个 shift7，源候选池相对真实源每 pair 相差 -97 到 +92。二者是 sanity check，不是校准 null。</p>
+<div class='table-wrap'><table><thead><tr><th>component</th><th>frames</th><th>median frame Spearman</th><th>median exact-rank ties</th><th>median |rank delta|</th></tr></thead><tbody><tr><td>geometry</td><td>22</td><td>0.9142</td><td>1.6%</td><td>21.5</td></tr><tr><td>max</td><td>22</td><td>0.9756</td><td>3.4%</td><td>11.5</td></tr><tr><td>sum</td><td>22</td><td>0.9794</td><td>4.0%</td><td>10.0</td></tr><tr><td>mean</td><td>22</td><td>0.9916</td><td>19.3%</td><td>2.0</td></tr></tbody></table></div>
+<div class='table-wrap'><table><thead><tr><th>control</th><th>correct edges</th><th>control edges</th><th>correct-edge overlap</th><th>Jaccard</th></tr></thead><tbody><tr><td>No transport</td><td>4654</td><td>4661</td><td>96.0%</td><td>0.9210</td></tr><tr><td>Reverse P0</td><td>4654</td><td>4615</td><td>91.0%</td><td>0.8413</td></tr><tr><td>+0.75 m tangential</td><td>4654</td><td>3199</td><td>8.3%</td><td>0.0516</td></tr></tbody></table></div>
+<p>正确 P0 与 zero 的 2σ 互为最近邻边有 96.0% 重合，Jaccard=0.9210；按 node 对齐的线程长度 Spearman=0.8998，73.8% 节点线程长度完全相同；shared reachable state 更是 32/32 一致。这些全图 GT-blind 证据比单纯 reference 中位数更强地说明：lag1 的 P0-specific 增量尚未显示出来。</p>
+<figure><img src='lag1_r02/post_analysis_v1/visualizations/correct_p0_control_information_gain.png' alt='control information gain'><figcaption>每个点是同一 reference 的配对差；正值表示正确 P0 rank 更好。max、sum、mean 的结论强度不同。</figcaption></figure>
+
+<h2>5. 为什么正确 P0 和不输运如此接近</h2>
+<p>冻结 lag1 公共输运的中位位移约 <strong>0.103 m</strong>，而局部可能区域的中位 σ 约 <strong>0.301 m</strong>，二者比值约 0.34。因此 zero transport 通常仍落在同一个宽容区域内。这个尺度关系能解释“正确方向优于明显错误方向，但不容易击败原地持续性”。</p>
+<p>局部误差支持并不均匀：22.4% 候选使用最近 8 锚点 fallback，39.7% 至少有一个距离/方位维度未被所选锚点双侧包围。这些状态本轮按“动态证据向量”保留而未作为 gate，但应限制个案解释强度。</p>
+<figure><img src='lag1_r02/post_analysis_v1/visualizations/lag1_transport_vs_uncertainty_scale.png' alt='transport scale'><figcaption>逐 lag1 pair 的冻结 P0 位移与局部不确定区域尺度。该不确定度是运行时几何预算，不是严格校准置信上界。</figcaption></figure>
+
+<h2>6. 长线程是否就是 P0 的新增信息</h2>
+<div class='table-wrap'><table><thead><tr><th>condition</th><th>threads</th><th>median len</th><th>P90 len</th><th>max</th><th>nodes in len≥10</th></tr></thead><tbody><tr><td>CORRECT_P0</td><td>1803</td><td>2.0</td><td>8.0</td><td>23</td><td>31.0%</td></tr><tr><td>REVERSE_P0</td><td>1842</td><td>2.0</td><td>8.0</td><td>23</td><td>29.8%</td></tr><tr><td>TANGENTIAL_PLUS_0_75M</td><td>3258</td><td>1.0</td><td>4.0</td><td>11</td><td>1.3%</td></tr><tr><td>ZERO_TRANSPORT</td><td>1796</td><td>2.0</td><td>8.0</td><td>23</td><td>31.5%</td></tr></tbody></table></div>
+<p>正确 P0 与 zero transport 的线程中位长度都为 2.0，P90 都为 8.0，长度 ≥10 的节点比例分别为 31.0% 与 31.5%。长线程说明真实序列有持续结构，但大量持续性来自慢变化或同坐标延续，不能单独归功于 P0。</p>
+<div class='table-wrap'><table><thead><tr><th>condition</th><th>image ref-offset percentile</th><th>image positive</th><th>temporal ref-offset percentile</th><th>temporal positive</th><th>thread ref-offset nodes</th><th>reference longer</th></tr></thead><tbody><tr><td>CORRECT_P0</td><td>0.223</td><td>79.6%</td><td>0.128</td><td>68.2%</td><td>4.0</td><td>67.3%</td></tr><tr><td>ZERO_TRANSPORT</td><td>0.223</td><td>79.6%</td><td>0.109</td><td>65.9%</td><td>4.5</td><td>67.3%</td></tr><tr><td>REVERSE_P0</td><td>0.223</td><td>79.6%</td><td>0.121</td><td>67.1%</td><td>4.0</td><td>62.2%</td></tr><tr><td>TANGENTIAL_PLUS_0_75M</td><td>0.223</td><td>79.6%</td><td>-0.065</td><td>40.0%</td><td>-1.0</td><td>20.4%</td></tr></tbody></table></div>
+<figure><img src='lag1_r02/post_analysis_v1/visualizations/thread_persistence_reference_vs_offsets.png' alt='thread persistence'><figcaption>左：全部 GT-blind 线程的长度生存曲线；右：reference 邻域与四方向固定空间控制的线程长度。reference 附近确有更长结构，但正确 P0 与 zero transport 几乎相同。</figcaption></figure>
+<figure><img src='lag1_r02/post_analysis_v1/visualizations/spacetime_response_tube_projection.png' alt='spacetime projection'><figcaption>x-y-t 的两种判别坐标投影。P01/P02 用 x，P03/P04 用 y；线程先 GT-blind 构建，reference 只用于结果后选择可视线程。当前邻域图没有形成两条可观察的分离管道。</figcaption></figure>
+<p><code>SHARED</code> 必须谨慎解释：P01/P02 reference 间距为 0.510–0.656 m，P03/P04 为 0.695–0.808 m，而审计半径固定为 0.8 m，邻域天然高度重叠。30 个可评价 reference 行只对应 20 个 unique frame×best-node outcome。因此 SHARED 只表示当前邻域集合重叠/未观察到分离，不证明物理响应必然融合或身份不可分。</p>
+<h3>证据分量相互矛盾的关键病例</h3>
+<div class='table-wrap'><table><thead><tr><th>frame</th><th>target</th><th>image rank</th><th>correct max</th><th>correct sum</th><th>correct mean</th><th>thread len</th><th>zero max</th></tr></thead><tbody><tr><td>F483</td><td>P02</td><td>9</td><td>114</td><td>116</td><td>15</td><td>7</td><td>86</td></tr><tr><td>F487</td><td>P02</td><td>18</td><td>198</td><td>203</td><td>17</td><td>7</td><td>134</td></tr><tr><td>F490</td><td>P01</td><td>13</td><td>255</td><td>269</td><td>15</td><td>2</td><td>281</td></tr><tr><td>F490</td><td>P04</td><td>12</td><td>105</td><td>120</td><td>3</td><td>23</td><td>116</td></tr><tr><td>F490</td><td>P03</td><td>12</td><td>105</td><td>120</td><td>3</td><td>23</td><td>116</td></tr><tr><td>F494</td><td>P04</td><td>1</td><td>206</td><td>220</td><td>2</td><td>23</td><td>221</td></tr><tr><td>F494</td><td>P03</td><td>1</td><td>206</td><td>220</td><td>2</td><td>23</td><td>221</td></tr></tbody></table></div>
+
+<h2>7. 显示变化分层</h2>
+<p>22 个 pair 中 baseline/high/elevated 分别为 16/5/1。manual paired rows 中 baseline n=26，正确 P0 相对 zero 的 incoming-max 中位优势为 0 名；high 只有 F488 的 4 个 reference 行，而且 P03/P04 等行共享同一节点，独立信息远少于 4；elevated 没有 manual reference。因此不能从本轮断言显示分层对 PERSON 时序证据的因果作用。详细逐层结果保存在机器可读 CSV。</p>
+
+<h2>8. 直接病例：原图、C2 响应、候选关系与四种输运</h2>
+<p class='small'>每幅图上排是源/目标原始 SAR 与 C2 响应，下排是正确 P0、zero、reverse 和 +0.75 m 扰动。三角形为输运预测，圆为 1σ 区域，线为互为最近邻关系。病例与裁剪区由 reference 在结果后选择，不参与任何节点、边或 rank 的生成。</p>
+<figure><img src='lag1_r02/post_analysis_v1/visualizations/case_01_f472_f473_p01_p02_low_rank_shared.png' alt='F472→F473 P01/P02: P01/P02 start with low-ranked, partly shared local responses; temporal support improves some ranks but is not uniquely P0-specific.'><figcaption>F472→F473 P01/P02: P01/P02 start with low-ranked, partly shared local responses; temporal support improves some ranks but is not uniquely P0-specific.</figcaption></figure><figure><img src='lag1_r02/post_analysis_v1/visualizations/case_02_f472_f473_p03_p04_high_rank_shared.png' alt='F472→F473 P03/P04: P03/P04 share a high response from the first pair; the legal state is shared rather than two resolved identities.'><figcaption>F472→F473 P03/P04: P03/P04 share a high response from the first pair; the legal state is shared rather than two resolved identities.</figcaption></figure><figure><img src='lag1_r02/post_analysis_v1/visualizations/case_03_f482_f483_p02_missing_then_competed.png' alt='F482→F483 P02: P02 has no C2 node within 0.8 m at F482; the F483 nearby node exists but receives poor incoming rank, so lag1 cannot recover a missing predecessor.'><figcaption>F482→F483 P02: P02 has no C2 node within 0.8 m at F482; the F483 nearby node exists but receives poor incoming rank, so lag1 cannot recover a missing predecessor.</figcaption></figure><figure><img src='lag1_r02/post_analysis_v1/visualizations/case_04_f487_f488_low_rank_partial_recovery.png' alt='F487→F488 P01/P02: A positive case: both low-rank P01/P02 responses improve under correct P0, although the advantage over zero transport remains modest.'><figcaption>F487→F488 P01/P02: A positive case: both low-rank P01/P02 responses improve under correct P0, although the advantage over zero transport remains modest.</figcaption></figure><figure><img src='lag1_r02/post_analysis_v1/visualizations/case_05_f489_f490_p01_temporal_collapse.png' alt='F489→F490 P01: A decisive counterexample: P01 image rank 13 collapses to incoming-max rank 255 under correct P0.'><figcaption>F489→F490 P01: A decisive counterexample: P01 image rank 13 collapses to incoming-max rank 255 under correct P0.</figcaption></figure><figure><img src='lag1_r02/post_analysis_v1/visualizations/case_06_f489_f490_p03_p04_shared_rank_collapse.png' alt='F489→F490 P03/P04: The shared P03/P04 response remains unresolved: max/sum ranks collapse to 105/120, while mean rank 3 and a 23-node thread remain supportive.'><figcaption>F489→F490 P03/P04: The shared P03/P04 response remains unresolved: max/sum ranks collapse to 105/120, while mean rank 3 and a 23-node thread remain supportive.</figcaption></figure><figure><img src='lag1_r02/post_analysis_v1/visualizations/case_07_f493_f494_top1_shared_temporal_collapse.png' alt='F493→F494 P03/P04: A mixed-state counterexample: shared image Top-1 is demoted to max/sum ranks 206/220, while mean rank 2 and a 23-node thread remain supportive.'><figcaption>F493→F494 P03/P04: A mixed-state counterexample: shared image Top-1 is demoted to max/sum ranks 206/220, while mean rank 2 and a 23-node thread remain supportive.</figcaption></figure>
+
+<h2>9. 当前能回答与不能回答的内容</h2>
+<div class='verdict positive'><strong>能回答：</strong>真实 R02 序列有持续 SAR 响应结构；明显错误方向、gross 偏移和错误帧序会破坏它；部分低 rank 候选在某些时刻能获得支持。</div>
+<div class='verdict negative'><strong>不能回答：</strong>P0-specific lag1 信息增益尚未建立；当前时序不能稳定击败 zero transport、创造缺失节点，或在 0.8 m 重叠邻域中把 P03/P04 解析成两条身份线程，也不能据此冻结接口或授予 P1_PASS。</div>
+<p>最小下一步不应重新堆单帧特征，也不应增加硬 gate。更有信息量的是：在不调 P0 的前提下，预先固定 lag3/两步接续和 missing-state bridge 的透明版本，检查位移尺度相对不确定区是否增大、弱候选是否跨短暂缺失恢复，以及正确 P0 是否开始稳定区别于 zero。若仍无区别，应把“同坐标慢变持续性占主导”作为核心阴性结果。</p>
+
+<h2>10. 可复核文件</h2>
+<ul class='links'>
+<li><a href='00_DYNAMIC_EVIDENCE_MINIMAL_TEMPORAL_PROTOCOL_FROZEN_BEFORE_RUN.md'>运行前冻结协议</a></li>
+<li><a href='lag1_r02/runtime_graph_manifest.json'>GT-blind runtime graph manifest</a></li>
+<li><a href='lag1_r02/temporal_information_gain_summary.json'>原始时序机器总结</a></li>
+<li><a href='lag1_r02/post_analysis_v1/manual_reference_correct_vs_controls.csv'>逐 reference 正确 P0 与对照配对表</a></li>
+<li><a href='lag1_r02/post_analysis_v1/reference_vs_fixed_offset_temporal_comparison.csv'>reference 与固定空间控制比较表</a></li>
+<li><a href='lag1_r02/post_analysis_v1/display_stratum_temporal_comparison.csv'>显示变化分层比较表</a></li>
+<li><a href='lag1_r02/post_analysis_v1/dynamic_evidence_interpretation_v1.json'>本报告机器可读解释总结</a></li>
+<li><a href='02_DYNAMIC_EVIDENCE_METHOD_AUDIT.md'>独立方法审阅与复现缺口</a></li>
+<li><a href='lag1_r02/post_analysis_v1/report_validation.json'>报告与哈希校验</a></li>
+</ul>
+<p class='small'>冻结 P0、B0R、C0-C3、候选召回结果和旧 P1E 结果均未修改；原始图像与标注只读；没有创建或移动 SAR 框；没有使用 optical/插值轨迹或 physical_target_id 构造图。复现审阅还记录了字段名碰撞、动态脚本/协议未被原 runtime manifest 自身冻结、fixed-offset/comparability 未预先 pin hash 等缺口；这些不改变当前数字，但限制其作为最终冻结接口的资格。</p>
+</main></body></html>

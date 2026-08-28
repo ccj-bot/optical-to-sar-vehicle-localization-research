@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>PERSON P1E · 光学方位壳不确定度与 SAR response-region 拓扑</title>
+<style>
+:root{--bg:#07111d;--panel:#0e1d2b;--panel2:#122538;--text:#edf6ff;--muted:#9cb2c5;--line:#29445b;--green:#54cfa3;--orange:#ffb14e;--pink:#ef6f9f;--blue:#58b8ff}
+*{box-sizing:border-box} body{margin:0;background:linear-gradient(135deg,#06101a,#0a1725 46%,#08131f);color:var(--text);font-family:"Microsoft YaHei","Noto Sans SC",sans-serif;line-height:1.68}
+main{max-width:1240px;margin:0 auto;padding:34px 24px 64px} h1{font-size:34px;line-height:1.25;margin:0 0 10px} h2{margin-top:42px;padding-top:10px;border-top:1px solid var(--line)} h3{margin-top:28px} p,li{color:#d5e4ef} .lead{font-size:18px;color:#cce4f5;max-width:1020px}
+.status{display:inline-block;padding:6px 11px;border:1px solid #4b7693;border-radius:999px;color:#bfe8ff;background:#102a3d;margin-bottom:16px}
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:22px 0} .metric{background:linear-gradient(160deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:14px;padding:16px} .metric-label{color:var(--muted);font-size:13px} .metric-value{font-size:24px;font-weight:700;color:var(--green);margin:4px 0} .metric-note{font-size:12px;color:var(--muted)}
+.callout{border-left:4px solid var(--orange);background:#132334;padding:16px 18px;border-radius:8px;margin:18px 0} .negative{border-left-color:var(--pink)} .good{border-left-color:var(--green)}
+.formula{font-family:Consolas,monospace;background:#06101a;border:1px solid var(--line);padding:14px;border-radius:10px;overflow:auto;color:#b9e4ff}
+.figure-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px} figure{margin:0;background:var(--panel);border:1px solid var(--line);padding:10px;border-radius:12px} figure img{width:100%;display:block;border-radius:7px} figcaption{font-size:13px;color:var(--muted);padding:8px 4px 2px}
+.wide-fig{background:var(--panel);border:1px solid var(--line);padding:12px;border-radius:12px;margin:18px 0} .wide-fig img{width:100%;display:block;border-radius:8px}
+.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:10px;margin:12px 0 20px} table{border-collapse:collapse;width:100%;min-width:760px;background:#0b1825} th,td{padding:10px 11px;border-bottom:1px solid #20384b;text-align:left;font-size:13px} th{position:sticky;top:0;background:#14293b;color:#cceaff} td{color:#d7e5ef}
+.semantic-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px} .semantic-grid>div{background:var(--panel);border:1px solid var(--line);padding:15px;border-radius:10px} code{color:#9edcff} a{color:#6dc8ff} .footer{color:var(--muted);font-size:13px;margin-top:42px}
+@media(max-width:900px){.metrics{grid-template-columns:repeat(2,1fr)}.figure-grid,.semantic-grid{grid-template-columns:1fr}} @media(max-width:560px){main{padding:24px 14px}h1{font-size:27px}.metrics{grid-template-columns:1fr}}
+</style>
+</head>
+<body><main>
+<div class='status'>本轮状态：COMPLETE_NO_NEW_PASS_FAIL_NO_P2_CLAIM</div>
+<h1>光学方位壳的不确定度由什么组成？<br>它与 SAR response-region 已形成什么 GT-blind 结构？</h1>
+<p class='lead'>结论先说：当前多人 shell 未分离不是单一同步问题。同帧理想化后，R02 每个检测框映射角宽中位约 2.69°，但固定 guard 直接增加 12°；而 centered ±250 ms 又额外引入约 6.91° 的时间/视角 union。另一方面，shell 与 q90/q95/q97.5 response regions 已能形成稳定、可运行时计算的二部关系，但它主要表达搜索歧义与共享，不是 PERSON identity 或最终定位。</p>
+<div class='metrics'><div class='metric'><div class='metric-label'>同帧壳宽来源</div><div class='metric-value'>2.69° 单框 + 12° guard</div><div class='metric-note'>R02 中位；同步理想化后 guard 仍主导宽度</div></div><div class='metric'><div class='metric-label'>居中窗新增扩张</div><div class='metric-value'>+6.91°</div><div class='metric-note'>R02 centered ±250 ms 的时间/视角 union 中位增量</div></div><div class='metric'><div class='metric-label'>同帧壳 Jaccard</div><div class='metric-value'>0.635 / 0.517</div><div class='metric-note'>P01/P02；P03/P04（后者仅 4/9 帧双壳可关联）</div></div><div class='metric'><div class='metric-label'>q95 局部多壳覆盖</div><div class='metric-value'>82.1% → 87.3%</div><div class='metric-note'>R02 same-frame → centered；在已与壳相交的 region 内</div></div></div>
+
+<div class='callout good'><b>这轮建立了两个清楚接口。</b> optical shell 可以拆出宽度来源和 latency/burden 代价；SAR region 可以用像素级相交形成局部 degree 与二部连通分量。两者都不需要人工 ID 或 SAR reference 才能生成。</div>
+<div class='callout negative'><b>这轮没有建立 P2。</b> 所有 run 仍是开发语料；q95 region 不是 PERSON box；offline one-to-one assignment 只是解释工具；没有生成 range、box、总分或 tracker。</div>
+
+<h2>1. 方位壳宽度：guard 与时间 union 是两个独立来源</h2>
+<div class='formula'>W_effective = W_single_box + ΔW_time/view + ΔW_guard − ΔW_fan_clip</div>
+<p>这里的 mapping 先把 optical box 的横向跨度转成角跨度。纯 intercept 修正只能整体平移壳，不会让 optical box 自身变窄；只有 mapping uncertainty 被独立验证后，才可能合理缩小 guard。</p>
+<div class='wide-fig'><img src='visualizations/r02_shell_width_decomposition.png' alt='R02 shell width decomposition'></div>
+<div class='table-wrap'><table><thead><tr><th>时间策略</th><th>单框角宽°</th><th>时间/视角增量°</th><th>guard增量°</th><th>单track壳宽°</th><th>活动raw壳数</th><th>union负担</th><th>reference retention</th></tr></thead><tbody><tr><td>同帧</td><td>2.69</td><td>0.00</td><td>12.00</td><td>14.69</td><td>3.0</td><td>28.3%</td><td>83.3%</td></tr><tr><td>因果过去 250 ms</td><td>2.73</td><td>3.55</td><td>12.00</td><td>18.24</td><td>3.0</td><td>29.0%</td><td>91.7%</td></tr><tr><td>缓冲 +100 ms</td><td>2.71</td><td>4.44</td><td>12.00</td><td>19.11</td><td>3.0</td><td>29.8%</td><td>94.4%</td></tr><tr><td>居中 ±250 ms</td><td>2.99</td><td>6.91</td><td>12.00</td><td>21.62</td><td>5.0</td><td>31.9%</td><td>94.4%</td></tr></tbody></table></div>
+
+<h3>1.1 “理想同帧”后还剩多少不可分性？</h3>
+<p>在当前 ±6° guard 下，同帧 associated-shell Jaccard 仍为 P01/P02 <b>0.635</b>、P03/P04 <b>0.517</b>。因此不能把同帧不可分性简单归因于同步。把 guard 改成既有 R04 nominal-zero macro MAE 量级的 ±2.652° 几何敏感性后，Jaccard 降到约 0.415/0.325；raw-box 0° 下界进一步降到 0/0.025，但 retention 也明显下降，而且 0° 并不是可部署壳。</p>
+<div class='wide-fig'><img src='visualizations/r02_guard_time_jaccard.png' alt='guard and time jaccard'></div>
+<div class='table-wrap'><table><thead><tr><th>同帧 guard 版本</th><th>reference retention</th><th>union负担</th><th>P01/P02 Jaccard</th><th>有效帧</th><th>P03/P04 Jaccard</th><th>有效帧</th></tr></thead><tbody><tr><td>当前 ±6°</td><td>83.3%</td><td>28.3%</td><td>0.635</td><td>9/9</td><td>0.517</td><td>4/9</td></tr><tr><td>几何敏感性 ±2.652°</td><td>80.6%</td><td>19.0%</td><td>0.415</td><td>9/9</td><td>0.325</td><td>4/9</td></tr><tr><td>raw-box 下界 0°</td><td>69.4%</td><td>9.6%</td><td>0.000</td><td>9/9</td><td>0.025</td><td>4/9</td></tr></tbody></table></div>
+<p class='callout'><b>解释：</b>同帧重叠主要由当前 guard 扩张造成；但这不等于应直接缩 guard。±2.652° 与 0° 都是预先固定的几何反事实，不是通过 reference 调出来的新 mapping。</p>
+
+<h3>1.2 不改变同步、只看时间策略的代价</h3>
+<div class='wide-fig'><img src='visualizations/r02_latency_retention_burden.png' alt='latency retention burden'></div>
+<p>R02 从 same-frame 到 past-only 250 ms，retention 约 83.3%→91.7%，union burden 约 28.3%→29.0%；固定允许 +100 ms 延迟可达到与 centered ±250 ms 相同的 94.4% retention，但 union burden 约 29.8%，低于 centered 的 31.9%。这是描述性 latency–uncertainty–burden 关系，不是最优窗口选择。</p>
+<p>更关键的是：centered ±250 ms 即使使用 0° guard 下界，P01/P02 与 P03/P04 Jaccard 仍约 0.492/0.505。说明时间窗 union 本身会重新制造重叠，不能靠“更准同步”与“更小 guard”只讨论其中一个。</p>
+
+<h3>1.3 raw fragment availability 与 clipping</h3>
+<div class='wide-fig'><img src='visualizations/fragmentation_and_clipping.png' alt='fragmentation and clipping'></div>
+<div class='table-wrap'><table><thead><tr><th>run</th><th>raw fragments</th><th>offline parent IDs</th><th>多fragment parent</th><th>fragment/parent中位</th><th>最大</th><th>ambiguous最大</th></tr></thead><tbody><tr><td>R01ZF</td><td>12</td><td>8</td><td>3</td><td>1.0</td><td>3</td><td>1</td></tr><tr><td>R02ZF</td><td>33</td><td>14</td><td>7</td><td>1.5</td><td>10</td><td>3</td></tr><tr><td>R03ZF</td><td>5</td><td>2</td><td>2</td><td>2.5</td><td>3</td><td>2</td></tr><tr><td>R04ZF</td><td>11</td><td>6</td><td>2</td><td>1.0</td><td>5</td><td>2</td></tr></tbody></table></div>
+<p>R02 有 33 个 raw fragments、14 个 offline parent continuity IDs，7 个 parent 含多个 fragment，单个 parent 最多 10 个 fragments。same-frame 每帧活动 raw 壳中位只有 3 个，而离线 R02 reference 有 4 人；P03/P04 两条 distinct associated shells 同时可用仅 4/9 帧，centered 后为 7/9。这里的瓶颈既有宽度重叠，也有 runtime fragment 可用性。</p>
+
+<h2>2. shell ↔ response-region：已经建立的是“歧义拓扑”</h2>
+<p>本轮没有再使用粗角包围盒相交。每条 edge 都来自真实像素：region 中有多少像素落在 shell 内、占 region 多少、占 shell 多少，并保留交叠的 range/azimuth 跨度。</p>
+<div class='wide-fig'><img src='visualizations/r02_q95_local_region_degree.png' alt='R02 q95 local degree'></div>
+<div class='table-wrap'><table><thead><tr><th>策略</th><th>与壳相交q95 region</th><th>被1壳覆盖</th><th>被2壳覆盖</th><th>被≥3壳覆盖</th><th>多壳覆盖比例</th></tr></thead><tbody><tr><td>同帧</td><td>257</td><td>46</td><td>161</td><td>50</td><td>82.1%</td></tr><tr><td>因果过去 250 ms</td><td>273</td><td>40</td><td>151</td><td>82</td><td>85.3%</td></tr><tr><td>居中 ±250 ms</td><td>307</td><td>39</td><td>108</td><td>160</td><td>87.3%</td></tr></tbody></table></div>
+<p>在 R02 中，same-frame 已与至少一个壳相交的 257 个 q95 regions 里，211 个同时落入 ≥2 个 shells（82.1%）；centered 时为 268/307（87.3%）。所以“多个 optical shells → 同一个 SAR region”是可 GT-blind 直接计算的局部状态。</p>
+
+<div class='callout'><b>为什么完整连通分量里没有 <code>MULTIPLE_SHELLS_ONE_REGION</code>？</b> 不是因为多壳共享 region 不存在，而是这些 shell 同时还会碰到其它 regions，连通分量会扩展成 <code>MULTIPLE_SHELLS_MULTIPLE_REGIONS</code>。因此报告同时保留 component topology 与更直接的 region/shell local degree。</div>
+<div class='callout negative'><b>为什么没有 <code>SHELL_NO_REGION</code>？</b> q90/q95/q97.5 是每帧分位超水平层，每个当前 shell 至少会碰到某个 region。这只表示壳内存在相对高响应，不表示壳内存在 PERSON。相反，full fan 中大量 <code>REGION_NO_SHELL</code> 只是光学先验排除了这些方位。</div>
+
+<h3>2.1 旧 q95 shared=94.4% 对应什么拓扑？</h3>
+<div class='table-wrap'><table><thead><tr><th>策略</th><th>R02 shared reference行</th><th>region无shell</th><th>region被1壳覆盖</th><th>region被多壳覆盖</th><th>multi-shell/multi-region component</th></tr></thead><tbody><tr><td>同帧</td><td>34</td><td>6</td><td>4</td><td>24</td><td>24</td></tr><tr><td>因果过去 250 ms</td><td>34</td><td>0</td><td>6</td><td>28</td><td>34</td></tr><tr><td>居中 ±250 ms</td><td>34</td><td>0</td><td>4</td><td>30</td><td>34</td></tr></tbody></table></div>
+<p>same-frame 的 34 条 R02 q95 shared reference 中，24 条所属 region 被 ≥2 个 shells 覆盖；centered 时为 30/34，且 34/34 都进入 multi-shell/multi-region 连通分量。粗光学壳减少全扇面搜索，却没有解决 P03/P04 的 SAR 局部共享。</p>
+
+<h3>2.2 哪些状态可运行时直接计算，哪些仍依赖 reference？</h3>
+<div class='semantic-grid'>
+<div><b>GT-blind 可计算</b><ul><li>q90/q95/q97.5 region level 与 compact/extended-ridge shape</li><li>shell/region 像素相交、local degree、component topology</li><li>edge/truncated/common-FoV/display 条件</li><li>旧 candidate artifact 覆盖帧内的 accepted peak-in-region</li></ul></div>
+<div><b>只能 reference-conditioned 离线解释</b><ul><li><code>PEAK_PRESENT</code> / <code>PEAK_MISSING_REGION_PRESENT</code></li><li>PERSON <code>SHARED_REGION</code></li><li>reference retention、rank、P01/P02/P03/P04 归因</li><li>offline one-to-one associated shell</li></ul></div>
+</div>
+<p>旧 candidate artifact 未覆盖的 272/398 帧仍标为 peak artifact unavailable，绝不解释为 peak absent。P0 条件也只用 GT-blind C2 candidate 采样；无样本处标记 unavailable，不用 reference 补值。</p>
+
+<h2>3. 直接病例：看原图、嵌套 region、shell 与局部 degree</h2>
+<p>病例图中，白色叉号是运行完成后才叠加的 manual reference。绿色表示 q95 像素只被一个 shell 覆盖，红色表示同一 q95 像素被多个 shells 覆盖；这比只看 component 名称更直接。</p>
+<div class='figure-grid'><figure><img src='visualizations/case_R02_F472_LOW_RANK_AND_SHARED.png' alt='R02 首帧：P01/P02 低 rank 与 P03/P04 shared 同时存在'><figcaption>R02 首帧：P01/P02 低 rank 与 P03/P04 shared 同时存在</figcaption></figure><figure><img src='visualizations/case_R02_F482_PEAK_MISSING_REGION_PRESENT.png' alt='F482：P02 离散 peak missing，但 q95 region 明确存在'><figcaption>F482：P02 离散 peak missing，但 q95 region 明确存在</figcaption></figure><figure><img src='visualizations/case_R02_F490_PEAK_MISSING_REGION_PRESENT.png' alt='F490：延展 q95 region 与多个 shell 相交'><figcaption>F490：延展 q95 region 与多个 shell 相交</figcaption></figure><figure><img src='visualizations/case_R03_F489_ONE_SHELL_ONE_CORE.png' alt='R03：q97.5 可出现 one-shell/one-region 强核心'><figcaption>R03：q97.5 可出现 one-shell/one-region 强核心</figcaption></figure><figure><img src='visualizations/case_R03_F494_EDGE_OBSERVABLE.png' alt='R03 边界：单帧可观察不等于 P0 可输运'><figcaption>R03 边界：单帧可观察不等于 P0 可输运</figcaption></figure><figure><img src='visualizations/case_R04_F014_ONE_SHELL_MULTI_REGION.png' alt='R04：一个粗方位壳内仍包含多个 SAR response regions'><figcaption>R04：一个粗方位壳内仍包含多个 SAR response regions</figcaption></figure><figure><img src='visualizations/case_R04_F191_MULTI_MULTI.png' alt='R04：多 shell/多 region 的运行时歧义拓扑'><figcaption>R04：多 shell/多 region 的运行时歧义拓扑</figcaption></figure></div>
+
+<h3>3.1 F482 / F490 的语义没有退回 peak missing</h3>
+<div class='table-wrap'><table><thead><tr><th>帧</th><th>reference</th><th>策略</th><th>离线表示状态</th><th>shared</th><th>q95 region</th><th>覆盖shell数</th><th>连通分量</th></tr></thead><tbody><tr><td>482</td><td>P02</td><td>同帧</td><td>PEAK_MISSING_REGION_PRESENT</td><td>True</td><td>R02ZF_SARF000482__Q095__R0012</td><td>2</td><td>MULTIPLE_SHELLS_MULTIPLE_REGIONS</td></tr><tr><td>482</td><td>P02</td><td>居中 ±250 ms</td><td>PEAK_MISSING_REGION_PRESENT</td><td>True</td><td>R02ZF_SARF000482__Q095__R0012</td><td>3</td><td>MULTIPLE_SHELLS_MULTIPLE_REGIONS</td></tr><tr><td>482</td><td>P01</td><td>同帧</td><td>PEAK_PRESENT</td><td>True</td><td>R02ZF_SARF000482__Q095__R0012</td><td>2</td><td>MULTIPLE_SHELLS_MULTIPLE_REGIONS</td></tr><tr><td>482</td><td>P01</td><td>居中 ±250 ms</td><td>PEAK_PRESENT</td><td>True</td><td>R02ZF_SARF000482__Q095__R0012</td><td>3</td><td>MULTIPLE_SHELLS_MULTIPLE_REGIONS</td></tr><tr><td>482</td><td>P04</td><td>同帧</td><td>PEAK_PRESENT</td><td>True</td><td>R02ZF_SARF000482__Q095__R0001</td><td>1</td><td>ONE_SHELL_MULTIPLE_REGIONS</td></tr><tr><td>482</td><td>P04</td><td>居中 ±250 ms</td><td>PEAK_PRESENT</td><td>True</td><td>R02ZF_SARF000482__Q095__R0001</td><td>4</td><td>MULTIPLE_SHELLS_MULTIPLE_REGIONS</td></tr><tr><td>482</td><td>P03</td><td>同帧</td><td>PEAK_PRESENT</td><td>True</td><td>R02ZF_SARF000482__Q095__R0001</td><td>1</td><td>ONE_SHELL_MULTIPLE_REGIONS</td></tr><tr><td>482</td><td>P03</td><td>居中 ±250 ms</td><td>PEAK_PRESENT</td><td>True</td><td>R02ZF_SARF000482__Q095__R0001</td><td>4</td><td>MULTIPLE_SHELLS_MULTIPLE_REGIONS</td></tr><tr><td>490</td><td>P02</td><td>同帧</td><td>PEAK_MISSING_REGION_PRESENT</td><td>True</td><td>R02ZF_SARF000490__Q095__R0012</td><td>3</td><td>MULTIPLE_SHELLS_MULTIPLE_REGIONS</td></tr><tr><td>490</td><td>P02</td><td>居中 ±250 ms</td><td>PEAK_MISSING_REGION_PRESENT</td><td>True</td><td>R02ZF_SARF000490__Q095__R0012</td><td>3</td><td>MULTIPLE_SHELLS_MULTIPLE_REGIONS</td></tr><tr><td>490</td><td>P01</td><td>同帧</td><td>PEAK_PRESENT</td><td>True</td><td>R02ZF_SARF000490__Q095__R0012</td><td>3</td><td>MULTIPLE_SHELLS_MULTIPLE_REGIONS</td></tr><tr><td>490</td><td>P01</td><td>居中 ±250 ms</td><td>PEAK_PRESENT</td><td>True</td><td>R02ZF_SARF000490__Q095__R0012</td><td>3</td><td>MULTIPLE_SHELLS_MULTIPLE_REGIONS</td></tr><tr><td>490</td><td>P04</td><td>同帧</td><td>PEAK_PRESENT</td><td>True</td><td>R02ZF_SARF000490__Q095__R0011</td><td>2</td><td>MULTIPLE_SHELLS_MULTIPLE_REGIONS</td></tr><tr><td>490</td><td>P04</td><td>居中 ±250 ms</td><td>PEAK_PRESENT</td><td>True</td><td>R02ZF_SARF000490__Q095__R0011</td><td>4</td><td>MULTIPLE_SHELLS_MULTIPLE_REGIONS</td></tr><tr><td>490</td><td>P03</td><td>同帧</td><td>PEAK_PRESENT</td><td>True</td><td>R02ZF_SARF000490__Q095__R0011</td><td>2</td><td>MULTIPLE_SHELLS_MULTIPLE_REGIONS</td></tr><tr><td>490</td><td>P03</td><td>居中 ±250 ms</td><td>PEAK_PRESENT</td><td>True</td><td>R02ZF_SARF000490__Q095__R0011</td><td>4</td><td>MULTIPLE_SHELLS_MULTIPLE_REGIONS</td></tr></tbody></table></div>
+<p>F482 P01/P02 同落在 q95 R0012；P02 是 <code>PEAK_MISSING_REGION_PRESENT</code>，但该 region same-frame 已被 2 个 shells 覆盖、centered 被 3 个 shells 覆盖。F490 P01/P02 同落在 R0012，P02 同样是 peak-missing-region-present，region degree 为 3。它们证明“离散峰缺失”不是“连续响应缺失”，也说明 region presence 本身仍不能完成身份分离。</p>
+
+<h2>4. 本轮对两个核心问题的回答</h2>
+<ol>
+<li><b>光学方位不确定度由什么组成？</b> 单框角跨度较窄；当前 ±6° guard 是同帧宽度的最大固定来源；past/buffered/centered 的时间 union 再引入独立扩张；raw fragment 可用性限制每帧可形成多少独立壳；fan/common-FoV clipping 主要是跨 run/边界条件，R02 本身没有 fan clipping。</li>
+<li><b>不看 GT 时已经形成什么结构？</b> 可以形成 shell nodes、nested response-region nodes、真实像素 edges、local degree 与二部连通分量。R02 的主导状态不是“一个壳对应一个 region”，而是一个壳含多个 regions、同一 region 又被多个 shells 覆盖的多对多歧义。</li>
+</ol>
+<div class='callout good'><b>最有价值的下一步不是增加 C4/C5。</b> 若继续，应先改善可验证的 runtime optical continuity/synchronization/mapping uncertainty，再用相同 topology 接口观察 degree 与 burden 是否下降。只有 single-frame topology 更清楚后，才值得做冻结 P0 的 region continue/split/merge-like 极小时序传播。</div>
+<div class='callout negative'><b>本轮停止点：</b> 不进入 P2，不生成 SAR range/box，不实现复杂 region tracker，不把 image/P0/optical 维度相加成总分。</div>
+
+<h2>5. 复现与数据入口</h2>
+<ul>
+<li><a href='00_SHELL_UNCERTAINTY_REGION_TOPOLOGY_PROTOCOL_FROZEN_BEFORE_RUN.md'>冻结协议</a></li>
+<li><a href='diagnostic_summary.json'>机器可读诊断摘要</a></li>
+<li><a href='optical_shell_uncertainty_decomposition_pre_reference.csv'>逐 shell 不确定度分解</a></li>
+<li><a href='gt_blind_shell_region_pixel_edges_pre_reference.csv'>像素级 shell-region edges</a></li>
+<li><a href='gt_blind_bipartite_components_pre_reference.csv'>GT-blind 二部连通分量</a></li>
+<li><a href='offline_reference_region_topology_interpretation.csv'>reference-conditioned 后置解释</a></li>
+<li><a href='case_registry.csv'>病例注册表</a></li>
+</ul>
+<p class='footer'>解释边界：PERSON 特征仍是目标、场景、载体、成像处理与显示链共同形成的条件性图像域响应；公共表观输运不是真实载体轨迹；RGB/JET 不作为独立雷达物理通道；SAR 保留 range 与最终定位权。</p>
+</main></body></html>

@@ -1,0 +1,312 @@
+{
+  "schema": "PERSON_P1E_MATCHED_OPTICAL_SHELL_REPORT_VALIDATION_V1",
+  "created_at": "2026-08-27T00:28:05+08:00",
+  "status": "PASS",
+  "checks_passed": 14,
+  "checks_total": 14,
+  "report_path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\optical_shell_information_gain_v1\\P1E_MATCHED_OPTICAL_SHELL_INFORMATION_GAIN_REPORT.html",
+  "report_sha256": "69ADCB3CA5C982E5E87C3ADB0E007F79325CC942FB8B4D7EF614B4B6EB561E47",
+  "report_script_path": "D:\\profile\\research\\workspace\\tasks\\person_physics_guided_image_domain_study_20260824\\render_p1e_optical_shell_information_gain_report.py",
+  "report_script_sha256": "02BAF81874BCA96569788402E5BA01A7FF1BBCFC61978974173A9187571D112F",
+  "analysis_script_sha256": "2C71440DF9C22FDCE17A3C4050E4E0054F6B7CA4542C44C134E2DEA3478A2203",
+  "checks": [
+    {
+      "name": "required_inputs_exist",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "frozen_dependency_hashes_match",
+      "pass": true,
+      "detail": [
+        {
+          "path": "D:\\profile\\research\\workspace\\tasks\\person_physics_guided_image_domain_study_20260824\\run_p0_common_apparent_motion.py",
+          "expected_sha256": "0AB671B6A33A48CA2E3160A201629FA2DD341EF052A29B8D2CCBC2DFB26DCFD8",
+          "actual_sha256": "0AB671B6A33A48CA2E3160A201629FA2DD341EF052A29B8D2CCBC2DFB26DCFD8",
+          "match": true
+        },
+        {
+          "path": "D:\\profile\\research\\workspace\\tasks\\person_physics_guided_image_domain_study_20260824\\run_p1e_single_frame_position_specificity.py",
+          "expected_sha256": "98468B9DEA391E9FE9A209268CEFE7BE32BE40A7D7742B9DBE7D54C3539B9BB1",
+          "actual_sha256": "98468B9DEA391E9FE9A209268CEFE7BE32BE40A7D7742B9DBE7D54C3539B9BB1",
+          "match": true
+        },
+        {
+          "path": "D:\\profile\\research\\workspace\\tasks\\person_physics_guided_image_domain_study_20260824\\run_p1e_candidate_recall_audit.py",
+          "expected_sha256": "84CCAEBB9A195D184B6C34393CC71A7699E5F190D4D5FC253C16E337855CF0F8",
+          "actual_sha256": "84CCAEBB9A195D184B6C34393CC71A7699E5F190D4D5FC253C16E337855CF0F8",
+          "match": true
+        },
+        {
+          "path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\candidate_recall_semantic_split_v1\\single_frame_candidate_recall\\gt_blind_candidates_all_processed_frames.csv",
+          "expected_sha256": "D2F1673A247FDB3AB1DD884F989ADC0ABE4E33A86AEFE45B5DFB4BE286FD6EC0",
+          "actual_sha256": "D2F1673A247FDB3AB1DD884F989ADC0ABE4E33A86AEFE45B5DFB4BE286FD6EC0",
+          "match": true
+        },
+        {
+          "path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\candidate_recall_semantic_split_v1\\single_frame_candidate_recall\\manual_reference_candidate_interpretation_v2.csv",
+          "expected_sha256": "796F20EB3080C5B45CDEBBCC71584CC95C65691F056D46C4A31704A3D86E8EC7",
+          "actual_sha256": "796F20EB3080C5B45CDEBBCC71584CC95C65691F056D46C4A31704A3D86E8EC7",
+          "match": true
+        },
+        {
+          "path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\observation_model_diagnostic_v1\\observation_condition_table.csv",
+          "expected_sha256": "DE65B9705A353F0DF783E0D4A59D0274FD05547362ABE463C50C9C5469D80C21",
+          "actual_sha256": "DE65B9705A353F0DF783E0D4A59D0274FD05547362ABE463C50C9C5469D80C21",
+          "match": true
+        },
+        {
+          "path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\observation_model_diagnostic_v1\\frame_display_condition_table.csv",
+          "expected_sha256": "8997701F7FC34D1B52502F11B44FCEF64EC700A0FD2D734EA1AB6090A9DBAD8A",
+          "actual_sha256": "8997701F7FC34D1B52502F11B44FCEF64EC700A0FD2D734EA1AB6090A9DBAD8A",
+          "match": true
+        },
+        {
+          "path": "D:\\profile\\research\\workspace\\output\\person_multidimensional_response_explorer_20260823\\explorer_data.js",
+          "expected_sha256": "C39E60EB478FF7D815EFE6984D3BCF36600737E2EC3D1FF76D04020DED54EF7D",
+          "actual_sha256": "C39E60EB478FF7D815EFE6984D3BCF36600737E2EC3D1FF76D04020DED54EF7D",
+          "match": true
+        }
+      ]
+    },
+    {
+      "name": "analysis_script_hash_matches_summary",
+      "pass": true,
+      "detail": {
+        "summary": "2C71440DF9C22FDCE17A3C4050E4E0054F6B7CA4542C44C134E2DEA3478A2203",
+        "actual": "2C71440DF9C22FDCE17A3C4050E4E0054F6B7CA4542C44C134E2DEA3478A2203"
+      }
+    },
+    {
+      "name": "first_run_shell_and_candidate_core_hashes_preserved",
+      "pass": true,
+      "detail": {
+        "shell_definition_table.csv": {
+          "baseline": "8A5EDD07DB9AB452A79C9AEC95469BB42A88CA23AF6EFFA7FBA8EA26D0F39C16",
+          "current": "8A5EDD07DB9AB452A79C9AEC95469BB42A88CA23AF6EFFA7FBA8EA26D0F39C16",
+          "match": true
+        },
+        "shell_candidate_table.csv": {
+          "baseline": "6DA0D46537AAA8BC3DC2A6807AE02BAF4DBF46150083679AFCF8B148DACFE329",
+          "current": "6DA0D46537AAA8BC3DC2A6807AE02BAF4DBF46150083679AFCF8B148DACFE329",
+          "match": true
+        },
+        "shell_candidate_metrics.csv": {
+          "baseline": "45BFF8B2AAFBC905D652B77FDECC96860F2495836F0C03D81CBE34D5A2C7454D",
+          "current": "45BFF8B2AAFBC905D652B77FDECC96860F2495836F0C03D81CBE34D5A2C7454D",
+          "match": true
+        }
+      }
+    },
+    {
+      "name": "row_counts_match_summary",
+      "pass": true,
+      "detail": {
+        "shell_definitions": 1504,
+        "evaluation": 980,
+        "comparison": 245,
+        "applicability": 251,
+        "cases": 9
+      }
+    },
+    {
+      "name": "three_matched_nulls_per_true_shell",
+      "pass": true,
+      "detail": {
+        "frame_count": 376,
+        "counts": {
+          "MATCHED_NULL": 1128,
+          "TRUE": 376
+        }
+      }
+    },
+    {
+      "name": "null_selection_is_reference_and_candidate_blind",
+      "pass": true,
+      "detail": {
+        "reference_used": 0,
+        "candidate_used": 0,
+        "physical_target_id_used": 0
+      }
+    },
+    {
+      "name": "all_251_references_and_six_unavailable_are_explicit",
+      "pass": true,
+      "detail": {
+        "reference_rows": 251,
+        "unavailable": [
+          [
+            "R01ZF",
+            133,
+            "R01ZF_SARPERSON01"
+          ],
+          [
+            "R01ZF",
+            135,
+            "R01ZF_SARPERSON01"
+          ],
+          [
+            "R01ZF",
+            140,
+            "R01ZF_SARPERSON01"
+          ],
+          [
+            "R01ZF",
+            141,
+            "R01ZF_SARPERSON01"
+          ],
+          [
+            "R04ZF",
+            175,
+            "R04ZF_SARPERSON03"
+          ],
+          [
+            "R04ZF",
+            180,
+            "R04ZF_SARPERSON03"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "headline_metrics_match_direct_tables",
+      "pass": true,
+      "detail": {
+        "scope_type": "OVERALL",
+        "scope_value": "ALL",
+        "K": 5,
+        "radius_m": 0.8,
+        "reference_count_unconditional": 251,
+        "reference_count_with_prior": 245,
+        "matched_null_evaluation_rows": 735,
+        "true_recall_unconditional_all_references": 0.796812749003984,
+        "true_recall_available_references": 0.8163265306122449,
+        "matched_null_recall_available_references": 0.2448979591836734,
+        "true_minus_matched_null_available": 0.5714285714285714,
+        "true_recall_given_reference_inside_shell": 0.908675799086758,
+        "matched_null_recall_given_reference_inside_shell": 0.8781725888324873
+      }
+    },
+    {
+      "name": "all_visualizations_readable",
+      "pass": true,
+      "detail": {
+        "image_count": 13,
+        "unreadable": [],
+        "dimensions": {
+          "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\optical_shell_information_gain_v1\\visualizations\\case_01_R02_P02_F482_RESPONSE_PRESENT_PEAK_MISSING.png": [
+            2400,
+            1500
+          ],
+          "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\optical_shell_information_gain_v1\\visualizations\\case_02_R02_P03_P04_SHARED_AFTER_TRUE_SHELL.png": [
+            2400,
+            1500
+          ],
+          "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\optical_shell_information_gain_v1\\visualizations\\case_03_R03_F458_OUTER_BOUNDARY_COMMON_FOV.png": [
+            2400,
+            1500
+          ],
+          "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\optical_shell_information_gain_v1\\visualizations\\case_04_R03_F494_SINGLE_FRAME_VISIBLE_P0_UNAVAILABLE.png": [
+            2400,
+            1500
+          ],
+          "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\optical_shell_information_gain_v1\\visualizations\\case_05_R02_P01_TRUE_SHELL_BEST_INFORMATION_GAIN.png": [
+            2400,
+            1500
+          ],
+          "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\optical_shell_information_gain_v1\\visualizations\\case_06_R02_P02_TRUE_SHELL_BEST_INFORMATION_GAIN.png": [
+            2400,
+            1500
+          ],
+          "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\optical_shell_information_gain_v1\\visualizations\\case_07_R04_TRUE_SHELL_BEST_INFORMATION_GAIN.png": [
+            2400,
+            1500
+          ],
+          "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\optical_shell_information_gain_v1\\visualizations\\case_08_R04_TRUE_SHELL_WORST_OR_NULL_LIKE_CASE.png": [
+            2400,
+            1500
+          ],
+          "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\optical_shell_information_gain_v1\\visualizations\\case_09_R02_P02_F490_HIGH_RESPONSE_JUST_OUTSIDE_CANDIDATE_RADIUS.png": [
+            2400,
+            1500
+          ],
+          "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\optical_shell_information_gain_v1\\visualizations\\matched_null_geometry_fairness.png": [
+            2400,
+            720
+          ],
+          "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\optical_shell_information_gain_v1\\visualizations\\p0_display_conditioned_shell_gain.png": [
+            1600,
+            720
+          ],
+          "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\optical_shell_information_gain_v1\\visualizations\\r02_global_to_shell_local_rank.png": [
+            1600,
+            880
+          ],
+          "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\optical_shell_information_gain_v1\\visualizations\\true_vs_null_information_gain_by_run.png": [
+            2400,
+            720
+          ]
+        }
+      }
+    },
+    {
+      "name": "html_local_references_resolve",
+      "pass": true,
+      "detail": {
+        "reference_count": 44,
+        "missing": []
+      }
+    },
+    {
+      "name": "semantic_boundaries_present",
+      "pass": true,
+      "detail": {
+        "有稳定的跨模态几何信息，但没有建立新的壳内 SAR 唯一定位能力": true,
+        "不是人体固有 RCS": true,
+        "SAR 在壳内仍凭自己的": true,
+        "不能把 shared/merge-like 写成物理散射融合": true,
+        "不声称严格 sealed-data process isolation": true,
+        "没有授予 P1/P2 PASS": true,
+        "不授予新的 PASS/FAIL": true
+      }
+    },
+    {
+      "name": "all_seven_questions_present",
+      "pass": true,
+      "detail": {
+        "question_ids": [
+          "q1",
+          "q2",
+          "q3",
+          "q4",
+          "q5",
+          "q6",
+          "q7"
+        ]
+      }
+    },
+    {
+      "name": "no_new_pass_fail_and_frozen_boundaries_preserved",
+      "pass": true,
+      "detail": {
+        "reference_used_for_true_or_null_shell_generation": false,
+        "candidate_or_score_used_for_null_selection": false,
+        "reference_slice_materialized_after_shell_and_candidate_generation": true,
+        "monolithic_observation_table_read_for_candidate_parity_before_reference_slice": true,
+        "strict_sealed_reference_process_isolation_claimed": false,
+        "reference_file_bytes_hashed_before_run_without_content_based_selection": true,
+        "physical_target_id_used_for_optical_shell_selection": false,
+        "optical_assigned_SAR_range": false,
+        "SAR_boxes_created_or_moved": 0,
+        "P0_retuned_or_refit": false,
+        "C0_C3_modified": false,
+        "new_weighted_score_classifier_or_tracker": false,
+        "all_runs_are_exposed_development_material": true,
+        "shared_is_physical_scattering_fusion": false,
+        "candidate_missing_equals_physical_response_absence": false,
+        "SAR_retains_final_localization_authority": true,
+        "new_PASS_or_FAIL_claimed": false
+      }
+    }
+  ]
+}

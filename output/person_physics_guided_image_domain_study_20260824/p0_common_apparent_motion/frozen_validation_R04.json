@@ -1,0 +1,286 @@
+{
+  "schema": "PERSON_P0_FROZEN_R04_FINAL_VALIDATION_V1",
+  "created_at": "2026-08-24T11:24:14+08:00",
+  "stage_status": "P0_COMPLETE_STOPPED_BEFORE_P1",
+  "final_decision": "P0_PASS",
+  "failure_status": null,
+  "P1_eligibility": "ELIGIBLE_BUT_NOT_STARTED",
+  "R01_freeze_payload_sha256": "0F9F8D26CEDBA676ED70C9BF7DBEB9FEBD62290557FE03B0410E77B665A7A20B",
+  "quantitative_validation_sha256": "ADDA17A8D030B640396926D2F96A970C8A4FE8EFBAAFAB7D901A1A05F73B44A3",
+  "manual_multimodal_review": {
+    "status": "PASS",
+    "path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p0_common_apparent_motion\\MULTIMODAL_WORST_FRAME_REVIEW.md",
+    "sha256": "2F48929F5524AC13352817B3A08905C1CA1DD524C3EFDB6DA4AB1E3E29D79DB9"
+  },
+  "final_gates": {
+    "R04_comparable_fraction_at_least_frozen_minimum": true,
+    "R04_background_improvement_fraction_at_least_0_75": true,
+    "R04_person_all_accepted_P90_below_short_axis_median": true,
+    "R04_person_all_accepted_P90_lower_than_uncompensated": true,
+    "manual_and_all_accepted_direction_consistent": true,
+    "manual_person_pair_count_sufficient": true,
+    "no_PERSON_or_fan_boundary_anchors_used": true,
+    "R04_not_used_for_tuning": true,
+    "target_regions_not_used_for_fitting_or_selection": true,
+    "difficult_pairs_not_deleted": true,
+    "manual_multimodal_worst_frame_review_pass": true
+  },
+  "quantitative_validation": {
+    "schema": "PERSON_P0_FROZEN_R04_QUANTITATIVE_VALIDATION_V1",
+    "created_at": "2026-08-24T11:15:04+08:00",
+    "stage_status": "R04_COMPLETE_AWAITING_MULTIMODAL_WORST_FRAME_REVIEW",
+    "R01_freeze_payload_sha256": "0F9F8D26CEDBA676ED70C9BF7DBEB9FEBD62290557FE03B0410E77B665A7A20B",
+    "script_sha256": "0AB671B6A33A48CA2E3160A201629FA2DD341EF052A29B8D2CCBC2DFB26DCFD8",
+    "input_hash_checks": [
+      {
+        "kind": "input_snapshot",
+        "path": "D:\\browser\\person_SAR_fullframe_interpolation_review_1787483093904.json",
+        "expected_sha256": "E3CA1F07552030F46770420EED16AEF362E9DD74C909A6BEB23C54D29F79AF8A",
+        "actual_sha256": "E3CA1F07552030F46770420EED16AEF362E9DD74C909A6BEB23C54D29F79AF8A",
+        "match": true
+      },
+      {
+        "kind": "input_snapshot",
+        "path": "D:\\profile\\research\\workspace\\output\\person_multidimensional_response_explorer_20260823\\explorer_data.js",
+        "expected_sha256": "C39E60EB478FF7D815EFE6984D3BCF36600737E2EC3D1FF76D04020DED54EF7D",
+        "actual_sha256": "C39E60EB478FF7D815EFE6984D3BCF36600737E2EC3D1FF76D04020DED54EF7D",
+        "match": true
+      },
+      {
+        "kind": "input_snapshot",
+        "path": "D:\\profile\\research\\workspace\\output\\pseudocolor_azimuth_calibration_20260803\\geometry\\fan_geometry_report.json",
+        "expected_sha256": "B8A166D2ABCF57B1B3868692651D68610B5FA5B135E6D0BC48DC1D2CDB3F5A93",
+        "actual_sha256": "B8A166D2ABCF57B1B3868692651D68610B5FA5B135E6D0BC48DC1D2CDB3F5A93",
+        "match": true
+      },
+      {
+        "kind": "invalidated_probe_reference",
+        "path": "D:\\profile\\research\\workspace\\output\\person_sar_motion_evidence_20260824\\motion_evidence_summary.json",
+        "expected_sha256": "5150F3EFFC884912A5A229E2FFD1F6DC011DC8BEE8297F2D4B6F3E06E7FD2801",
+        "actual_sha256": "5150F3EFFC884912A5A229E2FFD1F6DC011DC8BEE8297F2D4B6F3E06E7FD2801",
+        "match": true,
+        "allowed_use": "BOX_CONDITIONED_PSEUDOCOLOR_DISPLAY_REPEATABILITY_ONLY"
+      }
+    ],
+    "R04_used_for_tuning": false,
+    "selected_model_by_lag": {
+      "1": "M1",
+      "3": "M2",
+      "5": "M2"
+    },
+    "display_change_thresholds_by_lag": {
+      "1": {
+        "elevated_threshold": 0.060146244680902336,
+        "high_threshold": 0.0850768041479532,
+        "source": "R01_EMPIRICAL_QUANTILES_FROZEN_BEFORE_R04"
+      },
+      "3": {
+        "elevated_threshold": 0.2167579136443354,
+        "high_threshold": 0.35419517543363765,
+        "source": "R01_EMPIRICAL_QUANTILES_FROZEN_BEFORE_R04"
+      },
+      "5": {
+        "elevated_threshold": 0.23482004855088207,
+        "high_threshold": 0.4615401170831696,
+        "source": "R01_EMPIRICAL_QUANTILES_FROZEN_BEFORE_R04"
+      }
+    },
+    "scheduled_pair_count": 579,
+    "pair_comparability": {
+      "comparable_pair_count": 579,
+      "selected_model_available_pair_count": 579,
+      "selected_model_available_fraction": 1.0,
+      "unavailable_reason_counts": {}
+    },
+    "background_holdout": {
+      "overall_improvement_fraction_vs_M0": 0.998272884283247,
+      "by_lag": [
+        {
+          "lag": 1,
+          "selected_model": "M1",
+          "valid_pair_count": 195,
+          "scheduled_pair_count": 195,
+          "improvement_fraction_vs_M0": 1.0,
+          "M0_holdout_pair_median_px": 1.8775728003628331,
+          "selected_holdout_pair_median_px": 0.19076923794041944,
+          "selected_holdout_pair_p90_px": 0.2769762162061516
+        },
+        {
+          "lag": 3,
+          "selected_model": "M2",
+          "valid_pair_count": 193,
+          "scheduled_pair_count": 193,
+          "improvement_fraction_vs_M0": 0.9948186528497409,
+          "M0_holdout_pair_median_px": 6.058392936586969,
+          "selected_holdout_pair_median_px": 1.3655308408975242,
+          "selected_holdout_pair_p90_px": 2.261835745183107
+        },
+        {
+          "lag": 5,
+          "selected_model": "M2",
+          "valid_pair_count": 191,
+          "scheduled_pair_count": 191,
+          "improvement_fraction_vs_M0": 1.0,
+          "M0_holdout_pair_median_px": 10.91863295984021,
+          "selected_holdout_pair_median_px": 2.3356014519748722,
+          "selected_holdout_pair_p90_px": 3.4476632063783406
+        }
+      ]
+    },
+    "stationary_PERSON": {
+      "short_axis_median_px_unique_R04_boxes": 18.504364013671875,
+      "all_accepted": {
+        "subset": "ALL_ACCEPTED",
+        "count": 1050,
+        "uncompensated_median_px": 6.150779158976148,
+        "uncompensated_p90_px": 11.14316333674309,
+        "compensated_median_px": 1.2506365778290003,
+        "compensated_p90_px": 3.557439665618967,
+        "median_direction": "LOWER_AFTER_COMPENSATION",
+        "p90_direction": "LOWER_AFTER_COMPENSATION"
+      },
+      "manual_endpoints": {
+        "subset": "MANUAL_ENDPOINTS",
+        "count": 120,
+        "uncompensated_median_px": 8.780442620187367,
+        "uncompensated_p90_px": 12.203240294370266,
+        "compensated_median_px": 2.2231252352860515,
+        "compensated_p90_px": 5.029034297345536,
+        "median_direction": "LOWER_AFTER_COMPENSATION",
+        "p90_direction": "LOWER_AFTER_COMPENSATION"
+      },
+      "semantic_note": "BOX_CENTER_RESIDUAL_IS_IMAGE_COORDINATE_OBSERVATION_NOT_TARGET_INDEPENDENT_MOTION"
+    },
+    "display_change_strata_pair_counts": {
+      "BASELINE_GLOBAL_DISPLAY_DISTRIBUTION": 476,
+      "HIGH_GLOBAL_DISPLAY_DISTRIBUTION_CHANGE": 58,
+      "ELEVATED_GLOBAL_DISPLAY_DISTRIBUTION_CHANGE": 45
+    },
+    "mask_integrity": {
+      "person_mask_anchor_violations": 0,
+      "boundary_mask_anchor_violations": 0,
+      "target_pixels_used_for_fitting": 0
+    },
+    "quantitative_gates": {
+      "R04_comparable_fraction_at_least_frozen_minimum": true,
+      "R04_background_improvement_fraction_at_least_0_75": true,
+      "R04_person_all_accepted_P90_below_short_axis_median": true,
+      "R04_person_all_accepted_P90_lower_than_uncompensated": true,
+      "manual_and_all_accepted_direction_consistent": true,
+      "manual_person_pair_count_sufficient": true,
+      "no_PERSON_or_fan_boundary_anchors_used": true,
+      "R04_not_used_for_tuning": true,
+      "target_regions_not_used_for_fitting_or_selection": true,
+      "difficult_pairs_not_deleted": true
+    },
+    "quantitative_pass": true,
+    "worst_case_registry": [
+      {
+        "rank": 1,
+        "run_id": "R04ZF",
+        "from_frame": 149,
+        "to_frame": 154,
+        "lag": 5,
+        "selected_model": "M2",
+        "holdout_residual_median_px": 6.141269755905576,
+        "M0_holdout_residual_median_px": 11.75297956547219,
+        "display_js_divergence": 0.2918670243924068,
+        "display_stratum": "ELEVATED_GLOBAL_DISPLAY_DISTRIBUTION_CHANGE",
+        "fit_anchor_count": 125,
+        "holdout_anchor_count": 45,
+        "visual_path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p0_common_apparent_motion\\visualizations\\worst_01_R04ZF_000149_000154_lag5.jpg",
+        "manual_multimodal_review": "PENDING"
+      },
+      {
+        "rank": 2,
+        "run_id": "R04ZF",
+        "from_frame": 37,
+        "to_frame": 42,
+        "lag": 5,
+        "selected_model": "M2",
+        "holdout_residual_median_px": 5.27774766254163,
+        "M0_holdout_residual_median_px": 10.606504072253564,
+        "display_js_divergence": 0.03964760857310158,
+        "display_stratum": "BASELINE_GLOBAL_DISPLAY_DISTRIBUTION",
+        "fit_anchor_count": 113,
+        "holdout_anchor_count": 48,
+        "visual_path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p0_common_apparent_motion\\visualizations\\worst_02_R04ZF_000037_000042_lag5.jpg",
+        "manual_multimodal_review": "PENDING"
+      },
+      {
+        "rank": 3,
+        "run_id": "R04ZF",
+        "from_frame": 10,
+        "to_frame": 15,
+        "lag": 5,
+        "selected_model": "M2",
+        "holdout_residual_median_px": 4.854352674621862,
+        "M0_holdout_residual_median_px": 13.420946030815845,
+        "display_js_divergence": 0.0019052952271690084,
+        "display_stratum": "BASELINE_GLOBAL_DISPLAY_DISTRIBUTION",
+        "fit_anchor_count": 96,
+        "holdout_anchor_count": 43,
+        "visual_path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p0_common_apparent_motion\\visualizations\\worst_03_R04ZF_000010_000015_lag5.jpg",
+        "manual_multimodal_review": "PENDING"
+      },
+      {
+        "rank": 4,
+        "run_id": "R04ZF",
+        "from_frame": 152,
+        "to_frame": 157,
+        "lag": 5,
+        "selected_model": "M2",
+        "holdout_residual_median_px": 4.549874589283797,
+        "M0_holdout_residual_median_px": 8.118998203948372,
+        "display_js_divergence": 0.33667245024967984,
+        "display_stratum": "ELEVATED_GLOBAL_DISPLAY_DISTRIBUTION_CHANGE",
+        "fit_anchor_count": 133,
+        "holdout_anchor_count": 54,
+        "visual_path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p0_common_apparent_motion\\visualizations\\worst_04_R04ZF_000152_000157_lag5.jpg",
+        "manual_multimodal_review": "PENDING"
+      },
+      {
+        "rank": 5,
+        "run_id": "R04ZF",
+        "from_frame": 168,
+        "to_frame": 171,
+        "lag": 3,
+        "selected_model": "M2",
+        "holdout_residual_median_px": 4.501925729911443,
+        "M0_holdout_residual_median_px": 4.286668866213798,
+        "display_js_divergence": 0.026707200639671906,
+        "display_stratum": "BASELINE_GLOBAL_DISPLAY_DISTRIBUTION",
+        "fit_anchor_count": 159,
+        "holdout_anchor_count": 48,
+        "visual_path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p0_common_apparent_motion\\visualizations\\worst_05_R04ZF_000168_000171_lag3.jpg",
+        "manual_multimodal_review": "PENDING"
+      },
+      {
+        "rank": 6,
+        "run_id": "R04ZF",
+        "from_frame": 53,
+        "to_frame": 58,
+        "lag": 5,
+        "selected_model": "M2",
+        "holdout_residual_median_px": 4.3574950450332555,
+        "M0_holdout_residual_median_px": 14.012625610856926,
+        "display_js_divergence": 0.028207143056238945,
+        "display_stratum": "BASELINE_GLOBAL_DISPLAY_DISTRIBUTION",
+        "fit_anchor_count": 148,
+        "holdout_anchor_count": 43,
+        "visual_path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p0_common_apparent_motion\\visualizations\\worst_06_R04ZF_000053_000058_lag5.jpg",
+        "manual_multimodal_review": "PENDING"
+      }
+    ],
+    "manual_multimodal_review": "PENDING",
+    "final_decision": "PENDING_MULTIMODAL_REVIEW",
+    "P1_eligibility": "BLOCKED_PENDING_P0_FINALIZATION"
+  },
+  "semantic_stop": {
+    "P1_started": false,
+    "P2_started": false,
+    "sar_boxes_created_or_moved": 0,
+    "physical_platform_trajectory_claimed": false,
+    "target_independent_motion_claimed": false
+  }
+}

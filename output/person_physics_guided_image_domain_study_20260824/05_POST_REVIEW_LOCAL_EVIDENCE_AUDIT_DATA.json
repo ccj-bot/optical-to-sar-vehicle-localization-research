@@ -1,0 +1,751 @@
+{
+  "schema": "PERSON_POST_P0_LOCAL_EVIDENCE_AUDIT_V1",
+  "status": "POST_REVIEW_METADATA_AND_EXPOSURE_AUDIT_COMPLETE_NO_P1_RUN",
+  "interpreter": "D:\\MINICONDA\\envs\\py311\\python.exe",
+  "workspace": "D:\\profile\\research\\workspace",
+  "input_hash_gate": [
+    {
+      "path": "D:\\browser\\person_SAR_fullframe_interpolation_review_1787483093904.json",
+      "expected_sha256": "E3CA1F07552030F46770420EED16AEF362E9DD74C909A6BEB23C54D29F79AF8A",
+      "actual_sha256": "E3CA1F07552030F46770420EED16AEF362E9DD74C909A6BEB23C54D29F79AF8A",
+      "match": true
+    },
+    {
+      "path": "D:\\profile\\research\\workspace\\output\\person_multidimensional_response_explorer_20260823\\explorer_data.js",
+      "expected_sha256": "C39E60EB478FF7D815EFE6984D3BCF36600737E2EC3D1FF76D04020DED54EF7D",
+      "actual_sha256": "C39E60EB478FF7D815EFE6984D3BCF36600737E2EC3D1FF76D04020DED54EF7D",
+      "match": true
+    },
+    {
+      "path": "D:\\profile\\research\\workspace\\output\\pseudocolor_azimuth_calibration_20260803\\geometry\\fan_geometry_report.json",
+      "expected_sha256": "B8A166D2ABCF57B1B3868692651D68610B5FA5B135E6D0BC48DC1D2CDB3F5A93",
+      "actual_sha256": "B8A166D2ABCF57B1B3868692651D68610B5FA5B135E6D0BC48DC1D2CDB3F5A93",
+      "match": true
+    }
+  ],
+  "contract_available_data": {
+    "runs": [
+      "R01ZF",
+      "R02ZF",
+      "R03ZF",
+      "R04ZF"
+    ],
+    "sar_frames": 398,
+    "run_scoped_person_ids": 11,
+    "accepted_boxes": 852,
+    "manual_native_boxes": 251,
+    "linear_interpolation_boxes": 600,
+    "manual_adjusted_interpolation_boxes": 1,
+    "raw_amplitude": false,
+    "complex_phase": false,
+    "platform_pose_velocity_attitude": false,
+    "physical_sync_verified": false
+  },
+  "explorer_counts": {
+    "runs": 4,
+    "frames": 398,
+    "targets": 11,
+    "boxes": 852,
+    "polar_assets": 398,
+    "local_assets": 852
+  },
+  "run_summary": {
+    "R01ZF": {
+      "frames": 142,
+      "targets": 3,
+      "accepted_boxes": 364,
+      "source_counts": {
+        "MANUAL_ADJUSTED_FROM_TEMPORAL_LINEAR_INTERPOLATION_SEED": 1,
+        "MANUAL_NATIVE_SAR": 99,
+        "TEMPORAL_LINEAR_INTERPOLATION_SEED_REVIEW_REQUIRED": 264
+      },
+      "sync_status_counts": {
+        "NOMINAL_INDEX_FPS_ZERO_OFFSET_UNVERIFIED": 142
+      },
+      "range_m": {
+        "min": 4.586452723008859,
+        "max": 8.80660680370091
+      },
+      "outer_radial_margin_m": {
+        "min": 10.834667743017814,
+        "max": 15.238781282464387
+      },
+      "local_valid_fraction": {
+        "min": 0.5537109375,
+        "max": 1.0
+      },
+      "nearest_other_target_center_distance_px": {
+        "min": 11.794142807907733,
+        "max": 80.03893451152754
+      }
+    },
+    "R02ZF": {
+      "frames": 23,
+      "targets": 4,
+      "accepted_boxes": 92,
+      "source_counts": {
+        "MANUAL_NATIVE_SAR": 36,
+        "TEMPORAL_LINEAR_INTERPOLATION_SEED_REVIEW_REQUIRED": 56
+      },
+      "sync_status_counts": {
+        "NOMINAL_INDEX_FPS_ZERO_OFFSET_UNVERIFIED": 23
+      },
+      "range_m": {
+        "min": 6.134033804998527,
+        "max": 13.885279677011624
+      },
+      "outer_radial_margin_m": {
+        "min": 5.657523570587322,
+        "max": 13.504914879388295
+      },
+      "local_valid_fraction": {
+        "min": 0.9671223958333334,
+        "max": 1.0
+      },
+      "nearest_other_target_center_distance_px": {
+        "min": 15.073790229575597,
+        "max": 23.898405561719247
+      }
+    },
+    "R03ZF": {
+      "frames": 37,
+      "targets": 1,
+      "accepted_boxes": 37,
+      "source_counts": {
+        "MANUAL_NATIVE_SAR": 4,
+        "TEMPORAL_LINEAR_INTERPOLATION_SEED_REVIEW_REQUIRED": 33
+      },
+      "sync_status_counts": {
+        "NOMINAL_INDEX_FPS_ZERO_OFFSET_UNVERIFIED": 37
+      },
+      "range_m": {
+        "min": 17.526840984596536,
+        "max": 19.111643198872983
+      },
+      "outer_radial_margin_m": {
+        "min": 0.6022586836513706,
+        "max": 2.104567605134611
+      },
+      "local_valid_fraction": {
+        "min": 0.8200954861111112,
+        "max": 1.0
+      },
+      "nearest_other_target_center_distance_px": null
+    },
+    "R04ZF": {
+      "frames": 196,
+      "targets": 3,
+      "accepted_boxes": 359,
+      "source_counts": {
+        "MANUAL_NATIVE_SAR": 112,
+        "TEMPORAL_LINEAR_INTERPOLATION_SEED_REVIEW_REQUIRED": 247
+      },
+      "sync_status_counts": {
+        "NOMINAL_INDEX_FPS_ZERO_OFFSET_UNVERIFIED": 196
+      },
+      "range_m": {
+        "min": 3.9962617859423943,
+        "max": 8.407941005844313
+      },
+      "outer_radial_margin_m": {
+        "min": 11.139770722818696,
+        "max": 15.745902518705964
+      },
+      "local_valid_fraction": {
+        "min": 0.6139322916666666,
+        "max": 1.0
+      },
+      "nearest_other_target_center_distance_px": {
+        "min": 114.26568720193713,
+        "max": 129.47771554627303
+      }
+    }
+  },
+  "lag_source_pairs": [
+    {
+      "run_id": "R01ZF",
+      "lag_frames": 1,
+      "target_track_pairs": 361,
+      "manual_manual_pairs": 4,
+      "manual_manual_fraction": 0.0110803324099723,
+      "pairs_containing_linear_interpolation": 357,
+      "pairs_containing_manual_adjusted_interpolation": 2,
+      "source_pair_counts": {
+        "MANUAL_ADJUSTED_FROM_TEMPORAL_LINEAR_INTERPOLATION_SEED -> TEMPORAL_LINEAR_INTERPOLATION_SEED_REVIEW_REQUIRED": 1,
+        "MANUAL_NATIVE_SAR -> MANUAL_NATIVE_SAR": 4,
+        "MANUAL_NATIVE_SAR -> TEMPORAL_LINEAR_INTERPOLATION_SEED_REVIEW_REQUIRED": 92,
+        "TEMPORAL_LINEAR_INTERPOLATION_SEED_REVIEW_REQUIRED -> MANUAL_ADJUSTED_FROM_TEMPORAL_LINEAR_INTERPOLATION_SEED": 1,
+        "TEMPORAL_LINEAR_INTERPOLATION_SEED_REVIEW_REQUIRED -> MANUAL_NATIVE_SAR": 92,
+        "TEMPORAL_LINEAR_INTERPOLATION_SEED_REVIEW_REQUIRED -> TEMPORAL_LINEAR_INTERPOLATION_SEED_REVIEW_REQUIRED": 171
+      }
+    },
+    {
+      "run_id": "R01ZF",
+      "lag_frames": 3,
+      "target_track_pairs": 355,
+      "manual_manual_pairs": 20,
+      "manual_manual_fraction": 0.056338028169014086,
+      "pairs_containing_linear_interpolation": 334,
+      "pairs_containing_manual_adjusted_interpolation": 2,
+      "source_pair_counts": {
+        "MANUAL_ADJUSTED_FROM_TEMPORAL_LINEAR_INTERPOLATION_SEED -> TEMPORAL_LINEAR_INTERPOLATION_SEED_REVIEW_REQUIRED": 1,
+        "MANUAL_NATIVE_SAR -> MANUAL_ADJUSTED_FROM_TEMPORAL_LINEAR_INTERPOLATION_SEED": 1,
+        "MANUAL_NATIVE_SAR -> MANUAL_NATIVE_SAR": 20,
+        "MANUAL_NATIVE_SAR -> TEMPORAL_LINEAR_INTERPOLATION_SEED_REVIEW_REQUIRED": 74,
+        "TEMPORAL_LINEAR_INTERPOLATION_SEED_REVIEW_REQUIRED -> MANUAL_NATIVE_SAR": 76,
+        "TEMPORAL_LINEAR_INTERPOLATION_SEED_REVIEW_REQUIRED -> TEMPORAL_LINEAR_INTERPOLATION_SEED_REVIEW_REQUIRED": 183
+      }
+    },
+    {
+      "run_id": "R01ZF",
+      "lag_frames": 5,
+      "target_track_pairs": 349,
+      "manual_manual_pairs": 72,
+      "manual_manual_fraction": 0.20630372492836677,
+      "pairs_containing_linear_interpolation": 277,
+      "pairs_containing_manual_adjusted_interpolation": 2,
+      "source_pair_counts": {
+        "MANUAL_ADJUSTED_FROM_TEMPORAL_LINEAR_INTERPOLATION_SEED -> TEMPORAL_LINEAR_INTERPOLATION_SEED_REVIEW_REQUIRED": 1,
+        "MANUAL_NATIVE_SAR -> MANUAL_NATIVE_SAR": 72,
+        "MANUAL_NATIVE_SAR -> TEMPORAL_LINEAR_INTERPOLATION_SEED_REVIEW_REQUIRED": 23,
+        "TEMPORAL_LINEAR_INTERPOLATION_SEED_REVIEW_REQUIRED -> MANUAL_ADJUSTED_FROM_TEMPORAL_LINEAR_INTERPOLATION_SEED": 1,
+        "TEMPORAL_LINEAR_INTERPOLATION_SEED_REVIEW_REQUIRED -> MANUAL_NATIVE_SAR": 24,
+        "TEMPORAL_LINEAR_INTERPOLATION_SEED_REVIEW_REQUIRED -> TEMPORAL_LINEAR_INTERPOLATION_SEED_REVIEW_REQUIRED": 228
+      }
+    },
+    {
+      "run_id": "R02ZF",
+      "lag_frames": 1,
+      "target_track_pairs": 88,
+      "manual_manual_pairs": 12,
+      "manual_manual_fraction": 0.13636363636363635,
+      "pairs_containing_linear_interpolation": 76,
+      "pairs_containing_manual_adjusted_interpolation": 0,
+      "source_pair_counts": {
+        "MANUAL_NATIVE_SAR -> MANUAL_NATIVE_SAR": 12,
+        "MANUAL_NATIVE_SAR -> TEMPORAL_LINEAR_INTERPOLATION_SEED_REVIEW_REQUIRED": 20,
+        "TEMPORAL_LINEAR_INTERPOLATION_SEED_REVIEW_REQUIRED -> MANUAL_NATIVE_SAR": 20,
+        "TEMPORAL_LINEAR_INTERPOLATION_SEED_REVIEW_REQUIRED -> TEMPORAL_LINEAR_INTERPOLATION_SEED_REVIEW_REQUIRED": 36
+      }
+    },
+    {
+      "run_id": "R02ZF",
+      "lag_frames": 3,
+      "target_track_pairs": 80,
+      "manual_manual_pairs": 8,
+      "manual_manual_fraction": 0.1,
+      "pairs_containing_linear_interpolation": 72,
+      "pairs_containing_manual_adjusted_interpolation": 0,
+      "source_pair_counts": {
+        "MANUAL_NATIVE_SAR -> MANUAL_NATIVE_SAR": 8,
+        "MANUAL_NATIVE_SAR -> TEMPORAL_LINEAR_INTERPOLATION_SEED_REVIEW_REQUIRED": 24,
+        "TEMPORAL_LINEAR_INTERPOLATION_SEED_REVIEW_REQUIRED -> MANUAL_NATIVE_SAR": 20,
+        "TEMPORAL_LINEAR_INTERPOLATION_SEED_REVIEW_REQUIRED -> TEMPORAL_LINEAR_INTERPOLATION_SEED_REVIEW_REQUIRED": 28
+      }
+    },
+    {
+      "run_id": "R02ZF",
+      "lag_frames": 5,
+      "target_track_pairs": 72,
+      "manual_manual_pairs": 8,
+      "manual_manual_fraction": 0.1111111111111111,
+      "pairs_containing_linear_interpolation": 64,
+      "pairs_containing_manual_adjusted_interpolation": 0,
+      "source_pair_counts": {
+        "MANUAL_NATIVE_SAR -> MANUAL_NATIVE_SAR": 8,
+        "MANUAL_NATIVE_SAR -> TEMPORAL_LINEAR_INTERPOLATION_SEED_REVIEW_REQUIRED": 20,
+        "TEMPORAL_LINEAR_INTERPOLATION_SEED_REVIEW_REQUIRED -> MANUAL_NATIVE_SAR": 20,
+        "TEMPORAL_LINEAR_INTERPOLATION_SEED_REVIEW_REQUIRED -> TEMPORAL_LINEAR_INTERPOLATION_SEED_REVIEW_REQUIRED": 24
+      }
+    },
+    {
+      "run_id": "R03ZF",
+      "lag_frames": 1,
+      "target_track_pairs": 36,
+      "manual_manual_pairs": 0,
+      "manual_manual_fraction": 0.0,
+      "pairs_containing_linear_interpolation": 36,
+      "pairs_containing_manual_adjusted_interpolation": 0,
+      "source_pair_counts": {
+        "MANUAL_NATIVE_SAR -> TEMPORAL_LINEAR_INTERPOLATION_SEED_REVIEW_REQUIRED": 3,
+        "TEMPORAL_LINEAR_INTERPOLATION_SEED_REVIEW_REQUIRED -> MANUAL_NATIVE_SAR": 3,
+        "TEMPORAL_LINEAR_INTERPOLATION_SEED_REVIEW_REQUIRED -> TEMPORAL_LINEAR_INTERPOLATION_SEED_REVIEW_REQUIRED": 30
+      }
+    },
+    {
+      "run_id": "R03ZF",
+      "lag_frames": 3,
+      "target_track_pairs": 34,
+      "manual_manual_pairs": 0,
+      "manual_manual_fraction": 0.0,
+      "pairs_containing_linear_interpolation": 34,
+      "pairs_containing_manual_adjusted_interpolation": 0,
+      "source_pair_counts": {
+        "MANUAL_NATIVE_SAR -> TEMPORAL_LINEAR_INTERPOLATION_SEED_REVIEW_REQUIRED": 3,
+        "TEMPORAL_LINEAR_INTERPOLATION_SEED_REVIEW_REQUIRED -> MANUAL_NATIVE_SAR": 3,
+        "TEMPORAL_LINEAR_INTERPOLATION_SEED_REVIEW_REQUIRED -> TEMPORAL_LINEAR_INTERPOLATION_SEED_REVIEW_REQUIRED": 28
+      }
+    },
+    {
+      "run_id": "R03ZF",
+      "lag_frames": 5,
+      "target_track_pairs": 32,
+      "manual_manual_pairs": 0,
+      "manual_manual_fraction": 0.0,
+      "pairs_containing_linear_interpolation": 32,
+      "pairs_containing_manual_adjusted_interpolation": 0,
+      "source_pair_counts": {
+        "MANUAL_NATIVE_SAR -> TEMPORAL_LINEAR_INTERPOLATION_SEED_REVIEW_REQUIRED": 3,
+        "TEMPORAL_LINEAR_INTERPOLATION_SEED_REVIEW_REQUIRED -> MANUAL_NATIVE_SAR": 2,
+        "TEMPORAL_LINEAR_INTERPOLATION_SEED_REVIEW_REQUIRED -> TEMPORAL_LINEAR_INTERPOLATION_SEED_REVIEW_REQUIRED": 27
+      }
+    },
+    {
+      "run_id": "R04ZF",
+      "lag_frames": 1,
+      "target_track_pairs": 356,
+      "manual_manual_pairs": 4,
+      "manual_manual_fraction": 0.011235955056179775,
+      "pairs_containing_linear_interpolation": 352,
+      "pairs_containing_manual_adjusted_interpolation": 0,
+      "source_pair_counts": {
+        "MANUAL_NATIVE_SAR -> MANUAL_NATIVE_SAR": 4,
+        "MANUAL_NATIVE_SAR -> TEMPORAL_LINEAR_INTERPOLATION_SEED_REVIEW_REQUIRED": 106,
+        "TEMPORAL_LINEAR_INTERPOLATION_SEED_REVIEW_REQUIRED -> MANUAL_NATIVE_SAR": 105,
+        "TEMPORAL_LINEAR_INTERPOLATION_SEED_REVIEW_REQUIRED -> TEMPORAL_LINEAR_INTERPOLATION_SEED_REVIEW_REQUIRED": 141
+      }
+    },
+    {
+      "run_id": "R04ZF",
+      "lag_frames": 3,
+      "target_track_pairs": 350,
+      "manual_manual_pairs": 37,
+      "manual_manual_fraction": 0.10571428571428572,
+      "pairs_containing_linear_interpolation": 313,
+      "pairs_containing_manual_adjusted_interpolation": 0,
+      "source_pair_counts": {
+        "MANUAL_NATIVE_SAR -> MANUAL_NATIVE_SAR": 37,
+        "MANUAL_NATIVE_SAR -> TEMPORAL_LINEAR_INTERPOLATION_SEED_REVIEW_REQUIRED": 70,
+        "TEMPORAL_LINEAR_INTERPOLATION_SEED_REVIEW_REQUIRED -> MANUAL_NATIVE_SAR": 72,
+        "TEMPORAL_LINEAR_INTERPOLATION_SEED_REVIEW_REQUIRED -> TEMPORAL_LINEAR_INTERPOLATION_SEED_REVIEW_REQUIRED": 171
+      }
+    },
+    {
+      "run_id": "R04ZF",
+      "lag_frames": 5,
+      "target_track_pairs": 344,
+      "manual_manual_pairs": 79,
+      "manual_manual_fraction": 0.22965116279069767,
+      "pairs_containing_linear_interpolation": 265,
+      "pairs_containing_manual_adjusted_interpolation": 0,
+      "source_pair_counts": {
+        "MANUAL_NATIVE_SAR -> MANUAL_NATIVE_SAR": 79,
+        "MANUAL_NATIVE_SAR -> TEMPORAL_LINEAR_INTERPOLATION_SEED_REVIEW_REQUIRED": 27,
+        "TEMPORAL_LINEAR_INTERPOLATION_SEED_REVIEW_REQUIRED -> MANUAL_NATIVE_SAR": 30,
+        "TEMPORAL_LINEAR_INTERPOLATION_SEED_REVIEW_REQUIRED -> TEMPORAL_LINEAR_INTERPOLATION_SEED_REVIEW_REQUIRED": 208
+      }
+    }
+  ],
+  "manual_annotation_gap_audit": {
+    "R01ZF": {
+      "all_targets_gap_counts": {
+        "1": 4,
+        "2": 20,
+        "3": 20,
+        "4": 3,
+        "5": 49
+      },
+      "median_gap_frames": 5.0,
+      "per_target": {
+        "R01ZF_SARPERSON01": {
+          "manual_box_count": 39,
+          "consecutive_manual_gap_counts": {
+            "1": 2,
+            "2": 8,
+            "3": 8,
+            "4": 1,
+            "5": 19
+          }
+        },
+        "R01ZF_SARPERSON02": {
+          "manual_box_count": 30,
+          "consecutive_manual_gap_counts": {
+            "1": 1,
+            "2": 6,
+            "3": 6,
+            "4": 1,
+            "5": 15
+          }
+        },
+        "R01ZF_SARPERSON03": {
+          "manual_box_count": 30,
+          "consecutive_manual_gap_counts": {
+            "1": 1,
+            "2": 6,
+            "3": 6,
+            "4": 1,
+            "5": 15
+          }
+        }
+      }
+    },
+    "R02ZF": {
+      "all_targets_gap_counts": {
+        "1": 12,
+        "2": 8,
+        "4": 8,
+        "7": 4
+      },
+      "median_gap_frames": 2.0,
+      "per_target": {
+        "R02ZF_SARPERSON01": {
+          "manual_box_count": 9,
+          "consecutive_manual_gap_counts": {
+            "1": 3,
+            "2": 2,
+            "4": 2,
+            "7": 1
+          }
+        },
+        "R02ZF_SARPERSON02": {
+          "manual_box_count": 9,
+          "consecutive_manual_gap_counts": {
+            "1": 3,
+            "2": 2,
+            "4": 2,
+            "7": 1
+          }
+        },
+        "R02ZF_SARPERSON03": {
+          "manual_box_count": 9,
+          "consecutive_manual_gap_counts": {
+            "1": 3,
+            "2": 2,
+            "4": 2,
+            "7": 1
+          }
+        },
+        "R02ZF_SARPERSON04": {
+          "manual_box_count": 9,
+          "consecutive_manual_gap_counts": {
+            "1": 3,
+            "2": 2,
+            "4": 2,
+            "7": 1
+          }
+        }
+      }
+    },
+    "R03ZF": {
+      "all_targets_gap_counts": {
+        "4": 1,
+        "6": 1,
+        "26": 1
+      },
+      "median_gap_frames": 6,
+      "per_target": {
+        "R03ZF_SARPERSON01": {
+          "manual_box_count": 4,
+          "consecutive_manual_gap_counts": {
+            "4": 1,
+            "6": 1,
+            "26": 1
+          }
+        }
+      }
+    },
+    "R04ZF": {
+      "all_targets_gap_counts": {
+        "1": 4,
+        "2": 36,
+        "3": 33,
+        "5": 36
+      },
+      "median_gap_frames": 3,
+      "per_target": {
+        "R04ZF_SARPERSON01": {
+          "manual_box_count": 37,
+          "consecutive_manual_gap_counts": {
+            "1": 2,
+            "2": 12,
+            "3": 12,
+            "5": 10
+          }
+        },
+        "R04ZF_SARPERSON02": {
+          "manual_box_count": 17,
+          "consecutive_manual_gap_counts": {
+            "2": 6,
+            "3": 7,
+            "5": 3
+          }
+        },
+        "R04ZF_SARPERSON03": {
+          "manual_box_count": 58,
+          "consecutive_manual_gap_counts": {
+            "1": 2,
+            "2": 18,
+            "3": 14,
+            "5": 23
+          }
+        }
+      }
+    }
+  },
+  "field_audit": {
+    "frame_record_keys": [
+      "annotations",
+      "geometry",
+      "is_keyframe",
+      "nominal_optical_frame_index",
+      "nominal_optical_timestamp_ms",
+      "optical_height_px",
+      "optical_persons",
+      "optical_reference_url",
+      "optical_width_px",
+      "polar_url",
+      "run_id",
+      "sar_frame_index",
+      "sar_frame_uid",
+      "sar_height_px",
+      "sar_image_url",
+      "sar_timestamp_ms",
+      "sar_width_px",
+      "sync_status",
+      "theta_high_deg",
+      "theta_low_deg"
+    ],
+    "optical_person_record_keys": [
+      "azimuth_guidance_status",
+      "bbox_x1",
+      "bbox_x2",
+      "bbox_y1",
+      "bbox_y2",
+      "box_source",
+      "confidence",
+      "optical_person_id",
+      "theta_box_high_deg",
+      "theta_box_low_deg",
+      "theta_shell_high_deg",
+      "theta_shell_low_deg",
+      "track_tier"
+    ],
+    "annotation_record_keys": [
+      "angular_side_margin_deg",
+      "box_id",
+      "class_name",
+      "cx",
+      "cy",
+      "fan_edge_margin_deg",
+      "gui_seed",
+      "height",
+      "instance_id",
+      "local_url",
+      "local_valid_fraction",
+      "lut_fit_distance_at_center",
+      "nearest_hotspot_distance_px",
+      "nearest_target_center_distance_px",
+      "nearest_target_id",
+      "nearest_target_overlap_fraction_of_smaller_box",
+      "outer_radial_margin_m",
+      "outer_radial_margin_px",
+      "range_m",
+      "rotation_deg",
+      "source",
+      "theta_deg",
+      "width"
+    ],
+    "frame_behavior_keys": [],
+    "optical_person_behavior_keys": [],
+    "sync_status_counts": {
+      "NOMINAL_INDEX_FPS_ZERO_OFFSET_UNVERIFIED": 398
+    },
+    "optical_person_record_count": 694
+  },
+  "prior_data_exposure": {
+    "path": "D:\\profile\\research\\workspace\\output\\person_multidimensional_response_explorer_20260823\\RESEARCH_INTERPRETATION_V2.md",
+    "sha256": "5BCEEC9F66F383299301F92FA268B96CB198E24D7D4895A3E0CDEB2A81EDBF59",
+    "verified_line_ranges": [
+      "9-14",
+      "31-61",
+      "86-90"
+    ],
+    "excerpt": [
+      {
+        "line": 9,
+        "text": "现阶段还不能说已经找到了“人的 SAR 模板”，也不适合训练分类器。能够确认的是，四类样本已经有了不同用途："
+      },
+      {
+        "line": 10,
+        "text": ""
+      },
+      {
+        "line": 11,
+        "text": "- R04ZF / P03：单人移动响应的首个发现集。"
+      },
+      {
+        "line": 12,
+        "text": "- R01ZF / P02–P03：两人融合和身份交换的失败对照。"
+      },
+      {
+        "line": 13,
+        "text": "- R02ZF / 四人：两组人可以先做组级解释，组内逐人仍不可靠；同时能暴露显示域跳变。"
+      },
+      {
+        "line": 14,
+        "text": "- R03ZF / P01：20 m 最远距离处的部分可见与截断对照。"
+      },
+      {
+        "line": 31,
+        "text": "### 1. R04ZF / P03：先找“会随框移动”的证据"
+      },
+      {
+        "line": 32,
+        "text": ""
+      },
+      {
+        "line": 33,
+        "text": "在 F58–65 的固定地点小图中，黄色框逐渐向右离开白十字，框内的紧凑黄绿结构也大体随框向右移动；与此同时，画面上方和右侧的一些条带并不完全采用同样的运动方式。"
+      },
+      {
+        "line": 34,
+        "text": ""
+      },
+      {
+        "line": 35,
+        "text": "这比单帧亮度更有价值，因为它开始把“跟着轨迹移动的部分”和“留在原生坐标里的背景”分开。但它仍不是纯净人体散射模板：框内外同时存在弧线和条带，伪彩显示也不是原始幅度。因此 R04 P03 的正确用途是发现并验证运动关联，而不是直接抽取一个固定的人体外观。"
+      },
+      {
+        "line": 36,
+        "text": ""
+      },
+      {
+        "line": 37,
+        "text": "接下来应沿 F19–157 检查三个现象：经过不同背景结构时是否仍连续、局部响应暂时变弱后能否按轨迹重现、靠近其他结构时是否发生错误吸附。"
+      },
+      {
+        "line": 38,
+        "text": ""
+      },
+      {
+        "line": 39,
+        "text": "### 2. R01ZF / P02–P03：不要强行一人一个亮点"
+      },
+      {
+        "line": 40,
+        "text": ""
+      },
+      {
+        "line": 41,
+        "text": "固定地点小图中，黄框和橙框长期紧邻并一起移动，一条较宽的亮结构经常同时覆盖两个框。当前证据更像“两人共同响应”，不足以稳定分配为 P02 和 P03 各自的独立亮点。"
+      },
+      {
+        "line": 42,
+        "text": ""
+      },
+      {
+        "line": 43,
+        "text": "这组样本的价值不是提供两个干净正样本，而是检验算法是否会："
+      },
+      {
+        "line": 44,
+        "text": ""
+      },
+      {
+        "line": 45,
+        "text": "- 在一团响应里硬拆出两个目标；"
+      },
+      {
+        "line": 46,
+        "text": "- 把同一个亮核在两个 ID 之间来回交换；"
+      },
+      {
+        "line": 47,
+        "text": "- 忽略两人相对次序和共同运动。"
+      },
+      {
+        "line": 48,
+        "text": ""
+      },
+      {
+        "line": 49,
+        "text": "所以 R01 应保留 `SEPARATE / CONTACT / MERGED / AMBIGUOUS` 这类组内状态，而不是逐帧最近亮点。"
+      },
+      {
+        "line": 50,
+        "text": ""
+      },
+      {
+        "line": 51,
+        "text": "### 3. R02ZF / 四人：先分组，再谈逐人"
+      },
+      {
+        "line": 52,
+        "text": ""
+      },
+      {
+        "line": 53,
+        "text": "原生扇面中，P01/P02 与 P03/P04 形成两个空间上可分的组；每组内部仍很近。固定地点小图也表明 P01/P02 的框会一起穿过局部结构，先做组级定位比逐人解释更稳妥。"
+      },
+      {
+        "line": 54,
+        "text": ""
+      },
+      {
+        "line": 55,
+        "text": "F476–479 附近还能看到整块伪彩外观明显改变。这个变化可能来自上游显示增益、量化或成像链路状态，不能直接解释成“人突然消失”。因此 R02 同时是一个重要的显示链路负对照：任何依赖绝对颜色或绝对亮度的规则，都应先通过这一段。"
+      },
+      {
+        "line": 56,
+        "text": ""
+      },
+      {
+        "line": 57,
+        "text": "### 4. R03ZF / P01：这是最远距离截断，不是左侧方位边界"
+      },
+      {
+        "line": 58,
+        "text": ""
+      },
+      {
+        "line": 59,
+        "text": "F458 的目标约在 19.11 m，距 20 m 外层只剩约 0.60 m，96×96 局部窗有效区域约 82%。白色区域是扇面外无效区。固定地点小图中，白色边界大致留在原生位置，而黄色框逐步向有效扇面内部移动，这正好可以研究边界附近的响应恢复。"
+      },
+      {
+        "line": 60,
+        "text": ""
+      },
+      {
+        "line": 61,
+        "text": "这组样本不能参与中心区域的“典型人体外观”估计。它只回答两个问题：目标接近最远距离时会丢失多少局部信息，以及进入有效区域后可解释结构是否连续恢复。"
+      },
+      {
+        "line": 86,
+        "text": "## 下一步最小实验"
+      },
+      {
+        "line": 87,
+        "text": ""
+      },
+      {
+        "line": 88,
+        "text": "下一步不建通用分类器，先用 R04 P03 做“目标运动与固定背景分离”的发现实验：沿完整时序自动抽取若干短窗，每个短窗都显示固定白十字、黄色框和未增强伪彩，并只记录上述六种状态。随后用 R01、R02、R03 分别检验多人融合、显示跳变和外层截断是否会制造假阳性。"
+      },
+      {
+        "line": 89,
+        "text": ""
+      },
+      {
+        "line": 90,
+        "text": "只有当 `FOLLOWING` 在不同背景、不同距离和不同场景中重复出现，才值得进入候选生成与光学搜索带内的 SAR 精定位。此时光学仍只是搜索先验，最终位置仍由 SAR 证据决定。"
+      }
+    ]
+  },
+  "audit_boundaries": {
+    "p0_refit": false,
+    "p1_feature_experiment_run": false,
+    "p2_started": false,
+    "sar_boxes_created_moved_or_corrected": 0,
+    "old_work_dependency": false
+  }
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "stage": "FROZEN_DEPENDENCY_AND_MASK_HASH_CHECK",
+    "completed_at": "2026-08-27T11:28:17.561024Z"
+  },
+  {
+    "stage": "OPTICAL_RAW_FRAGMENT_PROVENANCE_LOADED_WITHOUT_SAR_REFERENCE",
+    "completed_at": "2026-08-27T11:28:17.561024Z"
+  },
+  {
+    "stage": "ALL_SHELL_UNCERTAINTY_VARIANTS_GENERATED_WITHOUT_SAR_REFERENCE",
+    "completed_at": "2026-08-27T11:30:54.032321Z",
+    "rows": 14607
+  },
+  {
+    "stage": "ALL_PIXEL_EDGES_AND_BIPARTITE_TOPOLOGY_GENERATED_WITHOUT_SAR_REFERENCE",
+    "completed_at": "2026-08-27T11:35:15.686462Z",
+    "edge_rows": 97219
+  },
+  {
+    "stage": "GT_BLIND_CANDIDATE_SAMPLED_P0_AND_FRAME_DISPLAY_CONDITIONS_ATTACHED",
+    "completed_at": "2026-08-27T11:38:00.820434Z"
+  },
+  {
+    "stage": "MANUAL_REFERENCE_MATERIALIZED_ONLY_FOR_OFFLINE_INTERPRETATION",
+    "completed_at": "2026-08-27T11:39:22.587265Z",
+    "reference_rows": 4518
+  }
+]

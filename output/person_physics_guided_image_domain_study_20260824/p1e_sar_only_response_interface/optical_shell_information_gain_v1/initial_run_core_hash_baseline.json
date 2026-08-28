@@ -1,0 +1,12 @@
+{
+  "schema": "PERSON_P1E_OPTICAL_SHELL_INITIAL_RUN_CORE_HASH_BASELINE_V1",
+  "captured_before_warning_cleanup_rerun": true,
+  "note": "Preserves the first successful run hashes before minimal warning/order/summary corrections.",
+  "files": {
+    "shell_definition_table.csv": "8A5EDD07DB9AB452A79C9AEC95469BB42A88CA23AF6EFFA7FBA8EA26D0F39C16",
+    "shell_candidate_table.csv": "6DA0D46537AAA8BC3DC2A6807AE02BAF4DBF46150083679AFCF8B148DACFE329",
+    "shell_candidate_metrics.csv": "45BFF8B2AAFBC905D652B77FDECC96860F2495836F0C03D81CBE34D5A2C7454D",
+    "offline_reference_shell_evaluation.csv": "559E39A919A39B766FC10C65B56FCBE3162243A591A2D4D7BEFEB01E0CE2AD71",
+    "reference_true_vs_matched_null.csv": "D9DE2769A64253DAB9DED7360FFC90DC172D081616969F381F8B3FF3150A60E3"
+  }
+}

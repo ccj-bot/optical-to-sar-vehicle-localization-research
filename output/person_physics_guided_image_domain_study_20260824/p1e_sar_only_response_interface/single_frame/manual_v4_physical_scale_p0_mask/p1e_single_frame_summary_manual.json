@@ -1,0 +1,1142 @@
+{
+  "schema": "PERSON_P1E_SINGLE_FRAME_POSITION_SPECIFICITY_V3",
+  "created_at": "2026-08-25T19:59:03+08:00",
+  "status": "P1E_SINGLE_FRAME_MANUAL_EXPLORATION_COMPLETE",
+  "subset": "manual",
+  "runs": [
+    "R01ZF",
+    "R02ZF",
+    "R03ZF",
+    "R04ZF"
+  ],
+  "frame_count": 112,
+  "annotation_count": 251,
+  "candidate_count": 4,
+  "evaluation_operator": {
+    "mode": "fixed_support_mean_v2",
+    "valid_mask_mode": "frozen_p0",
+    "valid_mask_source": "FROZEN_P0_BUILD_BASE_MASK_AND_ALGORITHM_CONFIG",
+    "frozen_p0_mask_margins": {
+      "inner_range_exclusion_m": 0.75,
+      "outer_boundary_margin_m": 1.0,
+      "side_boundary_margin_deg": 1.5
+    },
+    "primary_S_x": "FIXED_DISK_MEAN_OF_FRAME_RELATIVE_BASE_RESPONSE",
+    "support_uses_annotation_geometry": false,
+    "same_operator_for_reference_matched_offset_and_hard_background": true,
+    "secondary_diagnostics": [
+      "FIXED_SUPPORT_TOP_QUARTILE_MEAN",
+      "LOCAL_PEAK_SCORE_AND_DISTANCE_WITHIN_FIXED_0_65_M_RADIUS",
+      "HARD_BACKGROUND_POOL_MEDIAN_P90_P95_MAX",
+      "FOUR_OFFSET_DIRECTIONS_REPORTED_SEPARATELY"
+    ]
+  },
+  "candidate_definitions": {
+    "C0_JET_CENTER_RING": {
+      "measures": "MULTISCALE_LOCAL_JET_PROXY_CENTER_MINUS_RING_CONTRAST",
+      "why_position_specific": "COMPACT_ELEVATED_DISPLAY_RESPONSE_SHOULD_EXCEED_ITS_LOCAL_RING"
+    },
+    "C1_RANGE_RANK_TOPHAT": {
+      "measures": "MULTISCALE_COMPACT_BRIGHT_SUPPORT_AFTER_WITHIN_RANGE_RANK_NORMALIZATION",
+      "why_position_specific": "SUPPRESSES_RANGE_DEPENDENCE_AND_BROAD_ARCS_WHILE_RETAINING_SMALL_BRIGHT_SUPPORT"
+    },
+    "C2_COMPACT_JET_GRADIENT_CONSENSUS": {
+      "measures": "COINCIDENCE_OF_COMPACT_RANGE_NORMALIZED_JET_SUPPORT_AND_LOCAL_GRADIENT_CLUSTER",
+      "why_position_specific": "REQUIRES_BOTH_LOCAL_ELEVATED_RESPONSE_AND_INTERNAL_EDGE_OR_RIDGE_SUPPORT"
+    },
+    "C3_ISOTROPIC_BLOB_RIDGE_SUPPRESSED": {
+      "measures": "MULTISCALE_BRIGHT_BLOB_HESSIAN_CURVATURE_WITH_STRUCTURE_TENSOR_RIDGE_PENALTY",
+      "why_position_specific": "REQUIRES_TWO_DIMENSIONAL_COMPACT_CURVATURE_AND_PENALIZES_LONG_COHERENT_ARCS_OR_RIDGES"
+    }
+  },
+  "runtime_inputs": [
+    "SAR_PSEUDOCOLOR_IMAGE",
+    "FAN_GEOMETRY",
+    "FIXED_PHYSICAL_SCALE_BANK",
+    "VALID_PIXEL_MASK"
+  ],
+  "forbidden_runtime_inputs": [
+    "PERSON_BOX_CENTER",
+    "PERSON_BOX_WIDTH_HEIGHT",
+    "PHYSICAL_TARGET_ID",
+    "OPTICAL_TRACK_SELECTION"
+  ],
+  "fixed_scale": {
+    "response_kernel_diameters_m": [
+      0.3,
+      0.55,
+      0.9
+    ],
+    "range_normalization_bin_m": 0.25,
+    "S_x_support_radius_m": 0.3,
+    "peak_search_radius_m": 0.65,
+    "fixed_offset_m": 1.25,
+    "control_exclusion_m": 1.0,
+    "matched_tangential_offsets_m": [
+      -4.0,
+      -3.0,
+      -2.0,
+      -1.25,
+      1.25,
+      2.0,
+      3.0,
+      4.0
+    ],
+    "hard_background_distance_range_m": [
+      1.5,
+      4.0
+    ],
+    "hard_background_radial_tolerance_m": 0.8,
+    "hard_background_grid_step_m": 0.25,
+    "pixels_per_meter_values": [
+      29.567015835489922
+    ],
+    "scale_source": "PREDECLARED_PERSON_CLASS_PHYSICAL_SUPPORT_HYPOTHESES_CONVERTED_BY_FAN_GEOMETRY_NOT_ANNOTATION_BOX_SIZE"
+  },
+  "input_hash_checks": [
+    {
+      "kind": "input_snapshot",
+      "path": "D:\\browser\\person_SAR_fullframe_interpolation_review_1787483093904.json",
+      "expected_sha256": "E3CA1F07552030F46770420EED16AEF362E9DD74C909A6BEB23C54D29F79AF8A",
+      "actual_sha256": "E3CA1F07552030F46770420EED16AEF362E9DD74C909A6BEB23C54D29F79AF8A",
+      "match": true
+    },
+    {
+      "kind": "input_snapshot",
+      "path": "D:\\profile\\research\\workspace\\output\\person_multidimensional_response_explorer_20260823\\explorer_data.js",
+      "expected_sha256": "C39E60EB478FF7D815EFE6984D3BCF36600737E2EC3D1FF76D04020DED54EF7D",
+      "actual_sha256": "C39E60EB478FF7D815EFE6984D3BCF36600737E2EC3D1FF76D04020DED54EF7D",
+      "match": true
+    },
+    {
+      "kind": "input_snapshot",
+      "path": "D:\\profile\\research\\workspace\\output\\pseudocolor_azimuth_calibration_20260803\\geometry\\fan_geometry_report.json",
+      "expected_sha256": "B8A166D2ABCF57B1B3868692651D68610B5FA5B135E6D0BC48DC1D2CDB3F5A93",
+      "actual_sha256": "B8A166D2ABCF57B1B3868692651D68610B5FA5B135E6D0BC48DC1D2CDB3F5A93",
+      "match": true
+    },
+    {
+      "kind": "invalidated_probe_reference",
+      "path": "D:\\profile\\research\\workspace\\output\\person_sar_motion_evidence_20260824\\motion_evidence_summary.json",
+      "expected_sha256": "5150F3EFFC884912A5A229E2FFD1F6DC011DC8BEE8297F2D4B6F3E06E7FD2801",
+      "actual_sha256": "5150F3EFFC884912A5A229E2FFD1F6DC011DC8BEE8297F2D4B6F3E06E7FD2801",
+      "match": true,
+      "allowed_use": "BOX_CONDITIONED_PSEUDOCOLOR_DISPLAY_REPEATABILITY_ONLY"
+    }
+  ],
+  "frozen_P0_script_sha256": "0AB671B6A33A48CA2E3160A201629FA2DD341EF052A29B8D2CCBC2DFB26DCFD8",
+  "summaries": [
+    {
+      "subset": "manual",
+      "candidate": "C0_JET_CENTER_RING",
+      "box_count": 251,
+      "evaluable_count": 240,
+      "abstain_count": 11,
+      "valid_matched_count": 240,
+      "valid_offset_count": 240,
+      "valid_hard_count": 240,
+      "median_reference_score": 0.6673286557197571,
+      "reference_score_ge_0_995_fraction": 0.0,
+      "median_advantage_vs_matched": 0.5803322372958064,
+      "reference_beats_matched_median_fraction": 1.0,
+      "reference_beats_all_matched_fraction": 0.9875,
+      "median_advantage_vs_offsets": 0.6311189625412226,
+      "reference_beats_offset_median_fraction": 1.0,
+      "reference_beats_all_offsets_fraction": 1.0,
+      "median_advantage_vs_hard_background": 0.2668624259531498,
+      "reference_beats_hard_background_fraction": 0.7833333333333333,
+      "median_advantage_vs_hard_background_p95": 0.3821394195780158,
+      "median_hard_background_pool_count": 83.0,
+      "median_advantage_topq_vs_hard_background": 0.2776274085044861,
+      "median_local_control_percentile": 1.0,
+      "median_local_peak_distance_px": 2.8337708698843693,
+      "p90_local_peak_distance_px": 10.325066468416178,
+      "median_local_peak_distance_m": 0.09584230230238296,
+      "p90_local_peak_distance_m": 0.3492089470870029,
+      "per_offset_direction": {
+        "RADIAL_IN": {
+          "count": 225,
+          "median_advantage": 0.6466852352023125,
+          "positive_fraction": 1.0
+        },
+        "RADIAL_OUT": {
+          "count": 228,
+          "median_advantage": 0.6293825479224324,
+          "positive_fraction": 1.0
+        },
+        "TANGENTIAL_NEG": {
+          "count": 146,
+          "median_advantage": 0.5972229987382889,
+          "positive_fraction": 1.0
+        },
+        "TANGENTIAL_POS": {
+          "count": 188,
+          "median_advantage": 0.6728628911077976,
+          "positive_fraction": 1.0
+        }
+      },
+      "per_run": {
+        "R01ZF": {
+          "box_count": 99,
+          "evaluable_count": 94,
+          "abstain_count": 5,
+          "median_reference_score": 0.5521777272224426,
+          "reference_score_ge_0_995_fraction": 0.0,
+          "median_advantage_vs_matched": 0.5216865536058322,
+          "reference_beats_matched_median_fraction": 1.0,
+          "median_advantage_vs_offsets": 0.5341657737735659,
+          "reference_beats_offset_median_fraction": 1.0,
+          "reference_beats_hard_background_fraction": 1.0,
+          "median_advantage_vs_hard_background_p95": 0.45736852250993254,
+          "median_hard_background_pool_count": 79.5,
+          "median_local_control_percentile": 1.0,
+          "median_local_peak_distance_px": 6.324857694721211,
+          "p90_local_peak_distance_px": 9.651613609780615,
+          "median_local_peak_distance_m": 0.21391599781028117,
+          "p90_local_peak_distance_m": 0.3264317800444229,
+          "per_offset_direction": {
+            "RADIAL_IN": {
+              "count": 82,
+              "median_advantage": 0.5571401696652174,
+              "positive_fraction": 1.0
+            },
+            "RADIAL_OUT": {
+              "count": 83,
+              "median_advantage": 0.5714121405035257,
+              "positive_fraction": 1.0
+            },
+            "TANGENTIAL_NEG": {
+              "count": 52,
+              "median_advantage": 0.5338841280899942,
+              "positive_fraction": 1.0
+            },
+            "TANGENTIAL_POS": {
+              "count": 71,
+              "median_advantage": 0.48719847947359085,
+              "positive_fraction": 1.0
+            }
+          }
+        },
+        "R02ZF": {
+          "box_count": 36,
+          "evaluable_count": 36,
+          "abstain_count": 0,
+          "median_reference_score": 0.4236510843038559,
+          "reference_score_ge_0_995_fraction": 0.0,
+          "median_advantage_vs_matched": 0.360547028016299,
+          "reference_beats_matched_median_fraction": 1.0,
+          "median_advantage_vs_offsets": 0.40244099497795105,
+          "reference_beats_offset_median_fraction": 1.0,
+          "reference_beats_hard_background_fraction": 0.2222222222222222,
+          "median_advantage_vs_hard_background_p95": 0.0677737407386305,
+          "median_hard_background_pool_count": 129.5,
+          "median_local_control_percentile": 0.9090909090909091,
+          "median_local_peak_distance_px": 17.95117054441689,
+          "p90_local_peak_distance_px": 18.837679653330866,
+          "median_local_peak_distance_m": 0.6071350130258907,
+          "p90_local_peak_distance_m": 0.6371180560846319,
+          "per_offset_direction": {
+            "RADIAL_IN": {
+              "count": 33,
+              "median_advantage": 0.38886348926462233,
+              "positive_fraction": 1.0
+            },
+            "RADIAL_OUT": {
+              "count": 36,
+              "median_advantage": 0.3908182829618454,
+              "positive_fraction": 1.0
+            },
+            "TANGENTIAL_NEG": {
+              "count": 18,
+              "median_advantage": 0.2815779969096184,
+              "positive_fraction": 1.0
+            },
+            "TANGENTIAL_POS": {
+              "count": 16,
+              "median_advantage": 0.36003416776657104,
+              "positive_fraction": 1.0
+            }
+          }
+        },
+        "R03ZF": {
+          "box_count": 4,
+          "evaluable_count": 2,
+          "abstain_count": 2,
+          "median_reference_score": 0.5029609203338623,
+          "reference_score_ge_0_995_fraction": 0.0,
+          "median_advantage_vs_matched": 0.465003970079124,
+          "reference_beats_matched_median_fraction": 1.0,
+          "median_advantage_vs_offsets": 0.46772731095552444,
+          "reference_beats_offset_median_fraction": 1.0,
+          "reference_beats_hard_background_fraction": 1.0,
+          "median_advantage_vs_hard_background_p95": 0.40525537095963954,
+          "median_hard_background_pool_count": 145.5,
+          "median_local_control_percentile": 1.0,
+          "median_local_peak_distance_px": 1.2730344022324722,
+          "p90_local_peak_distance_px": 1.8888207523765073,
+          "median_local_peak_distance_m": 0.04305589746748881,
+          "p90_local_peak_distance_m": 0.06388269830428119,
+          "per_offset_direction": {
+            "RADIAL_IN": {
+              "count": 2,
+              "median_advantage": 0.47666393779218197,
+              "positive_fraction": 1.0
+            },
+            "RADIAL_OUT": {
+              "count": 1,
+              "median_advantage": 0.5060889758169651,
+              "positive_fraction": 1.0
+            },
+            "TANGENTIAL_NEG": {
+              "count": 2,
+              "median_advantage": 0.4569069053977728,
+              "positive_fraction": 1.0
+            },
+            "TANGENTIAL_POS": {
+              "count": 2,
+              "median_advantage": 0.46540400944650173,
+              "positive_fraction": 1.0
+            }
+          }
+        },
+        "R04ZF": {
+          "box_count": 112,
+          "evaluable_count": 108,
+          "abstain_count": 4,
+          "median_reference_score": 0.7994156777858734,
+          "reference_score_ge_0_995_fraction": 0.0,
+          "median_advantage_vs_matched": 0.722229141741991,
+          "reference_beats_matched_median_fraction": 1.0,
+          "median_advantage_vs_offsets": 0.7578047630377114,
+          "reference_beats_offset_median_fraction": 1.0,
+          "reference_beats_hard_background_fraction": 0.7777777777777778,
+          "median_advantage_vs_hard_background_p95": 0.34453136548399926,
+          "median_hard_background_pool_count": 76.0,
+          "median_local_control_percentile": 1.0,
+          "median_local_peak_distance_px": 1.9620984155302432,
+          "p90_local_peak_distance_px": 3.3099618975545577,
+          "median_local_peak_distance_m": 0.06636105674131287,
+          "p90_local_peak_distance_m": 0.11194778384031369,
+          "per_offset_direction": {
+            "RADIAL_IN": {
+              "count": 108,
+              "median_advantage": 0.7832880923524499,
+              "positive_fraction": 1.0
+            },
+            "RADIAL_OUT": {
+              "count": 108,
+              "median_advantage": 0.7092543514445424,
+              "positive_fraction": 1.0
+            },
+            "TANGENTIAL_NEG": {
+              "count": 74,
+              "median_advantage": 0.7981303152628243,
+              "positive_fraction": 1.0
+            },
+            "TANGENTIAL_POS": {
+              "count": 99,
+              "median_advantage": 0.7722732946276665,
+              "positive_fraction": 1.0
+            }
+          }
+        }
+      }
+    },
+    {
+      "subset": "manual",
+      "candidate": "C1_RANGE_RANK_TOPHAT",
+      "box_count": 251,
+      "evaluable_count": 240,
+      "abstain_count": 11,
+      "valid_matched_count": 240,
+      "valid_offset_count": 240,
+      "valid_hard_count": 240,
+      "median_reference_score": 0.8805997967720032,
+      "reference_score_ge_0_995_fraction": 0.0,
+      "median_advantage_vs_matched": 0.3668515309691429,
+      "reference_beats_matched_median_fraction": 0.9791666666666666,
+      "reference_beats_all_matched_fraction": 0.8708333333333333,
+      "median_advantage_vs_offsets": 0.3424001932144165,
+      "reference_beats_offset_median_fraction": 0.9708333333333333,
+      "reference_beats_all_offsets_fraction": 0.9333333333333333,
+      "median_advantage_vs_hard_background": 0.07323572039604187,
+      "reference_beats_hard_background_fraction": 0.6333333333333333,
+      "median_advantage_vs_hard_background_p95": 0.14483873695135124,
+      "median_hard_background_pool_count": 83.0,
+      "median_advantage_topq_vs_hard_background": 0.060617655515670776,
+      "median_local_control_percentile": 1.0,
+      "median_local_peak_distance_px": 4.379903761884883,
+      "p90_local_peak_distance_px": 17.378313554839366,
+      "median_local_peak_distance_m": 0.14813479271139668,
+      "p90_local_peak_distance_m": 0.5877601463580847,
+      "per_offset_direction": {
+        "RADIAL_IN": {
+          "count": 225,
+          "median_advantage": 0.3382202386856079,
+          "positive_fraction": 0.9688888888888889
+        },
+        "RADIAL_OUT": {
+          "count": 228,
+          "median_advantage": 0.36092710494995117,
+          "positive_fraction": 0.9517543859649122
+        },
+        "TANGENTIAL_NEG": {
+          "count": 146,
+          "median_advantage": 0.34093332290649414,
+          "positive_fraction": 0.9383561643835616
+        },
+        "TANGENTIAL_POS": {
+          "count": 188,
+          "median_advantage": 0.3373691141605377,
+          "positive_fraction": 0.9840425531914894
+        }
+      },
+      "per_run": {
+        "R01ZF": {
+          "box_count": 99,
+          "evaluable_count": 94,
+          "abstain_count": 5,
+          "median_reference_score": 0.9096720218658447,
+          "reference_score_ge_0_995_fraction": 0.0,
+          "median_advantage_vs_matched": 0.44160308688879013,
+          "reference_beats_matched_median_fraction": 1.0,
+          "median_advantage_vs_offsets": 0.39738310873508453,
+          "reference_beats_offset_median_fraction": 1.0,
+          "reference_beats_hard_background_fraction": 0.9468085106382979,
+          "median_advantage_vs_hard_background_p95": 0.2752948135137558,
+          "median_hard_background_pool_count": 79.5,
+          "median_local_control_percentile": 1.0,
+          "median_local_peak_distance_px": 5.9962141044253485,
+          "p90_local_peak_distance_px": 10.750217651700266,
+          "median_local_peak_distance_m": 0.2028007878031426,
+          "p90_local_peak_distance_m": 0.3635881859540438,
+          "per_offset_direction": {
+            "RADIAL_IN": {
+              "count": 82,
+              "median_advantage": 0.3473820984363556,
+              "positive_fraction": 0.975609756097561
+            },
+            "RADIAL_OUT": {
+              "count": 83,
+              "median_advantage": 0.437328040599823,
+              "positive_fraction": 1.0
+            },
+            "TANGENTIAL_NEG": {
+              "count": 52,
+              "median_advantage": 0.36809206008911133,
+              "positive_fraction": 1.0
+            },
+            "TANGENTIAL_POS": {
+              "count": 71,
+              "median_advantage": 0.38837409019470215,
+              "positive_fraction": 1.0
+            }
+          }
+        },
+        "R02ZF": {
+          "box_count": 36,
+          "evaluable_count": 36,
+          "abstain_count": 0,
+          "median_reference_score": 0.787855714559555,
+          "reference_score_ge_0_995_fraction": 0.0,
+          "median_advantage_vs_matched": 0.32727497816085815,
+          "reference_beats_matched_median_fraction": 0.8888888888888888,
+          "median_advantage_vs_offsets": 0.32344406843185425,
+          "reference_beats_offset_median_fraction": 0.8888888888888888,
+          "reference_beats_hard_background_fraction": 0.16666666666666666,
+          "median_advantage_vs_hard_background_p95": -0.03420009016990655,
+          "median_hard_background_pool_count": 129.5,
+          "median_local_control_percentile": 0.8888888888888888,
+          "median_local_peak_distance_px": 17.492189092922345,
+          "p90_local_peak_distance_px": 18.820522255352664,
+          "median_local_peak_distance_m": 0.591611584687762,
+          "p90_local_peak_distance_m": 0.6365377676282769,
+          "per_offset_direction": {
+            "RADIAL_IN": {
+              "count": 33,
+              "median_advantage": 0.33576899766921997,
+              "positive_fraction": 0.9393939393939394
+            },
+            "RADIAL_OUT": {
+              "count": 36,
+              "median_advantage": 0.2191140353679657,
+              "positive_fraction": 0.8055555555555556
+            },
+            "TANGENTIAL_NEG": {
+              "count": 18,
+              "median_advantage": 0.21698564291000366,
+              "positive_fraction": 0.7777777777777778
+            },
+            "TANGENTIAL_POS": {
+              "count": 16,
+              "median_advantage": 0.41789713501930237,
+              "positive_fraction": 1.0
+            }
+          }
+        },
+        "R03ZF": {
+          "box_count": 4,
+          "evaluable_count": 2,
+          "abstain_count": 2,
+          "median_reference_score": 0.8187023103237152,
+          "reference_score_ge_0_995_fraction": 0.0,
+          "median_advantage_vs_matched": 0.3664463385939598,
+          "reference_beats_matched_median_fraction": 1.0,
+          "median_advantage_vs_offsets": 0.36784782260656357,
+          "reference_beats_offset_median_fraction": 1.0,
+          "reference_beats_hard_background_fraction": 1.0,
+          "median_advantage_vs_hard_background_p95": 0.2627041593194008,
+          "median_hard_background_pool_count": 145.5,
+          "median_local_control_percentile": 1.0,
+          "median_local_peak_distance_px": 1.8568125854004518,
+          "p90_local_peak_distance_px": 2.2852498046498115,
+          "median_local_peak_distance_m": 0.06280013497918446,
+          "p90_local_peak_distance_m": 0.07729051241981535,
+          "per_offset_direction": {
+            "RADIAL_IN": {
+              "count": 2,
+              "median_advantage": 0.3855242431163788,
+              "positive_fraction": 1.0
+            },
+            "RADIAL_OUT": {
+              "count": 1,
+              "median_advantage": 0.4634004533290863,
+              "positive_fraction": 1.0
+            },
+            "TANGENTIAL_NEG": {
+              "count": 2,
+              "median_advantage": 0.32155683636665344,
+              "positive_fraction": 1.0
+            },
+            "TANGENTIAL_POS": {
+              "count": 2,
+              "median_advantage": 0.35416044294834137,
+              "positive_fraction": 1.0
+            }
+          }
+        },
+        "R04ZF": {
+          "box_count": 112,
+          "evaluable_count": 108,
+          "abstain_count": 4,
+          "median_reference_score": 0.8597137033939362,
+          "reference_score_ge_0_995_fraction": 0.0,
+          "median_advantage_vs_matched": 0.2695682644844055,
+          "reference_beats_matched_median_fraction": 0.9907407407407407,
+          "median_advantage_vs_offsets": 0.3175049424171448,
+          "reference_beats_offset_median_fraction": 0.9722222222222222,
+          "reference_beats_hard_background_fraction": 0.5092592592592593,
+          "median_advantage_vs_hard_background_p95": 0.05901457369327545,
+          "median_hard_background_pool_count": 76.0,
+          "median_local_control_percentile": 1.0,
+          "median_local_peak_distance_px": 3.1877764299568287,
+          "p90_local_peak_distance_px": 6.579883862557564,
+          "median_local_peak_distance_m": 0.1078152914617265,
+          "p90_local_peak_distance_m": 0.22254135822052046,
+          "per_offset_direction": {
+            "RADIAL_IN": {
+              "count": 108,
+              "median_advantage": 0.31849029660224915,
+              "positive_fraction": 0.9722222222222222
+            },
+            "RADIAL_OUT": {
+              "count": 108,
+              "median_advantage": 0.3236369490623474,
+              "positive_fraction": 0.9629629629629629
+            },
+            "TANGENTIAL_NEG": {
+              "count": 74,
+              "median_advantage": 0.29586470127105713,
+              "positive_fraction": 0.9324324324324325
+            },
+            "TANGENTIAL_POS": {
+              "count": 99,
+              "median_advantage": 0.2662801146507263,
+              "positive_fraction": 0.9696969696969697
+            }
+          }
+        }
+      }
+    },
+    {
+      "subset": "manual",
+      "candidate": "C2_COMPACT_JET_GRADIENT_CONSENSUS",
+      "box_count": 251,
+      "evaluable_count": 240,
+      "abstain_count": 11,
+      "valid_matched_count": 240,
+      "valid_offset_count": 240,
+      "valid_hard_count": 240,
+      "median_reference_score": 0.897506594657898,
+      "reference_score_ge_0_995_fraction": 0.0,
+      "median_advantage_vs_matched": 0.6700579933822155,
+      "reference_beats_matched_median_fraction": 1.0,
+      "reference_beats_all_matched_fraction": 0.9791666666666666,
+      "median_advantage_vs_offsets": 0.6743016131222248,
+      "reference_beats_offset_median_fraction": 1.0,
+      "reference_beats_all_offsets_fraction": 0.9916666666666667,
+      "median_advantage_vs_hard_background": 0.18674328923225403,
+      "reference_beats_hard_background_fraction": 0.8541666666666666,
+      "median_advantage_vs_hard_background_p95": 0.328521290421486,
+      "median_hard_background_pool_count": 83.0,
+      "median_advantage_topq_vs_hard_background": 0.10272395610809326,
+      "median_local_control_percentile": 1.0,
+      "median_local_peak_distance_px": 3.9160130897447667,
+      "p90_local_peak_distance_px": 13.350217895409596,
+      "median_local_peak_distance_m": 0.13244532730436367,
+      "p90_local_peak_distance_m": 0.4515240215546218,
+      "per_offset_direction": {
+        "RADIAL_IN": {
+          "count": 225,
+          "median_advantage": 0.66139917075634,
+          "positive_fraction": 1.0
+        },
+        "RADIAL_OUT": {
+          "count": 228,
+          "median_advantage": 0.6552180759608746,
+          "positive_fraction": 1.0
+        },
+        "TANGENTIAL_NEG": {
+          "count": 146,
+          "median_advantage": 0.6671929657459259,
+          "positive_fraction": 0.9863013698630136
+        },
+        "TANGENTIAL_POS": {
+          "count": 188,
+          "median_advantage": 0.707361489534378,
+          "positive_fraction": 1.0
+        }
+      },
+      "per_run": {
+        "R01ZF": {
+          "box_count": 99,
+          "evaluable_count": 94,
+          "abstain_count": 5,
+          "median_reference_score": 0.9253304302692413,
+          "reference_score_ge_0_995_fraction": 0.0,
+          "median_advantage_vs_matched": 0.7275672536343336,
+          "reference_beats_matched_median_fraction": 1.0,
+          "median_advantage_vs_offsets": 0.6885927356779575,
+          "reference_beats_offset_median_fraction": 1.0,
+          "reference_beats_hard_background_fraction": 0.9680851063829787,
+          "median_advantage_vs_hard_background_p95": 0.416899235546589,
+          "median_hard_background_pool_count": 79.5,
+          "median_local_control_percentile": 1.0,
+          "median_local_peak_distance_px": 5.793574141669097,
+          "p90_local_peak_distance_px": 10.536027830810156,
+          "median_local_peak_distance_m": 0.19594720596438908,
+          "p90_local_peak_distance_m": 0.3563439709111102,
+          "per_offset_direction": {
+            "RADIAL_IN": {
+              "count": 82,
+              "median_advantage": 0.6609387248754501,
+              "positive_fraction": 1.0
+            },
+            "RADIAL_OUT": {
+              "count": 83,
+              "median_advantage": 0.6939496695995331,
+              "positive_fraction": 1.0
+            },
+            "TANGENTIAL_NEG": {
+              "count": 52,
+              "median_advantage": 0.6847660169005394,
+              "positive_fraction": 1.0
+            },
+            "TANGENTIAL_POS": {
+              "count": 71,
+              "median_advantage": 0.6687459945678711,
+              "positive_fraction": 1.0
+            }
+          }
+        },
+        "R02ZF": {
+          "box_count": 36,
+          "evaluable_count": 36,
+          "abstain_count": 0,
+          "median_reference_score": 0.7831097841262817,
+          "reference_score_ge_0_995_fraction": 0.0,
+          "median_advantage_vs_matched": 0.5576395727694035,
+          "reference_beats_matched_median_fraction": 1.0,
+          "median_advantage_vs_offsets": 0.5597083643078804,
+          "reference_beats_offset_median_fraction": 1.0,
+          "reference_beats_hard_background_fraction": 0.4722222222222222,
+          "median_advantage_vs_hard_background_p95": 0.1328400164842608,
+          "median_hard_background_pool_count": 129.5,
+          "median_local_control_percentile": 0.9090909090909091,
+          "median_local_peak_distance_px": 16.866334854412607,
+          "p90_local_peak_distance_px": 18.70681144391017,
+          "median_local_peak_distance_m": 0.5704442730458982,
+          "p90_local_peak_distance_m": 0.6326919005960683,
+          "per_offset_direction": {
+            "RADIAL_IN": {
+              "count": 33,
+              "median_advantage": 0.558587521314621,
+              "positive_fraction": 1.0
+            },
+            "RADIAL_OUT": {
+              "count": 36,
+              "median_advantage": 0.5404392331838608,
+              "positive_fraction": 1.0
+            },
+            "TANGENTIAL_NEG": {
+              "count": 18,
+              "median_advantage": 0.3507983461022377,
+              "positive_fraction": 0.8888888888888888
+            },
+            "TANGENTIAL_POS": {
+              "count": 16,
+              "median_advantage": 0.611515037715435,
+              "positive_fraction": 1.0
+            }
+          }
+        },
+        "R03ZF": {
+          "box_count": 4,
+          "evaluable_count": 2,
+          "abstain_count": 2,
+          "median_reference_score": 0.9194014370441437,
+          "reference_score_ge_0_995_fraction": 0.0,
+          "median_advantage_vs_matched": 0.6420870758593082,
+          "reference_beats_matched_median_fraction": 1.0,
+          "median_advantage_vs_offsets": 0.7014851868152618,
+          "reference_beats_offset_median_fraction": 1.0,
+          "reference_beats_hard_background_fraction": 1.0,
+          "median_advantage_vs_hard_background_p95": 0.511399918049574,
+          "median_hard_background_pool_count": 145.5,
+          "median_local_control_percentile": 1.0,
+          "median_local_peak_distance_px": 2.9174057539665705,
+          "p90_local_peak_distance_px": 3.209097837787245,
+          "median_local_peak_distance_m": 0.09867095719767384,
+          "p90_local_peak_distance_m": 0.10853641286095893,
+          "per_offset_direction": {
+            "RADIAL_IN": {
+              "count": 2,
+              "median_advantage": 0.6801765933632851,
+              "positive_fraction": 1.0
+            },
+            "RADIAL_OUT": {
+              "count": 1,
+              "median_advantage": 0.8042058572173119,
+              "positive_fraction": 1.0
+            },
+            "TANGENTIAL_NEG": {
+              "count": 2,
+              "median_advantage": 0.6691916957497597,
+              "positive_fraction": 1.0
+            },
+            "TANGENTIAL_POS": {
+              "count": 2,
+              "median_advantage": 0.6715891286730766,
+              "positive_fraction": 1.0
+            }
+          }
+        },
+        "R04ZF": {
+          "box_count": 112,
+          "evaluable_count": 108,
+          "abstain_count": 4,
+          "median_reference_score": 0.8961021304130554,
+          "reference_score_ge_0_995_fraction": 0.0,
+          "median_advantage_vs_matched": 0.6689311489462852,
+          "reference_beats_matched_median_fraction": 1.0,
+          "median_advantage_vs_offsets": 0.6808158233761787,
+          "reference_beats_offset_median_fraction": 1.0,
+          "reference_beats_hard_background_fraction": 0.8796296296296297,
+          "median_advantage_vs_hard_background_p95": 0.26588158309459686,
+          "median_hard_background_pool_count": 76.0,
+          "median_local_control_percentile": 1.0,
+          "median_local_peak_distance_px": 2.5968153533136205,
+          "p90_local_peak_distance_px": 4.613711074249499,
+          "median_local_peak_distance_m": 0.08782811791904299,
+          "p90_local_peak_distance_m": 0.1560425001941374,
+          "per_offset_direction": {
+            "RADIAL_IN": {
+              "count": 108,
+              "median_advantage": 0.6687964051961899,
+              "positive_fraction": 1.0
+            },
+            "RADIAL_OUT": {
+              "count": 108,
+              "median_advantage": 0.6244824230670929,
+              "positive_fraction": 1.0
+            },
+            "TANGENTIAL_NEG": {
+              "count": 74,
+              "median_advantage": 0.6638225018978119,
+              "positive_fraction": 1.0
+            },
+            "TANGENTIAL_POS": {
+              "count": 99,
+              "median_advantage": 0.72270467877388,
+              "positive_fraction": 1.0
+            }
+          }
+        }
+      }
+    },
+    {
+      "subset": "manual",
+      "candidate": "C3_ISOTROPIC_BLOB_RIDGE_SUPPRESSED",
+      "box_count": 251,
+      "evaluable_count": 240,
+      "abstain_count": 11,
+      "valid_matched_count": 240,
+      "valid_offset_count": 240,
+      "valid_hard_count": 240,
+      "median_reference_score": 0.45746466517448425,
+      "reference_score_ge_0_995_fraction": 0.0,
+      "median_advantage_vs_matched": 0.4089992679655552,
+      "reference_beats_matched_median_fraction": 0.9916666666666667,
+      "reference_beats_all_matched_fraction": 0.9166666666666666,
+      "median_advantage_vs_offsets": 0.39204950351268053,
+      "reference_beats_offset_median_fraction": 0.9958333333333333,
+      "reference_beats_all_offsets_fraction": 0.9666666666666667,
+      "median_advantage_vs_hard_background": 0.16009986400604248,
+      "reference_beats_hard_background_fraction": 0.725,
+      "median_advantage_vs_hard_background_p95": 0.2842387042939663,
+      "median_hard_background_pool_count": 83.0,
+      "median_advantage_topq_vs_hard_background": 0.1612318754196167,
+      "median_local_control_percentile": 1.0,
+      "median_local_peak_distance_px": 3.993025285087385,
+      "p90_local_peak_distance_px": 13.90925563501692,
+      "median_local_peak_distance_m": 0.13504999311748164,
+      "p90_local_peak_distance_m": 0.47043150084566004,
+      "per_offset_direction": {
+        "RADIAL_IN": {
+          "count": 225,
+          "median_advantage": 0.3962999992072582,
+          "positive_fraction": 0.9911111111111112
+        },
+        "RADIAL_OUT": {
+          "count": 228,
+          "median_advantage": 0.3940920978784561,
+          "positive_fraction": 0.9956140350877193
+        },
+        "TANGENTIAL_NEG": {
+          "count": 146,
+          "median_advantage": 0.43677162379026413,
+          "positive_fraction": 0.9931506849315068
+        },
+        "TANGENTIAL_POS": {
+          "count": 188,
+          "median_advantage": 0.42396503407508135,
+          "positive_fraction": 0.973404255319149
+        }
+      },
+      "per_run": {
+        "R01ZF": {
+          "box_count": 99,
+          "evaluable_count": 94,
+          "abstain_count": 5,
+          "median_reference_score": 0.34073103964328766,
+          "reference_score_ge_0_995_fraction": 0.0,
+          "median_advantage_vs_matched": 0.3016122104600072,
+          "reference_beats_matched_median_fraction": 1.0,
+          "median_advantage_vs_offsets": 0.28780295327305794,
+          "reference_beats_offset_median_fraction": 1.0,
+          "reference_beats_hard_background_fraction": 0.6702127659574468,
+          "median_advantage_vs_hard_background_p95": 0.17061297968029976,
+          "median_hard_background_pool_count": 79.5,
+          "median_local_control_percentile": 1.0,
+          "median_local_peak_distance_px": 6.072713494728552,
+          "p90_local_peak_distance_px": 12.949737115546354,
+          "median_local_peak_distance_m": 0.20538810979494737,
+          "p90_local_peak_distance_m": 0.4379791720476067,
+          "per_offset_direction": {
+            "RADIAL_IN": {
+              "count": 82,
+              "median_advantage": 0.2985161989927292,
+              "positive_fraction": 0.975609756097561
+            },
+            "RADIAL_OUT": {
+              "count": 83,
+              "median_advantage": 0.3089117109775543,
+              "positive_fraction": 1.0
+            },
+            "TANGENTIAL_NEG": {
+              "count": 52,
+              "median_advantage": 0.3061655666679144,
+              "positive_fraction": 1.0
+            },
+            "TANGENTIAL_POS": {
+              "count": 71,
+              "median_advantage": 0.3160052504390478,
+              "positive_fraction": 0.9577464788732394
+            }
+          }
+        },
+        "R02ZF": {
+          "box_count": 36,
+          "evaluable_count": 36,
+          "abstain_count": 0,
+          "median_reference_score": 0.204784095287323,
+          "reference_score_ge_0_995_fraction": 0.0,
+          "median_advantage_vs_matched": 0.1653534434735775,
+          "reference_beats_matched_median_fraction": 0.9444444444444444,
+          "median_advantage_vs_offsets": 0.1556924730539322,
+          "reference_beats_offset_median_fraction": 0.9722222222222222,
+          "reference_beats_hard_background_fraction": 0.4444444444444444,
+          "median_advantage_vs_hard_background_p95": 0.07257114704698339,
+          "median_hard_background_pool_count": 129.5,
+          "median_local_control_percentile": 0.9090909090909091,
+          "median_local_peak_distance_px": 12.28946852792727,
+          "p90_local_peak_distance_px": 18.87458229871044,
+          "median_local_peak_distance_m": 0.415647916458852,
+          "p90_local_peak_distance_m": 0.6383661578743052,
+          "per_offset_direction": {
+            "RADIAL_IN": {
+              "count": 33,
+              "median_advantage": 0.15215635113418102,
+              "positive_fraction": 1.0
+            },
+            "RADIAL_OUT": {
+              "count": 36,
+              "median_advantage": 0.15739163526450284,
+              "positive_fraction": 0.9722222222222222
+            },
+            "TANGENTIAL_NEG": {
+              "count": 18,
+              "median_advantage": 0.20823149476200342,
+              "positive_fraction": 0.9444444444444444
+            },
+            "TANGENTIAL_POS": {
+              "count": 16,
+              "median_advantage": 0.11875142343342304,
+              "positive_fraction": 0.875
+            }
+          }
+        },
+        "R03ZF": {
+          "box_count": 4,
+          "evaluable_count": 2,
+          "abstain_count": 2,
+          "median_reference_score": 0.3000471144914627,
+          "reference_score_ge_0_995_fraction": 0.0,
+          "median_advantage_vs_matched": 0.23027938418090343,
+          "reference_beats_matched_median_fraction": 1.0,
+          "median_advantage_vs_offsets": 0.24856051988899708,
+          "reference_beats_offset_median_fraction": 1.0,
+          "reference_beats_hard_background_fraction": 0.0,
+          "median_advantage_vs_hard_background_p95": 0.13433588556945336,
+          "median_hard_background_pool_count": 145.5,
+          "median_local_control_percentile": 0.9198717948717949,
+          "median_local_peak_distance_px": 1.3210751683983255,
+          "p90_local_peak_distance_px": 1.3575590614683553,
+          "median_local_peak_distance_m": 0.04468070689814461,
+          "p90_local_peak_distance_m": 0.04591464586828029,
+          "per_offset_direction": {
+            "RADIAL_IN": {
+              "count": 2,
+              "median_advantage": 0.2635107561945915,
+              "positive_fraction": 1.0
+            },
+            "RADIAL_OUT": {
+              "count": 1,
+              "median_advantage": 0.19562438130378723,
+              "positive_fraction": 1.0
+            },
+            "TANGENTIAL_NEG": {
+              "count": 2,
+              "median_advantage": 0.2233607918024063,
+              "positive_fraction": 1.0
+            },
+            "TANGENTIAL_POS": {
+              "count": 2,
+              "median_advantage": 0.24045919254422188,
+              "positive_fraction": 1.0
+            }
+          }
+        },
+        "R04ZF": {
+          "box_count": 112,
+          "evaluable_count": 108,
+          "abstain_count": 4,
+          "median_reference_score": 0.6516227126121521,
+          "reference_score_ge_0_995_fraction": 0.0,
+          "median_advantage_vs_matched": 0.5940889893099666,
+          "reference_beats_matched_median_fraction": 1.0,
+          "median_advantage_vs_offsets": 0.5949508957564831,
+          "reference_beats_offset_median_fraction": 1.0,
+          "reference_beats_hard_background_fraction": 0.8796296296296297,
+          "median_advantage_vs_hard_background_p95": 0.4430226122960449,
+          "median_hard_background_pool_count": 76.0,
+          "median_local_control_percentile": 1.0,
+          "median_local_peak_distance_px": 2.700204914126018,
+          "p90_local_peak_distance_px": 5.344340109034901,
+          "median_local_peak_distance_m": 0.09132490506143351,
+          "p90_local_peak_distance_m": 0.18075344968091014,
+          "per_offset_direction": {
+            "RADIAL_IN": {
+              "count": 108,
+              "median_advantage": 0.5921997521072626,
+              "positive_fraction": 1.0
+            },
+            "RADIAL_OUT": {
+              "count": 108,
+              "median_advantage": 0.569708738476038,
+              "positive_fraction": 1.0
+            },
+            "TANGENTIAL_NEG": {
+              "count": 74,
+              "median_advantage": 0.5563115123659372,
+              "positive_fraction": 1.0
+            },
+            "TANGENTIAL_POS": {
+              "count": 99,
+              "median_advantage": 0.593579925596714,
+              "positive_fraction": 1.0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "visual_case_registry": [
+    {
+      "rank": 1,
+      "reason": "R04_COMPACT_RESPONSE",
+      "run_id": "R04ZF",
+      "frame_uid": "R04ZF_SARF000100",
+      "target_id": "R04ZF_SARPERSON03",
+      "annotation_source": "MANUAL_NATIVE_SAR",
+      "visual_path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\single_frame\\manual_v4_physical_scale_p0_mask\\visualizations\\case_01_R04_COMPACT_RESPONSE_R04ZF_SARF000100_R04ZF_SARPERSON03.png"
+    },
+    {
+      "rank": 2,
+      "reason": "R01_NEIGHBOR_FUSION_P02",
+      "run_id": "R01ZF",
+      "frame_uid": "R01ZF_SARF000060",
+      "target_id": "R01ZF_SARPERSON02",
+      "annotation_source": "MANUAL_NATIVE_SAR",
+      "visual_path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\single_frame\\manual_v4_physical_scale_p0_mask\\visualizations\\case_02_R01_NEIGHBOR_FUSION_P02_R01ZF_SARF000060_R01ZF_SARPERSON02.png"
+    },
+    {
+      "rank": 3,
+      "reason": "R01_NEIGHBOR_FUSION_P03",
+      "run_id": "R01ZF",
+      "frame_uid": "R01ZF_SARF000060",
+      "target_id": "R01ZF_SARPERSON03",
+      "annotation_source": "MANUAL_NATIVE_SAR",
+      "visual_path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\single_frame\\manual_v4_physical_scale_p0_mask\\visualizations\\case_03_R01_NEIGHBOR_FUSION_P03_R01ZF_SARF000060_R01ZF_SARPERSON03.png"
+    },
+    {
+      "rank": 4,
+      "reason": "R02_GROUP_CLUTTER_P01",
+      "run_id": "R02ZF",
+      "frame_uid": "R02ZF_SARF000472",
+      "target_id": "R02ZF_SARPERSON01",
+      "annotation_source": "MANUAL_NATIVE_SAR",
+      "visual_path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\single_frame\\manual_v4_physical_scale_p0_mask\\visualizations\\case_04_R02_GROUP_CLUTTER_P01_R02ZF_SARF000472_R02ZF_SARPERSON01.png"
+    },
+    {
+      "rank": 5,
+      "reason": "R02_GROUP_CLUTTER_P02",
+      "run_id": "R02ZF",
+      "frame_uid": "R02ZF_SARF000472",
+      "target_id": "R02ZF_SARPERSON02",
+      "annotation_source": "MANUAL_NATIVE_SAR",
+      "visual_path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\single_frame\\manual_v4_physical_scale_p0_mask\\visualizations\\case_05_R02_GROUP_CLUTTER_P02_R02ZF_SARF000472_R02ZF_SARPERSON02.png"
+    },
+    {
+      "rank": 6,
+      "reason": "R02_REFERENCE_WEAK_P03",
+      "run_id": "R02ZF",
+      "frame_uid": "R02ZF_SARF000490",
+      "target_id": "R02ZF_SARPERSON03",
+      "annotation_source": "MANUAL_NATIVE_SAR",
+      "visual_path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\single_frame\\manual_v4_physical_scale_p0_mask\\visualizations\\case_06_R02_REFERENCE_WEAK_P03_R02ZF_SARF000490_R02ZF_SARPERSON03.png"
+    },
+    {
+      "rank": 7,
+      "reason": "R03_BOUNDARY_EARLY",
+      "run_id": "R03ZF",
+      "frame_uid": "R03ZF_SARF000458",
+      "target_id": "R03ZF_SARPERSON01",
+      "annotation_source": "MANUAL_NATIVE_SAR",
+      "visual_path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\single_frame\\manual_v4_physical_scale_p0_mask\\visualizations\\case_07_R03_BOUNDARY_EARLY_R03ZF_SARF000458_R03ZF_SARPERSON01.png"
+    },
+    {
+      "rank": 8,
+      "reason": "R03_BOUNDARY_RECOVERY",
+      "run_id": "R03ZF",
+      "frame_uid": "R03ZF_SARF000494",
+      "target_id": "R03ZF_SARPERSON01",
+      "annotation_source": "MANUAL_NATIVE_SAR",
+      "visual_path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\single_frame\\manual_v4_physical_scale_p0_mask\\visualizations\\case_08_R03_BOUNDARY_RECOVERY_R03ZF_SARF000494_R03ZF_SARPERSON01.png"
+    },
+    {
+      "rank": 9,
+      "reason": "R04_VISIBLE_CORE_OPERATOR_MISS",
+      "run_id": "R04ZF",
+      "frame_uid": "R04ZF_SARF000090",
+      "target_id": "R04ZF_SARPERSON03",
+      "annotation_source": "MANUAL_NATIVE_SAR",
+      "visual_path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\single_frame\\manual_v4_physical_scale_p0_mask\\visualizations\\case_09_R04_VISIBLE_CORE_OPERATOR_MISS_R04ZF_SARF000090_R04ZF_SARPERSON03.png"
+    },
+    {
+      "rank": 10,
+      "reason": "R01ZF_C3_BEST_FAIR",
+      "run_id": "R01ZF",
+      "frame_uid": "R01ZF_SARF000115",
+      "target_id": "R01ZF_SARPERSON01",
+      "annotation_source": "MANUAL_NATIVE_SAR",
+      "visual_path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\single_frame\\manual_v4_physical_scale_p0_mask\\visualizations\\case_10_R01ZF_C3_BEST_FAIR_R01ZF_SARF000115_R01ZF_SARPERSON01.png"
+    },
+    {
+      "rank": 11,
+      "reason": "R01ZF_C3_WORST_FAIR",
+      "run_id": "R01ZF",
+      "frame_uid": "R01ZF_SARF000010",
+      "target_id": "R01ZF_SARPERSON02",
+      "annotation_source": "MANUAL_NATIVE_SAR",
+      "visual_path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\single_frame\\manual_v4_physical_scale_p0_mask\\visualizations\\case_11_R01ZF_C3_WORST_FAIR_R01ZF_SARF000010_R01ZF_SARPERSON02.png"
+    },
+    {
+      "rank": 12,
+      "reason": "R02ZF_C3_WORST_FAIR",
+      "run_id": "R02ZF",
+      "frame_uid": "R02ZF_SARF000494",
+      "target_id": "R02ZF_SARPERSON01",
+      "annotation_source": "MANUAL_NATIVE_SAR",
+      "visual_path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\single_frame\\manual_v4_physical_scale_p0_mask\\visualizations\\case_12_R02ZF_C3_WORST_FAIR_R02ZF_SARF000494_R02ZF_SARPERSON01.png"
+    },
+    {
+      "rank": 13,
+      "reason": "R03ZF_C3_BEST_FAIR",
+      "run_id": "R03ZF",
+      "frame_uid": "R03ZF_SARF000488",
+      "target_id": "R03ZF_SARPERSON01",
+      "annotation_source": "MANUAL_NATIVE_SAR",
+      "visual_path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\single_frame\\manual_v4_physical_scale_p0_mask\\visualizations\\case_13_R03ZF_C3_BEST_FAIR_R03ZF_SARF000488_R03ZF_SARPERSON01.png"
+    },
+    {
+      "rank": 14,
+      "reason": "R04ZF_C3_BEST_FAIR",
+      "run_id": "R04ZF",
+      "frame_uid": "R04ZF_SARF000015",
+      "target_id": "R04ZF_SARPERSON01",
+      "annotation_source": "MANUAL_NATIVE_SAR",
+      "visual_path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\single_frame\\manual_v4_physical_scale_p0_mask\\visualizations\\case_14_R04ZF_C3_BEST_FAIR_R04ZF_SARF000015_R04ZF_SARPERSON01.png"
+    },
+    {
+      "rank": 15,
+      "reason": "R04ZF_C3_WORST_FAIR",
+      "run_id": "R04ZF",
+      "frame_uid": "R04ZF_SARF000032",
+      "target_id": "R04ZF_SARPERSON02",
+      "annotation_source": "MANUAL_NATIVE_SAR",
+      "visual_path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\single_frame\\manual_v4_physical_scale_p0_mask\\visualizations\\case_15_R04ZF_C3_WORST_FAIR_R04ZF_SARF000032_R04ZF_SARPERSON02.png"
+    }
+  ],
+  "semantic_boundaries": {
+    "all_runs_are_development_data": true,
+    "P1_PASS_claimed": false,
+    "score_maps_generated_without_annotations": true,
+    "score_scale_derived_from_PERSON_boxes": false,
+    "PERSON_box_dimensions_used_in_score_generation": false,
+    "annotations_used_for_offline_evaluation_only": true,
+    "SAR_boxes_created_or_moved": 0,
+    "P0_retuned": false,
+    "P2_started": false
+  }
+}

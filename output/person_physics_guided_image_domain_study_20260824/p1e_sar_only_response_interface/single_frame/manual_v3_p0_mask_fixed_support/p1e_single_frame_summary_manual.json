@@ -1,0 +1,498 @@
+{
+  "schema": "PERSON_P1E_SINGLE_FRAME_POSITION_SPECIFICITY_V2",
+  "created_at": "2026-08-25T19:33:02+08:00",
+  "status": "P1E_SINGLE_FRAME_MANUAL_EXPLORATION_COMPLETE",
+  "subset": "manual",
+  "runs": [
+    "R01ZF",
+    "R02ZF",
+    "R03ZF",
+    "R04ZF"
+  ],
+  "frame_count": 112,
+  "annotation_count": 251,
+  "candidate_count": 3,
+  "evaluation_operator": {
+    "mode": "fixed_support_mean_v2",
+    "valid_mask_mode": "frozen_p0",
+    "valid_mask_source": "FROZEN_P0_BUILD_BASE_MASK_AND_ALGORITHM_CONFIG",
+    "frozen_p0_mask_margins": {
+      "inner_range_exclusion_m": 0.75,
+      "outer_boundary_margin_m": 1.0,
+      "side_boundary_margin_deg": 1.5
+    },
+    "primary_S_x": "FIXED_DISK_MEAN_OF_FRAME_RELATIVE_BASE_RESPONSE",
+    "support_uses_annotation_geometry": false,
+    "same_operator_for_reference_matched_offset_and_hard_background": true,
+    "secondary_diagnostics": [
+      "FIXED_SUPPORT_TOP_QUARTILE_MEAN",
+      "LOCAL_PEAK_SCORE_AND_DISTANCE_WITHIN_ONE_FROZEN_SHORT_AXIS"
+    ]
+  },
+  "candidate_definitions": {
+    "C0_JET_CENTER_RING": {
+      "measures": "MULTISCALE_LOCAL_JET_PROXY_CENTER_MINUS_RING_CONTRAST",
+      "why_position_specific": "COMPACT_ELEVATED_DISPLAY_RESPONSE_SHOULD_EXCEED_ITS_LOCAL_RING"
+    },
+    "C1_RANGE_RANK_TOPHAT": {
+      "measures": "MULTISCALE_COMPACT_BRIGHT_SUPPORT_AFTER_WITHIN_RANGE_RANK_NORMALIZATION",
+      "why_position_specific": "SUPPRESSES_RANGE_DEPENDENCE_AND_BROAD_ARCS_WHILE_RETAINING_SMALL_BRIGHT_SUPPORT"
+    },
+    "C2_COMPACT_JET_GRADIENT_CONSENSUS": {
+      "measures": "COINCIDENCE_OF_COMPACT_RANGE_NORMALIZED_JET_SUPPORT_AND_LOCAL_GRADIENT_CLUSTER",
+      "why_position_specific": "REQUIRES_BOTH_LOCAL_ELEVATED_RESPONSE_AND_INTERNAL_EDGE_OR_RIDGE_SUPPORT"
+    }
+  },
+  "runtime_inputs": [
+    "SAR_PSEUDOCOLOR_IMAGE",
+    "FAN_GEOMETRY",
+    "FIXED_P0_DERIVED_SCALE_BANK",
+    "VALID_PIXEL_MASK"
+  ],
+  "forbidden_runtime_inputs": [
+    "PERSON_BOX_CENTER",
+    "PERSON_BOX_WIDTH_HEIGHT",
+    "PHYSICAL_TARGET_ID",
+    "OPTICAL_TRACK_SELECTION"
+  ],
+  "fixed_scale": {
+    "P0_R04_short_axis_median_px": 18.504364013671875,
+    "response_kernel_diameters_px": [
+      9,
+      15,
+      23
+    ],
+    "offline_evaluation_support_radius_px": 9,
+    "offline_peak_search_radius_px": 19,
+    "fixed_offset_px": 37.00872802734375
+  },
+  "input_hash_checks": [
+    {
+      "kind": "input_snapshot",
+      "path": "D:\\browser\\person_SAR_fullframe_interpolation_review_1787483093904.json",
+      "expected_sha256": "E3CA1F07552030F46770420EED16AEF362E9DD74C909A6BEB23C54D29F79AF8A",
+      "actual_sha256": "E3CA1F07552030F46770420EED16AEF362E9DD74C909A6BEB23C54D29F79AF8A",
+      "match": true
+    },
+    {
+      "kind": "input_snapshot",
+      "path": "D:\\profile\\research\\workspace\\output\\person_multidimensional_response_explorer_20260823\\explorer_data.js",
+      "expected_sha256": "C39E60EB478FF7D815EFE6984D3BCF36600737E2EC3D1FF76D04020DED54EF7D",
+      "actual_sha256": "C39E60EB478FF7D815EFE6984D3BCF36600737E2EC3D1FF76D04020DED54EF7D",
+      "match": true
+    },
+    {
+      "kind": "input_snapshot",
+      "path": "D:\\profile\\research\\workspace\\output\\pseudocolor_azimuth_calibration_20260803\\geometry\\fan_geometry_report.json",
+      "expected_sha256": "B8A166D2ABCF57B1B3868692651D68610B5FA5B135E6D0BC48DC1D2CDB3F5A93",
+      "actual_sha256": "B8A166D2ABCF57B1B3868692651D68610B5FA5B135E6D0BC48DC1D2CDB3F5A93",
+      "match": true
+    },
+    {
+      "kind": "invalidated_probe_reference",
+      "path": "D:\\profile\\research\\workspace\\output\\person_sar_motion_evidence_20260824\\motion_evidence_summary.json",
+      "expected_sha256": "5150F3EFFC884912A5A229E2FFD1F6DC011DC8BEE8297F2D4B6F3E06E7FD2801",
+      "actual_sha256": "5150F3EFFC884912A5A229E2FFD1F6DC011DC8BEE8297F2D4B6F3E06E7FD2801",
+      "match": true,
+      "allowed_use": "BOX_CONDITIONED_PSEUDOCOLOR_DISPLAY_REPEATABILITY_ONLY"
+    }
+  ],
+  "frozen_P0_script_sha256": "0AB671B6A33A48CA2E3160A201629FA2DD341EF052A29B8D2CCBC2DFB26DCFD8",
+  "summaries": [
+    {
+      "subset": "manual",
+      "candidate": "C0_JET_CENTER_RING",
+      "box_count": 251,
+      "evaluable_count": 240,
+      "abstain_count": 11,
+      "valid_matched_count": 240,
+      "valid_offset_count": 240,
+      "valid_hard_count": 240,
+      "median_reference_score": 0.984310120344162,
+      "reference_score_ge_0_995_fraction": 0.1125,
+      "median_advantage_vs_matched": 0.4655180424451828,
+      "reference_beats_matched_median_fraction": 1.0,
+      "reference_beats_all_matched_fraction": 0.9833333333333333,
+      "median_advantage_vs_offsets": 0.5074116885662079,
+      "reference_beats_offset_median_fraction": 1.0,
+      "reference_beats_all_offsets_fraction": 1.0,
+      "median_advantage_vs_hard_background": 0.056491464376449585,
+      "reference_beats_hard_background_fraction": 0.8291666666666667,
+      "median_advantage_topq_vs_hard_background": 0.015335947275161743,
+      "median_local_control_percentile": 1.0,
+      "median_local_peak_distance_px": 2.9497093227059494,
+      "p90_local_peak_distance_px": 10.873883464338396,
+      "per_run": {
+        "R01ZF": {
+          "box_count": 99,
+          "evaluable_count": 94,
+          "abstain_count": 5,
+          "median_reference_score": 0.978708028793335,
+          "reference_score_ge_0_995_fraction": 0.010638297872340425,
+          "median_advantage_vs_matched": 0.4534389600157738,
+          "reference_beats_matched_median_fraction": 1.0,
+          "median_advantage_vs_offsets": 0.49961718171834946,
+          "reference_beats_offset_median_fraction": 1.0,
+          "reference_beats_hard_background_fraction": 0.9893617021276596,
+          "median_local_control_percentile": 1.0,
+          "median_local_peak_distance_px": 6.18653489845827,
+          "p90_local_peak_distance_px": 9.720081965293197
+        },
+        "R02ZF": {
+          "box_count": 36,
+          "evaluable_count": 36,
+          "abstain_count": 0,
+          "median_reference_score": 0.9447216689586639,
+          "reference_score_ge_0_995_fraction": 0.0,
+          "median_advantage_vs_matched": 0.48852331936359406,
+          "reference_beats_matched_median_fraction": 1.0,
+          "median_advantage_vs_offsets": 0.4419323801994324,
+          "reference_beats_offset_median_fraction": 1.0,
+          "reference_beats_hard_background_fraction": 0.19444444444444445,
+          "median_local_control_percentile": 0.9,
+          "median_local_peak_distance_px": 16.80045612237412,
+          "p90_local_peak_distance_px": 18.80887848241754
+        },
+        "R03ZF": {
+          "box_count": 4,
+          "evaluable_count": 2,
+          "abstain_count": 2,
+          "median_reference_score": 0.9823126792907715,
+          "reference_score_ge_0_995_fraction": 0.0,
+          "median_advantage_vs_matched": 0.5111348554491997,
+          "reference_beats_matched_median_fraction": 1.0,
+          "median_advantage_vs_offsets": 0.5386580675840378,
+          "reference_beats_offset_median_fraction": 1.0,
+          "reference_beats_hard_background_fraction": 1.0,
+          "median_local_control_percentile": 1.0,
+          "median_local_peak_distance_px": 1.2730344022324722,
+          "p90_local_peak_distance_px": 1.8888207523765073
+        },
+        "R04ZF": {
+          "box_count": 112,
+          "evaluable_count": 108,
+          "abstain_count": 4,
+          "median_reference_score": 0.9900623559951782,
+          "reference_score_ge_0_995_fraction": 0.24074074074074073,
+          "median_advantage_vs_matched": 0.46697357296943665,
+          "reference_beats_matched_median_fraction": 1.0,
+          "median_advantage_vs_offsets": 0.522780179977417,
+          "reference_beats_offset_median_fraction": 1.0,
+          "reference_beats_hard_background_fraction": 0.8981481481481481,
+          "median_local_control_percentile": 1.0,
+          "median_local_peak_distance_px": 2.008155659772345,
+          "p90_local_peak_distance_px": 3.5041793667575
+        }
+      }
+    },
+    {
+      "subset": "manual",
+      "candidate": "C1_RANGE_RANK_TOPHAT",
+      "box_count": 251,
+      "evaluable_count": 240,
+      "abstain_count": 11,
+      "valid_matched_count": 240,
+      "valid_offset_count": 240,
+      "valid_hard_count": 240,
+      "median_reference_score": 0.9388543963432312,
+      "reference_score_ge_0_995_fraction": 0.020833333333333332,
+      "median_advantage_vs_matched": 0.31559422612190247,
+      "reference_beats_matched_median_fraction": 0.9166666666666666,
+      "reference_beats_all_matched_fraction": 0.8166666666666667,
+      "median_advantage_vs_offsets": 0.36244283616542816,
+      "reference_beats_offset_median_fraction": 0.9125,
+      "reference_beats_all_offsets_fraction": 0.8666666666666667,
+      "median_advantage_vs_hard_background": 0.024813950061798096,
+      "reference_beats_hard_background_fraction": 0.5833333333333334,
+      "median_advantage_topq_vs_hard_background": 0.019111037254333496,
+      "median_local_control_percentile": 1.0,
+      "median_local_peak_distance_px": 5.356530542813211,
+      "p90_local_peak_distance_px": 18.710397541558883,
+      "per_run": {
+        "R01ZF": {
+          "box_count": 99,
+          "evaluable_count": 94,
+          "abstain_count": 5,
+          "median_reference_score": 0.9642105102539062,
+          "reference_score_ge_0_995_fraction": 0.02127659574468085,
+          "median_advantage_vs_matched": 0.40452687442302704,
+          "reference_beats_matched_median_fraction": 0.9574468085106383,
+          "median_advantage_vs_offsets": 0.39311279356479645,
+          "reference_beats_offset_median_fraction": 0.9574468085106383,
+          "reference_beats_hard_background_fraction": 0.9148936170212766,
+          "median_local_control_percentile": 1.0,
+          "median_local_peak_distance_px": 6.57322081513896,
+          "p90_local_peak_distance_px": 11.83533432325662
+        },
+        "R02ZF": {
+          "box_count": 36,
+          "evaluable_count": 36,
+          "abstain_count": 0,
+          "median_reference_score": 0.8785686194896698,
+          "reference_score_ge_0_995_fraction": 0.05555555555555555,
+          "median_advantage_vs_matched": 0.38642026484012604,
+          "reference_beats_matched_median_fraction": 0.8888888888888888,
+          "median_advantage_vs_offsets": 0.34670139849185944,
+          "reference_beats_offset_median_fraction": 0.8055555555555556,
+          "reference_beats_hard_background_fraction": 0.1388888888888889,
+          "median_local_control_percentile": 0.8571428571428571,
+          "median_local_peak_distance_px": 16.79282210330709,
+          "p90_local_peak_distance_px": 18.78708216322036
+        },
+        "R03ZF": {
+          "box_count": 4,
+          "evaluable_count": 2,
+          "abstain_count": 2,
+          "median_reference_score": 0.9119634032249451,
+          "reference_score_ge_0_995_fraction": 0.0,
+          "median_advantage_vs_matched": 0.6372145339846611,
+          "reference_beats_matched_median_fraction": 1.0,
+          "median_advantage_vs_offsets": 0.6466816514730453,
+          "reference_beats_offset_median_fraction": 1.0,
+          "reference_beats_hard_background_fraction": 1.0,
+          "median_local_control_percentile": 0.9198717948717949,
+          "median_local_peak_distance_px": 2.324350446739138,
+          "p90_local_peak_distance_px": 3.0904867763417583
+        },
+        "R04ZF": {
+          "box_count": 112,
+          "evaluable_count": 108,
+          "abstain_count": 4,
+          "median_reference_score": 0.9115599691867828,
+          "reference_score_ge_0_995_fraction": 0.009259259259259259,
+          "median_advantage_vs_matched": 0.23189795017242432,
+          "reference_beats_matched_median_fraction": 0.8888888888888888,
+          "median_advantage_vs_offsets": 0.3347498029470444,
+          "reference_beats_offset_median_fraction": 0.9074074074074074,
+          "reference_beats_hard_background_fraction": 0.4351851851851852,
+          "median_local_control_percentile": 0.9166666666666666,
+          "median_local_peak_distance_px": 3.996670991653403,
+          "p90_local_peak_distance_px": 18.757770999443046
+        }
+      }
+    },
+    {
+      "subset": "manual",
+      "candidate": "C2_COMPACT_JET_GRADIENT_CONSENSUS",
+      "box_count": 251,
+      "evaluable_count": 240,
+      "abstain_count": 11,
+      "valid_matched_count": 240,
+      "valid_offset_count": 240,
+      "valid_hard_count": 240,
+      "median_reference_score": 0.9743329882621765,
+      "reference_score_ge_0_995_fraction": 0.07083333333333333,
+      "median_advantage_vs_matched": 0.44534772634506226,
+      "reference_beats_matched_median_fraction": 0.9625,
+      "reference_beats_all_matched_fraction": 0.9041666666666667,
+      "median_advantage_vs_offsets": 0.4541371464729309,
+      "reference_beats_offset_median_fraction": 0.9458333333333333,
+      "reference_beats_all_offsets_fraction": 0.9291666666666667,
+      "median_advantage_vs_hard_background": 0.04923054575920105,
+      "reference_beats_hard_background_fraction": 0.7625,
+      "median_advantage_topq_vs_hard_background": 0.01503974199295044,
+      "median_local_control_percentile": 1.0,
+      "median_local_peak_distance_px": 4.403038900388228,
+      "p90_local_peak_distance_px": 17.635674328555627,
+      "per_run": {
+        "R01ZF": {
+          "box_count": 99,
+          "evaluable_count": 94,
+          "abstain_count": 5,
+          "median_reference_score": 0.9852359890937805,
+          "reference_score_ge_0_995_fraction": 0.11702127659574468,
+          "median_advantage_vs_matched": 0.45302852988243103,
+          "reference_beats_matched_median_fraction": 0.9787234042553191,
+          "median_advantage_vs_offsets": 0.46330156922340393,
+          "reference_beats_offset_median_fraction": 0.9574468085106383,
+          "reference_beats_hard_background_fraction": 0.925531914893617,
+          "median_local_control_percentile": 1.0,
+          "median_local_peak_distance_px": 6.347400197392924,
+          "p90_local_peak_distance_px": 10.767106991064399
+        },
+        "R02ZF": {
+          "box_count": 36,
+          "evaluable_count": 36,
+          "abstain_count": 0,
+          "median_reference_score": 0.9414553344249725,
+          "reference_score_ge_0_995_fraction": 0.027777777777777776,
+          "median_advantage_vs_matched": 0.4677100330591202,
+          "reference_beats_matched_median_fraction": 0.9444444444444444,
+          "median_advantage_vs_offsets": 0.38104478269815445,
+          "reference_beats_offset_median_fraction": 0.9444444444444444,
+          "reference_beats_hard_background_fraction": 0.4444444444444444,
+          "median_local_control_percentile": 0.9045454545454545,
+          "median_local_peak_distance_px": 16.52186611499099,
+          "p90_local_peak_distance_px": 18.781579263512114
+        },
+        "R03ZF": {
+          "box_count": 4,
+          "evaluable_count": 2,
+          "abstain_count": 2,
+          "median_reference_score": 0.9731484651565552,
+          "reference_score_ge_0_995_fraction": 0.0,
+          "median_advantage_vs_matched": 0.6408621594309807,
+          "reference_beats_matched_median_fraction": 1.0,
+          "median_advantage_vs_offsets": 0.6788510978221893,
+          "reference_beats_offset_median_fraction": 1.0,
+          "reference_beats_hard_background_fraction": 1.0,
+          "median_local_control_percentile": 1.0,
+          "median_local_peak_distance_px": 1.4478302870072897,
+          "p90_local_peak_distance_px": 2.203453344971179
+        },
+        "R04ZF": {
+          "box_count": 112,
+          "evaluable_count": 108,
+          "abstain_count": 4,
+          "median_reference_score": 0.968273252248764,
+          "reference_score_ge_0_995_fraction": 0.046296296296296294,
+          "median_advantage_vs_matched": 0.41098614782094955,
+          "reference_beats_matched_median_fraction": 0.9537037037037037,
+          "median_advantage_vs_offsets": 0.4508456438779831,
+          "reference_beats_offset_median_fraction": 0.9351851851851852,
+          "reference_beats_hard_background_fraction": 0.7222222222222222,
+          "median_local_control_percentile": 1.0,
+          "median_local_peak_distance_px": 2.8877840185211863,
+          "p90_local_peak_distance_px": 8.98314251598837
+        }
+      }
+    }
+  ],
+  "visual_case_registry": [
+    {
+      "rank": 1,
+      "reason": "R04_COMPACT_RESPONSE",
+      "run_id": "R04ZF",
+      "frame_uid": "R04ZF_SARF000100",
+      "target_id": "R04ZF_SARPERSON03",
+      "annotation_source": "MANUAL_NATIVE_SAR",
+      "visual_path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\single_frame\\manual_v3_p0_mask_fixed_support\\visualizations\\case_01_R04_COMPACT_RESPONSE_R04ZF_SARF000100_R04ZF_SARPERSON03.png"
+    },
+    {
+      "rank": 2,
+      "reason": "R01_NEIGHBOR_FUSION_P02",
+      "run_id": "R01ZF",
+      "frame_uid": "R01ZF_SARF000060",
+      "target_id": "R01ZF_SARPERSON02",
+      "annotation_source": "MANUAL_NATIVE_SAR",
+      "visual_path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\single_frame\\manual_v3_p0_mask_fixed_support\\visualizations\\case_02_R01_NEIGHBOR_FUSION_P02_R01ZF_SARF000060_R01ZF_SARPERSON02.png"
+    },
+    {
+      "rank": 3,
+      "reason": "R01_NEIGHBOR_FUSION_P03",
+      "run_id": "R01ZF",
+      "frame_uid": "R01ZF_SARF000060",
+      "target_id": "R01ZF_SARPERSON03",
+      "annotation_source": "MANUAL_NATIVE_SAR",
+      "visual_path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\single_frame\\manual_v3_p0_mask_fixed_support\\visualizations\\case_03_R01_NEIGHBOR_FUSION_P03_R01ZF_SARF000060_R01ZF_SARPERSON03.png"
+    },
+    {
+      "rank": 4,
+      "reason": "R02_GROUP_CLUTTER_P01",
+      "run_id": "R02ZF",
+      "frame_uid": "R02ZF_SARF000472",
+      "target_id": "R02ZF_SARPERSON01",
+      "annotation_source": "MANUAL_NATIVE_SAR",
+      "visual_path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\single_frame\\manual_v3_p0_mask_fixed_support\\visualizations\\case_04_R02_GROUP_CLUTTER_P01_R02ZF_SARF000472_R02ZF_SARPERSON01.png"
+    },
+    {
+      "rank": 5,
+      "reason": "R02_GROUP_CLUTTER_P02",
+      "run_id": "R02ZF",
+      "frame_uid": "R02ZF_SARF000472",
+      "target_id": "R02ZF_SARPERSON02",
+      "annotation_source": "MANUAL_NATIVE_SAR",
+      "visual_path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\single_frame\\manual_v3_p0_mask_fixed_support\\visualizations\\case_05_R02_GROUP_CLUTTER_P02_R02ZF_SARF000472_R02ZF_SARPERSON02.png"
+    },
+    {
+      "rank": 6,
+      "reason": "R03_BOUNDARY_EARLY",
+      "run_id": "R03ZF",
+      "frame_uid": "R03ZF_SARF000458",
+      "target_id": "R03ZF_SARPERSON01",
+      "annotation_source": "MANUAL_NATIVE_SAR",
+      "visual_path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\single_frame\\manual_v3_p0_mask_fixed_support\\visualizations\\case_06_R03_BOUNDARY_EARLY_R03ZF_SARF000458_R03ZF_SARPERSON01.png"
+    },
+    {
+      "rank": 7,
+      "reason": "R03_BOUNDARY_RECOVERY",
+      "run_id": "R03ZF",
+      "frame_uid": "R03ZF_SARF000494",
+      "target_id": "R03ZF_SARPERSON01",
+      "annotation_source": "MANUAL_NATIVE_SAR",
+      "visual_path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\single_frame\\manual_v3_p0_mask_fixed_support\\visualizations\\case_07_R03_BOUNDARY_RECOVERY_R03ZF_SARF000494_R03ZF_SARPERSON01.png"
+    },
+    {
+      "rank": 8,
+      "reason": "R01ZF_C1_BEST_FAIR",
+      "run_id": "R01ZF",
+      "frame_uid": "R01ZF_SARF000080",
+      "target_id": "R01ZF_SARPERSON02",
+      "annotation_source": "MANUAL_NATIVE_SAR",
+      "visual_path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\single_frame\\manual_v3_p0_mask_fixed_support\\visualizations\\case_08_R01ZF_C1_BEST_FAIR_R01ZF_SARF000080_R01ZF_SARPERSON02.png"
+    },
+    {
+      "rank": 9,
+      "reason": "R01ZF_C1_WORST_FAIR",
+      "run_id": "R01ZF",
+      "frame_uid": "R01ZF_SARF000028",
+      "target_id": "R01ZF_SARPERSON02",
+      "annotation_source": "MANUAL_NATIVE_SAR",
+      "visual_path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\single_frame\\manual_v3_p0_mask_fixed_support\\visualizations\\case_09_R01ZF_C1_WORST_FAIR_R01ZF_SARF000028_R01ZF_SARPERSON02.png"
+    },
+    {
+      "rank": 10,
+      "reason": "R02ZF_C1_BEST_FAIR",
+      "run_id": "R02ZF",
+      "frame_uid": "R02ZF_SARF000473",
+      "target_id": "R02ZF_SARPERSON04",
+      "annotation_source": "MANUAL_NATIVE_SAR",
+      "visual_path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\single_frame\\manual_v3_p0_mask_fixed_support\\visualizations\\case_10_R02ZF_C1_BEST_FAIR_R02ZF_SARF000473_R02ZF_SARPERSON04.png"
+    },
+    {
+      "rank": 11,
+      "reason": "R02ZF_C1_WORST_FAIR",
+      "run_id": "R02ZF",
+      "frame_uid": "R02ZF_SARF000494",
+      "target_id": "R02ZF_SARPERSON01",
+      "annotation_source": "MANUAL_NATIVE_SAR",
+      "visual_path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\single_frame\\manual_v3_p0_mask_fixed_support\\visualizations\\case_11_R02ZF_C1_WORST_FAIR_R02ZF_SARF000494_R02ZF_SARPERSON01.png"
+    },
+    {
+      "rank": 12,
+      "reason": "R03ZF_C1_BEST_FAIR",
+      "run_id": "R03ZF",
+      "frame_uid": "R03ZF_SARF000488",
+      "target_id": "R03ZF_SARPERSON01",
+      "annotation_source": "MANUAL_NATIVE_SAR",
+      "visual_path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\single_frame\\manual_v3_p0_mask_fixed_support\\visualizations\\case_12_R03ZF_C1_BEST_FAIR_R03ZF_SARF000488_R03ZF_SARPERSON01.png"
+    },
+    {
+      "rank": 13,
+      "reason": "R04ZF_C1_BEST_FAIR",
+      "run_id": "R04ZF",
+      "frame_uid": "R04ZF_SARF000097",
+      "target_id": "R04ZF_SARPERSON03",
+      "annotation_source": "MANUAL_NATIVE_SAR",
+      "visual_path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\single_frame\\manual_v3_p0_mask_fixed_support\\visualizations\\case_13_R04ZF_C1_BEST_FAIR_R04ZF_SARF000097_R04ZF_SARPERSON03.png"
+    },
+    {
+      "rank": 14,
+      "reason": "R04ZF_C1_WORST_FAIR",
+      "run_id": "R04ZF",
+      "frame_uid": "R04ZF_SARF000037",
+      "target_id": "R04ZF_SARPERSON01",
+      "annotation_source": "MANUAL_NATIVE_SAR",
+      "visual_path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\single_frame\\manual_v3_p0_mask_fixed_support\\visualizations\\case_14_R04ZF_C1_WORST_FAIR_R04ZF_SARF000037_R04ZF_SARPERSON01.png"
+    }
+  ],
+  "semantic_boundaries": {
+    "all_runs_are_development_data": true,
+    "P1_PASS_claimed": false,
+    "score_maps_generated_without_annotations": true,
+    "annotations_used_for_offline_evaluation_only": true,
+    "SAR_boxes_created_or_moved": 0,
+    "P0_retuned": false,
+    "P2_started": false
+  }
+}

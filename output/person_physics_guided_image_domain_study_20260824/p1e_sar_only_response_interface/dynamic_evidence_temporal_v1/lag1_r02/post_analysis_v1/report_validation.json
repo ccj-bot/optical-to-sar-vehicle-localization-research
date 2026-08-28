@@ -1,0 +1,23 @@
+{
+  "schema": "PERSON_P1E_DYNAMIC_EVIDENCE_REPORT_VALIDATION_V1",
+  "checks": {
+    "workspace_exact": true,
+    "P0_hash": true,
+    "P1E_hash": true,
+    "candidate_audit_hash": true,
+    "dynamic_script_hash": true,
+    "runtime_manifest_hash": true,
+    "run_summary_hash": true,
+    "contract_hashes_all_match": true,
+    "runtime_manifest_reference_use_flag_is_false": true,
+    "runtime_graph_no_topk": true,
+    "html_links_complete": true,
+    "images_readable": true,
+    "case_count": true
+  },
+  "html_local_reference_count": 21,
+  "missing_local_references": [],
+  "checked_image_count": 12,
+  "unreadable_images": [],
+  "status": "PASS"
+}

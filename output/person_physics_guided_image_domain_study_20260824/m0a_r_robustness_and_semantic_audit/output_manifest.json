@@ -1,0 +1,145 @@
+{
+  "schema": "PERSON_M0A_R_OUTPUT_MANIFEST_V1",
+  "created_at": "2026-08-28T17:52:29+08:00",
+  "starting_head": "02a112565e72a3aed4ef674377cdb9052a33b33a",
+  "protocol_sha256": "BA73E645F3342FE0CFE37206E9108F99BC0FA87C541D966A80AB705B793ED6A2",
+  "m0a_inputs_modified": false,
+  "m0b_executed": false,
+  "outputs": [
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0a_r_robustness_and_semantic_audit\\support_size_strata.csv",
+      "sha256": "DEFC81A656F419588DD05564FA2E4EF796B443FFC21171CE1D57F868D2EAB575",
+      "bytes": 636
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0a_r_robustness_and_semantic_audit\\support_size_sensitivity.csv",
+      "sha256": "B1596A4D7DF7F080A656DD2D3D96782CCF2B93370B6C5A966E17FE820DFD5245",
+      "bytes": 586
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0a_r_robustness_and_semantic_audit\\supported_edge_audit.csv",
+      "sha256": "12F2B7C9104C970DE7CB8ECF02E5174D53E6C671105616B5B59C513178391006",
+      "bytes": 12628
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0a_r_robustness_and_semantic_audit\\cluster_aware_summary.csv",
+      "sha256": "C63A550E4DCAB83E1B6E49984840836EA73DFF653DA2C6578B4891525C75B828",
+      "bytes": 1690
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0a_r_robustness_and_semantic_audit\\leave_one_frame_pair_out.csv",
+      "sha256": "38B16DFBC0D0457CCD2CB681F2BC41C0CFF54C368B9DB23D5E35213F104C700F",
+      "bytes": 1137
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0a_r_robustness_and_semantic_audit\\matched_alternative_cluster_audit.csv",
+      "sha256": "DE75895E0CBFCD24B89FAAF59867A9ABE7F69A264468EDBAAEC0C5B8BE1FE1E2",
+      "bytes": 1693
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0a_r_robustness_and_semantic_audit\\background_high_response_controls.csv",
+      "sha256": "34893821CEAF92DE07BD99AD081BA8A74F402019E8FB051EB23385FCF99545C9",
+      "bytes": 1672025
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0a_r_robustness_and_semantic_audit\\supported_matched_background_controls.csv",
+      "sha256": "6696F41A6A85DFE31C5477236386D67898536C5A6452B7100FCC614FDBA0C132",
+      "bytes": 56735
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0a_r_robustness_and_semantic_audit\\p0_gain_family_comparison.csv",
+      "sha256": "3A0E1ED5D0ABC03833B18B60B6727393ADCE6ECB51253C6B7CF2FA7E924470B2",
+      "bytes": 1039
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0a_r_robustness_and_semantic_audit\\p0_gain_family_by_frame_pair.csv",
+      "sha256": "D0AAF94686E5E6CB0098B12844326156668662F1663663F202460F6CF6A83921",
+      "bytes": 6687
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0a_r_robustness_and_semantic_audit\\q95_relative_percentile_semantic_audit.csv",
+      "sha256": "9963EBE3344FC55FAA246C33AA81B8028CAC4518DF14C73D4F107BD7F97D8A24",
+      "bytes": 897
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0a_r_robustness_and_semantic_audit\\shared_unresolved_positive_audit.csv",
+      "sha256": "BF906B919047DF2E352F374040D3316BC6C037AF91DB33B292822E83B9CBB2EE",
+      "bytes": 2878
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0a_r_robustness_and_semantic_audit\\correlated_descriptor_audit.csv",
+      "sha256": "13D47086F565FBB0C34E3B2298EEC48413C845EA16A8B40323848B255FA951F4",
+      "bytes": 6178
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0a_r_robustness_and_semantic_audit\\real_case_registry.csv",
+      "sha256": "AB36FF170CDAFA836E380D4A8FE1D509BFD77EECFB360CFCD0372323F9A199C5",
+      "bytes": 3211
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0a_r_robustness_and_semantic_audit\\audit_summary.json",
+      "sha256": "34EC52F09CD29620E88D1BC3BD4ACB3AEE9F7F1BFAB9579A807DDB3E3FC8545D",
+      "bytes": 1964
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0a_r_robustness_and_semantic_audit\\M0A_R_ROBUSTNESS_AND_SEMANTIC_AUDIT_REPORT.md",
+      "sha256": "B8BBF60F1442A6F8D7351A13615D68D4204261801604C489BACAED061C154CD2",
+      "bytes": 7584
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0a_r_robustness_and_semantic_audit\\execution_ledger.json",
+      "sha256": "5520896D420373E16F3E272108C4451178F32122AF6C7DAC7387BB87A21810DB",
+      "bytes": 809
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0a_r_robustness_and_semantic_audit\\figures\\01_one_pixel_boundary_case.png",
+      "sha256": "C53FD6D3F3C6E50AFE471178CF282E2B59C8B97710F1989DD31C4293FC774055",
+      "bytes": 141757
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0a_r_robustness_and_semantic_audit\\figures\\02_six_pixel_p0_gain_case.png",
+      "sha256": "43578E80BA0F07A1722EE1BD5EBB532079B7B888A7DCE11530A6BB8A810A3823",
+      "bytes": 592133
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0a_r_robustness_and_semantic_audit\\figures\\03_nineteen_pixel_zero_better_case.png",
+      "sha256": "BFB5644EFD012650A389178E800E4601F34FEC97ED4C73230747456045A9CCA1",
+      "bytes": 1159816
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0a_r_robustness_and_semantic_audit\\figures\\04_split_like.png",
+      "sha256": "C2603E110BF173739C86288B1597874A9EC9FF61A5B180D9633A5BB47F8764ED",
+      "bytes": 552060
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0a_r_robustness_and_semantic_audit\\figures\\05_merge_like.png",
+      "sha256": "F793100C09A2CC4938A579913C7B223F9AE0FC4C2DACC06FBB1D3853A35C9F9E",
+      "bytes": 554584
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0a_r_robustness_and_semantic_audit\\figures\\06_supported_vs_deceptive_matched_alternative.png",
+      "sha256": "F67478F323EE2BDD97FC0BFD97DD167777638519692F65F6F2300B6ACF756B49",
+      "bytes": 1520361
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0a_r_robustness_and_semantic_audit\\figures\\07_supported_shared_high_retention.png",
+      "sha256": "9BEC5B4BA0BFA669B77D36FFB30EC3AD1405E4CDBFDA87B32053D8BBDFB83632",
+      "bytes": 996118
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0a_r_robustness_and_semantic_audit\\figures\\08_supported_shared_low_retention.png",
+      "sha256": "48F685174C904858F9D32575B4E18D140B5A4D7699D9BEEA8DC91240C3F2FB47",
+      "bytes": 1517040
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0a_r_robustness_and_semantic_audit\\figures\\09_reference_free_high_persistence.png",
+      "sha256": "A6FB611F949F05D8299A413CD9CC602F2ECD28EDD55FC418EDA94A86C81AEFF0",
+      "bytes": 1473498
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0a_r_robustness_and_semantic_audit\\figures\\10_reference_free_max_p0_gain.png",
+      "sha256": "D7BDFE69D04EC98462CC3A048753ECDC57F7F44A3624FC2C85F8CFE8033873FA",
+      "bytes": 594527
+    }
+  ]
+}

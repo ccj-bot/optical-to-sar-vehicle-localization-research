@@ -1,0 +1,243 @@
+{
+  "schema": "PERSON_M0A_R_INDEPENDENT_VALIDATION_V1",
+  "status": "PASS",
+  "checks_passed": 28,
+  "checks_total": 28,
+  "checks": [
+    {
+      "name": "required_audit_outputs",
+      "status": "PASS",
+      "details": []
+    },
+    {
+      "name": "protocol_freeze_status",
+      "status": "PASS",
+      "details": "FROZEN_BEFORE_RUN"
+    },
+    {
+      "name": "protocol_hash",
+      "status": "PASS",
+      "details": "BA73E645F3342FE0CFE37206E9108F99BC0FA87C541D966A80AB705B793ED6A2"
+    },
+    {
+      "name": "frozen_m0a_inputs_unchanged",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "name": "gt_blind_strata_cutpoints",
+      "status": "PASS",
+      "details": {
+        "expected": [
+          70,
+          209,
+          587
+        ],
+        "observed": [
+          70,
+          209,
+          587
+        ]
+      }
+    },
+    {
+      "name": "all_source_regions_accounted",
+      "status": "PASS",
+      "details": 1064
+    },
+    {
+      "name": "tiny_cases_preserved_in_strata",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "name": "effective_supported_clusters",
+      "status": "PASS",
+      "details": {
+        "edges": 6,
+        "pairs": 3
+      }
+    },
+    {
+      "name": "supported_not_tiny_driven",
+      "status": "PASS",
+      "details": {
+        "LARGE_Q4": 6
+      }
+    },
+    {
+      "name": "all_supported_shared_two_targets",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "name": "one_structural_control_per_source",
+      "status": "PASS",
+      "details": {
+        "rows": 1064,
+        "sources": 1064
+      }
+    },
+    {
+      "name": "control_selection_semantics",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "name": "five_background_controls_per_supported_edge",
+      "status": "PASS",
+      "details": {
+        "rows": 30,
+        "supported": 6
+      }
+    },
+    {
+      "name": "matched_controls_reference_free",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "name": "leave_one_pair_out_complete",
+      "status": "PASS",
+      "details": [
+        "NONE",
+        "F472_TO_F473",
+        "F482_TO_F483",
+        "F487_TO_F488"
+      ]
+    },
+    {
+      "name": "loo_transport_direction_stable",
+      "status": "PASS",
+      "details": [
+        {
+          "dropped_frame_pair": "NONE",
+          "p0_retention_median": 0.9093242812814,
+          "delta_p0_median": 0.0550255620621187
+        },
+        {
+          "dropped_frame_pair": "F472_TO_F473",
+          "p0_retention_median": 0.9093242812814,
+          "delta_p0_median": 0.0550255620621187
+        },
+        {
+          "dropped_frame_pair": "F482_TO_F483",
+          "p0_retention_median": 0.8225968546716408,
+          "delta_p0_median": 0.0493668520565352
+        },
+        {
+          "dropped_frame_pair": "F487_TO_F488",
+          "p0_retention_median": 0.9267060994764866,
+          "delta_p0_median": 0.0709214891648745
+        }
+      ]
+    },
+    {
+      "name": "p0_gain_evidence_families",
+      "status": "PASS",
+      "details": [
+        "REFERENCE_FREE_STRUCTURAL_HIGH_RESPONSE_CONTROLS",
+        "REFERENCE_SUPPORTED_EDGES",
+        "REFERENCE_UNSUPPORTED_MATCHED_ALTERNATIVES",
+        "SUPPORTED_MATCHED_REFERENCE_FREE_CONTROLS"
+      ]
+    },
+    {
+      "name": "positive_semantics_not_upgraded",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "name": "no_person_exclusive_positive",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "name": "correlated_descriptor_semantics",
+      "status": "PASS",
+      "details": [
+        {
+          "descriptor_a": "q95_source_total_retention",
+          "descriptor_b": "q95_destination_explained_fraction"
+        },
+        {
+          "descriptor_a": "q95_source_total_retention",
+          "descriptor_b": "q95_soft_iou"
+        },
+        {
+          "descriptor_a": "q90_envelope",
+          "descriptor_b": "q95_region_and_q97p5_core"
+        }
+      ]
+    },
+    {
+      "name": "ten_deterministic_real_cases",
+      "status": "PASS",
+      "details": [
+        "ONE_PIXEL_BOUNDARY_CASE",
+        "SIX_PIXEL_P0_GAIN_CASE",
+        "NINETEEN_PIXEL_ZERO_BETTER_CASE",
+        "SPLIT_LIKE",
+        "MERGE_LIKE",
+        "SUPPORTED_VS_DECEPTIVE_MATCHED_ALTERNATIVE",
+        "SUPPORTED_SHARED_HIGH_RETENTION",
+        "SUPPORTED_SHARED_LOW_RETENTION",
+        "REFERENCE_FREE_HIGH_PERSISTENCE",
+        "REFERENCE_FREE_MAX_P0_GAIN"
+      ]
+    },
+    {
+      "name": "ten_real_case_figures_readable",
+      "status": "PASS",
+      "details": {
+        "count": 10
+      }
+    },
+    {
+      "name": "one_six_nineteen_pixel_cases_rendered",
+      "status": "PASS",
+      "details": [
+        1,
+        6,
+        19,
+        110,
+        677,
+        941,
+        1404,
+        1969
+      ]
+    },
+    {
+      "name": "evidence_faithful_state",
+      "status": "PASS",
+      "details": "M0A_R_TRANSPORT_VALID_BUT_PERSON_SPECIFICITY_NOT_ESTABLISHED"
+    },
+    {
+      "name": "m0a_unchanged_m0b_not_executed",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "name": "prohibited_claims_false",
+      "status": "PASS",
+      "details": {
+        "optical_sar_motion_consistency": false,
+        "person_specific_region_continuation": false,
+        "identity_or_assignment": false,
+        "ambiguity_reduction": false,
+        "runtime_optical_identity": false,
+        "final_sar_localization": false
+      }
+    },
+    {
+      "name": "report_semantic_boundaries",
+      "status": "PASS",
+      "details": []
+    },
+    {
+      "name": "manifest_hashes_and_boundaries",
+      "status": "PASS",
+      "details": null
+    }
+  ]
+}

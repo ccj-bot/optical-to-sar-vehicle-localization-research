@@ -218,3 +218,18 @@
 - 证据限制：仅 3 个有连续人工 reference 的 frame pairs，6/6 supported edges 全部 shared/unresolved；病例选择还暴露 tiny-region 极值与 zero-zero approximate-equal case，不能扩写为 identity 或 ambiguity solved。
 - 正式 HTML：`M0A_R02_LAG1_Q95_REGION_SUPPORT_TRANSPORT_REPORT.html`；pre/post real-case figures 为 `9/12` 张，manual magenta overlay 只出现在 post-reference 版本。
 - 本轮到此停止，不运行 lag3/lag5、M0B、optical angular dynamics、tracker、assignment、classifier、score fusion 或 SAR localization。
+
+## M0A-R robustness / semantic audit 与 M0B 草案（2026-08-28）
+
+- 独立审计版本：`M0A_R_ROBUSTNESS_AND_SEMANTIC_AUDIT`；没有修改或重跑冻结 M0A。
+- 最终审计状态：`M0A_R_TRANSPORT_VALID_BUT_PERSON_SPECIFICITY_NOT_ESTABLISHED`。它只限定 M0A 的解释，不覆盖原状态 `M0A_REGION_SUPPORT_TRANSPORT_WITH_P0_GAIN`。
+- 6 个 supported base edges 只来自 3 个 frame-pair clusters；历史 `29/30` 是 cluster 内描述性比较，不是 30 个独立观测。
+- 由全部 1,064 个 pre-reference source regions GT-blind 冻结的面积层为 `<=70 / 71-209 / 210-587 / >=588 px`；6 个 supported edges 全部在 `LARGE_Q4`，所以 nominal supported gain 不是 tiny-region 驱动。1/6/19-pixel 病例全部保留并渲染。
+- supported P0/ZERO/delta 中位数为 `0.9093 / 0.8418 / +0.0550`；size/topology-matched reference-free controls 为 `0.8594 / 0.8462 / +0.0223`。P0 是有效公共配准，但 PERSON-specific mechanism 未建立。
+- 6/6 positives 均支持两个 target references，PERSON-exclusive positive 为 `0`；正例语义保持 `REFERENCE_SUPPORTED_DYNAMIC_EXPLANATION`。
+- q95 是逐帧相对 percentile superlevel set；region existence 不是 PERSON presence。retention、destination explained fraction、soft IoU 共享同一 intersection primitive，q90/q95/q97.5 共享同一冻结 `S(x)`，不能按列数当独立物理证据投票。
+- 独立验证：`PASS (28/28)`；十类确定性病例图全部可读。
+- 两项执行修复仅影响渲染/报告构造：MERGE_LIKE related IDs 的 source-frame 解析，以及用本地确定性 Markdown table renderer 替代缺失的可选 `tabulate`。科学表、控制、阈值、M0A 输入和状态规则未改变。
+- 权威源与 supersession 台账：`output/person_physics_guided_image_domain_study_20260824/m0a_r_robustness_and_semantic_audit/AUTHORITATIVE_SOURCE_REVIEW_AND_SUPERSESSION.md`。
+- M0B 草案：`docs/M0B_OPTICAL_SAR_ANGULAR_DYNAMIC_CONSISTENCY_PROTOCOL_DRAFT.md`，状态 `DRAFT_NOT_EXECUTED`。主对象固定为 `raw_track_fragment_id`，先 hard feasibility，再分离 evidence families 和 Pareto/partial-order；固定 SAR-only、direction、magnitude、timing ablations，不拟合最佳 shift，不实现 tracker/assignment/唯一 path。
+- 若以后显式批准执行，最小 pilot 仍限 R02 F472-F494 的 22 个 lag1 pairs，以 angular direction 为首个增量因素；M0B 本轮没有运行。

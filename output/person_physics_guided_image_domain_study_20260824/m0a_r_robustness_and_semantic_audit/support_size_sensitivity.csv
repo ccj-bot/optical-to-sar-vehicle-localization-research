@@ -1,0 +1,5 @@
+﻿stratum,all_pre_reference_source_region_count,supported_edge_count,supported_p0_retention_median,supported_delta_p0_median,reference_free_structural_control_count,control_p0_retention_median,control_zero_retention_median,control_delta_p0_median,tiny_cases_deleted
+TINY_Q1,266,0,,,265,0.0,0.0,0.0,False
+SMALL_Q2,267,0,,,266,0.3925261064009233,0.36031991744066044,0.0,False
+MEDIUM_Q3,265,0,,,262,0.7653721538865295,0.7161788240152807,0.009300185027399127,False
+LARGE_Q4,266,6,0.9093242812814,0.05502556206211878,243,0.8320874763257575,0.7883720930232558,0.03178662309607494,False

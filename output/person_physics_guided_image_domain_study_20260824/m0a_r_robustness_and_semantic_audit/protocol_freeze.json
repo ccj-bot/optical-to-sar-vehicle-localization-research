@@ -1,0 +1,80 @@
+{
+  "schema": "PERSON_M0A_R_PROTOCOL_FREEZE_V1",
+  "status": "FROZEN_BEFORE_RUN",
+  "starting_head": "02a112565e72a3aed4ef674377cdb9052a33b33a",
+  "protocol_sha256": "BA73E645F3342FE0CFE37206E9108F99BC0FA87C541D966A80AB705B793ED6A2",
+  "interpreter": "D:\\MINICONDA\\envs\\py311\\python.exe",
+  "implementation_hashes": [
+    {
+      "path": "tasks/person_m0a_r_robustness_and_semantic_audit_20260828/run_m0a_r_robustness_and_semantic_audit.py",
+      "sha256": "23660C7B5D968299C6A4FF03F088466687E6F22BD7C6055AB7742AF8DF499638"
+    },
+    {
+      "path": "tasks/person_m0a_r_robustness_and_semantic_audit_20260828/validate_m0a_r_robustness_and_semantic_audit.py",
+      "sha256": "F1A859E9703E629F79288A829CA039533FD50A8D86AB927AE2DAEB9812D84834"
+    }
+  ],
+  "input_hashes": [
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/m0a_r02_lag1_q95_region_support_transport_pilot/M0A_R02_LAG1_Q95_REGION_SUPPORT_TRANSPORT_PROTOCOL_FROZEN_BEFORE_RUN.md",
+      "sha256": "0A2116AD3FCBF7C77751B365BFE0063C7FD91A6C77AE64346FAE80D52281E025"
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/m0a_r02_lag1_q95_region_support_transport_pilot/pre_reference_region_nodes.csv",
+      "sha256": "68A8D80AFD92468829B594B50F2DDD4685F4C3FB9B34DCF98DD666C89CA7F950"
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/m0a_r02_lag1_q95_region_support_transport_pilot/pre_reference_compatibility_matrix.csv",
+      "sha256": "7AEFF02A0026D79A073F35DC2CCEBCE9000433FCE686165EAA80ACD3A906B67A"
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/m0a_r02_lag1_q95_region_support_transport_pilot/pre_reference_matched_alternative_sets.csv",
+      "sha256": "444A75C272E9A3AF112496C98A861BC6CE162FA763234F6791288150D4E4B65F"
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/m0a_r02_lag1_q95_region_support_transport_pilot/pre_reference_case_registry.csv",
+      "sha256": "99EC7EA9F9D5D0F2313661140D3BB7F7832487F6982BBC73CF4A6C22647CDCFF"
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/m0a_r02_lag1_q95_region_support_transport_pilot/post_reference_supported_explanations.csv",
+      "sha256": "741C5316C65F66CD1BAC55D5320C22A862EA8766A864675E8B56A9E67B58FC09"
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/m0a_r02_lag1_q95_region_support_transport_pilot/post_reference_matched_alternative_evaluation.csv",
+      "sha256": "850182F2492C633D537EA211408AAB48D4A58E3F10D4EC91FF2497C69452F104"
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/m0a_r02_lag1_q95_region_support_transport_pilot/post_reference_case_registry.csv",
+      "sha256": "2DB194CF960017AC4A57E07455FD74FCCA843D25F6CCFA831A59E7D1CA16EA27"
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/m0a_r02_lag1_q95_region_support_transport_pilot/post_reference_summary.json",
+      "sha256": "5A6C56A74054BB20DCA94DF157E75D7E87C5EB718A1AE5ED580FC4072C4FA6FD"
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/m0a_r02_lag1_q95_region_support_transport_pilot/final_validation.json",
+      "sha256": "5443FE501312B3177810BAC90478BE96652593C47528183E82C773B0A1CFA55D"
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/p1e_sar_only_response_interface/runtime_track_response_region_minimal_v1/offline_reference_response_region_evaluation.csv",
+      "sha256": "4522FE9B65249180B073EA16E87BF11A528DC079B3831348CD7610E3685B7353"
+    },
+    {
+      "path": "output/person_physics_guided_image_domain_study_20260824/p1e_sar_only_response_interface/candidate_recall_semantic_split_v1/single_frame_candidate_recall/manual_reference_candidate_interpretation_v2.csv",
+      "sha256": "796F20EB3080C5B45CDEBBCC71584CC95C65691F056D46C4A31704A3D86E8EC7"
+    }
+  ],
+  "support_size_cutpoints_px": {
+    "tiny_q1_max": 70,
+    "small_q2_max": 209,
+    "medium_q3_max": 587,
+    "large_q4_min": 588
+  },
+  "execution_repair_amendment": {
+    "path": "output/person_physics_guided_image_domain_study_20260824/m0a_r_robustness_and_semantic_audit/00A_EXECUTION_REPAIR_AMENDMENT.md",
+    "scope": "DETERMINISTIC_RENDERER_SOURCE_VS_DESTINATION_DIRECTION_AND_LOCAL_MARKDOWN_RENDERER_ONLY",
+    "scientific_analysis_changed": false
+  },
+  "m0b_execution_allowed": false,
+  "m0a_inputs_mutable": false
+}

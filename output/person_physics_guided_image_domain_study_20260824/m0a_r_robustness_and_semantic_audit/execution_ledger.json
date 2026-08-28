@@ -1,0 +1,29 @@
+{
+  "schema": "PERSON_M0A_R_EXECUTION_LEDGER_V1",
+  "events": [
+    {
+      "stage": "AUDIT_PROTOCOL_AND_HASHES_VERIFIED",
+      "completed_at": "2026-08-28T17:51:43+08:00"
+    },
+    {
+      "stage": "FROZEN_M0A_ARTIFACTS_LOADED_READ_ONLY",
+      "completed_at": "2026-08-28T17:51:43+08:00"
+    },
+    {
+      "stage": "GT_BLIND_SUPPORT_SIZE_STRATA_DERIVED",
+      "completed_at": "2026-08-28T17:52:29+08:00"
+    },
+    {
+      "stage": "CLUSTER_AND_CONTROL_AUDITS_MATERIALIZED",
+      "completed_at": "2026-08-28T17:52:29+08:00"
+    },
+    {
+      "stage": "TEN_DETERMINISTIC_REAL_CASES_RENDERED",
+      "completed_at": "2026-08-28T17:52:29+08:00"
+    },
+    {
+      "stage": "M0A_R_REPORT_COMPLETE_M0B_NOT_EXECUTED",
+      "completed_at": "2026-08-28T17:52:29+08:00"
+    }
+  ]
+}

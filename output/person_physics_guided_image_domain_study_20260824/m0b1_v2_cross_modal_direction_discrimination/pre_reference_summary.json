@@ -1,0 +1,30 @@
+{
+  "schema": "PERSON_M0B1_V2_PRE_REFERENCE_SUMMARY_V1",
+  "created_at": "2026-08-28T23:14:09+08:00",
+  "reference_loaded": false,
+  "reference_sources_opened": false,
+  "starting_head": "752dd28f26666c8e9e08fd94ad0e74a2beebfade",
+  "hypothesis_rows": 308600,
+  "static_feasible_rows": 66260,
+  "dynamic_available_rows": 11252,
+  "same_sample_rows": 8674,
+  "fragment_break_rows": 46334,
+  "deduplicated_optical_pairs": 183,
+  "nominal_deduplicated_optical_pairs": 37,
+  "nominal_optical_state_counts": {
+    "OPTICAL_COHERENT_POSITIVE_SHIFT": 37
+  },
+  "r02_direction_sign_degenerate": true,
+  "branch_equals_global_fraction_dynamic_available": 1.0,
+  "atlas_pair_count": 23822,
+  "atlas_run_count": 56,
+  "atlas_fragment_count": 698,
+  "atlas_future_candidate_window_count": 586,
+  "atlas_adjacent_future_candidate_window_count": 585,
+  "atlas_same_sample_burden": "ZERO_BY_DISTINCT_PAIR_CONTRACT",
+  "atlas_fragment_break_burden": "NOT_DEFINED_WITHOUT_CROSS_FRAGMENT_IDENTITY",
+  "sync_status": "NOMINAL_INDEX_FPS_ZERO_OFFSET_UNVERIFIED",
+  "manual_reference_used_for_representation_or_control_selection": false,
+  "hypotheses_pruned": false,
+  "magnitude_used": false
+}

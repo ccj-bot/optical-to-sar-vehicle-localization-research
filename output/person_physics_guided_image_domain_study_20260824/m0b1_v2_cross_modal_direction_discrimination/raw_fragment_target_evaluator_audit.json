@@ -1,0 +1,20 @@
+{
+  "schema": "PERSON_M0B1_V2_RAW_FRAGMENT_EVALUATOR_AUDIT_V1",
+  "created_at": "2026-08-28T23:16:07+08:00",
+  "audited_sources": [
+    {
+      "path": "output\\person_optical_guided_sar_annotation_full_20260823\\optical_person_frame_hypotheses.parquet",
+      "sha256": "15D65A299762E87BFD6F21E811C754D1DF062AC6AFC1840A1C1A9B162AB8B478",
+      "finding": "contains raw_track_fragment_id but no manual or physical target identity"
+    },
+    {
+      "path": "output\\person_optical_guided_sar_annotation_full_20260823\\pilot_R02ZF\\optical_person_track_frames.csv",
+      "sha256": "709C185CE978BA4A16BAD6A9284142F3A2FAA50509210A5841B6C859D2DF01BD",
+      "finding": "contains person_id but no traceable manual/physical target relation and no raw_track_fragment_id"
+    }
+  ],
+  "direct_raw_fragment_to_manual_target_source_found": false,
+  "status": "M0B1_V2_RAW_BRANCH_EVALUATION_UNRESOLVED",
+  "optical_person_id_used_as_truth": false,
+  "runtime_branch_relabelled": false
+}

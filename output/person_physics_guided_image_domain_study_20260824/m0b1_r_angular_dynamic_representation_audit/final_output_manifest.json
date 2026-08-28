@@ -1,0 +1,176 @@
+{
+  "schema": "PERSON_M0B1_R_OUTPUT_MANIFEST_V1",
+  "created_at": "2026-08-28T22:23:17+08:00",
+  "freeze_sha256": "5C76C9D85DA1786374F4D3C4A93EC8C16D24FCCE116E22B2CDCF32BFA445559A",
+  "reference_loaded": false,
+  "old_work_dependency": false,
+  "frozen_predecessor_state": "M0B1_ANGULAR_DIRECTION_OBSERVABILITY_INSUFFICIENT",
+  "primary_state": "M0B1_R_INTERVAL_OPERATOR_SEMANTIC_MISMATCH_CONFIRMED",
+  "outputs": [
+    {
+      "path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\m0b1_r_angular_dynamic_representation_audit\\audit_summary_pre_reference.json",
+      "size_bytes": 1919,
+      "sha256": "B77BA696CCF26DEC98498183E713C71EAB1A4942ED8117C5CDE88B2BB5C405C8"
+    },
+    {
+      "path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\m0b1_r_angular_dynamic_representation_audit\\bottleneck_hierarchy_pre_reference.csv",
+      "size_bytes": 464,
+      "sha256": "34F0338B10F625A02775CD9D374F9C753F7E966ACEBE1BE8BEFA3DD2EB229196"
+    },
+    {
+      "path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\m0b1_r_angular_dynamic_representation_audit\\bottleneck_hierarchy_pre_reference.parquet",
+      "size_bytes": 4690,
+      "sha256": "9E418FA3EC09895714466B0EAF64B046D71DE28660D854276D8060709C27AB39"
+    },
+    {
+      "path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\m0b1_r_angular_dynamic_representation_audit\\eta_by_exact_frame_separation_pre_reference.csv",
+      "size_bytes": 555,
+      "sha256": "A64BF845C9A26DBD78646C3275CA1F3EBD05B020E99448145D19BDD7FD83C657"
+    },
+    {
+      "path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\m0b1_r_angular_dynamic_representation_audit\\eta_by_exact_frame_separation_pre_reference.parquet",
+      "size_bytes": 11429,
+      "sha256": "72A8AF7E48F8D352FE22C9F6F5881947614728C53F452BAB11598BAC2382E096"
+    },
+    {
+      "path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\m0b1_r_angular_dynamic_representation_audit\\eta_by_exact_time_separation_pre_reference.csv",
+      "size_bytes": 780,
+      "sha256": "C81ADA51901835462249405D4A3C6EC25540B7A1502EA63EC3FB454F1D2B4A7B"
+    },
+    {
+      "path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\m0b1_r_angular_dynamic_representation_audit\\eta_by_exact_time_separation_pre_reference.parquet",
+      "size_bytes": 11526,
+      "sha256": "E7E82D8F316588B0E7D3AD64201510AA6473596D4B4B11B7D5E7E63E8DB70E13"
+    },
+    {
+      "path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\m0b1_r_angular_dynamic_representation_audit\\eta_by_fragment_pre_reference.csv",
+      "size_bytes": 6979,
+      "sha256": "26EEA95936628265A1C299A5571119885B1ED670C226949C783FA27A226E5130"
+    },
+    {
+      "path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\m0b1_r_angular_dynamic_representation_audit\\eta_by_fragment_pre_reference.parquet",
+      "size_bytes": 12958,
+      "sha256": "1B8FD13D66EB6DD066A2627E911D17B56887DF32761386A3776BE98418D95240"
+    },
+    {
+      "path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\m0b1_r_angular_dynamic_representation_audit\\eta_by_frame_separation_stratum_pre_reference.csv",
+      "size_bytes": 565,
+      "sha256": "2145477A1349602266823474C11B5CF94953F46FADECB48C981ADAF1B819BF89"
+    },
+    {
+      "path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\m0b1_r_angular_dynamic_representation_audit\\eta_by_frame_separation_stratum_pre_reference.parquet",
+      "size_bytes": 11407,
+      "sha256": "65B56DA65F6F78B8492CE7700C195A3ED6552EC42F148FC6233BA6B0B85C705C"
+    },
+    {
+      "path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\m0b1_r_angular_dynamic_representation_audit\\eta_by_optical_interval_width_stratum_pre_reference.csv",
+      "size_bytes": 1242,
+      "sha256": "7846FB71B2210C9C3530B166220B29F4AF33093E4C7E33ECED995679F6246E09"
+    },
+    {
+      "path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\m0b1_r_angular_dynamic_representation_audit\\eta_by_optical_interval_width_stratum_pre_reference.parquet",
+      "size_bytes": 11672,
+      "sha256": "857C80D1EEED4AD52CC7388CEABFC1BE3DE03E1EB4D791CC5AE2EB8C270329D2"
+    },
+    {
+      "path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\m0b1_r_angular_dynamic_representation_audit\\eta_by_time_separation_stratum_pre_reference.csv",
+      "size_bytes": 569,
+      "sha256": "E91499880AC52FA922354BD2A37A64BD925458B8BB6C18C4571F2568ED8403AB"
+    },
+    {
+      "path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\m0b1_r_angular_dynamic_representation_audit\\eta_by_time_separation_stratum_pre_reference.parquet",
+      "size_bytes": 11416,
+      "sha256": "3564C80FE963CC50D6CACB63801A03E100B10EA3E187F033A2D85C18827124CC"
+    },
+    {
+      "path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\m0b1_r_angular_dynamic_representation_audit\\eta_summary_overall_pre_reference.csv",
+      "size_bytes": 741,
+      "sha256": "99A8C65B6D759DA0091F21F5FC40CF3F5392D456A32DCAB7FEEB27C521B0082A"
+    },
+    {
+      "path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\m0b1_r_angular_dynamic_representation_audit\\eta_summary_overall_pre_reference.parquet",
+      "size_bytes": 10756,
+      "sha256": "A9F391FFB20A71DF3C82DDDAABE90DADF54815558BB750D925D20FA69D01A792"
+    },
+    {
+      "path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\m0b1_r_angular_dynamic_representation_audit\\M0B1_R_ANGULAR_DYNAMIC_REPRESENTATION_AUDIT_PROTOCOL_FROZEN_BEFORE_RUN.md",
+      "size_bytes": 7321,
+      "sha256": "472F196802547647EECD4164CABB3A6FA486306A3BA239306BDA752A157C761A"
+    },
+    {
+      "path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\m0b1_r_angular_dynamic_representation_audit\\M0B1_R_ANGULAR_DYNAMIC_REPRESENTATION_AUDIT_REPORT.md",
+      "size_bytes": 4658,
+      "sha256": "B9D0921F05B7C39E113D099EB19D289DC953300AEDA8DE36AA271F38891B7CEB"
+    },
+    {
+      "path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\m0b1_r_angular_dynamic_representation_audit\\mapping_direction_semantics_pre_reference.json",
+      "size_bytes": 671,
+      "sha256": "B3B7183C5BFE7650931E8F7AC93D327469C3E8534ED2D3777E7A34A77EC20BF1"
+    },
+    {
+      "path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\m0b1_r_angular_dynamic_representation_audit\\mapping_slope_sign_audit_pre_reference.csv",
+      "size_bytes": 390,
+      "sha256": "A8AFD09FD17FACBB02CF81D2E4936565D5076C30DC3F6FB3B3AF69FEE5C713A8"
+    },
+    {
+      "path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\m0b1_r_angular_dynamic_representation_audit\\mapping_slope_sign_audit_pre_reference.parquet",
+      "size_bytes": 5847,
+      "sha256": "64173A958705362B217890F7B428A56C215A9851717582231A5EC6B36EF11E60"
+    },
+    {
+      "path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\m0b1_r_angular_dynamic_representation_audit\\optical_dynamic_bank_records_pre_reference.csv",
+      "size_bytes": 13955901,
+      "sha256": "C78B09A8EC79CC3D702A2B1AFE07E0E74FE6ACAEB1293DE90241DF90435D91B5"
+    },
+    {
+      "path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\m0b1_r_angular_dynamic_representation_audit\\optical_dynamic_bank_records_pre_reference.parquet",
+      "size_bytes": 326150,
+      "sha256": "68F15024F24AF9714DB4CBD13230EE978D94544D3121C14B4E243B5AC2B3E602"
+    },
+    {
+      "path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\m0b1_r_angular_dynamic_representation_audit\\optical_dynamic_unique_pairs_pre_reference.csv",
+      "size_bytes": 226581,
+      "sha256": "94F08FD4C9A6955AA7BA2E8A1A259A51098C619D3BD2916CA866DEB132EF44AF"
+    },
+    {
+      "path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\m0b1_r_angular_dynamic_representation_audit\\optical_dynamic_unique_pairs_pre_reference.parquet",
+      "size_bytes": 68346,
+      "sha256": "350117C00ACA483933806CA32BCE62C1FBBEFF95E0C59024F0821460AFBD0D45"
+    },
+    {
+      "path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\m0b1_r_angular_dynamic_representation_audit\\protocol_freeze.json",
+      "size_bytes": 4551,
+      "sha256": "5C76C9D85DA1786374F4D3C4A93EC8C16D24FCCE116E22B2CDCF32BFA445559A"
+    },
+    {
+      "path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\m0b1_r_angular_dynamic_representation_audit\\representation_state_summary_pre_reference.csv",
+      "size_bytes": 1056,
+      "sha256": "42EEA7310DBF31759C1B1ADB874B89703E8E5EF1CEB06812D9F930449D9D91D4"
+    },
+    {
+      "path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\m0b1_r_angular_dynamic_representation_audit\\representation_state_summary_pre_reference.parquet",
+      "size_bytes": 3893,
+      "sha256": "15A98B2A10D2684D89932D227951CABAB8817FAA633902B7820F1F71FC4E4078"
+    },
+    {
+      "path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\m0b1_r_angular_dynamic_representation_audit\\sar_q95_corresponding_boundary_structural_diagnostic_pre_reference.csv",
+      "size_bytes": 21848056,
+      "sha256": "2941C7C187467DD35392D45A1819676A2584B6B70D40F9984B0F339615FCDD54"
+    },
+    {
+      "path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\m0b1_r_angular_dynamic_representation_audit\\sar_q95_corresponding_boundary_structural_diagnostic_pre_reference.parquet",
+      "size_bytes": 1669468,
+      "sha256": "980803870311A800783F85BF13A542F7744F8018CB692AEA67B3C41517C2C563"
+    },
+    {
+      "path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\m0b1_r_angular_dynamic_representation_audit\\sar_q95_structural_state_summary_pre_reference.csv",
+      "size_bytes": 321,
+      "sha256": "6A8B11156B103982C3F4395FA1CC0FD547DDB881DBA19561CEC347CF0E3B91C6"
+    },
+    {
+      "path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\m0b1_r_angular_dynamic_representation_audit\\sar_q95_structural_state_summary_pre_reference.parquet",
+      "size_bytes": 3549,
+      "sha256": "2F3C685EACA01DDEAF0675B1667346D66F9D770BA22B9AB83BBDF82CF9C7DBE5"
+    }
+  ]
+}

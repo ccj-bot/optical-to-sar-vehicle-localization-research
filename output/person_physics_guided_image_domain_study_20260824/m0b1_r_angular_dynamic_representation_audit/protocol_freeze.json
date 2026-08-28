@@ -1,0 +1,89 @@
+{
+  "schema": "PERSON_M0B1_R_PROTOCOL_FREEZE_V1",
+  "created_at": "2026-08-28T22:22:26+08:00",
+  "frozen_head": "752dd28f26666c8e9e08fd94ad0e74a2beebfade",
+  "frozen_predecessor_state": "M0B1_ANGULAR_DIRECTION_OBSERVABILITY_INSUFFICIENT",
+  "reference_loaded": false,
+  "manual_reference_used_in_optical_representation_audit": false,
+  "frozen_mapping_tables_with_prior_reference_provenance_read_for_sign_audit": true,
+  "manual_reference_used_to_select_representation": false,
+  "representation_selected_from_post_reference_outcome": false,
+  "numerical_tolerance_deg": 1e-12,
+  "old_work_dependency": false,
+  "protocol": {
+    "path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\m0b1_r_angular_dynamic_representation_audit\\M0B1_R_ANGULAR_DYNAMIC_REPRESENTATION_AUDIT_PROTOCOL_FROZEN_BEFORE_RUN.md",
+    "size_bytes": 7321,
+    "sha256": "472F196802547647EECD4164CABB3A6FA486306A3BA239306BDA752A157C761A"
+  },
+  "runner": {
+    "path": "D:\\profile\\research\\workspace\\tasks\\person_m0b1_r_angular_dynamic_representation_audit_20260828\\run_m0b1_r_representation_audit.py",
+    "size_bytes": 37025,
+    "sha256": "929561E9DE417496F4F7BC2DFC7EAC17B159527D4754ED7A12C8FE04C5E58268"
+  },
+  "validator": {
+    "path": "D:\\profile\\research\\workspace\\tasks\\person_m0b1_r_angular_dynamic_representation_audit_20260828\\validate_m0b1_r_representation_audit.py",
+    "size_bytes": 10009,
+    "sha256": "6C08666B5E0ACB70EF90506EDC1B9E7B9C2DB73346F93C11D924681AF5C06B45"
+  },
+  "sources": [
+    {
+      "path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\m0b1_r02_raw_fragment_angular_direction_diagnostic\\dynamic_hypotheses_pre_reference.csv",
+      "size_bytes": 229720800,
+      "sha256": "F9B5960A6997AB5A978B35268FDE6740256CE87189C7A4EF413EC6511ED63FB2"
+    },
+    {
+      "path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\m0b1_r02_raw_fragment_angular_direction_diagnostic\\pre_reference_summary.json",
+      "size_bytes": 1233,
+      "sha256": "9075781BF11F07F1632142E9AF21106EA14843F4F7048A2857E951F857FA80E8"
+    },
+    {
+      "path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\m0b1_r02_raw_fragment_angular_direction_diagnostic\\M0B1_R02_RAW_FRAGMENT_ANGULAR_DIRECTION_PROTOCOL_FROZEN_BEFORE_RUN.md",
+      "size_bytes": 12428,
+      "sha256": "702277348913B3E7CBA6A4CEBF56ACA08807021F91C2E202236EDD3573973278"
+    },
+    {
+      "path": "D:\\profile\\research\\workspace\\tasks\\person_m0b1_r02_raw_fragment_angular_direction_20260828\\run_m0b1_raw_fragment_angular_direction.py",
+      "size_bytes": 71727,
+      "sha256": "71DD0B223A5C906FC45118339EE0B2FA3B3BF76F8D55D4DD5DB5DDDF42F91ADB"
+    },
+    {
+      "path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\m0b1_r02_raw_fragment_angular_direction_diagnostic\\M0B1_R02_RAW_FRAGMENT_ANGULAR_DIRECTION_REPORT.md",
+      "size_bytes": 5204,
+      "sha256": "107B0EFE3A6E3D7EF07905CED6EC26C28A6AA62101305F623EA58F2841F535F3"
+    },
+    {
+      "path": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\m0b1_r02_raw_fragment_angular_direction_diagnostic\\timing_query_table_pre_reference.csv",
+      "size_bytes": 19402,
+      "sha256": "7A32CD4D9F33C7056B9992C108E368E3928DCF395562FA35BEBEA54670E2662E"
+    },
+    {
+      "path": "D:\\profile\\research\\workspace\\output\\r01_person_azimuth_pilot_20260819\\model_summary.json",
+      "size_bytes": 11076,
+      "sha256": "3463FFF0A8D1507ECA383356E0FB108BD60E1226A19890B62EA8C8FD5090BA42"
+    },
+    {
+      "path": "D:\\profile\\research\\workspace\\output\\r01_person_azimuth_pilot_20260819\\time_offset_scan.csv",
+      "size_bytes": 11775,
+      "sha256": "8E70B2EE2D829506833523DC0D41A987D3AF6E370599CA4EDB8BF274E9E53566"
+    },
+    {
+      "path": "D:\\profile\\research\\workspace\\output\\r01_person_azimuth_pilot_20260819\\leave_one_person_out_metrics.csv",
+      "size_bytes": 28898,
+      "sha256": "ABF5712A5D7A8F6227965E56DEDD22C846BAD251EE50829B027E6D43C0F6B6A4"
+    }
+  ],
+  "prohibited": [
+    "post_reference_representation_selection",
+    "manual_reference",
+    "weighted_score",
+    "classifier",
+    "magnitude_fit",
+    "pruning",
+    "pareto_pruning",
+    "factor_graph",
+    "identity",
+    "tracker",
+    "M0B2",
+    "P2"
+  ]
+}

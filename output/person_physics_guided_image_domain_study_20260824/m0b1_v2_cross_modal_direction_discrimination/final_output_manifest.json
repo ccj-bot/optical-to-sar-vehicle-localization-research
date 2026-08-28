@@ -1,0 +1,220 @@
+{
+  "schema": "PERSON_M0B1_V2_FINAL_OUTPUT_MANIFEST_V1",
+  "created_at": "2026-08-28T23:16:16+08:00",
+  "reference_loaded": true,
+  "pre_reference_manifest_sha256": "F476C042B745E1B86629CB728B7280482D38AFB0720F6E56FE820A08939A72F3",
+  "files": [
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_v2_cross_modal_direction_discrimination\\post_reference_hypothesis_evaluation.parquet",
+      "bytes": 105063,
+      "sha256": "DE71267E4ABEA132C321F460117B3A8BE44657510C5F92DA8608939E3A7EA6C3"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_v2_cross_modal_direction_discrimination\\supported_vs_matched_null_pairwise_direction.csv",
+      "bytes": 96172,
+      "sha256": "9573DB41A2F031DD8FAF3448E9285D1EB6D89B0F5754F6CEA30EC9E5743E9999"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_v2_cross_modal_direction_discrimination\\supported_vs_matched_null_cluster_decisions.csv",
+      "bytes": 44088,
+      "sha256": "A1919D75EBA1B176CB25F19E3F2DC30889A567AC740C81766AA4205ABFD2D276"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_v2_cross_modal_direction_discrimination\\pairwise_direction_summary.csv",
+      "bytes": 212,
+      "sha256": "1CEBD8393BE6EF8F9E09C0492FD18AE8585045AB9ED349F6248367A7BD716862"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_v2_cross_modal_direction_discrimination\\sar_only_direction_cross_tab.csv",
+      "bytes": 1341,
+      "sha256": "43EFE647060F8A661FB6F9E1604246DB65CBFB295327B08951084DF4E6B5699E"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_v2_cross_modal_direction_discrimination\\cluster_aware_direction_by_frame_pair.csv",
+      "bytes": 1129,
+      "sha256": "0358CD01630E200A4D2D85686D3BC1736E37E6F029C280DE64E60260539C23CD"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_v2_cross_modal_direction_discrimination\\cluster_aware_direction_by_raw_fragment.csv",
+      "bytes": 1744,
+      "sha256": "5934C000942CC94B514CEEE6AB857D50577E0FC2327952E5592041D24DFAE801"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_v2_cross_modal_direction_discrimination\\leave_one_frame_pair_out_direction.csv",
+      "bytes": 135,
+      "sha256": "243E5730DB544868666CFC6384B07900E764376DCF1880A92988E80493B4D8A7"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_v2_cross_modal_direction_discrimination\\static_shell_tautology_control.csv",
+      "bytes": 2953,
+      "sha256": "2A1B47CA294309C9F294BBDD0E9D328059BA8A03B2DC41D3F71AF762C64B985A"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_v2_cross_modal_direction_discrimination\\raw_fragment_target_evaluator_audit.json",
+      "bytes": 998,
+      "sha256": "092836DD295CCF06A02D4F6226E7740940F443F310C218D478A9C7C9FC3C20D9"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_v2_cross_modal_direction_discrimination\\wrong_raw_fragment_control_status.json",
+      "bytes": 200,
+      "sha256": "1F139A8E760CF91672EAC2BE19B9BDC358F3C4BDB39C62470AF5056624C2218F"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_v2_cross_modal_direction_discrimination\\offline_visual_raw_fragment_target_review.csv",
+      "bytes": 3935,
+      "sha256": "D2525153635E80689862CEA34525D4AE783B09A851408B888249D3A41A8E15A4"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_v2_cross_modal_direction_discrimination\\real_case_registry.csv",
+      "bytes": 4575,
+      "sha256": "0E12FC69924D512F7B91347C3F70B8F8468B37A79EB3BF9B59479A9F1316F29D"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_v2_cross_modal_direction_discrimination\\final_summary.json",
+      "bytes": 2278,
+      "sha256": "FC1E2CBE828831461226FBBF09D67A51E98D39241252DB0C78210769F39C98CE"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_v2_cross_modal_direction_discrimination\\M0B1_V2_CROSS_MODAL_DIRECTION_DISCRIMINATION_REPORT.md",
+      "bytes": 10699,
+      "sha256": "0ECADB2E0FD2128662CF37148FAD4BBC7AE6E1F2E50F37DD1887EDC7443E2707"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_v2_cross_modal_direction_discrimination\\figures\\POST_REFERENCE_CASE_CONTACT_SHEET.png",
+      "bytes": 1165984,
+      "sha256": "F05D247310607A0C097B2285EB3740ED5194B37323A89DBC3689127624ED94E6"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_v2_cross_modal_direction_discrimination\\offline_raw_fragment_review_packs\\review_01_H_D5FFADBB5BE6ABBB8150.png",
+      "bytes": 1577240,
+      "sha256": "BE2E830EEF83EF6A5AF187E1AF51EC0D62D61AA4A9174A79B94151760D485BAD"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_v2_cross_modal_direction_discrimination\\offline_raw_fragment_review_packs\\review_02_H_227FF2A7A656841D0AEB.png",
+      "bytes": 1557227,
+      "sha256": "C12BA200C893F7929843B29A13E0E673056749AE5E8A354D466D55B084F98430"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_v2_cross_modal_direction_discrimination\\offline_raw_fragment_review_packs\\review_03_H_CB6E8AA383807F9A94B9.png",
+      "bytes": 601687,
+      "sha256": "C21D9537D63945AEBD0F4CA3C334B51D38E1DA440B11F0209A336EA658C8FC98"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_v2_cross_modal_direction_discrimination\\offline_raw_fragment_review_packs\\review_04_H_E9DB765C57E82928EC8E.png",
+      "bytes": 974513,
+      "sha256": "FA01C68CA7902548D891DDC4CB760B17DABEBA85755199301CDB797EDACB528F"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_v2_cross_modal_direction_discrimination\\offline_raw_fragment_review_packs\\review_05_H_627AF9A9A675886711B9.png",
+      "bytes": 945331,
+      "sha256": "49C5F9656A524A31DA0D1235F0578F306B451CB5340C5D094848FD5DD2EBEBD2"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_v2_cross_modal_direction_discrimination\\offline_raw_fragment_review_packs\\review_06_H_17615E7C7E6B532EE85E.png",
+      "bytes": 1192248,
+      "sha256": "A18DEE7CAE72FA25A9B52F5C7E0B40C151D09F57BB065D1C885ED18331FF5D51"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_v2_cross_modal_direction_discrimination\\offline_raw_fragment_review_packs\\review_07_H_A212E9E1D15FA133F9CE.png",
+      "bytes": 1067542,
+      "sha256": "EBA90710ED91BF3626C4B274CDDF45D57B8BBA75729DBC91221A2AFB1C485657"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_v2_cross_modal_direction_discrimination\\offline_raw_fragment_review_packs\\review_08_H_63F721C65E970641E1E3.png",
+      "bytes": 899895,
+      "sha256": "0EF7A2F2C5C0298199B86BC4A5971C11851BAFABF69046233E5B343D8BECAFFC"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_v2_cross_modal_direction_discrimination\\offline_raw_fragment_review_packs\\review_09_H_09CFF868433878B55704.png",
+      "bytes": 1288494,
+      "sha256": "797B5A9F7D42C9CFE11A48135E084F39762E13C0DFAFBC0F93100E4E47DAC4C4"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_v2_cross_modal_direction_discrimination\\offline_raw_fragment_review_packs\\review_10_H_5DB842D02EFBE50A2FF2.png",
+      "bytes": 1247923,
+      "sha256": "4ECDA2C9BA7E520E3280F4F69B6B689EE20DE094A8DA34390AE9A431E7A9B13A"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_v2_cross_modal_direction_discrimination\\figures\\post_reference_cases\\01_supported_optical_positive_sar_positive.png",
+      "bytes": 603956,
+      "sha256": "8C064AAE37118279F42E5EEB9C4D62090242DF5715F9C78088B7CC32833D9800"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_v2_cross_modal_direction_discrimination\\figures\\post_reference_cases\\03_supported_sar_deformation.png",
+      "bytes": 1569723,
+      "sha256": "CCA5CCD3E9A081365276D298C0B1BBDB7063B243301D5F44B52FA6486725FDF0"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_v2_cross_modal_direction_discrimination\\figures\\post_reference_cases\\04_matched_null_concordant.png",
+      "bytes": 1575414,
+      "sha256": "C386831E272A267DE8F5768F42E1D326153CC994630ACAB0E6059E31A7E18BC6"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_v2_cross_modal_direction_discrimination\\figures\\post_reference_cases\\05_matched_null_contradictory.png",
+      "bytes": 952001,
+      "sha256": "A70A5426DB14BB4D11C81EB709221328ABA5F2547AD9D7A90EFD4C7A3125DDA6"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_v2_cross_modal_direction_discrimination\\figures\\post_reference_cases\\06_branch_equals_global.png",
+      "bytes": 1558736,
+      "sha256": "CCA333FAF12AC95D13DFE1D94BE3F541D4A7A194C1561BA0F92ACD433DBBC9E1"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_v2_cross_modal_direction_discrimination\\figures\\post_reference_cases\\10_fragment_break.png",
+      "bytes": 1568110,
+      "sha256": "9A0B31D4AA571B7514B37897B8EDE1AA8E2424A18DC61B3E3631C3A27B91B20A"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_v2_cross_modal_direction_discrimination\\figures\\post_reference_cases\\11_same_sample.png",
+      "bytes": 1133412,
+      "sha256": "071A6E98A81DE2A5C56BDA8DFE04223E6FB0A5EAC22AA1FC3661CC78B42D4D40"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_v2_cross_modal_direction_discrimination\\figures\\post_reference_cases\\13_static_shell_plausible_direction_contradicts.png",
+      "bytes": 953197,
+      "sha256": "35CA26A8A150A60E177457739331BFC9F0BF7D911EB142AA5657CB8BBA59A883"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_v2_cross_modal_direction_discrimination\\figures\\post_reference_cases\\16_r02_scene_common_positive.png",
+      "bytes": 1413855,
+      "sha256": "7DFCBDE4377212BADD6F2E0668C17A52270035C5CB166B2A683D7F4E25B6D7BD"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_v2_cross_modal_direction_discrimination\\figures\\post_reference_cases\\17_broader_atlas_opposite_direction_branches.png",
+      "bytes": 1081171,
+      "sha256": "C3300FA6752F110CB741080DBD235A4782EB77D073CC8DD8FA7725011BD37A2F"
+    },
+    {
+      "path": "tasks\\person_m0b1_v2_cross_modal_direction_discrimination_20260828\\run_m0b1_v2_post_reference_repair.py",
+      "bytes": 2842,
+      "sha256": "1B7380DF19B8357337730F7E5BAB112FFBADF36C51D914197E810DEDBFC703A4"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_v2_cross_modal_direction_discrimination\\AMENDMENT_01_POST_REFERENCE_SENTINEL_PAIR_INDEX.md",
+      "bytes": 992,
+      "sha256": "CA0096F027719350967E61C8C5117E3C373CFBA31AB55E2B253F9EC57BFD6526"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_v2_cross_modal_direction_discrimination\\VISUAL_QA_AND_CLOSEOUT.md",
+      "bytes": 2510,
+      "sha256": "E97039AB7C8DE8409DA82B7A292F3207C7F858C76116DF2832DB162E105D83F1"
+    },
+    {
+      "path": "tasks\\person_m0b1_v2_cross_modal_direction_discrimination_20260828\\update_m0b1_v2_visual_qa_manifest.py",
+      "bytes": 1302,
+      "sha256": "A040B0342FD2AD9DB315BDCCDF8A09F83CE66F7CDBD837A92F52E83F251260DA"
+    }
+  ],
+  "hypotheses_pruned": false,
+  "magnitude_fit": false,
+  "timing_shift_selected": false,
+  "identity_assignment_performed": false,
+  "counterfactual_admissibility_executed": false,
+  "frozen_execution_amendment": {
+    "name": "AMENDMENT_01_POST_REFERENCE_SENTINEL_PAIR_INDEX",
+    "scientific_rule_changed": false,
+    "pre_reference_outputs_changed": false
+  },
+  "visual_qa_completed": true,
+  "visual_qa_aggregate_conflict_observed": false
+}

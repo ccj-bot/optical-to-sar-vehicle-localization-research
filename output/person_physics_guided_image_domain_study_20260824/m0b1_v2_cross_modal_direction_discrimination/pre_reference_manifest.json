@@ -1,0 +1,98 @@
+{
+  "schema": "PERSON_M0B1_V2_PRE_REFERENCE_MANIFEST_V1",
+  "created_at": "2026-08-28T23:14:09+08:00",
+  "reference_loaded": false,
+  "reference_sources_opened": false,
+  "protocol_freeze_sha256": "4A6FEA5ED8E426D18D41FDCDF0659E749D5F3E17DC8211D4E38333C549510827",
+  "files": [
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_v2_cross_modal_direction_discrimination\\direction_hypothesis_bank_pre_reference.parquet",
+      "bytes": 15916936,
+      "sha256": "F87C17ABD028282EA1AB3013CA1E1E012A08C5E1711D78FF3B6C9199DC7BDACB"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_v2_cross_modal_direction_discrimination\\optical_descriptors_unique_pre_reference.csv",
+      "bytes": 232286,
+      "sha256": "77FABACD3EC9ECE80E07EC7CD9EF088D625E60D6464489A9427E4127DF169D0F"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_v2_cross_modal_direction_discrimination\\sar_descriptors_pre_reference.csv",
+      "bytes": 11576857,
+      "sha256": "240F52FF2221528ED68290F9D3C701B84A20279905D70DF099BEFCA836894A65"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_v2_cross_modal_direction_discrimination\\scene_common_direction_audit_pre_reference.csv",
+      "bytes": 6967,
+      "sha256": "BC17EB1584611283DB70FA36996E62375A7326DF754494A68C684C734EC6C69B"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_v2_cross_modal_direction_discrimination\\per_fragment_direction_sequence_pre_reference.csv",
+      "bytes": 33062,
+      "sha256": "BEB037C115D3EA653AF8F7AA7DD12E93B8EEC2706A3BFA6EBF0646CDCF7572A3"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_v2_cross_modal_direction_discrimination\\timing_direction_summary_pre_reference.csv",
+      "bytes": 875,
+      "sha256": "8D7213E34479BB7AF2B85CA217A8EDBBD75240C5417A102CF15C7B97059D3B9B"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_v2_cross_modal_direction_discrimination\\optical_direction_diversity_atlas_pairs_pre_reference.parquet",
+      "bytes": 1945019,
+      "sha256": "E91A18AAD09DB7811DC0FB42BC35C56244F99D858FD4CB3D9A658BF03A3ECF4E"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_v2_cross_modal_direction_discrimination\\optical_direction_diversity_atlas_run_summary_pre_reference.csv",
+      "bytes": 1496,
+      "sha256": "7B011859FF041B399F61D82DAD123A11661AFC0E019A6B3151C176A029B210DE"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_v2_cross_modal_direction_discrimination\\optical_direction_diversity_atlas_window_summary_pre_reference.csv",
+      "bytes": 409443,
+      "sha256": "BD626C120BD89D00C021851A9E52D3B36813F720435A53ECCA137D875C4E13CB"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_v2_cross_modal_direction_discrimination\\optical_direction_diversity_atlas_future_candidate_windows_pre_reference.csv",
+      "bytes": 25143,
+      "sha256": "B9739B924108C3CF0657679083B419E619B0CE45474F82CDDEAC401B570DD797"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_v2_cross_modal_direction_discrimination\\frozen_raw_fragment_controls_pre_reference.csv",
+      "bytes": 1115579,
+      "sha256": "A658AF23DEA7B30FC5EF15503A827F3CBE1ED13433A83FFF4CCCC3BD18823CB8"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_v2_cross_modal_direction_discrimination\\frozen_static_shell_controls_pre_reference.csv",
+      "bytes": 1272735,
+      "sha256": "C1C41A728819C9FD4264BA4F68A28086C6F411C57A85A826FF83C3041A48C561"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_v2_cross_modal_direction_discrimination\\frozen_sar_matched_alternatives_pre_reference.csv",
+      "bytes": 94686740,
+      "sha256": "444A75C272E9A3AF112496C98A861BC6CE162FA763234F6791288150D4E4B65F"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_v2_cross_modal_direction_discrimination\\pre_reference_summary.json",
+      "bytes": 1204,
+      "sha256": "64D9483462BC94A6BDF37FBF750299ECAAA6A46DFCF3DF82D4F86E29675902F9"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_v2_cross_modal_direction_discrimination\\figures\\pre_reference\\01_r02_optical_direction_by_timing.png",
+      "bytes": 55305,
+      "sha256": "CBEA31CF18599FA747B3ADEE2A59048C94AD3DA3B4354DDA164083FA873186F9"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_v2_cross_modal_direction_discrimination\\figures\\pre_reference\\02_r02_scene_common_majority.png",
+      "bytes": 39553,
+      "sha256": "7E4761000066A840D6D5410F68C46ABF4DB49A2146D5B8788190A86334109C5F"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\m0b1_v2_cross_modal_direction_discrimination\\figures\\pre_reference\\03_optical_diversity_atlas_runs.png",
+      "bytes": 50507,
+      "sha256": "220B91F5EDF49E94D5212C11B83FA239061ACC90E07EA5BA8ED396F7976ED704"
+    }
+  ],
+  "prohibited_post_reference_paths": [
+    "output\\person_physics_guided_image_domain_study_20260824\\m0a_r02_lag1_q95_region_support_transport_pilot\\post_reference_supported_explanations.csv",
+    "output\\person_physics_guided_image_domain_study_20260824\\m0a_r02_lag1_q95_region_support_transport_pilot\\post_reference_matched_alternative_evaluation.csv"
+  ]
+}

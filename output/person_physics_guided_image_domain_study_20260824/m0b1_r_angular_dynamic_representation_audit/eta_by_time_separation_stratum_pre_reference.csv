@@ -1,0 +1,2 @@
+﻿scope,time_separation_stratum,N,eta_min,eta_median,eta_p90,eta_p95,eta_max,fraction_eta_gt_1,fraction_eta_gt_0_5,fraction_old_all_pairs_determinate,fraction_boundary_coherent,fraction_boundary_deformation_or_indeterminate,median_abs_midpoint_movement_deg,median_abs_width_change_deg,median_relative_width_change_abs
+DEDUPLICATED_OPTICAL_PAIR_SIGNATURES,TIME_GAP_LE_60MS,183,0.23123993045223323,0.32851907996053675,0.3757958982404583,0.4366321184435926,0.618940452795387,0.0,0.0273224043715847,0.0,1.0,0.0,0.9030613668436693,0.0505834672044152,0.017736134557320007

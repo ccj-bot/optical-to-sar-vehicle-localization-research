@@ -1,0 +1,589 @@
+{
+  "schema": "PERSON_M0B1_V2_PRE_REFERENCE_VALIDATION_V1",
+  "status": "PASS",
+  "checks_passed": 116,
+  "checks_total": 116,
+  "failed_checks": [],
+  "checks": [
+    {
+      "check": "freeze_reference_false",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "freeze_no_prohibited_actions",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_exists::M0B1_V2_CROSS_MODAL_DIRECTION_DISCRIMINATION_PROTOCOL_FROZEN_BEFORE_RUN.md",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_size::M0B1_V2_CROSS_MODAL_DIRECTION_DISCRIMINATION_PROTOCOL_FROZEN_BEFORE_RUN.md",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_hash::M0B1_V2_CROSS_MODAL_DIRECTION_DISCRIMINATION_PROTOCOL_FROZEN_BEFORE_RUN.md",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_exists::run_m0b1_v2_cross_modal_direction.py",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_size::run_m0b1_v2_cross_modal_direction.py",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_hash::run_m0b1_v2_cross_modal_direction.py",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_exists::validate_m0b1_v2_cross_modal_direction.py",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_size::validate_m0b1_v2_cross_modal_direction.py",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_hash::validate_m0b1_v2_cross_modal_direction.py",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_exists::dynamic_hypotheses_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_size::dynamic_hypotheses_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_hash::dynamic_hypotheses_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_exists::raw_fragment_alternative_controls_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_size::raw_fragment_alternative_controls_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_hash::raw_fragment_alternative_controls_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_exists::static_shell_matched_controls_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_size::static_shell_matched_controls_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_hash::static_shell_matched_controls_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_exists::timing_query_table_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_size::timing_query_table_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_hash::timing_query_table_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_exists::M0B1_R02_RAW_FRAGMENT_ANGULAR_DIRECTION_PROTOCOL_FROZEN_BEFORE_RUN.md",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_size::M0B1_R02_RAW_FRAGMENT_ANGULAR_DIRECTION_PROTOCOL_FROZEN_BEFORE_RUN.md",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_hash::M0B1_R02_RAW_FRAGMENT_ANGULAR_DIRECTION_PROTOCOL_FROZEN_BEFORE_RUN.md",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_exists::M0B1_R_ANGULAR_DYNAMIC_REPRESENTATION_AUDIT_PROTOCOL_FROZEN_BEFORE_RUN.md",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_size::M0B1_R_ANGULAR_DYNAMIC_REPRESENTATION_AUDIT_PROTOCOL_FROZEN_BEFORE_RUN.md",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_hash::M0B1_R_ANGULAR_DYNAMIC_REPRESENTATION_AUDIT_PROTOCOL_FROZEN_BEFORE_RUN.md",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_exists::audit_summary_pre_reference.json",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_size::audit_summary_pre_reference.json",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_hash::audit_summary_pre_reference.json",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_exists::sar_q95_corresponding_boundary_structural_diagnostic_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_size::sar_q95_corresponding_boundary_structural_diagnostic_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_hash::sar_q95_corresponding_boundary_structural_diagnostic_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_exists::pre_reference_matched_alternative_sets.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_size::pre_reference_matched_alternative_sets.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_hash::pre_reference_matched_alternative_sets.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_exists::optical_person_frame_hypotheses.parquet",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_size::optical_person_frame_hypotheses.parquet",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_hash::optical_person_frame_hypotheses.parquet",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_manifest_reference_false",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_manifest_reference_sources_closed",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_manifest_freeze_hash",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_exists::direction_hypothesis_bank_pre_reference.parquet",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_size::direction_hypothesis_bank_pre_reference.parquet",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_hash::direction_hypothesis_bank_pre_reference.parquet",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_exists::optical_descriptors_unique_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_size::optical_descriptors_unique_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_hash::optical_descriptors_unique_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_exists::sar_descriptors_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_size::sar_descriptors_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_hash::sar_descriptors_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_exists::scene_common_direction_audit_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_size::scene_common_direction_audit_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_hash::scene_common_direction_audit_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_exists::per_fragment_direction_sequence_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_size::per_fragment_direction_sequence_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_hash::per_fragment_direction_sequence_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_exists::timing_direction_summary_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_size::timing_direction_summary_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_hash::timing_direction_summary_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_exists::optical_direction_diversity_atlas_pairs_pre_reference.parquet",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_size::optical_direction_diversity_atlas_pairs_pre_reference.parquet",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_hash::optical_direction_diversity_atlas_pairs_pre_reference.parquet",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_exists::optical_direction_diversity_atlas_run_summary_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_size::optical_direction_diversity_atlas_run_summary_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_hash::optical_direction_diversity_atlas_run_summary_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_exists::optical_direction_diversity_atlas_window_summary_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_size::optical_direction_diversity_atlas_window_summary_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_hash::optical_direction_diversity_atlas_window_summary_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_exists::optical_direction_diversity_atlas_future_candidate_windows_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_size::optical_direction_diversity_atlas_future_candidate_windows_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_hash::optical_direction_diversity_atlas_future_candidate_windows_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_exists::frozen_raw_fragment_controls_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_size::frozen_raw_fragment_controls_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_hash::frozen_raw_fragment_controls_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_exists::frozen_static_shell_controls_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_size::frozen_static_shell_controls_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_hash::frozen_static_shell_controls_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_exists::frozen_sar_matched_alternatives_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_size::frozen_sar_matched_alternatives_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_hash::frozen_sar_matched_alternatives_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_exists::pre_reference_summary.json",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_size::pre_reference_summary.json",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_hash::pre_reference_summary.json",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_exists::01_r02_optical_direction_by_timing.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_size::01_r02_optical_direction_by_timing.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_hash::01_r02_optical_direction_by_timing.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_exists::02_r02_scene_common_majority.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_size::02_r02_scene_common_majority.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_hash::02_r02_scene_common_majority.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_exists::03_optical_diversity_atlas_runs.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_size::03_optical_diversity_atlas_runs.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_hash::03_optical_diversity_atlas_runs.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "optical_d_left_formula",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "optical_d_right_formula",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "optical_d_mid_formula",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "optical_d_width_formula",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "unavailable_not_zero_left",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "unavailable_cross_direction",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "no_hypothesis_pruning",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_bank_reference_false",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_bank_no_post_reference_columns",
+      "pass": true,
+      "details": []
+    },
+    {
+      "check": "deduplicated_optical_pair_count",
+      "pass": true,
+      "details": 183
+    },
+    {
+      "check": "r02_nominal_all_positive",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "all_fixed_timing_optical_sign_positive",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "scene_audit_reference_false",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "scene_active_fragment_denominator",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "scene_global_baseline_positive",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "branch_equals_global_all_available",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "atlas_future_windows_found",
+      "pass": true,
+      "details": 586
+    },
+    {
+      "check": "atlas_candidate_eligibility",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "atlas_reference_false",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_predecessor_state_unchanged",
+      "pass": true,
+      "details": "M0B1_ANGULAR_DIRECTION_OBSERVABILITY_INSUFFICIENT"
+    },
+    {
+      "check": "frozen_predecessor_protocol_unchanged",
+      "pass": true,
+      "details": ""
+    }
+  ]
+}

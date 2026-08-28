@@ -1,0 +1,897 @@
+{
+  "schema": "PERSON_M0B1_V2_FINAL_VALIDATION_V1",
+  "status": "PASS",
+  "checks_passed": 175,
+  "checks_total": 175,
+  "failed_checks": [],
+  "checks": [
+    {
+      "check": "freeze_reference_false",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "freeze_no_prohibited_actions",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_exists::M0B1_V2_CROSS_MODAL_DIRECTION_DISCRIMINATION_PROTOCOL_FROZEN_BEFORE_RUN.md",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_size::M0B1_V2_CROSS_MODAL_DIRECTION_DISCRIMINATION_PROTOCOL_FROZEN_BEFORE_RUN.md",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_hash::M0B1_V2_CROSS_MODAL_DIRECTION_DISCRIMINATION_PROTOCOL_FROZEN_BEFORE_RUN.md",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_exists::run_m0b1_v2_cross_modal_direction.py",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_size::run_m0b1_v2_cross_modal_direction.py",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_hash::run_m0b1_v2_cross_modal_direction.py",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_exists::validate_m0b1_v2_cross_modal_direction.py",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_size::validate_m0b1_v2_cross_modal_direction.py",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_hash::validate_m0b1_v2_cross_modal_direction.py",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_exists::dynamic_hypotheses_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_size::dynamic_hypotheses_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_hash::dynamic_hypotheses_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_exists::raw_fragment_alternative_controls_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_size::raw_fragment_alternative_controls_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_hash::raw_fragment_alternative_controls_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_exists::static_shell_matched_controls_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_size::static_shell_matched_controls_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_hash::static_shell_matched_controls_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_exists::timing_query_table_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_size::timing_query_table_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_hash::timing_query_table_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_exists::M0B1_R02_RAW_FRAGMENT_ANGULAR_DIRECTION_PROTOCOL_FROZEN_BEFORE_RUN.md",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_size::M0B1_R02_RAW_FRAGMENT_ANGULAR_DIRECTION_PROTOCOL_FROZEN_BEFORE_RUN.md",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_hash::M0B1_R02_RAW_FRAGMENT_ANGULAR_DIRECTION_PROTOCOL_FROZEN_BEFORE_RUN.md",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_exists::M0B1_R_ANGULAR_DYNAMIC_REPRESENTATION_AUDIT_PROTOCOL_FROZEN_BEFORE_RUN.md",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_size::M0B1_R_ANGULAR_DYNAMIC_REPRESENTATION_AUDIT_PROTOCOL_FROZEN_BEFORE_RUN.md",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_hash::M0B1_R_ANGULAR_DYNAMIC_REPRESENTATION_AUDIT_PROTOCOL_FROZEN_BEFORE_RUN.md",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_exists::audit_summary_pre_reference.json",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_size::audit_summary_pre_reference.json",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_hash::audit_summary_pre_reference.json",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_exists::sar_q95_corresponding_boundary_structural_diagnostic_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_size::sar_q95_corresponding_boundary_structural_diagnostic_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_hash::sar_q95_corresponding_boundary_structural_diagnostic_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_exists::pre_reference_matched_alternative_sets.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_size::pre_reference_matched_alternative_sets.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_hash::pre_reference_matched_alternative_sets.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_exists::optical_person_frame_hypotheses.parquet",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_size::optical_person_frame_hypotheses.parquet",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "frozen_hash::optical_person_frame_hypotheses.parquet",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_unchanged_after_reveal::direction_hypothesis_bank_pre_reference.parquet",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_unchanged_after_reveal::optical_descriptors_unique_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_unchanged_after_reveal::sar_descriptors_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_unchanged_after_reveal::scene_common_direction_audit_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_unchanged_after_reveal::per_fragment_direction_sequence_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_unchanged_after_reveal::timing_direction_summary_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_unchanged_after_reveal::optical_direction_diversity_atlas_pairs_pre_reference.parquet",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_unchanged_after_reveal::optical_direction_diversity_atlas_run_summary_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_unchanged_after_reveal::optical_direction_diversity_atlas_window_summary_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_unchanged_after_reveal::optical_direction_diversity_atlas_future_candidate_windows_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_unchanged_after_reveal::frozen_raw_fragment_controls_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_unchanged_after_reveal::frozen_static_shell_controls_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_unchanged_after_reveal::frozen_sar_matched_alternatives_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_unchanged_after_reveal::pre_reference_summary.json",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_unchanged_after_reveal::01_r02_optical_direction_by_timing.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_unchanged_after_reveal::02_r02_scene_common_majority.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_unchanged_after_reveal::03_optical_diversity_atlas_runs.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_validation_still_passes",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "allowed_primary_state",
+      "pass": true,
+      "details": "M0B1_V2_DIRECTION_SIGNAL_SCENE_COMMON_NOT_BRANCH_SPECIFIC"
+    },
+    {
+      "check": "raw_branch_unresolved_state",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "no_branch_specific_claim",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "no_branch_increment_over_global",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "branch_global_decision_parity",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "raw_evaluator_honest",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "all_review_packs_unresolved",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "counterfactual_not_executed",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "magnitude_not_recommended",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "common_motion_recommended",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "prohibited_claims_false",
+      "pass": true,
+      "details": {
+        "sync_calibrated": false,
+        "physical_person_angular_velocity": false,
+        "optical_sar_identity": false,
+        "person_specific_sar_continuation": false,
+        "runtime_raw_fragment_identity": false,
+        "ambiguity_reduction": false,
+        "dynamic_pruning_validated": false,
+        "unique_dynamic_path": false,
+        "final_sar_center": false,
+        "final_sar_box": false,
+        "p2_established": false,
+        "generalization_established": false
+      }
+    },
+    {
+      "check": "nominal_matched_cluster_denominator",
+      "pass": true,
+      "details": 30
+    },
+    {
+      "check": "nominal_branch_global_parity",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "nominal_no_favors_null",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "nominal_no_sar_only_rescue",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "no_direct_raw_target_source",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "optical_person_id_not_truth",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "runtime_branch_not_relabelled",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "seventeen_case_slots",
+      "pass": true,
+      "details": 17
+    },
+    {
+      "check": "case_status_explicit",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "case_readable::01_supported_optical_positive_sar_positive.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "case_readable::03_supported_sar_deformation.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "case_readable::04_matched_null_concordant.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "case_readable::05_matched_null_contradictory.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "case_readable::06_branch_equals_global.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "case_readable::10_fragment_break.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "case_readable::11_same_sample.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "case_readable::13_static_shell_plausible_direction_contradicts.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "case_readable::16_r02_scene_common_positive.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "case_readable::17_broader_atlas_opposite_direction_branches.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "contact_sheet_readable",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_manifest_reference_true",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_manifest_no_pruning",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_manifest_no_magnitude_fit",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_manifest_no_timing_selection",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_manifest_no_identity_assignment",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_exists::post_reference_hypothesis_evaluation.parquet",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_hash::post_reference_hypothesis_evaluation.parquet",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_exists::supported_vs_matched_null_pairwise_direction.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_hash::supported_vs_matched_null_pairwise_direction.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_exists::supported_vs_matched_null_cluster_decisions.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_hash::supported_vs_matched_null_cluster_decisions.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_exists::pairwise_direction_summary.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_hash::pairwise_direction_summary.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_exists::sar_only_direction_cross_tab.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_hash::sar_only_direction_cross_tab.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_exists::cluster_aware_direction_by_frame_pair.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_hash::cluster_aware_direction_by_frame_pair.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_exists::cluster_aware_direction_by_raw_fragment.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_hash::cluster_aware_direction_by_raw_fragment.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_exists::leave_one_frame_pair_out_direction.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_hash::leave_one_frame_pair_out_direction.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_exists::static_shell_tautology_control.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_hash::static_shell_tautology_control.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_exists::raw_fragment_target_evaluator_audit.json",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_hash::raw_fragment_target_evaluator_audit.json",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_exists::wrong_raw_fragment_control_status.json",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_hash::wrong_raw_fragment_control_status.json",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_exists::offline_visual_raw_fragment_target_review.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_hash::offline_visual_raw_fragment_target_review.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_exists::real_case_registry.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_hash::real_case_registry.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_exists::final_summary.json",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_hash::final_summary.json",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_exists::M0B1_V2_CROSS_MODAL_DIRECTION_DISCRIMINATION_REPORT.md",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_hash::M0B1_V2_CROSS_MODAL_DIRECTION_DISCRIMINATION_REPORT.md",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_exists::POST_REFERENCE_CASE_CONTACT_SHEET.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_hash::POST_REFERENCE_CASE_CONTACT_SHEET.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_exists::review_01_H_D5FFADBB5BE6ABBB8150.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_hash::review_01_H_D5FFADBB5BE6ABBB8150.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_exists::review_02_H_227FF2A7A656841D0AEB.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_hash::review_02_H_227FF2A7A656841D0AEB.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_exists::review_03_H_CB6E8AA383807F9A94B9.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_hash::review_03_H_CB6E8AA383807F9A94B9.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_exists::review_04_H_E9DB765C57E82928EC8E.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_hash::review_04_H_E9DB765C57E82928EC8E.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_exists::review_05_H_627AF9A9A675886711B9.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_hash::review_05_H_627AF9A9A675886711B9.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_exists::review_06_H_17615E7C7E6B532EE85E.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_hash::review_06_H_17615E7C7E6B532EE85E.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_exists::review_07_H_A212E9E1D15FA133F9CE.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_hash::review_07_H_A212E9E1D15FA133F9CE.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_exists::review_08_H_63F721C65E970641E1E3.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_hash::review_08_H_63F721C65E970641E1E3.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_exists::review_09_H_09CFF868433878B55704.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_hash::review_09_H_09CFF868433878B55704.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_exists::review_10_H_5DB842D02EFBE50A2FF2.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_hash::review_10_H_5DB842D02EFBE50A2FF2.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_exists::01_supported_optical_positive_sar_positive.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_hash::01_supported_optical_positive_sar_positive.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_exists::03_supported_sar_deformation.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_hash::03_supported_sar_deformation.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_exists::04_matched_null_concordant.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_hash::04_matched_null_concordant.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_exists::05_matched_null_contradictory.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_hash::05_matched_null_contradictory.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_exists::06_branch_equals_global.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_hash::06_branch_equals_global.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_exists::10_fragment_break.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_hash::10_fragment_break.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_exists::11_same_sample.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_hash::11_same_sample.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_exists::13_static_shell_plausible_direction_contradicts.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_hash::13_static_shell_plausible_direction_contradicts.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_exists::16_r02_scene_common_positive.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_hash::16_r02_scene_common_positive.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_exists::17_broader_atlas_opposite_direction_branches.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_hash::17_broader_atlas_opposite_direction_branches.png",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_exists::run_m0b1_v2_post_reference_repair.py",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_hash::run_m0b1_v2_post_reference_repair.py",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_exists::AMENDMENT_01_POST_REFERENCE_SENTINEL_PAIR_INDEX.md",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_hash::AMENDMENT_01_POST_REFERENCE_SENTINEL_PAIR_INDEX.md",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_exists::VISUAL_QA_AND_CLOSEOUT.md",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_hash::VISUAL_QA_AND_CLOSEOUT.md",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_exists::update_m0b1_v2_visual_qa_manifest.py",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "final_hash::update_m0b1_v2_visual_qa_manifest.py",
+      "pass": true,
+      "details": ""
+    }
+  ]
+}

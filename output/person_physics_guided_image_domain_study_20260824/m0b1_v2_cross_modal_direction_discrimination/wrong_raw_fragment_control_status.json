@@ -1,0 +1,5 @@
+{
+  "status": "NOT_EXECUTED_NO_CONFIRMED_TARGET_BRANCH_SUBSET",
+  "correct_vs_wrong_raw_fragment_direction_result": "UNRESOLVED",
+  "reason": "no legal raw-fragment-to-manual-target evaluator"
+}

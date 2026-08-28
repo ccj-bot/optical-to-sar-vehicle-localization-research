@@ -1,0 +1,770 @@
+{
+  "schema": "PERSON_M0B1_R_INDEPENDENT_VALIDATION_V1",
+  "status": "PASS",
+  "passed_checks": 152,
+  "failed_checks": 0,
+  "primary_state": "M0B1_R_INTERVAL_OPERATOR_SEMANTIC_MISMATCH_CONFIRMED",
+  "frozen_predecessor_state": "M0B1_ANGULAR_DIRECTION_OBSERVABILITY_INSUFFICIENT",
+  "checks": [
+    {
+      "check": "frozen_file_exists::M0B1_R_ANGULAR_DYNAMIC_REPRESENTATION_AUDIT_PROTOCOL_FROZEN_BEFORE_RUN.md",
+      "pass": true,
+      "detail": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\m0b1_r_angular_dynamic_representation_audit\\M0B1_R_ANGULAR_DYNAMIC_REPRESENTATION_AUDIT_PROTOCOL_FROZEN_BEFORE_RUN.md"
+    },
+    {
+      "check": "frozen_size::M0B1_R_ANGULAR_DYNAMIC_REPRESENTATION_AUDIT_PROTOCOL_FROZEN_BEFORE_RUN.md",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "frozen_hash::M0B1_R_ANGULAR_DYNAMIC_REPRESENTATION_AUDIT_PROTOCOL_FROZEN_BEFORE_RUN.md",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "frozen_file_exists::run_m0b1_r_representation_audit.py",
+      "pass": true,
+      "detail": "D:\\profile\\research\\workspace\\tasks\\person_m0b1_r_angular_dynamic_representation_audit_20260828\\run_m0b1_r_representation_audit.py"
+    },
+    {
+      "check": "frozen_size::run_m0b1_r_representation_audit.py",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "frozen_hash::run_m0b1_r_representation_audit.py",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "frozen_file_exists::validate_m0b1_r_representation_audit.py",
+      "pass": true,
+      "detail": "D:\\profile\\research\\workspace\\tasks\\person_m0b1_r_angular_dynamic_representation_audit_20260828\\validate_m0b1_r_representation_audit.py"
+    },
+    {
+      "check": "frozen_size::validate_m0b1_r_representation_audit.py",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "frozen_hash::validate_m0b1_r_representation_audit.py",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "frozen_file_exists::dynamic_hypotheses_pre_reference.csv",
+      "pass": true,
+      "detail": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\m0b1_r02_raw_fragment_angular_direction_diagnostic\\dynamic_hypotheses_pre_reference.csv"
+    },
+    {
+      "check": "frozen_size::dynamic_hypotheses_pre_reference.csv",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "frozen_hash::dynamic_hypotheses_pre_reference.csv",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "frozen_file_exists::pre_reference_summary.json",
+      "pass": true,
+      "detail": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\m0b1_r02_raw_fragment_angular_direction_diagnostic\\pre_reference_summary.json"
+    },
+    {
+      "check": "frozen_size::pre_reference_summary.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "frozen_hash::pre_reference_summary.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "frozen_file_exists::M0B1_R02_RAW_FRAGMENT_ANGULAR_DIRECTION_PROTOCOL_FROZEN_BEFORE_RUN.md",
+      "pass": true,
+      "detail": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\m0b1_r02_raw_fragment_angular_direction_diagnostic\\M0B1_R02_RAW_FRAGMENT_ANGULAR_DIRECTION_PROTOCOL_FROZEN_BEFORE_RUN.md"
+    },
+    {
+      "check": "frozen_size::M0B1_R02_RAW_FRAGMENT_ANGULAR_DIRECTION_PROTOCOL_FROZEN_BEFORE_RUN.md",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "frozen_hash::M0B1_R02_RAW_FRAGMENT_ANGULAR_DIRECTION_PROTOCOL_FROZEN_BEFORE_RUN.md",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "frozen_file_exists::run_m0b1_raw_fragment_angular_direction.py",
+      "pass": true,
+      "detail": "D:\\profile\\research\\workspace\\tasks\\person_m0b1_r02_raw_fragment_angular_direction_20260828\\run_m0b1_raw_fragment_angular_direction.py"
+    },
+    {
+      "check": "frozen_size::run_m0b1_raw_fragment_angular_direction.py",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "frozen_hash::run_m0b1_raw_fragment_angular_direction.py",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "frozen_file_exists::M0B1_R02_RAW_FRAGMENT_ANGULAR_DIRECTION_REPORT.md",
+      "pass": true,
+      "detail": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\m0b1_r02_raw_fragment_angular_direction_diagnostic\\M0B1_R02_RAW_FRAGMENT_ANGULAR_DIRECTION_REPORT.md"
+    },
+    {
+      "check": "frozen_size::M0B1_R02_RAW_FRAGMENT_ANGULAR_DIRECTION_REPORT.md",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "frozen_hash::M0B1_R02_RAW_FRAGMENT_ANGULAR_DIRECTION_REPORT.md",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "frozen_file_exists::timing_query_table_pre_reference.csv",
+      "pass": true,
+      "detail": "D:\\profile\\research\\workspace\\output\\person_physics_guided_image_domain_study_20260824\\m0b1_r02_raw_fragment_angular_direction_diagnostic\\timing_query_table_pre_reference.csv"
+    },
+    {
+      "check": "frozen_size::timing_query_table_pre_reference.csv",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "frozen_hash::timing_query_table_pre_reference.csv",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "frozen_file_exists::model_summary.json",
+      "pass": true,
+      "detail": "D:\\profile\\research\\workspace\\output\\r01_person_azimuth_pilot_20260819\\model_summary.json"
+    },
+    {
+      "check": "frozen_size::model_summary.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "frozen_hash::model_summary.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "frozen_file_exists::time_offset_scan.csv",
+      "pass": true,
+      "detail": "D:\\profile\\research\\workspace\\output\\r01_person_azimuth_pilot_20260819\\time_offset_scan.csv"
+    },
+    {
+      "check": "frozen_size::time_offset_scan.csv",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "frozen_hash::time_offset_scan.csv",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "frozen_file_exists::leave_one_person_out_metrics.csv",
+      "pass": true,
+      "detail": "D:\\profile\\research\\workspace\\output\\r01_person_azimuth_pilot_20260819\\leave_one_person_out_metrics.csv"
+    },
+    {
+      "check": "frozen_size::leave_one_person_out_metrics.csv",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "frozen_hash::leave_one_person_out_metrics.csv",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "freeze_reference_false",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "freeze_optical_audit_manual_reference_false",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "freeze_manual_reference_not_used_for_representation_selection",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "freeze_no_post_reference_selection",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "no_post_reference_source_paths",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "no_old_work_source_paths",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "predecessor_state_unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "predecessor_not_modified_claim",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "summary_optical_audit_pre_reference",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "summary_no_reference_representation_selection",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "no_cross_modal_discrimination",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "no_m0b2",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "no_prohibited_actions",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "bank_count_matches_summary",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "unique_count_matches_summary",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "same_raw_fragment_gate",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "distinct_sample_gate",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "old_low_formula",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "old_high_formula",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "center_halfwidth_low_identity",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "center_halfwidth_high_identity",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "d_left_formula",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "d_right_formula",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "d_mid_formula",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "d_width_formula",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "eta_formula",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "eta_gt_1_semantics",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "old_determinate_count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "boundary_coherent_count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "no_resolved_is_numerical_zero_only",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "required_table::eta_summary_overall_pre_reference",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "required_table::eta_by_fragment_pre_reference",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "required_table::eta_by_exact_frame_separation_pre_reference",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "required_table::eta_by_frame_separation_stratum_pre_reference",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "required_table::eta_by_exact_time_separation_pre_reference",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "required_table::eta_by_time_separation_stratum_pre_reference",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "required_table::eta_by_optical_interval_width_stratum_pre_reference",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "required_table::representation_state_summary_pre_reference",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "required_table::mapping_slope_sign_audit_pre_reference",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "required_table::bottleneck_hierarchy_pre_reference",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "eta_scopes_complete",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "four_operators_present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "mapping_nominal_slope_positive",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "mapping_reviewed_slopes_positive",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "no_new_mapping_fit",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "sar_gate_materialized",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "sar_edge_count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "sar_d_width_formula",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "sar_topology_states",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_exists::audit_summary_pre_reference.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_hash::audit_summary_pre_reference.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_exists::bottleneck_hierarchy_pre_reference.csv",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_hash::bottleneck_hierarchy_pre_reference.csv",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_exists::bottleneck_hierarchy_pre_reference.parquet",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_hash::bottleneck_hierarchy_pre_reference.parquet",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_exists::eta_by_exact_frame_separation_pre_reference.csv",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_hash::eta_by_exact_frame_separation_pre_reference.csv",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_exists::eta_by_exact_frame_separation_pre_reference.parquet",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_hash::eta_by_exact_frame_separation_pre_reference.parquet",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_exists::eta_by_exact_time_separation_pre_reference.csv",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_hash::eta_by_exact_time_separation_pre_reference.csv",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_exists::eta_by_exact_time_separation_pre_reference.parquet",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_hash::eta_by_exact_time_separation_pre_reference.parquet",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_exists::eta_by_fragment_pre_reference.csv",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_hash::eta_by_fragment_pre_reference.csv",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_exists::eta_by_fragment_pre_reference.parquet",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_hash::eta_by_fragment_pre_reference.parquet",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_exists::eta_by_frame_separation_stratum_pre_reference.csv",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_hash::eta_by_frame_separation_stratum_pre_reference.csv",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_exists::eta_by_frame_separation_stratum_pre_reference.parquet",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_hash::eta_by_frame_separation_stratum_pre_reference.parquet",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_exists::eta_by_optical_interval_width_stratum_pre_reference.csv",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_hash::eta_by_optical_interval_width_stratum_pre_reference.csv",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_exists::eta_by_optical_interval_width_stratum_pre_reference.parquet",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_hash::eta_by_optical_interval_width_stratum_pre_reference.parquet",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_exists::eta_by_time_separation_stratum_pre_reference.csv",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_hash::eta_by_time_separation_stratum_pre_reference.csv",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_exists::eta_by_time_separation_stratum_pre_reference.parquet",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_hash::eta_by_time_separation_stratum_pre_reference.parquet",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_exists::eta_summary_overall_pre_reference.csv",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_hash::eta_summary_overall_pre_reference.csv",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_exists::eta_summary_overall_pre_reference.parquet",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_hash::eta_summary_overall_pre_reference.parquet",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_exists::M0B1_R_ANGULAR_DYNAMIC_REPRESENTATION_AUDIT_PROTOCOL_FROZEN_BEFORE_RUN.md",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_hash::M0B1_R_ANGULAR_DYNAMIC_REPRESENTATION_AUDIT_PROTOCOL_FROZEN_BEFORE_RUN.md",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_exists::M0B1_R_ANGULAR_DYNAMIC_REPRESENTATION_AUDIT_REPORT.md",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_hash::M0B1_R_ANGULAR_DYNAMIC_REPRESENTATION_AUDIT_REPORT.md",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_exists::mapping_direction_semantics_pre_reference.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_hash::mapping_direction_semantics_pre_reference.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_exists::mapping_slope_sign_audit_pre_reference.csv",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_hash::mapping_slope_sign_audit_pre_reference.csv",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_exists::mapping_slope_sign_audit_pre_reference.parquet",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_hash::mapping_slope_sign_audit_pre_reference.parquet",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_exists::optical_dynamic_bank_records_pre_reference.csv",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_hash::optical_dynamic_bank_records_pre_reference.csv",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_exists::optical_dynamic_bank_records_pre_reference.parquet",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_hash::optical_dynamic_bank_records_pre_reference.parquet",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_exists::optical_dynamic_unique_pairs_pre_reference.csv",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_hash::optical_dynamic_unique_pairs_pre_reference.csv",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_exists::optical_dynamic_unique_pairs_pre_reference.parquet",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_hash::optical_dynamic_unique_pairs_pre_reference.parquet",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_exists::protocol_freeze.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_hash::protocol_freeze.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_exists::representation_state_summary_pre_reference.csv",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_hash::representation_state_summary_pre_reference.csv",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_exists::representation_state_summary_pre_reference.parquet",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_hash::representation_state_summary_pre_reference.parquet",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_exists::sar_q95_corresponding_boundary_structural_diagnostic_pre_reference.csv",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_hash::sar_q95_corresponding_boundary_structural_diagnostic_pre_reference.csv",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_exists::sar_q95_corresponding_boundary_structural_diagnostic_pre_reference.parquet",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_hash::sar_q95_corresponding_boundary_structural_diagnostic_pre_reference.parquet",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_exists::sar_q95_structural_state_summary_pre_reference.csv",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_hash::sar_q95_structural_state_summary_pre_reference.csv",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_exists::sar_q95_structural_state_summary_pre_reference.parquet",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest_hash::sar_q95_structural_state_summary_pre_reference.parquet",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "frozen_m0b1_git_tree_unchanged",
+      "pass": true,
+      "detail": "returncode=0"
+    }
+  ]
+}

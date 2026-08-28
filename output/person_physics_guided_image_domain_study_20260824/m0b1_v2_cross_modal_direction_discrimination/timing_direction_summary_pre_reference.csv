@@ -1,0 +1,6 @@
+﻿timing_condition,total_hypothesis,static_feasible,dynamic_available,same_sample,fragment_break,observation_unavailable,static_infeasible,optical_positive,optical_negative,optical_deformation,optical_no_resolved,sar_positive,sar_negative,sar_deformation,cross_concordant,cross_contradictory,cross_structural_indeterminate,cross_unavailable
+NOMINAL,62073,13685,2303,1795,9587,0,48388,2303,0,0,0,29381,28535,4157,1045,777,481,59770
+SAR_SHIFT_MINUS_1,61299,12721,2377,1509,8835,3540,48578,2377,0,0,0,29094,28171,4034,1131,820,426,58922
+SAR_SHIFT_PLUS_1,61515,12950,1950,1856,9144,2915,48565,1950,0,0,0,29080,28275,4160,932,605,413,59565
+OPTICAL_SHIFT_MINUS_1_NOMINAL_STEP,60624,11995,2196,1661,8138,0,48629,2196,0,0,0,28737,27879,4008,984,754,458,58428
+OPTICAL_SHIFT_PLUS_1_NOMINAL_STEP,63089,14909,2426,1853,10630,0,48180,2426,0,0,0,29838,28892,4359,1109,808,509,60663

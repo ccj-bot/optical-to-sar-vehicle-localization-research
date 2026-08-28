@@ -1,5 +1,33 @@
 # PERSON 成像机理约束图像域研究
 
+## M0B1-V2 cross-modal direction discrimination（2026-08-28）
+
+- 新阶段独立版本化 corresponding-boundary optical descriptor；冻结 M0B1
+  `M0B1_ANGULAR_DIRECTION_OBSERVABILITY_INSUFFICIENT` 与 M0B1-R
+  `M0B1_R_INTERVAL_OPERATOR_SEMANTIC_MISMATCH_CONFIRMED` 均保持不变。
+- 最终状态：`M0B1_V2_DIRECTION_SIGNAL_SCENE_COMMON_NOT_BRANCH_SPECIFIC`；
+  secondary 为 `M0B1_V2_RAW_BRANCH_EVALUATION_UNRESOLVED`、
+  `R02_DIRECTION_SIGN_DEGENERATE`、
+  `M0B1_V2_INCREMENTAL_BEYOND_SAR_ONLY_NOT_ESTABLISHED`。
+- R02 pre-reference hypotheses 308,600；static-feasible 66,260；
+  dynamic-available 11,252；fragment-break 46,334；same-sample 8,674。
+- R02 去重 optical dynamic pairs 183，其中 nominal 37/37 positive；五个固定
+  timing conditions 下 branch direction 与 global scene baseline 全部一致。
+- 6 条 supported SAR base edges / 3 个 frame-pair clusters 对 30 条 frozen
+  matched null 的 nominal pairwise direction 结果为 5 favors supported、0
+  favors null、25 no decision；5 条均是 SAR-only 已胜出的 confirmation，
+  `DIRECTION_RESCUE=0`。
+- 未找到合法 `manual/physical target <-> raw_track_fragment_id` 来源；10 个
+  offline review packs 全部保持 `UNRESOLVED`，没有用 `optical_person_id`
+  充当 truth。
+- GT-blind broader atlas 在 56 runs / 698 raw fragments 中发现 586 个同时含
+  positive/negative branches 的 future-design windows（585 个相邻帧窗）。
+- pre-reference validator `116/116 PASS`；final validator `175/175 PASS`；真实
+  图像 QA 与 aggregate 一致。
+- 下一步优先独立冻结 `common apparent motion vs branch-relative residual`
+  协议；本轮不进入 magnitude、pruning、tracker、factor graph、P2 或最终 SAR
+  localization。
+
 - 当前权威状态：`P0_FROZEN_PASS / P1E_EXPLORATORY_OBSERVATION_INTERFACES_ESTABLISHED / RUNTIME_IDENTITY_NOT_ESTABLISHED / P2_NOT_ESTABLISHED`
 - 活动工作区：D:\profile\research\workspace
 - 任务目录：D:\profile\research\workspace\tasks\person_physics_guided_image_domain_study_20260824

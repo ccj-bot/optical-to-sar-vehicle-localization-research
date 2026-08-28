@@ -1,0 +1,14 @@
+{
+  "schema": "PERSON_M0B1_R_MAPPING_DIRECTION_SEMANTICS_V1",
+  "frozen_mapping_tables_have_prior_reference_provenance": true,
+  "reference_used_to_select_representation": false,
+  "new_mapping_fit_performed": false,
+  "equation": "theta_deg = a * optical_x_px + b",
+  "frozen_nominal_slope_deg_per_px": 0.02666536443690682,
+  "frozen_nominal_slope_sign": "POSITIVE",
+  "all_reviewed_table_slopes_positive": true,
+  "direction_semantics": {
+    "slope_magnitude_uncertainty": "CHANGES_ANGULAR_MAGNITUDE_NOT_DIRECTION_SIGN_WHILE_SIGN_REMAINS_POSITIVE",
+    "slope_sign_uncertainty": "ONLY_MAPPING_UNCERTAINTY_COMPONENT_THAT_CAN_REVERSE_DIRECTION_SIGN"
+  }
+}

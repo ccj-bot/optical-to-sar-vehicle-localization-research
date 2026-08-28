@@ -1,0 +1,61 @@
+{
+  "schema": "PERSON_M0B1_V2_EXECUTION_LEDGER_V1",
+  "events": [
+    {
+      "stage": "PROTOCOL_CODE_INPUT_HASHES_FROZEN",
+      "completed_at": "2026-08-28T23:13:18+08:00"
+    },
+    {
+      "stage": "REFERENCE_NOT_LOADED",
+      "completed_at": "2026-08-28T23:13:18+08:00"
+    },
+    {
+      "stage": "OPTICAL_SAR_DESCRIPTORS_MATERIALIZED_PRE_REFERENCE",
+      "completed_at": "2026-08-28T23:14:09+08:00"
+    },
+    {
+      "stage": "GLOBAL_DIRECTION_BASELINE_FROZEN",
+      "completed_at": "2026-08-28T23:14:09+08:00"
+    },
+    {
+      "stage": "CONTROLS_AND_TIMING_CONDITIONS_FROZEN",
+      "completed_at": "2026-08-28T23:14:09+08:00"
+    },
+    {
+      "stage": "OPTICAL_DIVERSITY_ATLAS_MATERIALIZED_GT_BLIND",
+      "completed_at": "2026-08-28T23:14:09+08:00"
+    },
+    {
+      "stage": "PRE_REFERENCE_OUTPUT_HASHES_FROZEN",
+      "completed_at": "2026-08-28T23:14:09+08:00"
+    },
+    {
+      "stage": "PRE_REFERENCE_MANIFEST_REVERIFIED",
+      "completed_at": "2026-08-28T23:16:16+08:00"
+    },
+    {
+      "stage": "MANUAL_REFERENCE_REVEALED_AFTER_FREEZE",
+      "completed_at": "2026-08-28T23:16:16+08:00"
+    },
+    {
+      "stage": "SUPPORTED_MATCHED_PAIRWISE_DIRECTION_COMPLETE",
+      "completed_at": "2026-08-28T23:16:16+08:00"
+    },
+    {
+      "stage": "RAW_FRAGMENT_EVALUATOR_AUDIT_AND_OFFLINE_REVIEW_COMPLETE",
+      "completed_at": "2026-08-28T23:16:16+08:00"
+    },
+    {
+      "stage": "REAL_CASE_RENDERING_COMPLETE",
+      "completed_at": "2026-08-28T23:16:16+08:00"
+    },
+    {
+      "stage": "M0B1_V2_COMPLETE_STOP",
+      "completed_at": "2026-08-28T23:16:16+08:00"
+    },
+    {
+      "stage": "FROZEN_EXECUTION_AMENDMENT_01_REPORTING_KEYS_ONLY",
+      "completed_at": "2026-08-28T23:16:16+08:00"
+    }
+  ]
+}

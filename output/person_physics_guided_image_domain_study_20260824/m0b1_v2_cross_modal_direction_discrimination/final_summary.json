@@ -1,0 +1,57 @@
+{
+  "schema": "PERSON_M0B1_V2_FINAL_SUMMARY_V1",
+  "created_at": "2026-08-28T23:16:16+08:00",
+  "primary_state": "M0B1_V2_DIRECTION_SIGNAL_SCENE_COMMON_NOT_BRANCH_SPECIFIC",
+  "secondary_states": [
+    "M0B1_V2_RAW_BRANCH_EVALUATION_UNRESOLVED",
+    "R02_DIRECTION_SIGN_DEGENERATE",
+    "M0B1_V2_INCREMENTAL_BEYOND_SAR_ONLY_NOT_ESTABLISHED"
+  ],
+  "starting_head": "752dd28f26666c8e9e08fd94ad0e74a2beebfade",
+  "head_at_report_generation": "752dd28f26666c8e9e08fd94ad0e74a2beebfade",
+  "frozen_predecessor_states_unchanged": true,
+  "reference_supported_base_edges": 6,
+  "reference_supported_frame_pair_clusters": 3,
+  "matched_reference_unsupported_edges": 30,
+  "nominal_pairwise_cluster_counts": {
+    "favors_supported": 5,
+    "favors_null": 0,
+    "no_decision": 25
+  },
+  "nominal_joint_categories": {
+    "DIRECTION_REDUNDANT_NO_DECISION": 25,
+    "DIRECTION_CONFIRMATION": 5
+  },
+  "branch_decisions_different_from_global": 0,
+  "branch_specific_increment_over_global_observed": false,
+  "incremental_beyond_sar_only_rescue_count": 0,
+  "direction_confirmation_count": 5,
+  "direction_conflict_count": 0,
+  "scene_common_direction_prior_observed": true,
+  "person_or_branch_specificity_established": false,
+  "raw_fragment_target_evaluator_status": "UNRESOLVED",
+  "offline_review_pack_count": 10,
+  "offline_review_state_counts": {
+    "UNRESOLVED": 10
+  },
+  "counterfactual_admissibility_gate_passed": false,
+  "counterfactual_admissibility_executed": false,
+  "recommended_next_action": "OPTICAL_COMMON_APPARENT_MOTION_AND_BRANCH_RELATIVE_RESIDUAL_STUDY_ON_ALL_GT_BLIND_ELIGIBLE_ATLAS_WINDOWS",
+  "recommend_magnitude_next": false,
+  "recommend_common_apparent_motion_next": true,
+  "recommend_counterfactual_admissibility_next": false,
+  "prohibited_claims": {
+    "sync_calibrated": false,
+    "physical_person_angular_velocity": false,
+    "optical_sar_identity": false,
+    "person_specific_sar_continuation": false,
+    "runtime_raw_fragment_identity": false,
+    "ambiguity_reduction": false,
+    "dynamic_pruning_validated": false,
+    "unique_dynamic_path": false,
+    "final_sar_center": false,
+    "final_sar_box": false,
+    "p2_established": false,
+    "generalization_established": false
+  }
+}

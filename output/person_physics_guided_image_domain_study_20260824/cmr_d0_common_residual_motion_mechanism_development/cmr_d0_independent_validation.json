@@ -1,0 +1,232 @@
+{
+  "schema": "PERSON_CMR_D0_INDEPENDENT_VALIDATION_V1",
+  "status": "PASS",
+  "checks_passed": 42,
+  "checks_total": 42,
+  "failed_checks": [],
+  "checks": [
+    {
+      "check": "exists::CMR_RUN_SPLIT_FROZEN_BEFORE_DEVELOPMENT.md",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "exists::cmr_eligible_window_atlas.parquet",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "exists::optical_common_motion_development.parquet",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "exists::optical_branch_residual_development.parquet",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "exists::sar_p0_relative_residual_development.parquet",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "exists::cross_modal_residual_hypotheses_development.parquet",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "exists::optical_branch_offline_grounding_interface.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "exists::CMR_D0_DEVELOPMENT_LOG.md",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "exists::CMR_V0_MECHANISM_SPECIFICATION_FROZEN.md",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "exists::CMR_V0_CONFIRMATION_PROTOCOL_DRAFT.md",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "exists::CMR_D0_FINAL_DEVELOPMENT_REPORT.md",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "exists::CMR_D0_MULTIMODAL_VISUAL_REVIEW_LEDGER.md",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "exists::cmr_d0_final_summary.json",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "exists::cmr_d0_output_manifest.json",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "exists::development_real_case_registry.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "confirmation_not_in_common",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "confirmation_not_in_optical_residual",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "confirmation_not_in_sar_residual",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "confirmation_not_in_cross_modal",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "confirmation_not_executed",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "manifest_confirmation_false",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "confirmation_inputs_available",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "no_pruning",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "no_identity_assignment",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "no_final_localization",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "optical_reference_free",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "sar_reference_free",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "grounding_offline_only",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "no_magnitude_fit",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "no_weighted_score",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "p0_unmodified",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "readiness_state_allowed",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "nonempty_mechanism_outputs",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "optical_residual_not_collapsed",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "sar_residual_not_collapsed",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "cross_modal_not_collapsed",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "scheduled_window_accounting",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "eligible_window_accounting",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "below_common_absence_audited",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "paired_rescue_deceptive_same_window",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "cross_modal_overlay_render_dimensions",
+      "pass": true,
+      "details": [
+        [
+          2240,
+          1960
+        ],
+        [
+          2240,
+          1960
+        ],
+        [
+          2240,
+          1960
+        ]
+      ]
+    },
+    {
+      "check": "manifest_files_hash_match",
+      "pass": true,
+      "details": []
+    }
+  ]
+}

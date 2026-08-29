@@ -1,0 +1,227 @@
+{
+  "schema": "PERSON_CMR_D0_OUTPUT_MANIFEST_V1",
+  "created_at": "2026-08-29T10:31:03+08:00",
+  "head": "b6e7a3a5ade1844d14c771c7aaaa02099e663c3a",
+  "confirmation_executed": false,
+  "confirmation_runs": [
+    "R04ZF"
+  ],
+  "confirmation_readiness": "READY_FOR_CMR_V0_CONFIRMATION",
+  "files": [
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_d0_common_residual_motion_mechanism_development\\CMR_D0_AUTHORITATIVE_SOURCE_REVIEW_AND_SUPERSESSION.md",
+      "bytes": 1836,
+      "sha256": "D6E15F37960E63FB1007BB1773F89AFEE482660C97C737496850979BC50CBC5C"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_d0_common_residual_motion_mechanism_development\\CMR_D0_DEVELOPMENT_LOG.md",
+      "bytes": 4750,
+      "sha256": "77C564585000314CC41A0447B5AE28C0D55550DDFD57E3F8BA988729029B12DC"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_d0_common_residual_motion_mechanism_development\\CMR_D0_FINAL_DEVELOPMENT_REPORT.md",
+      "bytes": 4125,
+      "sha256": "27456AA6DA94313DD510E02E5A1EB752680422BB6CAAC8348609BAEE5CD86FCC"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_d0_common_residual_motion_mechanism_development\\cmr_d0_final_summary.json",
+      "bytes": 2960,
+      "sha256": "84DAFE92939D0E5B5104EBA6E7BE596B60EC28D1235A2B35F85D6BAB683BFCA0"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_d0_common_residual_motion_mechanism_development\\CMR_D0_MULTIMODAL_VISUAL_REVIEW_LEDGER.md",
+      "bytes": 2960,
+      "sha256": "77E927F17C8CFE37B3113028613FC4665AD7C87DDD0F83FB4A7B7E56C1E09A61"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_d0_common_residual_motion_mechanism_development\\cmr_eligible_window_atlas.csv",
+      "bytes": 66240,
+      "sha256": "79E68C19912268481E4AC53F0B8518B65131F047CF5E241873A66BE2F15FA8B3"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_d0_common_residual_motion_mechanism_development\\cmr_eligible_window_atlas.parquet",
+      "bytes": 22823,
+      "sha256": "93A89BDFFA39E6480AEBB32F7D001F53C5888EF3087CB8BA34FE0E33C8F6CF79"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_d0_common_residual_motion_mechanism_development\\cmr_optical_only_diagnostic_runs.csv",
+      "bytes": 1928,
+      "sha256": "357CE4A61440B7130075BA73654C39EF6B6CBCE22B56AD567916CAE2F4A218A5"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_d0_common_residual_motion_mechanism_development\\cmr_run_split.json",
+      "bytes": 1616,
+      "sha256": "F3C633C0EA011E195B9481173C1238482BCE5348DDF7F4E849EB2863B4575D4B"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_d0_common_residual_motion_mechanism_development\\CMR_RUN_SPLIT_FROZEN_BEFORE_DEVELOPMENT.md",
+      "bytes": 1090,
+      "sha256": "5856A51D9C9D8EFF33BF221EA18BF1DCBC370DAD919DFBA5169D1084B4337A2D"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_d0_common_residual_motion_mechanism_development\\cmr_run_split_summary.csv",
+      "bytes": 229,
+      "sha256": "5D29EACDD5005296F5DA567449DE32990BA18DB54C9F2BBFCB33BD6D662F9FEF"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_d0_common_residual_motion_mechanism_development\\CMR_V0_CONFIRMATION_PROTOCOL_DRAFT.md",
+      "bytes": 1497,
+      "sha256": "02DC3439F3E163509E82D0BEC745DC036FF6736D7CA280F90BE0F0BF7756F88A"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_d0_common_residual_motion_mechanism_development\\CMR_V0_MECHANISM_SPECIFICATION_FROZEN.md",
+      "bytes": 3672,
+      "sha256": "24B3CEA3552EF0C61062DAD9E97246922FE76C35A391B8C9242F6EC1968DF317"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_d0_common_residual_motion_mechanism_development\\cross_modal_residual_hypotheses_development.parquet",
+      "bytes": 2103945,
+      "sha256": "518D3F921869F062F395772B8CF7BDD6187596F9B01EFA71BABD0544B5A35FB0"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_d0_common_residual_motion_mechanism_development\\cross_modal_residual_state_summary.csv",
+      "bytes": 3744,
+      "sha256": "69259D95690400CFC6D1DFB287B278777C850506AED5C4FBB401FEFDB7BD1B41"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_d0_common_residual_motion_mechanism_development\\development_real_case_registry.csv",
+      "bytes": 3891,
+      "sha256": "BB182149950EE267D1F926BE070867FDF646D635F714BE9B1791B06E6F9B0F40"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_d0_common_residual_motion_mechanism_development\\figures\\CMR_D0_DEVELOPMENT_CASE_CONTACT_SHEET.jpg",
+      "bytes": 1114374,
+      "sha256": "73DF412E689980FB8CEEF24E5676A9A20159D91A55E741DD0C994A275FEC0B93"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_d0_common_residual_motion_mechanism_development\\figures\\development_cases\\01_clear_common_motion.png",
+      "bytes": 645022,
+      "sha256": "3B9DCE897AB0E2C454E708E86E84EA1DB24462166B3ED048B0192F51DFADDAAD"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_d0_common_residual_motion_mechanism_development\\figures\\development_cases\\02_branch_above_common.png",
+      "bytes": 761262,
+      "sha256": "7DF37F9981D34ECF8B75938B61CA8CE84F15857694ADE2EA6C0E8190A46B8659"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_d0_common_residual_motion_mechanism_development\\figures\\development_cases\\04_optical_deformation.png",
+      "bytes": 516597,
+      "sha256": "BD34A9A4C4D5EFCEA897E730F299900EE20C546697FC29A58FAF407135A9AD54"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_d0_common_residual_motion_mechanism_development\\figures\\development_cases\\05_common_estimator_disagreement.png",
+      "bytes": 829980,
+      "sha256": "86BAE4EB57CE852134916008BDE99764108719732829951B0D09F81AB675F696"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_d0_common_residual_motion_mechanism_development\\figures\\development_cases\\11_sar_p0_compatible.png",
+      "bytes": 1765188,
+      "sha256": "936D02929EDF38A6D54695365CA188A0F28DEA87D395298BB3B3A7FB315FBF0C"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_d0_common_residual_motion_mechanism_development\\figures\\development_cases\\12_sar_above_p0.png",
+      "bytes": 1853433,
+      "sha256": "2A6DEFCBE3F8BFF0406044396D02DB71DC22BF93E2074B336994C43787BE8031"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_d0_common_residual_motion_mechanism_development\\figures\\development_cases\\13_sar_below_p0.png",
+      "bytes": 1902129,
+      "sha256": "180680B1CFE40F5CB94202342158E677EBC84C3BDD2C1AF6E71C7FD9ED0407D7"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_d0_common_residual_motion_mechanism_development\\figures\\development_cases\\14_sar_deformation.png",
+      "bytes": 2007039,
+      "sha256": "1A619DAF52168620D543AF12C96AA98AD192DD478705AC3DB96E1BC178F229AF"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_d0_common_residual_motion_mechanism_development\\figures\\development_cases\\15_sar_boundary_censored.png",
+      "bytes": 1927752,
+      "sha256": "BF11E67D88FE3BE980ED22C571ADB022892C19C9489FB38AE3A8DDC73FE4C2AF"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_d0_common_residual_motion_mechanism_development\\figures\\development_cases\\19_residual_concordant.png",
+      "bytes": 1769801,
+      "sha256": "3953C0BA26C0F8D4B25B45B413B53BE42C1421A468F8FFF4ECC745BF8193FB0E"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_d0_common_residual_motion_mechanism_development\\figures\\development_cases\\20_residual_contradictory.png",
+      "bytes": 1935796,
+      "sha256": "2BC7460BF6ECB330C9B2718C3B074BB650054D9627AD17AEB3BE577657E25DCE"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_d0_common_residual_motion_mechanism_development\\figures\\development_cases\\21_optical_clear_sar_ambiguous.png",
+      "bytes": 1998092,
+      "sha256": "5DE368D33EA538580A2ED7339233E2D4F7E89FD505D8CEE85A3C4DACE39CFE92"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_d0_common_residual_motion_mechanism_development\\figures\\development_cases\\23_possible_rescue_candidate.png",
+      "bytes": 1750214,
+      "sha256": "2721FF013CFA96A1650FD96F2A231AE0406339929C19639390004F2973C4367A"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_d0_common_residual_motion_mechanism_development\\figures\\development_cases\\24_deceptive_candidate.png",
+      "bytes": 1694304,
+      "sha256": "7BAFE6A0935C1346E6EF0E125DAF89C6E3C9CDDD421889077DC51C1453CAA1BE"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_d0_common_residual_motion_mechanism_development\\gt_blind_possible_rescue_candidates_development.csv",
+      "bytes": 8413,
+      "sha256": "9FF5496C4850AEFEFC911DF1D96B7BCA7E2C1E45257F4B79CEB9CAE5A23CFD66"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_d0_common_residual_motion_mechanism_development\\optical_branch_grounding_audit.json",
+      "bytes": 1129,
+      "sha256": "E171C7884D2A3175AA444C6C3ED4C367C3A52B93AE73A06F53E66C146A5C0BA0"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_d0_common_residual_motion_mechanism_development\\optical_branch_offline_grounding_interface.csv",
+      "bytes": 4249,
+      "sha256": "24EE579CFE6EF843201B602E3FFDF4C5C90AB2FB90D0266847BE742F5F0D0D8F"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_d0_common_residual_motion_mechanism_development\\optical_branch_residual_development.csv",
+      "bytes": 96193,
+      "sha256": "CDF95BA3FBBE3B9126C60DEC7607A855E83C6F635E077B2EE316C5907499161A"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_d0_common_residual_motion_mechanism_development\\optical_branch_residual_development.parquet",
+      "bytes": 45208,
+      "sha256": "02D81835DC84416F28F2D37C9F335C1D7DC3225EC05FCA42562889EB21F9A4ED"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_d0_common_residual_motion_mechanism_development\\optical_common_motion_development.csv",
+      "bytes": 84555,
+      "sha256": "C66BEFC3D6855494BFDB538474BDA8E6E76D44961FC249E3309F794F0FBDD7C2"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_d0_common_residual_motion_mechanism_development\\optical_common_motion_development.parquet",
+      "bytes": 47307,
+      "sha256": "B37BEFBDA3450657D940ADBFA1C0C130407AAD0D5EACCABF5BC2288F45A5F3B1"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_d0_common_residual_motion_mechanism_development\\sar_p0_relative_residual_development.csv",
+      "bytes": 11502557,
+      "sha256": "1E8D1F09339C6BA3B7781B9530EEE4B8EBCE79A9D055017467BDA931C987CF11"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_d0_common_residual_motion_mechanism_development\\sar_p0_relative_residual_development.parquet",
+      "bytes": 1584452,
+      "sha256": "27675888978B8708C6EF154B203BCF94AB1E61B84E4012A9638C83FA1A5A17B6"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_d0_common_residual_motion_mechanism_development\\static_cross_modal_hypotheses_development.parquet",
+      "bytes": 466210,
+      "sha256": "0923616F7729F8D2A50F94EF21DD72BDEBEC6073621CBC2643352C0CC6B7E428"
+    }
+  ],
+  "prohibited_outputs": {
+    "weighted_score": false,
+    "hypotheses_pruned": false,
+    "identity_assignment": false,
+    "tracker": false,
+    "factor_graph": false,
+    "p2": false,
+    "final_sar_center": false,
+    "final_sar_box": false
+  }
+}

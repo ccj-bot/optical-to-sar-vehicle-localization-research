@@ -1,0 +1,65 @@
+{
+  "schema": "PERSON_CMR_D0_RUN_SPLIT_V1",
+  "created_at": "2026-08-29T10:25:59+08:00",
+  "starting_head": "b6e7a3a5ade1844d14c771c7aaaa02099e663c3a",
+  "development_runs": [
+    "R01ZF",
+    "R02ZF",
+    "R03ZF"
+  ],
+  "confirmation_runs": [
+    "R04ZF"
+  ],
+  "diagnostic_runs": [
+    "R06ZF",
+    "R07ZF",
+    "R18ZF",
+    "R20ZF",
+    "R22ZF",
+    "R24ZF",
+    "R25ZF",
+    "R27ZF",
+    "R29ZF",
+    "R37ZF",
+    "R39ZF",
+    "R55ZF",
+    "R66ZF",
+    "R69ZF"
+  ],
+  "split_basis": "RUN_ID_PLUS_GT_BLIND_FROZEN_INPUT_AVAILABILITY",
+  "manual_reference_used": false,
+  "future_method_performance_used": false,
+  "same_run_cross_pool_leakage": false,
+  "confirmation_outcome_accessed": false,
+  "atlas_sha256": "93A89BDFFA39E6480AEBB32F7D001F53C5888EF3087CB8BA34FE0E33C8F6CF79",
+  "summary": [
+    {
+      "pool": "CONFIRMATION_POOL",
+      "run_id": "R04ZF",
+      "scheduled_lag1_pairs": 195,
+      "cross_modal_eligible_windows": 98,
+      "eligible_branch_instances": 166
+    },
+    {
+      "pool": "DEVELOPMENT_POOL",
+      "run_id": "R01ZF",
+      "scheduled_lag1_pairs": 141,
+      "cross_modal_eligible_windows": 73,
+      "eligible_branch_instances": 173
+    },
+    {
+      "pool": "DEVELOPMENT_POOL",
+      "run_id": "R02ZF",
+      "scheduled_lag1_pairs": 22,
+      "cross_modal_eligible_windows": 13,
+      "eligible_branch_instances": 37
+    },
+    {
+      "pool": "DEVELOPMENT_POOL",
+      "run_id": "R03ZF",
+      "scheduled_lag1_pairs": 36,
+      "cross_modal_eligible_windows": 21,
+      "eligible_branch_instances": 21
+    }
+  ]
+}

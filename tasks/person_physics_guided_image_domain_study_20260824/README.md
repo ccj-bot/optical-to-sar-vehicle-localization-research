@@ -276,3 +276,16 @@
 - post-reference 首次渲染暴露 `pandas.Series.to_frame` 同名冲突；`AMENDMENT_01_POST_REFERENCE_CASE_RENDER_SERIES_NAME_COLLISION.md` 只把渲染时 `to_frame` 改为显式列访问，未改变 timing、pixel relations、hypotheses、controls、direction states、case rules 或 outcome thresholds。
 - 没有执行 Pareto pruning、hypothesis deletion、angular magnitude/monotonicity、weighted score、classifier、factor graph、tracker、Hungarian、identity assignment、timing calibration、lag3/lag5、M0B2、P2 或最终 SAR localization。
 - 当前不建议进入 M0B2。若以后另行授权，先诊断 optical interval width、18/30 FPS sampling、raw-fragment continuity、sync 与 mapping slope；光学继续只提供 time/azimuth prior，SAR 保留最终定位权。
+
+## CMR-D0 common-residual mechanism development（2026-08-29）
+
+- 阶段为 `CMR_D0_COMMON_RESIDUAL_MOTION_MECHANISM_DEVELOPMENT`，是 development，不是 confirmation；R04ZF 只做输入 availability audit，本轮没有执行其 residual/cross-modal outcome。
+- run-level split 冻结为 development R01ZF/R02ZF/R03ZF、confirmation R04ZF，另有 14 个缺完整冻结 P0/topology 的 optical-only diagnostic runs。四个跨模态 run 共 394 个 scheduled lag-1 window rows，经 distinct optical sample、连续 raw fragment、两端 q95、冻结 P0、两端最新像素 topology 的 GT-blind 交集后为 205 个 eligible windows；development 为 107 windows / 231 branch instances，confirmation-input 为 98 / 166。394 是 window 行数，不是 branch-instance 数。
+- optical v0 以 detection-masked background affine-partial GMC 为主 common estimator，用确定性空间 holdout P90 表示估计不确定度；scene branch consensus 只作 circularity-sensitive diagnostic，不与 GMC 加权平均，强冲突输出 ambiguous。
+- optical residual 保留 corresponding left/right boundary、mid descriptor 与 width/deformation。开发数据中 13 个 midpoint descriptor 为负、3 个同时具有负的 point boundary residual，但 0 个在不确定度后满足两侧 definite below；因此没有人为调 threshold 生成 `BELOW_COMMON`，负值病例保留为 deformation/mixed 或 common-compatible。
+- SAR v0 不修改 P0，直接把 source q95 binary support 按冻结 soft affine 约定 warp，再与 destination q95 比较 predicted/observed angular boundaries、width、soft overlap 和 split/merge-like topology；所有状态仍是 SAR image-domain response-support residual，不是 PERSON 速度。
+- 跨模态只比较 residual direction/structure，不拟合 magnitude、不做 weighted score、pruning、assignment、tracker、identity、P2 或 final SAR center/box。51 个 GT-blind development windows 同时含 concordant 与 contradictory hypotheses，只标记为未来可能 rescue 的候选，不构成已建立 rescue。
+- 真实病例图已补齐 source q95（青）、冻结 P0 prediction（洋红）、destination q95（绿）的全帧与局部叠加。视觉审查确认 deformation、common-estimator ambiguity、SAR non-rigid/boundary-censored 语义合理；同一 possible-rescue window 中高重叠 concordant 与 contradictory 候选可并存，说明 residual 能区分结构，但没有 reference/identity 时不能判定哪条正确。
+- 没有找到 direct manual optical raw-fragment annotation；既有 frame-level geometric assignment 和 M0B1-V2 review packs 只支持 offline-only `LIKELY/UNRESOLVED` grounding，不能进入 runtime common/residual 或 inference。
+- 冻结机制：`output/person_physics_guided_image_domain_study_20260824/cmr_d0_common_residual_motion_mechanism_development/CMR_V0_MECHANISM_SPECIFICATION_FROZEN.md`；视觉审查：同目录 `CMR_D0_MULTIMODAL_VISUAL_REVIEW_LEDGER.md`；正式 confirmation protocol 仅为 draft，未执行。
+- 当前 readiness：`READY_FOR_CMR_V0_CONFIRMATION`，限定为机制合同、隔离制度、可视化和验证链已完成；它不表示 branch/PERSON specificity、runtime identity、rescue 或最终定位已建立。

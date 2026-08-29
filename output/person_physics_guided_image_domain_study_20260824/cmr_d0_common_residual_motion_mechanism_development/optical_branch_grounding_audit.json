@@ -1,0 +1,31 @@
+{
+  "schema": "PERSON_CMR_D0_OPTICAL_BRANCH_GROUNDING_AUDIT_V1",
+  "created_at": "2026-08-29T10:30:08+08:00",
+  "direct_manual_optical_raw_fragment_annotation_found": false,
+  "offline_frame_level_geometric_assignment_found": true,
+  "offline_assignment_sha256": "C2EFFA8A7DAEE048BB3F0117B232DC9B79A418783BBBDA4EA5AB1764CCE9016B",
+  "optical_provenance_sha256": "A4D77A4CB687A5AC4C457A91EBF01948CEE42FE796246CBF6E7FAB89F7AEC96E",
+  "grounding_state_counts": {
+    "LIKELY": 9,
+    "UNRESOLVED": 1
+  },
+  "confirmed_count": 0,
+  "likely_count": 9,
+  "ambiguous_count": 0,
+  "unresolved_count": 1,
+  "raw_interface_semantics": [
+    "AUTOMATIC_OPTICAL_TRACKLET_REPLAY_CLOSEST_AVAILABLE_RUNTIME_PROXY",
+    "GT_BLIND_FULL_RUN_STITCH_AND_SHORT_GAP_INTERPOLATION_OFFLINE_PROXY"
+  ],
+  "runtime_identity_established": false,
+  "allowed_use": "OFFLINE_EVALUATION_REFERENCE_ONLY",
+  "prohibited_uses": [
+    "runtime_branch_generation",
+    "common_motion_estimation",
+    "residual_calculation",
+    "hypothesis_selection",
+    "timing_fit",
+    "P0_or_SAR_region_generation",
+    "final_inference"
+  ]
+}

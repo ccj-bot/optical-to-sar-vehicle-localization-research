@@ -1,0 +1,74 @@
+{
+  "schema": "PERSON_CMR_D0_DEVELOPMENT_SUMMARY_V1",
+  "created_at": "2026-08-29T10:31:03+08:00",
+  "starting_head": "b6e7a3a5ade1844d14c771c7aaaa02099e663c3a",
+  "report_generation_head": "b6e7a3a5ade1844d14c771c7aaaa02099e663c3a",
+  "stage": "CMR_D0_COMMON_RESIDUAL_MOTION_MECHANISM_DEVELOPMENT",
+  "stage_role": "DEVELOPMENT_NOT_CONFIRMATION",
+  "development_runs": [
+    "R01ZF",
+    "R02ZF",
+    "R03ZF"
+  ],
+  "confirmation_runs": [
+    "R04ZF"
+  ],
+  "scheduled_lag1_windows_all_cross_modal_runs": 394,
+  "cross_modal_eligible_windows_all_pools": 205,
+  "development_eligible_windows": 107,
+  "development_eligible_branch_instances": 231,
+  "confirmation_input_eligible_windows": 98,
+  "confirmation_input_eligible_branch_instances": 166,
+  "confirmation_mechanism_executed": false,
+  "background_gmc_state_counts": {
+    "BACKGROUND_GMC_AVAILABLE": 107
+  },
+  "hybrid_common_state_counts": {
+    "COMMON_ESTIMATORS_AGREE": 51,
+    "BACKGROUND_ONLY_AVAILABLE": 38,
+    "COMMON_ESTIMATORS_MILD_DISAGREEMENT": 16,
+    "COMMON_ESTIMATORS_STRONG_DISAGREEMENT": 2
+  },
+  "optical_residual_state_counts": {
+    "OPTICAL_RESIDUAL_COMMON_COMPATIBLE": 104,
+    "OPTICAL_RESIDUAL_ABOVE_COMMON": 76,
+    "OPTICAL_RESIDUAL_DEFORMATION_OR_MIXED": 45,
+    "OPTICAL_RESIDUAL_COMMON_ESTIMATE_AMBIGUOUS": 6
+  },
+  "optical_windows_with_branch_state_distinction": 36,
+  "optical_negative_midpoint_descriptor_count": 13,
+  "optical_both_point_boundaries_negative_count": 3,
+  "optical_definite_below_common_count": 0,
+  "optical_below_common_audit": "NOT_OBSERVED_AFTER_ESTIMATOR_UNCERTAINTY; NEGATIVE_MIDPOINT_CASES_ARE_DEFORMATION_OR_COMMON_COMPATIBLE",
+  "sar_p0_residual_state_counts": {
+    "SAR_P0_RESIDUAL_ABOVE_COMMON": 10089,
+    "SAR_P0_RESIDUAL_BELOW_COMMON": 8516,
+    "SAR_P0_RESIDUAL_DEFORMATION_OR_MIXED": 4786,
+    "SAR_P0_RESIDUAL_COMMON_COMPATIBLE": 79,
+    "SAR_P0_RESIDUAL_BOUNDARY_CENSORED": 58
+  },
+  "cross_modal_residual_relation_counts": {
+    "RESIDUAL_STRUCTURALLY_INDETERMINATE": 11075,
+    "RESIDUAL_RELATION_WEAK_OR_UNRESOLVED": 9195,
+    "RESIDUAL_DIRECTION_CONCORDANT": 5342,
+    "RESIDUAL_DIRECTION_CONTRADICTORY": 4350,
+    "RESIDUAL_COMMON_ESTIMATE_AMBIGUOUS": 925
+  },
+  "gt_blind_possible_rescue_candidate_windows": 51,
+  "rescue_established": false,
+  "grounding_state_counts": {
+    "LIKELY": 9,
+    "UNRESOLVED": 1
+  },
+  "grounding_runtime_use_allowed": false,
+  "real_case_observed_count": 14,
+  "real_case_category_not_observed_count": 1,
+  "ordering_route": "REJECTED_FOR_V0_WITHOUT_BRANCH_TO_SAR_EDGE_CORRESPONDENCE",
+  "magnitude_fit": false,
+  "weighted_score": false,
+  "hypotheses_pruned": false,
+  "identity_assignment_performed": false,
+  "p0_modified": false,
+  "confirmation_readiness": "READY_FOR_CMR_V0_CONFIRMATION",
+  "readiness_qualification": "MECHANISM_CONTRACT_COMPLETE; OFFLINE_GROUNDING_IS_LIKELY_OR_AMBIGUOUS_NOT_RUNTIME_IDENTITY"
+}

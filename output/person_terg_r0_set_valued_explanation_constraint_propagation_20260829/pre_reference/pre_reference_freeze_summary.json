@@ -1,0 +1,15 @@
+{
+  "freeze_state": "PRE_REFERENCE_REASONING_FROZEN_BEFORE_GROUNDING_LOAD",
+  "reasoning_formulation_count": 1,
+  "real_bug_correction_count": 1,
+  "correction": "NOMINAL_FRAME_OPPOSITE_AT_ANY_FRAME_REPLACED_BY_CONSISTENT_DEFINITE_ORDER_ON_ALL_AVAILABLE_OPTICAL_FRAMES_AND_ALL_COMMON_SAR_SUPPORT_OPPOSITE; UNAVAILABLE_IS_NOT_CONTRADICTION",
+  "segment_count": 38,
+  "family_count": 3414,
+  "pairing_count": 142389,
+  "baseline_joint_world_count": 3920966,
+  "possible_joint_world_count": 3506018,
+  "logically_excluded_joint_world_count": 414948,
+  "family_level_logical_exclusion_count": 0,
+  "manual_reference_loaded_before_freeze": false,
+  "r04zf_accessed": false
+}

@@ -1,0 +1,9 @@
+﻿evidence_family,r0_role,new_logically_excluded_joint_world_count,baseline_joint_world_count,final_possible_joint_world_count,interpretation,weighted_score_used,manual_reference_used
+lifecycle,CONSTRUCTION_INVARIANT,0,3920966,3506018,Already defines frozen TERG-v1 family domains; no R0 re-pruning.,False,False
+corridor,CONSTRUCTION_INVARIANT,0,3920966,3506018,Already defines conditioned incidences; no circular domain deletion.,False,False
+p0_upper_temporal_structure,CONSTRUCTION_INVARIANT,0,3920966,3506018,Upper legal connectivity constructs families; optional is not false.,False,False
+optical_raw_definite_order_alone,NONDISCRIMINATIVE_ALONE,0,3920966,3506018,An optical order has no SAR-family truth assignment by itself.,False,False
+sar_family_pair_geometry_alone,NONDISCRIMINATIVE_ALONE,0,3920966,3506018,SAR left/right geometry has no optical identity assignment by itself.,False,False
+cross_modal_definite_order_intersection,ACTIVE_LOGICAL_EXCLUSION,414948,3920966,3506018,Definite optical order intersected with uniformly opposite SAR pair geometry.,False,False
+shared_and_topology,PERMISSIVE_UNCERTAINTY,0,3920966,3506018,"Shared, overlap, deformation, split, and merge hypotheses remain admissible.",False,False
+timing_relation_set,UNUSABLE_FOR_HARD_EXCLUSION,0,3920966,3506018,Synchronization offset is unresolved; no frame-equality gate.,False,False

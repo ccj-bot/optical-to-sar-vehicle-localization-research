@@ -1,0 +1,14 @@
+{
+  "strict_branch_identity_evaluation": "STRICT_BRANCH_IDENTITY_EVALUATION_UNAVAILABLE",
+  "strict_confirmed_family_count": 0,
+  "likely_supported_exploratory_family_count": 79,
+  "likely_supported_exploratory_family_retained_count": 79,
+  "likely_supported_exploratory_family_retention_fraction": 1.0,
+  "segments_with_unique_likely_supported_joint_tuple": 31,
+  "unique_likely_supported_joint_tuple_retained_count": 31,
+  "unique_likely_supported_joint_tuple_retention_fraction": 1.0,
+  "route_decision": "TERG_R0_CONSTRAINT_PROPAGATION_MECHANISM_ESTABLISHED",
+  "identity_truth_claimed": false,
+  "r04zf_used_for_confirmation": false,
+  "future_confirmation_requirement": "NEW_INDEPENDENT_CONFIRMATION_DATA_REQUIRED"
+}

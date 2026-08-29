@@ -1,0 +1,29 @@
+{
+  "mechanism": "TERG_R0_SET_VALUED_EXPLANATION_CONSTRAINT_PROPAGATION",
+  "explanation_unit": "SEGMENT_LEVEL_JOINT_WORLD_ONE_FROZEN_TERG_V1_FAMILY_PER_OPTICAL_TRACK",
+  "domain_semantics": "ALL_FROZEN_TERG_V1_UPPER_COMPONENT_FAMILIES",
+  "principal_constraint": "CONSISTENT_DEFINITE_OPTICAL_RAW_INTERVAL_ORDER_ON_ALL_JOINTLY_AVAILABLE_FRAMES_INTERSECTED_WITH_ALL_COMMON_SAR_SUPPORT_DEFINITE_OPPOSITE_FAMILY_PAIR_GEOMETRY",
+  "logical_exclusion_condition": [
+    "optical raw intervals have the same definite order at every jointly available optical frame; unavailable is not contradiction",
+    "family pair has at least one common SAR support frame",
+    "every common SAR support frame has the definite opposite order",
+    "no aligned, overlap, or shared relation is present"
+  ],
+  "family_pair_physical_relation": {
+    "SHARED": "same physical_region_id in a common frame",
+    "LEFT": "a_theta_high < b_theta_low",
+    "RIGHT": "b_theta_high < a_theta_low",
+    "OVERLAP": "otherwise"
+  },
+  "inference": "EXACT_FINITE_DOMAIN_BOOLEAN_FACTOR_INTERSECTION_AND_SUM_PRODUCT_MARGINAL_COUNTING",
+  "hard_timing_offset_assumed": false,
+  "manual_reference_used": false,
+  "weighted_score_used": false,
+  "arbitrary_threshold_used": false,
+  "top_k_used": false,
+  "assignment_used": false,
+  "tracker_used": false,
+  "r04zf_accessed": false,
+  "reasoning_formulation_count": 1,
+  "real_bug_correction_count": 1
+}

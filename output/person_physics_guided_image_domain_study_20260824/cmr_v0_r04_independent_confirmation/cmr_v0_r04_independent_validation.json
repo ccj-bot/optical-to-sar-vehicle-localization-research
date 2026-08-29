@@ -1,0 +1,359 @@
+{
+  "schema": "PERSON_CMR_V0_R04_INDEPENDENT_VALIDATION_V1",
+  "status": "PASS",
+  "checks_passed": 64,
+  "checks_total": 64,
+  "failed_checks": [],
+  "checks": [
+    {
+      "check": "exists::confirmation_protocol_and_evaluator_freeze.json",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "exists::control_bank_freeze.json",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "exists::pre_reference_output_hash_freeze.json",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "exists::r04_static_hypothesis_bank_pre_reference.parquet",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "exists::r04_structurally_matched_control_bank_pre_reference.parquet",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "exists::r04_cmr_v0_evidence_profiles_pre_reference.parquet",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "exists::REFERENCE_REVEAL_MARKER.json",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "exists::r04_reference_supported_sar_edges.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "exists::r04_supported_vs_matched_wrong_pairwise_evaluation.parquet",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "exists::r04_reference_free_structurally_matched_controls.parquet",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "exists::r04_candidate_separation_by_window.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "exists::r04_cluster_aware_summary.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "exists::r04_offline_likely_supported_branch_evaluation.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "exists::r04_unresolved_branch_evidence_profiles.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "exists::r04_visual_case_registry.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "exists::R04_CONFIRMATION_CASE_CONTACT_SHEET.jpg",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "exists::CMR_V0_R04_MULTIMODAL_VISUAL_REVIEW_LEDGER.md",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "exists::cmr_v0_r04_confirmation_summary.json",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "exists::CMR_V0_R04_FINAL_CONFIRMATION_REPORT.md",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "exists::cmr_v0_r04_final_manifest.json",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "protocol_frozen_pre_reveal",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "controls_frozen_pre_outcome",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_reference_closed_without_outcome",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "reveal_after_pre_freeze",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "reveal_links_frozen_pre_manifest",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "protocol_evaluator_mechanism_hashes_match",
+      "pass": true,
+      "details": []
+    },
+    {
+      "check": "pre_reference_files_hash_match",
+      "pass": true,
+      "details": []
+    },
+    {
+      "check": "control_bank_forbidden_fields_absent",
+      "pass": true,
+      "details": []
+    },
+    {
+      "check": "control_selection_reference_free",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "control_selection_cmr_outcome_free",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "control_count_max_five",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "control_primaries_in_static_bank",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "controls_in_static_bank",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_reference_profiles_r04_only",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "eligible_windows_98",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "eligible_branches_166",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "common_observability_complete",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "optical_branch_observability_complete",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "profile_count_matches_manifest",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "optical_continuous_residual_retained",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "sar_continuous_residual_retained",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "common_uncertainty_retained",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "p0_uncertainty_retained",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "optical_tendency_retained",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "sar_tendency_retained",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "cross_modal_tendency_retained",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "no_pruning",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "no_identity_assignment",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "no_final_localization",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "candidate_separation_states_frozen",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "strict_outcome_states_frozen",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "sar_only_no_hidden_ranker",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "strict_branch_claim_unavailable",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "mechanism_not_recomputed_after_reveal",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "summary_mechanism_unmodified",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "summary_branch_specificity_layered",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "separation_denominator_complete",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "strict_outcome_denominator_complete",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "sixteen_visual_case_slots",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "visual_case_status_allowed",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "visual_case_images_exist",
+      "pass": true,
+      "details": []
+    },
+    {
+      "check": "visual_pair_render_dimensions",
+      "pass": true,
+      "details": [
+        [
+          2100,
+          1098
+        ],
+        [
+          2100,
+          1098
+        ],
+        [
+          2100,
+          1098
+        ],
+        [
+          2100,
+          1098
+        ],
+        [
+          2100,
+          1098
+        ]
+      ]
+    },
+    {
+      "check": "prohibited_outputs_false",
+      "pass": true,
+      "details": {
+        "weighted_score": false,
+        "pruning": false,
+        "identity_assignment": false,
+        "tracker": false,
+        "factor_graph": false,
+        "p2": false,
+        "final_sar_center": false,
+        "final_sar_box": false
+      }
+    },
+    {
+      "check": "final_manifest_files_hash_match",
+      "pass": true,
+      "details": []
+    }
+  ]
+}

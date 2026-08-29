@@ -1,0 +1,224 @@
+{
+  "schema": "PERSON_CMR_V0_R04_FINAL_MANIFEST_V1",
+  "created_at": "2026-08-29T12:28:50+08:00",
+  "head": "7fff51f0a133c8903c4d0bdfaf35e75a45599778",
+  "one_shot_confirmation": true,
+  "mechanism_modified_after_reveal": false,
+  "files": [
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_v0_r04_independent_confirmation\\CMR_V0_R04_CONFIRMATION_PROTOCOL_FROZEN_BEFORE_REVEAL.md",
+      "bytes": 5819,
+      "sha256": "E9AC1176CC841FC05E924B4130928D3B45077FDDBDA9384029682D7A447BB76B"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_v0_r04_independent_confirmation\\confirmation_protocol_and_evaluator_freeze.json",
+      "bytes": 2772,
+      "sha256": "C46C9674BE347BDF5B7E84F11164F0A89F5040C2F75A6473E467027CC2603E3C"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_v0_r04_independent_confirmation\\post_reference\\cmr_v0_r04_confirmation_summary.json",
+      "bytes": 2514,
+      "sha256": "A8A2481B7D49D1286ADAB4CB832B4D39A4B3F90BA727AD02F53CD9EA816AF137"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_v0_r04_independent_confirmation\\post_reference\\CMR_V0_R04_FINAL_CONFIRMATION_REPORT.md",
+      "bytes": 4521,
+      "sha256": "0DF6AA269522BA165AECE75E7149431450406C535E01BC366141D461E1BF5ADD"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_v0_r04_independent_confirmation\\post_reference\\CMR_V0_R04_MULTIMODAL_VISUAL_REVIEW_LEDGER.md",
+      "bytes": 5131,
+      "sha256": "5194BA1CCED9D6C8E8552A5662771F6C5DDD966D5CD77CF0810F34C94602E857"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_v0_r04_independent_confirmation\\post_reference\\figures\\cases\\03_scene_common_correct_cmr_confirms.png",
+      "bytes": 635378,
+      "sha256": "FC672746DF77D9BA2A50E5745676652C68F2DCA4FCD8F9F59CCA15D57E36EB7C"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_v0_r04_independent_confirmation\\post_reference\\figures\\cases\\04_scene_common_correct_cmr_conflicts.png",
+      "bytes": 637200,
+      "sha256": "62E59A10317C4E2F9D58869CEDD1CC43207A11439DB86811484A0E94F9AD1E96"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_v0_r04_independent_confirmation\\post_reference\\figures\\cases\\07_weak_unresolved_visually_plausible.png",
+      "bytes": 644473,
+      "sha256": "312EB6FAFA2F94AC6EFA1861AC1883080C6BC675E9E9B33042D2D2BA1942F146"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_v0_r04_independent_confirmation\\post_reference\\figures\\cases\\08_deformation_case.png",
+      "bytes": 635422,
+      "sha256": "CD2D8DE6A8228D7E3E5513D232B9DDC971914E7F8A909B00B95A03B4E5511D88"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_v0_r04_independent_confirmation\\post_reference\\figures\\cases\\10_large_common_estimator_uncertainty.png",
+      "bytes": 635541,
+      "sha256": "631A9551D337D3E1C7A12C19E1BB7FE8783910E29FF6DFEE405258EB6A39D96F"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_v0_r04_independent_confirmation\\post_reference\\figures\\cases\\12_sar_clear_optical_uncertain.png",
+      "bytes": 637282,
+      "sha256": "95C3B5AA1DA42B46C03C25E914F842AEE6BEB3209286D46DF4AE9C32595DCF7B"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_v0_r04_independent_confirmation\\post_reference\\figures\\cases\\13_likely_grounded_branch.png",
+      "bytes": 635510,
+      "sha256": "A9B7B2FF18016A6B8FAF6E20C7D82F3360EB19591D39F14BB0C3FEF4D0BD81F1"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_v0_r04_independent_confirmation\\post_reference\\figures\\cases\\16_worst_apparent_cmr_harm.png",
+      "bytes": 637377,
+      "sha256": "EAEC12F75A2FB1E1C639E64A15750FE4472EE3A21D9CF64222A8F2C7DE83C47D"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_v0_r04_independent_confirmation\\post_reference\\r04_candidate_separation_by_window.csv",
+      "bytes": 243,
+      "sha256": "86786743C70418622079159E6DBBD36D100233B7BACC15B15D764B1CF4EBAE3E"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_v0_r04_independent_confirmation\\post_reference\\r04_cluster_aware_summary.csv",
+      "bytes": 144,
+      "sha256": "984792509489C54FD1252BED8F394CEB6CDC745499B961E98BBC29C573FE6944"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_v0_r04_independent_confirmation\\post_reference\\R04_CONFIRMATION_CASE_CONTACT_SHEET.jpg",
+      "bytes": 862022,
+      "sha256": "009B5428840F691C6979AF857FD1470A728AD4A6F946E75F91EEFAF917BF6554"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_v0_r04_independent_confirmation\\post_reference\\r04_leave_one_cluster_out_descriptive.json",
+      "bytes": 358,
+      "sha256": "CC417BEC0881BA8203555FE55E38A220DEBD87829F8ECF8DBDEDC54DC8AB516C"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_v0_r04_independent_confirmation\\post_reference\\r04_offline_likely_supported_branch_evaluation.csv",
+      "bytes": 7386,
+      "sha256": "FE0BBF492185D078BB9884F19E52A921B71ED213C9991A792430A6FD46243ED6"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_v0_r04_independent_confirmation\\post_reference\\r04_reference_free_structurally_matched_controls.parquet",
+      "bytes": 12567990,
+      "sha256": "9BBE60C39DE3452ED52DEFEAB8CE34589774AFA5CCDA1F588A17D1EBB7A116F5"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_v0_r04_independent_confirmation\\post_reference\\r04_reference_supported_sar_edges.csv",
+      "bytes": 457,
+      "sha256": "FAD029CE0EB30C2D3B62B5CB57A89F823E59AAF1AC988DCE0C5FE3AC97618ADA"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_v0_r04_independent_confirmation\\post_reference\\r04_supported_vs_matched_wrong_pairwise_evaluation.csv",
+      "bytes": 7386,
+      "sha256": "FE0BBF492185D078BB9884F19E52A921B71ED213C9991A792430A6FD46243ED6"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_v0_r04_independent_confirmation\\post_reference\\r04_supported_vs_matched_wrong_pairwise_evaluation.parquet",
+      "bytes": 37328,
+      "sha256": "3917F8A952A3A55B7EA6CB4ABE8F7377D81E86EC01BE9EEBF4C7896E52C9B2D4"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_v0_r04_independent_confirmation\\post_reference\\r04_unresolved_branch_evidence_profiles.csv",
+      "bytes": 1233,
+      "sha256": "BB125D0092CAE1BDB575E8064D5231CF74AC3F053F312496FCF025FFB275EFF8"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_v0_r04_independent_confirmation\\post_reference\\r04_visual_case_registry.csv",
+      "bytes": 3026,
+      "sha256": "C1B06B9D1253F40D4CE92DBC3FBB2D5D913314FC2666BBB99F5A3671B3EC03D1"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_v0_r04_independent_confirmation\\post_reference\\REFERENCE_REVEAL_MARKER.json",
+      "bytes": 341,
+      "sha256": "7AE462569470EF1C863A68827512A8A189B1070EBD168B674E98D4E90AC8FABF"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_v0_r04_independent_confirmation\\pre_reference\\control_bank_freeze.json",
+      "bytes": 783,
+      "sha256": "F4043591146214016C9C99D0E902A6579F98156F808EC33ACCA5E04A60A06B99"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_v0_r04_independent_confirmation\\pre_reference\\mechanism\\cross_modal_residual_hypotheses_development.parquet",
+      "bytes": 2898456,
+      "sha256": "7A8188BE7A152EE6FACA5EE6C19C4AE9984AC6FF283BE70E4A58C04E82AC2998"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_v0_r04_independent_confirmation\\pre_reference\\mechanism\\cross_modal_residual_state_summary.csv",
+      "bytes": 683,
+      "sha256": "8D9A8CE5F3F59EC8CCAEA788F7B87F958D012C0479DC10C76722B40302B5056B"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_v0_r04_independent_confirmation\\pre_reference\\mechanism\\gt_blind_possible_rescue_candidates_development.csv",
+      "bytes": 7775,
+      "sha256": "B5B2A6FD7225123D0F96093242F486704EFBE341051AB588BC13B97C8F0001A9"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_v0_r04_independent_confirmation\\pre_reference\\mechanism\\optical_branch_residual_development.csv",
+      "bytes": 69059,
+      "sha256": "95FDE50FADFB13B854B9441FBA470D5D203043AB1C67091C7E30354B7D27AE13"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_v0_r04_independent_confirmation\\pre_reference\\mechanism\\optical_branch_residual_development.parquet",
+      "bytes": 37646,
+      "sha256": "08CFBCD78D4B389A557DE969CAEB1BFAD3106F6F62A3115675E6B4FF1D2E19B5"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_v0_r04_independent_confirmation\\pre_reference\\mechanism\\optical_common_motion_development.csv",
+      "bytes": 76194,
+      "sha256": "694A07C3C1509DFBF69FAE5EC95156A6216F1D242C7A67956BBC4E8823D4C6D9"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_v0_r04_independent_confirmation\\pre_reference\\mechanism\\optical_common_motion_development.parquet",
+      "bytes": 45085,
+      "sha256": "EA00AAE3977CA16D0CB281A2E9A20FF10CAAFE6033BAADE18472EDEB8413E233"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_v0_r04_independent_confirmation\\pre_reference\\mechanism\\sar_p0_relative_residual_development.csv",
+      "bytes": 17893795,
+      "sha256": "D987988688E6B80D1F00D527B49642D052842254E560481F713C3057D4FCC25C"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_v0_r04_independent_confirmation\\pre_reference\\mechanism\\sar_p0_relative_residual_development.parquet",
+      "bytes": 2371272,
+      "sha256": "7DDBBC51964C0C18B3E28D59F9BED4EACAC4F91511DF9E127821D79D23F71254"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_v0_r04_independent_confirmation\\pre_reference\\mechanism\\static_cross_modal_hypotheses_development.parquet",
+      "bytes": 539914,
+      "sha256": "E1AB626FF3F583C0D3304E8B7237809F53C6640F2977E848E73C5B70D82B3190"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_v0_r04_independent_confirmation\\pre_reference\\pre_reference_output_hash_freeze.json",
+      "bytes": 8119,
+      "sha256": "4C4A828E3EBF8D127DC8F0765208B7EDA56691D3D51A3ABF6468A492F47FC3F2"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_v0_r04_independent_confirmation\\pre_reference\\r04_cmr_v0_evidence_profiles_pre_reference.parquet",
+      "bytes": 2914789,
+      "sha256": "E4BE86BC71153D1A5F58FF7893D4798FCEE7C505B49A1C49BB8C37ECB4694D08"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_v0_r04_independent_confirmation\\pre_reference\\r04_cmr_v0_evidence_state_index_pre_reference.csv",
+      "bytes": 9696507,
+      "sha256": "40C10A16DCDF0D8876ABE92E6A0F981F98BCD6D6A96629A50EF10FC9AB716CD3"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_v0_r04_independent_confirmation\\pre_reference\\r04_pre_reference_observability_by_window.csv",
+      "bytes": 5205,
+      "sha256": "75416894EE7AE6AE294728979EDBFDF5819818067DCB4618405D8198E1667BB3"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_v0_r04_independent_confirmation\\pre_reference\\r04_static_hypothesis_bank_pre_reference.parquet",
+      "bytes": 874465,
+      "sha256": "2D4D7D9122583F1C48293873B98E14FD1CF08E5F8EF0B38FBC0C4D4AC72DFD20"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_v0_r04_independent_confirmation\\pre_reference\\r04_structurally_matched_control_bank_pre_reference.csv",
+      "bytes": 58302292,
+      "sha256": "DEC44E991673CEF4329584F1715C71B5DD8B16FDBC43BA905030E7ADF7A5C59D"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_v0_r04_independent_confirmation\\pre_reference\\r04_structurally_matched_control_bank_pre_reference.parquet",
+      "bytes": 4177805,
+      "sha256": "7A33AF869B693BDC9C37598AED0EC6A51A4A78E9597671E54F5C21B036B492BC"
+    }
+  ]
+}

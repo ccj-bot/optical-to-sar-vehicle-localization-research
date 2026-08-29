@@ -1,0 +1,7 @@
+{
+  "schema": "PERSON_CMR_V0_R04_REFERENCE_REVEAL_MARKER_V1",
+  "status": "REFERENCE_REVEAL_STARTED_AFTER_PRE_REFERENCE_HASH_FREEZE",
+  "created_at": "2026-08-29T12:22:11+08:00",
+  "pre_reference_manifest_sha256": "4C4A828E3EBF8D127DC8F0765208B7EDA56691D3D51A3ABF6468A492F47FC3F2",
+  "mechanism_modified_after_pre_reference": false
+}

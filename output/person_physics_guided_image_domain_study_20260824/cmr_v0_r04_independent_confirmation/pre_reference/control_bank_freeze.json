@@ -1,0 +1,21 @@
+{
+  "schema": "PERSON_CMR_V0_R04_CONTROL_BANK_FREEZE_V1",
+  "status": "FROZEN_BEFORE_CMR_MECHANISM_OUTPUT_AND_REFERENCE_REVEAL",
+  "created_at": "2026-08-29T12:14:01+08:00",
+  "reference_loaded": false,
+  "cmr_outcome_used": false,
+  "static_hypothesis_count": 37440,
+  "control_pair_count": 186362,
+  "control_count_per_primary_max": 5,
+  "static_bank_sha256": "2D4D7D9122583F1C48293873B98E14FD1CF08E5F8EF0B38FBC0C4D4AC72DFD20",
+  "control_bank_sha256": "7A33AF869B693BDC9C37598AED0EC6A51A4A78E9597671E54F5C21B036B492BC",
+  "selection_fields": [
+    "destination_boundary",
+    "destination_truncated",
+    "destination_region_degree",
+    "destination_pixel_count",
+    "destination_theta_width_deg",
+    "destination_theta_mid_deg",
+    "hypothesis_id"
+  ]
+}

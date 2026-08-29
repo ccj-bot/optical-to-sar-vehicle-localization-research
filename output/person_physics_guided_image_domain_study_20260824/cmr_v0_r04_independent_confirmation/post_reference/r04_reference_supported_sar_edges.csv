@@ -1,0 +1,4 @@
+﻿run_id,source_sar_frame,destination_sar_frame,source_region_id,destination_region_id,supported_target_ids,supported_target_count,shared_or_unresolved
+R04ZF,110,111,R04ZF_SARF000110__Q095__R0004,R04ZF_SARF000111__Q095__R0007,R04ZF_SARPERSON01,1,False
+R04ZF,157,158,R04ZF_SARF000157__Q095__R0002,R04ZF_SARF000158__Q095__R0003,R04ZF_SARPERSON03,1,False
+R04ZF,162,163,R04ZF_SARF000162__Q095__R0007,R04ZF_SARF000163__Q095__R0005,R04ZF_SARPERSON03,1,False

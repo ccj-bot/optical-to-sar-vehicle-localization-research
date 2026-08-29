@@ -1,0 +1,16 @@
+{
+  "by_target": {
+    "R04ZF_SARPERSON03": {
+      "remaining_comparisons": 0,
+      "remaining_separation_counts": {},
+      "remaining_strict_outcomes": {}
+    }
+  },
+  "by_temporal_block": {
+    "R04_BLOCK_06": {
+      "remaining_comparisons": 0,
+      "remaining_separation_counts": {},
+      "remaining_strict_outcomes": {}
+    }
+  }
+}

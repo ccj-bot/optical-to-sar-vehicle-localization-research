@@ -1,0 +1,60 @@
+{
+  "schema": "PERSON_CMR_V0_R04_PROTOCOL_EVALUATOR_FREEZE_V1",
+  "status": "FROZEN_BEFORE_R04_MECHANISM_AND_REFERENCE_REVEAL",
+  "created_at": "2026-08-29T12:12:55+08:00",
+  "head": "7fff51f0a133c8903c4d0bdfaf35e75a45599778",
+  "run_id": "R04ZF",
+  "reference_loaded": false,
+  "outcome_accessed": false,
+  "mechanism_modified": false,
+  "files": {
+    "protocol": {
+      "path": "tasks\\person_cmr_v0_r04_independent_confirmation_20260829\\CMR_V0_R04_CONFIRMATION_PROTOCOL_FROZEN_BEFORE_REVEAL.md",
+      "sha256": "E9AC1176CC841FC05E924B4130928D3B45077FDDBDA9384029682D7A447BB76B"
+    },
+    "evaluator": {
+      "path": "tasks\\person_cmr_v0_r04_independent_confirmation_20260829\\run_cmr_v0_r04_confirmation.py",
+      "sha256": "807CB7E94A1E4B3CF2F4791919B574C72FB3E2F8606394FEAE8D6AFFDFAFF472"
+    },
+    "validator": {
+      "path": "tasks\\person_cmr_v0_r04_independent_confirmation_20260829\\validate_cmr_v0_r04_confirmation.py",
+      "sha256": "D6CD486E983AF1A0F769E4CBE266BC856C234390F1B35E9527C7A5E32F457530"
+    },
+    "frozen_mechanism_runner": {
+      "path": "tasks\\person_cmr_d0_common_residual_motion_mechanism_development_20260829\\run_cmr_d0_development.py",
+      "sha256": "038D7EE67A92483166791D4CCAFA15DB55DB1A3F33BC1FFC1F6DBCBF89877C99"
+    },
+    "frozen_mechanism_spec": {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_d0_common_residual_motion_mechanism_development\\CMR_V0_MECHANISM_SPECIFICATION_FROZEN.md",
+      "sha256": "24B3CEA3552EF0C61062DAD9E97246922FE76C35A391B8C9242F6EC1968DF317"
+    },
+    "frozen_development_manifest": {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_d0_common_residual_motion_mechanism_development\\cmr_d0_output_manifest.json",
+      "sha256": "0B103CE16AD516087572BBA49F5491AA7BB824371168B58B39894D2A4AD301CB"
+    },
+    "frozen_eligible_atlas": {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_d0_common_residual_motion_mechanism_development\\cmr_eligible_window_atlas.parquet",
+      "sha256": "93A89BDFFA39E6480AEBB32F7D001F53C5888EF3087CB8BA34FE0E33C8F6CF79"
+    }
+  },
+  "frozen_evaluation_semantics": {
+    "control_count": 5,
+    "temporal_block_size_frames": 25,
+    "sar_only_ranking": "STATIC_FEASIBILITY_ONLY_NO_PREFERENCE",
+    "scene_common_preference": "NON_WEIGHTED_PARETO_OVER_SOFT_IOU_RETENTION_DESTINATION_EXPLAINED",
+    "candidate_separation": [
+      "STRONG_SEPARATION",
+      "ASYMMETRIC_SEPARATION",
+      "TENDENCY_SEPARATION",
+      "NO_SEPARATION",
+      "REVERSED_SEPARATION"
+    ],
+    "strict_outcomes": [
+      "SAR_EDGE_RESCUE",
+      "CONFIRMATION",
+      "HARM",
+      "CONFLICT",
+      "NO_INFORMATION"
+    ]
+  }
+}

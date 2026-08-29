@@ -1,0 +1,3 @@
+﻿window_id,source_sar_frame,destination_sar_frame,target_count,pair_count,strong,asymmetric,tendency,reversed,has_candidate_separation
+CMRW_4A04439F525A61DFCFCC,157,158,1,4,0,0,2,0,True
+CMRW_7FBEF79942DBA7F698A5,162,163,1,2,0,0,0,2,False

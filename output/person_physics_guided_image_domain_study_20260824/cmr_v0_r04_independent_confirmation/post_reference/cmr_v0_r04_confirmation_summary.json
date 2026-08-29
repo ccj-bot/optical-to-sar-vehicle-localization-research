@@ -1,0 +1,65 @@
+{
+  "schema": "PERSON_CMR_V0_R04_CONFIRMATION_SUMMARY_V1",
+  "created_at": "2026-08-29T12:23:35+08:00",
+  "run_id": "R04ZF",
+  "stage": "CMR_V0_R04_INDEPENDENT_CONFIRMATION",
+  "one_shot_confirmation": true,
+  "mechanism_modified_after_reveal": false,
+  "eligible_windows": 98,
+  "eligible_branch_instances": 166,
+  "common_window_count": 98,
+  "optical_branch_count": 166,
+  "sar_unique_edge_count": 36680,
+  "cross_modal_hypothesis_count": 37440,
+  "reference_supported_sar_edge_count": 3,
+  "supported_vs_matched_wrong_comparison_count": 6,
+  "windows_with_candidate_separation": 1,
+  "candidate_separation_counts": {
+    "STRONG_SEPARATION": 0,
+    "ASYMMETRIC_SEPARATION": 0,
+    "TENDENCY_SEPARATION": 2,
+    "NO_SEPARATION": 2,
+    "REVERSED_SEPARATION": 2
+  },
+  "strict_outcome_counts": {
+    "SAR_EDGE_RESCUE": 0,
+    "CONFIRMATION": 4,
+    "HARM": 2,
+    "CONFLICT": 0,
+    "NO_INFORMATION": 0
+  },
+  "scene_common_preference_counts": {
+    "SCENE_COMMON_PRIMARY_PREFERRED": 6
+  },
+  "grounding_counts": {
+    "LIKELY_PAIR_CONSISTENT_OFFLINE": 6
+  },
+  "strict_branch_specific_evaluation": "STRICT_BRANCH_SPECIFIC_EVALUATION_UNAVAILABLE",
+  "likely_supported_exploratory_comparison_count": 6,
+  "unresolved_grounding_comparison_count": 0,
+  "reference_free_control_pair_count": 186350,
+  "reference_free_strict_profile_difference_fraction": 0.254767909847062,
+  "reference_free_leaning_profile_difference_fraction": 0.3083391467668366,
+  "strict_unresolved_but_tendency_count": 2,
+  "visual_cases_observed": 8,
+  "visual_cases_not_observed": 8,
+  "visual_review_status": "DIRECT_MULTIMODAL_REVIEW_COMPLETE_WITH_METHOD_REALITY_DISCREPANCY",
+  "route_decision_primary": "KEEP_CMR_AS_NONDECISIVE_DYNAMIC_EVIDENCE",
+  "route_decision_secondary": "REDESIGN_BRANCH_RESIDUAL_ON_NEW_DEVELOPMENT_DATA",
+  "current_usable_component": "SCENE_COMMON_PRIOR_WITH_BRANCH_RESIDUAL_NONDECISIVE",
+  "reference_hashes": {
+    "reference_region_evaluation": "4522FE9B65249180B073EA16E87BF11A528DC079B3831348CD7610E3685B7353",
+    "manual_reference_centers": "796F20EB3080C5B45CDEBBCC71584CC95C65691F056D46C4A31704A3D86E8EC7",
+    "offline_branch_assignment": "C2EFFA8A7DAEE048BB3F0117B232DC9B79A418783BBBDA4EA5AB1764CCE9016B"
+  },
+  "prohibited_outputs": {
+    "weighted_score": false,
+    "pruning": false,
+    "identity_assignment": false,
+    "tracker": false,
+    "factor_graph": false,
+    "p2": false,
+    "final_sar_center": false,
+    "final_sar_box": false
+  }
+}

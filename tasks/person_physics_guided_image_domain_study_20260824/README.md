@@ -289,3 +289,13 @@
 - 没有找到 direct manual optical raw-fragment annotation；既有 frame-level geometric assignment 和 M0B1-V2 review packs 只支持 offline-only `LIKELY/UNRESOLVED` grounding，不能进入 runtime common/residual 或 inference。
 - 冻结机制：`output/person_physics_guided_image_domain_study_20260824/cmr_d0_common_residual_motion_mechanism_development/CMR_V0_MECHANISM_SPECIFICATION_FROZEN.md`；视觉审查：同目录 `CMR_D0_MULTIMODAL_VISUAL_REVIEW_LEDGER.md`；正式 confirmation protocol 仅为 draft，未执行。
 - 当前 readiness：`READY_FOR_CMR_V0_CONFIRMATION`，限定为机制合同、隔离制度、可视化和验证链已完成；它不表示 branch/PERSON specificity、runtime identity、rescue 或最终定位已建立。
+
+## CMR-v0 R04 held-out 独立确认（2026-08-29）
+
+- R04ZF one-shot confirmation 已完成；参考揭示后未修改或重算 CMR-v0。完整结果位于 `output/person_physics_guided_image_domain_study_20260824/cmr_v0_r04_independent_confirmation`。
+- `98` 个 eligible windows / `166` 个 branch instances；`3` 条 reference-supported SAR edges 中，冻结接口形成 `6` 个 supported-vs-wrong 比较，来自 `2` 个 window、同一 PERSON target 与同一 temporal block。
+- candidate separation：strong `0`、asymmetric `0`、tendency `2`、none `2`、reversed `2`。正向 separation 仅出现在 `1/2` 个可评价 window，另一个 window 为 reversal/harm；不能声称跨 target/temporal cluster 稳定。
+- strict outcome：SAR-edge rescue `0`、confirmation `4`、harm `2`、conflict `0`、no-information `0`。scene-common 对 `6/6` 均优先 supported primary；branch residual 只有两条连续趋势区分，另有两条无区分和两条反向伤害。
+- strict categorical relation 没有形成 concordant/contradictory；两条 meaningful tendency 来自连续 residual 自然符号。严格 branch specificity 因无 authoritative raw-fragment identity 仍不可评价，六条仅为 offline likely-supported exploratory grounding。
+- 直接多模态复核：F157->158 支持双叶 response 的 scene-common 连续性，但正向统计不能归因于 branch residual；F162->163 中人眼更支持 reference-supported 连续 response，CMR residual 却偏向零重合小结构，记为 `HUMAN_OBSERVABLE_METHOD_UNRESOLVED / METHOD_REALITY_DISCREPANCY`。
+- 路线决定：主结论 `KEEP_CMR_AS_NONDECISIVE_DYNAMIC_EVIDENCE`；若继续研究 branch residual，只能在新的 development data 上 `REDESIGN_BRANCH_RESIDUAL_ON_NEW_DEVELOPMENT_DATA`。当前保留 scene-common prior，不进入 tracker、assignment、factor graph、P2 或最终 SAR 定位。

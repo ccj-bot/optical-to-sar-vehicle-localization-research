@@ -1,0 +1,279 @@
+{
+  "schema": "PERSON_TERG_D0_INDEPENDENT_VALIDATION_V1",
+  "status": "PASS",
+  "checks_passed": 54,
+  "checks_total": 54,
+  "failed_checks": [],
+  "checks": [
+    {
+      "check": "exists::pre_reference_manifest.json",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "exists::temporal_segment_atlas_pre_reference.parquet",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "exists::sar_response_graph_nodes_pre_reference.parquet",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "exists::sar_response_graph_edges_pre_reference.parquet",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "exists::terg_explanation_sets_pre_reference.parquet",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "exists::terg_explanation_components_pre_reference.parquet",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "exists::relative_order_compatibility_pre_reference.parquet",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "exists::representation_change_ledger_pre_reference.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "exists::temporal_segment_evaluation_grounding.parquet",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "exists::explanation_component_grounding.parquet",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "exists::temporal_review_case_registry.csv",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "exists::TERG_D0_TEMPORAL_REVIEW_CONTACT_SHEET.jpg",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "exists::TERG_D0_MULTIMODAL_VISUAL_REVIEW_LEDGER.md",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "exists::TERG_D0_DEVELOPMENT_REPORT.md",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "exists::TERG_V0_MECHANISM_SPECIFICATION_FROZEN.md",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "exists::TERG_V0_FUTURE_CONFIRMATION_PROTOCOL_DRAFT.md",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "exists::terg_d0_development_summary.json",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "exists::terg_d0_final_manifest.json",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_reference_reference_false",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_reference_assignment_false",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "pre_reference_confirmation_false",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "development_runs_only",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "r04_excluded_from_nodes",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "r04_excluded_from_edges",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "segment_accounting",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "node_accounting",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "edge_accounting",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "p0_edge_accounting",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "explanation_set_accounting",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "component_accounting",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "potential_disambiguation_accounting",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "nodes_reference_free",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "edges_reference_free",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "no_identity_assignment",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "no_unique_tracking",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "no_unique_path_claim",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "no_component_identity_claim",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "no_unique_component_selected",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "no_weighted_score",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "no_pruning",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "order_no_weighted_score",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "event_relations_reference_free",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "timing_uncertainty_recorded",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "segment_grounding_accounting",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "grounding_offline_only",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "grounded_component_accounting",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "grounding_no_identity_claim",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "visual_review_complete",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "freeze_status",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "confirmation_not_executed",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "review_observed_count",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "review_not_observed_count",
+      "pass": true,
+      "details": ""
+    },
+    {
+      "check": "review_images_readable",
+      "pass": true,
+      "details": []
+    },
+    {
+      "check": "final_manifest_hash_match",
+      "pass": true,
+      "details": []
+    }
+  ]
+}

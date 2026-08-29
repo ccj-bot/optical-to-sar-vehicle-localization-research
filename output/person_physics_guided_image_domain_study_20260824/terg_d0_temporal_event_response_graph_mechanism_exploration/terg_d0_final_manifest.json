@@ -1,0 +1,312 @@
+{
+  "schema": "PERSON_TERG_D0_FINAL_MANIFEST_V1",
+  "created_at": "2026-08-29T13:54:24+08:00",
+  "git_head_before_commit": "8d00bc323b139ac84b4156d780b081acd8f4ee21",
+  "files": [
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\post_reference\\explanation_component_grounding.csv",
+      "bytes": 563878,
+      "sha256": "5118A32D391472250F820CEA92D6A513528CA3EEF653A2D4E53E2BC9E13BCF82"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\post_reference\\explanation_component_grounding.parquet",
+      "bytes": 50953,
+      "sha256": "997E13CADAF663196E3FB30AA66F9C64FE8500DFCDB9DF4B3A510F0623B88F85"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\post_reference\\figures\\temporal_review_packs\\01_long_single_object_persistence.png",
+      "bytes": 2615219,
+      "sha256": "91158A2157AC7C39337404550F02A3AD439A95B1D90A7D2C01C992D34EE9C535"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\post_reference\\figures\\temporal_review_packs\\02_stable_two_object_order.png",
+      "bytes": 2705988,
+      "sha256": "7E774AE5ED6B01B583ADE60698D1133962ED5D887045CC852512EEB93634D50E"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\post_reference\\figures\\temporal_review_packs\\03_optical_approach_tendency.png",
+      "bytes": 2706139,
+      "sha256": "054CC695528087246D3262A253BC9E3858AACE1AAF493FED46DB73AF0FDB8393"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\post_reference\\figures\\temporal_review_packs\\04_optical_separation_tendency.png",
+      "bytes": 2349031,
+      "sha256": "AA2BB966EFF0930F1F7EF76092747971078E7615B5BF2B1A206C775EDDD0CF43"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\post_reference\\figures\\temporal_review_packs\\06_optical_overlap_uncertainty.png",
+      "bytes": 2685473,
+      "sha256": "75042552440C662BB036337A1D10169DDA6D854567FCD5EBA68ABEF4A8ECEB5D"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\post_reference\\figures\\temporal_review_packs\\07_sar_split_like.png",
+      "bytes": 2615556,
+      "sha256": "7E4195112D73921A7A2D0C5843B881383F816D25B117A6096DBF13EB3379A005"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\post_reference\\figures\\temporal_review_packs\\08_sar_merge_like.png",
+      "bytes": 2619082,
+      "sha256": "296C2901DB039134700C412C05DF49C32E37F8961DFF44F83C1DAD465096071F"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\post_reference\\figures\\temporal_review_packs\\09_complete_p0_continuity.png",
+      "bytes": 2467575,
+      "sha256": "781A600022E2459DD67027944B1E37FBD626B40FBA60481A8633C46F62B2274D"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\post_reference\\figures\\temporal_review_packs\\10_partial_or_unavailable_p0_continuity.png",
+      "bytes": 2465365,
+      "sha256": "23F2B657F092CA289F2B8794A764681FC5288EBB8FCC102E636E28D98E9098C4"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\post_reference\\figures\\temporal_review_packs\\11_likely_grounded_potential_disambiguation.png",
+      "bytes": 2469218,
+      "sha256": "5AD1927675EA6304EF0525249FF1A32ED5A6AC63B58A20E37415A7792AF6FAB3"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\post_reference\\figures\\temporal_review_packs\\13_boundary_or_censoring.png",
+      "bytes": 2230618,
+      "sha256": "12999632434EE9FD7C52357E2878AE17A64BCD8CE141927715F9A8B2F8C2DEDB"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\post_reference\\figures\\temporal_review_packs\\14_birth_death_event.png",
+      "bytes": 2619272,
+      "sha256": "C69854DDE6A5502228DBA80A79D617EE01285980F3CEF2FCCB8F1884CEEEC249"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\post_reference\\figures\\temporal_review_packs\\15_shared_response_grounding.png",
+      "bytes": 2468217,
+      "sha256": "6C59D564F6B62475A62DB15D66AF50C68803512DE1FAB3EE956B05F806A6CBCE"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\post_reference\\figures\\temporal_review_packs\\16_counterexample.png",
+      "bytes": 2467772,
+      "sha256": "9277AE0037A6E8881FF9757223F7982A141AC5AB2402A0207FC94C93695F400B"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\post_reference\\REFERENCE_GROUNDING_REVEAL_MARKER.json",
+      "bytes": 532,
+      "sha256": "966DBA2FE145EE52580A901D567093B2481405A5E87BC9244D2583E11A16EA20"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\post_reference\\temporal_review_case_registry.csv",
+      "bytes": 4016,
+      "sha256": "7AF9A6FFEE92AE0C7E16CAF30B5ED3384DD303EC0FCD3A8FE678EEA0CA440B1E"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\post_reference\\temporal_segment_evaluation_grounding.csv",
+      "bytes": 14518,
+      "sha256": "A590FABDC5095AAFEC505D73FEF1BBD0D94F688DE75B99EA3684930E14F42405"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\post_reference\\temporal_segment_evaluation_grounding.parquet",
+      "bytes": 8091,
+      "sha256": "B90B9AEF9E1E8BA45E5054638BAFD502923B013D50628397E071A8D753D283C2"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\post_reference\\TERG_D0_DEVELOPMENT_REPORT.md",
+      "bytes": 11249,
+      "sha256": "75632F8D24F841B3859A6E46F3E8BAF71AEF2823E52AA25A9F1861259E30E30E"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\post_reference\\terg_d0_development_summary.json",
+      "bytes": 3600,
+      "sha256": "74235726177D27BA9B78C3457F9F6BD19EF6076EC841B6B1072263D90491BB8F"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\post_reference\\TERG_D0_MULTIMODAL_VISUAL_REVIEW_LEDGER.md",
+      "bytes": 4882,
+      "sha256": "3F3CB750F12E2CF05D364FD28D5CE3A69E54D7A6AD7C69AB09A4EF747516F2B7"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\post_reference\\TERG_D0_TEMPORAL_REVIEW_CONTACT_SHEET.jpg",
+      "bytes": 1740530,
+      "sha256": "8F44FF4C8F5FC5E20F46142FF2A9A814B7AC6FD009D0BDE5D97C96C4B40DDCEE"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\post_reference\\TERG_V0_FUTURE_CONFIRMATION_PROTOCOL_DRAFT.md",
+      "bytes": 4075,
+      "sha256": "464E693128D78D9D37E485D1E95AFD8F078CE0C8E59C2A3CF0BCE3E86D49DA96"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\post_reference\\TERG_V0_MECHANISM_SPECIFICATION_FROZEN.md",
+      "bytes": 6236,
+      "sha256": "D9E16A152CB225DDBF5F015EC25EC77E8C586416A300806D11921B663DFFFC3A"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\pre_reference\\counterexample_ledger_pre_reference.csv",
+      "bytes": 16972,
+      "sha256": "AB19D4B222205A64FDA42D326C9EBB1E3C015A17F1888B1BAA4E761631BD49AB"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\pre_reference\\counterexample_ledger_pre_reference.parquet",
+      "bytes": 6976,
+      "sha256": "33DDA25CA6FC4B9CFD15D1CDF8AD0C97443A1D4A0AEE78A2AFCA4E1CF838EB2A"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\pre_reference\\cross_modal_compatibility_profiles_pre_reference.csv",
+      "bytes": 793059,
+      "sha256": "C26375DEEFA84D843B484EC38669C4C4BF0FF97CD4AFBA4D80EA8D7F36BD4608"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\pre_reference\\cross_modal_compatibility_profiles_pre_reference.parquet",
+      "bytes": 94287,
+      "sha256": "D147A1D49E87821FCC7869EF17F8161A831FD08CC0F6DC7DAC4391BFD20C58D0"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\pre_reference\\cross_modal_event_relations_pre_reference.csv",
+      "bytes": 26061250,
+      "sha256": "A8C17B4DF88CDA8A3087BD5211B540026AAD2F5FD52961483AACB1D348F4447F"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\pre_reference\\cross_modal_event_relations_pre_reference.parquet",
+      "bytes": 1392605,
+      "sha256": "ADBB27124B191B1C3ED44219611BE033ABB6CF11022981BC3B58129C815FFB4A"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\pre_reference\\event_vocabulary_discovery_pre_reference.csv",
+      "bytes": 1700,
+      "sha256": "9DDDD4C3CBDF030DE40B4101FF49E93AE651A08D99174A17EE0E7C3B3F7F1F58"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\pre_reference\\event_vocabulary_discovery_pre_reference.parquet",
+      "bytes": 5998,
+      "sha256": "4DD06F76D85660E5ECF0189148BF178B100CE8C2A14410484CB8F29E927F3552"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\pre_reference\\optical_event_hypotheses_pre_reference.csv",
+      "bytes": 103363,
+      "sha256": "FE42787C2453C74AFC227AD74B4F0FBE5530F808117297D5167323C5569C3351"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\pre_reference\\optical_event_hypotheses_pre_reference.parquet",
+      "bytes": 16414,
+      "sha256": "0A6FAA2540B303C08B8995A8C78F1CF48602539EFD4D3E1815D947F2DC14FBFF"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\pre_reference\\optical_pair_order_state_pre_reference.csv",
+      "bytes": 35268,
+      "sha256": "EBC7DDF675E34F3AE4CF99A26982939886F8237318A40C4FF846FD96D8E8E8EE"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\pre_reference\\optical_pair_order_state_pre_reference.parquet",
+      "bytes": 7126,
+      "sha256": "B4B55EE1757177F62883DD6D7BC732194EA8BB39D24870150E573DBCDC738209"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\pre_reference\\optical_temporal_frame_state_pre_reference.csv",
+      "bytes": 120888,
+      "sha256": "7C94821BFE11165F9A95AD4DCAF9577C0AB31F530CC1DE625C7091CA2557A342"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\pre_reference\\optical_temporal_frame_state_pre_reference.parquet",
+      "bytes": 37218,
+      "sha256": "924CB0DA90BAC9F2F3E8EB7FB7220B7C3D191B7ED20FCC5D855FB4963EB431DF"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\pre_reference\\pre_reference_discovery_summary.json",
+      "bytes": 1869,
+      "sha256": "0149E329F870F014491769FAF337884AEDEC9A55180AB0A122C121062AE60364"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\pre_reference\\pre_reference_manifest.json",
+      "bytes": 10928,
+      "sha256": "F2B54B38E7516C547784A2F1320C3F63C9859E75E54BA77E66262D6DC124E8AC"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\pre_reference\\relative_order_compatibility_pre_reference.csv",
+      "bytes": 24033,
+      "sha256": "136AC4BF97019AB0C2F8D099F45E183D92699BFA364E52F479C31426BA6409E3"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\pre_reference\\relative_order_compatibility_pre_reference.parquet",
+      "bytes": 14381,
+      "sha256": "FCED13FCA3936797CD3ECFDA96171A46C8A09A76E4256E0BE0C2CE48481C1993"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\pre_reference\\representation_change_ledger_pre_reference.csv",
+      "bytes": 939,
+      "sha256": "461D1ADCF96ADE4861B161FCD29D7C3A185677559EB0C4DBE6F4DE6E8695EE36"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\pre_reference\\representation_change_ledger_pre_reference.parquet",
+      "bytes": 9719,
+      "sha256": "982CFADB062A051410CAEC300C13BC6B042180963B0142C646D2F797DD5A233C"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\pre_reference\\sar_event_hypotheses_pre_reference.csv",
+      "bytes": 2639978,
+      "sha256": "50248553316859CA3DD21F7C01F1E1B0E7FE508DFB572EF42B2835643E2FB204"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\pre_reference\\sar_event_hypotheses_pre_reference.parquet",
+      "bytes": 216756,
+      "sha256": "A94A8CDECE4CCB96F3932C2609799A1B157CDF2C14FB09CD642B424154E5E157"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\pre_reference\\sar_p0_relative_residual_development.csv",
+      "bytes": 19504918,
+      "sha256": "1CC2F1FED772660FB16F29C96C1A0FA4F114498E5B6C0D1A626687B712A32985"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\pre_reference\\sar_p0_relative_residual_development.parquet",
+      "bytes": 2658252,
+      "sha256": "12A9528A2CB62F08C94B484EBE8C413CDE6EB9541C9EEB3077254A981D47E5EC"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\pre_reference\\sar_response_graph_edges_pre_reference.parquet",
+      "bytes": 4105420,
+      "sha256": "24EFC9A8286B9A79074F75F0261E024DB99F5D5B3ECE61B5BD03AAD357D8F449"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\pre_reference\\sar_response_graph_nodes_pre_reference.parquet",
+      "bytes": 599478,
+      "sha256": "9B332D2CF55929F2CDF90CB7E30406E777EE075DC4C85DA861B2F81797527630"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\pre_reference\\temporal_segment_atlas_pre_reference.csv",
+      "bytes": 7866,
+      "sha256": "99D8C739B86F70B249FF7A05ABFD106BF08065471D36660460F4CCA643C5EDBA"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\pre_reference\\temporal_segment_atlas_pre_reference.parquet",
+      "bytes": 8859,
+      "sha256": "05F899E5E6ED314B38B0D9734C33C3565971A3F3378DD333AE823488483CCE4B"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\pre_reference\\terg_component_node_membership_pre_reference.csv",
+      "bytes": 3332242,
+      "sha256": "F5BA3BD0212D847DC00634E874D55E915AD2B0DCC9C0541E0B4B8CCB165B6C97"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\pre_reference\\terg_component_node_membership_pre_reference.parquet",
+      "bytes": 172752,
+      "sha256": "E65FBDB818CB2B2800EA6EE3A28356E462A3C860FBE738CC29B9771B0BEF8F4C"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\pre_reference\\terg_explanation_components_pre_reference.csv",
+      "bytes": 584135,
+      "sha256": "B65E2E53E118FEE160F32CC8A54E6D3439D7FE1B4640F74FA0BE88D8CFC7315C"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\pre_reference\\terg_explanation_components_pre_reference.parquet",
+      "bytes": 70021,
+      "sha256": "77BC86FBBADDF2FE65FF7DD7479C7BCE166D8D6C4E8F0EF88FBB576264205574"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\pre_reference\\terg_explanation_sets_pre_reference.csv",
+      "bytes": 9069,
+      "sha256": "51B61554E75F985D7039A010AC9AADB37D1994CB42266382F1670A729AE7E05D"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\pre_reference\\terg_explanation_sets_pre_reference.parquet",
+      "bytes": 10117,
+      "sha256": "E0620DFBE8EAEF39A4B7B91A8741C50714C094E8CEB333879B1BD500931598A1"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\terg_d0_temporal_event_response_graph_mechanism_exploration\\source_authority_manifest.json",
+      "bytes": 2156,
+      "sha256": "65C98E87DDF468F320DEADB4A89DAA406AE720B1E37D2AC915E1C08E7C1C8B51"
+    }
+  ]
+}

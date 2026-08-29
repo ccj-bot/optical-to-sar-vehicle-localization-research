@@ -1,0 +1,48 @@
+{
+  "schema": "PERSON_TERG_D0_SOURCE_AUTHORITY_MANIFEST_V1",
+  "created_at": "2026-08-29T13:22:25+08:00",
+  "git_head": "8d00bc323b139ac84b4156d780b081acd8f4ee21",
+  "development_runs": [
+    "R01ZF",
+    "R02ZF",
+    "R03ZF"
+  ],
+  "locked_confirmation_runs": [
+    "R04ZF"
+  ],
+  "old_work_used": false,
+  "files": [
+    {
+      "path": "output\\person_optical_guided_sar_annotation_full_20260823\\optical_person_frame_hypotheses.parquet",
+      "bytes": 1687659,
+      "sha256": "15D65A299762E87BFD6F21E811C754D1DF062AC6AFC1840A1C1A9B162AB8B478"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\runtime_track_response_region_minimal_v1\\response_region_table_pre_reference.csv",
+      "bytes": 27371729,
+      "sha256": "A2BB425C366EA0DE461C427113E8E836A556F65250677146B6F26129E853C339"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\shell_uncertainty_region_topology_v1\\optical_shell_uncertainty_decomposition_pre_reference.csv",
+      "bytes": 12101707,
+      "sha256": "2AE24955FD8A4989A04DE38D91F2671BA6D6741DD7F6EE3FB09068BBEA5E3854"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\p1e_sar_only_response_interface\\shell_uncertainty_region_topology_v1\\gt_blind_shell_region_pixel_edges_pre_reference.csv",
+      "bytes": 40901882,
+      "sha256": "699B140FA93A7BCDB49AE7D4747CEF18E65A6306BAA378C974DD40106F1A0305"
+    },
+    {
+      "path": "tasks\\person_cmr_d0_common_residual_motion_mechanism_development_20260829\\run_cmr_d0_development.py",
+      "bytes": 90840,
+      "sha256": "038D7EE67A92483166791D4CCAFA15DB55DB1A3F33BC1FFC1F6DBCBF89877C99"
+    },
+    {
+      "path": "output\\person_physics_guided_image_domain_study_20260824\\cmr_d0_common_residual_motion_mechanism_development\\cmr_eligible_window_atlas.csv",
+      "bytes": 66240,
+      "sha256": "79E68C19912268481E4AC53F0B8518B65131F047CF5E241873A66BE2F15FA8B3"
+    }
+  ],
+  "offline_reference_loaded": false,
+  "offline_assignment_loaded": false
+}

@@ -1,0 +1,57 @@
+{
+  "schema": "PERSON_TERG_D0_PRE_REFERENCE_DISCOVERY_SUMMARY_V1",
+  "created_at": "2026-08-29T13:22:25+08:00",
+  "development_runs": [
+    "R01ZF",
+    "R02ZF",
+    "R03ZF"
+  ],
+  "confirmation_runs_accessed": false,
+  "optical_track_frame_states": 405,
+  "temporal_segments": 38,
+  "segment_kind_counts": {
+    "RELATIVE_ORDER_STATE_PLATEAU": 9,
+    "CONTINUOUS_FRAGMENT_LIFECYCLE": 8,
+    "ACTIVE_FRAGMENT_SET_PLATEAU": 7,
+    "SAR_MERGE_LIKE_CONTEXT": 6,
+    "SAR_SPLIT_LIKE_CONTEXT": 6,
+    "SAR_BOUNDARY_CENSOR_CONTEXT": 2
+  },
+  "graph_nodes": 4328,
+  "graph_edge_hypotheses": 52460,
+  "p0_supported_edges": 3702,
+  "explanation_components": 3414,
+  "explanation_sets": 88,
+  "potential_disambiguation_sets": 87,
+  "optical_event_counts": {
+    "OBSERVATION_PRESENCE_INTERVAL": 88,
+    "RELATIVE_ORDER_STABLE": 69,
+    "PAIR_GAP_APPROACH_TENDENCY_DESCRIPTOR": 53,
+    "OBSERVATION_DEATH_HYPOTHESIS": 44,
+    "OBSERVATION_BIRTH_HYPOTHESIS": 37,
+    "PAIR_GAP_STABLE_DESCRIPTOR": 23,
+    "RELATIVE_ORDER_OVERLAP_UNCERTAINTY": 16,
+    "OPTICAL_BOUNDARY_OR_TRUNCATION_STATE": 11,
+    "PAIR_GAP_SEPARATION_TENDENCY_DESCRIPTOR": 9
+  },
+  "sar_event_counts": {
+    "SAR_RESPONSE_BIRTH_WITHIN_SEGMENT": 2786,
+    "SAR_RESPONSE_DEATH_WITHIN_SEGMENT": 2741,
+    "SAR_RESPONSE_PERSISTENCE": 1797,
+    "SAR_SINGLE_FRAME_RESPONSE_HYPOTHESIS": 1617,
+    "SAR_DEFORMATION_HYPOTHESIS": 1616,
+    "SAR_MERGE_LIKE_HYPOTHESIS": 294,
+    "SAR_SPLIT_LIKE_HYPOTHESIS": 265,
+    "SAR_BOUNDARY_CENSORING_STATE": 3
+  },
+  "order_compatibility_counts": {
+    "SHARED_RESPONSE_ORDER_UNDEFINED": 78,
+    "ORDER_SUPPORTIVE": 5,
+    "ORDER_AMBIGUOUS": 2
+  },
+  "counterexample_count": 78,
+  "manual_reference_used": false,
+  "weighted_score_used": false,
+  "unique_tracking_performed": false,
+  "final_localization_performed": false
+}

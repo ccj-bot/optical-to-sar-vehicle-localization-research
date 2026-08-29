@@ -299,3 +299,17 @@
 - strict categorical relation 没有形成 concordant/contradictory；两条 meaningful tendency 来自连续 residual 自然符号。严格 branch specificity 因无 authoritative raw-fragment identity 仍不可评价，六条仅为 offline likely-supported exploratory grounding。
 - 直接多模态复核：F157->158 支持双叶 response 的 scene-common 连续性，但正向统计不能归因于 branch residual；F162->163 中人眼更支持 reference-supported 连续 response，CMR residual 却偏向零重合小结构，记为 `HUMAN_OBSERVABLE_METHOD_UNRESOLVED / METHOD_REALITY_DISCREPANCY`。
 - 路线决定：主结论 `KEEP_CMR_AS_NONDECISIVE_DYNAMIC_EVIDENCE`；若继续研究 branch residual，只能在新的 development data 上 `REDESIGN_BRANCH_RESIDUAL_ON_NEW_DEVELOPMENT_DATA`。当前保留 scene-common prior，不进入 tracker、assignment、factor graph、P2 或最终 SAR 定位。
+
+## TERG-D0 temporal event-response graph mechanism exploration（2026-08-29）
+
+- 开发数据严格限于 `R01ZF/R02ZF/R03ZF`；`R04ZF` 与新 confirmation data 未访问。pre-reference manifest SHA256 为 `F2B54B38E7516C547784A2F1320C3F63C9859E75E54BA77E66262D6DC124E8AC`。
+- 以 runtime-visible raw fragment presence、relative interval order 与 `SAME_FRAME/CURRENT_G6` optical corridor 构造 38 个自然时序段，跨度 5-107 SAR 帧；旧 CMR distinct-optical-sample 行仅剩 2-3 帧，因此不再作为 TERG segment 单元。
+- SAR graph 含 4,328 个 corridor-intersecting q95 nodes、52,460 个 adjacent-frame edge hypotheses，其中冻结 P0 支持 3,702 条；形成 3,414 个 explanation components（1,797 multi-frame、1,617 isolated）与 88 个 set-valued explanation sets，未选唯一 component。
+- Optical 稳定 primitive 是 presence/lifecycle、stable relative order 与 overlap/boundary uncertainty；approach/separation/stable gap 降级为 descriptor，order change 在 development data 中未观察到。SAR split/merge/deformation 仅冻结为 image-domain structural hypotheses；raw component birth/death 降级为 component-boundary hypotheses。
+- Relative-order profile 共 85 条：78 条为 `SHARED_RESPONSE_ORDER_UNDEFINED`、5 条 supportive、2 条 ambiguous。稳定 optical order 并不保证 SAR order 可判定；shared response 必须保留，不能强制 assignment。
+- Offline grounding 为 81/88 segment-track rows `LIKELY`、7 `UNRESOLVED`；36/38 unique segments 至少含一条 likely grounding，79 个 potential-disambiguation sets 各保留一个 `LIKELY_SUPPORTED_EXPLORATORY` component。它们不是 confirmation，也不建立 runtime branch/PERSON identity。
+- 多模态直审确认 complete/partial P0 continuity、shared response、split/merge-like topology 与 boundary censoring 的可视语义；14 类 observed，optical order change 与 multiple-valid/ambiguous grounding 两类未观察到。
+- 最终决定为 `TERG_V0_MECHANISM_WORTH_FREEZING_FOR_FUTURE_CONFIRMATION`。冻结内容是 explanation-set、P0 persistence、shared/undefined topology 与分离 relation families；不是 optical/SAR 数值相等或同名事件映射。
+- 已知缺口：D0 记录 base event interval relation 与未校准 `+/-250 ms` descriptor，但 future confirmation 前仍需预先实现并冻结 interval widening 后的完整 set-valued timing relation；本轮未运行 confirmation、tracker、assignment、factor graph、P2、final center 或 box。
+- 输出目录：`output/person_physics_guided_image_domain_study_20260824/terg_d0_temporal_event_response_graph_mechanism_exploration`；冻结规格为 `post_reference/TERG_V0_MECHANISM_SPECIFICATION_FROZEN.md`，future confirmation protocol 仅为 draft。
+- 独立验证 `PASS (54/54)`；final manifest 收录 61 个文件，SHA256=`79A2BBC32DAE97A22D2BAF7C54E944AEC9854CE0C9F437AC1FC3C4E964167483`。该 PASS 仅证明隔离、计数、语义边界、图像可读性与哈希完整性，不是机制 confirmation。

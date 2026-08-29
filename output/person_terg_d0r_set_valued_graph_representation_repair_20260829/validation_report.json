@@ -1,0 +1,274 @@
+{
+  "schema": "PERSON_TERG_D0R_INDEPENDENT_VALIDATION_V1",
+  "status": "PASS",
+  "check_count": 44,
+  "pass_count": 44,
+  "fail_count": 0,
+  "checks": [
+    {
+      "name": "final_state_ready",
+      "pass": true,
+      "detail": "TERG_V1_READY_FOR_INDEPENDENT_CONFIRMATION"
+    },
+    {
+      "name": "physical_region_count",
+      "pass": true,
+      "detail": 3056
+    },
+    {
+      "name": "physical_key_unique",
+      "pass": true,
+      "detail": 3056
+    },
+    {
+      "name": "physical_id_unique",
+      "pass": true,
+      "detail": 3056
+    },
+    {
+      "name": "conditioned_incidence_count",
+      "pass": true,
+      "detail": 4328
+    },
+    {
+      "name": "incidence_references_physical",
+      "pass": true,
+      "detail": 4328
+    },
+    {
+      "name": "set_incidence_count",
+      "pass": true,
+      "detail": 18937
+    },
+    {
+      "name": "physical_edge_unique",
+      "pass": true,
+      "detail": 39895
+    },
+    {
+      "name": "supported_physical_edges",
+      "pass": true,
+      "detail": 2644
+    },
+    {
+      "name": "threshold_free_lower_core_count",
+      "pass": true,
+      "detail": 111
+    },
+    {
+      "name": "upper_optional_edge_count",
+      "pass": true,
+      "detail": 2533
+    },
+    {
+      "name": "lower_core_exact_categorical_rule",
+      "pass": true,
+      "detail": 111
+    },
+    {
+      "name": "no_numeric_threshold_repair_flag",
+      "pass": true,
+      "detail": false
+    },
+    {
+      "name": "raw_edge_evidence_retained",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "all_d0_components_preserved",
+      "pass": true,
+      "detail": 3414
+    },
+    {
+      "name": "membership_physical_only",
+      "pass": true,
+      "detail": 18937
+    },
+    {
+      "name": "lower_core_component_count",
+      "pass": true,
+      "detail": 18314
+    },
+    {
+      "name": "actual_pruning_zero",
+      "pass": true,
+      "detail": {
+        "nodes": 0,
+        "families": 0
+      }
+    },
+    {
+      "name": "temporal_stratification_87_of_88",
+      "pass": true,
+      "detail": 87
+    },
+    {
+      "name": "relation_profile_count",
+      "pass": true,
+      "detail": 85
+    },
+    {
+      "name": "shared_profile_count",
+      "pass": true,
+      "detail": 78
+    },
+    {
+      "name": "shared_partial_direction_27",
+      "pass": true,
+      "detail": 27
+    },
+    {
+      "name": "shared_competing_direction_51",
+      "pass": true,
+      "detail": 51
+    },
+    {
+      "name": "pure_shared_only_zero",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "no_best_pair_or_weighted_vote",
+      "pass": true,
+      "detail": 85
+    },
+    {
+      "name": "per_frame_relation_support_present",
+      "pass": true,
+      "detail": 2841
+    },
+    {
+      "name": "split_merge_hard_false",
+      "pass": true,
+      "detail": false
+    },
+    {
+      "name": "split_hypotheses_set_valued",
+      "pass": true,
+      "detail": 171
+    },
+    {
+      "name": "merge_hypotheses_set_valued",
+      "pass": true,
+      "detail": 189
+    },
+    {
+      "name": "timing_250_column_removed",
+      "pass": true,
+      "detail": [
+        "event_relation_id",
+        "segment_id",
+        "run_id",
+        "optical_event_id",
+        "optical_event_type",
+        "sar_event_id",
+        "sar_event_type",
+        "nominal_frame_relation",
+        "relation_semantics",
+        "manual_reference_used",
+        "known_query_grid_residual_abs_bound_ms",
+        "sync_offset_lower_ms",
+        "sync_offset_upper_ms",
+        "timing_relation_set",
+        "timing_relation_state",
+        "unverified_250ms_used",
+        "exact_temporal_order_authorized",
+        "reference_used"
+      ]
+    },
+    {
+      "name": "timing_relation_set_uncalibrated",
+      "pass": true,
+      "detail": {
+        "TIMING_RELATION_SET_UNDER_UNCALIBRATED_SYNC": 104715
+      }
+    },
+    {
+      "name": "sync_offset_unresolved",
+      "pass": true,
+      "detail": [
+        "UNRESOLVED_SYNC_OFFSET_NO_BOUNDED_ACQUISITION_PROVENANCE"
+      ]
+    },
+    {
+      "name": "no_invented_replacement_margin",
+      "pass": true,
+      "detail": [
+        "NONE"
+      ]
+    },
+    {
+      "name": "phase_a_weak_edges_preserved_upper",
+      "pass": true,
+      "detail": 39
+    },
+    {
+      "name": "phase_a_weak_edges_not_lower_core",
+      "pass": true,
+      "detail": 39
+    },
+    {
+      "name": "pre_reference_forbidden_columns_absent",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "pre_reference_reference_flags_false",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "pre_loader_has_no_post_reference_input",
+      "pass": true,
+      "detail": "def load_pre_reference_inputs() -> dict[str, pd.DataFrame]:\n    pre_names = {\n        \"nodes\": \"sar_response_graph_nodes_pre_reference.parquet\",\n        \"edges\": \"sar_response_graph_edges_pre_reference.parquet\",\n        \"segments\": \"temporal_segment_atlas_pre_reference.parquet\",\n        \"sets\": \"terg_explanation_sets_pre_reference.parquet\",\n        \"d0_components\": \"terg_explanation_components_pre_reference.parquet\",\n        \"d0_memberships\": \"terg_component_node_membership_pre_reference.parquet\",\n        \"order\": \"relative_order_compatibility_pre_reference.parquet\",\n        \"frame_state\": \"optical_temporal_frame_state_pre_reference.parquet\",\n        \"event_relations\": \"cross_modal_event_relations_pre_reference.parquet\",\n    }\n    return {name: pd.read_parquet(D0_PRE / file_name) for name, file_name in pre_names.items()}\n"
+    },
+    {
+      "name": "representation_functions_have_no_post_reference_access",
+      "pass": true,
+      "detail": "static source audit"
+    },
+    {
+      "name": "no_half_threshold_in_run_script",
+      "pass": true,
+      "detail": "static source audit"
+    },
+    {
+      "name": "no_r04_input_path",
+      "pass": true,
+      "detail": "static source audit; lowercase audit flag is metadata only"
+    },
+    {
+      "name": "eleven_visual_packs_exist",
+      "pass": true,
+      "detail": [
+        "01_weak_bridge_TERGE_12263C621633CF2CF4FC_before_after.png",
+        "02_weak_bridge_TERGE_DA8DFD297C778B401B67_before_after.png",
+        "03_weak_bridge_TERGE_F497E3F7B05444DD3CE7_before_after.png",
+        "04_r01zf_f0_f15_complete_component_family_before_after.png",
+        "05_partial-direction_relation_set_before_after.png",
+        "06_competing-direction_relation_set_before_after.png",
+        "07_physical_region_vs_conditioned_incidence_before_after.png",
+        "08_split-like_topology_set_before_after.png",
+        "09_merge-like_topology_set_before_after.png",
+        "10_timing_known_unknown_before_after.png",
+        "11_grounding_and_partial_counterexample_before_after.png"
+      ]
+    },
+    {
+      "name": "contact_sheet_exists",
+      "pass": true,
+      "detail": "D:\\profile\\research\\workspace\\output\\person_terg_d0r_set_valued_graph_representation_repair_20260829\\figures\\TERG_V1_SET_VALUED_REPRESENTATION_REVIEW_CONTACT_SHEET.jpg"
+    },
+    {
+      "name": "freeze_documents_exist",
+      "pass": true,
+      "detail": [
+        "TERG_V1_SET_VALUED_TEMPORAL_EXPLANATION_MECHANISM_FROZEN.md",
+        "TERG_V1_SCIENTIFIC_FREEZE_REPORT.md",
+        "TERG_V1_ISSUE_SIDE_EFFECT_LEDGER.md"
+      ]
+    }
+  ],
+  "manifest_entry_count": 92
+}

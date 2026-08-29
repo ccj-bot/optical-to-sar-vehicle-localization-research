@@ -1,0 +1,5 @@
+﻿variant,retained_supported_edge_count,one_to_one_edge_count,split_edge_count,merge_edge_count,split_and_merge_edge_count
+ALL_POSITIVE_SOFT_SUPPORT,3702,3217,222,250,13
+REMOVE_EXACT_ONE_SOFT_PIXEL_MASS,3698,3221,218,246,13
+REMOVE_BOTTOM_1PCT_SOFT_IOU,3664,3239,198,215,12
+REMOVE_NONDOMINANT_BOTTOM_DECILE,3522,3380,76,64,2

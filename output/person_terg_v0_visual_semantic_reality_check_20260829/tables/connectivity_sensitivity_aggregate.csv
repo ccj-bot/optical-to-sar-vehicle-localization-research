@@ -1,0 +1,6 @@
+﻿variant,explanation_set_rows,total_component_count,total_multi_frame_component_count,total_isolated_component_count,total_full_frame_coverage_component_count,median_largest_component_frame_count,maximum_largest_component_frame_count
+ALL_POSITIVE_SOFT_SUPPORT,88,3414,1797,1617,255,8.0,107
+MUTUAL_LOCAL_DOMINANCE_ONLY,88,4292,2248,2044,243,8.0,107
+REMOVE_BOTTOM_1PCT_SOFT_IOU,88,3532,1803,1729,255,8.0,107
+REMOVE_EXACT_ONE_SOFT_PIXEL_MASS,88,3422,1797,1625,255,8.0,107
+REMOVE_NONDOMINANT_BOTTOM_DECILE,88,4042,2087,1955,252,8.0,107

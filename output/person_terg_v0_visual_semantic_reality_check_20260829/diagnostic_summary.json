@@ -1,0 +1,220 @@
+{
+  "schema": "PERSON_TERG_V0_VISUAL_SEMANTIC_REALITY_CHECK_DIAGNOSTIC_SUMMARY_V1",
+  "phase": "PHASE_A_READ_ONLY_DIAGNOSIS",
+  "mechanism_modified": false,
+  "confirmation_run_accessed": false,
+  "edge_support_semantics": {
+    "supported_edge_count": 3702,
+    "exact_one_soft_pixel_mass_edge_count": 4,
+    "soft_overlap_is_fractional_bilinear_mass_not_integer_pixel_count": true,
+    "quantiles": {
+      "soft_intersection_q01": 3.0625,
+      "soft_intersection_q05": 15.1578125,
+      "soft_intersection_q10": 34.45078125,
+      "soft_iou_q01": 0.013819289257713582,
+      "soft_iou_q05": 0.0782608695652174,
+      "soft_iou_q10": 0.18603845537411556,
+      "soft_iou_median": 0.658130136537752
+    },
+    "audit_edge_family_counts": {
+      "DEFORMATION_LINK": 2286,
+      "CORE_CONTINUATION": 1185,
+      "UNCERTAIN_CONTINUATION": 161,
+      "WEAK_CONTINUATION": 70
+    }
+  },
+  "physical_node_semantics": {
+    "conditioned_graph_node_rows": 4328,
+    "unique_physical_sar_response_regions": 3056,
+    "physical_regions_duplicated_across_tracks": 1192,
+    "conditioned_nodes_belonging_to_duplicated_physical_regions": 2464,
+    "maximum_track_conditioned_copies_of_one_physical_region": 4
+  },
+  "bridge_criticality": {
+    "bridge_instance_count_across_segment_components": 14339,
+    "unique_bridge_edge_count": 3435,
+    "exact_one_soft_pixel_bridge_instance_count": 0,
+    "weak_family_bridge_instance_count": 153,
+    "maximum_small_side_frame_count": 53
+  },
+  "relation_set": {
+    "current_shared_order_undefined_profiles": 78,
+    "shared_profile_relation_set_classification_counts": {
+      "SHARED_PLUS_COMPETING_DIRECTIONS": 51,
+      "SHARED_PLUS_PARTIAL_DIRECTION": 27
+    },
+    "all_profile_relation_set_classification_counts": {
+      "SHARED_PLUS_COMPETING_DIRECTIONS": 51,
+      "SHARED_PLUS_PARTIAL_DIRECTION": 27,
+      "SINGLE_RELATION_NO_SHARED": 5,
+      "SET_VALUED_NO_SHARED": 2
+    }
+  },
+  "contraction_semantics": {
+    "explanation_set_rows": 88,
+    "all_static_nodes_retained_in_some_component_rows": 88,
+    "actual_pruned_component_count": 0,
+    "actual_pruned_node_count": 0,
+    "temporal_stratification_rows": 87,
+    "post_reference_rows_with_exactly_one_likely_component": 79
+  },
+  "timing_provenance": {
+    "value_ms": 250,
+    "first_tracked_person_p1e_constant_commit": "edd7c1ba91577f18fa54877f82ee92eb779aab33",
+    "provenance_class": "UNVERIFIED_TIMING_MARGIN",
+    "measured_synchronization_uncertainty": false,
+    "known_offset_distribution": false,
+    "terg_implementation_uses_value_in_interval_relation": false,
+    "terg_implementation_records_descriptor_only": true
+  },
+  "focus_segment": {
+    "segment_id": "TERGS_E766DA8C46F860D1BA2F",
+    "track_id": "R01ZF_REUSED_R01ZF_PERSON001",
+    "selected_complete_component": "TERGXC_1FD4CF2856175478AA05",
+    "partial_component": "TERGXC_A97D2FC78FCD287ADEEE",
+    "strongest_competing_multiframe_component": "TERGXC_8F1B7F7B2C0F2815FC2F",
+    "isolated_alternative_component": "TERGXC_29373B663BE54F765189",
+    "weak_bridge_alternative_component": "TERGXC_8F1B7F7B2C0F2815FC2F",
+    "all_intermediate_pack": "D:\\profile\\research\\workspace\\output\\person_terg_v0_visual_semantic_reality_check_20260829\\figures\\r01zf_f0_f15_all_intermediate_competing_components.png",
+    "edge_critical_graph": "D:\\profile\\research\\workspace\\output\\person_terg_v0_visual_semantic_reality_check_20260829\\figures\\r01zf_f0_f15_edge_critical_temporal_graph.png"
+  },
+  "exact_one_edge_cases": [
+    {
+      "case_index": 1,
+      "status": "RENDERED",
+      "graph_edge_id": "TERGE_FE61F77D62EB26CB41AD",
+      "run_id": "R01ZF",
+      "track_id": "R01ZF_REUSED_R01ZF_PERSON001",
+      "source_sar_frame": 71,
+      "destination_sar_frame": 72,
+      "source_region_id": "R01ZF_SARF000071__Q095__R0022",
+      "destination_region_id": "R01ZF_SARF000072__Q095__R0055",
+      "soft_intersection_px": 1.0,
+      "source_total_retention": 0.002347417840375587,
+      "destination_explained_fraction": 1.0,
+      "soft_iou": 0.002347417840375587,
+      "detail_pack": "D:\\profile\\research\\workspace\\output\\person_terg_v0_visual_semantic_reality_check_20260829\\figures\\exact_one_soft_overlap_edges\\01_TERGE_FE61F77D62EB26CB41AD.png"
+    },
+    {
+      "case_index": 2,
+      "status": "RENDERED",
+      "graph_edge_id": "TERGE_3102D647498C1D52F558",
+      "run_id": "R01ZF",
+      "track_id": "R01ZF_REUSED_R01ZF_PERSON002",
+      "source_sar_frame": 71,
+      "destination_sar_frame": 72,
+      "source_region_id": "R01ZF_SARF000071__Q095__R0022",
+      "destination_region_id": "R01ZF_SARF000072__Q095__R0055",
+      "soft_intersection_px": 1.0,
+      "source_total_retention": 0.002347417840375587,
+      "destination_explained_fraction": 1.0,
+      "soft_iou": 0.002347417840375587,
+      "detail_pack": "D:\\profile\\research\\workspace\\output\\person_terg_v0_visual_semantic_reality_check_20260829\\figures\\exact_one_soft_overlap_edges\\02_TERGE_3102D647498C1D52F558.png"
+    },
+    {
+      "case_index": 3,
+      "status": "RENDERED",
+      "graph_edge_id": "TERGE_D7D994A0DB490A1CFB5B",
+      "run_id": "R01ZF",
+      "track_id": "R01ZF_REUSED_R01ZF_PERSON001",
+      "source_sar_frame": 72,
+      "destination_sar_frame": 73,
+      "source_region_id": "R01ZF_SARF000072__Q095__R0055",
+      "destination_region_id": "R01ZF_SARF000073__Q095__R0021",
+      "soft_intersection_px": 1.0,
+      "source_total_retention": 1.0,
+      "destination_explained_fraction": 0.001694915254237288,
+      "soft_iou": 0.001694915254237288,
+      "detail_pack": "D:\\profile\\research\\workspace\\output\\person_terg_v0_visual_semantic_reality_check_20260829\\figures\\exact_one_soft_overlap_edges\\03_TERGE_D7D994A0DB490A1CFB5B.png"
+    },
+    {
+      "case_index": 4,
+      "status": "RENDERED",
+      "graph_edge_id": "TERGE_0E2C5959AC68AA23C845",
+      "run_id": "R01ZF",
+      "track_id": "R01ZF_REUSED_R01ZF_PERSON002",
+      "source_sar_frame": 72,
+      "destination_sar_frame": 73,
+      "source_region_id": "R01ZF_SARF000072__Q095__R0055",
+      "destination_region_id": "R01ZF_SARF000073__Q095__R0021",
+      "soft_intersection_px": 1.0,
+      "source_total_retention": 1.0,
+      "destination_explained_fraction": 0.001694915254237288,
+      "soft_iou": 0.001694915254237288,
+      "detail_pack": "D:\\profile\\research\\workspace\\output\\person_terg_v0_visual_semantic_reality_check_20260829\\figures\\exact_one_soft_overlap_edges\\04_TERGE_0E2C5959AC68AA23C845.png"
+    }
+  ],
+  "relation_set_cases": [
+    {
+      "case_name": "partial_direction_with_local_shared",
+      "order_profile_id": "TERGOP_502E22A20AD671392149",
+      "segment_id": "TERGS_E7F91D8684FAAF6A9219",
+      "run_id": "R02ZF",
+      "track_a": "R02ZF_REUSED_R02ZF_PERSON018",
+      "track_b": "R02ZF_REUSED_R02ZF_PERSON021",
+      "frame_count": 5,
+      "current_relative_order_compatibility": "SHARED_RESPONSE_ORDER_UNDEFINED",
+      "possible_relation_set": "{OVERLAP,RIGHT,SHARED}",
+      "frames_with_physical_sharing": 1,
+      "maximum_shared_physical_regions_in_one_frame": 1,
+      "detail_pack": "D:\\profile\\research\\workspace\\output\\person_terg_v0_visual_semantic_reality_check_20260829\\figures\\relation_set_cases\\01_partial_direction_with_local_shared_TERGOP_502E22A20AD671392149.png",
+      "status": "RENDERED"
+    },
+    {
+      "case_name": "competing_directions_with_shared",
+      "order_profile_id": "TERGOP_722FF98E6AE0A93EBAC5",
+      "segment_id": "TERGS_E7F91D8684FAAF6A9219",
+      "run_id": "R02ZF",
+      "track_a": "R02ZF_REUSED_R02ZF_PERSON017",
+      "track_b": "R02ZF_REUSED_R02ZF_PERSON021",
+      "frame_count": 5,
+      "current_relative_order_compatibility": "SHARED_RESPONSE_ORDER_UNDEFINED",
+      "possible_relation_set": "{LEFT,OVERLAP,RIGHT,SHARED}",
+      "frames_with_physical_sharing": 2,
+      "maximum_shared_physical_regions_in_one_frame": 2,
+      "detail_pack": "D:\\profile\\research\\workspace\\output\\person_terg_v0_visual_semantic_reality_check_20260829\\figures\\relation_set_cases\\02_competing_directions_with_shared_TERGOP_722FF98E6AE0A93EBAC5.png",
+      "status": "RENDERED"
+    }
+  ],
+  "output_tables": [
+    "D:\\profile\\research\\workspace\\output\\person_terg_v0_visual_semantic_reality_check_20260829\\tables\\bridge_critical_edge_case_registry.csv",
+    "D:\\profile\\research\\workspace\\output\\person_terg_v0_visual_semantic_reality_check_20260829\\tables\\bridge_criticality.csv",
+    "D:\\profile\\research\\workspace\\output\\person_terg_v0_visual_semantic_reality_check_20260829\\tables\\connectivity_sensitivity.csv",
+    "D:\\profile\\research\\workspace\\output\\person_terg_v0_visual_semantic_reality_check_20260829\\tables\\connectivity_sensitivity_aggregate.csv",
+    "D:\\profile\\research\\workspace\\output\\person_terg_v0_visual_semantic_reality_check_20260829\\tables\\edge_evidence_descriptors.csv",
+    "D:\\profile\\research\\workspace\\output\\person_terg_v0_visual_semantic_reality_check_20260829\\tables\\edge_evidence_descriptors.parquet",
+    "D:\\profile\\research\\workspace\\output\\person_terg_v0_visual_semantic_reality_check_20260829\\tables\\exact_one_soft_overlap_edge_registry.csv",
+    "D:\\profile\\research\\workspace\\output\\person_terg_v0_visual_semantic_reality_check_20260829\\tables\\physical_region_vs_conditioned_node_audit.csv",
+    "D:\\profile\\research\\workspace\\output\\person_terg_v0_visual_semantic_reality_check_20260829\\tables\\possible_relation_set_audit.csv",
+    "D:\\profile\\research\\workspace\\output\\person_terg_v0_visual_semantic_reality_check_20260829\\tables\\relation_set_case_registry.csv",
+    "D:\\profile\\research\\workspace\\output\\person_terg_v0_visual_semantic_reality_check_20260829\\tables\\temporal_stratification_contraction_audit.csv",
+    "D:\\profile\\research\\workspace\\output\\person_terg_v0_visual_semantic_reality_check_20260829\\tables\\topology_sensitivity.csv",
+    "D:\\profile\\research\\workspace\\output\\person_terg_v0_visual_semantic_reality_check_20260829\\tables\\topology_stratified_case_registry.csv"
+  ],
+  "output_figures": [
+    "D:\\profile\\research\\workspace\\output\\person_terg_v0_visual_semantic_reality_check_20260829\\figures\\bridge_critical_edges\\01_TERGE_12263C621633CF2CF4FC.png",
+    "D:\\profile\\research\\workspace\\output\\person_terg_v0_visual_semantic_reality_check_20260829\\figures\\bridge_critical_edges\\02_TERGE_EFB327781B62D362F555.png",
+    "D:\\profile\\research\\workspace\\output\\person_terg_v0_visual_semantic_reality_check_20260829\\figures\\bridge_critical_edges\\03_TERGE_47777A06F5C061A7C5E5.png",
+    "D:\\profile\\research\\workspace\\output\\person_terg_v0_visual_semantic_reality_check_20260829\\figures\\bridge_critical_edges\\04_TERGE_5EBE14913F030C8B5102.png",
+    "D:\\profile\\research\\workspace\\output\\person_terg_v0_visual_semantic_reality_check_20260829\\figures\\bridge_critical_edges\\05_TERGE_DA8DFD297C778B401B67.png",
+    "D:\\profile\\research\\workspace\\output\\person_terg_v0_visual_semantic_reality_check_20260829\\figures\\bridge_critical_edges\\06_TERGE_EB227BE1175097B56CF9.png",
+    "D:\\profile\\research\\workspace\\output\\person_terg_v0_visual_semantic_reality_check_20260829\\figures\\bridge_critical_edges\\07_TERGE_705BB4140C83E1BF6899.png",
+    "D:\\profile\\research\\workspace\\output\\person_terg_v0_visual_semantic_reality_check_20260829\\figures\\bridge_critical_edges\\08_TERGE_44350C24D56CA3C47199.png",
+    "D:\\profile\\research\\workspace\\output\\person_terg_v0_visual_semantic_reality_check_20260829\\figures\\bridge_critical_edges\\09_TERGE_026D5785A6534D9A107E.png",
+    "D:\\profile\\research\\workspace\\output\\person_terg_v0_visual_semantic_reality_check_20260829\\figures\\bridge_critical_edges\\10_TERGE_F497E3F7B05444DD3CE7.png",
+    "D:\\profile\\research\\workspace\\output\\person_terg_v0_visual_semantic_reality_check_20260829\\figures\\edge_evidence_distribution.png",
+    "D:\\profile\\research\\workspace\\output\\person_terg_v0_visual_semantic_reality_check_20260829\\figures\\exact_one_soft_overlap_edges\\01_TERGE_FE61F77D62EB26CB41AD.png",
+    "D:\\profile\\research\\workspace\\output\\person_terg_v0_visual_semantic_reality_check_20260829\\figures\\exact_one_soft_overlap_edges\\02_TERGE_3102D647498C1D52F558.png",
+    "D:\\profile\\research\\workspace\\output\\person_terg_v0_visual_semantic_reality_check_20260829\\figures\\exact_one_soft_overlap_edges\\03_TERGE_D7D994A0DB490A1CFB5B.png",
+    "D:\\profile\\research\\workspace\\output\\person_terg_v0_visual_semantic_reality_check_20260829\\figures\\exact_one_soft_overlap_edges\\04_TERGE_0E2C5959AC68AA23C845.png",
+    "D:\\profile\\research\\workspace\\output\\person_terg_v0_visual_semantic_reality_check_20260829\\figures\\r01zf_f0_f15_all_intermediate_competing_components.png",
+    "D:\\profile\\research\\workspace\\output\\person_terg_v0_visual_semantic_reality_check_20260829\\figures\\r01zf_f0_f15_edge_critical_temporal_graph.png",
+    "D:\\profile\\research\\workspace\\output\\person_terg_v0_visual_semantic_reality_check_20260829\\figures\\relation_set_cases\\01_partial_direction_with_local_shared_TERGOP_502E22A20AD671392149.png",
+    "D:\\profile\\research\\workspace\\output\\person_terg_v0_visual_semantic_reality_check_20260829\\figures\\relation_set_cases\\02_competing_directions_with_shared_TERGOP_722FF98E6AE0A93EBAC5.png",
+    "D:\\profile\\research\\workspace\\output\\person_terg_v0_visual_semantic_reality_check_20260829\\figures\\topology_stratified_cases\\01_clear_split_high_iou_TERGE_9E4C591EC7B819FF88B3.png",
+    "D:\\profile\\research\\workspace\\output\\person_terg_v0_visual_semantic_reality_check_20260829\\figures\\topology_stratified_cases\\02_clear_merge_high_iou_TERGE_061EAEA3EB63A4D88121.png",
+    "D:\\profile\\research\\workspace\\output\\person_terg_v0_visual_semantic_reality_check_20260829\\figures\\topology_stratified_cases\\03_deformation_with_topology_TERGE_87639AB3E981B64E8F29.png",
+    "D:\\profile\\research\\workspace\\output\\person_terg_v0_visual_semantic_reality_check_20260829\\figures\\topology_stratified_cases\\04_weak_edge_topology_TERGE_1EAF222B81CCB60BA5C5.png",
+    "D:\\profile\\research\\workspace\\output\\person_terg_v0_visual_semantic_reality_check_20260829\\figures\\topology_stratified_cases\\06_lowest_iou_supported_TERGE_41D136A6C3D90EE28606.png"
+  ]
+}

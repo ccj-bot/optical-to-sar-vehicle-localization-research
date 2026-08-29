@@ -1,0 +1,20 @@
+{
+  "physical_region_count": 3056,
+  "conditioned_incidence_count": 4328,
+  "set_incidence_count": 18937,
+  "physical_edge_count": 39895,
+  "supported_physical_edge_count": 2644,
+  "lower_core_edge_count": 111,
+  "upper_optional_edge_count": 2533,
+  "upper_family_count": 3414,
+  "lower_core_component_count": 18314,
+  "optional_bridge_dependency_rows": 13724,
+  "relation_profile_count": 85,
+  "shared_profile_count": 78,
+  "shared_partial_direction_count": 27,
+  "shared_competing_direction_count": 51,
+  "pure_shared_only_count": 0,
+  "temporal_stratification_set_count": 87,
+  "actual_pruned_node_count": 0,
+  "actual_pruned_family_count": 0
+}

@@ -1,0 +1,192 @@
+{
+  "schema": "PERSON_TERG_V0_VISUAL_SEMANTIC_AUDIT_VALIDATION_V1",
+  "status": "PASS",
+  "check_count": 36,
+  "failed_count": 0,
+  "checks": [
+    {
+      "name": "required:TERG_V0_VISUAL_SEMANTIC_AUDIT.md",
+      "pass": true,
+      "detail": "D:\\profile\\research\\workspace\\output\\person_terg_v0_visual_semantic_reality_check_20260829\\TERG_V0_VISUAL_SEMANTIC_AUDIT.md"
+    },
+    {
+      "name": "required:diagnostic_summary.json",
+      "pass": true,
+      "detail": "D:\\profile\\research\\workspace\\output\\person_terg_v0_visual_semantic_reality_check_20260829\\diagnostic_summary.json"
+    },
+    {
+      "name": "required:independent_visual_review_ledger.csv",
+      "pass": true,
+      "detail": "D:\\profile\\research\\workspace\\output\\person_terg_v0_visual_semantic_reality_check_20260829\\tables\\independent_visual_review_ledger.csv"
+    },
+    {
+      "name": "required:edge_evidence_descriptors.parquet",
+      "pass": true,
+      "detail": "D:\\profile\\research\\workspace\\output\\person_terg_v0_visual_semantic_reality_check_20260829\\tables\\edge_evidence_descriptors.parquet"
+    },
+    {
+      "name": "required:bridge_criticality.csv",
+      "pass": true,
+      "detail": "D:\\profile\\research\\workspace\\output\\person_terg_v0_visual_semantic_reality_check_20260829\\tables\\bridge_criticality.csv"
+    },
+    {
+      "name": "required:possible_relation_set_audit.csv",
+      "pass": true,
+      "detail": "D:\\profile\\research\\workspace\\output\\person_terg_v0_visual_semantic_reality_check_20260829\\tables\\possible_relation_set_audit.csv"
+    },
+    {
+      "name": "required:temporal_stratification_contraction_audit.csv",
+      "pass": true,
+      "detail": "D:\\profile\\research\\workspace\\output\\person_terg_v0_visual_semantic_reality_check_20260829\\tables\\temporal_stratification_contraction_audit.csv"
+    },
+    {
+      "name": "required:exact_one_soft_overlap_edge_registry.csv",
+      "pass": true,
+      "detail": "D:\\profile\\research\\workspace\\output\\person_terg_v0_visual_semantic_reality_check_20260829\\tables\\exact_one_soft_overlap_edge_registry.csv"
+    },
+    {
+      "name": "required:relation_set_case_registry.csv",
+      "pass": true,
+      "detail": "D:\\profile\\research\\workspace\\output\\person_terg_v0_visual_semantic_reality_check_20260829\\tables\\relation_set_case_registry.csv"
+    },
+    {
+      "name": "required:ARTIFACT_MANIFEST.sha256",
+      "pass": true,
+      "detail": "D:\\profile\\research\\workspace\\output\\person_terg_v0_visual_semantic_reality_check_20260829\\ARTIFACT_MANIFEST.sha256"
+    },
+    {
+      "name": "required:20260829_person_terg_v0_visual_semantic_reality_check.md",
+      "pass": true,
+      "detail": "D:\\profile\\research\\workspace\\logs\\20260829_person_terg_v0_visual_semantic_reality_check.md"
+    },
+    {
+      "name": "phase_a_only",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mechanism_not_modified",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "confirmation_not_accessed",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supported_edges_3702",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "exact_one_edges_4",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "conditioned_nodes_4328",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "physical_regions_3056",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "shared_order_profiles_78",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "temporal_sets_88",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "actual_pruned_nodes_zero",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "timing_unverified",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "edge_table_rows_52460",
+      "pass": true,
+      "detail": 52460
+    },
+    {
+      "name": "edge_table_supported_3702",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "relation_profiles_85",
+      "pass": true,
+      "detail": 85
+    },
+    {
+      "name": "relation_shared_profiles_all_set_valued",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "contraction_rows_88",
+      "pass": true,
+      "detail": 88
+    },
+    {
+      "name": "exact_one_registry_4",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "relation_case_registry_2",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "visual_ledger_nonempty",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "all_summary_figures_exist",
+      "pass": true,
+      "detail": 24
+    },
+    {
+      "name": "exact_one_figures_4",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "relation_figures_2",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "manifest_path_set_matches",
+      "pass": true,
+      "detail": {
+        "manifest": 44,
+        "current": 44
+      }
+    },
+    {
+      "name": "manifest_hashes_match",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "no_old_work_paths",
+      "pass": true,
+      "detail": ""
+    }
+  ],
+  "note": "Integrity and schema validation only; not a scientific conclusion."
+}

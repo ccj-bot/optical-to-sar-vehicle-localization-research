@@ -1,0 +1,343 @@
+﻿segment_id,run_id,evidence_family,availability_state,evidence_role,activated_for_relational_exclusion,availability_basis,weighted_score_used,manual_reference_used
+TERGS_E766DA8C46F860D1BA2F,R01ZF,RELATIVE_ANGULAR_ORDER,AMBIGUOUS,RELATIONAL_DISCRIMINATIVE,False,0/1 pair profiles have whole-segment definite raw optical order,False,False
+TERGS_E766DA8C46F860D1BA2F,R01ZF,LIFECYCLE_PERSISTENCE,OBSERVABLE,STRUCTURING,False,7 complete-lifecycle-possible frozen families; already used in TERG-v1 construction,False,False
+TERGS_E766DA8C46F860D1BA2F,R01ZF,SHARED_RESPONSE_STATE,OBSERVABLE,DESCRIPTIVE,False,shared SAR physical-region support occurs in 1/1 relation profiles; no PERSON-state equivalence asserted,False,False
+TERGS_E766DA8C46F860D1BA2F,R01ZF,TOPOLOGY_HYPOTHESIS_SET,PARTIALLY_OBSERVABLE,DESCRIPTIVE,False,split/merge/deformation remains a compatible SAR response-state hypothesis set,False,False
+TERGS_E766DA8C46F860D1BA2F,R01ZF,BOUNDARY_CENSORING,OBSERVABLE,DESCRIPTIVE,False,censoring disables morphology authority and preserves boundary-conditioned hypotheses,False,False
+TERGS_E766DA8C46F860D1BA2F,R01ZF,RESPONSE_COMPONENT_SET,OBSERVABLE,STRUCTURING,False,upper families may contain multiple lower-core components and multiple physical regions,False,False
+TERGS_E766DA8C46F860D1BA2F,R01ZF,EXACT_CROSS_MODAL_TIMING,UNAVAILABLE,DESCRIPTIVE,False,all frozen timing-authority rows prohibit exact cross-modal order,False,False
+TERGS_E766DA8C46F860D1BA2F,R01ZF,RELATIVE_RANGE_LIKE_ORDER,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,optical has no range authority and no reliable cross-modal range-order observable is frozen,False,False
+TERGS_E766DA8C46F860D1BA2F,R01ZF,UNARY_FAMILY_DISCRIMINATION,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,TERG-R0 deletes 0 individual families without an anchor,False,False
+TERGS_78A1EE0BE1319B401D51,R01ZF,RELATIVE_ANGULAR_ORDER,UNAVAILABLE,RELATIONAL_DISCRIMINATIVE,False,0/0 pair profiles have whole-segment definite raw optical order,False,False
+TERGS_78A1EE0BE1319B401D51,R01ZF,LIFECYCLE_PERSISTENCE,OBSERVABLE,STRUCTURING,False,1 complete-lifecycle-possible frozen families; already used in TERG-v1 construction,False,False
+TERGS_78A1EE0BE1319B401D51,R01ZF,SHARED_RESPONSE_STATE,UNAVAILABLE,DESCRIPTIVE,False,shared SAR physical-region support occurs in 0/0 relation profiles; no PERSON-state equivalence asserted,False,False
+TERGS_78A1EE0BE1319B401D51,R01ZF,TOPOLOGY_HYPOTHESIS_SET,PARTIALLY_OBSERVABLE,DESCRIPTIVE,False,split/merge/deformation remains a compatible SAR response-state hypothesis set,False,False
+TERGS_78A1EE0BE1319B401D51,R01ZF,BOUNDARY_CENSORING,OBSERVABLE,DESCRIPTIVE,False,censoring disables morphology authority and preserves boundary-conditioned hypotheses,False,False
+TERGS_78A1EE0BE1319B401D51,R01ZF,RESPONSE_COMPONENT_SET,OBSERVABLE,STRUCTURING,False,upper families may contain multiple lower-core components and multiple physical regions,False,False
+TERGS_78A1EE0BE1319B401D51,R01ZF,EXACT_CROSS_MODAL_TIMING,UNAVAILABLE,DESCRIPTIVE,False,all frozen timing-authority rows prohibit exact cross-modal order,False,False
+TERGS_78A1EE0BE1319B401D51,R01ZF,RELATIVE_RANGE_LIKE_ORDER,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,optical has no range authority and no reliable cross-modal range-order observable is frozen,False,False
+TERGS_78A1EE0BE1319B401D51,R01ZF,UNARY_FAMILY_DISCRIMINATION,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,TERG-R0 deletes 0 individual families without an anchor,False,False
+TERGS_8BEED5994DAAC1AE86CF,R01ZF,RELATIVE_ANGULAR_ORDER,AMBIGUOUS,RELATIONAL_DISCRIMINATIVE,False,0/1 pair profiles have whole-segment definite raw optical order,False,False
+TERGS_8BEED5994DAAC1AE86CF,R01ZF,LIFECYCLE_PERSISTENCE,OBSERVABLE,STRUCTURING,False,2 complete-lifecycle-possible frozen families; already used in TERG-v1 construction,False,False
+TERGS_8BEED5994DAAC1AE86CF,R01ZF,SHARED_RESPONSE_STATE,OBSERVABLE,DESCRIPTIVE,False,shared SAR physical-region support occurs in 1/1 relation profiles; no PERSON-state equivalence asserted,False,False
+TERGS_8BEED5994DAAC1AE86CF,R01ZF,TOPOLOGY_HYPOTHESIS_SET,PARTIALLY_OBSERVABLE,DESCRIPTIVE,False,split/merge/deformation remains a compatible SAR response-state hypothesis set,False,False
+TERGS_8BEED5994DAAC1AE86CF,R01ZF,BOUNDARY_CENSORING,OBSERVABLE,DESCRIPTIVE,False,censoring disables morphology authority and preserves boundary-conditioned hypotheses,False,False
+TERGS_8BEED5994DAAC1AE86CF,R01ZF,RESPONSE_COMPONENT_SET,OBSERVABLE,STRUCTURING,False,upper families may contain multiple lower-core components and multiple physical regions,False,False
+TERGS_8BEED5994DAAC1AE86CF,R01ZF,EXACT_CROSS_MODAL_TIMING,UNAVAILABLE,DESCRIPTIVE,False,all frozen timing-authority rows prohibit exact cross-modal order,False,False
+TERGS_8BEED5994DAAC1AE86CF,R01ZF,RELATIVE_RANGE_LIKE_ORDER,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,optical has no range authority and no reliable cross-modal range-order observable is frozen,False,False
+TERGS_8BEED5994DAAC1AE86CF,R01ZF,UNARY_FAMILY_DISCRIMINATION,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,TERG-R0 deletes 0 individual families without an anchor,False,False
+TERGS_253C26F1BF4B2985C601,R01ZF,RELATIVE_ANGULAR_ORDER,UNAVAILABLE,RELATIONAL_DISCRIMINATIVE,False,0/0 pair profiles have whole-segment definite raw optical order,False,False
+TERGS_253C26F1BF4B2985C601,R01ZF,LIFECYCLE_PERSISTENCE,OBSERVABLE,STRUCTURING,False,1 complete-lifecycle-possible frozen families; already used in TERG-v1 construction,False,False
+TERGS_253C26F1BF4B2985C601,R01ZF,SHARED_RESPONSE_STATE,UNAVAILABLE,DESCRIPTIVE,False,shared SAR physical-region support occurs in 0/0 relation profiles; no PERSON-state equivalence asserted,False,False
+TERGS_253C26F1BF4B2985C601,R01ZF,TOPOLOGY_HYPOTHESIS_SET,PARTIALLY_OBSERVABLE,DESCRIPTIVE,False,split/merge/deformation remains a compatible SAR response-state hypothesis set,False,False
+TERGS_253C26F1BF4B2985C601,R01ZF,BOUNDARY_CENSORING,OBSERVABLE,DESCRIPTIVE,False,censoring disables morphology authority and preserves boundary-conditioned hypotheses,False,False
+TERGS_253C26F1BF4B2985C601,R01ZF,RESPONSE_COMPONENT_SET,OBSERVABLE,STRUCTURING,False,upper families may contain multiple lower-core components and multiple physical regions,False,False
+TERGS_253C26F1BF4B2985C601,R01ZF,EXACT_CROSS_MODAL_TIMING,UNAVAILABLE,DESCRIPTIVE,False,all frozen timing-authority rows prohibit exact cross-modal order,False,False
+TERGS_253C26F1BF4B2985C601,R01ZF,RELATIVE_RANGE_LIKE_ORDER,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,optical has no range authority and no reliable cross-modal range-order observable is frozen,False,False
+TERGS_253C26F1BF4B2985C601,R01ZF,UNARY_FAMILY_DISCRIMINATION,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,TERG-R0 deletes 0 individual families without an anchor,False,False
+TERGS_BC5EA4947C3E28B93EB6,R01ZF,RELATIVE_ANGULAR_ORDER,PARTIALLY_OBSERVABLE,RELATIONAL_DISCRIMINATIVE,True,2/3 pair profiles have whole-segment definite raw optical order,False,False
+TERGS_BC5EA4947C3E28B93EB6,R01ZF,LIFECYCLE_PERSISTENCE,OBSERVABLE,STRUCTURING,False,3 complete-lifecycle-possible frozen families; already used in TERG-v1 construction,False,False
+TERGS_BC5EA4947C3E28B93EB6,R01ZF,SHARED_RESPONSE_STATE,OBSERVABLE,DESCRIPTIVE,False,shared SAR physical-region support occurs in 3/3 relation profiles; no PERSON-state equivalence asserted,False,False
+TERGS_BC5EA4947C3E28B93EB6,R01ZF,TOPOLOGY_HYPOTHESIS_SET,PARTIALLY_OBSERVABLE,DESCRIPTIVE,False,split/merge/deformation remains a compatible SAR response-state hypothesis set,False,False
+TERGS_BC5EA4947C3E28B93EB6,R01ZF,BOUNDARY_CENSORING,OBSERVABLE,DESCRIPTIVE,False,censoring disables morphology authority and preserves boundary-conditioned hypotheses,False,False
+TERGS_BC5EA4947C3E28B93EB6,R01ZF,RESPONSE_COMPONENT_SET,OBSERVABLE,STRUCTURING,False,upper families may contain multiple lower-core components and multiple physical regions,False,False
+TERGS_BC5EA4947C3E28B93EB6,R01ZF,EXACT_CROSS_MODAL_TIMING,UNAVAILABLE,DESCRIPTIVE,False,all frozen timing-authority rows prohibit exact cross-modal order,False,False
+TERGS_BC5EA4947C3E28B93EB6,R01ZF,RELATIVE_RANGE_LIKE_ORDER,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,optical has no range authority and no reliable cross-modal range-order observable is frozen,False,False
+TERGS_BC5EA4947C3E28B93EB6,R01ZF,UNARY_FAMILY_DISCRIMINATION,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,TERG-R0 deletes 0 individual families without an anchor,False,False
+TERGS_BDFB23ADB9531057AE1C,R01ZF,RELATIVE_ANGULAR_ORDER,OBSERVABLE,RELATIONAL_DISCRIMINATIVE,True,1/1 pair profiles have whole-segment definite raw optical order,False,False
+TERGS_BDFB23ADB9531057AE1C,R01ZF,LIFECYCLE_PERSISTENCE,OBSERVABLE,STRUCTURING,False,2 complete-lifecycle-possible frozen families; already used in TERG-v1 construction,False,False
+TERGS_BDFB23ADB9531057AE1C,R01ZF,SHARED_RESPONSE_STATE,OBSERVABLE,DESCRIPTIVE,False,shared SAR physical-region support occurs in 1/1 relation profiles; no PERSON-state equivalence asserted,False,False
+TERGS_BDFB23ADB9531057AE1C,R01ZF,TOPOLOGY_HYPOTHESIS_SET,PARTIALLY_OBSERVABLE,DESCRIPTIVE,False,split/merge/deformation remains a compatible SAR response-state hypothesis set,False,False
+TERGS_BDFB23ADB9531057AE1C,R01ZF,BOUNDARY_CENSORING,OBSERVABLE,DESCRIPTIVE,False,censoring disables morphology authority and preserves boundary-conditioned hypotheses,False,False
+TERGS_BDFB23ADB9531057AE1C,R01ZF,RESPONSE_COMPONENT_SET,OBSERVABLE,STRUCTURING,False,upper families may contain multiple lower-core components and multiple physical regions,False,False
+TERGS_BDFB23ADB9531057AE1C,R01ZF,EXACT_CROSS_MODAL_TIMING,UNAVAILABLE,DESCRIPTIVE,False,all frozen timing-authority rows prohibit exact cross-modal order,False,False
+TERGS_BDFB23ADB9531057AE1C,R01ZF,RELATIVE_RANGE_LIKE_ORDER,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,optical has no range authority and no reliable cross-modal range-order observable is frozen,False,False
+TERGS_BDFB23ADB9531057AE1C,R01ZF,UNARY_FAMILY_DISCRIMINATION,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,TERG-R0 deletes 0 individual families without an anchor,False,False
+TERGS_447E05427C2D6C44CC40,R01ZF,RELATIVE_ANGULAR_ORDER,OBSERVABLE,RELATIONAL_DISCRIMINATIVE,True,1/1 pair profiles have whole-segment definite raw optical order,False,False
+TERGS_447E05427C2D6C44CC40,R01ZF,LIFECYCLE_PERSISTENCE,OBSERVABLE,STRUCTURING,False,2 complete-lifecycle-possible frozen families; already used in TERG-v1 construction,False,False
+TERGS_447E05427C2D6C44CC40,R01ZF,SHARED_RESPONSE_STATE,OBSERVABLE,DESCRIPTIVE,False,shared SAR physical-region support occurs in 1/1 relation profiles; no PERSON-state equivalence asserted,False,False
+TERGS_447E05427C2D6C44CC40,R01ZF,TOPOLOGY_HYPOTHESIS_SET,PARTIALLY_OBSERVABLE,DESCRIPTIVE,False,split/merge/deformation remains a compatible SAR response-state hypothesis set,False,False
+TERGS_447E05427C2D6C44CC40,R01ZF,BOUNDARY_CENSORING,OBSERVABLE,DESCRIPTIVE,False,censoring disables morphology authority and preserves boundary-conditioned hypotheses,False,False
+TERGS_447E05427C2D6C44CC40,R01ZF,RESPONSE_COMPONENT_SET,OBSERVABLE,STRUCTURING,False,upper families may contain multiple lower-core components and multiple physical regions,False,False
+TERGS_447E05427C2D6C44CC40,R01ZF,EXACT_CROSS_MODAL_TIMING,UNAVAILABLE,DESCRIPTIVE,False,all frozen timing-authority rows prohibit exact cross-modal order,False,False
+TERGS_447E05427C2D6C44CC40,R01ZF,RELATIVE_RANGE_LIKE_ORDER,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,optical has no range authority and no reliable cross-modal range-order observable is frozen,False,False
+TERGS_447E05427C2D6C44CC40,R01ZF,UNARY_FAMILY_DISCRIMINATION,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,TERG-R0 deletes 0 individual families without an anchor,False,False
+TERGS_90732AAA7ED6876C7E68,R01ZF,RELATIVE_ANGULAR_ORDER,UNAVAILABLE,RELATIONAL_DISCRIMINATIVE,False,0/0 pair profiles have whole-segment definite raw optical order,False,False
+TERGS_90732AAA7ED6876C7E68,R01ZF,LIFECYCLE_PERSISTENCE,OBSERVABLE,STRUCTURING,False,1 complete-lifecycle-possible frozen families; already used in TERG-v1 construction,False,False
+TERGS_90732AAA7ED6876C7E68,R01ZF,SHARED_RESPONSE_STATE,UNAVAILABLE,DESCRIPTIVE,False,shared SAR physical-region support occurs in 0/0 relation profiles; no PERSON-state equivalence asserted,False,False
+TERGS_90732AAA7ED6876C7E68,R01ZF,TOPOLOGY_HYPOTHESIS_SET,PARTIALLY_OBSERVABLE,DESCRIPTIVE,False,split/merge/deformation remains a compatible SAR response-state hypothesis set,False,False
+TERGS_90732AAA7ED6876C7E68,R01ZF,BOUNDARY_CENSORING,CENSORED,DESCRIPTIVE,False,censoring disables morphology authority and preserves boundary-conditioned hypotheses,False,False
+TERGS_90732AAA7ED6876C7E68,R01ZF,RESPONSE_COMPONENT_SET,OBSERVABLE,STRUCTURING,False,upper families may contain multiple lower-core components and multiple physical regions,False,False
+TERGS_90732AAA7ED6876C7E68,R01ZF,EXACT_CROSS_MODAL_TIMING,UNAVAILABLE,DESCRIPTIVE,False,all frozen timing-authority rows prohibit exact cross-modal order,False,False
+TERGS_90732AAA7ED6876C7E68,R01ZF,RELATIVE_RANGE_LIKE_ORDER,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,optical has no range authority and no reliable cross-modal range-order observable is frozen,False,False
+TERGS_90732AAA7ED6876C7E68,R01ZF,UNARY_FAMILY_DISCRIMINATION,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,TERG-R0 deletes 0 individual families without an anchor,False,False
+TERGS_1CFF140A9BB35DBEE86F,R01ZF,RELATIVE_ANGULAR_ORDER,PARTIALLY_OBSERVABLE,RELATIONAL_DISCRIMINATIVE,True,2/3 pair profiles have whole-segment definite raw optical order,False,False
+TERGS_1CFF140A9BB35DBEE86F,R01ZF,LIFECYCLE_PERSISTENCE,OBSERVABLE,STRUCTURING,False,20 complete-lifecycle-possible frozen families; already used in TERG-v1 construction,False,False
+TERGS_1CFF140A9BB35DBEE86F,R01ZF,SHARED_RESPONSE_STATE,OBSERVABLE,DESCRIPTIVE,False,shared SAR physical-region support occurs in 3/3 relation profiles; no PERSON-state equivalence asserted,False,False
+TERGS_1CFF140A9BB35DBEE86F,R01ZF,TOPOLOGY_HYPOTHESIS_SET,AMBIGUOUS,DESCRIPTIVE,False,split/merge/deformation remains a compatible SAR response-state hypothesis set,False,False
+TERGS_1CFF140A9BB35DBEE86F,R01ZF,BOUNDARY_CENSORING,OBSERVABLE,DESCRIPTIVE,False,censoring disables morphology authority and preserves boundary-conditioned hypotheses,False,False
+TERGS_1CFF140A9BB35DBEE86F,R01ZF,RESPONSE_COMPONENT_SET,OBSERVABLE,STRUCTURING,False,upper families may contain multiple lower-core components and multiple physical regions,False,False
+TERGS_1CFF140A9BB35DBEE86F,R01ZF,EXACT_CROSS_MODAL_TIMING,UNAVAILABLE,DESCRIPTIVE,False,all frozen timing-authority rows prohibit exact cross-modal order,False,False
+TERGS_1CFF140A9BB35DBEE86F,R01ZF,RELATIVE_RANGE_LIKE_ORDER,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,optical has no range authority and no reliable cross-modal range-order observable is frozen,False,False
+TERGS_1CFF140A9BB35DBEE86F,R01ZF,UNARY_FAMILY_DISCRIMINATION,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,TERG-R0 deletes 0 individual families without an anchor,False,False
+TERGS_4DCF92A4ED1645C80C30,R01ZF,RELATIVE_ANGULAR_ORDER,PARTIALLY_OBSERVABLE,RELATIONAL_DISCRIMINATIVE,True,2/3 pair profiles have whole-segment definite raw optical order,False,False
+TERGS_4DCF92A4ED1645C80C30,R01ZF,LIFECYCLE_PERSISTENCE,OBSERVABLE,STRUCTURING,False,20 complete-lifecycle-possible frozen families; already used in TERG-v1 construction,False,False
+TERGS_4DCF92A4ED1645C80C30,R01ZF,SHARED_RESPONSE_STATE,OBSERVABLE,DESCRIPTIVE,False,shared SAR physical-region support occurs in 3/3 relation profiles; no PERSON-state equivalence asserted,False,False
+TERGS_4DCF92A4ED1645C80C30,R01ZF,TOPOLOGY_HYPOTHESIS_SET,AMBIGUOUS,DESCRIPTIVE,False,split/merge/deformation remains a compatible SAR response-state hypothesis set,False,False
+TERGS_4DCF92A4ED1645C80C30,R01ZF,BOUNDARY_CENSORING,OBSERVABLE,DESCRIPTIVE,False,censoring disables morphology authority and preserves boundary-conditioned hypotheses,False,False
+TERGS_4DCF92A4ED1645C80C30,R01ZF,RESPONSE_COMPONENT_SET,OBSERVABLE,STRUCTURING,False,upper families may contain multiple lower-core components and multiple physical regions,False,False
+TERGS_4DCF92A4ED1645C80C30,R01ZF,EXACT_CROSS_MODAL_TIMING,UNAVAILABLE,DESCRIPTIVE,False,all frozen timing-authority rows prohibit exact cross-modal order,False,False
+TERGS_4DCF92A4ED1645C80C30,R01ZF,RELATIVE_RANGE_LIKE_ORDER,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,optical has no range authority and no reliable cross-modal range-order observable is frozen,False,False
+TERGS_4DCF92A4ED1645C80C30,R01ZF,UNARY_FAMILY_DISCRIMINATION,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,TERG-R0 deletes 0 individual families without an anchor,False,False
+TERGS_D939CE55686A60BC97A8,R01ZF,RELATIVE_ANGULAR_ORDER,PARTIALLY_OBSERVABLE,RELATIONAL_DISCRIMINATIVE,True,2/3 pair profiles have whole-segment definite raw optical order,False,False
+TERGS_D939CE55686A60BC97A8,R01ZF,LIFECYCLE_PERSISTENCE,OBSERVABLE,STRUCTURING,False,24 complete-lifecycle-possible frozen families; already used in TERG-v1 construction,False,False
+TERGS_D939CE55686A60BC97A8,R01ZF,SHARED_RESPONSE_STATE,OBSERVABLE,DESCRIPTIVE,False,shared SAR physical-region support occurs in 3/3 relation profiles; no PERSON-state equivalence asserted,False,False
+TERGS_D939CE55686A60BC97A8,R01ZF,TOPOLOGY_HYPOTHESIS_SET,AMBIGUOUS,DESCRIPTIVE,False,split/merge/deformation remains a compatible SAR response-state hypothesis set,False,False
+TERGS_D939CE55686A60BC97A8,R01ZF,BOUNDARY_CENSORING,OBSERVABLE,DESCRIPTIVE,False,censoring disables morphology authority and preserves boundary-conditioned hypotheses,False,False
+TERGS_D939CE55686A60BC97A8,R01ZF,RESPONSE_COMPONENT_SET,OBSERVABLE,STRUCTURING,False,upper families may contain multiple lower-core components and multiple physical regions,False,False
+TERGS_D939CE55686A60BC97A8,R01ZF,EXACT_CROSS_MODAL_TIMING,UNAVAILABLE,DESCRIPTIVE,False,all frozen timing-authority rows prohibit exact cross-modal order,False,False
+TERGS_D939CE55686A60BC97A8,R01ZF,RELATIVE_RANGE_LIKE_ORDER,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,optical has no range authority and no reliable cross-modal range-order observable is frozen,False,False
+TERGS_D939CE55686A60BC97A8,R01ZF,UNARY_FAMILY_DISCRIMINATION,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,TERG-R0 deletes 0 individual families without an anchor,False,False
+TERGS_6E3564DE2B9BCF7CE7F6,R01ZF,RELATIVE_ANGULAR_ORDER,PARTIALLY_OBSERVABLE,RELATIONAL_DISCRIMINATIVE,True,2/3 pair profiles have whole-segment definite raw optical order,False,False
+TERGS_6E3564DE2B9BCF7CE7F6,R01ZF,LIFECYCLE_PERSISTENCE,OBSERVABLE,STRUCTURING,False,23 complete-lifecycle-possible frozen families; already used in TERG-v1 construction,False,False
+TERGS_6E3564DE2B9BCF7CE7F6,R01ZF,SHARED_RESPONSE_STATE,OBSERVABLE,DESCRIPTIVE,False,shared SAR physical-region support occurs in 3/3 relation profiles; no PERSON-state equivalence asserted,False,False
+TERGS_6E3564DE2B9BCF7CE7F6,R01ZF,TOPOLOGY_HYPOTHESIS_SET,AMBIGUOUS,DESCRIPTIVE,False,split/merge/deformation remains a compatible SAR response-state hypothesis set,False,False
+TERGS_6E3564DE2B9BCF7CE7F6,R01ZF,BOUNDARY_CENSORING,OBSERVABLE,DESCRIPTIVE,False,censoring disables morphology authority and preserves boundary-conditioned hypotheses,False,False
+TERGS_6E3564DE2B9BCF7CE7F6,R01ZF,RESPONSE_COMPONENT_SET,OBSERVABLE,STRUCTURING,False,upper families may contain multiple lower-core components and multiple physical regions,False,False
+TERGS_6E3564DE2B9BCF7CE7F6,R01ZF,EXACT_CROSS_MODAL_TIMING,UNAVAILABLE,DESCRIPTIVE,False,all frozen timing-authority rows prohibit exact cross-modal order,False,False
+TERGS_6E3564DE2B9BCF7CE7F6,R01ZF,RELATIVE_RANGE_LIKE_ORDER,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,optical has no range authority and no reliable cross-modal range-order observable is frozen,False,False
+TERGS_6E3564DE2B9BCF7CE7F6,R01ZF,UNARY_FAMILY_DISCRIMINATION,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,TERG-R0 deletes 0 individual families without an anchor,False,False
+TERGS_F01D7DE8D068D8533122,R01ZF,RELATIVE_ANGULAR_ORDER,PARTIALLY_OBSERVABLE,RELATIONAL_DISCRIMINATIVE,True,2/3 pair profiles have whole-segment definite raw optical order,False,False
+TERGS_F01D7DE8D068D8533122,R01ZF,LIFECYCLE_PERSISTENCE,OBSERVABLE,STRUCTURING,False,16 complete-lifecycle-possible frozen families; already used in TERG-v1 construction,False,False
+TERGS_F01D7DE8D068D8533122,R01ZF,SHARED_RESPONSE_STATE,OBSERVABLE,DESCRIPTIVE,False,shared SAR physical-region support occurs in 3/3 relation profiles; no PERSON-state equivalence asserted,False,False
+TERGS_F01D7DE8D068D8533122,R01ZF,TOPOLOGY_HYPOTHESIS_SET,AMBIGUOUS,DESCRIPTIVE,False,split/merge/deformation remains a compatible SAR response-state hypothesis set,False,False
+TERGS_F01D7DE8D068D8533122,R01ZF,BOUNDARY_CENSORING,OBSERVABLE,DESCRIPTIVE,False,censoring disables morphology authority and preserves boundary-conditioned hypotheses,False,False
+TERGS_F01D7DE8D068D8533122,R01ZF,RESPONSE_COMPONENT_SET,OBSERVABLE,STRUCTURING,False,upper families may contain multiple lower-core components and multiple physical regions,False,False
+TERGS_F01D7DE8D068D8533122,R01ZF,EXACT_CROSS_MODAL_TIMING,UNAVAILABLE,DESCRIPTIVE,False,all frozen timing-authority rows prohibit exact cross-modal order,False,False
+TERGS_F01D7DE8D068D8533122,R01ZF,RELATIVE_RANGE_LIKE_ORDER,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,optical has no range authority and no reliable cross-modal range-order observable is frozen,False,False
+TERGS_F01D7DE8D068D8533122,R01ZF,UNARY_FAMILY_DISCRIMINATION,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,TERG-R0 deletes 0 individual families without an anchor,False,False
+TERGS_2329DA3AFF8E7609BCB2,R01ZF,RELATIVE_ANGULAR_ORDER,PARTIALLY_OBSERVABLE,RELATIONAL_DISCRIMINATIVE,True,2/3 pair profiles have whole-segment definite raw optical order,False,False
+TERGS_2329DA3AFF8E7609BCB2,R01ZF,LIFECYCLE_PERSISTENCE,OBSERVABLE,STRUCTURING,False,20 complete-lifecycle-possible frozen families; already used in TERG-v1 construction,False,False
+TERGS_2329DA3AFF8E7609BCB2,R01ZF,SHARED_RESPONSE_STATE,PARTIALLY_OBSERVABLE,DESCRIPTIVE,False,shared SAR physical-region support occurs in 1/3 relation profiles; no PERSON-state equivalence asserted,False,False
+TERGS_2329DA3AFF8E7609BCB2,R01ZF,TOPOLOGY_HYPOTHESIS_SET,AMBIGUOUS,DESCRIPTIVE,False,split/merge/deformation remains a compatible SAR response-state hypothesis set,False,False
+TERGS_2329DA3AFF8E7609BCB2,R01ZF,BOUNDARY_CENSORING,OBSERVABLE,DESCRIPTIVE,False,censoring disables morphology authority and preserves boundary-conditioned hypotheses,False,False
+TERGS_2329DA3AFF8E7609BCB2,R01ZF,RESPONSE_COMPONENT_SET,OBSERVABLE,STRUCTURING,False,upper families may contain multiple lower-core components and multiple physical regions,False,False
+TERGS_2329DA3AFF8E7609BCB2,R01ZF,EXACT_CROSS_MODAL_TIMING,UNAVAILABLE,DESCRIPTIVE,False,all frozen timing-authority rows prohibit exact cross-modal order,False,False
+TERGS_2329DA3AFF8E7609BCB2,R01ZF,RELATIVE_RANGE_LIKE_ORDER,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,optical has no range authority and no reliable cross-modal range-order observable is frozen,False,False
+TERGS_2329DA3AFF8E7609BCB2,R01ZF,UNARY_FAMILY_DISCRIMINATION,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,TERG-R0 deletes 0 individual families without an anchor,False,False
+TERGS_333C24F63385DAFD9021,R01ZF,RELATIVE_ANGULAR_ORDER,UNAVAILABLE,RELATIONAL_DISCRIMINATIVE,False,0/0 pair profiles have whole-segment definite raw optical order,False,False
+TERGS_333C24F63385DAFD9021,R01ZF,LIFECYCLE_PERSISTENCE,OBSERVABLE,STRUCTURING,False,3 complete-lifecycle-possible frozen families; already used in TERG-v1 construction,False,False
+TERGS_333C24F63385DAFD9021,R01ZF,SHARED_RESPONSE_STATE,UNAVAILABLE,DESCRIPTIVE,False,shared SAR physical-region support occurs in 0/0 relation profiles; no PERSON-state equivalence asserted,False,False
+TERGS_333C24F63385DAFD9021,R01ZF,TOPOLOGY_HYPOTHESIS_SET,PARTIALLY_OBSERVABLE,DESCRIPTIVE,False,split/merge/deformation remains a compatible SAR response-state hypothesis set,False,False
+TERGS_333C24F63385DAFD9021,R01ZF,BOUNDARY_CENSORING,CENSORED,DESCRIPTIVE,False,censoring disables morphology authority and preserves boundary-conditioned hypotheses,False,False
+TERGS_333C24F63385DAFD9021,R01ZF,RESPONSE_COMPONENT_SET,OBSERVABLE,STRUCTURING,False,upper families may contain multiple lower-core components and multiple physical regions,False,False
+TERGS_333C24F63385DAFD9021,R01ZF,EXACT_CROSS_MODAL_TIMING,UNAVAILABLE,DESCRIPTIVE,False,all frozen timing-authority rows prohibit exact cross-modal order,False,False
+TERGS_333C24F63385DAFD9021,R01ZF,RELATIVE_RANGE_LIKE_ORDER,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,optical has no range authority and no reliable cross-modal range-order observable is frozen,False,False
+TERGS_333C24F63385DAFD9021,R01ZF,UNARY_FAMILY_DISCRIMINATION,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,TERG-R0 deletes 0 individual families without an anchor,False,False
+TERGS_2A1E38ABAA50E3792676,R01ZF,RELATIVE_ANGULAR_ORDER,UNAVAILABLE,RELATIONAL_DISCRIMINATIVE,False,0/0 pair profiles have whole-segment definite raw optical order,False,False
+TERGS_2A1E38ABAA50E3792676,R01ZF,LIFECYCLE_PERSISTENCE,OBSERVABLE,STRUCTURING,False,6 complete-lifecycle-possible frozen families; already used in TERG-v1 construction,False,False
+TERGS_2A1E38ABAA50E3792676,R01ZF,SHARED_RESPONSE_STATE,UNAVAILABLE,DESCRIPTIVE,False,shared SAR physical-region support occurs in 0/0 relation profiles; no PERSON-state equivalence asserted,False,False
+TERGS_2A1E38ABAA50E3792676,R01ZF,TOPOLOGY_HYPOTHESIS_SET,PARTIALLY_OBSERVABLE,DESCRIPTIVE,False,split/merge/deformation remains a compatible SAR response-state hypothesis set,False,False
+TERGS_2A1E38ABAA50E3792676,R01ZF,BOUNDARY_CENSORING,CENSORED,DESCRIPTIVE,False,censoring disables morphology authority and preserves boundary-conditioned hypotheses,False,False
+TERGS_2A1E38ABAA50E3792676,R01ZF,RESPONSE_COMPONENT_SET,OBSERVABLE,STRUCTURING,False,upper families may contain multiple lower-core components and multiple physical regions,False,False
+TERGS_2A1E38ABAA50E3792676,R01ZF,EXACT_CROSS_MODAL_TIMING,UNAVAILABLE,DESCRIPTIVE,False,all frozen timing-authority rows prohibit exact cross-modal order,False,False
+TERGS_2A1E38ABAA50E3792676,R01ZF,RELATIVE_RANGE_LIKE_ORDER,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,optical has no range authority and no reliable cross-modal range-order observable is frozen,False,False
+TERGS_2A1E38ABAA50E3792676,R01ZF,UNARY_FAMILY_DISCRIMINATION,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,TERG-R0 deletes 0 individual families without an anchor,False,False
+TERGS_5CE262A17741C5FC8BFB,R02ZF,RELATIVE_ANGULAR_ORDER,OBSERVABLE,RELATIONAL_DISCRIMINATIVE,True,1/1 pair profiles have whole-segment definite raw optical order,False,False
+TERGS_5CE262A17741C5FC8BFB,R02ZF,LIFECYCLE_PERSISTENCE,PARTIALLY_OBSERVABLE,STRUCTURING,False,0 complete-lifecycle-possible frozen families; already used in TERG-v1 construction,False,False
+TERGS_5CE262A17741C5FC8BFB,R02ZF,SHARED_RESPONSE_STATE,OBSERVABLE,DESCRIPTIVE,False,shared SAR physical-region support occurs in 1/1 relation profiles; no PERSON-state equivalence asserted,False,False
+TERGS_5CE262A17741C5FC8BFB,R02ZF,TOPOLOGY_HYPOTHESIS_SET,AMBIGUOUS,DESCRIPTIVE,False,split/merge/deformation remains a compatible SAR response-state hypothesis set,False,False
+TERGS_5CE262A17741C5FC8BFB,R02ZF,BOUNDARY_CENSORING,OBSERVABLE,DESCRIPTIVE,False,censoring disables morphology authority and preserves boundary-conditioned hypotheses,False,False
+TERGS_5CE262A17741C5FC8BFB,R02ZF,RESPONSE_COMPONENT_SET,OBSERVABLE,STRUCTURING,False,upper families may contain multiple lower-core components and multiple physical regions,False,False
+TERGS_5CE262A17741C5FC8BFB,R02ZF,EXACT_CROSS_MODAL_TIMING,UNAVAILABLE,DESCRIPTIVE,False,all frozen timing-authority rows prohibit exact cross-modal order,False,False
+TERGS_5CE262A17741C5FC8BFB,R02ZF,RELATIVE_RANGE_LIKE_ORDER,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,optical has no range authority and no reliable cross-modal range-order observable is frozen,False,False
+TERGS_5CE262A17741C5FC8BFB,R02ZF,UNARY_FAMILY_DISCRIMINATION,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,TERG-R0 deletes 0 individual families without an anchor,False,False
+TERGS_DA539F692DB3CF52F38F,R02ZF,RELATIVE_ANGULAR_ORDER,OBSERVABLE,RELATIONAL_DISCRIMINATIVE,True,1/1 pair profiles have whole-segment definite raw optical order,False,False
+TERGS_DA539F692DB3CF52F38F,R02ZF,LIFECYCLE_PERSISTENCE,PARTIALLY_OBSERVABLE,STRUCTURING,False,0 complete-lifecycle-possible frozen families; already used in TERG-v1 construction,False,False
+TERGS_DA539F692DB3CF52F38F,R02ZF,SHARED_RESPONSE_STATE,OBSERVABLE,DESCRIPTIVE,False,shared SAR physical-region support occurs in 1/1 relation profiles; no PERSON-state equivalence asserted,False,False
+TERGS_DA539F692DB3CF52F38F,R02ZF,TOPOLOGY_HYPOTHESIS_SET,AMBIGUOUS,DESCRIPTIVE,False,split/merge/deformation remains a compatible SAR response-state hypothesis set,False,False
+TERGS_DA539F692DB3CF52F38F,R02ZF,BOUNDARY_CENSORING,OBSERVABLE,DESCRIPTIVE,False,censoring disables morphology authority and preserves boundary-conditioned hypotheses,False,False
+TERGS_DA539F692DB3CF52F38F,R02ZF,RESPONSE_COMPONENT_SET,OBSERVABLE,STRUCTURING,False,upper families may contain multiple lower-core components and multiple physical regions,False,False
+TERGS_DA539F692DB3CF52F38F,R02ZF,EXACT_CROSS_MODAL_TIMING,UNAVAILABLE,DESCRIPTIVE,False,all frozen timing-authority rows prohibit exact cross-modal order,False,False
+TERGS_DA539F692DB3CF52F38F,R02ZF,RELATIVE_RANGE_LIKE_ORDER,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,optical has no range authority and no reliable cross-modal range-order observable is frozen,False,False
+TERGS_DA539F692DB3CF52F38F,R02ZF,UNARY_FAMILY_DISCRIMINATION,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,TERG-R0 deletes 0 individual families without an anchor,False,False
+TERGS_A6E046163A60B75E621B,R02ZF,RELATIVE_ANGULAR_ORDER,OBSERVABLE,RELATIONAL_DISCRIMINATIVE,True,1/1 pair profiles have whole-segment definite raw optical order,False,False
+TERGS_A6E046163A60B75E621B,R02ZF,LIFECYCLE_PERSISTENCE,OBSERVABLE,STRUCTURING,False,4 complete-lifecycle-possible frozen families; already used in TERG-v1 construction,False,False
+TERGS_A6E046163A60B75E621B,R02ZF,SHARED_RESPONSE_STATE,OBSERVABLE,DESCRIPTIVE,False,shared SAR physical-region support occurs in 1/1 relation profiles; no PERSON-state equivalence asserted,False,False
+TERGS_A6E046163A60B75E621B,R02ZF,TOPOLOGY_HYPOTHESIS_SET,PARTIALLY_OBSERVABLE,DESCRIPTIVE,False,split/merge/deformation remains a compatible SAR response-state hypothesis set,False,False
+TERGS_A6E046163A60B75E621B,R02ZF,BOUNDARY_CENSORING,OBSERVABLE,DESCRIPTIVE,False,censoring disables morphology authority and preserves boundary-conditioned hypotheses,False,False
+TERGS_A6E046163A60B75E621B,R02ZF,RESPONSE_COMPONENT_SET,OBSERVABLE,STRUCTURING,False,upper families may contain multiple lower-core components and multiple physical regions,False,False
+TERGS_A6E046163A60B75E621B,R02ZF,EXACT_CROSS_MODAL_TIMING,UNAVAILABLE,DESCRIPTIVE,False,all frozen timing-authority rows prohibit exact cross-modal order,False,False
+TERGS_A6E046163A60B75E621B,R02ZF,RELATIVE_RANGE_LIKE_ORDER,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,optical has no range authority and no reliable cross-modal range-order observable is frozen,False,False
+TERGS_A6E046163A60B75E621B,R02ZF,UNARY_FAMILY_DISCRIMINATION,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,TERG-R0 deletes 0 individual families without an anchor,False,False
+TERGS_D9A02C06CA67BAF86AAE,R02ZF,RELATIVE_ANGULAR_ORDER,UNAVAILABLE,RELATIONAL_DISCRIMINATIVE,False,0/0 pair profiles have whole-segment definite raw optical order,False,False
+TERGS_D9A02C06CA67BAF86AAE,R02ZF,LIFECYCLE_PERSISTENCE,OBSERVABLE,STRUCTURING,False,2 complete-lifecycle-possible frozen families; already used in TERG-v1 construction,False,False
+TERGS_D9A02C06CA67BAF86AAE,R02ZF,SHARED_RESPONSE_STATE,UNAVAILABLE,DESCRIPTIVE,False,shared SAR physical-region support occurs in 0/0 relation profiles; no PERSON-state equivalence asserted,False,False
+TERGS_D9A02C06CA67BAF86AAE,R02ZF,TOPOLOGY_HYPOTHESIS_SET,PARTIALLY_OBSERVABLE,DESCRIPTIVE,False,split/merge/deformation remains a compatible SAR response-state hypothesis set,False,False
+TERGS_D9A02C06CA67BAF86AAE,R02ZF,BOUNDARY_CENSORING,OBSERVABLE,DESCRIPTIVE,False,censoring disables morphology authority and preserves boundary-conditioned hypotheses,False,False
+TERGS_D9A02C06CA67BAF86AAE,R02ZF,RESPONSE_COMPONENT_SET,OBSERVABLE,STRUCTURING,False,upper families may contain multiple lower-core components and multiple physical regions,False,False
+TERGS_D9A02C06CA67BAF86AAE,R02ZF,EXACT_CROSS_MODAL_TIMING,UNAVAILABLE,DESCRIPTIVE,False,all frozen timing-authority rows prohibit exact cross-modal order,False,False
+TERGS_D9A02C06CA67BAF86AAE,R02ZF,RELATIVE_RANGE_LIKE_ORDER,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,optical has no range authority and no reliable cross-modal range-order observable is frozen,False,False
+TERGS_D9A02C06CA67BAF86AAE,R02ZF,UNARY_FAMILY_DISCRIMINATION,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,TERG-R0 deletes 0 individual families without an anchor,False,False
+TERGS_190792243168018C6692,R02ZF,RELATIVE_ANGULAR_ORDER,UNAVAILABLE,RELATIONAL_DISCRIMINATIVE,False,0/0 pair profiles have whole-segment definite raw optical order,False,False
+TERGS_190792243168018C6692,R02ZF,LIFECYCLE_PERSISTENCE,OBSERVABLE,STRUCTURING,False,2 complete-lifecycle-possible frozen families; already used in TERG-v1 construction,False,False
+TERGS_190792243168018C6692,R02ZF,SHARED_RESPONSE_STATE,UNAVAILABLE,DESCRIPTIVE,False,shared SAR physical-region support occurs in 0/0 relation profiles; no PERSON-state equivalence asserted,False,False
+TERGS_190792243168018C6692,R02ZF,TOPOLOGY_HYPOTHESIS_SET,PARTIALLY_OBSERVABLE,DESCRIPTIVE,False,split/merge/deformation remains a compatible SAR response-state hypothesis set,False,False
+TERGS_190792243168018C6692,R02ZF,BOUNDARY_CENSORING,OBSERVABLE,DESCRIPTIVE,False,censoring disables morphology authority and preserves boundary-conditioned hypotheses,False,False
+TERGS_190792243168018C6692,R02ZF,RESPONSE_COMPONENT_SET,OBSERVABLE,STRUCTURING,False,upper families may contain multiple lower-core components and multiple physical regions,False,False
+TERGS_190792243168018C6692,R02ZF,EXACT_CROSS_MODAL_TIMING,UNAVAILABLE,DESCRIPTIVE,False,all frozen timing-authority rows prohibit exact cross-modal order,False,False
+TERGS_190792243168018C6692,R02ZF,RELATIVE_RANGE_LIKE_ORDER,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,optical has no range authority and no reliable cross-modal range-order observable is frozen,False,False
+TERGS_190792243168018C6692,R02ZF,UNARY_FAMILY_DISCRIMINATION,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,TERG-R0 deletes 0 individual families without an anchor,False,False
+TERGS_6436F78EE3B62E359C28,R02ZF,RELATIVE_ANGULAR_ORDER,OBSERVABLE,RELATIONAL_DISCRIMINATIVE,True,1/1 pair profiles have whole-segment definite raw optical order,False,False
+TERGS_6436F78EE3B62E359C28,R02ZF,LIFECYCLE_PERSISTENCE,OBSERVABLE,STRUCTURING,False,4 complete-lifecycle-possible frozen families; already used in TERG-v1 construction,False,False
+TERGS_6436F78EE3B62E359C28,R02ZF,SHARED_RESPONSE_STATE,OBSERVABLE,DESCRIPTIVE,False,shared SAR physical-region support occurs in 1/1 relation profiles; no PERSON-state equivalence asserted,False,False
+TERGS_6436F78EE3B62E359C28,R02ZF,TOPOLOGY_HYPOTHESIS_SET,PARTIALLY_OBSERVABLE,DESCRIPTIVE,False,split/merge/deformation remains a compatible SAR response-state hypothesis set,False,False
+TERGS_6436F78EE3B62E359C28,R02ZF,BOUNDARY_CENSORING,OBSERVABLE,DESCRIPTIVE,False,censoring disables morphology authority and preserves boundary-conditioned hypotheses,False,False
+TERGS_6436F78EE3B62E359C28,R02ZF,RESPONSE_COMPONENT_SET,OBSERVABLE,STRUCTURING,False,upper families may contain multiple lower-core components and multiple physical regions,False,False
+TERGS_6436F78EE3B62E359C28,R02ZF,EXACT_CROSS_MODAL_TIMING,UNAVAILABLE,DESCRIPTIVE,False,all frozen timing-authority rows prohibit exact cross-modal order,False,False
+TERGS_6436F78EE3B62E359C28,R02ZF,RELATIVE_RANGE_LIKE_ORDER,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,optical has no range authority and no reliable cross-modal range-order observable is frozen,False,False
+TERGS_6436F78EE3B62E359C28,R02ZF,UNARY_FAMILY_DISCRIMINATION,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,TERG-R0 deletes 0 individual families without an anchor,False,False
+TERGS_D848C6E5AC73E1AEEFDA,R02ZF,RELATIVE_ANGULAR_ORDER,PARTIALLY_OBSERVABLE,RELATIONAL_DISCRIMINATIVE,True,5/6 pair profiles have whole-segment definite raw optical order,False,False
+TERGS_D848C6E5AC73E1AEEFDA,R02ZF,LIFECYCLE_PERSISTENCE,OBSERVABLE,STRUCTURING,False,7 complete-lifecycle-possible frozen families; already used in TERG-v1 construction,False,False
+TERGS_D848C6E5AC73E1AEEFDA,R02ZF,SHARED_RESPONSE_STATE,PARTIALLY_OBSERVABLE,DESCRIPTIVE,False,shared SAR physical-region support occurs in 5/6 relation profiles; no PERSON-state equivalence asserted,False,False
+TERGS_D848C6E5AC73E1AEEFDA,R02ZF,TOPOLOGY_HYPOTHESIS_SET,AMBIGUOUS,DESCRIPTIVE,False,split/merge/deformation remains a compatible SAR response-state hypothesis set,False,False
+TERGS_D848C6E5AC73E1AEEFDA,R02ZF,BOUNDARY_CENSORING,OBSERVABLE,DESCRIPTIVE,False,censoring disables morphology authority and preserves boundary-conditioned hypotheses,False,False
+TERGS_D848C6E5AC73E1AEEFDA,R02ZF,RESPONSE_COMPONENT_SET,OBSERVABLE,STRUCTURING,False,upper families may contain multiple lower-core components and multiple physical regions,False,False
+TERGS_D848C6E5AC73E1AEEFDA,R02ZF,EXACT_CROSS_MODAL_TIMING,UNAVAILABLE,DESCRIPTIVE,False,all frozen timing-authority rows prohibit exact cross-modal order,False,False
+TERGS_D848C6E5AC73E1AEEFDA,R02ZF,RELATIVE_RANGE_LIKE_ORDER,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,optical has no range authority and no reliable cross-modal range-order observable is frozen,False,False
+TERGS_D848C6E5AC73E1AEEFDA,R02ZF,UNARY_FAMILY_DISCRIMINATION,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,TERG-R0 deletes 0 individual families without an anchor,False,False
+TERGS_E7F91D8684FAAF6A9219,R02ZF,RELATIVE_ANGULAR_ORDER,OBSERVABLE,RELATIONAL_DISCRIMINATIVE,True,3/3 pair profiles have whole-segment definite raw optical order,False,False
+TERGS_E7F91D8684FAAF6A9219,R02ZF,LIFECYCLE_PERSISTENCE,OBSERVABLE,STRUCTURING,False,11 complete-lifecycle-possible frozen families; already used in TERG-v1 construction,False,False
+TERGS_E7F91D8684FAAF6A9219,R02ZF,SHARED_RESPONSE_STATE,OBSERVABLE,DESCRIPTIVE,False,shared SAR physical-region support occurs in 3/3 relation profiles; no PERSON-state equivalence asserted,False,False
+TERGS_E7F91D8684FAAF6A9219,R02ZF,TOPOLOGY_HYPOTHESIS_SET,PARTIALLY_OBSERVABLE,DESCRIPTIVE,False,split/merge/deformation remains a compatible SAR response-state hypothesis set,False,False
+TERGS_E7F91D8684FAAF6A9219,R02ZF,BOUNDARY_CENSORING,OBSERVABLE,DESCRIPTIVE,False,censoring disables morphology authority and preserves boundary-conditioned hypotheses,False,False
+TERGS_E7F91D8684FAAF6A9219,R02ZF,RESPONSE_COMPONENT_SET,OBSERVABLE,STRUCTURING,False,upper families may contain multiple lower-core components and multiple physical regions,False,False
+TERGS_E7F91D8684FAAF6A9219,R02ZF,EXACT_CROSS_MODAL_TIMING,UNAVAILABLE,DESCRIPTIVE,False,all frozen timing-authority rows prohibit exact cross-modal order,False,False
+TERGS_E7F91D8684FAAF6A9219,R02ZF,RELATIVE_RANGE_LIKE_ORDER,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,optical has no range authority and no reliable cross-modal range-order observable is frozen,False,False
+TERGS_E7F91D8684FAAF6A9219,R02ZF,UNARY_FAMILY_DISCRIMINATION,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,TERG-R0 deletes 0 individual families without an anchor,False,False
+TERGS_60EB5053F2693E18D58B,R02ZF,RELATIVE_ANGULAR_ORDER,PARTIALLY_OBSERVABLE,RELATIONAL_DISCRIMINATIVE,True,8/10 pair profiles have whole-segment definite raw optical order,False,False
+TERGS_60EB5053F2693E18D58B,R02ZF,LIFECYCLE_PERSISTENCE,OBSERVABLE,STRUCTURING,False,8 complete-lifecycle-possible frozen families; already used in TERG-v1 construction,False,False
+TERGS_60EB5053F2693E18D58B,R02ZF,SHARED_RESPONSE_STATE,PARTIALLY_OBSERVABLE,DESCRIPTIVE,False,shared SAR physical-region support occurs in 8/10 relation profiles; no PERSON-state equivalence asserted,False,False
+TERGS_60EB5053F2693E18D58B,R02ZF,TOPOLOGY_HYPOTHESIS_SET,AMBIGUOUS,DESCRIPTIVE,False,split/merge/deformation remains a compatible SAR response-state hypothesis set,False,False
+TERGS_60EB5053F2693E18D58B,R02ZF,BOUNDARY_CENSORING,OBSERVABLE,DESCRIPTIVE,False,censoring disables morphology authority and preserves boundary-conditioned hypotheses,False,False
+TERGS_60EB5053F2693E18D58B,R02ZF,RESPONSE_COMPONENT_SET,OBSERVABLE,STRUCTURING,False,upper families may contain multiple lower-core components and multiple physical regions,False,False
+TERGS_60EB5053F2693E18D58B,R02ZF,EXACT_CROSS_MODAL_TIMING,UNAVAILABLE,DESCRIPTIVE,False,all frozen timing-authority rows prohibit exact cross-modal order,False,False
+TERGS_60EB5053F2693E18D58B,R02ZF,RELATIVE_RANGE_LIKE_ORDER,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,optical has no range authority and no reliable cross-modal range-order observable is frozen,False,False
+TERGS_60EB5053F2693E18D58B,R02ZF,UNARY_FAMILY_DISCRIMINATION,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,TERG-R0 deletes 0 individual families without an anchor,False,False
+TERGS_409886F81D9E45334F4F,R02ZF,RELATIVE_ANGULAR_ORDER,UNAVAILABLE,RELATIONAL_DISCRIMINATIVE,False,0/0 pair profiles have whole-segment definite raw optical order,False,False
+TERGS_409886F81D9E45334F4F,R02ZF,LIFECYCLE_PERSISTENCE,OBSERVABLE,STRUCTURING,False,1 complete-lifecycle-possible frozen families; already used in TERG-v1 construction,False,False
+TERGS_409886F81D9E45334F4F,R02ZF,SHARED_RESPONSE_STATE,UNAVAILABLE,DESCRIPTIVE,False,shared SAR physical-region support occurs in 0/0 relation profiles; no PERSON-state equivalence asserted,False,False
+TERGS_409886F81D9E45334F4F,R02ZF,TOPOLOGY_HYPOTHESIS_SET,PARTIALLY_OBSERVABLE,DESCRIPTIVE,False,split/merge/deformation remains a compatible SAR response-state hypothesis set,False,False
+TERGS_409886F81D9E45334F4F,R02ZF,BOUNDARY_CENSORING,OBSERVABLE,DESCRIPTIVE,False,censoring disables morphology authority and preserves boundary-conditioned hypotheses,False,False
+TERGS_409886F81D9E45334F4F,R02ZF,RESPONSE_COMPONENT_SET,OBSERVABLE,STRUCTURING,False,upper families may contain multiple lower-core components and multiple physical regions,False,False
+TERGS_409886F81D9E45334F4F,R02ZF,EXACT_CROSS_MODAL_TIMING,UNAVAILABLE,DESCRIPTIVE,False,all frozen timing-authority rows prohibit exact cross-modal order,False,False
+TERGS_409886F81D9E45334F4F,R02ZF,RELATIVE_RANGE_LIKE_ORDER,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,optical has no range authority and no reliable cross-modal range-order observable is frozen,False,False
+TERGS_409886F81D9E45334F4F,R02ZF,UNARY_FAMILY_DISCRIMINATION,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,TERG-R0 deletes 0 individual families without an anchor,False,False
+TERGS_6C426359C612628C7A31,R02ZF,RELATIVE_ANGULAR_ORDER,OBSERVABLE,RELATIONAL_DISCRIMINATIVE,True,1/1 pair profiles have whole-segment definite raw optical order,False,False
+TERGS_6C426359C612628C7A31,R02ZF,LIFECYCLE_PERSISTENCE,OBSERVABLE,STRUCTURING,False,3 complete-lifecycle-possible frozen families; already used in TERG-v1 construction,False,False
+TERGS_6C426359C612628C7A31,R02ZF,SHARED_RESPONSE_STATE,OBSERVABLE,DESCRIPTIVE,False,shared SAR physical-region support occurs in 1/1 relation profiles; no PERSON-state equivalence asserted,False,False
+TERGS_6C426359C612628C7A31,R02ZF,TOPOLOGY_HYPOTHESIS_SET,PARTIALLY_OBSERVABLE,DESCRIPTIVE,False,split/merge/deformation remains a compatible SAR response-state hypothesis set,False,False
+TERGS_6C426359C612628C7A31,R02ZF,BOUNDARY_CENSORING,OBSERVABLE,DESCRIPTIVE,False,censoring disables morphology authority and preserves boundary-conditioned hypotheses,False,False
+TERGS_6C426359C612628C7A31,R02ZF,RESPONSE_COMPONENT_SET,OBSERVABLE,STRUCTURING,False,upper families may contain multiple lower-core components and multiple physical regions,False,False
+TERGS_6C426359C612628C7A31,R02ZF,EXACT_CROSS_MODAL_TIMING,UNAVAILABLE,DESCRIPTIVE,False,all frozen timing-authority rows prohibit exact cross-modal order,False,False
+TERGS_6C426359C612628C7A31,R02ZF,RELATIVE_RANGE_LIKE_ORDER,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,optical has no range authority and no reliable cross-modal range-order observable is frozen,False,False
+TERGS_6C426359C612628C7A31,R02ZF,UNARY_FAMILY_DISCRIMINATION,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,TERG-R0 deletes 0 individual families without an anchor,False,False
+TERGS_38238A43231066968F66,R02ZF,RELATIVE_ANGULAR_ORDER,OBSERVABLE,RELATIONAL_DISCRIMINATIVE,True,1/1 pair profiles have whole-segment definite raw optical order,False,False
+TERGS_38238A43231066968F66,R02ZF,LIFECYCLE_PERSISTENCE,OBSERVABLE,STRUCTURING,False,3 complete-lifecycle-possible frozen families; already used in TERG-v1 construction,False,False
+TERGS_38238A43231066968F66,R02ZF,SHARED_RESPONSE_STATE,OBSERVABLE,DESCRIPTIVE,False,shared SAR physical-region support occurs in 1/1 relation profiles; no PERSON-state equivalence asserted,False,False
+TERGS_38238A43231066968F66,R02ZF,TOPOLOGY_HYPOTHESIS_SET,PARTIALLY_OBSERVABLE,DESCRIPTIVE,False,split/merge/deformation remains a compatible SAR response-state hypothesis set,False,False
+TERGS_38238A43231066968F66,R02ZF,BOUNDARY_CENSORING,OBSERVABLE,DESCRIPTIVE,False,censoring disables morphology authority and preserves boundary-conditioned hypotheses,False,False
+TERGS_38238A43231066968F66,R02ZF,RESPONSE_COMPONENT_SET,OBSERVABLE,STRUCTURING,False,upper families may contain multiple lower-core components and multiple physical regions,False,False
+TERGS_38238A43231066968F66,R02ZF,EXACT_CROSS_MODAL_TIMING,UNAVAILABLE,DESCRIPTIVE,False,all frozen timing-authority rows prohibit exact cross-modal order,False,False
+TERGS_38238A43231066968F66,R02ZF,RELATIVE_RANGE_LIKE_ORDER,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,optical has no range authority and no reliable cross-modal range-order observable is frozen,False,False
+TERGS_38238A43231066968F66,R02ZF,UNARY_FAMILY_DISCRIMINATION,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,TERG-R0 deletes 0 individual families without an anchor,False,False
+TERGS_406E06BEE8B19831E091,R02ZF,RELATIVE_ANGULAR_ORDER,PARTIALLY_OBSERVABLE,RELATIONAL_DISCRIMINATIVE,True,8/10 pair profiles have whole-segment definite raw optical order,False,False
+TERGS_406E06BEE8B19831E091,R02ZF,LIFECYCLE_PERSISTENCE,OBSERVABLE,STRUCTURING,False,13 complete-lifecycle-possible frozen families; already used in TERG-v1 construction,False,False
+TERGS_406E06BEE8B19831E091,R02ZF,SHARED_RESPONSE_STATE,PARTIALLY_OBSERVABLE,DESCRIPTIVE,False,shared SAR physical-region support occurs in 9/10 relation profiles; no PERSON-state equivalence asserted,False,False
+TERGS_406E06BEE8B19831E091,R02ZF,TOPOLOGY_HYPOTHESIS_SET,AMBIGUOUS,DESCRIPTIVE,False,split/merge/deformation remains a compatible SAR response-state hypothesis set,False,False
+TERGS_406E06BEE8B19831E091,R02ZF,BOUNDARY_CENSORING,CENSORED,DESCRIPTIVE,False,censoring disables morphology authority and preserves boundary-conditioned hypotheses,False,False
+TERGS_406E06BEE8B19831E091,R02ZF,RESPONSE_COMPONENT_SET,OBSERVABLE,STRUCTURING,False,upper families may contain multiple lower-core components and multiple physical regions,False,False
+TERGS_406E06BEE8B19831E091,R02ZF,EXACT_CROSS_MODAL_TIMING,UNAVAILABLE,DESCRIPTIVE,False,all frozen timing-authority rows prohibit exact cross-modal order,False,False
+TERGS_406E06BEE8B19831E091,R02ZF,RELATIVE_RANGE_LIKE_ORDER,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,optical has no range authority and no reliable cross-modal range-order observable is frozen,False,False
+TERGS_406E06BEE8B19831E091,R02ZF,UNARY_FAMILY_DISCRIMINATION,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,TERG-R0 deletes 0 individual families without an anchor,False,False
+TERGS_4B565EEA0C6931299151,R02ZF,RELATIVE_ANGULAR_ORDER,UNAVAILABLE,RELATIONAL_DISCRIMINATIVE,False,0/0 pair profiles have whole-segment definite raw optical order,False,False
+TERGS_4B565EEA0C6931299151,R02ZF,LIFECYCLE_PERSISTENCE,OBSERVABLE,STRUCTURING,False,2 complete-lifecycle-possible frozen families; already used in TERG-v1 construction,False,False
+TERGS_4B565EEA0C6931299151,R02ZF,SHARED_RESPONSE_STATE,UNAVAILABLE,DESCRIPTIVE,False,shared SAR physical-region support occurs in 0/0 relation profiles; no PERSON-state equivalence asserted,False,False
+TERGS_4B565EEA0C6931299151,R02ZF,TOPOLOGY_HYPOTHESIS_SET,PARTIALLY_OBSERVABLE,DESCRIPTIVE,False,split/merge/deformation remains a compatible SAR response-state hypothesis set,False,False
+TERGS_4B565EEA0C6931299151,R02ZF,BOUNDARY_CENSORING,CENSORED,DESCRIPTIVE,False,censoring disables morphology authority and preserves boundary-conditioned hypotheses,False,False
+TERGS_4B565EEA0C6931299151,R02ZF,RESPONSE_COMPONENT_SET,OBSERVABLE,STRUCTURING,False,upper families may contain multiple lower-core components and multiple physical regions,False,False
+TERGS_4B565EEA0C6931299151,R02ZF,EXACT_CROSS_MODAL_TIMING,UNAVAILABLE,DESCRIPTIVE,False,all frozen timing-authority rows prohibit exact cross-modal order,False,False
+TERGS_4B565EEA0C6931299151,R02ZF,RELATIVE_RANGE_LIKE_ORDER,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,optical has no range authority and no reliable cross-modal range-order observable is frozen,False,False
+TERGS_4B565EEA0C6931299151,R02ZF,UNARY_FAMILY_DISCRIMINATION,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,TERG-R0 deletes 0 individual families without an anchor,False,False
+TERGS_8D6DB9A2F108568B32AA,R02ZF,RELATIVE_ANGULAR_ORDER,OBSERVABLE,RELATIONAL_DISCRIMINATIVE,True,1/1 pair profiles have whole-segment definite raw optical order,False,False
+TERGS_8D6DB9A2F108568B32AA,R02ZF,LIFECYCLE_PERSISTENCE,OBSERVABLE,STRUCTURING,False,7 complete-lifecycle-possible frozen families; already used in TERG-v1 construction,False,False
+TERGS_8D6DB9A2F108568B32AA,R02ZF,SHARED_RESPONSE_STATE,OBSERVABLE,DESCRIPTIVE,False,shared SAR physical-region support occurs in 1/1 relation profiles; no PERSON-state equivalence asserted,False,False
+TERGS_8D6DB9A2F108568B32AA,R02ZF,TOPOLOGY_HYPOTHESIS_SET,PARTIALLY_OBSERVABLE,DESCRIPTIVE,False,split/merge/deformation remains a compatible SAR response-state hypothesis set,False,False
+TERGS_8D6DB9A2F108568B32AA,R02ZF,BOUNDARY_CENSORING,CENSORED,DESCRIPTIVE,False,censoring disables morphology authority and preserves boundary-conditioned hypotheses,False,False
+TERGS_8D6DB9A2F108568B32AA,R02ZF,RESPONSE_COMPONENT_SET,OBSERVABLE,STRUCTURING,False,upper families may contain multiple lower-core components and multiple physical regions,False,False
+TERGS_8D6DB9A2F108568B32AA,R02ZF,EXACT_CROSS_MODAL_TIMING,UNAVAILABLE,DESCRIPTIVE,False,all frozen timing-authority rows prohibit exact cross-modal order,False,False
+TERGS_8D6DB9A2F108568B32AA,R02ZF,RELATIVE_RANGE_LIKE_ORDER,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,optical has no range authority and no reliable cross-modal range-order observable is frozen,False,False
+TERGS_8D6DB9A2F108568B32AA,R02ZF,UNARY_FAMILY_DISCRIMINATION,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,TERG-R0 deletes 0 individual families without an anchor,False,False
+TERGS_A923293CFBC550AE18D7,R02ZF,RELATIVE_ANGULAR_ORDER,OBSERVABLE,RELATIONAL_DISCRIMINATIVE,True,1/1 pair profiles have whole-segment definite raw optical order,False,False
+TERGS_A923293CFBC550AE18D7,R02ZF,LIFECYCLE_PERSISTENCE,OBSERVABLE,STRUCTURING,False,7 complete-lifecycle-possible frozen families; already used in TERG-v1 construction,False,False
+TERGS_A923293CFBC550AE18D7,R02ZF,SHARED_RESPONSE_STATE,OBSERVABLE,DESCRIPTIVE,False,shared SAR physical-region support occurs in 1/1 relation profiles; no PERSON-state equivalence asserted,False,False
+TERGS_A923293CFBC550AE18D7,R02ZF,TOPOLOGY_HYPOTHESIS_SET,PARTIALLY_OBSERVABLE,DESCRIPTIVE,False,split/merge/deformation remains a compatible SAR response-state hypothesis set,False,False
+TERGS_A923293CFBC550AE18D7,R02ZF,BOUNDARY_CENSORING,CENSORED,DESCRIPTIVE,False,censoring disables morphology authority and preserves boundary-conditioned hypotheses,False,False
+TERGS_A923293CFBC550AE18D7,R02ZF,RESPONSE_COMPONENT_SET,OBSERVABLE,STRUCTURING,False,upper families may contain multiple lower-core components and multiple physical regions,False,False
+TERGS_A923293CFBC550AE18D7,R02ZF,EXACT_CROSS_MODAL_TIMING,UNAVAILABLE,DESCRIPTIVE,False,all frozen timing-authority rows prohibit exact cross-modal order,False,False
+TERGS_A923293CFBC550AE18D7,R02ZF,RELATIVE_RANGE_LIKE_ORDER,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,optical has no range authority and no reliable cross-modal range-order observable is frozen,False,False
+TERGS_A923293CFBC550AE18D7,R02ZF,UNARY_FAMILY_DISCRIMINATION,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,TERG-R0 deletes 0 individual families without an anchor,False,False
+TERGS_F66D1A1E88076E254C22,R02ZF,RELATIVE_ANGULAR_ORDER,OBSERVABLE,RELATIONAL_DISCRIMINATIVE,True,1/1 pair profiles have whole-segment definite raw optical order,False,False
+TERGS_F66D1A1E88076E254C22,R02ZF,LIFECYCLE_PERSISTENCE,OBSERVABLE,STRUCTURING,False,6 complete-lifecycle-possible frozen families; already used in TERG-v1 construction,False,False
+TERGS_F66D1A1E88076E254C22,R02ZF,SHARED_RESPONSE_STATE,OBSERVABLE,DESCRIPTIVE,False,shared SAR physical-region support occurs in 1/1 relation profiles; no PERSON-state equivalence asserted,False,False
+TERGS_F66D1A1E88076E254C22,R02ZF,TOPOLOGY_HYPOTHESIS_SET,PARTIALLY_OBSERVABLE,DESCRIPTIVE,False,split/merge/deformation remains a compatible SAR response-state hypothesis set,False,False
+TERGS_F66D1A1E88076E254C22,R02ZF,BOUNDARY_CENSORING,CENSORED,DESCRIPTIVE,False,censoring disables morphology authority and preserves boundary-conditioned hypotheses,False,False
+TERGS_F66D1A1E88076E254C22,R02ZF,RESPONSE_COMPONENT_SET,OBSERVABLE,STRUCTURING,False,upper families may contain multiple lower-core components and multiple physical regions,False,False
+TERGS_F66D1A1E88076E254C22,R02ZF,EXACT_CROSS_MODAL_TIMING,UNAVAILABLE,DESCRIPTIVE,False,all frozen timing-authority rows prohibit exact cross-modal order,False,False
+TERGS_F66D1A1E88076E254C22,R02ZF,RELATIVE_RANGE_LIKE_ORDER,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,optical has no range authority and no reliable cross-modal range-order observable is frozen,False,False
+TERGS_F66D1A1E88076E254C22,R02ZF,UNARY_FAMILY_DISCRIMINATION,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,TERG-R0 deletes 0 individual families without an anchor,False,False
+TERGS_48FABD798C7CE3742190,R02ZF,RELATIVE_ANGULAR_ORDER,PARTIALLY_OBSERVABLE,RELATIONAL_DISCRIMINATIVE,True,8/10 pair profiles have whole-segment definite raw optical order,False,False
+TERGS_48FABD798C7CE3742190,R02ZF,LIFECYCLE_PERSISTENCE,PARTIALLY_OBSERVABLE,STRUCTURING,False,0 complete-lifecycle-possible frozen families; already used in TERG-v1 construction,False,False
+TERGS_48FABD798C7CE3742190,R02ZF,SHARED_RESPONSE_STATE,PARTIALLY_OBSERVABLE,DESCRIPTIVE,False,shared SAR physical-region support occurs in 9/10 relation profiles; no PERSON-state equivalence asserted,False,False
+TERGS_48FABD798C7CE3742190,R02ZF,TOPOLOGY_HYPOTHESIS_SET,AMBIGUOUS,DESCRIPTIVE,False,split/merge/deformation remains a compatible SAR response-state hypothesis set,False,False
+TERGS_48FABD798C7CE3742190,R02ZF,BOUNDARY_CENSORING,CENSORED,DESCRIPTIVE,False,censoring disables morphology authority and preserves boundary-conditioned hypotheses,False,False
+TERGS_48FABD798C7CE3742190,R02ZF,RESPONSE_COMPONENT_SET,OBSERVABLE,STRUCTURING,False,upper families may contain multiple lower-core components and multiple physical regions,False,False
+TERGS_48FABD798C7CE3742190,R02ZF,EXACT_CROSS_MODAL_TIMING,UNAVAILABLE,DESCRIPTIVE,False,all frozen timing-authority rows prohibit exact cross-modal order,False,False
+TERGS_48FABD798C7CE3742190,R02ZF,RELATIVE_RANGE_LIKE_ORDER,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,optical has no range authority and no reliable cross-modal range-order observable is frozen,False,False
+TERGS_48FABD798C7CE3742190,R02ZF,UNARY_FAMILY_DISCRIMINATION,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,TERG-R0 deletes 0 individual families without an anchor,False,False
+TERGS_1BB7B9183580C17A201F,R02ZF,RELATIVE_ANGULAR_ORDER,OBSERVABLE,RELATIONAL_DISCRIMINATIVE,True,6/6 pair profiles have whole-segment definite raw optical order,False,False
+TERGS_1BB7B9183580C17A201F,R02ZF,LIFECYCLE_PERSISTENCE,OBSERVABLE,STRUCTURING,False,22 complete-lifecycle-possible frozen families; already used in TERG-v1 construction,False,False
+TERGS_1BB7B9183580C17A201F,R02ZF,SHARED_RESPONSE_STATE,OBSERVABLE,DESCRIPTIVE,False,shared SAR physical-region support occurs in 6/6 relation profiles; no PERSON-state equivalence asserted,False,False
+TERGS_1BB7B9183580C17A201F,R02ZF,TOPOLOGY_HYPOTHESIS_SET,PARTIALLY_OBSERVABLE,DESCRIPTIVE,False,split/merge/deformation remains a compatible SAR response-state hypothesis set,False,False
+TERGS_1BB7B9183580C17A201F,R02ZF,BOUNDARY_CENSORING,CENSORED,DESCRIPTIVE,False,censoring disables morphology authority and preserves boundary-conditioned hypotheses,False,False
+TERGS_1BB7B9183580C17A201F,R02ZF,RESPONSE_COMPONENT_SET,OBSERVABLE,STRUCTURING,False,upper families may contain multiple lower-core components and multiple physical regions,False,False
+TERGS_1BB7B9183580C17A201F,R02ZF,EXACT_CROSS_MODAL_TIMING,UNAVAILABLE,DESCRIPTIVE,False,all frozen timing-authority rows prohibit exact cross-modal order,False,False
+TERGS_1BB7B9183580C17A201F,R02ZF,RELATIVE_RANGE_LIKE_ORDER,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,optical has no range authority and no reliable cross-modal range-order observable is frozen,False,False
+TERGS_1BB7B9183580C17A201F,R02ZF,UNARY_FAMILY_DISCRIMINATION,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,TERG-R0 deletes 0 individual families without an anchor,False,False
+TERGS_CAAB4EA22C44536DF2CC,R02ZF,RELATIVE_ANGULAR_ORDER,OBSERVABLE,RELATIONAL_DISCRIMINATIVE,True,6/6 pair profiles have whole-segment definite raw optical order,False,False
+TERGS_CAAB4EA22C44536DF2CC,R02ZF,LIFECYCLE_PERSISTENCE,PARTIALLY_OBSERVABLE,STRUCTURING,False,0 complete-lifecycle-possible frozen families; already used in TERG-v1 construction,False,False
+TERGS_CAAB4EA22C44536DF2CC,R02ZF,SHARED_RESPONSE_STATE,OBSERVABLE,DESCRIPTIVE,False,shared SAR physical-region support occurs in 6/6 relation profiles; no PERSON-state equivalence asserted,False,False
+TERGS_CAAB4EA22C44536DF2CC,R02ZF,TOPOLOGY_HYPOTHESIS_SET,PARTIALLY_OBSERVABLE,DESCRIPTIVE,False,split/merge/deformation remains a compatible SAR response-state hypothesis set,False,False
+TERGS_CAAB4EA22C44536DF2CC,R02ZF,BOUNDARY_CENSORING,CENSORED,DESCRIPTIVE,False,censoring disables morphology authority and preserves boundary-conditioned hypotheses,False,False
+TERGS_CAAB4EA22C44536DF2CC,R02ZF,RESPONSE_COMPONENT_SET,OBSERVABLE,STRUCTURING,False,upper families may contain multiple lower-core components and multiple physical regions,False,False
+TERGS_CAAB4EA22C44536DF2CC,R02ZF,EXACT_CROSS_MODAL_TIMING,UNAVAILABLE,DESCRIPTIVE,False,all frozen timing-authority rows prohibit exact cross-modal order,False,False
+TERGS_CAAB4EA22C44536DF2CC,R02ZF,RELATIVE_RANGE_LIKE_ORDER,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,optical has no range authority and no reliable cross-modal range-order observable is frozen,False,False
+TERGS_CAAB4EA22C44536DF2CC,R02ZF,UNARY_FAMILY_DISCRIMINATION,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,TERG-R0 deletes 0 individual families without an anchor,False,False
+TERGS_FD6F6E750E8BBEA9ED4C,R03ZF,RELATIVE_ANGULAR_ORDER,UNAVAILABLE,RELATIONAL_DISCRIMINATIVE,False,0/0 pair profiles have whole-segment definite raw optical order,False,False
+TERGS_FD6F6E750E8BBEA9ED4C,R03ZF,LIFECYCLE_PERSISTENCE,OBSERVABLE,STRUCTURING,False,1 complete-lifecycle-possible frozen families; already used in TERG-v1 construction,False,False
+TERGS_FD6F6E750E8BBEA9ED4C,R03ZF,SHARED_RESPONSE_STATE,UNAVAILABLE,DESCRIPTIVE,False,shared SAR physical-region support occurs in 0/0 relation profiles; no PERSON-state equivalence asserted,False,False
+TERGS_FD6F6E750E8BBEA9ED4C,R03ZF,TOPOLOGY_HYPOTHESIS_SET,PARTIALLY_OBSERVABLE,DESCRIPTIVE,False,split/merge/deformation remains a compatible SAR response-state hypothesis set,False,False
+TERGS_FD6F6E750E8BBEA9ED4C,R03ZF,BOUNDARY_CENSORING,OBSERVABLE,DESCRIPTIVE,False,censoring disables morphology authority and preserves boundary-conditioned hypotheses,False,False
+TERGS_FD6F6E750E8BBEA9ED4C,R03ZF,RESPONSE_COMPONENT_SET,OBSERVABLE,STRUCTURING,False,upper families may contain multiple lower-core components and multiple physical regions,False,False
+TERGS_FD6F6E750E8BBEA9ED4C,R03ZF,EXACT_CROSS_MODAL_TIMING,UNAVAILABLE,DESCRIPTIVE,False,all frozen timing-authority rows prohibit exact cross-modal order,False,False
+TERGS_FD6F6E750E8BBEA9ED4C,R03ZF,RELATIVE_RANGE_LIKE_ORDER,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,optical has no range authority and no reliable cross-modal range-order observable is frozen,False,False
+TERGS_FD6F6E750E8BBEA9ED4C,R03ZF,UNARY_FAMILY_DISCRIMINATION,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,TERG-R0 deletes 0 individual families without an anchor,False,False
+TERGS_6EA858FDC375FA946246,R03ZF,RELATIVE_ANGULAR_ORDER,UNAVAILABLE,RELATIONAL_DISCRIMINATIVE,False,0/0 pair profiles have whole-segment definite raw optical order,False,False
+TERGS_6EA858FDC375FA946246,R03ZF,LIFECYCLE_PERSISTENCE,OBSERVABLE,STRUCTURING,False,1 complete-lifecycle-possible frozen families; already used in TERG-v1 construction,False,False
+TERGS_6EA858FDC375FA946246,R03ZF,SHARED_RESPONSE_STATE,UNAVAILABLE,DESCRIPTIVE,False,shared SAR physical-region support occurs in 0/0 relation profiles; no PERSON-state equivalence asserted,False,False
+TERGS_6EA858FDC375FA946246,R03ZF,TOPOLOGY_HYPOTHESIS_SET,PARTIALLY_OBSERVABLE,DESCRIPTIVE,False,split/merge/deformation remains a compatible SAR response-state hypothesis set,False,False
+TERGS_6EA858FDC375FA946246,R03ZF,BOUNDARY_CENSORING,OBSERVABLE,DESCRIPTIVE,False,censoring disables morphology authority and preserves boundary-conditioned hypotheses,False,False
+TERGS_6EA858FDC375FA946246,R03ZF,RESPONSE_COMPONENT_SET,OBSERVABLE,STRUCTURING,False,upper families may contain multiple lower-core components and multiple physical regions,False,False
+TERGS_6EA858FDC375FA946246,R03ZF,EXACT_CROSS_MODAL_TIMING,UNAVAILABLE,DESCRIPTIVE,False,all frozen timing-authority rows prohibit exact cross-modal order,False,False
+TERGS_6EA858FDC375FA946246,R03ZF,RELATIVE_RANGE_LIKE_ORDER,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,optical has no range authority and no reliable cross-modal range-order observable is frozen,False,False
+TERGS_6EA858FDC375FA946246,R03ZF,UNARY_FAMILY_DISCRIMINATION,UNAVAILABLE,UNARY_DISCRIMINATIVE,False,TERG-R0 deletes 0 individual families without an anchor,False,False

@@ -1,0 +1,11 @@
+﻿evidence_family,evidence_role,observable_segment_count,partially_observable_segment_count,ambiguous_segment_count,censored_segment_count,unavailable_segment_count,current_r1_conclusion,new_hard_constraint_authorized
+RELATIVE_ANGULAR_ORDER,RELATIONAL_DISCRIMINATIVE,14,11,2,0,11,Only frozen evidence currently producing hard joint exclusions.,True
+LIFECYCLE_PERSISTENCE,STRUCTURING,34,4,0,0,0,Builds temporal families; no new conditional deletion.,False
+SHARED_RESPONSE_STATE,DESCRIPTIVE,22,5,0,0,11,"Observable SAR response sharing, but no stable PERSON-state implication.",False
+TOPOLOGY_HYPOTHESIS_SET,DESCRIPTIVE,0,26,12,0,0,Preserves split/merge/deformation alternatives.,False
+BOUNDARY_CENSORING,DESCRIPTIVE,27,0,0,11,0,A guard that disables invalid morphology authority.,False
+RESPONSE_COMPONENT_SET,STRUCTURING,38,0,0,0,0,Represents persistent core and transient/satellite components inside a family.,False
+EXACT_CROSS_MODAL_TIMING,DESCRIPTIVE,0,0,0,0,38,Unavailable; exact temporal ordering is disabled.,False
+RELATIVE_RANGE_LIKE_ORDER,UNARY_DISCRIMINATIVE,0,0,0,0,38,"Candidate role, but no reliable observable exists.",False
+UNARY_FAMILY_DISCRIMINATION,UNARY_DISCRIMINATIVE,0,0,0,0,38,Searched and absent without an anchor.,False
+ANCHOR_CONDITIONED_EXCLUSION,RELATIONAL_DISCRIMINATIVE,0,0,0,0,0,Post-reference propagation-capacity diagnostic only.,False

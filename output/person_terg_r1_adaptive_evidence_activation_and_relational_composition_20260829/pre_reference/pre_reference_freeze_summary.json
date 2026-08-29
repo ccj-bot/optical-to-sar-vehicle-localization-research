@@ -1,0 +1,9 @@
+{
+  "pre_reference_artifact_count": 19,
+  "manual_reference_loaded_before_freeze": false,
+  "post_reference_grounding_loaded_before_freeze": false,
+  "r04zf_accessed": false,
+  "weighted_score_used": false,
+  "support_threshold_tuned": false,
+  "relative_order_primitive_visual_verdict": "PERSISTENT_RELATIONAL_EVIDENCE_CREDIBLE"
+}

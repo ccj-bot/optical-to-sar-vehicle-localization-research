@@ -1,0 +1,630 @@
+{
+  "validator": "PERSON_TERG_R1_INDEPENDENT_VALIDATION_V1",
+  "status": "PASS",
+  "check_count": 154,
+  "passed_count": 154,
+  "route_decision": "RELATIONAL_INFORMATION_REAL_BUT_ABSOLUTE_ANCHOR_REQUIRED",
+  "underlying_temporal_episode_count": 3,
+  "contracted_episode_count": 1,
+  "one_anchor_propagating_scenario_count": 9,
+  "two_anchor_propagating_scenario_count": 13,
+  "runtime_legal_anchor_count": 0,
+  "checks": [
+    {
+      "check": "required artifact exists: excluded_pair_visual_case_registry_pre_reference.parquet",
+      "passed": true
+    },
+    {
+      "check": "required artifact exists: selected_excluded_pair_family_memberships_pre_reference.parquet",
+      "passed": true
+    },
+    {
+      "check": "required artifact exists: excluded_pair_frame_relation_audit_pre_reference.parquet",
+      "passed": true
+    },
+    {
+      "check": "required artifact exists: episode_assignment_pre_reference.parquet",
+      "passed": true
+    },
+    {
+      "check": "required artifact exists: underlying_temporal_episode_registry_pre_reference.parquet",
+      "passed": true
+    },
+    {
+      "check": "required artifact exists: evidence_availability_map_pre_reference.parquet",
+      "passed": true
+    },
+    {
+      "check": "required artifact exists: evidence_role_registry_pre_reference.parquet",
+      "passed": true
+    },
+    {
+      "check": "required artifact exists: global_partial_order_audit_pre_reference.parquet",
+      "passed": true
+    },
+    {
+      "check": "required artifact exists: response_component_family_diagnosis_pre_reference.parquet",
+      "passed": true
+    },
+    {
+      "check": "required artifact exists: frozen_terg_v1_r0_input_hashes.json",
+      "passed": true
+    },
+    {
+      "check": "required artifact exists: pre_reference_hash_manifest.csv",
+      "passed": true
+    },
+    {
+      "check": "required artifact exists: pre_reference_freeze_summary.json",
+      "passed": true
+    },
+    {
+      "check": "required artifact exists: excluded_pair_likely_vs_alternative_case_registry_post_reference.parquet",
+      "passed": true
+    },
+    {
+      "check": "required artifact exists: direct_visual_verification_verdict_post_reference.parquet",
+      "passed": true
+    },
+    {
+      "check": "required artifact exists: one_track_one_family_diagnosis_post_reference.parquet",
+      "passed": true
+    },
+    {
+      "check": "required artifact exists: shared_transition_diagnostic_post_reference.parquet",
+      "passed": true
+    },
+    {
+      "check": "required artifact exists: zero_anchor_baseline_post_reference.parquet",
+      "passed": true
+    },
+    {
+      "check": "required artifact exists: one_anchor_propagation_capacity_post_reference.parquet",
+      "passed": true
+    },
+    {
+      "check": "required artifact exists: two_anchor_propagation_capacity_post_reference.parquet",
+      "passed": true
+    },
+    {
+      "check": "required artifact exists: anchor_source_registry_post_reference.parquet",
+      "passed": true
+    },
+    {
+      "check": "required artifact exists: phase_a_direct_visual_verification_summary.json",
+      "passed": true
+    },
+    {
+      "check": "required artifact exists: terg_r1_summary.json",
+      "passed": true
+    },
+    {
+      "check": "required artifact exists: TERG_R1_SCIENTIFIC_REPORT.md",
+      "passed": true
+    },
+    {
+      "check": "required artifact exists: TERG_R1_FROZEN_DIAGNOSTIC_SPECIFICATION.md",
+      "passed": true
+    },
+    {
+      "check": "required artifact exists: TERG_R1_ISSUE_COUNTEREXAMPLE_ROOT_CAUSE_LEDGER.md",
+      "passed": true
+    },
+    {
+      "check": "pre-reference freeze precedes reference load",
+      "passed": true
+    },
+    {
+      "check": "grounding not loaded before freeze",
+      "passed": true
+    },
+    {
+      "check": "R04ZF not accessed",
+      "passed": true
+    },
+    {
+      "check": "weighted score absent",
+      "passed": true
+    },
+    {
+      "check": "support threshold not tuned",
+      "passed": true
+    },
+    {
+      "check": "TERG-v1 and TERG-R0 are byte-identical",
+      "passed": true
+    },
+    {
+      "check": "pre-reference artifact exists: pre_reference/episode_assignment_pre_reference.csv",
+      "passed": true
+    },
+    {
+      "check": "pre-reference bytes match: pre_reference/episode_assignment_pre_reference.csv",
+      "passed": true
+    },
+    {
+      "check": "pre-reference sha256 matches: pre_reference/episode_assignment_pre_reference.csv",
+      "passed": true
+    },
+    {
+      "check": "pre-reference artifact exists: pre_reference/episode_assignment_pre_reference.parquet",
+      "passed": true
+    },
+    {
+      "check": "pre-reference bytes match: pre_reference/episode_assignment_pre_reference.parquet",
+      "passed": true
+    },
+    {
+      "check": "pre-reference sha256 matches: pre_reference/episode_assignment_pre_reference.parquet",
+      "passed": true
+    },
+    {
+      "check": "pre-reference artifact exists: pre_reference/evidence_availability_map_pre_reference.csv",
+      "passed": true
+    },
+    {
+      "check": "pre-reference bytes match: pre_reference/evidence_availability_map_pre_reference.csv",
+      "passed": true
+    },
+    {
+      "check": "pre-reference sha256 matches: pre_reference/evidence_availability_map_pre_reference.csv",
+      "passed": true
+    },
+    {
+      "check": "pre-reference artifact exists: pre_reference/evidence_availability_map_pre_reference.parquet",
+      "passed": true
+    },
+    {
+      "check": "pre-reference bytes match: pre_reference/evidence_availability_map_pre_reference.parquet",
+      "passed": true
+    },
+    {
+      "check": "pre-reference sha256 matches: pre_reference/evidence_availability_map_pre_reference.parquet",
+      "passed": true
+    },
+    {
+      "check": "pre-reference artifact exists: pre_reference/evidence_role_registry_pre_reference.csv",
+      "passed": true
+    },
+    {
+      "check": "pre-reference bytes match: pre_reference/evidence_role_registry_pre_reference.csv",
+      "passed": true
+    },
+    {
+      "check": "pre-reference sha256 matches: pre_reference/evidence_role_registry_pre_reference.csv",
+      "passed": true
+    },
+    {
+      "check": "pre-reference artifact exists: pre_reference/evidence_role_registry_pre_reference.parquet",
+      "passed": true
+    },
+    {
+      "check": "pre-reference bytes match: pre_reference/evidence_role_registry_pre_reference.parquet",
+      "passed": true
+    },
+    {
+      "check": "pre-reference sha256 matches: pre_reference/evidence_role_registry_pre_reference.parquet",
+      "passed": true
+    },
+    {
+      "check": "pre-reference artifact exists: pre_reference/excluded_pair_frame_relation_audit_pre_reference.csv",
+      "passed": true
+    },
+    {
+      "check": "pre-reference bytes match: pre_reference/excluded_pair_frame_relation_audit_pre_reference.csv",
+      "passed": true
+    },
+    {
+      "check": "pre-reference sha256 matches: pre_reference/excluded_pair_frame_relation_audit_pre_reference.csv",
+      "passed": true
+    },
+    {
+      "check": "pre-reference artifact exists: pre_reference/excluded_pair_frame_relation_audit_pre_reference.parquet",
+      "passed": true
+    },
+    {
+      "check": "pre-reference bytes match: pre_reference/excluded_pair_frame_relation_audit_pre_reference.parquet",
+      "passed": true
+    },
+    {
+      "check": "pre-reference sha256 matches: pre_reference/excluded_pair_frame_relation_audit_pre_reference.parquet",
+      "passed": true
+    },
+    {
+      "check": "pre-reference artifact exists: pre_reference/excluded_pair_visual_case_registry_pre_reference.csv",
+      "passed": true
+    },
+    {
+      "check": "pre-reference bytes match: pre_reference/excluded_pair_visual_case_registry_pre_reference.csv",
+      "passed": true
+    },
+    {
+      "check": "pre-reference sha256 matches: pre_reference/excluded_pair_visual_case_registry_pre_reference.csv",
+      "passed": true
+    },
+    {
+      "check": "pre-reference artifact exists: pre_reference/excluded_pair_visual_case_registry_pre_reference.parquet",
+      "passed": true
+    },
+    {
+      "check": "pre-reference bytes match: pre_reference/excluded_pair_visual_case_registry_pre_reference.parquet",
+      "passed": true
+    },
+    {
+      "check": "pre-reference sha256 matches: pre_reference/excluded_pair_visual_case_registry_pre_reference.parquet",
+      "passed": true
+    },
+    {
+      "check": "pre-reference artifact exists: pre_reference/frozen_terg_v1_r0_input_hashes.json",
+      "passed": true
+    },
+    {
+      "check": "pre-reference bytes match: pre_reference/frozen_terg_v1_r0_input_hashes.json",
+      "passed": true
+    },
+    {
+      "check": "pre-reference sha256 matches: pre_reference/frozen_terg_v1_r0_input_hashes.json",
+      "passed": true
+    },
+    {
+      "check": "pre-reference artifact exists: pre_reference/global_partial_order_audit_pre_reference.csv",
+      "passed": true
+    },
+    {
+      "check": "pre-reference bytes match: pre_reference/global_partial_order_audit_pre_reference.csv",
+      "passed": true
+    },
+    {
+      "check": "pre-reference sha256 matches: pre_reference/global_partial_order_audit_pre_reference.csv",
+      "passed": true
+    },
+    {
+      "check": "pre-reference artifact exists: pre_reference/global_partial_order_audit_pre_reference.parquet",
+      "passed": true
+    },
+    {
+      "check": "pre-reference bytes match: pre_reference/global_partial_order_audit_pre_reference.parquet",
+      "passed": true
+    },
+    {
+      "check": "pre-reference sha256 matches: pre_reference/global_partial_order_audit_pre_reference.parquet",
+      "passed": true
+    },
+    {
+      "check": "pre-reference artifact exists: pre_reference/response_component_family_diagnosis_pre_reference.csv",
+      "passed": true
+    },
+    {
+      "check": "pre-reference bytes match: pre_reference/response_component_family_diagnosis_pre_reference.csv",
+      "passed": true
+    },
+    {
+      "check": "pre-reference sha256 matches: pre_reference/response_component_family_diagnosis_pre_reference.csv",
+      "passed": true
+    },
+    {
+      "check": "pre-reference artifact exists: pre_reference/response_component_family_diagnosis_pre_reference.parquet",
+      "passed": true
+    },
+    {
+      "check": "pre-reference bytes match: pre_reference/response_component_family_diagnosis_pre_reference.parquet",
+      "passed": true
+    },
+    {
+      "check": "pre-reference sha256 matches: pre_reference/response_component_family_diagnosis_pre_reference.parquet",
+      "passed": true
+    },
+    {
+      "check": "pre-reference artifact exists: pre_reference/selected_excluded_pair_family_memberships_pre_reference.csv",
+      "passed": true
+    },
+    {
+      "check": "pre-reference bytes match: pre_reference/selected_excluded_pair_family_memberships_pre_reference.csv",
+      "passed": true
+    },
+    {
+      "check": "pre-reference sha256 matches: pre_reference/selected_excluded_pair_family_memberships_pre_reference.csv",
+      "passed": true
+    },
+    {
+      "check": "pre-reference artifact exists: pre_reference/selected_excluded_pair_family_memberships_pre_reference.parquet",
+      "passed": true
+    },
+    {
+      "check": "pre-reference bytes match: pre_reference/selected_excluded_pair_family_memberships_pre_reference.parquet",
+      "passed": true
+    },
+    {
+      "check": "pre-reference sha256 matches: pre_reference/selected_excluded_pair_family_memberships_pre_reference.parquet",
+      "passed": true
+    },
+    {
+      "check": "pre-reference artifact exists: pre_reference/underlying_temporal_episode_registry_pre_reference.csv",
+      "passed": true
+    },
+    {
+      "check": "pre-reference bytes match: pre_reference/underlying_temporal_episode_registry_pre_reference.csv",
+      "passed": true
+    },
+    {
+      "check": "pre-reference sha256 matches: pre_reference/underlying_temporal_episode_registry_pre_reference.csv",
+      "passed": true
+    },
+    {
+      "check": "pre-reference artifact exists: pre_reference/underlying_temporal_episode_registry_pre_reference.parquet",
+      "passed": true
+    },
+    {
+      "check": "pre-reference bytes match: pre_reference/underlying_temporal_episode_registry_pre_reference.parquet",
+      "passed": true
+    },
+    {
+      "check": "pre-reference sha256 matches: pre_reference/underlying_temporal_episode_registry_pre_reference.parquet",
+      "passed": true
+    },
+    {
+      "check": "eight pre-reference mechanical visual cases",
+      "passed": true
+    },
+    {
+      "check": "two post-reference likely-versus-alternative cases",
+      "passed": true
+    },
+    {
+      "check": "ten total direct visual verdicts",
+      "passed": true
+    },
+    {
+      "check": "five persistent relational cases",
+      "passed": true
+    },
+    {
+      "check": "all visual cases inspected",
+      "passed": true
+    },
+    {
+      "check": "no outcome-tuned support threshold",
+      "passed": true
+    },
+    {
+      "check": "three underlying temporal episodes",
+      "passed": true
+    },
+    {
+      "check": "one contracted episode",
+      "passed": true
+    },
+    {
+      "check": "fifteen contracted repeated segment views",
+      "passed": true
+    },
+    {
+      "check": "all 38 segments assigned to episodes",
+      "passed": true
+    },
+    {
+      "check": "complete evidence availability denominator",
+      "passed": true
+    },
+    {
+      "check": "availability vocabulary exact",
+      "passed": true
+    },
+    {
+      "check": "availability has no weighted score",
+      "passed": true
+    },
+    {
+      "check": "relative order remains authorized primitive",
+      "passed": true
+    },
+    {
+      "check": "no second hard evidence family invented",
+      "passed": true
+    },
+    {
+      "check": "69 direct definite optical edges",
+      "passed": true
+    },
+    {
+      "check": "global closure adds zero new edges",
+      "passed": true
+    },
+    {
+      "check": "21 redundant pair facts",
+      "passed": true
+    },
+    {
+      "check": "partial-order graphs are acyclic",
+      "passed": true
+    },
+    {
+      "check": "79 likely-supported family diagnoses",
+      "passed": true
+    },
+    {
+      "check": "79/79 likely families internally set-valued",
+      "passed": true
+    },
+    {
+      "check": "26 likely families have multi-region frames",
+      "passed": true
+    },
+    {
+      "check": "cross-family bundle requirement not established",
+      "passed": true
+    },
+    {
+      "check": "available target frames fully covered by likely family",
+      "passed": true
+    },
+    {
+      "check": "available target regions fully covered by likely family",
+      "passed": true
+    },
+    {
+      "check": "four grounding/observability gaps",
+      "passed": true
+    },
+    {
+      "check": "no shared-to-separated likely sequence",
+      "passed": true
+    },
+    {
+      "check": "no separated-to-shared likely sequence",
+      "passed": true
+    },
+    {
+      "check": "shared transition not hardened",
+      "passed": true
+    },
+    {
+      "check": "zero-anchor baseline deletes no family",
+      "passed": true
+    },
+    {
+      "check": "all 79 one-anchor scenarios reported",
+      "passed": true
+    },
+    {
+      "check": "nine one-anchor scenarios propagate",
+      "passed": true
+    },
+    {
+      "check": "one-anchor propagation covers seven segment views",
+      "passed": true
+    },
+    {
+      "check": "one-anchor propagation remains one episode",
+      "passed": true
+    },
+    {
+      "check": "one-anchor maximum deletion exact",
+      "passed": true
+    },
+    {
+      "check": "all 65 two-anchor scenarios reported",
+      "passed": true
+    },
+    {
+      "check": "thirteen two-anchor scenarios propagate",
+      "passed": true
+    },
+    {
+      "check": "two-anchor propagation covers six segment views",
+      "passed": true
+    },
+    {
+      "check": "two-anchor propagation remains one episode",
+      "passed": true
+    },
+    {
+      "check": "two-anchor maximum deletion exact",
+      "passed": true
+    },
+    {
+      "check": "one-anchor likely retention complete",
+      "passed": true
+    },
+    {
+      "check": "two-anchor likely retention complete",
+      "passed": true
+    },
+    {
+      "check": "runtime-legal anchor remains unavailable",
+      "passed": true
+    },
+    {
+      "check": "post-reference anchors never reported as runtime",
+      "passed": true
+    },
+    {
+      "check": "final route exact",
+      "passed": true
+    },
+    {
+      "check": "frozen mechanisms unmodified",
+      "passed": true
+    },
+    {
+      "check": "summary records no R04ZF access",
+      "passed": true
+    },
+    {
+      "check": "independent confirmation not entered",
+      "passed": true
+    },
+    {
+      "check": "no unary discrimination overclaim",
+      "passed": true
+    },
+    {
+      "check": "no response bundle overclaim",
+      "passed": true
+    },
+    {
+      "check": "figure decodes at review resolution: output/person_terg_r1_adaptive_evidence_activation_and_relational_composition_20260829/figures/excluded_pair_direct_verification/five_track_A_SUPPORT_1.jpg",
+      "passed": true
+    },
+    {
+      "check": "figure decodes at review resolution: output/person_terg_r1_adaptive_evidence_activation_and_relational_composition_20260829/figures/excluded_pair_direct_verification/five_track_B_SUPPORT_2.jpg",
+      "passed": true
+    },
+    {
+      "check": "figure decodes at review resolution: output/person_terg_r1_adaptive_evidence_activation_and_relational_composition_20260829/figures/excluded_pair_direct_verification/five_track_C_SUPPORT_AT_LEAST_5.jpg",
+      "passed": true
+    },
+    {
+      "check": "figure decodes at review resolution: output/person_terg_r1_adaptive_evidence_activation_and_relational_composition_20260829/figures/excluded_pair_direct_verification/five_track_D_LONGEST_SUPPORT.jpg",
+      "passed": true
+    },
+    {
+      "check": "figure decodes at review resolution: output/person_terg_r1_adaptive_evidence_activation_and_relational_composition_20260829/figures/excluded_pair_direct_verification/five_track_E_LIKELY_VS_EXCLUDED_ALTERNATIVE.jpg",
+      "passed": true
+    },
+    {
+      "check": "figure decodes at review resolution: output/person_terg_r1_adaptive_evidence_activation_and_relational_composition_20260829/figures/excluded_pair_direct_verification/strongest_A_SUPPORT_1.jpg",
+      "passed": true
+    },
+    {
+      "check": "figure decodes at review resolution: output/person_terg_r1_adaptive_evidence_activation_and_relational_composition_20260829/figures/excluded_pair_direct_verification/strongest_B_SUPPORT_2.jpg",
+      "passed": true
+    },
+    {
+      "check": "figure decodes at review resolution: output/person_terg_r1_adaptive_evidence_activation_and_relational_composition_20260829/figures/excluded_pair_direct_verification/strongest_C_SUPPORT_AT_LEAST_5.jpg",
+      "passed": true
+    },
+    {
+      "check": "figure decodes at review resolution: output/person_terg_r1_adaptive_evidence_activation_and_relational_composition_20260829/figures/excluded_pair_direct_verification/strongest_D_LONGEST_SUPPORT.jpg",
+      "passed": true
+    },
+    {
+      "check": "figure decodes at review resolution: output/person_terg_r1_adaptive_evidence_activation_and_relational_composition_20260829/figures/excluded_pair_direct_verification/strongest_E_LIKELY_VS_EXCLUDED_ALTERNATIVE.jpg",
+      "passed": true
+    },
+    {
+      "check": "figure decodes at review resolution: output/person_terg_r1_adaptive_evidence_activation_and_relational_composition_20260829/figures/mechanism_diagnostics/01_phase_a_relational_support_extent.png",
+      "passed": true
+    },
+    {
+      "check": "figure decodes at review resolution: output/person_terg_r1_adaptive_evidence_activation_and_relational_composition_20260829/figures/mechanism_diagnostics/02_episode_aware_r0_timeline.png",
+      "passed": true
+    },
+    {
+      "check": "figure decodes at review resolution: output/person_terg_r1_adaptive_evidence_activation_and_relational_composition_20260829/figures/mechanism_diagnostics/03_evidence_availability_state_map.png",
+      "passed": true
+    },
+    {
+      "check": "figure decodes at review resolution: output/person_terg_r1_adaptive_evidence_activation_and_relational_composition_20260829/figures/mechanism_diagnostics/04_anchor_conditioned_domain_propagation.png",
+      "passed": true
+    },
+    {
+      "check": "figure decodes at review resolution: output/person_terg_r1_adaptive_evidence_activation_and_relational_composition_20260829/figures/mechanism_diagnostics/05_response_component_representation_diagnosis.png",
+      "passed": true
+    },
+    {
+      "check": "figure decodes at review resolution: output/person_terg_r1_adaptive_evidence_activation_and_relational_composition_20260829/figures/mechanism_diagnostics/06_five_track_global_partial_order.png",
+      "passed": true
+    }
+  ]
+}

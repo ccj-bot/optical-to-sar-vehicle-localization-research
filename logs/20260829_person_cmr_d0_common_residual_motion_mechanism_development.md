@@ -28,3 +28,10 @@
 
 - Independent validator: `PASS (42/42)`.
 - Additional final checks cover eligibility units/counts, audited absence of definite optical below-common, same-window pairing of possible-rescue/deceptive examples, 2240x1960 cross-modal overlay renders, and byte/SHA256 agreement for every manifest-listed file.
+
+## Git closeout
+
+- CMR artifact commit: `7f65765` (`person: freeze CMR-D0 common residual mechanism`).
+- Artifact commit pushed to `origin/main` successfully.
+- Only the explicit CMR task/output/log and PERSON README allowlist was staged; unrelated pre-existing dirty paths remained untouched.
+- Final divergence is verified after the closeout-log commit is pushed.

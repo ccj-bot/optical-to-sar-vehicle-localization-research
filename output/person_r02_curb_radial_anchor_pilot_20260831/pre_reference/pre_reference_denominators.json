@@ -1,0 +1,12 @@
+{
+  "primary_sar_frames": 54,
+  "causal_shell_rows": 157,
+  "unique_shell_frames": 53,
+  "visual_ledger_rows": 39,
+  "optical_topology_rows": 48,
+  "q95_masks_used": 53,
+  "sensitivity_levels": 6,
+  "topology_modes": 2,
+  "burden_rows": 1884,
+  "manual_sar_reference_opened": false
+}

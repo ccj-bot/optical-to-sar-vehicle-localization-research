@@ -1,0 +1,32 @@
+{
+  "freeze_semantics": "VISUAL_HYPOTHESES_AND_CASE_SELECTION_FROZEN_BEFORE_AUTOMATIC_CURB_EXTRACTION",
+  "manual_sar_reference_opened": false,
+  "r04_accessed": false,
+  "files": [
+    {
+      "path": "pre_reference/CURB_VISUAL_HYPOTHESIS_LEDGER.csv",
+      "sha256": "22a598ebe7ef02461053590080c7833873c55af5f7b71bc9d7c9895968b6bdc3",
+      "bytes": 15368
+    },
+    {
+      "path": "pre_reference/optical_person_curb_topology_visual_development_only.csv",
+      "sha256": "16ed47b975b812a1a68d15c0a1716232e1f689d5a9589f019a843d86c42f61e9",
+      "bytes": 29528
+    },
+    {
+      "path": "pre_reference/case_control_selection_pre_reference.json",
+      "sha256": "2729285d0b0eadcfa1c0f74086d65d7cf711e1e52490df373cf79cec90b1bc45",
+      "bytes": 1058
+    },
+    {
+      "path": "pre_reference/visual_review_frame_inventory.csv",
+      "sha256": "dd0d1441fe00ecacbbc1d02f4b46fdddf8f079511c04ede3adcf6246c1cc20e2",
+      "bytes": 15390
+    },
+    {
+      "path": "pre_reference/visual_review_generation_summary.json",
+      "sha256": "d8dc1521e922627db835070e5fe842014907054d3a27bd00d700fb53e648fdfe",
+      "bytes": 1008
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "primary_window": [
+    421,
+    474
+  ],
+  "negative_controls": [
+    0,
+    30,
+    60,
+    375,
+    390,
+    405,
+    414,
+    480,
+    486,
+    488
+  ],
+  "d_grid_m": [
+    2.0,
+    14.999987602233887,
+    0.04999995231628418
+  ],
+  "theta_grid_deg": [
+    -50.0,
+    50.0,
+    0.5
+  ],
+  "local_background_offset_m": 0.4,
+  "candidate_count": 3,
+  "top_candidates": [
+    {
+      "candidate_id": "STATIC_BAND_D07.10",
+      "d_parallel_peak_m": 7.099995136260986,
+      "score": 0.005081699925709713,
+      "prominence": 0.005081699925709713,
+      "half_prominence_low_m": 7.0138682115607445,
+      "half_prominence_high_m": 7.143979247760493,
+      "half_prominence_width_m": 0.13011103619974862,
+      "prominence_base_low_m": 6.949995040893555,
+      "prominence_base_high_m": 7.299994945526123,
+      "response_median": 0.2331341952085495,
+      "contrast_median": 0.01263020932674408,
+      "contrast_p25": 0.011224716901779175,
+      "theta_coherence_median": 0.5323383084577115,
+      "theta_coherence_p25": 0.5124378109452736,
+      "temporal_persistence": 0.7962962962962963,
+      "temporal_positive_fraction": 1.0,
+      "temporal_contrast_iqr": 0.003720499575138092,
+      "score_rank": 1
+    },
+    {
+      "candidate_id": "STATIC_BAND_D04.90",
+      "d_parallel_peak_m": 4.899997234344482,
+      "score": 0.0024604634638221707,
+      "prominence": 0.0024604634638221707,
+      "half_prominence_low_m": 4.87165880089268,
+      "half_prominence_high_m": 4.971082713268432,
+      "half_prominence_width_m": 0.09942391237575234,
+      "prominence_base_low_m": 4.799997329711914,
+      "prominence_base_high_m": 5.049997329711914,
+      "response_median": 0.21268382668495178,
+      "contrast_median": 0.010669417679309845,
+      "contrast_p25": 0.009087786078453064,
+      "theta_coherence_median": 0.5099502487562189,
+      "theta_coherence_p25": 0.4838308457711443,
+      "temporal_persistence": 0.6296296296296297,
+      "temporal_positive_fraction": 0.9629629629629629,
+      "temporal_contrast_iqr": 0.003946445882320404,
+      "score_rank": 2
+    },
+    {
+      "candidate_id": "STATIC_BAND_D12.40",
+      "d_parallel_peak_m": 12.39999008178711,
+      "score": 0.0013545490339927095,
+      "prominence": 0.0013545490339927095,
+      "half_prominence_low_m": 12.353164234355472,
+      "half_prominence_high_m": 12.500323562223022,
+      "half_prominence_width_m": 0.1471593278675508,
+      "prominence_base_low_m": 12.299989700317383,
+      "prominence_base_high_m": 12.549989700317383,
+      "response_median": 0.20492877066135406,
+      "contrast_median": 0.007762722671031952,
+      "contrast_p25": 0.0062844716012477875,
+      "theta_coherence_median": 0.472636815920398,
+      "theta_coherence_p25": 0.4552238805970149,
+      "temporal_persistence": 0.2037037037037037,
+      "temporal_positive_fraction": 1.0,
+      "temporal_contrast_iqr": 0.002782236784696579,
+      "score_rank": 3
+    }
+  ],
+  "manual_sar_reference_used": false,
+  "r04_accessed": false,
+  "semantics": "GT_BLIND_STATIC_HORIZONTAL_BAND_PROBE_NOT_PERSON_RESPONSE_OR_FINAL_LOCALIZATION"
+}

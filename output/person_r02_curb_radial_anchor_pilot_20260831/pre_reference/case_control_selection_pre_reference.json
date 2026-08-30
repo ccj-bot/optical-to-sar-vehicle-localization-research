@@ -1,0 +1,46 @@
+{
+  "run_id": "R02ZF",
+  "primary_analysis_window_sar_frames_inclusive": [
+    421,
+    474
+  ],
+  "primary_window_reason": "Visually stable SAR/optical interval after the passing-vehicle disturbance and before the F480 display-response collapse; it also contains the dense optical PERSON interval.",
+  "negative_controls": {
+    "PASSING_VEHICLE_OCCLUSION_AND_NEAR_RANGE_FALSE_CURB": [
+      375,
+      390,
+      405,
+      414
+    ],
+    "DISPLAY_INTENSITY_SHIFT_AND_MULTIPLE_RANGE_ARCS": [
+      480,
+      486,
+      488
+    ],
+    "EARLY_CURVED_OR_BRANCHING_OPTICAL_CURB": [
+      0,
+      30,
+      60
+    ]
+  },
+  "additional_context_frames": [
+    95,
+    110,
+    120,
+    150,
+    155,
+    180,
+    210,
+    240,
+    260,
+    270,
+    300,
+    330,
+    345,
+    360
+  ],
+  "selection_semantics": "GT_BLIND_VISUAL_PRE_REFERENCE_FIXED_BEFORE_AUTOMATIC_CURB_EXTRACTION",
+  "pairing_semantics": "NOMINAL_INDEX_FPS_ZERO_OFFSET_UNVERIFIED",
+  "manual_sar_reference_opened": false,
+  "r04_accessed": false
+}

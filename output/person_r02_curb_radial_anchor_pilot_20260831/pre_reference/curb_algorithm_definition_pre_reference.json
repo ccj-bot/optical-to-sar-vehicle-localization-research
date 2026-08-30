@@ -1,0 +1,22 @@
+{
+  "primary_window": [
+    421,
+    474
+  ],
+  "selection_rule": "highest GT-blind persistence-coherence score among horizontal static-band peaks",
+  "frame_contrast_min": 0.01,
+  "frame_theta_coherence_min": 0.45,
+  "band_rule": "local half-height support expanded by robust temporal center MAD scale",
+  "multiple_hypothesis_policy": "rank1 primary, rank2 retained near identity alternative, rank3 far parallel confounder",
+  "topology_policy": "SIDEWALK_OR_PARKING_SIDE means farther-than-curb half-space; UNCERTAIN means no deletion",
+  "sensitivity_definitions": {
+    "CURRENT_FROZEN": null,
+    "PLUS_MINUS_6_DEG": 6.0,
+    "PLUS_MINUS_4_DEG": 4.0,
+    "PLUS_MINUS_3_DEG": 3.0,
+    "PLUS_MINUS_2_DEG": 2.0,
+    "PLUS_MINUS_1_DEG": 1.0
+  },
+  "manual_sar_reference_opened": false,
+  "r04_accessed": false
+}

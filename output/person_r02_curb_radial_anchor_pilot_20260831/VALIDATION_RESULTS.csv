@@ -1,0 +1,70 @@
+﻿check,passed,detail
+exists::REPORT.md,True,D:\profile\research\workspace\output\person_r02_curb_radial_anchor_pilot_20260831\REPORT.md
+exists::SUMMARY.json,True,D:\profile\research\workspace\output\person_r02_curb_radial_anchor_pilot_20260831\SUMMARY.json
+exists::SAR_CURB_IDENTITY_CONFIRMATION_TEMPLATE.csv,True,D:\profile\research\workspace\output\person_r02_curb_radial_anchor_pilot_20260831\SAR_CURB_IDENTITY_CONFIRMATION_TEMPLATE.csv
+exists::CURB_VISUAL_HYPOTHESIS_LEDGER.csv,True,D:\profile\research\workspace\output\person_r02_curb_radial_anchor_pilot_20260831\pre_reference\CURB_VISUAL_HYPOTHESIS_LEDGER.csv
+exists::sar_curb_candidate_frame_bands_pre_reference.parquet,True,D:\profile\research\workspace\output\person_r02_curb_radial_anchor_pilot_20260831\pre_reference\sar_curb_candidate_frame_bands_pre_reference.parquet
+exists::sar_curb_candidates_and_roles_pre_reference.parquet,True,D:\profile\research\workspace\output\person_r02_curb_radial_anchor_pilot_20260831\pre_reference\sar_curb_candidates_and_roles_pre_reference.parquet
+exists::sar_curb_theta_range_bands_pre_reference.parquet,True,D:\profile\research\workspace\output\person_r02_curb_radial_anchor_pilot_20260831\pre_reference\sar_curb_theta_range_bands_pre_reference.parquet
+exists::angular_width_sensitivity_summary_pre_reference.csv,True,D:\profile\research\workspace\output\person_r02_curb_radial_anchor_pilot_20260831\pre_reference\angular_width_sensitivity_summary_pre_reference.csv
+exists::angle_only_vs_curb_topology_burden_summary_pre_reference.csv,True,D:\profile\research\workspace\output\person_r02_curb_radial_anchor_pilot_20260831\pre_reference\angle_only_vs_curb_topology_burden_summary_pre_reference.csv
+exists::PRE_REFERENCE_FREEZE_MANIFEST.json,True,D:\profile\research\workspace\output\person_r02_curb_radial_anchor_pilot_20260831\pre_reference\PRE_REFERENCE_FREEZE_MANIFEST.json
+exists::reference_support_retention_summary_post_reference.csv,True,D:\profile\research\workspace\output\person_r02_curb_radial_anchor_pilot_20260831\post_reference_evaluation_only\reference_support_retention_summary_post_reference.csv
+exists::reference_range_layer_summary_post_reference.csv,True,D:\profile\research\workspace\output\person_r02_curb_radial_anchor_pilot_20260831\post_reference_evaluation_only\reference_range_layer_summary_post_reference.csv
+exists::PERSON_R02_CURB_RADIAL_ANCHOR_REVIEW_PACK_20260831.zip,True,D:\profile\research\workspace\review_packs\PERSON_R02_CURB_RADIAL_ANCHOR_REVIEW_PACK_20260831.zip
+compile::prepare_visual_review.py,True,compiled
+compile::freeze_visual_hypotheses.py,True,compiled
+compile::probe_sar_static_bands.py,True,compiled
+compile::run_person_curb0.py,True,compiled
+compile::validate_person_curb0.py,True,compiled
+visual_rows,True,rows=39
+visual_before_computed,True,computed verdict frozen empty
+visual_no_reference,True,direct visual provenance
+candidate_count,True,count=3
+candidate_ranks,True,"[1, 2, 3]"
+primary_distance,True,d=7.099995136260986
+alternate_distance,True,d=4.899997234344482
+far_confounder_distance,True,d=12.39999008178711
+candidate_no_reference,True,all false
+primary_frame_denominator,True,rows=54
+primary_available_frames,True,available=48
+primary_band_positive,True,all positive
+primary_peak_stable,True,range=7.049995422363281..7.149994850158691
+unavailable_explicit,True,"[423, 424, 428, 441, 449, 461]"
+theta_band_available_only,True,frames=57
+theta_range_formula,True,r=d/cos(theta)
+six_sensitivities,True,rows=6
+width_denominator,True,"[157, 157, 157, 157, 157, 157]"
+width_available_rows,True,"[145, 145, 145, 145, 145, 145]"
+current_width_numbers,True,median=2.2565149844221644 p90=2.7788697034889545
+sensitivity_monotonic,True,median widths increase with half-width
+burden_rows,True,rows=1884
+pixel_intersections,True,all exact pixel intersections
+region_nonincrease,True,all nonincreasing
+family_nonincrease,True,all nonincreasing
+area_nonincrease,True,all nonincreasing
+fallback_no_deletion,True,fallback_rows=144
+families_assigned,True,zero unassigned
+current_burden_region,True,8.0->7.0
+current_burden_family,True,8.0->7.0
+identity_conservative_weaker,True,primary=7.0 conservative=8.0
+freeze_file_hashes,True,bad=[]
+freeze_root_hash,True,3febe4272067cb2bed4b403b8d8eeb09777c96d6c878c8dbc44eea0479b1b9ec
+freeze_reference_closed,True,false
+freeze_r04_closed,True,false
+reference_denominator,True,[4]
+current_reference_retention,True,"{""sensitivity"":""CURRENT_FROZEN"",""topology_mode"":""PRIMARY_SELECTED_CURB"",""reference_rows"":4,""applied_reference_rows"":4,""angular_retention_fraction"":1.0,""radial_retention_fallback_aware_fraction"":1.0,""support_2d_retention_fallback_aware_fraction"":1.0,""radial_retention_applied_only_fraction"":1.0,""support_2d_retention_applied_only_fraction"":1.0}"
+narrower_angular_half,True,"[0.5, 0.5, 0.5, 0.5, 0.5]"
+layer_only_12_14,True,"[{""range_layer"":""12_TO_14M"",""reference_rows"":4,""unique_targets"":2,""reference_range_median"":13.6756617793,""reference_d_parallel_median"":11.8214983037,""radial_retention_fraction"":1.0,""support_2d_retention_fraction"":1.0}]"
+report_phrase::CURB_RADIAL_TOPOLOGY_ONLY_MODERATELY_USEFUL_IN_STABLE_SEGMENT,True,CURB_RADIAL_TOPOLOGY_ONLY_MODERATELY_USEFUL_IN_STABLE_SEGMENT
+report_phrase::F462-F474,True,F462-F474
+report_phrase::48/54,True,48/54
+report_phrase::VISUAL_DEVELOPMENT_ONLY_NOT_RUNTIME_CLASSIFIER,True,VISUAL_DEVELOPMENT_ONLY_NOT_RUNTIME_CLASSIFIER
+report_phrase::6-8 versus 12-14 comparison cannot be completed,True,6-8 versus 12-14 comparison cannot be completed
+report_phrase::R04 was not accessed,True,R04 was not accessed
+pack_required_entries,True,missing=[]
+pack_no_r04_paths,True,no R04 archive paths
+pack_has_keyframes,True,sar=9
+summary_pack_hash,True,6531b197f7d3aea0b11ca3b77800935c6b55d24e79dbc036cc91da65c14be0f6
+summary_pack_size,True,35224414
+summary_r04_false,True,false

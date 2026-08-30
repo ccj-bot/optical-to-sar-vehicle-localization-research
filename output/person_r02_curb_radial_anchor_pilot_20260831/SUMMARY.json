@@ -1,0 +1,18 @@
+{
+  "verdict": "CURB_RADIAL_TOPOLOGY_ONLY_MODERATELY_USEFUL_IN_STABLE_SEGMENT",
+  "primary_window": [
+    421,
+    474
+  ],
+  "primary_candidate_d_parallel_m": 7.099995136260986,
+  "primary_availability_fraction": 0.8888888888888888,
+  "most_stable_uninterrupted_segment": [
+    462,
+    474
+  ],
+  "pre_reference_root_sha256": "3febe4272067cb2bed4b403b8d8eeb09777c96d6c878c8dbc44eea0479b1b9ec",
+  "review_pack_path": "D:\\profile\\research\\workspace\\review_packs\\PERSON_R02_CURB_RADIAL_ANCHOR_REVIEW_PACK_20260831.zip",
+  "review_pack_bytes": 35224414,
+  "review_pack_sha256": "6531b197f7d3aea0b11ca3b77800935c6b55d24e79dbc036cc91da65c14be0f6",
+  "r04_accessed": false
+}

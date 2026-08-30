@@ -1,0 +1,66 @@
+{
+  "run_id": "R02ZF",
+  "unique_pair_count": 39,
+  "group_counts": {
+    "01_early_middle": 12,
+    "02_late_to_f421": 10,
+    "03_f450_f494": 9,
+    "04_dense_and_controls": 11
+  },
+  "frame_groups": {
+    "01_early_middle": [
+      0,
+      30,
+      60,
+      90,
+      120,
+      150,
+      180,
+      210,
+      240,
+      270,
+      300,
+      330
+    ],
+    "02_late_to_f421": [
+      345,
+      360,
+      375,
+      390,
+      405,
+      414,
+      421,
+      428,
+      435,
+      442
+    ],
+    "03_f450_f494": [
+      450,
+      456,
+      462,
+      468,
+      474,
+      480,
+      486,
+      492,
+      494
+    ],
+    "04_dense_and_controls": [
+      95,
+      110,
+      155,
+      260,
+      380,
+      421,
+      450,
+      472,
+      482,
+      488,
+      494
+    ]
+  },
+  "pairing_semantics": "NOMINAL_INDEX_FPS_ZERO_OFFSET_UNVERIFIED",
+  "reference_used": false,
+  "curb_detector_used": false,
+  "r04_accessed": false
+}

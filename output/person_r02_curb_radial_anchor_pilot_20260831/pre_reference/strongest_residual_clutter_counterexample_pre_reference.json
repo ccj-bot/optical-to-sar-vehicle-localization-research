@@ -1,0 +1,13 @@
+{
+  "run_id": "R02ZF",
+  "sar_frame_index": 431,
+  "shell_id": "R02ZF_SARF000431__CAUSAL_REPLAY__R02ZF_REUSED_R02ZF_PERSON100016",
+  "track_id": "R02ZF_REUSED_R02ZF_PERSON100016",
+  "N_region_angle_only": 18,
+  "N_region_angle_plus_curb": 15,
+  "N_family_angle_only": 18,
+  "N_family_angle_plus_curb": 15,
+  "A_candidate_px_angle_plus_curb": 1684,
+  "interpretation": "Strongest residual same-legal-side clutter case in the frozen primary window. Curb topology cannot uniquely ground the PERSON response.",
+  "manual_sar_reference_used": false
+}

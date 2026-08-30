@@ -1,0 +1,9 @@
+{
+  "pre_reference_root_sha256": "3febe4272067cb2bed4b403b8d8eeb09777c96d6c878c8dbc44eea0479b1b9ec",
+  "reference_source": "D:\\profile\\research\\workspace\\output\\person_b0_end_to_end_capability_and_bottleneck_study_20260830\\post_reference_oracle_diagnostic_only\\r01_r02_r03_manual_range_reference_oracle_only.parquet",
+  "reference_source_excludes_r04": true,
+  "raw_target_mapping_source": "D:\\profile\\research\\workspace\\output\\person_b0_end_to_end_capability_and_bottleneck_study_20260830\\post_reference_oracle_diagnostic_only\\raw_fragment_to_offline_target_mapping_oracle_only.csv",
+  "manual_reference_used_only_for_evaluation": true,
+  "reference_used_for_curb_trace_or_topology_selection": false,
+  "r04_accessed": false
+}

@@ -1,0 +1,99 @@
+{
+  "freeze_semantics": "PRE_REFERENCE_CURB_HYPOTHESES_BANDS_TOPOLOGY_SENSITIVITY_DENOMINATORS_AND_CASES_FROZEN",
+  "primary_window": [
+    421,
+    474
+  ],
+  "manual_sar_reference_opened": false,
+  "r04_accessed": false,
+  "denominators": {
+    "primary_sar_frames": 54,
+    "causal_shell_rows": 157,
+    "unique_shell_frames": 53,
+    "visual_ledger_rows": 39,
+    "optical_topology_rows": 48,
+    "q95_masks_used": 53,
+    "sensitivity_levels": 6,
+    "topology_modes": 2,
+    "burden_rows": 1884,
+    "manual_sar_reference_opened": false
+  },
+  "files": [
+    {
+      "path": "pre_reference/angle_only_vs_curb_topology_burden_summary_pre_reference.csv",
+      "bytes": 2574,
+      "sha256": "6924d30a774a0b00a9ac01a6e56413493b1ea1062c2d0435e84bad7b7eb8e0bd"
+    },
+    {
+      "path": "pre_reference/angle_only_vs_curb_topology_exact_q95_burden_pre_reference.parquet",
+      "bytes": 70371,
+      "sha256": "54946764afa093cad1b333d0a31837f650efb3541fe048dd63aeb4e75564b6ba"
+    },
+    {
+      "path": "pre_reference/angular_width_curb_range_intervals_pre_reference.parquet",
+      "bytes": 28320,
+      "sha256": "e7e1c4e09a15db8be4590fc22bcc263711331af52bbd095dda042cafa9f73266"
+    },
+    {
+      "path": "pre_reference/angular_width_sensitivity_summary_pre_reference.csv",
+      "bytes": 754,
+      "sha256": "3404b8ed7e62ffc39ca74780617b54d7988f94e416a18b5ab8493dbcdb0e2402"
+    },
+    {
+      "path": "pre_reference/case_control_selection_pre_reference.json",
+      "bytes": 1058,
+      "sha256": "2729285d0b0eadcfa1c0f74086d65d7cf711e1e52490df373cf79cec90b1bc45"
+    },
+    {
+      "path": "pre_reference/curb_algorithm_definition_pre_reference.json",
+      "bytes": 836,
+      "sha256": "bcd7f28d1b49e917be73c416db8ae296b7999ed6cd72c888ba8b06497a8dc125"
+    },
+    {
+      "path": "pre_reference/CURB_VISUAL_HYPOTHESIS_LEDGER.csv",
+      "bytes": 15368,
+      "sha256": "22a598ebe7ef02461053590080c7833873c55af5f7b71bc9d7c9895968b6bdc3"
+    },
+    {
+      "path": "pre_reference/curb_visual_vs_computed_audit_pre_reference.csv",
+      "bytes": 19531,
+      "sha256": "e46c24bb41ff441b22d530b8cd1cf3ff8fbad73af5d89b2088f0ac9609a7bd44"
+    },
+    {
+      "path": "pre_reference/optical_person_curb_topology_visual_development_only.csv",
+      "bytes": 29528,
+      "sha256": "16ed47b975b812a1a68d15c0a1716232e1f689d5a9589f019a843d86c42f61e9"
+    },
+    {
+      "path": "pre_reference/pre_reference_denominators.json",
+      "bytes": 296,
+      "sha256": "666ee4dbce9f1c01b529a376eb4d53ca8554002fd59d5be202096c82dcf6bea4"
+    },
+    {
+      "path": "pre_reference/sar_curb_candidate_frame_bands_pre_reference.parquet",
+      "bytes": 15536,
+      "sha256": "412088445b136a6914e568ae9a8d0159b91da2ae8dca526fec435c0774519638"
+    },
+    {
+      "path": "pre_reference/sar_curb_candidates_and_roles_pre_reference.parquet",
+      "bytes": 18717,
+      "sha256": "d1b4a82463f1ba869355f91c4a693c8998079c914b1896890d467b2ef9b843bf"
+    },
+    {
+      "path": "pre_reference/sar_curb_theta_range_bands_pre_reference.parquet",
+      "bytes": 142123,
+      "sha256": "226947f660ba3808723d901c9b1189799da201ace4c69e5f712f0db687391489"
+    },
+    {
+      "path": "pre_reference/strongest_residual_clutter_counterexample_pre_reference.json",
+      "bytes": 559,
+      "sha256": "7f5673db4bfde5ffe98108f17ddd08d884901ff7aa004ac06c5d40e2b3e8fd9f"
+    },
+    {
+      "path": "pre_reference/visual_hypothesis_freeze_manifest.json",
+      "bytes": 1167,
+      "sha256": "93ca3b7b1583b5423af6381b649c3d5efea9500267299d64ab8329a7be1fe2b5"
+    }
+  ],
+  "pre_reference_root_sha256": "3febe4272067cb2bed4b403b8d8eeb09777c96d6c878c8dbc44eea0479b1b9ec"
+}

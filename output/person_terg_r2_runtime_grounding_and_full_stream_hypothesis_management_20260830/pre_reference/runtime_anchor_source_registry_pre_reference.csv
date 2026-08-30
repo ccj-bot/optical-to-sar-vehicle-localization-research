@@ -1,0 +1,5 @@
+﻿anchor_source_class,runtime_use_allowed,candidate_count,strong_count,current_state,limitation
+AUTO_RUNTIME_ANCHOR,True,0,0,NO_STRONG_AUTO_RUNTIME_ANCHOR_ESTABLISHED,Singleton shell-family moments lack independent range/identity corroboration and are challenged by no-optical clutter controls.
+CALIBRATED_PHYSICAL_ANCHOR,True,0,0,UNAVAILABLE,"No runtime-legal camera footpoint to SAR range interval, mounting/ground-plane range calibration, or platform-pose range interface was found in the frozen inputs."
+SPARSE_MANUAL_ANCHOR,True,0,0,DIAGNOSTIC_ONLY_NOT_INJECTED_IN_AUTOMATIC_REPLAY,"Evaluated as a counterfactual information requirement, not silently used as runtime evidence."
+OFFLINE_REFERENCE_ANCHOR,False,0,0,POST_REFERENCE_EVALUATION_ONLY,Never used in full-stream replay or admission/lifecycle construction.

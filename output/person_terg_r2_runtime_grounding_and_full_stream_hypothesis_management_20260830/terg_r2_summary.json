@@ -1,0 +1,41 @@
+{
+  "schema": "TERG_R2_RUNTIME_GROUNDING_AND_FULL_STREAM_HYPOTHESIS_MANAGEMENT_V1",
+  "generated_at": "2026-08-30T12:01:14+08:00",
+  "full_stream_frame_count": 1485,
+  "full_stream_run_count": 3,
+  "q95_region_count": 74485,
+  "frozen_parity_frame_count": 202,
+  "frozen_q95_pixel_exact_fraction": 1.0,
+  "p0_available_fraction_by_run": {
+    "R01ZF": 0.2854251012145749,
+    "R02ZF": 0.044534412955465584,
+    "R03ZF": 0.0728744939271255
+  },
+  "p0_available_pair_count_by_run": {
+    "R01ZF": 141,
+    "R02ZF": 22,
+    "R03ZF": 36
+  },
+  "runtime_hypothesis_count": 50,
+  "lifecycle_row_count": 23289,
+  "stream_generated_transition_count": 403,
+  "strong_auto_anchor_count": 0,
+  "candidate_auto_anchor_count": 0,
+  "ambiguous_auto_anchor_count": 5,
+  "sar_only_false_admission_event_count": 0,
+  "negative_time_non_dormant_hypothesis_frame_count": 7,
+  "true_closed_hypothesis_frame_count": 0,
+  "relative_order_primitive_state": "RELATIVE_ANGULAR_ORDER_CONTRADICTION_FROZEN_AS_RELATIONAL_PRIMITIVE",
+  "runtime_unary_anchor_conclusion": "NO_STRONG_AUTO_RUNTIME_UNARY_ANCHOR_ESTABLISHED",
+  "full_stream_hypothesis_management_conclusion": "OPEN_KEEP_DORMANCY_AND_REENTRY_COMPETITION_EXPRESSED_TRUE_SEMANTIC_CLOSURE_NOT_ESTABLISHED",
+  "minimum_missing_absolute_information": "RUNTIME_LEGAL_COARSE_RANGE_INTERVAL_OR_EQUIVALENT_CALIBRATED_UNARY_PHYSICAL_CONSTRAINT_PLUS_DEPLOYABLE_P0_CONTINUITY_TO_RELATION_WINDOW",
+  "non_claims": [
+    "NO_PERSON_IDENTITY_TRUTH",
+    "NO_FINAL_CENTER",
+    "NO_FINAL_BOX",
+    "NO_LEARNED_FUSION",
+    "NO_HUNGARIAN",
+    "NO_FINAL_TRACKER",
+    "NO_R04_CONFIRMATION"
+  ]
+}

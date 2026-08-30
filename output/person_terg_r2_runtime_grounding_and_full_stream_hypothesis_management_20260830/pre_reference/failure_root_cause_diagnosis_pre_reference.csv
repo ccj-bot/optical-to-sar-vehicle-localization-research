@@ -1,0 +1,16 @@
+﻿run_id,failure_root,observed,evidence,classification
+R01ZF,INCOMPLETE_FROZEN_P0_CONTINUITY_COVERAGE,True,available consecutive-frame fraction=0.2854,DEPLOYED_RUNTIME_INTERFACE_GAP
+R01ZF,NATURAL_SINGLETON_FAMILY_NOT_REACHED,True,rejected active rows=29,SAR_CLUTTER_OR_CORRIDOR_AMBIGUITY
+R01ZF,NO_RUNTIME_RANGE_GROUNDING,True,optical interface supplies azimuth corridor only; no calibrated r interval is present,MISSING_PHYSICAL_OBSERVABLE
+R01ZF,RAW_FRAGMENT_IDENTITY_FRAGMENTATION,True,rows retaining reentry/new-identity competition=1088,RUNTIME_HYPOTHESIS_AMBIGUITY
+R01ZF,TRUE_SEMANTIC_CLOSURE_UNOBSERVABLE,True,fragment end/boundary contact does not reveal exit direction or physical continuation emptiness,MISSING_LIFECYCLE_OBSERVABLE
+R02ZF,INCOMPLETE_FROZEN_P0_CONTINUITY_COVERAGE,True,available consecutive-frame fraction=0.0445,DEPLOYED_RUNTIME_INTERFACE_GAP
+R02ZF,NATURAL_SINGLETON_FAMILY_NOT_REACHED,False,rejected active rows=0,SAR_CLUTTER_OR_CORRIDOR_AMBIGUITY
+R02ZF,NO_RUNTIME_RANGE_GROUNDING,True,optical interface supplies azimuth corridor only; no calibrated r interval is present,MISSING_PHYSICAL_OBSERVABLE
+R02ZF,RAW_FRAGMENT_IDENTITY_FRAGMENTATION,True,rows retaining reentry/new-identity competition=3352,RUNTIME_HYPOTHESIS_AMBIGUITY
+R02ZF,TRUE_SEMANTIC_CLOSURE_UNOBSERVABLE,True,fragment end/boundary contact does not reveal exit direction or physical continuation emptiness,MISSING_LIFECYCLE_OBSERVABLE
+R03ZF,INCOMPLETE_FROZEN_P0_CONTINUITY_COVERAGE,True,available consecutive-frame fraction=0.0729,DEPLOYED_RUNTIME_INTERFACE_GAP
+R03ZF,NATURAL_SINGLETON_FAMILY_NOT_REACHED,True,rejected active rows=32,SAR_CLUTTER_OR_CORRIDOR_AMBIGUITY
+R03ZF,NO_RUNTIME_RANGE_GROUNDING,True,optical interface supplies azimuth corridor only; no calibrated r interval is present,MISSING_PHYSICAL_OBSERVABLE
+R03ZF,RAW_FRAGMENT_IDENTITY_FRAGMENTATION,True,rows retaining reentry/new-identity competition=193,RUNTIME_HYPOTHESIS_AMBIGUITY
+R03ZF,TRUE_SEMANTIC_CLOSURE_UNOBSERVABLE,True,fragment end/boundary contact does not reveal exit direction or physical continuation emptiness,MISSING_LIFECYCLE_OBSERVABLE

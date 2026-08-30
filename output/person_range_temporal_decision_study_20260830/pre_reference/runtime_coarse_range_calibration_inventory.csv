@@ -1,0 +1,13 @@
+﻿interface,status,evidence,runtime_usable
+camera_K,MISSING_FOR_PERSON_SCENE,no PERSON-scene intrinsic matrix in known manifests or filename inventory,False
+camera_height,MISSING_FOR_PERSON_SCENE,no measured camera height record discovered,False
+camera_pitch_roll,MISSING_FOR_PERSON_SCENE,no measured pitch/roll record discovered,False
+camera_radar_extrinsic_R_t,MISSING_FOR_PERSON_SCENE,no camera-radar rigid transform discovered,False
+ground_plane,MISSING_FOR_PERSON_SCENE,no plane normal/offset or slope envelope discovered,False
+platform_pose_velocity,MISSING_FOR_PERSON_SCENE,no synchronized platform trajectory discovered,False
+optical_image_resolution,AVAILABLE_FROM_RAW_HEADERS,"{""R01ZF"": [3840, 2160], ""R02ZF"": [3840, 2160], ""R03ZF"": [3840, 2160]}",True
+optical_to_sar_nominal_timing,NOMINAL_INDEX_FPS_ZERO_OFFSET_UNVERIFIED,D:\profile\research\workspace\output\person_terg_r2_runtime_grounding_and_full_stream_hypothesis_management_20260830\pre_reference\full_stream_frame_registry_pre_reference.parquet,CONTEXT_ONLY
+sar_fan_metric_geometry,AVAILABLE_20M_RADIAL_RENDER_GEOMETRY,D:\profile\research\workspace\output\person_terg_r2_runtime_grounding_and_full_stream_hypothesis_management_20260830\pre_reference\full_stream_frame_registry_pre_reference.parquet,True
+optical_angular_corridor,AVAILABLE_SEARCH_SUPPORT,D:\profile\research\workspace\output\person_terg_r2_runtime_grounding_and_full_stream_hypothesis_management_20260830\pre_reference\full_stream_optical_shells_pre_reference.parquet,True
+historical_vehicle_azimuth_candidate,WITHHELD_AND_NOT_CAMERA_K,D:\profile\research\workspace\output\pseudocolor_azimuth_calibration_20260803\CALIBRATION_PROTOCOL.md,False
+historical_depthpro_vehicle_candidate,INCOMPATIBLE_LEGACY_VEHICLE_MODEL,D:\profile\research\workspace\tools\configs\depthpro_sar_center_calibration_candidate_2026-04-13.json,False

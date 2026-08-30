@@ -1,0 +1,2 @@
+﻿available_rows,bbox_bottom_vs_reference_range_spearman,bbox_height_vs_reference_range_spearman,runtime_range_interval_established,reason
+119,-0.3292674026138846,-0.7773471095450991,False,descriptors are post-reference audited only; missing geometry and unvalidated footpoint semantics prevent a runtime interval

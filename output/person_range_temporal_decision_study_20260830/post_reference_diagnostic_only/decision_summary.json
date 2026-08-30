@@ -1,0 +1,106 @@
+{
+  "plain_language_conclusion": "现有时序里有真实的 recurrent-family 支持，但 matched no-PERSON 轨迹也能产生同类结构；它尚不足以替代粗距离。当前更应该补一维可校准的保守粗距离，目标做到约 ±2 m，±3 m 可用但仍常保留多 family，±1 m 在中位数上没有新增收益。",
+  "scientific_states": [
+    "TEMPORAL_RECURRENT_GROUNDING_SIGNAL_PRESENT_BUT_NOT_PERSON_SPECIFIC_ENOUGH",
+    "COARSE_RANGE_STILL_DOMINANT",
+    "CALIBRATED_RANGE_FEASIBILITY_BLOCKED_BY_MISSING_GEOMETRY"
+  ],
+  "source_recurrent_unique_frames": 5,
+  "source_recurrent_occupancy": 1.0,
+  "matched_null_count": 6,
+  "matched_null_unique_frame_counts": [
+    0,
+    0,
+    0,
+    0,
+    11,
+    1
+  ],
+  "matched_null_empirical_tail_probability": 0.2857142857142857,
+  "source_reference_radial_support_retained_fraction": 1.0,
+  "trajectory_geometry": {
+    "source_theta_affine_median_abs_residual_deg": 0.405720471330131,
+    "null_theta_affine_residual_range_deg": [
+      0.16197502725180257,
+      0.953770847458447
+    ],
+    "absolute_depth_recovered": false
+  },
+  "runtime_coarse_range": {
+    "status": "BLOCKED_BY_MISSING_CALIBRATION",
+    "missing": [
+      "camera_K",
+      "camera_height",
+      "camera_pitch_roll",
+      "camera_radar_extrinsic_R_t",
+      "ground_plane",
+      "platform_pose_velocity"
+    ],
+    "footpoint_is_validated": false
+  },
+  "range_width_decision": {
+    "recommended_target": "CONSERVATIVE_HALF_WIDTH_ABOUT_2M",
+    "pm3_median_family_after": 2.0,
+    "pm2_median_family_after": 1.0,
+    "pm1_median_family_after": 1.0,
+    "more_precise_than_pm2_required_by_current_median": false
+  },
+  "strongest_range_counterexample": {
+    "scenario": "FULL_STREAM_P0",
+    "entity_kind": "RAW_FRAGMENT",
+    "run_id": "R01ZF",
+    "frame_index": 15,
+    "entity_id": "R01ZF_REUSED_R01ZF_PERSON001",
+    "target_id_oracle": "R01ZF_SARPERSON02",
+    "range_tolerance_m": 3.0,
+    "range_oracle_level": "COARSE_RANGE_PM_3M",
+    "N_region_before": 23,
+    "N_region_after": 7,
+    "N_family_before": 20,
+    "N_family_after": 7,
+    "A_candidate_px_before": 7334.0,
+    "A_candidate_px_after": 2934.0,
+    "A_candidate_m2_before": 8.389303725263357,
+    "A_candidate_m2_after": 3.3561790468942854,
+    "reference_range_retained": true,
+    "oracle_diagnostic_only": true,
+    "counterexample_kind": "PM3M_STILL_MULTIPLE_FAMILIES"
+  },
+  "near_exact_range_still_multiple_family_counterexample_exists": false,
+  "next_priority": "IMPLEMENT_AND_CALIBRATE_A_CONSERVATIVE_OPTIONAL_COARSE_RANGE_INTERVAL_INTERFACE",
+  "r04_accessed": false,
+  "pre_reference_freeze_root_sha256": "dbe75cc78d46752358279509491193b93feceadfee01054ec42a54c804eb4e7e",
+  "footpoint_descriptor_summary": {
+    "available_rows": 119,
+    "bbox_bottom_vs_reference_range_spearman": -0.3292674026138846,
+    "bbox_height_vs_reference_range_spearman": -0.7773471095450991,
+    "runtime_range_interval_established": false,
+    "reason": "descriptors are post-reference audited only; missing geometry and unvalidated footpoint semantics prevent a runtime interval"
+  },
+  "strongest_temporal_reference_counterexample": {
+    "trajectory_id": "R02ZF::R02ZF_REUSED_R02ZF_PERSON017",
+    "trajectory_kind": "NATURAL_OPTICAL_CORRIDOR",
+    "run_id": "R02ZF",
+    "strict_family_id": "P0MF_3D76EE7A60FF52E91451",
+    "admissible_frame_count": 28,
+    "unique_frame_count": 0,
+    "competing_frame_count": 28,
+    "temporal_span_frames": 28,
+    "trajectory_length_frames": 41,
+    "temporal_occupancy": 0.6829268292682927,
+    "reselection_after_gap_count": 0,
+    "ambiguous_bridge_count": 26,
+    "first_offset": 0,
+    "last_offset": 27,
+    "admissible_offsets": "0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27",
+    "unique_offsets": "",
+    "range_center_min_m": 7.365175160793943,
+    "range_center_max_m": 9.72810681528388,
+    "theta_center_min_deg": -53.95114707946777,
+    "theta_center_max_deg": -40.91548538208008,
+    "reference_frame_count": 3,
+    "reference_radial_support_retained_fraction": 0.0,
+    "reference_theta_support_retained_fraction": 0.0,
+    "reference_2d_support_retained_fraction": 0.0
+  }
+}

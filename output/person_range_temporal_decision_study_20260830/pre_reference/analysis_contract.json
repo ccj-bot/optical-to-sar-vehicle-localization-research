@@ -1,0 +1,24 @@
+{
+  "source": {
+    "run_id": "R03ZF",
+    "entity_id": "R03ZF_I01_T0004",
+    "frames": [
+      447,
+      494
+    ],
+    "key_frames": [
+      451,
+      457,
+      459,
+      466,
+      470
+    ]
+  },
+  "family_primary_semantics": "MUTUAL_DOMINANT_P0_COMPONENT_NO_OPTIONAL_UNION",
+  "b0_set_valued_family_burden_retained_as_secondary": true,
+  "null_selection": "full 48-frame time shifts within R03; zero nominal optical detected-PERSON frames; nearest plus nuisance-only lexicographic response-density/P0/boundary matches; no recurrence outcome or reference used",
+  "trajectory_expression": "descriptive affine corridor-to-family theta/range plus quadratic time smoothness; no absolute depth inversion without platform/camera geometry",
+  "range_interface": "AVAILABLE_RANGE_INTERVAL or UNAVAILABLE; never a PERSON rejection gate",
+  "manual_reference_loaded": false,
+  "r04_accessed": false
+}

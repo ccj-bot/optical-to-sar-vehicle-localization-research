@@ -1,0 +1,14 @@
+﻿parameter,value,authority_class,interpretation,claim_use,outcome_tuned_in_b0
+Q95 percentile,q95,A_REPRESENTATION_DEFINITION,Defines response-region representation; not calibrated PERSON confidence.,eligible for representation claims only,False
+Optical angular guard,+/-6 deg,C_ENGINEERING_POLICY,Legacy engineering corridor guard without independent physical calibration.,not eligible for strongest causal claim,False
+R2 context lookback,250 ms,C_ENGINEERING_POLICY,"Observation context, not synchronization uncertainty.",sensitivity only,False
+R2 fixed future context,100 ms,C_ENGINEERING_POLICY,Offline/fixed-lag observation context.,sensitivity only,False
+R2 P0 continuation,>=1 soft pixel,D_ARBITRARY_OR_LEGACY_THRESHOLD,Positive overlap is retained only as UPPER_POSSIBLE in B0.,not topology authority,False
+B0 optional edge,source-dominant OR destination-dominant,A_REPRESENTATION_DEFINITION,Pareto-compatible graded edge; ties retained.,versioned B0 family definition,False
+B0 lower edge,source-dominant AND destination-dominant,A_REPRESENTATION_DEFINITION,Mutual-dominance lower relation.,conservative core,False
+Optical observation count,>=2,D_ARBITRARY_OR_LEGACY_THRESHOLD,"Bookkeeping activation rule, not identity evidence.",not scientific discriminator,False
+Q95 foreground exclusion dilation,24px,C_ENGINEERING_POLICY,SAR-only conservative foreground exclusion for P0 fitting.,availability sensitivity; no PERSON reference,False
+P0 fit anchors,24,A_REPRESENTATION_DEFINITION,Frozen observability/comparability protocol.,interface availability only,False
+P0 holdout anchors,8,A_REPRESENTATION_DEFINITION,Frozen observability/comparability protocol.,interface availability only,False
+P0 spatial cells,10,A_REPRESENTATION_DEFINITION,Frozen spatial coverage requirement.,interface availability only,False
+Range +/-0.5/1/2/3m,fixed oracle sweep,A_REPRESENTATION_DEFINITION,Predeclared development diagnostic; never runtime input.,oracle upper-bound claims only,False

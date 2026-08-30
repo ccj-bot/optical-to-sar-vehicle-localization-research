@@ -1,0 +1,2 @@
+﻿oracle_stage,status,reason,invented_timing_truth
+ORACLE_TIMING,ORACLE_TIMING_UNAVAILABLE,NOMINAL_INDEX_FPS_ZERO_OFFSET_UNVERIFIED; only grid quantization is known and sync offset truth is unavailable.,False

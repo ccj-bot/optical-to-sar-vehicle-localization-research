@@ -1,0 +1,204 @@
+{
+  "validator": "PERSON_B0_INDEPENDENT_VALIDATOR_V1",
+  "status": "PASS",
+  "passed": 39,
+  "total": 39,
+  "failures": [],
+  "checks": [
+    {
+      "check": "required::README.md",
+      "passed": true,
+      "detail": "D:\\profile\\research\\workspace\\tasks\\person_b0_end_to_end_capability_and_bottleneck_study_20260830\\README.md"
+    },
+    {
+      "check": "required::run_person_b0.py",
+      "passed": true,
+      "detail": "D:\\profile\\research\\workspace\\tasks\\person_b0_end_to_end_capability_and_bottleneck_study_20260830\\run_person_b0.py"
+    },
+    {
+      "check": "required::REPORT.md",
+      "passed": true,
+      "detail": "D:\\profile\\research\\workspace\\output\\person_b0_end_to_end_capability_and_bottleneck_study_20260830\\REPORT.md"
+    },
+    {
+      "check": "required::summary.json",
+      "passed": true,
+      "detail": "D:\\profile\\research\\workspace\\output\\person_b0_end_to_end_capability_and_bottleneck_study_20260830\\summary.json"
+    },
+    {
+      "check": "required::full_stream_p0_availability.parquet",
+      "passed": true,
+      "detail": "D:\\profile\\research\\workspace\\output\\person_b0_end_to_end_capability_and_bottleneck_study_20260830\\pre_reference\\full_stream_p0_availability.parquet"
+    },
+    {
+      "check": "required::full_stream_p0_models.jsonl",
+      "passed": true,
+      "detail": "D:\\profile\\research\\workspace\\output\\person_b0_end_to_end_capability_and_bottleneck_study_20260830\\pre_reference\\full_stream_p0_models.jsonl"
+    },
+    {
+      "check": "required::full_stream_p0_graded_p0_q95_edges.parquet",
+      "passed": true,
+      "detail": "D:\\profile\\research\\workspace\\output\\person_b0_end_to_end_capability_and_bottleneck_study_20260830\\pre_reference\\full_stream_p0_graded_p0_q95_edges.parquet"
+    },
+    {
+      "check": "required::threshold_and_authority_audit.csv",
+      "passed": true,
+      "detail": "D:\\profile\\research\\workspace\\output\\person_b0_end_to_end_capability_and_bottleneck_study_20260830\\pre_reference\\threshold_and_authority_audit.csv"
+    },
+    {
+      "check": "required::combined_oracle_ladder.csv",
+      "passed": true,
+      "detail": "D:\\profile\\research\\workspace\\output\\person_b0_end_to_end_capability_and_bottleneck_study_20260830\\post_reference_oracle_diagnostic_only\\combined_oracle_ladder.csv"
+    },
+    {
+      "check": "required::oracle_timing_status.csv",
+      "passed": true,
+      "detail": "D:\\profile\\research\\workspace\\output\\person_b0_end_to_end_capability_and_bottleneck_study_20260830\\post_reference_oracle_diagnostic_only\\oracle_timing_status.csv"
+    },
+    {
+      "check": "p0_development_runs_only",
+      "passed": true,
+      "detail": "['R01ZF', 'R02ZF', 'R03ZF']"
+    },
+    {
+      "check": "p0_all_adjacent_pairs",
+      "passed": true,
+      "detail": "{'R01ZF': 494, 'R02ZF': 494, 'R03ZF': 494}"
+    },
+    {
+      "check": "p0_explicit_states",
+      "passed": true,
+      "detail": "['P0_AVAILABLE', 'P0_UNAVAILABLE', 'P0_UNRELIABLE_OR_AMBIGUOUS']"
+    },
+    {
+      "check": "p0_no_manual_reference",
+      "passed": true,
+      "detail": "all false"
+    },
+    {
+      "check": "p0_no_optical_identity",
+      "passed": true,
+      "detail": "all false"
+    },
+    {
+      "check": "p0_available_requires_two_improvements",
+      "passed": true,
+      "detail": "available=1438"
+    },
+    {
+      "check": "graded_edges_positive_upper_only",
+      "passed": true,
+      "detail": "edges=61981"
+    },
+    {
+      "check": "optional_is_dominance_union",
+      "passed": true,
+      "detail": "exact"
+    },
+    {
+      "check": "lower_is_mutual_dominance",
+      "passed": true,
+      "detail": "exact"
+    },
+    {
+      "check": "no_reference_in_graded_edges",
+      "passed": true,
+      "detail": "all false"
+    },
+    {
+      "check": "oracle_timing_unavailable",
+      "passed": true,
+      "detail": "[{\"oracle_stage\":\"ORACLE_TIMING\",\"status\":\"ORACLE_TIMING_UNAVAILABLE\",\"reason\":\"NOMINAL_INDEX_FPS_ZERO_OFFSET_UNVERIFIED; only grid quantization is known and sync offset truth is unavailable.\",\"invented_timing_truth\":false}]"
+    },
+    {
+      "check": "timing_named_context",
+      "passed": true,
+      "detail": "context terminology present"
+    },
+    {
+      "check": "one_pixel_not_topology_authority",
+      "passed": true,
+      "detail": "audited"
+    },
+    {
+      "check": "required_ladder_stages",
+      "passed": true,
+      "detail": "['CURRENT_RUNTIME', 'FULL_P0_PLUS_COARSE_RANGE::COARSE_RANGE_PM_0.5M', 'FULL_P0_PLUS_COARSE_RANGE::COARSE_RANGE_PM_1M', 'FULL_P0_PLUS_COARSE_RANGE::COARSE_RANGE_PM_2M', 'FULL_P0_PLUS_COARSE_RANGE::COARSE_RANGE_PM_3M', 'FULL_P0_PLUS_COARSE_RANGE::ORACLE_RANGE_NEAR_EXACT', 'FULL_P0_PLUS_ONE_CORRECT_ANCHOR', 'FULL_P0_PLUS_ORACLE_ID_PLUS_COARSE_RANGE::COARSE_RANGE_PM_0.5M', 'FULL_P0_PLUS_ORACLE_ID_PLUS_COARSE_RANGE::COARSE_RANGE_PM_1M', 'FULL_P0_PLUS_ORACLE_ID_PLUS_COARSE_RANGE::COARSE_RANGE_PM_2M', 'FULL_P0_PLUS_ORACLE_ID_PLUS_COARSE_RANGE::COARSE_RANGE_PM_3M', 'FULL_P0_PLUS_ORACLE_ID_PLUS_COARSE_RANGE::ORACLE_RANGE_NEAR_EXACT', 'FULL_P0_PLUS_ORACLE_ID_PLUS_ONE_ANCHOR_PLUS_PM3M_RANGE', 'FULL_STREAM_P0', 'ORACLE_OPTICAL_IDENTITY', 'ORACLE_OPTICAL_IDENTITY_EFFECT_MATCHED_FRAMES']"
+    },
+    {
+      "check": "range_levels_complete",
+      "passed": true,
+      "detail": "[0.05, 0.5, 1.0, 2.0, 3.0]"
+    },
+    {
+      "check": "range_reference_retained",
+      "passed": true,
+      "detail": "fraction=1.000000"
+    },
+    {
+      "check": "anchor_oracle_only",
+      "passed": true,
+      "detail": "rows=323"
+    },
+    {
+      "check": "report_direct_conclusion",
+      "passed": true,
+      "detail": "present"
+    },
+    {
+      "check": "report_nonclaims",
+      "passed": true,
+      "detail": "required boundaries present"
+    },
+    {
+      "check": "panels_A_to_H",
+      "passed": true,
+      "detail": "['01_b0_oracle_interface_ladder.png', '02_full_stream_p0_availability.png', '03_identity_and_anchor_gain_by_run.png', '04_coarse_range_oracle_sweep.png', 'panel_A_current_runtime_high_ambiguity.png', 'panel_B_full_p0_candidate_change.png', 'panel_C_oracle_optical_identity_effect.png', 'panel_D_one_anchor_relation_propagation.png', 'panel_E_coarse_range_pruning.png', 'panel_F_range_residual_ambiguity_counterexample.png', 'panel_G_r03_natural_singleton_vs_controls.png', 'panel_H_r02_early_to_late_bridge.png']"
+    },
+    {
+      "check": "pack_directory",
+      "passed": true,
+      "detail": "D:\\profile\\research\\workspace\\review_packs\\PERSON_B0_DEEP_REVIEW_PACK_20260830"
+    },
+    {
+      "check": "pack_zip",
+      "passed": true,
+      "detail": "D:\\profile\\research\\workspace\\review_packs\\PERSON_B0_DEEP_REVIEW_PACK_20260830.zip"
+    },
+    {
+      "check": "manifest_schema",
+      "passed": true,
+      "detail": "['relative_path', 'bytes', 'sha256', 'source_original_path', 'data_role', 'runtime_or_oracle_scope']"
+    },
+    {
+      "check": "manifest_hashes",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "check": "raw_sar_count",
+      "passed": true,
+      "detail": "67"
+    },
+    {
+      "check": "raw_optical_count",
+      "passed": true,
+      "detail": "54"
+    },
+    {
+      "check": "q95_count",
+      "passed": true,
+      "detail": "67"
+    },
+    {
+      "check": "zip_integrity",
+      "passed": true,
+      "detail": "None"
+    },
+    {
+      "check": "zip_contains_pack",
+      "passed": true,
+      "detail": "entries=242"
+    }
+  ]
+}

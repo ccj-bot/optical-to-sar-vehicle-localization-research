@@ -1,0 +1,7 @@
+﻿path,width_px,height_px,fps,frame_count,bytes,sha256,run_id,stream
+C:\research_raw\optical_sar_data\20260721data\SAR+光学视频\R01ZF_C.MP4,3840,2160,17.99996969533712,297,281881729,fc2edb4a73994e7675d56bfdb78edd4b24708ce469b89ef4668b20e4b4056317,R01ZF,optical
+C:\research_raw\optical_sar_data\20260721data\SAR+光学视频\R01ZF_C_R.MP4,1024,592,30.0,495,39264001,e9878ff30bb87790a461d1aa4542d61b3f6f5bdadaf0404b631c2ab3a56311d2,R01ZF,sar_pseudocolor
+C:\research_raw\optical_sar_data\20260721data\SAR+光学视频\R02ZF_C.MP4,3840,2160,17.9999664411512,298,319105530,3a6f49978da5a3c20aad1a2e84ff81e96e08564baa69f6917ef098ad4ab336fa,R02ZF,optical
+C:\research_raw\optical_sar_data\20260721data\SAR+光学视频\R02ZF_C_R.MP4,1024,592,30.0,495,40243887,566793326a1aaf3eec097656714fcabffb2c53b7322e4a3256f1e23f0f70f4eb,R02ZF,sar_pseudocolor
+C:\research_raw\optical_sar_data\20260721data\SAR+光学视频\R03ZF_C.MP4,3840,2160,17.9999664411512,298,286106180,32d8f50e60f012cca2c9d11cbaa03a5e3cc5be62f0b08a83d1138fb0df124e9d,R03ZF,optical
+C:\research_raw\optical_sar_data\20260721data\SAR+光学视频\R03ZF_C_R.MP4,1024,592,30.0,495,40173512,1468b6ee68e13857cbc009621d134d8ad0ced02f41aa92be60b849c7dc75a2c9,R03ZF,sar_pseudocolor

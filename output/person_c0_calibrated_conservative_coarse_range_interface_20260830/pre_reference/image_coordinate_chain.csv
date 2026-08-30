@@ -1,0 +1,16 @@
+﻿run_id,stage_index,stage,width_px,height_px,operation,coordinate_transform,evidence
+R01ZF,0,RAW_MP4_DECODED_FRAME,3840,2160,OpenCV VideoCapture decode,IDENTITY_PIXEL_GRID,C:\research_raw\optical_sar_data\20260721data\SAR+光学视频\R01ZF_C.MP4
+R01ZF,1,RESIZE,3840,2160,NONE_IN_EXPORT_VIDEO,IDENTITY,D:\profile\research\workspace\tasks\pseudocolor_labelstudio_prep_20260722\export_paired_frames.py
+R01ZF,2,CROP,3840,2160,NONE_IN_EXPORT_VIDEO,IDENTITY,D:\profile\research\workspace\tasks\pseudocolor_labelstudio_prep_20260722\export_paired_frames.py
+R01ZF,3,LETTERBOX,3840,2160,NONE_IN_EXPORT_VIDEO,IDENTITY,D:\profile\research\workspace\tasks\pseudocolor_labelstudio_prep_20260722\export_paired_frames.py
+R01ZF,4,STORED_OPTICAL_JPEG,3840,2160,cv2.imwrite JPEG quality 92,IDENTITY_PIXEL_GRID_WITH_LOSSY_ENCODING,D:\profile\research\workspace\tasks\pseudocolor_labelstudio_prep_20260722\export_paired_frames.py
+R02ZF,0,RAW_MP4_DECODED_FRAME,3840,2160,OpenCV VideoCapture decode,IDENTITY_PIXEL_GRID,C:\research_raw\optical_sar_data\20260721data\SAR+光学视频\R02ZF_C.MP4
+R02ZF,1,RESIZE,3840,2160,NONE_IN_EXPORT_VIDEO,IDENTITY,D:\profile\research\workspace\tasks\pseudocolor_labelstudio_prep_20260722\export_paired_frames.py
+R02ZF,2,CROP,3840,2160,NONE_IN_EXPORT_VIDEO,IDENTITY,D:\profile\research\workspace\tasks\pseudocolor_labelstudio_prep_20260722\export_paired_frames.py
+R02ZF,3,LETTERBOX,3840,2160,NONE_IN_EXPORT_VIDEO,IDENTITY,D:\profile\research\workspace\tasks\pseudocolor_labelstudio_prep_20260722\export_paired_frames.py
+R02ZF,4,STORED_OPTICAL_JPEG,3840,2160,cv2.imwrite JPEG quality 92,IDENTITY_PIXEL_GRID_WITH_LOSSY_ENCODING,D:\profile\research\workspace\tasks\pseudocolor_labelstudio_prep_20260722\export_paired_frames.py
+R03ZF,0,RAW_MP4_DECODED_FRAME,3840,2160,OpenCV VideoCapture decode,IDENTITY_PIXEL_GRID,C:\research_raw\optical_sar_data\20260721data\SAR+光学视频\R03ZF_C.MP4
+R03ZF,1,RESIZE,3840,2160,NONE_IN_EXPORT_VIDEO,IDENTITY,D:\profile\research\workspace\tasks\pseudocolor_labelstudio_prep_20260722\export_paired_frames.py
+R03ZF,2,CROP,3840,2160,NONE_IN_EXPORT_VIDEO,IDENTITY,D:\profile\research\workspace\tasks\pseudocolor_labelstudio_prep_20260722\export_paired_frames.py
+R03ZF,3,LETTERBOX,3840,2160,NONE_IN_EXPORT_VIDEO,IDENTITY,D:\profile\research\workspace\tasks\pseudocolor_labelstudio_prep_20260722\export_paired_frames.py
+R03ZF,4,STORED_OPTICAL_JPEG,3840,2160,cv2.imwrite JPEG quality 92,IDENTITY_PIXEL_GRID_WITH_LOSSY_ENCODING,D:\profile\research\workspace\tasks\pseudocolor_labelstudio_prep_20260722\export_paired_frames.py

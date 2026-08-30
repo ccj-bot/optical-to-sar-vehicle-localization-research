@@ -1,0 +1,262 @@
+{
+  "status": "PASS",
+  "passed": 51,
+  "total": 51,
+  "checks": [
+    {
+      "name": "required:calibration_asset_registry.csv",
+      "passed": true,
+      "detail": "D:\\profile\\research\\workspace\\output\\person_c0_calibrated_conservative_coarse_range_interface_20260830\\pre_reference\\calibration_asset_registry.csv"
+    },
+    {
+      "name": "required:asset_search_hits.csv",
+      "passed": true,
+      "detail": "D:\\profile\\research\\workspace\\output\\person_c0_calibrated_conservative_coarse_range_interface_20260830\\pre_reference\\asset_search_hits.csv"
+    },
+    {
+      "name": "required:asset_search_files.csv",
+      "passed": true,
+      "detail": "D:\\profile\\research\\workspace\\output\\person_c0_calibrated_conservative_coarse_range_interface_20260830\\pre_reference\\asset_search_files.csv"
+    },
+    {
+      "name": "required:acquisition_metadata.csv",
+      "passed": true,
+      "detail": "D:\\profile\\research\\workspace\\output\\person_c0_calibrated_conservative_coarse_range_interface_20260830\\pre_reference\\acquisition_metadata.csv"
+    },
+    {
+      "name": "required:image_coordinate_chain.csv",
+      "passed": true,
+      "detail": "D:\\profile\\research\\workspace\\output\\person_c0_calibrated_conservative_coarse_range_interface_20260830\\pre_reference\\image_coordinate_chain.csv"
+    },
+    {
+      "name": "required:single_frame_vs_temporal_requirement_matrix.csv",
+      "passed": true,
+      "detail": "D:\\profile\\research\\workspace\\output\\person_c0_calibrated_conservative_coarse_range_interface_20260830\\pre_reference\\single_frame_vs_temporal_requirement_matrix.csv"
+    },
+    {
+      "name": "required:range_interval_runtime.csv",
+      "passed": true,
+      "detail": "D:\\profile\\research\\workspace\\output\\person_c0_calibrated_conservative_coarse_range_interface_20260830\\pre_reference\\range_interval_runtime.csv"
+    },
+    {
+      "name": "required:visual_candidate_ledger.csv",
+      "passed": true,
+      "detail": "D:\\profile\\research\\workspace\\output\\person_c0_calibrated_conservative_coarse_range_interface_20260830\\pre_reference\\visual_candidate_ledger.csv"
+    },
+    {
+      "name": "required:audit_summary.json",
+      "passed": true,
+      "detail": "D:\\profile\\research\\workspace\\output\\person_c0_calibrated_conservative_coarse_range_interface_20260830\\pre_reference\\audit_summary.json"
+    },
+    {
+      "name": "required:pre_reference_freeze_manifest.csv",
+      "passed": true,
+      "detail": "D:\\profile\\research\\workspace\\output\\person_c0_calibrated_conservative_coarse_range_interface_20260830\\pre_reference\\pre_reference_freeze_manifest.csv"
+    },
+    {
+      "name": "required:pre_reference_freeze_summary.json",
+      "passed": true,
+      "detail": "D:\\profile\\research\\workspace\\output\\person_c0_calibrated_conservative_coarse_range_interface_20260830\\pre_reference\\pre_reference_freeze_summary.json"
+    },
+    {
+      "name": "required:REPORT.md",
+      "passed": true,
+      "detail": "D:\\profile\\research\\workspace\\output\\person_c0_calibrated_conservative_coarse_range_interface_20260830\\REPORT.md"
+    },
+    {
+      "name": "required:VISUAL_REVIEW.md",
+      "passed": true,
+      "detail": "D:\\profile\\research\\workspace\\output\\person_c0_calibrated_conservative_coarse_range_interface_20260830\\VISUAL_REVIEW.md"
+    },
+    {
+      "name": "required:PERSON_C0_MINIMUM_CALIBRATION_CHECKLIST.md",
+      "passed": true,
+      "detail": "D:\\profile\\research\\workspace\\output\\person_c0_calibrated_conservative_coarse_range_interface_20260830\\PERSON_C0_MINIMUM_CALIBRATION_CHECKLIST.md"
+    },
+    {
+      "name": "registry_columns",
+      "passed": true,
+      "detail": "['asset_name', 'asset_type', 'coordinate_frame', 'dependency', 'path', 'reason', 'resolution', 'runtime_available', 'semantics', 'source', 'status', 'usable_for_person_range', 'verified']"
+    },
+    {
+      "name": "registry_status_vocabulary",
+      "passed": true,
+      "detail": "['FOUND_AND_VERIFIED', 'FOUND_BUT_INCOMPATIBLE', 'FOUND_BUT_SEMANTICS_UNCERTAIN', 'MISSING']"
+    },
+    {
+      "name": "minimum_blockers_explicit",
+      "passed": true,
+      "detail": "['camera_calibration_target_records', 'camera_ground_homography', 'global_platform_pose', 'imu_odometry_slam_for_person_rig', 'local_ground_plane', 'metric_depth_sensor_or_runtime_depth', 'person_camera_distortion', 'person_camera_height', 'person_camera_intrinsics_K', 'person_camera_pitch_roll', 'person_camera_radar_R_t', 'runtime_footpoint_interval']"
+    },
+    {
+      "name": "global_pose_not_single_frame_required",
+      "passed": true,
+      "detail": "{'asset_name': 'global_platform_pose', 'asset_type': 'platform_state', 'status': 'MISSING', 'path': nan, 'source': 'broad current-source audit', 'coordinate_frame': 'world frame', 'resolution': 'pose/trajectory', 'runtime_available': 'NO', 'verified': 'YES_AUDIT', 'semantics': 'No synchronized platform world pose was found.', 'dependency': 'TEMPORAL_WORLD_REGISTRATION_REQUIREMENT', 'usable_for_person_range': 'NOT_REQUIRED_FOR_SINGLE_FRAME', 'reason': 'Global pose is not required for current-frame relative ray/ground range if local camera-ground-radar geometry is known.'}"
+    },
+    {
+      "name": "coordinate_chain_three_runs",
+      "passed": true,
+      "detail": "{'R01ZF': 5, 'R02ZF': 5, 'R03ZF': 5}"
+    },
+    {
+      "name": "coordinate_chain_native_resolution",
+      "passed": true,
+      "detail": "{(3840, 2160)}"
+    },
+    {
+      "name": "coordinate_chain_resize_none",
+      "passed": true,
+      "detail": "[{\"run_id\":\"R01ZF\",\"stage_index\":1,\"stage\":\"RESIZE\",\"width_px\":3840,\"height_px\":2160,\"operation\":\"NONE_IN_EXPORT_VIDEO\",\"coordinate_transform\":\"IDENTITY\",\"evidence\":\"D:\\\\profile\\\\research\\\\workspace\\\\tasks\\\\pseudocolor_labelstudio_prep_20260722\\\\export_paired_frames.py\"},{\"run_id\":\"R02ZF\",\"stage_index\":1,\"stage\":\"RESIZE\",\"width_px\":3840,\"height_px\":2160,\"operation\":\"NONE_IN_EXPORT_VIDEO\",\"coordinate_transform\":\"IDENTITY\",\"evidence\":\"D:\\\\profile\\\\research\\\\workspace\\\\tasks\\\\pseudocolor_labelstudio_prep_20260722\\\\export_paired_frames.py\"},{\"run_id\":\"R03ZF\",\"stage_index\":1,\"stage\":\"RESIZE\",\"width_px\":3840,\"height_px\":2160,\"operation\":\"NONE_IN_EXPORT_VIDEO\",\"coordinate_transform\":\"IDENTITY\",\"evidence\":\"D:\\\\profile\\\\research\\\\workspace\\\\tasks\\\\pseudocolor_labelstudio_prep_20260722\\\\export_paired_frames.py\"}]"
+    },
+    {
+      "name": "coordinate_chain_crop_none",
+      "passed": true,
+      "detail": "[{\"run_id\":\"R01ZF\",\"stage_index\":2,\"stage\":\"CROP\",\"width_px\":3840,\"height_px\":2160,\"operation\":\"NONE_IN_EXPORT_VIDEO\",\"coordinate_transform\":\"IDENTITY\",\"evidence\":\"D:\\\\profile\\\\research\\\\workspace\\\\tasks\\\\pseudocolor_labelstudio_prep_20260722\\\\export_paired_frames.py\"},{\"run_id\":\"R02ZF\",\"stage_index\":2,\"stage\":\"CROP\",\"width_px\":3840,\"height_px\":2160,\"operation\":\"NONE_IN_EXPORT_VIDEO\",\"coordinate_transform\":\"IDENTITY\",\"evidence\":\"D:\\\\profile\\\\research\\\\workspace\\\\tasks\\\\pseudocolor_labelstudio_prep_20260722\\\\export_paired_frames.py\"},{\"run_id\":\"R03ZF\",\"stage_index\":2,\"stage\":\"CROP\",\"width_px\":3840,\"height_px\":2160,\"operation\":\"NONE_IN_EXPORT_VIDEO\",\"coordinate_transform\":\"IDENTITY\",\"evidence\":\"D:\\\\profile\\\\research\\\\workspace\\\\tasks\\\\pseudocolor_labelstudio_prep_20260722\\\\export_paired_frames.py\"}]"
+    },
+    {
+      "name": "coordinate_chain_letterbox_none",
+      "passed": true,
+      "detail": "[{\"run_id\":\"R01ZF\",\"stage_index\":3,\"stage\":\"LETTERBOX\",\"width_px\":3840,\"height_px\":2160,\"operation\":\"NONE_IN_EXPORT_VIDEO\",\"coordinate_transform\":\"IDENTITY\",\"evidence\":\"D:\\\\profile\\\\research\\\\workspace\\\\tasks\\\\pseudocolor_labelstudio_prep_20260722\\\\export_paired_frames.py\"},{\"run_id\":\"R02ZF\",\"stage_index\":3,\"stage\":\"LETTERBOX\",\"width_px\":3840,\"height_px\":2160,\"operation\":\"NONE_IN_EXPORT_VIDEO\",\"coordinate_transform\":\"IDENTITY\",\"evidence\":\"D:\\\\profile\\\\research\\\\workspace\\\\tasks\\\\pseudocolor_labelstudio_prep_20260722\\\\export_paired_frames.py\"},{\"run_id\":\"R03ZF\",\"stage_index\":3,\"stage\":\"LETTERBOX\",\"width_px\":3840,\"height_px\":2160,\"operation\":\"NONE_IN_EXPORT_VIDEO\",\"coordinate_transform\":\"IDENTITY\",\"evidence\":\"D:\\\\profile\\\\research\\\\workspace\\\\tasks\\\\pseudocolor_labelstudio_prep_20260722\\\\export_paired_frames.py\"}]"
+    },
+    {
+      "name": "requirement_split",
+      "passed": true,
+      "detail": "{'quantity': 'global platform pose', 'single_frame_relative_range': 'NOT_REQUIRED', 'temporal_world_registration': 'REQUIRED_FOR_WORLD_REGISTERED_MULTI_FRAME_GEOMETRY', 'current_state': 'MISSING', 'why': 'single-frame relative range can stay in the local radar frame'}"
+    },
+    {
+      "name": "runtime_denominator",
+      "passed": true,
+      "detail": "823"
+    },
+    {
+      "name": "all_range_unavailable",
+      "passed": true,
+      "detail": "{'RANGE_UNAVAILABLE': 823}"
+    },
+    {
+      "name": "no_numeric_interval",
+      "passed": true,
+      "detail": "range columns must be blank"
+    },
+    {
+      "name": "angle_only_fallback_full_range",
+      "passed": true,
+      "detail": "0..20 m render support"
+    },
+    {
+      "name": "fallback_candidate_burden_equal",
+      "passed": true,
+      "detail": "no invented contraction"
+    },
+    {
+      "name": "no_person_range_rejection",
+      "passed": true,
+      "detail": "range unavailable cannot reject"
+    },
+    {
+      "name": "no_manual_reference_runtime",
+      "passed": true,
+      "detail": "GT blind"
+    },
+    {
+      "name": "visual_states_complete",
+      "passed": true,
+      "detail": "['FOOTPOINT_OBSERVABLE', 'FOOTPOINT_PARTIAL', 'FOOTPOINT_CENSORED', 'FOOTPOINT_AMBIGUOUS', 'FOOTPOINT_CENSORED', 'FOOTPOINT_UNAVAILABLE']"
+    },
+    {
+      "name": "bbox_bottom_not_exact",
+      "passed": true,
+      "detail": "all visual rows"
+    },
+    {
+      "name": "figure:01_verified_hardware_coordinate_geometry.png",
+      "passed": true,
+      "detail": "(1052, 2042, 3)"
+    },
+    {
+      "name": "figure:02_footpoint_ray_bundle_range_interval_blocked.png",
+      "passed": true,
+      "detail": "(1049, 2007, 3)"
+    },
+    {
+      "name": "figure:03_angle_only_vs_angle_plus_range_fallback.png",
+      "passed": true,
+      "detail": "(990, 2700, 3)"
+    },
+    {
+      "name": "figure:04_interval_width_candidate_burden_blocked.png",
+      "passed": true,
+      "detail": "(990, 2520, 3)"
+    },
+    {
+      "name": "figure:05_clean_ambiguous_censored_footpoint_cases.png",
+      "passed": true,
+      "detail": "(3240, 2340, 3)"
+    },
+    {
+      "name": "freeze_files_intact",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "name": "freeze_root_hash",
+      "passed": true,
+      "detail": "f0da23038b95f26d5e881d00e6390b9245f25dc9dbbb464a9cc0b7fb5e14c61b vs f0da23038b95f26d5e881d00e6390b9245f25dc9dbbb464a9cc0b7fb5e14c61b"
+    },
+    {
+      "name": "freeze_no_reference",
+      "passed": true,
+      "detail": "{'status': 'PRE_REFERENCE_FROZEN', 'file_count': 11, 'root_sha256': 'f0da23038b95f26d5e881d00e6390b9245f25dc9dbbb464a9cc0b7fb5e14c61b', 'manual_reference_loaded': False, 'r04_accessed': False}"
+    },
+    {
+      "name": "no_r04_input_paths",
+      "passed": true,
+      "detail": "registry and hit paths"
+    },
+    {
+      "name": "no_old_work_input_paths",
+      "passed": true,
+      "detail": "registry and hit paths"
+    },
+    {
+      "name": "report_direct_answer",
+      "passed": true,
+      "detail": "first answer"
+    },
+    {
+      "name": "report_nonclaims",
+      "passed": true,
+      "detail": "boundary statement"
+    },
+    {
+      "name": "checklist_operational",
+      "passed": true,
+      "detail": "minimum field protocol"
+    },
+    {
+      "name": "no_reference_dependency_in_runner",
+      "passed": true,
+      "detail": "runner must stay pre-reference"
+    },
+    {
+      "name": "pack_exists",
+      "passed": true,
+      "detail": "D:\\profile\\research\\workspace\\review_packs\\PERSON_C0_COARSE_RANGE_CALIBRATION_REVIEW_PACK_20260830.zip"
+    },
+    {
+      "name": "pack_zip_integrity",
+      "passed": true,
+      "detail": "None"
+    },
+    {
+      "name": "pack_required_content",
+      "passed": true,
+      "detail": "42"
+    },
+    {
+      "name": "pack_not_tracked",
+      "passed": true,
+      "detail": "error: pathspec 'review_packs/PERSON_C0_COARSE_RANGE_CALIBRATION_REVIEW_PACK_20260830.zip' did not match any file(s) known to git\nDid you forget to 'git add'?\n"
+    }
+  ]
+}

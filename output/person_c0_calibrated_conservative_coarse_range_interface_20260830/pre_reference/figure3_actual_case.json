@@ -1,0 +1,8 @@
+{
+  "run_id": "R02ZF",
+  "frame_index": 421,
+  "hypothesis_id": "R02ZF_REUSED_R02ZF_PERSON100014",
+  "sar_image_path": "C:\\research_raw\\optical_sar_data\\20260721data\\derived_frames\\pseudocolor_labelstudio_prep_20260722\\frames\\sar_pseudocolor\\R02ZF\\frame_000421_t014033ms.jpg",
+  "q95_mask_path": "D:\\profile\\research\\workspace\\output\\person_terg_r2_runtime_grounding_and_full_stream_hypothesis_management_20260830\\pre_reference\\full_stream_q95_masks\\R02ZF_SARF000421.npz",
+  "candidate_region_count": 18
+}

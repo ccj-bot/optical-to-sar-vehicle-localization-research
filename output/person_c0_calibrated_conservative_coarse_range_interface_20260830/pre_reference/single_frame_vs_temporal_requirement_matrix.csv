@@ -1,0 +1,9 @@
+﻿quantity,single_frame_relative_range,temporal_world_registration,current_state,why
+camera intrinsics K and distortion state,REQUIRED,REQUIRED_IF_IMAGE_RAYS_USED,MISSING,maps a stored pixel interval to a camera ray bundle
+verified raw-to-stored pixel transform,REQUIRED,REQUIRED_IF_IMAGE_RAYS_USED,FOUND_AND_VERIFIED_IDENTITY,K must correspond to the current 3840x2160 pixel frame
+footpoint observation interval and state,REQUIRED,REQUIRED_PER_FRAME,MISSING_RUNTIME_INTERFACE,bbox bottom is not an exact ground contact
+camera height and attitude relative to local ground,REQUIRED_UNLESS_EQUIVALENT_HOMOGRAPHY,REQUIRED_OR_TIME_VARYING_ESTIMATE,MISSING,sets ray/plane intersection geometry
+camera-radar rigid transform,REQUIRED_FOR_RADAR_RELATIVE_RANGE,REQUIRED,MISSING,expresses intersection in the radar frame
+local ground plane or bounded slope envelope,REQUIRED,REQUIRED_OR_ESTIMATED,MISSING,provides the ray intersection surface
+global platform pose,NOT_REQUIRED,REQUIRED_FOR_WORLD_REGISTERED_MULTI_FRAME_GEOMETRY,MISSING,single-frame relative range can stay in the local radar frame
+verified inter-stream synchronization,NOT_REQUIRED_IF_SAME_INSTANT_OBSERVATION_IS_DIRECT,REQUIRED,NOMINAL_ONLY,motion compensation and cross-frame geometry need clock alignment

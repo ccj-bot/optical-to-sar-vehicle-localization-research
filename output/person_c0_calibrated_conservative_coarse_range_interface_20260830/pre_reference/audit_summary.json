@@ -1,0 +1,24 @@
+{
+  "status": "CALIBRATION_ASSETS_INSUFFICIENT_FOR_RUNTIME_RANGE_PROTOTYPE",
+  "source_commit": "c47a68d69866e4b366e7ab65261030751de85e11",
+  "r04_accessed": false,
+  "old_work_accessed": false,
+  "manual_sar_reference_loaded": false,
+  "runtime_range_available_rows": 0,
+  "runtime_range_unavailable_rows": 823,
+  "missing_single_frame_assets": [
+    "person_camera_intrinsics_K",
+    "person_camera_distortion",
+    "person_camera_height",
+    "person_camera_pitch_roll",
+    "person_camera_radar_R_t",
+    "local_ground_plane",
+    "runtime_footpoint_interval",
+    "camera_calibration_target_records",
+    "metric_depth_sensor_or_runtime_depth",
+    "camera_ground_homography"
+  ],
+  "global_platform_pose_required_for_single_frame_relative_range": false,
+  "asset_search_hit_count": 72,
+  "asset_search_file_count": 15
+}

@@ -1,0 +1,29 @@
+{
+  "broad_filename_candidate_scan": {
+    "roots": [
+      "active workspace",
+      "current raw data junction",
+      "related optical-SAR repositories"
+    ],
+    "excluded": [
+      "old_work",
+      "archive",
+      "review packs",
+      "R04-named paths",
+      "virtual environments"
+    ],
+    "candidate_path_count": 282,
+    "interpretation": "metadata-only broad discovery completed before the reproducible focused semantic scan"
+  },
+  "strong_intrinsic_text_scan": {
+    "text_file_count": 8644,
+    "matching_file_count": 4,
+    "matching_line_count": 4,
+    "result": "no numeric PERSON camera K; matches were negative audit/inventory statements or search code"
+  },
+  "focused_semantic_scan": {
+    "hit_count": 72,
+    "file_count": 15,
+    "result": "candidate files opened and classified by scene provenance, coordinate semantics, and runtime legality"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "run_id": "R02ZF",
+  "boundary_names_are_physical_identity_neutral": true,
+  "boundary_stats_full_sequence": {
+    "STATIC_BOUNDARY_A": {
+      "available_frames": 353,
+      "total_frames": 495,
+      "availability_fraction": 0.7131313131313132,
+      "median_d_center_m": 4.849997520446777,
+      "p90_temporal_absdev_m": 0.10000038146972656,
+      "median_response_thickness_m": 0.14999985694885254
+    },
+    "STATIC_BOUNDARY_B": {
+      "available_frames": 173,
+      "total_frames": 495,
+      "availability_fraction": 0.34949494949494947,
+      "median_d_center_m": 7.299994945526123,
+      "p90_temporal_absdev_m": 0.289999675750733,
+      "median_response_thickness_m": 0.19999933242797852
+    },
+    "STATIC_BOUNDARY_C": {
+      "available_frames": 296,
+      "total_frames": 495,
+      "availability_fraction": 0.597979797979798,
+      "median_d_center_m": 12.39999008178711,
+      "p90_temporal_absdev_m": 0.19999980926513672,
+      "median_response_thickness_m": 0.1999988555908203
+    }
+  },
+  "pair_available_frames": 122,
+  "pair_total_frames": 495,
+  "pair_availability_fraction": 0.24646464646464647,
+  "pair_delta_r_median_m": 2.4999977350234985,
+  "pair_delta_r_temporal_p90_absdev_m": 0.24999964237213135,
+  "pair_delta_r_median_theta_p90_absdev_m": 0.5424995183944703,
+  "pair_ordering_a_before_b_median_fraction": 1.0,
+  "longest_stable_segment": [
+    330,
+    335
+  ],
+  "longest_stable_segment_length": 6,
+  "stable_segment_pair_delta_r_median_m": 2.512497305870056,
+  "stable_segment_pair_delta_r_p90_temporal_absdev_m": 0.09999990463256836,
+  "p0_compensation": {
+    "STATIC_BOUNDARY_A": {
+      "available_pairs": 485,
+      "raw_adjacent_abs_delta_median": 0.0,
+      "p0_compensated_abs_residual_median": 0.010793368877417109,
+      "p0_compensated_abs_residual_p90": 0.08615301783976186
+    },
+    "STATIC_BOUNDARY_B": {
+      "available_pairs": 485,
+      "raw_adjacent_abs_delta_median": 0.05000019073486328,
+      "p0_compensated_abs_residual_median": 0.052720254385199894,
+      "p0_compensated_abs_residual_p90": 0.18626042006807922
+    },
+    "STATIC_BOUNDARY_C": {
+      "available_pairs": 485,
+      "raw_adjacent_abs_delta_median": 0.05000019073486328,
+      "p0_compensated_abs_residual_median": 0.04417101250805544,
+      "p0_compensated_abs_residual_p90": 0.12429430784646166
+    }
+  },
+  "pair_separation_is_invariant_to_common_p0_translation": true,
+  "person_reference_used": false,
+  "r04_accessed": false
+}

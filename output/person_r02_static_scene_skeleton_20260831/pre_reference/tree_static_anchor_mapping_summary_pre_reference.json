@@ -1,0 +1,15 @@
+{
+  "accepted_static_anchor_count": 0,
+  "accepted_static_anchor_ids": [],
+  "median_theta_residual_deg": NaN,
+  "p90_abs_theta_residual_deg": NaN,
+  "diagnostic_fit_slope_deg_per_px": NaN,
+  "diagnostic_fit_intercept_deg": NaN,
+  "diagnostic_delta_a_deg_per_px": NaN,
+  "diagnostic_delta_b_deg": NaN,
+  "leave_one_anchor_out_available": false,
+  "current_azimuth_mapping_verdict": "STATIC_ANCHORS_INSUFFICIENT_TO_JUDGE",
+  "mapping_update_authorized": false,
+  "person_reference_used": false,
+  "r04_accessed": false
+}

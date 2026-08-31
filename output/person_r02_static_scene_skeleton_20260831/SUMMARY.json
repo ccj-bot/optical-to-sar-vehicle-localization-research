@@ -1,0 +1,29 @@
+{
+  "verdict": "PARALLEL_BOUNDARY_PAIR_SUPPORTED_IN_STABLE_SUBSEGMENTS_PHYSICAL_STRIP_IDENTITY_PLAUSIBLE_NOT_UNIQUE",
+  "tree_verdict": "VISUAL_TREE_TO_SAR_POINT_NOT_TEMPORALLY_CONFIRMED",
+  "current_azimuth_mapping": "STATIC_ANCHORS_INSUFFICIENT_TO_JUDGE",
+  "pair_delta_r_median_m": 2.4999977350234985,
+  "pair_delta_r_temporal_p90_absdev_m": 0.24999964237213135,
+  "longest_stable_segment": [
+    330,
+    335
+  ],
+  "stable_segment_pair_delta_r_median_m": 2.512497305870056,
+  "visual_tree_count": 3,
+  "confirmed_static_anchor_count": 0,
+  "core_case": {
+    "optical_frame": 120,
+    "sar_frame": 200,
+    "timestamp_ms": 6667
+  },
+  "boundary_c_interpretation": "THIRD_PERSISTENT_SCENE_LAYER_IDENTITY_COMPOSITE",
+  "person_reference_used": false,
+  "r04_accessed": false,
+  "review_pack_path": "D:\\profile\\research\\workspace\\review_packs\\PERSON_R02_STATIC_SCENE_SKELETON_REVIEW_PACK_20260831.zip",
+  "review_pack_bytes": 296514783,
+  "review_pack_sha256": "fdc32727bfff78037fd7718797f388d9523c2e2fa295aee8a054589745c6b62a",
+  "review_pack_entry_count": 134,
+  "validation_status": "PASS",
+  "validation_pass_count": 17,
+  "validation_total_count": 17
+}

@@ -1,0 +1,24 @@
+{
+  "run_id": "R02ZF",
+  "optical_frames": 298,
+  "sar_frames": 495,
+  "optical_time_span_ms": [
+    0,
+    16500
+  ],
+  "sar_time_span_ms": [
+    0,
+    16467
+  ],
+  "max_abs_nearest_timestamp_residual_ms": 23,
+  "core_case": {
+    "optical_frame_index": 120,
+    "optical_timestamp_ms": 6667,
+    "sar_frame_index": 200,
+    "sar_timestamp_ms": 6667,
+    "timestamp_residual_ms": 0
+  },
+  "sync_status": "NOMINAL_INDEX_FPS_ZERO_OFFSET_UNVERIFIED",
+  "person_reference_used": false,
+  "r04_accessed": false
+}

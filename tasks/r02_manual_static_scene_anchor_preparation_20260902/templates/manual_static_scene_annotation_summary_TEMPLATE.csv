@@ -1,0 +1,1 @@
+run_id,optical_frame_index,optical_timestamp_ms,sar_frame_index,sar_timestamp_ms,modality,object_id,object_type,geometry_type,points,confidence_state,user_comment,created_at

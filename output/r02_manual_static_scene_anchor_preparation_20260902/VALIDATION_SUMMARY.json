@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "pass_count": 18,
+  "fail_count": 0,
+  "total_count": 18,
+  "batch_pair_count": 18,
+  "core_optical_f120_included": true,
+  "real_user_annotation_created": false,
+  "seed_propagation_run": false,
+  "person_experiment_run": false,
+  "r04_accessed": false
+}

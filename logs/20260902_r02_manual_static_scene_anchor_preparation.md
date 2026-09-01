@@ -31,3 +31,17 @@
 - OpenCV GUI backend is `WIN32UI`; a real window open/render/close smoke test passed.
 - Preview: `output/r02_manual_static_scene_anchor_preparation_20260902/ANNOTATOR_PREVIEW.png`.
 - No seed propagation, boundary fitting, tree correspondence experiment, PERSON experiment, or R04 access was performed.
+
+## Simplified browser revision
+
+- Continued from pushed baseline `d01b26d2e5318309c67ef2604985c545ae8d23e6` after the user reported that the OpenCV workflow felt awkward and too complex.
+- Replaced the main launcher with a localhost-only browser interface while retaining the original OpenCV tool as `START_R02_STATIC_ANNOTATION_LEGACY.bat`.
+- The default workflow now exposes only four guided steps: optical near, optical far, SAR near, and SAR far. Completing an item advances automatically; completing SAR far advances to the next pair.
+- The active modality expands automatically. Mouse-wheel zoom, space-drag panning, and direct polyline-node dragging provide precise editing in original-image coordinates.
+- Tree tools are collapsed and optional. `UNCERTAIN`, `NOT_VISIBLE`, and `TREE_UNKNOWN` remain first-class saved states. `AUTOMATIC_HINT` remains disabled by default.
+- A real headless Microsoft Edge run exercised the four steps, modality expansion, point creation, node drag, wheel zoom, autosave, and next-pair advance. Browser console and page errors were empty after adding a data-URL favicon.
+- Browser preview: `output/r02_manual_static_scene_anchor_preparation_20260902/BROWSER_ANNOTATOR_PREVIEW.png` (`1600x1048`).
+- Final validation passed `22/22`, including the localhost API and real-browser preview checks.
+- The real user JSONL remained exactly one event before and after all checks, with SHA-256 `878F750369C44266F768954841D6AFDBAD44A49A534BD304535878F97CB36DAB`.
+- Browser interaction writes used only `output/r02_manual_static_scene_anchor_preparation_20260902/browser_qa_sandbox`; that sandbox and `user_annotations` are excluded from staging.
+- The QA server was shut down after verification. No seed propagation, boundary fitting, tree correspondence experiment, PERSON experiment, or R04 access was performed.

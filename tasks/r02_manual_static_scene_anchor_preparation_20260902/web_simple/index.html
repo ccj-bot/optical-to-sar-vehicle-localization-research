@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>R02 静态场景精确标注</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <div class="eyebrow">R02ZF · MANUAL STATIC SCENE</div>
+      <h1>边界优先精确标注</h1>
+    </div>
+    <div id="saveState" class="save-state saved">已自动保存</div>
+  </header>
+
+  <section class="pairbar">
+    <button id="previousPair" class="secondary">← 上一对</button>
+    <div class="pair-info">
+      <strong id="pairProgress">第 1 / 18 对</strong>
+      <span id="timestampInfo">载入中…</span>
+    </div>
+    <button id="skipPair" class="secondary warn">跳过这一对</button>
+    <button id="nextPair" class="secondary">下一对 →</button>
+  </section>
+
+  <main>
+    <section class="guided-card">
+      <div class="section-title">
+        <span>只做四步边界</span>
+        <small>画完按 Enter，自动进入下一项</small>
+      </div>
+      <div id="boundarySteps" class="steps">
+        <button data-object="OPT_BOUNDARY_NEAR"><b>1</b><span>光学 · 近边</span><em>道路侧</em></button>
+        <button data-object="OPT_BOUNDARY_FAR"><b>2</b><span>光学 · 远边</span><em>同一结构另一侧</em></button>
+        <button data-object="SAR_BOUNDARY_NEAR"><b>3</b><span>SAR · 近边</span><em>由你确认身份</em></button>
+        <button data-object="SAR_BOUNDARY_FAR"><b>4</b><span>SAR · 远边</span><em>由你确认身份</em></button>
+      </div>
+    </section>
+
+    <section id="workspace" class="workspace active-optical">
+      <article id="opticalCard" class="viewer-card active">
+        <div class="viewer-head">
+          <div><strong>OPTICAL</strong><span id="opticalFrame"></span></div>
+          <div class="viewer-actions"><span id="opticalCoord">x —, y —</span><button data-fit="OPTICAL">适配</button></div>
+        </div>
+        <canvas id="opticalCanvas"></canvas>
+      </article>
+      <article id="sarCard" class="viewer-card">
+        <div class="viewer-head">
+          <div><strong>SAR</strong><span id="sarFrame"></span></div>
+          <div class="viewer-actions"><span id="sarCoord">x —, y —</span><button data-fit="SAR">适配</button></div>
+        </div>
+        <canvas id="sarCanvas"></canvas>
+      </article>
+    </section>
+
+    <section class="controlbar">
+      <div class="control-group confidence-group">
+        <span class="label">把握程度</span>
+        <button data-confidence="CONFIDENT" class="selected">确定</button>
+        <button data-confidence="LIKELY">大概率</button>
+        <button id="uncertainObject">无法判断</button>
+        <button id="notVisibleObject">不可见</button>
+      </div>
+      <div class="control-group edit-group">
+        <button id="undoPoint">撤销一点</button>
+        <button id="clearObject" class="danger-quiet">清空重画</button>
+        <button id="finishObject" class="primary">完成这一条（Enter）</button>
+      </div>
+      <label class="hint-toggle"><input id="hintToggle" type="checkbox"><span>显示自动提示</span><small>默认关闭，仅作 AUTOMATIC_HINT</small></label>
+    </section>
+
+    <details class="tree-panel">
+      <summary>可选：需要时再标树 / 杆</summary>
+      <div class="tree-grid">
+        <button data-object="OPT_STATIC_TREE_A">光学 Tree A</button>
+        <button data-object="OPT_STATIC_TREE_B">光学 Tree B</button>
+        <button data-object="OPT_STATIC_TREE_C">光学 Tree C</button>
+        <button data-object="SAR_STATIC_POINT_TREE_A">SAR Tree A</button>
+        <button data-object="SAR_STATIC_POINT_TREE_B">SAR Tree B</button>
+        <button data-object="SAR_STATIC_POINT_TREE_C">SAR Tree C</button>
+        <button id="treeUnknown" class="wide">当前 SAR 树：不知道对应哪个亮点（TREE_UNKNOWN）</button>
+      </div>
+    </details>
+
+    <section class="helpbar">
+      <span><b>画线：</b>左键加点，Enter 完成</span>
+      <span><b>精调：</b>拖动已有节点</span>
+      <span><b>缩放：</b>滚轮</span>
+      <span><b>平移：</b>按住空格拖动</span>
+      <span><b>浏览：</b>← / →</span>
+      <button id="saveAndExit">保存并退出</button>
+    </section>
+  </main>
+
+  <div id="toast" class="toast">准备完成</div>
+  <script src="app.js"></script>
+</body>
+</html>

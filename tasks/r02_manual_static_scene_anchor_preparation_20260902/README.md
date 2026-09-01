@@ -15,9 +15,19 @@ The V1 batch contains 18 timestamp-nearest pairs. It includes the exact OPT F120
 
 ## Entry point
 
-Double-click `START_R02_STATIC_ANNOTATION.bat`.
+Double-click `START_R02_STATIC_ANNOTATION.bat`. It starts a localhost-only Python server and opens the simplified browser UI.
 
-The batch file uses `D:\MINICONDA\envs\py311\python.exe` and starts `r02_static_scene_annotator.py` without requiring command-line input.
+The batch file uses `D:\MINICONDA\envs\py311\python.exe` and starts `r02_static_scene_browser_server.py` without requiring command-line input. The earlier OpenCV interface remains available through `START_R02_STATIC_ANNOTATION_LEGACY.bat`.
+
+## Simplified V2 interaction
+
+- Default workflow contains only four guided boundary steps.
+- The active modality receives the larger panel automatically.
+- Mouse-wheel zoom and space-drag panning preserve original-image coordinates.
+- Completed polyline vertices can be dragged directly for precise correction.
+- Completing a boundary advances automatically; completing SAR far advances to the next pair.
+- Tree tools are collapsed and optional.
+- Existing append-only JSONL events are loaded without migration or overwrite.
 
 ## Inputs and outputs
 

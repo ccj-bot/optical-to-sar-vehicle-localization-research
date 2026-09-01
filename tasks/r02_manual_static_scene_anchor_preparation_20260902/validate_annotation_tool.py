@@ -21,8 +21,11 @@ MANIFEST = OUT / "R02_STATIC_SCENE_ANNOTATION_BATCH_V1_MANIFEST.json"
 RESULTS = OUT / "VALIDATION_RESULTS.csv"
 SUMMARY = OUT / "VALIDATION_SUMMARY.json"
 PREVIEW = OUT / "ANNOTATOR_PREVIEW.png"
+BROWSER_PREVIEW = OUT / "BROWSER_ANNOTATOR_PREVIEW.png"
 OUTPUT_MANIFEST = OUT / "OUTPUT_MANIFEST.csv"
 APP_PATH = TASK / "r02_static_scene_annotator.py"
+SERVER_PATH = TASK / "r02_static_scene_browser_server.py"
+USER_EVENTS = OUT / "user_annotations" / "manual_static_scene_annotations.jsonl"
 FILENAME_RE = re.compile(r"frame_(\d+)_t(\d+)ms\.jpg$", re.IGNORECASE)
 
 SAR_DIR = Path(
@@ -49,6 +52,16 @@ def load_app():
     return module
 
 
+def load_server():
+    spec = importlib.util.spec_from_file_location("r02_static_scene_browser_server_validation", SERVER_PATH)
+    if spec is None or spec.loader is None:
+        raise ImportError(SERVER_PATH)
+    module = importlib.util.module_from_spec(spec)
+    sys.modules[spec.name] = module
+    spec.loader.exec_module(module)
+    return module
+
+
 def sar_inventory() -> list[tuple[int, int, str]]:
     rows = []
     for path in sorted(SAR_DIR.glob("*.jpg")):
@@ -65,6 +78,7 @@ def write_output_manifest() -> None:
         RESULTS,
         SUMMARY,
         PREVIEW,
+        BROWSER_PREVIEW,
     ]
     rows = []
     for path in paths:
@@ -83,7 +97,10 @@ def write_output_manifest() -> None:
 
 
 def main() -> None:
+    user_event_hash_before = sha256_file(USER_EVENTS) if USER_EVENTS.exists() else None
+    user_event_count_before = len(USER_EVENTS.read_text(encoding="utf-8").splitlines()) if USER_EVENTS.exists() else 0
     app = load_app()
+    server_module = load_server()
     batch = pd.read_csv(BATCH)
     manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
     sar_rows = sar_inventory()
@@ -281,16 +298,18 @@ def main() -> None:
         encoded.tofile(PREVIEW)
 
     launcher = (TASK / "START_R02_STATIC_ANNOTATION.bat").read_text(encoding="utf-8")
+    legacy_launcher = (TASK / "START_R02_STATIC_ANNOTATION_LEGACY.bat").read_text(encoding="utf-8")
     check(
         "ONE_CLICK_LAUNCHER_FIXED_PY311",
         r"D:\MINICONDA\envs\py311\python.exe" in launcher
-        and "r02_static_scene_annotator.py" in launcher,
+        and "r02_static_scene_browser_server.py" in launcher
+        and "r02_static_scene_annotator.py" in legacy_launcher,
         launcher.strip().splitlines(),
-        [r"D:\MINICONDA\envs\py311\python.exe", "r02_static_scene_annotator.py"],
+        [r"D:\MINICONDA\envs\py311\python.exe", "r02_static_scene_browser_server.py", "legacy OpenCV fallback"],
         "START_R02_STATIC_ANNOTATION.bat",
     )
     guide = (TASK / "HOW_TO_ANNOTATE_R02_STATIC_SCENE.md").read_text(encoding="utf-8")
-    required_guide_terms = ["START_R02_STATIC_ANNOTATION.bat", "Enter", "Backspace", "Delete", "TREE_UNKNOWN", "自动保存", "跳过"]
+    required_guide_terms = ["START_R02_STATIC_ANNOTATION.bat", "Enter", "Backspace", "Delete", "TREE_UNKNOWN", "自动保存", "滚轮缩放", "节点", "跳过"]
     missing_guide_terms = [term for term in required_guide_terms if term not in guide]
     check(
         "ONE_PAGE_GUIDE_HAS_REQUIRED_ACTIONS",
@@ -298,6 +317,45 @@ def main() -> None:
         {"missing": missing_guide_terms, "line_count": len(guide.splitlines())},
         {"missing": [], "line_count": "<=45"},
         "HOW_TO_ANNOTATE_R02_STATIC_SCENE.md",
+    )
+    browser_html = (TASK / "web_simple" / "index.html").read_text(encoding="utf-8")
+    browser_js = (TASK / "web_simple" / "app.js").read_text(encoding="utf-8")
+    browser_css = (TASK / "web_simple" / "styles.css").read_text(encoding="utf-8")
+    required_browser_terms = ["四步边界", "无法判断", "不可见", "TREE_UNKNOWN", "保存并退出"]
+    missing_browser_terms = [term for term in required_browser_terms if term not in browser_html]
+    check(
+        "SIMPLIFIED_BROWSER_UI_ASSETS",
+        not missing_browser_terms
+        and "onWheel" in browser_js
+        and "dragVertex" in browser_js
+        and "active-optical" in browser_css
+        and "active-sar" in browser_css,
+        {"missing_html_terms": missing_browser_terms, "wheel_zoom": "onWheel" in browser_js, "vertex_drag": "dragVertex" in browser_js},
+        {"missing_html_terms": [], "wheel_zoom": True, "vertex_drag": True},
+        "web_simple/index.html + app.js + styles.css",
+    )
+    browser_preview = cv2.imread(str(BROWSER_PREVIEW)) if BROWSER_PREVIEW.exists() else None
+    browser_preview_shape = list(browser_preview.shape) if browser_preview is not None else None
+    check(
+        "REAL_BROWSER_PREVIEW_CAPTURED",
+        browser_preview is not None
+        and browser_preview.shape[1] >= 1400
+        and browser_preview.shape[0] >= 900,
+        {"exists": BROWSER_PREVIEW.exists(), "shape": browser_preview_shape},
+        {"exists": True, "minimum_width": 1400, "minimum_height": 900},
+        "headless Microsoft Edge end-to-end interaction screenshot",
+    )
+    browser_smoke = server_module.smoke_test(BATCH)
+    check(
+        "LOCAL_BROWSER_SERVER_API_SMOKE",
+        browser_smoke["status"] == "PASS"
+        and browser_smoke["batch_count"] == 18
+        and browser_smoke["image_bytes"] > 1000
+        and browser_smoke["event_lines"] == 1
+        and browser_smoke["server_stopped"] is True,
+        browser_smoke,
+        {"status": "PASS", "batch_count": 18, "image_bytes": ">1000", "event_lines": 1, "server_stopped": True},
+        "temporary localhost HTTP server",
     )
     check(
         "EMPTY_TEMPLATE_CONTAINS_NO_USER_ANNOTATION",
@@ -325,6 +383,16 @@ def main() -> None:
         MANIFEST.name,
     )
 
+    user_event_hash_after = sha256_file(USER_EVENTS) if USER_EVENTS.exists() else None
+    user_event_count_after = len(USER_EVENTS.read_text(encoding="utf-8").splitlines()) if USER_EVENTS.exists() else 0
+    check(
+        "EXISTING_USER_JSONL_PRESERVED",
+        user_event_hash_before == user_event_hash_after and user_event_count_before == user_event_count_after,
+        {"count_before": user_event_count_before, "count_after": user_event_count_after, "hash_unchanged": user_event_hash_before == user_event_hash_after},
+        {"count_before_equals_after": True, "hash_unchanged": True},
+        "real user annotation JSONL read-only validation",
+    )
+
     results = pd.DataFrame(checks)
     pass_count = int(results.status.eq("PASS").sum())
     fail_count = int(results.status.eq("FAIL").sum())
@@ -337,7 +405,8 @@ def main() -> None:
         "total_count": len(results),
         "batch_pair_count": len(batch),
         "core_optical_f120_included": len(core) == 1,
-        "real_user_annotation_created": False,
+        "existing_real_user_annotation_event_count": user_event_count_after,
+        "existing_real_user_annotation_preserved": user_event_hash_before == user_event_hash_after,
         "seed_propagation_run": False,
         "person_experiment_run": False,
         "r04_accessed": False,

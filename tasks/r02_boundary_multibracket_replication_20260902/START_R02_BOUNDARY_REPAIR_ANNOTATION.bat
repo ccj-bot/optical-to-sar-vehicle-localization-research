@@ -1,0 +1,2 @@
+@echo off
+"D:\MINICONDA\envs\py311\python.exe" "D:\profile\research\workspace\tasks\r02_manual_static_scene_anchor_preparation_20260902\r02_static_scene_browser_server.py" --batch "D:\profile\research\workspace\output\r02_boundary_multibracket_replication_20260902\R02_BOUNDARY_REPAIR_ANNOTATION_BATCH_V1.csv" --output-dir "D:\profile\research\workspace\output\r02_boundary_multibracket_replication_20260902\repair_user_annotations"

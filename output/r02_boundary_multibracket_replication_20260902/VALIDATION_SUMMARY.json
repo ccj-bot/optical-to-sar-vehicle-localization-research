@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "pass_count": 12,
+  "fail_count": 0,
+  "total_count": 12,
+  "manual_jsonl_sha256": "2650f9ec2cbe3709475144b6905dd7e9e83d18ddab4d3876098a4877556f2f1e",
+  "repair_frames": [
+    62,
+    264,
+    454
+  ],
+  "closed_record_count": 0
+}

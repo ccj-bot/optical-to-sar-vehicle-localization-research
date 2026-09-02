@@ -1,0 +1,25 @@
+{
+  "schema": "R02_FROZEN_MULTIBRACKET_PARAMETER_MANIFEST_V1",
+  "source_script": "D:\\profile\\research\\workspace\\tasks\\r02_manual_seed_temporal_propagation_20260902\\run_manual_seed_temporal_propagation.py",
+  "source_script_sha256": "e80bd4ae8ff808c290340a1452c35f3fe72099051b7742178ad85ea902a90967",
+  "search_offsets_m": [
+    -0.30000001192092896,
+    0.30000120401382446,
+    0.01
+  ],
+  "background_offset_m": 0.18,
+  "min_aggregate_contrast": {
+    "SAR_BOUNDARY_NEAR": 0.008,
+    "SAR_BOUNDARY_FAR": 0.004
+  },
+  "min_node_support_fraction": 0.5,
+  "max_local_offset_m": 0.18,
+  "distinct_candidate_distance_m": 0.18,
+  "ambiguous_second_ratio": 0.92,
+  "max_bidirectional_disagreement_m": 0.12,
+  "max_pair_separation_deviation_m": 0.3,
+  "theta_step_deg": 2.0,
+  "parameter_tuning_for_new_brackets": false,
+  "curve_shape_gate_uses_existing_max_bidirectional_disagreement_m": true,
+  "response_support_overlap_is_reported_not_tuned_or_used_to_force_closure": true
+}

@@ -72,6 +72,12 @@ button.primary:hover { background: #0d68df; }
 .workspace { display: grid; gap: 10px; height: calc(100vh - 382px); min-height: 430px; transition: grid-template-columns .18s ease; }
 .workspace.active-optical { grid-template-columns: minmax(0, 1.65fr) minmax(340px, .85fr); }
 .workspace.active-sar { grid-template-columns: minmax(340px, .85fr) minmax(0, 1.65fr); }
+.sar-only .workspace { grid-template-columns: 1fr; height: calc(100vh - 330px); }
+.sar-only #opticalCard,
+.sar-only [data-object^="OPT_"],
+.sar-only .tree-panel,
+.sar-only .hint-toggle { display: none !important; }
+.sar-only .steps { grid-template-columns: repeat(2, minmax(180px, 1fr)); }
 .viewer-card { min-width: 0; background: #101820; border: 2px solid transparent; border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; }
 .viewer-card.active { border-color: var(--blue); box-shadow: 0 3px 15px rgba(22,119,255,.18); }
 .viewer-head { height: 38px; padding: 6px 10px; background: #172532; color: white; display: flex; align-items: center; justify-content: space-between; font-size: 12px; }

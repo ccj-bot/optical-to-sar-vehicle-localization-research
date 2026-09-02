@@ -1,0 +1,83 @@
+{
+  "schema": "R02_BOUNDARY_MULTIBRACKET_PREPARATION_V1",
+  "annotation_scope": "SAR_BOUNDARY_ONLY",
+  "brackets": [
+    {
+      "bracket_id": "A_EARLY",
+      "start": 47,
+      "end": 82,
+      "review_frames": [
+        47,
+        51,
+        55,
+        59,
+        63,
+        67,
+        71,
+        75,
+        79,
+        82
+      ],
+      "selection_reason": "EARLY_IMAGE_LED_REPLICATION_WITH_VISIBLE_BOUNDARIES_AND_GRADUAL_CENTRAL_CLUTTER_CHANGE",
+      "visual_difficulty": "MODERATE; boundary contrast and central response strength vary through the interval",
+      "notes": "36 SAR frames inclusive; endpoints are non-round frames; excludes frozen comparator F150-F183."
+    },
+    {
+      "bracket_id": "B_MID_LATER",
+      "start": 239,
+      "end": 278,
+      "review_frames": [
+        239,
+        243,
+        248,
+        252,
+        256,
+        261,
+        265,
+        269,
+        274,
+        278
+      ],
+      "selection_reason": "MID_LATER_IMAGE_LED_REPLICATION_ACROSS_RIDGE_INTENSITY_AND_LOWER_ARC_CLUTTER_VARIATION",
+      "visual_difficulty": "MODERATE; mid-field intensity and lower response texture change without an obvious scene cut",
+      "notes": "40 SAR frames inclusive; endpoints are non-round frames; temporally separated from A and comparator."
+    },
+    {
+      "bracket_id": "C_LATE",
+      "start": 427,
+      "end": 472,
+      "review_frames": [
+        427,
+        432,
+        437,
+        442,
+        447,
+        452,
+        457,
+        462,
+        467,
+        472
+      ],
+      "selection_reason": "LATE_IMAGE_LED_REPLICATION_INCLUDING_STRONG_TO_WEAK_TO_RECOVERED_RESPONSE_CONDITIONS",
+      "visual_difficulty": "CHALLENGING; substantial brightness weakening near the middle followed by recovery",
+      "notes": "46 SAR frames inclusive; preserves a difficult visual transition instead of selecting only bright frames."
+    }
+  ],
+  "keyframe_count": 6,
+  "required_object_types": [
+    "SAR_BOUNDARY_NEAR",
+    "SAR_BOUNDARY_FAR"
+  ],
+  "batch_path": "D:\\profile\\research\\workspace\\output\\r02_boundary_multibracket_preparation_20260902\\R02_BOUNDARY_MULTIBRACKET_ANNOTATION_BATCH_V1.csv",
+  "batch_sha256": "34666a6ec35bdafe9d658e76ebe79d5f82094a768013c50d6524727b26fe70fb",
+  "figure_sha256": {
+    "bracket_A_review_strip.png": "6836039e9efed82fab73fe9cc33e0e747689837e8d1e2a1043a4049863ff0357",
+    "bracket_B_review_strip.png": "ce14e6be82c84034b78c15ad35a433454484d368ab006ee7401773c6d6e79525",
+    "bracket_C_review_strip.png": "6d44e18ba316cc758f785799ebbfb97d7b87039066db7254f83ae38b512eabc4"
+  },
+  "user_output_directory": "D:\\profile\\research\\workspace\\output\\r02_boundary_multibracket_preparation_20260902\\user_annotations",
+  "user_output_directory_empty": true,
+  "propagation_run": false,
+  "r04_accessed": false,
+  "person_experiment_run": false
+}

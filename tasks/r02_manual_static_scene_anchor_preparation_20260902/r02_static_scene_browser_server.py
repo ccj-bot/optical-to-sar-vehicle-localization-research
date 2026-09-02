@@ -86,13 +86,29 @@ class BrowserAnnotationService:
             "nominal_timestamp_residual_ms",
             "sync_status",
             "selection_reason",
+            "bracket_id",
+            "seed_role",
+            "annotation_scope",
+            "visual_difficulty",
+            "notes",
         ]
-        return [{key: row[key] for key in keep} for row in self.batch]
+        return [{key: row.get(key, "") for key in keep} for row in self.batch]
+
+    @property
+    def workflow_mode(self) -> str:
+        scopes = {str(row.get("annotation_scope", "FULL_STATIC_SCENE")) for row in self.batch}
+        return "SAR_BOUNDARY_ONLY" if scopes == {"SAR_BOUNDARY_ONLY"} else "FULL_STATIC_SCENE"
 
     def state_payload(self) -> dict[str, object]:
         with self.lock:
             return {
                 "schema": "R02_STATIC_SCENE_BROWSER_STATE_V2",
+                "workflow_mode": self.workflow_mode,
+                "guided_boundary_order": (
+                    ["SAR_BOUNDARY_NEAR", "SAR_BOUNDARY_FAR"]
+                    if self.workflow_mode == "SAR_BOUNDARY_ONLY"
+                    else ["OPT_BOUNDARY_NEAR", "OPT_BOUNDARY_FAR", "SAR_BOUNDARY_NEAR", "SAR_BOUNDARY_FAR"]
+                ),
                 "batch": self.public_batch(),
                 "annotations": list(self.store.latest.values()),
                 "session": self.session,
@@ -331,13 +347,15 @@ def smoke_test(batch_path: Path) -> dict[str, object]:
             health = json.loads(response.read().decode("utf-8"))
         with urllib.request.urlopen(base + "/api/state", timeout=10) as response:
             state = json.loads(response.read().decode("utf-8"))
-        with urllib.request.urlopen(base + "/api/image?batch_index=1&modality=OPTICAL", timeout=10) as response:
+        test_modality = "SAR" if service.workflow_mode == "SAR_BOUNDARY_ONLY" else "OPTICAL"
+        test_object_type = "SAR_BOUNDARY_NEAR" if service.workflow_mode == "SAR_BOUNDARY_ONLY" else "OPT_BOUNDARY_NEAR"
+        with urllib.request.urlopen(base + f"/api/image?batch_index=1&modality={test_modality}", timeout=10) as response:
             image_bytes = response.read()
         saved = post_json(
             base + "/api/save",
             {
                 "batch_index": 1,
-                "object_type": "OPT_BOUNDARY_NEAR",
+                "object_type": test_object_type,
                 "points": [[100.0, 200.0], [300.0, 205.0]],
                 "confidence_state": "CONFIDENT",
                 "geometry_status": "COMPLETE",
@@ -349,6 +367,8 @@ def smoke_test(batch_path: Path) -> dict[str, object]:
         event_lines = service.store.events_path.read_text(encoding="utf-8").splitlines()
         return {
             "status": "PASS" if health.get("ok") and saved.get("ok") and shutdown.get("ok") else "FAIL",
+            "workflow_mode": state.get("workflow_mode"),
+            "guided_boundary_order": state.get("guided_boundary_order"),
             "batch_count": len(state["batch"]),
             "image_bytes": len(image_bytes),
             "event_lines": len(event_lines),

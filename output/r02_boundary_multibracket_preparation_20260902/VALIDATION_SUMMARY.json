@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "pass_count": 15,
+  "fail_count": 0,
+  "total_count": 15,
+  "keyframe_count": 6,
+  "real_user_output_empty": true,
+  "old_manual_event_count": 20,
+  "old_manual_sha256": "5ea5882bd764524e5fd61c1d72c7594aaa9bbf9abfcd5a1bd9fe992bde278fc9",
+  "propagation_run": false,
+  "r04_accessed": false,
+  "person_experiment_run": false
+}

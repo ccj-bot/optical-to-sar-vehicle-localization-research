@@ -1,4 +1,4 @@
-const boundaryOrder = [
+let boundaryOrder = [
   "OPT_BOUNDARY_NEAR",
   "OPT_BOUNDARY_FAR",
   "SAR_BOUNDARY_NEAR",
@@ -23,6 +23,7 @@ let currentIndex = 0;
 let activeObjectType = "OPT_BOUNDARY_NEAR";
 let confidenceState = "CONFIDENT";
 let hintsEnabled = false;
+let workflowMode = "FULL_STATIC_SCENE";
 let spaceDown = false;
 let toastTimer = null;
 
@@ -31,6 +32,10 @@ const toast = document.getElementById("toast");
 const workspace = document.getElementById("workspace");
 const opticalCard = document.getElementById("opticalCard");
 const sarCard = document.getElementById("sarCard");
+
+function workflowViewers() {
+  return workflowMode === "SAR_BOUNDARY_ONLY" ? [sarViewer] : viewers;
+}
 
 function showToast(message) {
   toast.textContent = message;
@@ -96,7 +101,7 @@ async function saveAnnotation(objectType, points, geometryStatus, visibilityStat
     updateStateFromResponse(payload);
     setSaveStatus("saved", "已自动保存");
     updateUI();
-    viewers.forEach((viewer) => viewer.draw());
+    workflowViewers().forEach((viewer) => viewer.draw());
     return payload.record;
   } catch (error) {
     setSaveStatus("error", "保存失败");
@@ -115,7 +120,7 @@ async function deleteAnnotation(objectType) {
     updateStateFromResponse(payload);
     setSaveStatus("saved", "已自动保存");
     updateUI();
-    viewers.forEach((viewer) => viewer.draw());
+    workflowViewers().forEach((viewer) => viewer.draw());
   } catch (error) {
     setSaveStatus("error", "保存失败");
     showToast(`删除失败：${error.message}`);
@@ -310,7 +315,7 @@ class ImageViewer {
   }
 
   drawHints(ctx) {
-    if (!hintsEnabled) return;
+    if (!hintsEnabled || workflowMode === "SAR_BOUNDARY_ONLY") return;
     ctx.save();
     ctx.translate(this.offsetX, this.offsetY);
     ctx.scale(this.scale, this.scale);
@@ -404,7 +409,7 @@ function setActiveObject(objectType) {
   opticalCard.classList.toggle("active", label.modality === "OPTICAL");
   sarCard.classList.toggle("active", label.modality === "SAR");
   updateUI();
-  setTimeout(() => viewers.forEach((viewer) => viewer.fit()), 210);
+  setTimeout(() => workflowViewers().forEach((viewer) => viewer.fit()), 210);
 }
 
 function objectComplete(objectType) {
@@ -415,8 +420,12 @@ function objectComplete(objectType) {
 function updateUI() {
   if (!state) return;
   const pair = currentPair();
-  document.getElementById("pairProgress").textContent = `第 ${currentIndex + 1} / ${state.batch.length} 对`;
-  document.getElementById("timestampInfo").textContent = `OPT F${String(pair.optical_frame_index).padStart(3, "0")} · ${pair.optical_timestamp_ms} ms  ↔  SAR F${String(pair.sar_frame_index).padStart(3, "0")} · ${pair.sar_timestamp_ms} ms  ｜残差 ${pair.nominal_timestamp_residual_ms >= 0 ? "+" : ""}${pair.nominal_timestamp_residual_ms} ms`;
+  document.getElementById("pairProgress").textContent = workflowMode === "SAR_BOUNDARY_ONLY"
+    ? `第 ${currentIndex + 1} / ${state.batch.length} 张 keyframe`
+    : `第 ${currentIndex + 1} / ${state.batch.length} 对`;
+  document.getElementById("timestampInfo").textContent = workflowMode === "SAR_BOUNDARY_ONLY"
+    ? `${pair.bracket_id} · ${pair.seed_role} ｜ SAR F${String(pair.sar_frame_index).padStart(3, "0")} · ${pair.sar_timestamp_ms} ms`
+    : `OPT F${String(pair.optical_frame_index).padStart(3, "0")} · ${pair.optical_timestamp_ms} ms  ↔  SAR F${String(pair.sar_frame_index).padStart(3, "0")} · ${pair.sar_timestamp_ms} ms  ｜残差 ${pair.nominal_timestamp_residual_ms >= 0 ? "+" : ""}${pair.nominal_timestamp_residual_ms} ms`;
   document.getElementById("opticalFrame").textContent = `F${pair.optical_frame_index} · ${pair.optical_timestamp_ms} ms`;
   document.getElementById("sarFrame").textContent = `F${pair.sar_frame_index} · ${pair.sar_timestamp_ms} ms`;
   document.querySelectorAll("[data-object]").forEach((button) => {
@@ -436,10 +445,10 @@ async function changePair(delta, resetStep = false) {
   const next = Math.min(Math.max(currentIndex + delta, 0), state.batch.length - 1);
   if (next === currentIndex) return;
   currentIndex = next;
-  if (resetStep) activeObjectType = "OPT_BOUNDARY_NEAR";
+  if (resetStep) activeObjectType = boundaryOrder[0];
   await updateSession();
   updateUI();
-  viewers.forEach((viewer) => viewer.load());
+  workflowViewers().forEach((viewer) => viewer.load());
   setActiveObject(activeObjectType);
 }
 
@@ -449,7 +458,7 @@ async function advanceGuidedStep() {
     setActiveObject(boundaryOrder[index + 1]);
   } else if (index === boundaryOrder.length - 1) {
     if (currentIndex < state.batch.length - 1) await changePair(1, true);
-    else showToast("18 对已经浏览完成，可以保存退出");
+    else showToast(`${state.batch.length} 张 keyframe 已经浏览完成，可以保存退出`);
   }
 }
 
@@ -509,9 +518,14 @@ document.getElementById("treeUnknown").addEventListener("click", async () => {
   await markUnresolved("UNCERTAIN", "TREE_UNKNOWN");
 });
 document.getElementById("hintToggle").addEventListener("change", async (event) => {
+  if (workflowMode === "SAR_BOUNDARY_ONLY") {
+    hintsEnabled = false;
+    event.target.checked = false;
+    return showToast("本批次不显示自动提示");
+  }
   hintsEnabled = event.target.checked;
   await updateSession();
-  viewers.forEach((viewer) => viewer.draw());
+  workflowViewers().forEach((viewer) => viewer.draw());
   showToast(hintsEnabled ? "自动提示已打开：它不是答案" : "自动提示已关闭");
 });
 document.getElementById("saveAndExit").addEventListener("click", async () => {
@@ -540,16 +554,28 @@ window.addEventListener("blur", () => { spaceDown = false; });
 async function initialize() {
   try {
     state = await api("/api/state");
+    workflowMode = state.workflow_mode || "FULL_STATIC_SCENE";
+    boundaryOrder = state.guided_boundary_order || boundaryOrder;
+    document.body.classList.toggle("sar-only", workflowMode === "SAR_BOUNDARY_ONLY");
+    if (workflowMode === "SAR_BOUNDARY_ONLY") {
+      document.getElementById("pageTitle").textContent = "SAR 端点边界标注";
+      document.getElementById("workflowTitle").textContent = "每张只做两步 SAR 边界";
+      document.getElementById("previousPair").textContent = "← 上一张";
+      document.getElementById("nextPair").textContent = "下一张 →";
+      document.getElementById("skipPair").textContent = "跳过这张";
+      document.querySelector('[data-object="SAR_BOUNDARY_NEAR"] b').textContent = "1";
+      document.querySelector('[data-object="SAR_BOUNDARY_FAR"] b').textContent = "2";
+    }
     currentIndex = Math.min(Math.max(Number(state.session.current_index || 0), 0), state.batch.length - 1);
     confidenceState = ["CONFIDENT", "LIKELY"].includes(state.session.confidence_state) ? state.session.confidence_state : "CONFIDENT";
-    hintsEnabled = Boolean(state.session.hints_enabled);
+    hintsEnabled = workflowMode === "SAR_BOUNDARY_ONLY" ? false : Boolean(state.session.hints_enabled);
     const existingDraft = state.annotations.find((item) => item.batch_index === currentPair().batch_index && item.geometry_status === "DRAFT" && boundaryOrder.includes(item.object_type));
-    activeObjectType = existingDraft ? existingDraft.object_type : "OPT_BOUNDARY_NEAR";
+    activeObjectType = existingDraft ? existingDraft.object_type : boundaryOrder[0];
     updateUI();
-    viewers.forEach((viewer) => viewer.load());
+    workflowViewers().forEach((viewer) => viewer.load());
     setActiveObject(activeObjectType);
     setSaveStatus("saved", "已自动保存");
-    showToast(existingDraft ? "已恢复你上次未完成的草稿" : "从光学近边开始，画完按 Enter");
+    showToast(existingDraft ? "已恢复你上次未完成的草稿" : `从${workflowMode === "SAR_BOUNDARY_ONLY" ? "SAR 近边" : "光学近边"}开始，画完按 Enter`);
   } catch (error) {
     setSaveStatus("error", "载入失败");
     showToast(`载入失败：${error.message}`);

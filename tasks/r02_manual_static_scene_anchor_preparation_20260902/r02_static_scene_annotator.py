@@ -75,6 +75,9 @@ def read_batch(path: Path) -> list[dict[str, object]]:
     for row in rows:
         for key in numeric:
             row[key] = int(row[key])
+        for key in {"nearest_optical_frame", "nearest_optical_timestamp_ms", "sync_residual_ms"}:
+            if key in row and row[key] != "":
+                row[key] = int(row[key])
     return rows
 
 
@@ -165,6 +168,9 @@ class AnnotationStore:
             "sar_timestamp_ms": int(batch_row["sar_timestamp_ms"]),
             "nominal_timestamp_residual_ms": int(batch_row["nominal_timestamp_residual_ms"]),
             "sync_status": str(batch_row["sync_status"]),
+            "bracket_id": str(batch_row.get("bracket_id", "")),
+            "seed_role": str(batch_row.get("seed_role", "")),
+            "annotation_scope": str(batch_row.get("annotation_scope", "FULL_STATIC_SCENE")),
             "modality": label.modality,
             "object_id": label.object_id,
             "object_type": label.object_type,
@@ -199,6 +205,9 @@ class AnnotationStore:
             "sar_timestamp_ms": int(batch_row["sar_timestamp_ms"]),
             "nominal_timestamp_residual_ms": int(batch_row["nominal_timestamp_residual_ms"]),
             "sync_status": str(batch_row["sync_status"]),
+            "bracket_id": str(batch_row.get("bracket_id", "")),
+            "seed_role": str(batch_row.get("seed_role", "")),
+            "annotation_scope": str(batch_row.get("annotation_scope", "FULL_STATIC_SCENE")),
             "modality": label.modality,
             "object_id": label.object_id,
             "object_type": label.object_type,
@@ -228,6 +237,9 @@ class AnnotationStore:
         fields = [
             "run_id",
             "batch_index",
+            "bracket_id",
+            "seed_role",
+            "annotation_scope",
             "optical_frame_index",
             "optical_timestamp_ms",
             "sar_frame_index",
@@ -260,6 +272,9 @@ class AnnotationStore:
         progress_fields = [
             "batch_index",
             "run_id",
+            "bracket_id",
+            "seed_role",
+            "annotation_scope",
             "optical_frame_index",
             "optical_timestamp_ms",
             "sar_frame_index",
@@ -291,6 +306,9 @@ class AnnotationStore:
                     {
                         "batch_index": batch_index,
                         "run_id": batch_row["run_id"],
+                        "bracket_id": batch_row.get("bracket_id", ""),
+                        "seed_role": batch_row.get("seed_role", ""),
+                        "annotation_scope": batch_row.get("annotation_scope", "FULL_STATIC_SCENE"),
                         "optical_frame_index": batch_row["optical_frame_index"],
                         "optical_timestamp_ms": batch_row["optical_timestamp_ms"],
                         "sar_frame_index": batch_row["sar_frame_index"],
@@ -328,19 +346,25 @@ class AnnotationStore:
             }
 
         stable_identity_pairs: list[int] = []
+        full_static_identity_pairs: list[int] = []
         unresolved_pairs: list[int] = []
-        required_boundary_types = {
-            "OPT_BOUNDARY_NEAR",
-            "OPT_BOUNDARY_FAR",
-            "SAR_BOUNDARY_NEAR",
-            "SAR_BOUNDARY_FAR",
-        }
         for batch_row in self.batch:
             batch_index = int(batch_row["batch_index"])
             current = self.current_for_batch(batch_index)
             by_type = {str(record["object_type"]): record for record in current}
+            if batch_row.get("annotation_scope") == "SAR_BOUNDARY_ONLY":
+                required_boundary_types = {"SAR_BOUNDARY_NEAR", "SAR_BOUNDARY_FAR"}
+            else:
+                required_boundary_types = {
+                    "OPT_BOUNDARY_NEAR",
+                    "OPT_BOUNDARY_FAR",
+                    "SAR_BOUNDARY_NEAR",
+                    "SAR_BOUNDARY_FAR",
+                }
             if all(accepted(by_type.get(object_type)) for object_type in required_boundary_types):
                 stable_identity_pairs.append(batch_index)
+                if batch_row.get("annotation_scope") != "SAR_BOUNDARY_ONLY":
+                    full_static_identity_pairs.append(batch_index)
             if batch_index in skipped or not all(object_type in by_type for object_type in required_boundary_types) or any(
                 record.get("confidence_state") in {"UNCERTAIN", "NOT_VISIBLE"}
                 or record.get("visibility_state") == "TREE_UNKNOWN"
@@ -360,8 +384,10 @@ class AnnotationStore:
             "schema": "R02_MANUAL_STATIC_SCENE_ANNOTATION_COVERAGE_V1",
             "generated_at": utc_now(),
             "batch_pair_count": len(self.batch),
+            "annotation_scopes": sorted({str(row.get("annotation_scope", "FULL_STATIC_SCENE")) for row in self.batch}),
             "object_type_counts": object_type_counts,
-            "both_optical_and_sar_boundary_identity_supported_batch_indices": stable_identity_pairs,
+            "required_boundary_identity_supported_batch_indices": stable_identity_pairs,
+            "both_optical_and_sar_boundary_identity_supported_batch_indices": full_static_identity_pairs,
             "unable_to_judge_or_incomplete_batch_indices": sorted(set(unresolved_pairs)),
             "sar_tree_confident_correspondence_count": len(sar_tree_confident),
             "skipped_batch_indices": sorted(skipped),

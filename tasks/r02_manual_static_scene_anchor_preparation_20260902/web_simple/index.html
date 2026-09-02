@@ -11,7 +11,7 @@
   <header class="topbar">
     <div>
       <div class="eyebrow">R02ZF · MANUAL STATIC SCENE</div>
-      <h1>边界优先精确标注</h1>
+      <h1 id="pageTitle">边界优先精确标注</h1>
     </div>
     <div id="saveState" class="save-state saved">已自动保存</div>
   </header>
@@ -29,7 +29,7 @@
   <main>
     <section class="guided-card">
       <div class="section-title">
-        <span>只做四步边界</span>
+        <span id="workflowTitle">只做四步边界</span>
         <small>画完按 Enter，自动进入下一项</small>
       </div>
       <div id="boundarySteps" class="steps">
@@ -73,7 +73,7 @@
       <label class="hint-toggle"><input id="hintToggle" type="checkbox"><span>显示自动提示</span><small>默认关闭，仅作 AUTOMATIC_HINT</small></label>
     </section>
 
-    <details class="tree-panel">
+    <details id="treePanel" class="tree-panel">
       <summary>可选：需要时再标树 / 杆</summary>
       <div class="tree-grid">
         <button data-object="OPT_STATIC_TREE_A">光学 Tree A</button>

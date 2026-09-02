@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "pass_count": 12,
+  "fail_count": 0,
+  "total_count": 12,
+  "accepted_frame_count": 34,
+  "review_required_frame_count": 0,
+  "manual_jsonl_sha256": "5ea5882bd764524e5fd61c1d72c7594aaa9bbf9abfcd5a1bd9fe992bde278fc9"
+}

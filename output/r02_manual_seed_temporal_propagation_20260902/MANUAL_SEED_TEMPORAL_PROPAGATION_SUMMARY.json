@@ -1,0 +1,73 @@
+{
+  "schema": "R02_MANUAL_SEED_TEMPORAL_PROPAGATION_SUMMARY_V1",
+  "status": "PASS",
+  "seed_frames": [
+    150,
+    183
+  ],
+  "bracketed_interval": [
+    150,
+    183
+  ],
+  "theta_corridor_deg": [
+    -22.0,
+    8.0
+  ],
+  "theta_node_count": 16,
+  "expected_manual_pair_separation_m": 1.9950282111055149,
+  "manual_seed_pair_separations_m": [
+    1.9929964928548252,
+    1.9970599293562046
+  ],
+  "accepted_frame_count": 34,
+  "propagated_record_count": 68,
+  "review_required_frame_count": 0,
+  "review_required_frames": [],
+  "forward_stop": {
+    "direction": "FORWARD_FROM_LOWER_SEED",
+    "source_frame": 164,
+    "destination_frame": 165,
+    "status": "PROPAGATION_AMBIGUOUS",
+    "reasons": [
+      "SAR_BOUNDARY_FAR:BOUNDARY_RESPONSE_TOO_WEAK"
+    ]
+  },
+  "backward_stop": {
+    "direction": "BACKWARD_FROM_UPPER_SEED",
+    "source_frame": 162,
+    "destination_frame": 161,
+    "status": "PROPAGATION_AMBIGUOUS",
+    "reasons": [
+      "SAR_BOUNDARY_FAR:RIDGE_JUMP_EXCEEDS_LOCAL_CORRIDOR"
+    ]
+  },
+  "bidirectional_overlap_frames": [
+    162,
+    163,
+    164
+  ],
+  "bidirectional_bridge_pass": true,
+  "anchor_closure": {
+    "SAR_BOUNDARY_NEAR": {
+      "overlap_frame_count": 3,
+      "overlap_median_disagreement_m": 0.0056292337155356975,
+      "overlap_max_disagreement_m": 0.005630425808431205,
+      "closure_pass": true
+    },
+    "SAR_BOUNDARY_FAR": {
+      "overlap_frame_count": 3,
+      "overlap_median_disagreement_m": 0.010306178221347828,
+      "overlap_max_disagreement_m": 0.05969157945191572,
+      "closure_pass": true
+    }
+  },
+  "manual_event_sha256_before": "5ea5882bd764524e5fd61c1d72c7594aaa9bbf9abfcd5a1bd9fe992bde278fc9",
+  "manual_event_sha256_after": "5ea5882bd764524e5fd61c1d72c7594aaa9bbf9abfcd5a1bd9fe992bde278fc9",
+  "manual_jsonl_preserved": true,
+  "fixed_range_windows_used": false,
+  "p0_semantics": "SAR_IMAGE_DOMAIN_COMMON_APPARENT_TRANSLATION_NOT_PHYSICAL_PLATFORM_MOTION",
+  "tree_correspondence_run": false,
+  "person_experiment_run": false,
+  "final_localization_run": false,
+  "r04_accessed": false
+}

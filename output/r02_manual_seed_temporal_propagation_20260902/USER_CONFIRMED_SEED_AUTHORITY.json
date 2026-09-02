@@ -1,0 +1,23 @@
+{
+  "schema": "R02_USER_CONFIRMED_SEED_AUTHORITY_V1",
+  "manual_event_path": "D:\\profile\\research\\workspace\\output\\r02_manual_static_scene_anchor_preparation_20260902\\user_annotations\\manual_static_scene_annotations.jsonl",
+  "manual_event_sha256": "5ea5882bd764524e5fd61c1d72c7594aaa9bbf9abfcd5a1bd9fe992bde278fc9",
+  "manual_event_line_count": 20,
+  "user_confirmation_semantics": "THE_TWO_PAIRS_DEFINE_OPTICAL_NEAR_FAR_TO_SAR_NEAR_FAR_IMAGE_SEMANTIC_IDENTITY",
+  "draft_seed_acceptance": "EXPLICIT_USER_CONFIRMATION_IN_CURRENT_SESSION",
+  "seed_frames": [
+    150,
+    183
+  ],
+  "seed_batch_indices": [
+    4,
+    5
+  ],
+  "seed_event_ids": [
+    "5b210fb4-cc22-410d-b5bd-6babb2e0786a",
+    "9a88b02f-7769-4ea3-b771-78c86d0914e6",
+    "f07a1cb2-324b-4baf-8488-4b0b9c20d3f4",
+    "fa3cb450-c5a5-4a59-8a43-3ac09b23f4c3"
+  ],
+  "manual_jsonl_modified": false
+}

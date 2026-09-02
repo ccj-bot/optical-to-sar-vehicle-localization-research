@@ -1,0 +1,25 @@
+review_number,optical_review_id,scene_layer,visual_state,reason,manual_person_reference_used
+1,OPT_F064__R02ZF_REUSED_R02ZF_PERSON100002,L2,DEEP_SIDE_POSITION_CLEAR_TARGET_TINY,"Tiny fragment, but the hypothesis lies unambiguously beyond the optical far boundary in the parking area.",False
+2,OPT_F101__R02ZF_REUSED_R02ZF_PERSON100007,UNCERTAIN,LEFT_EDGE_TRUNCATED_TARGET_NOT_RESOLVED,"Severe left-edge truncation and vehicle/tree occlusion prevent a reliable PERSON-to-boundary layer judgment.",False
+3,OPT_F158__R02ZF_REUSED_R02ZF_PERSON100008,L2,DEEP_SIDE_POSITION_CLEAR_TARGET_TINY,"Small fragment located behind the far boundary among parked vehicles.",False
+4,OPT_F240__R02ZF_REUSED_R02ZF_PERSON100013,L2,DEEP_SIDE_POSITION_CLEAR_TARGET_SMALL,"Visible PERSON fragment is behind the far boundary in the parking area.",False
+5,OPT_F252__R02ZF_REUSED_R02ZF_PERSON100015,L2,DEEP_SIDE_CLEAR_PARTIAL_OCCLUSION,"PERSON is partly occluded by vehicles but clearly on the parking side beyond the far boundary.",False
+6,OPT_F255__R02ZF_REUSED_R02ZF_PERSON100016,L2,DEEP_SIDE_CLEAR_PARTIAL_OCCLUSION,"PERSON is partly occluded by vehicles but clearly on the parking side beyond the far boundary.",False
+7,OPT_F256__R02ZF_REUSED_R02ZF_PERSON011,L2,DEEP_SIDE_CLEAR_PARTIAL_OCCLUSION,"PERSON is behind the hedge/far boundary in the parking area.",False
+8,OPT_F257__R02ZF_REUSED_R02ZF_PERSON011,L2,DEEP_SIDE_CLEAR_PARTIAL_OCCLUSION,"PERSON is behind the hedge/far boundary in the parking area.",False
+9,OPT_F258__R02ZF_REUSED_R02ZF_PERSON100017,L2,DEEP_SIDE_CLEAR_PARTIAL_OCCLUSION,"PERSON is behind the hedge/far boundary in the parking area.",False
+10,OPT_F268__R02ZF_REUSED_R02ZF_PERSON100021,L2,DEEP_SIDE_POSITION_CLEAR_TARGET_SMALL,"Small visible PERSON fragment is on the parking side beyond the far boundary.",False
+11,OPT_F269__R02ZF_REUSED_R02ZF_PERSON100022,L2,DEEP_SIDE_POSITION_CLEAR_TARGET_SMALL,"Small visible PERSON fragment is on the parking side beyond the far boundary.",False
+12,OPT_F270__R02ZF_REUSED_R02ZF_PERSON100023,L2,DEEP_SIDE_CLEAR_LEFT_EDGE_PARTIAL,"Only part of the PERSON is visible at the left edge, but the scene side is clearly beyond the far boundary.",False
+13,OPT_F270__R02ZF_REUSED_R02ZF_PERSON100024,L2,DEEP_SIDE_CLEAR_PARTIAL_OCCLUSION,"PERSON is visible behind the hedge/far boundary in the parking area.",False
+14,OPT_F271__R02ZF_REUSED_R02ZF_PERSON100025,L2,DEEP_SIDE_CLEAR_LEFT_EDGE_PARTIAL,"Only part of the PERSON is visible at the left edge, but the scene side is clearly beyond the far boundary.",False
+15,OPT_F271__R02ZF_REUSED_R02ZF_PERSON100026,L2,DEEP_SIDE_CLEAR_PARTIAL_OCCLUSION,"PERSON is visible behind the hedge/far boundary in the parking area.",False
+16,OPT_F271__R02ZF_REUSED_R02ZF_PERSON100027,L2,DEEP_SIDE_CLEAR_PARTIAL_OCCLUSION,"Overlapping hypothesis still lies clearly beyond the far boundary in the parking area.",False
+17,OPT_F272__R02ZF_REUSED_R02ZF_PERSON018,L2,DEEP_SIDE_CLEAR,"PERSON is visibly standing in the parking area beyond the far boundary.",False
+18,OPT_F272__R02ZF_REUSED_R02ZF_PERSON017,L2,DEEP_SIDE_CLEAR,"PERSON is visibly standing in the parking area beyond the far boundary.",False
+19,OPT_F280__R02ZF_REUSED_R02ZF_PERSON017,L2,DEEP_SIDE_CLEAR,"PERSON is visibly standing in the parking area beyond the far boundary.",False
+20,OPT_F280__R02ZF_REUSED_R02ZF_PERSON018,L2,DEEP_SIDE_CLEAR,"PERSON is visibly standing in the parking area beyond the far boundary.",False
+21,OPT_F283__R02ZF_REUSED_R02ZF_PERSON017,L2,DEEP_SIDE_CLEAR,"PERSON is visibly standing in the parking area beyond the far boundary.",False
+22,OPT_F283__R02ZF_REUSED_R02ZF_PERSON018,L2,DEEP_SIDE_CLEAR,"PERSON is visibly standing in the parking area beyond the far boundary.",False
+23,OPT_F288__R02ZF_REUSED_R02ZF_PERSON017,L2,DEEP_SIDE_CLEAR,"PERSON is visibly standing in the parking area beyond the far boundary.",False
+24,OPT_F288__R02ZF_REUSED_R02ZF_PERSON018,L2,DEEP_SIDE_CLEAR,"PERSON is visibly standing in the parking area beyond the far boundary.",False

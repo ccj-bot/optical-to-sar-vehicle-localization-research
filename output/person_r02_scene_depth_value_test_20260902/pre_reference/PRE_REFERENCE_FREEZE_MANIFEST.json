@@ -1,0 +1,236 @@
+{
+  "schema": "PERSON_R02_SCENE_DEPTH_PRE_REFERENCE_FREEZE_V1",
+  "pre_reference_root_sha256": "9d7a1f5c8197e3964730bacd74756febf5383de1d754ae80464de5e626872622",
+  "files": [
+    {
+      "path": "pre_reference/BOUNDARY_VALUE_ELIGIBLE_GEOMETRY_PRE_REFERENCE.csv",
+      "bytes": 69113,
+      "sha256": "dc19b7577de461cfcb1afc673d85eb4795da7a1f630be41819bc469ee2c35741"
+    },
+    {
+      "path": "pre_reference/BOUNDARY_VALUE_ELIGIBLE_GEOMETRY_PRE_REFERENCE.parquet",
+      "bytes": 56446,
+      "sha256": "cdbd8f2ec78ff8c8f9478223d8b8b79c46933381b96ba6a24964342be72c093a"
+    },
+    {
+      "path": "pre_reference/case_selection_pre_reference.csv",
+      "bytes": 5911,
+      "sha256": "8b56808b5de5b805b7f048c3d36fe6e88ec68f4e8a85952554ed7c3a2b86531e"
+    },
+    {
+      "path": "pre_reference/case_selection_pre_reference.parquet",
+      "bytes": 9531,
+      "sha256": "4f8358d7a2807941ac9bfc75faf458961067c354576da7382e8391cbbc9402d9"
+    },
+    {
+      "path": "pre_reference/denominators_pre_reference.json",
+      "bytes": 415,
+      "sha256": "23afc9153c6a17f3b25d769442f86291b7fdaec8f1ad05971d79ae71c4e28c00"
+    },
+    {
+      "path": "pre_reference/optical_person_scene_layer_pre_reference.csv",
+      "bytes": 19417,
+      "sha256": "9d6052eb537c54872016fee49dc6e53628d28a24e5d8e7f61f609b40ef38b8eb"
+    },
+    {
+      "path": "pre_reference/optical_person_scene_layer_pre_reference.parquet",
+      "bytes": 23826,
+      "sha256": "01e02363f89b54b1fbf44cdf10eb2418fdbe72c29e6c49de2a584609e6c746ea"
+    },
+    {
+      "path": "pre_reference/optical_person_scene_layer_visual_cases_frozen_pre_reference.csv",
+      "bytes": 11189,
+      "sha256": "be753ccd49eec4d0628aebb7c3fb375f6d09e959e83eadf987a66c50551a7258"
+    },
+    {
+      "path": "pre_reference/optical_person_scene_layer_visual_cases_frozen_pre_reference.parquet",
+      "bytes": 15405,
+      "sha256": "533358feef858735a807eda96494e601cce8bf115c854cc3996bfaab35ad8f74"
+    },
+    {
+      "path": "pre_reference/runtime_support_burden_pre_reference.csv",
+      "bytes": 65780,
+      "sha256": "4fef6b926b1ab1678b479859783c588e7aa928d49e10917b8c982e6c1e3ca32d"
+    },
+    {
+      "path": "pre_reference/runtime_support_burden_pre_reference.parquet",
+      "bytes": 26930,
+      "sha256": "4c47ce0daa5573013f862481cf913c0d3dc9836245a4291106294117d8390cc0"
+    },
+    {
+      "path": "pre_reference/runtime_support_burden_summary_pre_reference.csv",
+      "bytes": 2549,
+      "sha256": "5e8ad5b278e7d64c4f6ed4c69154adf265348f3eaf0c89d4e9b270fc88b1ea4d"
+    },
+    {
+      "path": "pre_reference/runtime_support_burden_summary_pre_reference.parquet",
+      "bytes": 23700,
+      "sha256": "ea4e744aca82956c18c2c1a87fd62431334652dee6a1e0361df3fe67f6880e09"
+    },
+    {
+      "path": "pre_reference/support_masks/R02ZF_F000108_88b9db6c9ebc7605.npz",
+      "bytes": 3713,
+      "sha256": "d11ceba7ab5a7588ba247f2a6935ad427e4f815a3051b739922a11f092b2748c"
+    },
+    {
+      "path": "pre_reference/support_masks/R02ZF_F000174_565d4e710d030849.npz",
+      "bytes": 7049,
+      "sha256": "2f7c6d0623c745da76818e14999223ea32b26c7c2c1865ebbf59ec47b14f9743"
+    },
+    {
+      "path": "pre_reference/support_masks/R02ZF_F000264_9096c19c1c80c53a.npz",
+      "bytes": 2886,
+      "sha256": "a1f89064368d32093619cab6cb582ca8dba54dd8f4a098ff393614feb8cc1eda"
+    },
+    {
+      "path": "pre_reference/support_masks/R02ZF_F000266_54a6d4edbacb237d.npz",
+      "bytes": 2871,
+      "sha256": "57e1d8fc3f832cc16dae2b7b8efcda645cb87b61a06e00c94ecffa393c8e0f5c"
+    },
+    {
+      "path": "pre_reference/support_masks/R02ZF_F000269_73a49f17a9149bb1.npz",
+      "bytes": 2873,
+      "sha256": "bd8f5fc2c8fba98545c7f182a1d942372b0dbbd642331e152de2b98e9b9230f3"
+    },
+    {
+      "path": "pre_reference/support_masks/R02ZF_F000406_686e4f0807b1a82b.npz",
+      "bytes": 3104,
+      "sha256": "f847e5dd5470ee7c476f9231553f78d6ed97094d067368e6841daef017d6d002"
+    },
+    {
+      "path": "pre_reference/support_masks/R02ZF_F000427_489f4f5aae8a6931.npz",
+      "bytes": 2508,
+      "sha256": "0c99b571f11419459e0445968623820aa06770f270bcfc3bd6da43da3f1b3c14"
+    },
+    {
+      "path": "pre_reference/support_masks/R02ZF_F000427_8e896521ba469cc2.npz",
+      "bytes": 2438,
+      "sha256": "8970aaa7ed9574634b74e1b539fe76005c831b78ab7ead6c89c19fc82358d648"
+    },
+    {
+      "path": "pre_reference/support_masks/R02ZF_F000427_b277df099225b640.npz",
+      "bytes": 2484,
+      "sha256": "4441dcc00ff9c1d29267db4420fc382d00aec9bccdbeb623352d492daf25a670"
+    },
+    {
+      "path": "pre_reference/support_masks/R02ZF_F000430_27a6529aebbdd0bd.npz",
+      "bytes": 2532,
+      "sha256": "66ada4a8bf99b14bc0e8dcd5d60fbbf5e01d2a1acb70cc97de8f3d1e31d86f81"
+    },
+    {
+      "path": "pre_reference/support_masks/R02ZF_F000430_e1f3095d4cb752d0.npz",
+      "bytes": 2545,
+      "sha256": "6bac196c7cc69c1ab3304375b761a846e096304ab8b6d58478fdea4a47251806"
+    },
+    {
+      "path": "pre_reference/support_masks/R02ZF_F000430_f438394b84114217.npz",
+      "bytes": 2474,
+      "sha256": "c1d30d8011a8a190d366a3c83bd2739389d6807fcb5150470712c4d48976ab74"
+    },
+    {
+      "path": "pre_reference/support_masks/R02ZF_F000454_2400986dd7196ca6.npz",
+      "bytes": 6440,
+      "sha256": "22bce895b00b1d0de5f0b0ced771b4f573528f2cd0e4222903f2d1b93805910a"
+    },
+    {
+      "path": "pre_reference/support_masks/R02ZF_F000454_40c22071226f30ca.npz",
+      "bytes": 2577,
+      "sha256": "861ee05a8c821ae181b8ba87ef6fd5ae4274ff3233af62c9dbbfdf2297bd2333"
+    },
+    {
+      "path": "pre_reference/support_masks/R02ZF_F000454_4812224e718133be.npz",
+      "bytes": 6404,
+      "sha256": "c26357492ea720203b2b065d9741a3ef8d6eb32179607f336d0d9ac730fcc83f"
+    },
+    {
+      "path": "pre_reference/support_masks/R02ZF_F000454_4fd121be32850345.npz",
+      "bytes": 6448,
+      "sha256": "ccf366dbce5ad17832f8fa2fe5db2c52f72f565991865bf6e29ef2f4f76dea85"
+    },
+    {
+      "path": "pre_reference/support_masks/R02ZF_F000454_6751d648bc62013b.npz",
+      "bytes": 6469,
+      "sha256": "5b25a2657c7d40e4170843174a54ba8ad20b24d00f404c4382879ac36ff557b4"
+    },
+    {
+      "path": "pre_reference/support_masks/R02ZF_F000454_bd5ba7dee0068981.npz",
+      "bytes": 6429,
+      "sha256": "40054f2d0d9233414b90a648c0c46c3d1471ea646538829eebe5b1710ed9ab53"
+    },
+    {
+      "path": "pre_reference/support_masks/R02ZF_F000454_bdb18e2121aa5d07.npz",
+      "bytes": 6455,
+      "sha256": "6082623a3a71313c5683d0562077e7998513a4dc56d73db18d51649c4343a00f"
+    },
+    {
+      "path": "pre_reference/support_masks/R02ZF_F000454_e97a98a1cb6086f3.npz",
+      "bytes": 2559,
+      "sha256": "08275c21da80ae39ccedb645beff8097629ffa8307420619ff38071a808e8fae"
+    },
+    {
+      "path": "pre_reference/support_masks/R02ZF_F000454_ed8b4da61f987a64.npz",
+      "bytes": 6481,
+      "sha256": "8707dcfc0bd8257aacbdc18d0cd3ca3f3d9a39009a1aed2c5b0a1d965474c599"
+    },
+    {
+      "path": "pre_reference/support_masks/R02ZF_F000468_143f6b815d3a1564.npz",
+      "bytes": 6579,
+      "sha256": "d967e54e5cb5c686502ea21130aba4304c45b7735ff1b963a0276e2893e48c69"
+    },
+    {
+      "path": "pre_reference/support_masks/R02ZF_F000468_2fb1377aa50741ec.npz",
+      "bytes": 6567,
+      "sha256": "493e6d6b30783774d07e7a7dee12bb67603bb08f0c6ab9e86362115bcd272591"
+    },
+    {
+      "path": "pre_reference/support_masks/R02ZF_F000472_9126fe4b49cd4692.npz",
+      "bytes": 6667,
+      "sha256": "0a4e3d0c42630e51f3eadd766faf26e1483ac61c3748fb6aa0d1238b501d6c15"
+    },
+    {
+      "path": "pre_reference/support_masks/R02ZF_F000472_b0ef24a2e28b1417.npz",
+      "bytes": 6517,
+      "sha256": "b77dc59f0df7c30ffa605171a89bf9ad88f6660d28876c8542f5c46bbf5e58ba"
+    },
+    {
+      "path": "pre_reference/support_masks/R02ZF_F000481_c0b6f80c2d65796c.npz",
+      "bytes": 6677,
+      "sha256": "8ff4ae28953ea2ac06aa61fa6a2e7d430bd3869c33a4e499a16c8fdb759cdd20"
+    },
+    {
+      "path": "pre_reference/support_masks/R02ZF_F000481_fae6fa214cff4137.npz",
+      "bytes": 6035,
+      "sha256": "0bcd4e7a4c1edf02441e3b460a83b14f9c73b24698c8d9cedd4d5a07734836da"
+    }
+  ],
+  "manual_person_sar_reference_opened": false,
+  "operator_contamination_disclosure": {
+    "known_exposed_case": "R02ZF F472 / R02ZF_REUSED_R02ZF_PERSON017 / approximately 13.542 m",
+    "policy": "Exclude from confirmatory reference statistics or report separately as operator-contaminated.",
+    "new_case_level_reference_opened_before_freeze": false
+  },
+  "r04_accessed": false,
+  "boundary_propagation_modified": false,
+  "f66_used": false,
+  "final_localization_run": false,
+  "condition_definitions": {
+    "ANGLE_ONLY": "Frozen optical angular corridor times full SAR depth.",
+    "ANGLE_PLUS_ONE_CURB_HALFSPACE": "Previous GT-blind 7.10 m curb band low edge with SIDEWALK_OR_PARKING_SIDE visual label; otherwise angle-only fallback.",
+    "ANGLE_PLUS_TWO_BOUNDARY_SCENE_LAYER": "Exact per-pixel radial comparison with trusted near/far curves; only full theta coverage and non-UNCERTAIN visual layer apply."
+  },
+  "denominators": {
+    "eligible_boundary_frames": 31,
+    "causal_shell_rows": 27,
+    "unique_optical_visual_cases": 24,
+    "scene_layer_distribution_visual_cases": {
+      "L2": 23,
+      "UNCERTAIN": 1
+    },
+    "angle_only_rows": 27,
+    "one_curb_applied_rows": 19,
+    "two_boundary_applied_rows": 13,
+    "two_boundary_fallback_rows": 14,
+    "known_operator_contaminated_cases": 1,
+    "manual_person_sar_reference_opened": false
+  }
+}

@@ -1,0 +1,51 @@
+﻿check,passed,detail
+exists::REPORT.md,True,D:\profile\research\workspace\output\person_r02_scene_depth_value_test_20260902\REPORT.md
+exists::SUMMARY.json,True,D:\profile\research\workspace\output\person_r02_scene_depth_value_test_20260902\SUMMARY.json
+exists::OUTPUT_MANIFEST.csv,True,D:\profile\research\workspace\output\person_r02_scene_depth_value_test_20260902\OUTPUT_MANIFEST.csv
+exists::PRE_REFERENCE_FREEZE_MANIFEST.json,True,D:\profile\research\workspace\output\person_r02_scene_depth_value_test_20260902\pre_reference\PRE_REFERENCE_FREEZE_MANIFEST.json
+exists::runtime_support_burden_pre_reference.parquet,True,D:\profile\research\workspace\output\person_r02_scene_depth_value_test_20260902\pre_reference\runtime_support_burden_pre_reference.parquet
+exists::reference_support_retention_post_reference.parquet,True,D:\profile\research\workspace\output\person_r02_scene_depth_value_test_20260902\post_reference_evaluation_only\reference_support_retention_post_reference.parquet
+exists::strongest_success.png,True,D:\profile\research\workspace\output\person_r02_scene_depth_value_test_20260902\figures\final_review\strongest_success.png
+exists::strongest_residual_clutter.png,True,D:\profile\research\workspace\output\person_r02_scene_depth_value_test_20260902\figures\final_review\strongest_residual_clutter.png
+exists::reference_overlap_and_boundary_theta_gap.png,True,D:\profile\research\workspace\output\person_r02_scene_depth_value_test_20260902\figures\final_review\reference_overlap_and_boundary_theta_gap.png
+exists::PERSON_R02_SCENE_DEPTH_VALUE_TEST_20260903.zip,True,D:\profile\research\workspace\review_packs\PERSON_R02_SCENE_DEPTH_VALUE_TEST_20260903.zip
+compile::prepare_pre_reference_review.py,True,compiled
+compile::freeze_pre_reference.py,True,compiled
+compile::evaluate_post_reference.py,True,compiled
+compile::build_report.py,True,compiled
+compile::validate_scene_depth_value.py,True,compiled
+freeze_file_hashes,True,files=40
+freeze_root_hash,True,9d7a1f5c8197e3964730bacd74756febf5383de1d754ae80464de5e626872622
+freeze_reference_closed,True,false
+freeze_scope_flags,True,all false
+visual_case_denominator,True,rows=24
+visual_layer_distribution,True,"{'L2': 23, 'UNCERTAIN': 1}"
+visual_no_reference,True,all false
+boundary_frame_denominator,True,frames=31
+known_unsafe_excluded,True,unsafe intersection empty
+boundary_only_r02,True,{'R02ZF'}
+burden_rows,True,rows=81 shells=27
+three_conditions,True,"{'ANGLE_ONLY', 'ANGLE_PLUS_TWO_BOUNDARY_SCENE_LAYER', 'ANGLE_PLUS_ONE_CURB_HALFSPACE'}"
+applied_denominators,True,one=19 two=13
+exact_pixel_intersection,True,all true
+family_assignment_complete,True,zero unassigned
+support_nonincrease,True,region family area
+support_mask_roundtrip_hashes,True,rows=81
+two_boundary_core_numbers,True,"{""rows"": 13, ""frames"": 8, ""N_region_before_median"": 13.0, ""N_region_after_median"": 10.0, ""N_family_before_median"": 13.0, ""N_family_after_median"": 10.0, ""A_candidate_px_before_median"": 2667.0, ""A_candidate_px_after_median"": 2160.0, ""A_candidate_m2_before_median"": 3.050759890275071, ""A_candidate_m2_after_median"": 2.4708066602902714, ""area_reduction_fraction_median"": 0.12506917542888762, ""area_reduction_fraction_p75"": 0.22460087082728597, ""area_reduction_fraction_p90"": 0.22593406420759962, ""positive_family_contraction_fraction"": 1.0, ""positive_area_contraction_fraction"": 1.0, ""N_family_after_p75"": 11.0, ""N_family_after_p90"": 11.0, ""N_family_after_max"": 11.0, ""N_family_singleton_fraction"": 0.0, ""N_family_le2_fraction"": 0.0}"
+incremental_vs_one_curb,True,"{""rows"": 8, ""angle_N_family_median"": 13.0, ""one_N_family_median"": 10.5, ""two_N_family_median"": 10.5, ""angle_area_median"": 2688.0, ""one_area_median"": 2111.5, ""two_area_median"": 2061.5, ""family_change_rows_two_vs_one"": 0, ""incremental_area_median"": 0.022286335680792968, ""incremental_area_max"": 0.035428219346888445}"
+decision_and_scope,True,INSUFFICIENT_PERSON_OVERLAP
+reference_denominator,True,shells=2 rows=6
+operator_contamination_disclosed,True,one disclosed
+clean_two_boundary_not_applied,True,"[{""run_id"":""R02ZF"",""sar_frame"":472,""shell_id"":""R02ZF_SARF000472__CAUSAL_REPLAY__R02ZF_REUSED_R02ZF_PERSON018"",""person_hypothesis_id"":""R02ZF_REUSED_R02ZF_PERSON018"",""optical_review_id"":""OPT_F283__R02ZF_REUSED_R02ZF_PERSON018"",""optical_frame"":283,""scene_layer"":""L2"",""target_id_oracle"":""R02ZF_SARPERSON02"",""reference_range_m"":13.885279677,""reference_theta_deg"":-31.5346288182,""reference_support_status"":""FULL"",""reference_range_stratum"":""12_TO_14M"",""condition"":""ANGLE_PLUS_TWO_BOUNDARY_SCENE_LAYER"",""condition_applied"":false,""condition_state_pre_reference"":""FALLBACK_ANGLE_ONLY_PARTIAL_BOUNDARY_THETA_OR_UNCERTAIN_LAYER"",""radial_evaluation_state"":""FALLBACK_NO_RADIAL_PRUNE"",""near_boundary_radius_at_reference_theta_m"":null,""far_boundary_radius_at_reference_theta_m"":null,""REFERENCE_THETA_SUPPORT_RETAINED"":true,""REFERENCE_RADIAL_SUPPORT_RETAINED"":true,""REFERENCE_2D_SUPPORT_RETAINED"":true,""FALSE_SCENE_LAYER_PRUNE"":false,""operator_contaminated_known_case"":false,""confirmatory_uncontaminated"":true,""post_reference_only"":true}]"
+false_prune_not_fabricated,True,rate unavailable; count zero due no application
+post_gate_bound_to_freeze,True,9d7a1f5c8197e3964730bacd74756febf5383de1d754ae80464de5e626872622
+report_phrase::13 to 10 regions/families,True,13 to 10 regions/families
+report_phrase::12.5% median area contraction,True,12.5% median area contraction
+report_phrase::INSUFFICIENT_PERSON_OVERLAP,True,INSUFFICIENT_PERSON_OVERLAP
+report_phrase::zero uncontaminated applied reference rows,True,zero uncontaminated applied reference rows
+report_phrase::does not justify repairing F66,True,does not justify repairing F66
+"report_phrase::No identity, center, box",True,"No identity, center, box"
+pack_hash,True,6007ee2aac67fec61298c776b4daca6387c3c72a3e476effeb5852b89ae50d84
+pack_size,True,4869817
+pack_required_entries,True,[]
+output_manifest_hashes,True,rows=64

@@ -1,0 +1,15 @@
+{
+  "eligible_boundary_frames": 31,
+  "causal_shell_rows": 27,
+  "unique_optical_visual_cases": 24,
+  "scene_layer_distribution_visual_cases": {
+    "L2": 23,
+    "UNCERTAIN": 1
+  },
+  "angle_only_rows": 27,
+  "one_curb_applied_rows": 19,
+  "two_boundary_applied_rows": 13,
+  "two_boundary_fallback_rows": 14,
+  "known_operator_contaminated_cases": 1,
+  "manual_person_sar_reference_opened": false
+}

@@ -1,0 +1,11 @@
+{
+  "schema": "PERSON_R02_SCENE_DEPTH_POST_REFERENCE_GATE_AUDIT_V1",
+  "pre_reference_root_sha256": "9d7a1f5c8197e3964730bacd74756febf5383de1d754ae80464de5e626872622",
+  "reference_source": "D:\\profile\\research\\workspace\\output\\person_b0_end_to_end_capability_and_bottleneck_study_20260830\\post_reference_oracle_diagnostic_only\\r01_r02_r03_manual_range_reference_oracle_only.parquet",
+  "mapping_source": "D:\\profile\\research\\workspace\\output\\person_b0_end_to_end_capability_and_bottleneck_study_20260830\\post_reference_oracle_diagnostic_only\\raw_fragment_to_offline_target_mapping_oracle_only.csv",
+  "reference_opened_only_after_freeze_validation": true,
+  "matched_reference_rows": 2,
+  "operator_contaminated_rows_disclosed": 1,
+  "r04_accessed": false,
+  "final_localization_run": false
+}

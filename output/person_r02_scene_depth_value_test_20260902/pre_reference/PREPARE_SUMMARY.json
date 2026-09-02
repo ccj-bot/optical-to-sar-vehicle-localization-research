@@ -1,0 +1,26 @@
+{
+  "schema": "PERSON_R02_SCENE_DEPTH_VALUE_PREPARE_V1",
+  "eligible_boundary_frame_count": 31,
+  "manual_boundary_frame_count": 11,
+  "visually_reviewed_propagated_frame_count": 20,
+  "known_unsafe_frames_excluded": [
+    58,
+    66,
+    67,
+    165,
+    260,
+    270,
+    405,
+    482
+  ],
+  "causal_person_shell_rows_on_eligible_boundary_frames": 27,
+  "unique_optical_visual_cases": 24,
+  "full_boundary_theta_coverage_shell_rows": 13,
+  "partial_or_zero_boundary_theta_coverage_shell_rows": 14,
+  "scene_layer_labels_frozen": false,
+  "case_level_person_sar_reference_opened": false,
+  "boundary_propagation_modified": false,
+  "f66_used": false,
+  "r04_accessed": false,
+  "final_localization_run": false
+}

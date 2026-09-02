@@ -1,0 +1,59 @@
+{
+  "seed_frame": 150,
+  "boundaries": [
+    {
+      "schema": "R02_ISOLATED_LOCAL_BOUNDARY_SEED_V1",
+      "run_id": "R02ZF",
+      "sar_frame_index": 150,
+      "sar_timestamp_ms": 5000,
+      "object_type": "SAR_BOUNDARY_NEAR",
+      "points": [
+        [
+          395.484,
+          446.727
+        ],
+        [
+          535.303,
+          448.71
+        ]
+      ],
+      "confidence_state": "CONFIDENT",
+      "source_geometry_status": "DRAFT",
+      "derived_geometry_status": "USER_CONFIRMED_SEMANTIC_CHECKPOINT",
+      "source_event_id": "9a88b02f-7769-4ea3-b771-78c86d0914e6",
+      "source_revision": 2,
+      "source_manual_path": "D:\\profile\\research\\workspace\\output\\r02_manual_static_scene_anchor_preparation_20260902\\user_annotations\\manual_static_scene_annotations.jsonl",
+      "source_manual_sha256": "5ea5882bd764524e5fd61c1d72c7594aaa9bbf9abfcd5a1bd9fe992bde278fc9",
+      "other_checkpoint_geometry_included": false,
+      "person_gt": false,
+      "final_localization": false
+    },
+    {
+      "schema": "R02_ISOLATED_LOCAL_BOUNDARY_SEED_V1",
+      "run_id": "R02ZF",
+      "sar_frame_index": 150,
+      "sar_timestamp_ms": 5000,
+      "object_type": "SAR_BOUNDARY_FAR",
+      "points": [
+        [
+          413.333,
+          389.213
+        ],
+        [
+          617.267,
+          388.921
+        ]
+      ],
+      "confidence_state": "CONFIDENT",
+      "source_geometry_status": "DRAFT",
+      "derived_geometry_status": "USER_CONFIRMED_SEMANTIC_CHECKPOINT",
+      "source_event_id": "fa3cb450-c5a5-4a59-8a43-3ac09b23f4c3",
+      "source_revision": 2,
+      "source_manual_path": "D:\\profile\\research\\workspace\\output\\r02_manual_static_scene_anchor_preparation_20260902\\user_annotations\\manual_static_scene_annotations.jsonl",
+      "source_manual_sha256": "5ea5882bd764524e5fd61c1d72c7594aaa9bbf9abfcd5a1bd9fe992bde278fc9",
+      "other_checkpoint_geometry_included": false,
+      "person_gt": false,
+      "final_localization": false
+    }
+  ]
+}

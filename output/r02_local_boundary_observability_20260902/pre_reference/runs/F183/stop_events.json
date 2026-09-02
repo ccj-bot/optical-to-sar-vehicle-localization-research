@@ -1,0 +1,73 @@
+[
+  {
+    "seed_frame": 183,
+    "path_kind": "PAIR_SAFE_FROZEN",
+    "direction": "F183_BACKWARD_PAIR_SAFE",
+    "source_frame": 166,
+    "destination_frame": 165,
+    "status": "PROPAGATION_AMBIGUOUS",
+    "reasons": [
+      "SAR_BOUNDARY_FAR:BOUNDARY_RESPONSE_TOO_WEAK"
+    ]
+  },
+  {
+    "seed_frame": 183,
+    "path_kind": "BOUNDARY_INDEPENDENT_DIAGNOSTIC",
+    "direction": "BACKWARD",
+    "object_type": "SAR_BOUNDARY_NEAR",
+    "source_frame": 62,
+    "destination_frame": 61,
+    "status": "PROPAGATION_AMBIGUOUS",
+    "reasons": [
+      "BOUNDARY_RESPONSE_TOO_WEAK",
+      "BOUNDARY_SUPPORT_TOO_FRAGMENTED"
+    ]
+  },
+  {
+    "seed_frame": 183,
+    "path_kind": "BOUNDARY_INDEPENDENT_DIAGNOSTIC",
+    "direction": "BACKWARD",
+    "object_type": "SAR_BOUNDARY_FAR",
+    "source_frame": 166,
+    "destination_frame": 165,
+    "status": "PROPAGATION_AMBIGUOUS",
+    "reasons": [
+      "BOUNDARY_RESPONSE_TOO_WEAK"
+    ]
+  },
+  {
+    "seed_frame": 183,
+    "path_kind": "PAIR_SAFE_FROZEN",
+    "direction": "F183_FORWARD_PAIR_SAFE",
+    "source_frame": 259,
+    "destination_frame": 260,
+    "status": "PROPAGATION_AMBIGUOUS",
+    "reasons": [
+      "SAR_BOUNDARY_FAR:RIDGE_JUMP_EXCEEDS_LOCAL_CORRIDOR"
+    ]
+  },
+  {
+    "seed_frame": 183,
+    "path_kind": "BOUNDARY_INDEPENDENT_DIAGNOSTIC",
+    "direction": "FORWARD",
+    "object_type": "SAR_BOUNDARY_NEAR",
+    "source_frame": 282,
+    "destination_frame": 283,
+    "status": "PROPAGATION_AMBIGUOUS",
+    "reasons": [
+      "P0_UNAVAILABLE"
+    ]
+  },
+  {
+    "seed_frame": 183,
+    "path_kind": "BOUNDARY_INDEPENDENT_DIAGNOSTIC",
+    "direction": "FORWARD",
+    "object_type": "SAR_BOUNDARY_FAR",
+    "source_frame": 259,
+    "destination_frame": 260,
+    "status": "PROPAGATION_AMBIGUOUS",
+    "reasons": [
+      "RIDGE_JUMP_EXCEEDS_LOCAL_CORRIDOR"
+    ]
+  }
+]

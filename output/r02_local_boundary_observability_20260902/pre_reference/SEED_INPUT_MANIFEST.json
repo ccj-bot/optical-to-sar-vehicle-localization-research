@@ -1,0 +1,95 @@
+{
+  "schema": "R02_LOCAL_OBSERVABILITY_SEED_INPUT_MANIFEST_V1",
+  "primary_seed_frames": [
+    62,
+    150,
+    183,
+    264,
+    454
+  ],
+  "source_manual_files": [
+    {
+      "path": "D:\\profile\\research\\workspace\\output\\r02_manual_static_scene_anchor_preparation_20260902\\user_annotations\\manual_static_scene_annotations.jsonl",
+      "event_count": 20,
+      "sha256": "5ea5882bd764524e5fd61c1d72c7594aaa9bbf9abfcd5a1bd9fe992bde278fc9",
+      "active_sar_boundary_record_count": 4
+    },
+    {
+      "path": "D:\\profile\\research\\workspace\\output\\r02_boundary_multibracket_preparation_20260902\\user_annotations\\manual_static_scene_annotations.jsonl",
+      "event_count": 86,
+      "sha256": "2650f9ec2cbe3709475144b6905dd7e9e83d18ddab4d3876098a4877556f2f1e",
+      "active_sar_boundary_record_count": 12
+    },
+    {
+      "path": "D:\\profile\\research\\workspace\\output\\r02_boundary_multibracket_replication_20260902\\repair_user_annotations\\manual_static_scene_annotations.jsonl",
+      "event_count": 44,
+      "sha256": "00c795d6f1997324aa087537ef19a9ac9566400a2cc36ff24c40d9ed63c84feb",
+      "active_sar_boundary_record_count": 6
+    }
+  ],
+  "actual_active_manual_checkpoint_frames": [
+    47,
+    62,
+    82,
+    150,
+    183,
+    239,
+    264,
+    278,
+    427,
+    454,
+    472
+  ],
+  "actual_active_manual_boundary_record_count": 22,
+  "isolated_seed_files": [
+    {
+      "seed_frame": 62,
+      "seed_file": "D:\\profile\\research\\workspace\\output\\r02_local_boundary_observability_20260902\\pre_reference\\isolated_seed_inputs\\F062.json",
+      "seed_file_sha256": "efc5e3440a4b57745a75f04c4ce9fc9af0724f04c8b2f0c0a7f48fffb07fd6ae",
+      "boundary_record_count": 2,
+      "included_frame_ids": [
+        62
+      ]
+    },
+    {
+      "seed_frame": 150,
+      "seed_file": "D:\\profile\\research\\workspace\\output\\r02_local_boundary_observability_20260902\\pre_reference\\isolated_seed_inputs\\F150.json",
+      "seed_file_sha256": "f09edb865129944ac1bad78bf34703dbce2e7fb68a9523ef1f7c4227c20d2131",
+      "boundary_record_count": 2,
+      "included_frame_ids": [
+        150
+      ]
+    },
+    {
+      "seed_frame": 183,
+      "seed_file": "D:\\profile\\research\\workspace\\output\\r02_local_boundary_observability_20260902\\pre_reference\\isolated_seed_inputs\\F183.json",
+      "seed_file_sha256": "fc65d8377c8fa47ea74a968f510ee23f1dc2a072bf9c874e27966f70476a6cc2",
+      "boundary_record_count": 2,
+      "included_frame_ids": [
+        183
+      ]
+    },
+    {
+      "seed_frame": 264,
+      "seed_file": "D:\\profile\\research\\workspace\\output\\r02_local_boundary_observability_20260902\\pre_reference\\isolated_seed_inputs\\F264.json",
+      "seed_file_sha256": "5067b2b1ce49e4a5f59fe2c4d93142e453fea745249ef464198ee6665d729706",
+      "boundary_record_count": 2,
+      "included_frame_ids": [
+        264
+      ]
+    },
+    {
+      "seed_frame": 454,
+      "seed_file": "D:\\profile\\research\\workspace\\output\\r02_local_boundary_observability_20260902\\pre_reference\\isolated_seed_inputs\\F454.json",
+      "seed_file_sha256": "ae3c2d2119f046737d75cdd97f8b0b412096d8e37e854bb4377f2b66202c7f6c",
+      "boundary_record_count": 2,
+      "included_frame_ids": [
+        454
+      ]
+    }
+  ],
+  "frozen_source_sha256": "e80bd4ae8ff808c290340a1452c35f3fe72099051b7742178ad85ea902a90967",
+  "manual_files_modified": false,
+  "r04_accessed": false,
+  "person_experiment_run": false
+}

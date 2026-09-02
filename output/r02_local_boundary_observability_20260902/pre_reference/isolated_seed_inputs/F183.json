@@ -1,0 +1,59 @@
+{
+  "seed_frame": 183,
+  "boundaries": [
+    {
+      "schema": "R02_ISOLATED_LOCAL_BOUNDARY_SEED_V1",
+      "run_id": "R02ZF",
+      "sar_frame_index": 183,
+      "sar_timestamp_ms": 6100,
+      "object_type": "SAR_BOUNDARY_NEAR",
+      "points": [
+        [
+          441.992,
+          448.555
+        ],
+        [
+          564.224,
+          449.855
+        ]
+      ],
+      "confidence_state": "CONFIDENT",
+      "source_geometry_status": "DRAFT",
+      "derived_geometry_status": "USER_CONFIRMED_SEMANTIC_CHECKPOINT",
+      "source_event_id": "5b210fb4-cc22-410d-b5bd-6babb2e0786a",
+      "source_revision": 2,
+      "source_manual_path": "D:\\profile\\research\\workspace\\output\\r02_manual_static_scene_anchor_preparation_20260902\\user_annotations\\manual_static_scene_annotations.jsonl",
+      "source_manual_sha256": "5ea5882bd764524e5fd61c1d72c7594aaa9bbf9abfcd5a1bd9fe992bde278fc9",
+      "other_checkpoint_geometry_included": false,
+      "person_gt": false,
+      "final_localization": false
+    },
+    {
+      "schema": "R02_ISOLATED_LOCAL_BOUNDARY_SEED_V1",
+      "run_id": "R02ZF",
+      "sar_frame_index": 183,
+      "sar_timestamp_ms": 6100,
+      "object_type": "SAR_BOUNDARY_FAR",
+      "points": [
+        [
+          425.797,
+          389.696
+        ],
+        [
+          603.276,
+          390.719
+        ]
+      ],
+      "confidence_state": "CONFIDENT",
+      "source_geometry_status": "DRAFT",
+      "derived_geometry_status": "USER_CONFIRMED_SEMANTIC_CHECKPOINT",
+      "source_event_id": "f07a1cb2-324b-4baf-8488-4b0b9c20d3f4",
+      "source_revision": 2,
+      "source_manual_path": "D:\\profile\\research\\workspace\\output\\r02_manual_static_scene_anchor_preparation_20260902\\user_annotations\\manual_static_scene_annotations.jsonl",
+      "source_manual_sha256": "5ea5882bd764524e5fd61c1d72c7594aaa9bbf9abfcd5a1bd9fe992bde278fc9",
+      "other_checkpoint_geometry_included": false,
+      "person_gt": false,
+      "final_localization": false
+    }
+  ]
+}

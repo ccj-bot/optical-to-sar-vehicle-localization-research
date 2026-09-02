@@ -1,0 +1,241 @@
+{
+  "schema": "R02_LOCAL_BOUNDARY_OBSERVABILITY_FINAL_SUMMARY_V1",
+  "direct_answer": "PARTIAL_NOT_YET_SAFE_AS_A_GENERAL_INTERFACE",
+  "direct_answer_text": "Sparse manual anchors initialize useful local propagation, but the current system does not yet fully achieve follow-when-observable and stop-when-not: stable intervals and the short entrance interval work, while F66 contains a SUPPORTED curve-state error caused by rigid shape propagation.",
+  "manual_semantic_checkpoints": {
+    "frame_count": 11,
+    "boundary_record_count": 22,
+    "frames": [
+      47,
+      62,
+      82,
+      150,
+      183,
+      239,
+      264,
+      278,
+      427,
+      454,
+      472
+    ],
+    "primary_independent_seeds": [
+      62,
+      150,
+      183,
+      264,
+      454
+    ],
+    "draft_interpretation": "UI_FINALIZE_OMISSION_GEOMETRY_USER_CONFIRMED"
+  },
+  "scientific_isolation": {
+    "single_seed_geometry_only_per_run": true,
+    "other_checkpoint_geometry_hidden_until_freeze": true,
+    "pre_reference_freeze_manifest_sha256": "351d791efe4734e1b315486e16a842b7a1d48067eb0afb0745d3fb580b2a9ad2",
+    "pre_reference_file_count": 38,
+    "parameter_tuning": false
+  },
+  "algorithm_reported_observability": {
+    "pair_safe_directional_segment_count": 10,
+    "pair_safe_directional_segments": [
+      {
+        "seed": 62,
+        "direction": "BACKWARD",
+        "start": 59,
+        "end": 62
+      },
+      {
+        "seed": 62,
+        "direction": "FORWARD",
+        "start": 62,
+        "end": 66
+      },
+      {
+        "seed": 150,
+        "direction": "BACKWARD",
+        "start": 66,
+        "end": 150
+      },
+      {
+        "seed": 150,
+        "direction": "FORWARD",
+        "start": 150,
+        "end": 164
+      },
+      {
+        "seed": 183,
+        "direction": "BACKWARD",
+        "start": 166,
+        "end": 183
+      },
+      {
+        "seed": 183,
+        "direction": "FORWARD",
+        "start": 183,
+        "end": 259
+      },
+      {
+        "seed": 264,
+        "direction": "BACKWARD",
+        "start": 166,
+        "end": 264
+      },
+      {
+        "seed": 264,
+        "direction": "FORWARD",
+        "start": 264,
+        "end": 269
+      },
+      {
+        "seed": 454,
+        "direction": "BACKWARD",
+        "start": 406,
+        "end": 454
+      },
+      {
+        "seed": 454,
+        "direction": "FORWARD",
+        "start": 454,
+        "end": 481
+      }
+    ],
+    "merged_pair_safe_components": [
+      {
+        "component_index": 1,
+        "start_frame": 59,
+        "end_frame": 164,
+        "frame_count": 106,
+        "state": "BOTH_SUPPORTED_PAIR_SAFE"
+      },
+      {
+        "component_index": 2,
+        "start_frame": 166,
+        "end_frame": 269,
+        "frame_count": 104,
+        "state": "BOTH_SUPPORTED_PAIR_SAFE"
+      },
+      {
+        "component_index": 3,
+        "start_frame": 406,
+        "end_frame": 481,
+        "frame_count": 76,
+        "state": "BOTH_SUPPORTED_PAIR_SAFE"
+      }
+    ],
+    "pair_safe_supported_frame_count": 286,
+    "pair_safe_supported_frame_fraction": 0.5777777777777777,
+    "unknown_frame_count": 209,
+    "unknown_frame_fraction": 0.4222222222222222,
+    "boundary_independent_state_counts": {
+      "near_supported": 307,
+      "far_supported": 286,
+      "both_pair_safe_supported": 286,
+      "partial": 21,
+      "unknown": 188
+    },
+    "segment_length_frames": [
+      4,
+      5,
+      85,
+      15,
+      18,
+      77,
+      99,
+      6,
+      49,
+      28
+    ],
+    "segment_length_median": 23.0,
+    "segment_length_mean": 38.6,
+    "stop_reason_distribution_pair_safe": {
+      "BOUNDARY_RESPONSE_TOO_WEAK": 7,
+      "BOUNDARY_SUPPORT_TOO_FRAGMENTED": 2,
+      "RIDGE_JUMP_EXCEEDS_LOCAL_CORRIDOR": 1,
+      "P0_UNAVAILABLE": 4
+    },
+    "coverage_is_algorithm_claim_not_validated_safe_fraction": true
+  },
+  "post_freeze_audit": {
+    "checkpoint_crossings": 6,
+    "checkpoint_consistent": 3,
+    "checkpoint_inconsistent": 3,
+    "natural_overlap_audits": 3,
+    "natural_overlap_consistent": 0,
+    "confirmed_semantic_ridge_switch_count": 0,
+    "confirmed_near_far_reversal_count": 0,
+    "confirmed_false_support_curve_state_count": 1,
+    "strongest_false_support_case": {
+      "frame": 66,
+      "paths": [
+        "F62_FORWARD",
+        "F150_BACKWARD"
+      ],
+      "verdict": "FALSE_SUPPORT_CURVE_STATE",
+      "max_node_median_disagreement_m": 0.11560599999999965,
+      "max_node_disagreement_m": 0.41707099999999997,
+      "max_shape_rms_m": 0.1828175025611994
+    },
+    "strongest_premature_stop_candidate": {
+      "frame": 67,
+      "seed": 62,
+      "reason": "SAR_BOUNDARY_NEAR:BOUNDARY_RESPONSE_TOO_WEAK",
+      "verdict": "HUMAN_VISIBLE_TRACE_REMAINS_BUT_CONSERVATIVE_STOP_IS_SAFER"
+    },
+    "strongest_checkpoint_disagreement": {
+      "seed_frame": 454,
+      "direction": "BACKWARD",
+      "checkpoint_frame": 427,
+      "boundary_count": 2,
+      "both_boundary_metrics_available": true,
+      "both_boundary_frozen_0p12_pass": false,
+      "max_node_median_abs_disagreement_m": 0.18305317095794482,
+      "max_node_max_abs_disagreement_m": 0.29126719207484886,
+      "max_shape_rms_m": 0.07347089613023923
+    },
+    "manual_visual_verdict_count": 19
+  },
+  "representation_verdict": {
+    "current_state": {
+      "state": "D_PERP_THETA_CURVE_SAMPLED_AT_NODES",
+      "per_frame_update": "ONE_RIGID_SCALAR_SHIFT_FOR_ALL_NODES",
+      "curve_shape_can_change_within_path": false,
+      "nodes_independently_updated": false,
+      "center_correct_does_not_prove_curve_correct": true
+    },
+    "curved_entry": "PRIMARY_REPRESENTATION_FAILURE_MODE",
+    "reason": "A whole-curve scalar shift freezes curvature and cannot naturally express curved-to-straight evolution."
+  },
+  "research_questions": {
+    "sparse_anchors_initialize_local_propagation": "YES",
+    "weak_evidence_stop_without_silent_error": "PARTIALLY_ESTABLISHED",
+    "curved_to_straight_naturally_followed": "NO_CURRENT_RIGID_STATE_IS_A_PRIMARY_FAILURE_MODE",
+    "optional_scene_geometry_context_qualified": "NO_NOT_YET"
+  },
+  "optional_scene_context_policy": {
+    "current_qualification": "NOT_QUALIFIED_TO_CONSTRAIN_PERSON",
+    "allowed_interim_use": "EXPERIMENTAL_READ_ONLY_DIAGNOSTIC_NEAR_MANUAL_ANCHORS_OR_STABLE_INTERVALS",
+    "mandatory_exit_state": "UNKNOWN_MEANS_NO_SCENE_GEOMETRY_CONSTRAINT",
+    "qualification_blocker": "No shape-adaptation or shape-observability gate; F66 proves center/evidence support can coexist with a wrong full curve state."
+  },
+  "structural_recommendations_not_implemented": [
+    "Retain the frozen rigid propagator as a comparator.",
+    "Add a low-dimensional or regularized node-wise curve-shape update instead of one scalar shift for all nodes.",
+    "Add a shape-observability gate based on curve residual and shape change, not center continuity alone.",
+    "Keep near and far observability separate; accept pair context only when both boundaries and corridor geometry are safe.",
+    "Do not bridge UNKNOWN gaps or tune thresholds against checkpoints."
+  ],
+  "scientific_non_claims": {
+    "scientifically_validated_safe_frame_fraction_established": false,
+    "full_stream_boundary_trajectory_recovered": false,
+    "person_experiment_run": false,
+    "tree_experiment_run": false,
+    "final_localization_run": false,
+    "r04_accessed": false
+  },
+  "artifacts": {
+    "timeline_figure": "figures/R02_LOCAL_BOUNDARY_OBSERVABILITY_TIMELINE.png",
+    "entrance_figure": "figures/ENTRANCE_F057_F068_CURVE_EVOLUTION.png",
+    "f66_conflict_figure": "figures/F066_NATURAL_OVERLAP_SHAPE_CONFLICT.png",
+    "manual_visual_verdicts": "post_freeze_audit/MANUAL_VISUAL_VERDICTS.csv",
+    "report": "REPORT.md"
+  }
+}

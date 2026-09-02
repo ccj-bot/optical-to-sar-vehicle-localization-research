@@ -1,0 +1,138 @@
+{
+  "schema": "R02_LOCAL_BOUNDARY_OBSERVABILITY_COMPUTED_AUDIT_V1",
+  "pre_reference_freeze_manifest_sha256": "351d791efe4734e1b315486e16a842b7a1d48067eb0afb0745d3fb580b2a9ad2",
+  "pre_reference_file_count": 38,
+  "manual_source_files": [
+    {
+      "path": "D:\\profile\\research\\workspace\\output\\r02_manual_static_scene_anchor_preparation_20260902\\user_annotations\\manual_static_scene_annotations.jsonl",
+      "event_count": 20,
+      "sha256": "5ea5882bd764524e5fd61c1d72c7594aaa9bbf9abfcd5a1bd9fe992bde278fc9"
+    },
+    {
+      "path": "D:\\profile\\research\\workspace\\output\\r02_boundary_multibracket_preparation_20260902\\user_annotations\\manual_static_scene_annotations.jsonl",
+      "event_count": 86,
+      "sha256": "2650f9ec2cbe3709475144b6905dd7e9e83d18ddab4d3876098a4877556f2f1e"
+    },
+    {
+      "path": "D:\\profile\\research\\workspace\\output\\r02_boundary_multibracket_replication_20260902\\repair_user_annotations\\manual_static_scene_annotations.jsonl",
+      "event_count": 44,
+      "sha256": "00c795d6f1997324aa087537ef19a9ac9566400a2cc36ff24c40d9ed63c84feb"
+    }
+  ],
+  "actual_manual_checkpoint_frame_count": 11,
+  "actual_manual_checkpoint_frames": [
+    47,
+    62,
+    82,
+    150,
+    183,
+    239,
+    264,
+    278,
+    427,
+    454,
+    472
+  ],
+  "actual_manual_boundary_record_count": 22,
+  "primary_seed_frame_count": 5,
+  "primary_seed_frames": [
+    62,
+    150,
+    183,
+    264,
+    454
+  ],
+  "checkpoint_crossing_audit_count": 6,
+  "checkpoint_geometry_consistent_count": 3,
+  "checkpoint_geometry_inconsistent_count": 3,
+  "strongest_checkpoint_disagreement": {
+    "seed_frame": 454,
+    "direction": "BACKWARD",
+    "checkpoint_frame": 427,
+    "boundary_count": 2,
+    "both_boundary_metrics_available": true,
+    "both_boundary_frozen_0p12_pass": false,
+    "max_node_median_abs_disagreement_m": 0.18305317095794482,
+    "max_node_max_abs_disagreement_m": 0.29126719207484886,
+    "max_shape_rms_m": 0.07347089613023923
+  },
+  "natural_overlap_audit_count": 3,
+  "natural_overlap_consistent_count": 0,
+  "natural_overlap_inconsistent_count": 3,
+  "stop_reason_distribution_pair_safe": {
+    "BOUNDARY_RESPONSE_TOO_WEAK": 7,
+    "BOUNDARY_SUPPORT_TOO_FRAGMENTED": 2,
+    "RIDGE_JUMP_EXCEEDS_LOCAL_CORRIDOR": 1,
+    "P0_UNAVAILABLE": 4
+  },
+  "representation": {
+    "state": "D_PERP_THETA_CURVE_SAMPLED_AT_NODES",
+    "per_frame_update": "ONE_RIGID_SCALAR_SHIFT_FOR_ALL_NODES",
+    "curve_shape_can_change_within_path": false,
+    "nodes_independently_updated": false,
+    "center_correct_does_not_prove_curve_correct": true
+  },
+  "pre_reference_metrics": {
+    "schema": "R02_LOCAL_BOUNDARY_OBSERVABILITY_PRE_REFERENCE_SUMMARY_V1",
+    "primary_seed_frames": [
+      62,
+      150,
+      183,
+      264,
+      454
+    ],
+    "run_count": 5,
+    "pair_safe_directional_segment_count": 10,
+    "supported_component_count": 3,
+    "supported_components": [
+      {
+        "component_index": 1,
+        "start_frame": 59,
+        "end_frame": 164,
+        "frame_count": 106,
+        "state": "BOTH_SUPPORTED_PAIR_SAFE"
+      },
+      {
+        "component_index": 2,
+        "start_frame": 166,
+        "end_frame": 269,
+        "frame_count": 104,
+        "state": "BOTH_SUPPORTED_PAIR_SAFE"
+      },
+      {
+        "component_index": 3,
+        "start_frame": 406,
+        "end_frame": 481,
+        "frame_count": 76,
+        "state": "BOTH_SUPPORTED_PAIR_SAFE"
+      }
+    ],
+    "total_frame_count": 495,
+    "pair_safe_supported_frame_count": 286,
+    "pair_safe_supported_frame_fraction": 0.5777777777777777,
+    "unknown_for_optional_context_frame_count": 209,
+    "unknown_for_optional_context_frame_fraction": 0.4222222222222222,
+    "boundary_independent_state_counts": {
+      "near_supported": 307,
+      "far_supported": 286,
+      "both_pair_safe_supported": 286,
+      "partial": 21,
+      "unknown": 188
+    },
+    "full_stream_closure_rate_is_kpi": false,
+    "unknown_gaps_are_legal": true,
+    "parameter_tuning": false,
+    "manual_checkpoint_geometry_used_for_stop_or_selection": false,
+    "r04_accessed": false,
+    "person_experiment_run": false,
+    "tree_experiment_run": false,
+    "final_localization_run": false
+  },
+  "visual_review_status": "PENDING_MANUAL_IMAGE_REVIEW",
+  "semantic_switch_error_count": null,
+  "optional_scene_context_qualification": "PENDING_VISUAL_REVIEW",
+  "r04_accessed": false,
+  "person_experiment_run": false,
+  "tree_experiment_run": false,
+  "final_localization_run": false
+}

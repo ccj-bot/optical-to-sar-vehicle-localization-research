@@ -1,0 +1,199 @@
+{
+  "schema": "R02_LOCAL_BOUNDARY_OBSERVABILITY_PRE_REFERENCE_FREEZE_V1",
+  "file_count": 38,
+  "files": [
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/ALL_BOUNDARY_INDEPENDENT_PATHS.jsonl",
+      "bytes": 1528079,
+      "sha256": "951186061492558c35d236bcc4da5e4f8d869c25b35d5586c5d5a03b31017050"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/ALL_PAIR_SAFE_PATHS.jsonl",
+      "bytes": 1029328,
+      "sha256": "74d32790164edf9de30edf3d7297fe2127c6b2c0edf85a30e9d00f6011e11b22"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/FULL_R02_LOCAL_OBSERVABILITY_TIMELINE.csv",
+      "bytes": 24762,
+      "sha256": "af828d23882b2df18830a40e531a5c939dc6dd2b94d890da7ec5ca6f719a7a63"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/isolated_seed_inputs/F062.json",
+      "bytes": 2673,
+      "sha256": "efc5e3440a4b57745a75f04c4ce9fc9af0724f04c8b2f0c0a7f48fffb07fd6ae"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/isolated_seed_inputs/F150.json",
+      "bytes": 2049,
+      "sha256": "f09edb865129944ac1bad78bf34703dbce2e7fb68a9523ef1f7c4227c20d2131"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/isolated_seed_inputs/F183.json",
+      "bytes": 2050,
+      "sha256": "fc65d8377c8fa47ea74a968f510ee23f1dc2a072bf9c874e27966f70476a6cc2"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/isolated_seed_inputs/F264.json",
+      "bytes": 2306,
+      "sha256": "5067b2b1ce49e4a5f59fe2c4d93142e453fea745249ef464198ee6665d729706"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/isolated_seed_inputs/F454.json",
+      "bytes": 2368,
+      "sha256": "ae3c2d2119f046737d75cdd97f8b0b412096d8e37e854bb4377f2b66202c7f6c"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/LOCAL_SEGMENTS.csv",
+      "bytes": 9235,
+      "sha256": "23e27ead66fcaf7072007bb5d8750404f37db768de4e8401a32580ee0e2f05b0"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/PAIR_SAFE_SUPPORTED_COMPONENTS.csv",
+      "bytes": 178,
+      "sha256": "41e3ad19ebe3bf11f3d9b48d3a487543bf1468cc990c8563683245d64e928c59"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/PRE_REFERENCE_SUMMARY.json",
+      "bytes": 1532,
+      "sha256": "feef328426ae4138a318ebbe001e4cfcdcb4b8b2fa21b68591712661b1a665a0"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F062/boundary_independent_paths.jsonl",
+      "bytes": 33697,
+      "sha256": "0c8e8784cef8b94ddbd8641b3dbc9d32293c9611b93d23a594d1f72462ab3a5e"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F062/frame_diagnostics.csv",
+      "bytes": 11610,
+      "sha256": "1d732a4d3180addb7f458224e898d809d50b8215854b7af65ce48a62b3f81c75"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F062/pair_safe_paths.jsonl",
+      "bytes": 23050,
+      "sha256": "73b4604c449c8f1b3d8fcddc140e655c0f822da9496e3e720729a6bae7aa1663"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F062/RUN_SUMMARY.json",
+      "bytes": 5582,
+      "sha256": "24cc524e361ddcfabbe5e70b9629336b00f8b70ad6e7a47718bf8bfc8577d66b"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F062/stop_events.json",
+      "bytes": 1978,
+      "sha256": "44c9fb73defefe1560d901a4745f0557bb1d025334b70ba61e69835e1f7b7e02"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F150/boundary_independent_paths.jsonl",
+      "bytes": 373081,
+      "sha256": "fda6d442de683728a670d0190c3ffa7ec2b9a545e9c58874f3a3c6c50a93b867"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F150/frame_diagnostics.csv",
+      "bytes": 128715,
+      "sha256": "4ecf6cfa07cafa5f71500566057f4a841d3e7c0a48682e160b56f80edb93d02e"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F150/pair_safe_paths.jsonl",
+      "bytes": 228745,
+      "sha256": "9a4a32235da6ca66aeb5079536308b25ced25844702ee56d80633b6aad258e02"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F150/RUN_SUMMARY.json",
+      "bytes": 5556,
+      "sha256": "5833e26a347c82987114f468ac5d819e7bff882e281a1d740792e5b56f00ee2d"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F150/stop_events.json",
+      "bytes": 1935,
+      "sha256": "5cc32cdd95fcd3ede7fe5daa65b3e37d7d839ab8a23938f3b667fa75248a45fe"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F183/boundary_independent_paths.jsonl",
+      "bytes": 412481,
+      "sha256": "a92cdcca66f83915a6bd42f9dda36dca1d3693902318a1c7d042bf015b87d839"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F183/frame_diagnostics.csv",
+      "bytes": 124850,
+      "sha256": "8105d130a80e10c6ed24cde025589fbe39a0e632fc252dafb85a137f37216e3a"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F183/pair_safe_paths.jsonl",
+      "bytes": 244303,
+      "sha256": "ac6bb2ad1d12ad1fd19b5c74997595b4042c21d239845f335fab44ea0fb296d8"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F183/RUN_SUMMARY.json",
+      "bytes": 5515,
+      "sha256": "5d232f4600e14bb9bde5b43c610fec1cf2b3d293409be9d232d1366601f73f92"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F183/stop_events.json",
+      "bytes": 1894,
+      "sha256": "13952c1cde08155660d87867cb487e9e9df951f00ffda4194217f133835e7997"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F264/boundary_independent_paths.jsonl",
+      "bytes": 480663,
+      "sha256": "0234ddaf7f0218ba616c70122a885b221b153504d62559aa7c292bedd40b8928"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F264/frame_diagnostics.csv",
+      "bytes": 130661,
+      "sha256": "adbac4bdc07daf4690a6c8a70567e11951903b8caa485cd7f261ead44107a254"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F264/pair_safe_paths.jsonl",
+      "bytes": 307383,
+      "sha256": "8e65e892fa9dd0acccb99f6a170928aacadde76955904b234a6efa8a24840fcb"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F264/RUN_SUMMARY.json",
+      "bytes": 5452,
+      "sha256": "1c1fdc1cfa9a03fcd7e639e8261811c2d5a4aca12f3ec3853ac5135235e8923e"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F264/stop_events.json",
+      "bytes": 1838,
+      "sha256": "5dbd0898128d133c9b747f856d3056fbae5b1d1234247ce34f93687b58d64648"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F454/boundary_independent_paths.jsonl",
+      "bytes": 228157,
+      "sha256": "07a6e1f0b4a850f00313c37a08a02428ee1447d7bbe31560bc533cd1f51afcf9"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F454/frame_diagnostics.csv",
+      "bytes": 75258,
+      "sha256": "236f17c647e6b3796b1f311cddb9afc1709cfd7171d4cf00ee3e6ec38a192a34"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F454/pair_safe_paths.jsonl",
+      "bytes": 225847,
+      "sha256": "a8b5e9c9f9e3758bf528aa20062bfa69f277197254cfc3efa9c5e726518e887c"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F454/RUN_SUMMARY.json",
+      "bytes": 5490,
+      "sha256": "82f2c501d3b1f8bdb9e2ffb797301d7f73f182ddc1d42872c95b451ed50e4256"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F454/stop_events.json",
+      "bytes": 1866,
+      "sha256": "f10548007e8757fcb635e79cb73df5b7be65e30049a6cb3dea32610896d28408"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/SEED_INPUT_MANIFEST.json",
+      "bytes": 3528,
+      "sha256": "37491ef4ed03b732e45837f1f5712332c15a26d23de753db6ceaf9f2e5087770"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/STOP_EVENTS.json",
+      "bytes": 9499,
+      "sha256": "7396b16edf13ef3779c55feb648d1d17613c1c3749c8e8ad24034167fa385b5d"
+    }
+  ],
+  "manual_checkpoints_revealed_for_audit": false,
+  "frozen_source_sha256": "e80bd4ae8ff808c290340a1452c35f3fe72099051b7742178ad85ea902a90967",
+  "parameter_tuning": false
+}

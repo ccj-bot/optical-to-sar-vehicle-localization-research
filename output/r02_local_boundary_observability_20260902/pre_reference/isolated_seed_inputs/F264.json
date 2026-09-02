@@ -1,0 +1,75 @@
+{
+  "seed_frame": 264,
+  "boundaries": [
+    {
+      "schema": "R02_ISOLATED_LOCAL_BOUNDARY_SEED_V1",
+      "run_id": "R02ZF",
+      "sar_frame_index": 264,
+      "sar_timestamp_ms": 8800,
+      "object_type": "SAR_BOUNDARY_NEAR",
+      "points": [
+        [
+          445.137,
+          447.288
+        ],
+        [
+          496.567,
+          445.514
+        ],
+        [
+          546.815,
+          445.514
+        ],
+        [
+          597.653,
+          446.697
+        ]
+      ],
+      "confidence_state": "CONFIDENT",
+      "source_geometry_status": "DRAFT",
+      "derived_geometry_status": "USER_CONFIRMED_SEMANTIC_CHECKPOINT",
+      "source_event_id": "efcd6972-b309-4ec7-b32b-62b8a49de0e9",
+      "source_revision": 4,
+      "source_manual_path": "D:\\profile\\research\\workspace\\output\\r02_boundary_multibracket_replication_20260902\\repair_user_annotations\\manual_static_scene_annotations.jsonl",
+      "source_manual_sha256": "00c795d6f1997324aa087537ef19a9ac9566400a2cc36ff24c40d9ed63c84feb",
+      "other_checkpoint_geometry_included": false,
+      "person_gt": false,
+      "final_localization": false
+    },
+    {
+      "schema": "R02_ISOLATED_LOCAL_BOUNDARY_SEED_V1",
+      "run_id": "R02ZF",
+      "sar_frame_index": 264,
+      "sar_timestamp_ms": 8800,
+      "object_type": "SAR_BOUNDARY_FAR",
+      "points": [
+        [
+          423.183,
+          386.372
+        ],
+        [
+          488.154,
+          386.372
+        ],
+        [
+          559.346,
+          387.755
+        ],
+        [
+          626.391,
+          389.137
+        ]
+      ],
+      "confidence_state": "CONFIDENT",
+      "source_geometry_status": "COMPLETE",
+      "derived_geometry_status": "USER_CONFIRMED_SEMANTIC_CHECKPOINT",
+      "source_event_id": "ec9e6f6d-2498-44b4-beb2-84c5eaa5e3be",
+      "source_revision": 10,
+      "source_manual_path": "D:\\profile\\research\\workspace\\output\\r02_boundary_multibracket_replication_20260902\\repair_user_annotations\\manual_static_scene_annotations.jsonl",
+      "source_manual_sha256": "00c795d6f1997324aa087537ef19a9ac9566400a2cc36ff24c40d9ed63c84feb",
+      "other_checkpoint_geometry_included": false,
+      "person_gt": false,
+      "final_localization": false
+    }
+  ]
+}

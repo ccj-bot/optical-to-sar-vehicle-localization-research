@@ -1,0 +1,360 @@
+[
+  {
+    "seed_frame": 62,
+    "path_kind": "PAIR_SAFE_FROZEN",
+    "direction": "F062_BACKWARD_PAIR_SAFE",
+    "source_frame": 59,
+    "destination_frame": 58,
+    "status": "PROPAGATION_AMBIGUOUS",
+    "reasons": [
+      "SAR_BOUNDARY_FAR:BOUNDARY_RESPONSE_TOO_WEAK",
+      "SAR_BOUNDARY_FAR:BOUNDARY_SUPPORT_TOO_FRAGMENTED"
+    ]
+  },
+  {
+    "seed_frame": 62,
+    "path_kind": "BOUNDARY_INDEPENDENT_DIAGNOSTIC",
+    "direction": "BACKWARD",
+    "object_type": "SAR_BOUNDARY_NEAR",
+    "source_frame": 52,
+    "destination_frame": 51,
+    "status": "PROPAGATION_AMBIGUOUS",
+    "reasons": [
+      "BOUNDARY_RESPONSE_TOO_WEAK"
+    ]
+  },
+  {
+    "seed_frame": 62,
+    "path_kind": "BOUNDARY_INDEPENDENT_DIAGNOSTIC",
+    "direction": "BACKWARD",
+    "object_type": "SAR_BOUNDARY_FAR",
+    "source_frame": 59,
+    "destination_frame": 58,
+    "status": "PROPAGATION_AMBIGUOUS",
+    "reasons": [
+      "BOUNDARY_RESPONSE_TOO_WEAK",
+      "BOUNDARY_SUPPORT_TOO_FRAGMENTED"
+    ]
+  },
+  {
+    "seed_frame": 62,
+    "path_kind": "PAIR_SAFE_FROZEN",
+    "direction": "F062_FORWARD_PAIR_SAFE",
+    "source_frame": 66,
+    "destination_frame": 67,
+    "status": "PROPAGATION_AMBIGUOUS",
+    "reasons": [
+      "SAR_BOUNDARY_NEAR:BOUNDARY_RESPONSE_TOO_WEAK"
+    ]
+  },
+  {
+    "seed_frame": 62,
+    "path_kind": "BOUNDARY_INDEPENDENT_DIAGNOSTIC",
+    "direction": "FORWARD",
+    "object_type": "SAR_BOUNDARY_NEAR",
+    "source_frame": 66,
+    "destination_frame": 67,
+    "status": "PROPAGATION_AMBIGUOUS",
+    "reasons": [
+      "BOUNDARY_RESPONSE_TOO_WEAK"
+    ]
+  },
+  {
+    "seed_frame": 62,
+    "path_kind": "BOUNDARY_INDEPENDENT_DIAGNOSTIC",
+    "direction": "FORWARD",
+    "object_type": "SAR_BOUNDARY_FAR",
+    "source_frame": 67,
+    "destination_frame": 68,
+    "status": "PROPAGATION_AMBIGUOUS",
+    "reasons": [
+      "BOUNDARY_RESPONSE_TOO_WEAK",
+      "BOUNDARY_SUPPORT_TOO_FRAGMENTED"
+    ]
+  },
+  {
+    "seed_frame": 150,
+    "path_kind": "PAIR_SAFE_FROZEN",
+    "direction": "F150_BACKWARD_PAIR_SAFE",
+    "source_frame": 66,
+    "destination_frame": 65,
+    "status": "PROPAGATION_AMBIGUOUS",
+    "reasons": [
+      "SAR_BOUNDARY_FAR:BOUNDARY_RESPONSE_TOO_WEAK",
+      "SAR_BOUNDARY_FAR:BOUNDARY_SUPPORT_TOO_FRAGMENTED"
+    ]
+  },
+  {
+    "seed_frame": 150,
+    "path_kind": "BOUNDARY_INDEPENDENT_DIAGNOSTIC",
+    "direction": "BACKWARD",
+    "object_type": "SAR_BOUNDARY_NEAR",
+    "source_frame": 62,
+    "destination_frame": 61,
+    "status": "PROPAGATION_AMBIGUOUS",
+    "reasons": [
+      "BOUNDARY_RESPONSE_TOO_WEAK"
+    ]
+  },
+  {
+    "seed_frame": 150,
+    "path_kind": "BOUNDARY_INDEPENDENT_DIAGNOSTIC",
+    "direction": "BACKWARD",
+    "object_type": "SAR_BOUNDARY_FAR",
+    "source_frame": 66,
+    "destination_frame": 65,
+    "status": "PROPAGATION_AMBIGUOUS",
+    "reasons": [
+      "BOUNDARY_RESPONSE_TOO_WEAK",
+      "BOUNDARY_SUPPORT_TOO_FRAGMENTED"
+    ]
+  },
+  {
+    "seed_frame": 150,
+    "path_kind": "PAIR_SAFE_FROZEN",
+    "direction": "F150_FORWARD_PAIR_SAFE",
+    "source_frame": 164,
+    "destination_frame": 165,
+    "status": "PROPAGATION_AMBIGUOUS",
+    "reasons": [
+      "SAR_BOUNDARY_FAR:BOUNDARY_RESPONSE_TOO_WEAK"
+    ]
+  },
+  {
+    "seed_frame": 150,
+    "path_kind": "BOUNDARY_INDEPENDENT_DIAGNOSTIC",
+    "direction": "FORWARD",
+    "object_type": "SAR_BOUNDARY_NEAR",
+    "source_frame": 282,
+    "destination_frame": 283,
+    "status": "PROPAGATION_AMBIGUOUS",
+    "reasons": [
+      "P0_UNAVAILABLE"
+    ]
+  },
+  {
+    "seed_frame": 150,
+    "path_kind": "BOUNDARY_INDEPENDENT_DIAGNOSTIC",
+    "direction": "FORWARD",
+    "object_type": "SAR_BOUNDARY_FAR",
+    "source_frame": 164,
+    "destination_frame": 165,
+    "status": "PROPAGATION_AMBIGUOUS",
+    "reasons": [
+      "BOUNDARY_RESPONSE_TOO_WEAK"
+    ]
+  },
+  {
+    "seed_frame": 183,
+    "path_kind": "PAIR_SAFE_FROZEN",
+    "direction": "F183_BACKWARD_PAIR_SAFE",
+    "source_frame": 166,
+    "destination_frame": 165,
+    "status": "PROPAGATION_AMBIGUOUS",
+    "reasons": [
+      "SAR_BOUNDARY_FAR:BOUNDARY_RESPONSE_TOO_WEAK"
+    ]
+  },
+  {
+    "seed_frame": 183,
+    "path_kind": "BOUNDARY_INDEPENDENT_DIAGNOSTIC",
+    "direction": "BACKWARD",
+    "object_type": "SAR_BOUNDARY_NEAR",
+    "source_frame": 62,
+    "destination_frame": 61,
+    "status": "PROPAGATION_AMBIGUOUS",
+    "reasons": [
+      "BOUNDARY_RESPONSE_TOO_WEAK",
+      "BOUNDARY_SUPPORT_TOO_FRAGMENTED"
+    ]
+  },
+  {
+    "seed_frame": 183,
+    "path_kind": "BOUNDARY_INDEPENDENT_DIAGNOSTIC",
+    "direction": "BACKWARD",
+    "object_type": "SAR_BOUNDARY_FAR",
+    "source_frame": 166,
+    "destination_frame": 165,
+    "status": "PROPAGATION_AMBIGUOUS",
+    "reasons": [
+      "BOUNDARY_RESPONSE_TOO_WEAK"
+    ]
+  },
+  {
+    "seed_frame": 183,
+    "path_kind": "PAIR_SAFE_FROZEN",
+    "direction": "F183_FORWARD_PAIR_SAFE",
+    "source_frame": 259,
+    "destination_frame": 260,
+    "status": "PROPAGATION_AMBIGUOUS",
+    "reasons": [
+      "SAR_BOUNDARY_FAR:RIDGE_JUMP_EXCEEDS_LOCAL_CORRIDOR"
+    ]
+  },
+  {
+    "seed_frame": 183,
+    "path_kind": "BOUNDARY_INDEPENDENT_DIAGNOSTIC",
+    "direction": "FORWARD",
+    "object_type": "SAR_BOUNDARY_NEAR",
+    "source_frame": 282,
+    "destination_frame": 283,
+    "status": "PROPAGATION_AMBIGUOUS",
+    "reasons": [
+      "P0_UNAVAILABLE"
+    ]
+  },
+  {
+    "seed_frame": 183,
+    "path_kind": "BOUNDARY_INDEPENDENT_DIAGNOSTIC",
+    "direction": "FORWARD",
+    "object_type": "SAR_BOUNDARY_FAR",
+    "source_frame": 259,
+    "destination_frame": 260,
+    "status": "PROPAGATION_AMBIGUOUS",
+    "reasons": [
+      "RIDGE_JUMP_EXCEEDS_LOCAL_CORRIDOR"
+    ]
+  },
+  {
+    "seed_frame": 264,
+    "path_kind": "PAIR_SAFE_FROZEN",
+    "direction": "F264_BACKWARD_PAIR_SAFE",
+    "source_frame": 166,
+    "destination_frame": 165,
+    "status": "PROPAGATION_AMBIGUOUS",
+    "reasons": [
+      "SAR_BOUNDARY_FAR:BOUNDARY_RESPONSE_TOO_WEAK"
+    ]
+  },
+  {
+    "seed_frame": 264,
+    "path_kind": "BOUNDARY_INDEPENDENT_DIAGNOSTIC",
+    "direction": "BACKWARD",
+    "object_type": "SAR_BOUNDARY_NEAR",
+    "source_frame": 64,
+    "destination_frame": 63,
+    "status": "PROPAGATION_AMBIGUOUS",
+    "reasons": [
+      "BOUNDARY_RESPONSE_TOO_WEAK"
+    ]
+  },
+  {
+    "seed_frame": 264,
+    "path_kind": "BOUNDARY_INDEPENDENT_DIAGNOSTIC",
+    "direction": "BACKWARD",
+    "object_type": "SAR_BOUNDARY_FAR",
+    "source_frame": 166,
+    "destination_frame": 165,
+    "status": "PROPAGATION_AMBIGUOUS",
+    "reasons": [
+      "BOUNDARY_RESPONSE_TOO_WEAK"
+    ]
+  },
+  {
+    "seed_frame": 264,
+    "path_kind": "PAIR_SAFE_FROZEN",
+    "direction": "F264_FORWARD_PAIR_SAFE",
+    "source_frame": 269,
+    "destination_frame": 270,
+    "status": "PROPAGATION_AMBIGUOUS",
+    "reasons": [
+      "SAR_BOUNDARY_FAR:BOUNDARY_RESPONSE_TOO_WEAK"
+    ]
+  },
+  {
+    "seed_frame": 264,
+    "path_kind": "BOUNDARY_INDEPENDENT_DIAGNOSTIC",
+    "direction": "FORWARD",
+    "object_type": "SAR_BOUNDARY_NEAR",
+    "source_frame": 282,
+    "destination_frame": 283,
+    "status": "PROPAGATION_AMBIGUOUS",
+    "reasons": [
+      "P0_UNAVAILABLE"
+    ]
+  },
+  {
+    "seed_frame": 264,
+    "path_kind": "BOUNDARY_INDEPENDENT_DIAGNOSTIC",
+    "direction": "FORWARD",
+    "object_type": "SAR_BOUNDARY_FAR",
+    "source_frame": 269,
+    "destination_frame": 270,
+    "status": "PROPAGATION_AMBIGUOUS",
+    "reasons": [
+      "BOUNDARY_RESPONSE_TOO_WEAK"
+    ]
+  },
+  {
+    "seed_frame": 454,
+    "path_kind": "PAIR_SAFE_FROZEN",
+    "direction": "F454_BACKWARD_PAIR_SAFE",
+    "source_frame": 406,
+    "destination_frame": 405,
+    "status": "PROPAGATION_AMBIGUOUS",
+    "reasons": [
+      "SAR_BOUNDARY_FAR:P0_UNAVAILABLE",
+      "SAR_BOUNDARY_NEAR:P0_UNAVAILABLE"
+    ]
+  },
+  {
+    "seed_frame": 454,
+    "path_kind": "BOUNDARY_INDEPENDENT_DIAGNOSTIC",
+    "direction": "BACKWARD",
+    "object_type": "SAR_BOUNDARY_NEAR",
+    "source_frame": 406,
+    "destination_frame": 405,
+    "status": "PROPAGATION_AMBIGUOUS",
+    "reasons": [
+      "P0_UNAVAILABLE"
+    ]
+  },
+  {
+    "seed_frame": 454,
+    "path_kind": "BOUNDARY_INDEPENDENT_DIAGNOSTIC",
+    "direction": "BACKWARD",
+    "object_type": "SAR_BOUNDARY_FAR",
+    "source_frame": 406,
+    "destination_frame": 405,
+    "status": "PROPAGATION_AMBIGUOUS",
+    "reasons": [
+      "P0_UNAVAILABLE"
+    ]
+  },
+  {
+    "seed_frame": 454,
+    "path_kind": "PAIR_SAFE_FROZEN",
+    "direction": "F454_FORWARD_PAIR_SAFE",
+    "source_frame": 481,
+    "destination_frame": 482,
+    "status": "PROPAGATION_AMBIGUOUS",
+    "reasons": [
+      "SAR_BOUNDARY_FAR:P0_UNAVAILABLE",
+      "SAR_BOUNDARY_NEAR:P0_UNAVAILABLE"
+    ]
+  },
+  {
+    "seed_frame": 454,
+    "path_kind": "BOUNDARY_INDEPENDENT_DIAGNOSTIC",
+    "direction": "FORWARD",
+    "object_type": "SAR_BOUNDARY_NEAR",
+    "source_frame": 481,
+    "destination_frame": 482,
+    "status": "PROPAGATION_AMBIGUOUS",
+    "reasons": [
+      "P0_UNAVAILABLE"
+    ]
+  },
+  {
+    "seed_frame": 454,
+    "path_kind": "BOUNDARY_INDEPENDENT_DIAGNOSTIC",
+    "direction": "FORWARD",
+    "object_type": "SAR_BOUNDARY_FAR",
+    "source_frame": 481,
+    "destination_frame": 482,
+    "status": "PROPAGATION_AMBIGUOUS",
+    "reasons": [
+      "P0_UNAVAILABLE"
+    ]
+  }
+]

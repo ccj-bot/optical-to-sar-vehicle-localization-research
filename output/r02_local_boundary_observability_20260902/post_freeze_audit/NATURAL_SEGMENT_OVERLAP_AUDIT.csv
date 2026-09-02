@@ -1,0 +1,4 @@
+﻿first_seed,first_direction,second_seed,second_direction,overlap_start,overlap_end,overlap_frame_count,max_node_median_disagreement_m,max_node_disagreement_m,max_shape_rms_m,frozen_0p12_consistent
+62,FORWARD,150,BACKWARD,66,66,1,0.11560599999999965,0.41707099999999997,0.1828175025611994,False
+183,BACKWARD,264,BACKWARD,166,183,18,0.12982200000000077,0.13966100000000026,0.028185219688779257,False
+183,FORWARD,264,BACKWARD,183,259,77,0.1602680000000003,0.19209799999999966,0.028185221205109412,False

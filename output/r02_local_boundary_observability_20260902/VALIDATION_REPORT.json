@@ -1,0 +1,1013 @@
+{
+  "schema": "R02_LOCAL_BOUNDARY_OBSERVABILITY_VALIDATION_V1",
+  "status": "PASS",
+  "check_count": 158,
+  "manual_sources": [
+    {
+      "path": "D:\\profile\\research\\workspace\\output\\r02_manual_static_scene_anchor_preparation_20260902\\user_annotations\\manual_static_scene_annotations.jsonl",
+      "event_count": 20,
+      "sha256": "5ea5882bd764524e5fd61c1d72c7594aaa9bbf9abfcd5a1bd9fe992bde278fc9"
+    },
+    {
+      "path": "D:\\profile\\research\\workspace\\output\\r02_boundary_multibracket_preparation_20260902\\user_annotations\\manual_static_scene_annotations.jsonl",
+      "event_count": 86,
+      "sha256": "2650f9ec2cbe3709475144b6905dd7e9e83d18ddab4d3876098a4877556f2f1e"
+    },
+    {
+      "path": "D:\\profile\\research\\workspace\\output\\r02_boundary_multibracket_replication_20260902\\repair_user_annotations\\manual_static_scene_annotations.jsonl",
+      "event_count": 44,
+      "sha256": "00c795d6f1997324aa087537ef19a9ac9566400a2cc36ff24c40d9ed63c84feb"
+    }
+  ],
+  "checks": [
+    {
+      "check": "manual_event_count",
+      "pass": true,
+      "detail": {
+        "path": "D:\\profile\\research\\workspace\\output\\r02_manual_static_scene_anchor_preparation_20260902\\user_annotations\\manual_static_scene_annotations.jsonl",
+        "event_count": 20,
+        "sha256": "5ea5882bd764524e5fd61c1d72c7594aaa9bbf9abfcd5a1bd9fe992bde278fc9"
+      }
+    },
+    {
+      "check": "manual_sha256",
+      "pass": true,
+      "detail": {
+        "path": "D:\\profile\\research\\workspace\\output\\r02_manual_static_scene_anchor_preparation_20260902\\user_annotations\\manual_static_scene_annotations.jsonl",
+        "event_count": 20,
+        "sha256": "5ea5882bd764524e5fd61c1d72c7594aaa9bbf9abfcd5a1bd9fe992bde278fc9"
+      }
+    },
+    {
+      "check": "manual_event_count",
+      "pass": true,
+      "detail": {
+        "path": "D:\\profile\\research\\workspace\\output\\r02_boundary_multibracket_preparation_20260902\\user_annotations\\manual_static_scene_annotations.jsonl",
+        "event_count": 86,
+        "sha256": "2650f9ec2cbe3709475144b6905dd7e9e83d18ddab4d3876098a4877556f2f1e"
+      }
+    },
+    {
+      "check": "manual_sha256",
+      "pass": true,
+      "detail": {
+        "path": "D:\\profile\\research\\workspace\\output\\r02_boundary_multibracket_preparation_20260902\\user_annotations\\manual_static_scene_annotations.jsonl",
+        "event_count": 86,
+        "sha256": "2650f9ec2cbe3709475144b6905dd7e9e83d18ddab4d3876098a4877556f2f1e"
+      }
+    },
+    {
+      "check": "manual_event_count",
+      "pass": true,
+      "detail": {
+        "path": "D:\\profile\\research\\workspace\\output\\r02_boundary_multibracket_replication_20260902\\repair_user_annotations\\manual_static_scene_annotations.jsonl",
+        "event_count": 44,
+        "sha256": "00c795d6f1997324aa087537ef19a9ac9566400a2cc36ff24c40d9ed63c84feb"
+      }
+    },
+    {
+      "check": "manual_sha256",
+      "pass": true,
+      "detail": {
+        "path": "D:\\profile\\research\\workspace\\output\\r02_boundary_multibracket_replication_20260902\\repair_user_annotations\\manual_static_scene_annotations.jsonl",
+        "event_count": 44,
+        "sha256": "00c795d6f1997324aa087537ef19a9ac9566400a2cc36ff24c40d9ed63c84feb"
+      }
+    },
+    {
+      "check": "primary_seed_frames",
+      "pass": true,
+      "detail": [
+        62,
+        150,
+        183,
+        264,
+        454
+      ]
+    },
+    {
+      "check": "isolated_seed_file_count",
+      "pass": true,
+      "detail": 5
+    },
+    {
+      "check": "F062_boundary_count",
+      "pass": true,
+      "detail": 2
+    },
+    {
+      "check": "F062_single_frame_only",
+      "pass": true,
+      "detail": [
+        62
+      ]
+    },
+    {
+      "check": "F062_near_far_only",
+      "pass": true,
+      "detail": [
+        "SAR_BOUNDARY_FAR",
+        "SAR_BOUNDARY_NEAR"
+      ]
+    },
+    {
+      "check": "F062_seed_hash",
+      "pass": true,
+      "detail": "D:\\profile\\research\\workspace\\output\\r02_local_boundary_observability_20260902\\pre_reference\\isolated_seed_inputs\\F062.json"
+    },
+    {
+      "check": "F150_boundary_count",
+      "pass": true,
+      "detail": 2
+    },
+    {
+      "check": "F150_single_frame_only",
+      "pass": true,
+      "detail": [
+        150
+      ]
+    },
+    {
+      "check": "F150_near_far_only",
+      "pass": true,
+      "detail": [
+        "SAR_BOUNDARY_FAR",
+        "SAR_BOUNDARY_NEAR"
+      ]
+    },
+    {
+      "check": "F150_seed_hash",
+      "pass": true,
+      "detail": "D:\\profile\\research\\workspace\\output\\r02_local_boundary_observability_20260902\\pre_reference\\isolated_seed_inputs\\F150.json"
+    },
+    {
+      "check": "F183_boundary_count",
+      "pass": true,
+      "detail": 2
+    },
+    {
+      "check": "F183_single_frame_only",
+      "pass": true,
+      "detail": [
+        183
+      ]
+    },
+    {
+      "check": "F183_near_far_only",
+      "pass": true,
+      "detail": [
+        "SAR_BOUNDARY_FAR",
+        "SAR_BOUNDARY_NEAR"
+      ]
+    },
+    {
+      "check": "F183_seed_hash",
+      "pass": true,
+      "detail": "D:\\profile\\research\\workspace\\output\\r02_local_boundary_observability_20260902\\pre_reference\\isolated_seed_inputs\\F183.json"
+    },
+    {
+      "check": "F264_boundary_count",
+      "pass": true,
+      "detail": 2
+    },
+    {
+      "check": "F264_single_frame_only",
+      "pass": true,
+      "detail": [
+        264
+      ]
+    },
+    {
+      "check": "F264_near_far_only",
+      "pass": true,
+      "detail": [
+        "SAR_BOUNDARY_FAR",
+        "SAR_BOUNDARY_NEAR"
+      ]
+    },
+    {
+      "check": "F264_seed_hash",
+      "pass": true,
+      "detail": "D:\\profile\\research\\workspace\\output\\r02_local_boundary_observability_20260902\\pre_reference\\isolated_seed_inputs\\F264.json"
+    },
+    {
+      "check": "F454_boundary_count",
+      "pass": true,
+      "detail": 2
+    },
+    {
+      "check": "F454_single_frame_only",
+      "pass": true,
+      "detail": [
+        454
+      ]
+    },
+    {
+      "check": "F454_near_far_only",
+      "pass": true,
+      "detail": [
+        "SAR_BOUNDARY_FAR",
+        "SAR_BOUNDARY_NEAR"
+      ]
+    },
+    {
+      "check": "F454_seed_hash",
+      "pass": true,
+      "detail": "D:\\profile\\research\\workspace\\output\\r02_local_boundary_observability_20260902\\pre_reference\\isolated_seed_inputs\\F454.json"
+    },
+    {
+      "check": "freeze_manifest_sha256",
+      "pass": true,
+      "detail": "351d791efe4734e1b315486e16a842b7a1d48067eb0afb0745d3fb580b2a9ad2"
+    },
+    {
+      "check": "freeze_file_count",
+      "pass": true,
+      "detail": 38
+    },
+    {
+      "check": "freeze_file_exists",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/ALL_BOUNDARY_INDEPENDENT_PATHS.jsonl"
+    },
+    {
+      "check": "freeze_file_hash",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/ALL_BOUNDARY_INDEPENDENT_PATHS.jsonl"
+    },
+    {
+      "check": "freeze_file_exists",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/ALL_PAIR_SAFE_PATHS.jsonl"
+    },
+    {
+      "check": "freeze_file_hash",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/ALL_PAIR_SAFE_PATHS.jsonl"
+    },
+    {
+      "check": "freeze_file_exists",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/FULL_R02_LOCAL_OBSERVABILITY_TIMELINE.csv"
+    },
+    {
+      "check": "freeze_file_hash",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/FULL_R02_LOCAL_OBSERVABILITY_TIMELINE.csv"
+    },
+    {
+      "check": "freeze_file_exists",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/isolated_seed_inputs/F062.json"
+    },
+    {
+      "check": "freeze_file_hash",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/isolated_seed_inputs/F062.json"
+    },
+    {
+      "check": "freeze_file_exists",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/isolated_seed_inputs/F150.json"
+    },
+    {
+      "check": "freeze_file_hash",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/isolated_seed_inputs/F150.json"
+    },
+    {
+      "check": "freeze_file_exists",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/isolated_seed_inputs/F183.json"
+    },
+    {
+      "check": "freeze_file_hash",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/isolated_seed_inputs/F183.json"
+    },
+    {
+      "check": "freeze_file_exists",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/isolated_seed_inputs/F264.json"
+    },
+    {
+      "check": "freeze_file_hash",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/isolated_seed_inputs/F264.json"
+    },
+    {
+      "check": "freeze_file_exists",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/isolated_seed_inputs/F454.json"
+    },
+    {
+      "check": "freeze_file_hash",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/isolated_seed_inputs/F454.json"
+    },
+    {
+      "check": "freeze_file_exists",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/LOCAL_SEGMENTS.csv"
+    },
+    {
+      "check": "freeze_file_hash",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/LOCAL_SEGMENTS.csv"
+    },
+    {
+      "check": "freeze_file_exists",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/PAIR_SAFE_SUPPORTED_COMPONENTS.csv"
+    },
+    {
+      "check": "freeze_file_hash",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/PAIR_SAFE_SUPPORTED_COMPONENTS.csv"
+    },
+    {
+      "check": "freeze_file_exists",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/PRE_REFERENCE_SUMMARY.json"
+    },
+    {
+      "check": "freeze_file_hash",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/PRE_REFERENCE_SUMMARY.json"
+    },
+    {
+      "check": "freeze_file_exists",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F062/boundary_independent_paths.jsonl"
+    },
+    {
+      "check": "freeze_file_hash",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F062/boundary_independent_paths.jsonl"
+    },
+    {
+      "check": "freeze_file_exists",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F062/frame_diagnostics.csv"
+    },
+    {
+      "check": "freeze_file_hash",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F062/frame_diagnostics.csv"
+    },
+    {
+      "check": "freeze_file_exists",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F062/pair_safe_paths.jsonl"
+    },
+    {
+      "check": "freeze_file_hash",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F062/pair_safe_paths.jsonl"
+    },
+    {
+      "check": "freeze_file_exists",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F062/RUN_SUMMARY.json"
+    },
+    {
+      "check": "freeze_file_hash",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F062/RUN_SUMMARY.json"
+    },
+    {
+      "check": "freeze_file_exists",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F062/stop_events.json"
+    },
+    {
+      "check": "freeze_file_hash",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F062/stop_events.json"
+    },
+    {
+      "check": "freeze_file_exists",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F150/boundary_independent_paths.jsonl"
+    },
+    {
+      "check": "freeze_file_hash",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F150/boundary_independent_paths.jsonl"
+    },
+    {
+      "check": "freeze_file_exists",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F150/frame_diagnostics.csv"
+    },
+    {
+      "check": "freeze_file_hash",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F150/frame_diagnostics.csv"
+    },
+    {
+      "check": "freeze_file_exists",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F150/pair_safe_paths.jsonl"
+    },
+    {
+      "check": "freeze_file_hash",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F150/pair_safe_paths.jsonl"
+    },
+    {
+      "check": "freeze_file_exists",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F150/RUN_SUMMARY.json"
+    },
+    {
+      "check": "freeze_file_hash",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F150/RUN_SUMMARY.json"
+    },
+    {
+      "check": "freeze_file_exists",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F150/stop_events.json"
+    },
+    {
+      "check": "freeze_file_hash",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F150/stop_events.json"
+    },
+    {
+      "check": "freeze_file_exists",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F183/boundary_independent_paths.jsonl"
+    },
+    {
+      "check": "freeze_file_hash",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F183/boundary_independent_paths.jsonl"
+    },
+    {
+      "check": "freeze_file_exists",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F183/frame_diagnostics.csv"
+    },
+    {
+      "check": "freeze_file_hash",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F183/frame_diagnostics.csv"
+    },
+    {
+      "check": "freeze_file_exists",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F183/pair_safe_paths.jsonl"
+    },
+    {
+      "check": "freeze_file_hash",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F183/pair_safe_paths.jsonl"
+    },
+    {
+      "check": "freeze_file_exists",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F183/RUN_SUMMARY.json"
+    },
+    {
+      "check": "freeze_file_hash",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F183/RUN_SUMMARY.json"
+    },
+    {
+      "check": "freeze_file_exists",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F183/stop_events.json"
+    },
+    {
+      "check": "freeze_file_hash",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F183/stop_events.json"
+    },
+    {
+      "check": "freeze_file_exists",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F264/boundary_independent_paths.jsonl"
+    },
+    {
+      "check": "freeze_file_hash",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F264/boundary_independent_paths.jsonl"
+    },
+    {
+      "check": "freeze_file_exists",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F264/frame_diagnostics.csv"
+    },
+    {
+      "check": "freeze_file_hash",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F264/frame_diagnostics.csv"
+    },
+    {
+      "check": "freeze_file_exists",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F264/pair_safe_paths.jsonl"
+    },
+    {
+      "check": "freeze_file_hash",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F264/pair_safe_paths.jsonl"
+    },
+    {
+      "check": "freeze_file_exists",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F264/RUN_SUMMARY.json"
+    },
+    {
+      "check": "freeze_file_hash",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F264/RUN_SUMMARY.json"
+    },
+    {
+      "check": "freeze_file_exists",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F264/stop_events.json"
+    },
+    {
+      "check": "freeze_file_hash",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F264/stop_events.json"
+    },
+    {
+      "check": "freeze_file_exists",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F454/boundary_independent_paths.jsonl"
+    },
+    {
+      "check": "freeze_file_hash",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F454/boundary_independent_paths.jsonl"
+    },
+    {
+      "check": "freeze_file_exists",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F454/frame_diagnostics.csv"
+    },
+    {
+      "check": "freeze_file_hash",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F454/frame_diagnostics.csv"
+    },
+    {
+      "check": "freeze_file_exists",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F454/pair_safe_paths.jsonl"
+    },
+    {
+      "check": "freeze_file_hash",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F454/pair_safe_paths.jsonl"
+    },
+    {
+      "check": "freeze_file_exists",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F454/RUN_SUMMARY.json"
+    },
+    {
+      "check": "freeze_file_hash",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F454/RUN_SUMMARY.json"
+    },
+    {
+      "check": "freeze_file_exists",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F454/stop_events.json"
+    },
+    {
+      "check": "freeze_file_hash",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F454/stop_events.json"
+    },
+    {
+      "check": "freeze_file_exists",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/SEED_INPUT_MANIFEST.json"
+    },
+    {
+      "check": "freeze_file_hash",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/SEED_INPUT_MANIFEST.json"
+    },
+    {
+      "check": "freeze_file_exists",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/STOP_EVENTS.json"
+    },
+    {
+      "check": "freeze_file_hash",
+      "pass": true,
+      "detail": "output/r02_local_boundary_observability_20260902/pre_reference/STOP_EVENTS.json"
+    },
+    {
+      "check": "timeline_row_count",
+      "pass": true,
+      "detail": 495
+    },
+    {
+      "check": "timeline_complete_frame_sequence",
+      "pass": true,
+      "detail": [
+        0,
+        494
+      ]
+    },
+    {
+      "check": "frozen_source_sha256",
+      "pass": true,
+      "detail": "e80bd4ae8ff808c290340a1452c35f3fe72099051b7742178ad85ea902a90967"
+    },
+    {
+      "check": "seed_manifest_frozen_source",
+      "pass": true,
+      "detail": "e80bd4ae8ff808c290340a1452c35f3fe72099051b7742178ad85ea902a90967"
+    },
+    {
+      "check": "F062_frozen_source",
+      "pass": true,
+      "detail": "e80bd4ae8ff808c290340a1452c35f3fe72099051b7742178ad85ea902a90967"
+    },
+    {
+      "check": "F062_parameter_tuning_false",
+      "pass": true,
+      "detail": false
+    },
+    {
+      "check": "F062_checkpoint_hidden",
+      "pass": true,
+      "detail": {
+        "manual_geometry_files_read": [
+          "D:\\profile\\research\\workspace\\output\\r02_local_boundary_observability_20260902\\pre_reference\\isolated_seed_inputs\\F062.json"
+        ],
+        "manual_frame_ids_available_to_process": [
+          62
+        ],
+        "other_checkpoint_geometry_read": false,
+        "runtime_inputs": [
+          "D:\\profile\\research\\workspace\\tasks\\r02_manual_seed_temporal_propagation_20260902\\run_manual_seed_temporal_propagation.py",
+          "D:\\profile\\research\\workspace\\output\\person_terg_r2_runtime_grounding_and_full_stream_hypothesis_management_20260830\\pre_reference\\full_stream_frame_registry_pre_reference.parquet",
+          "D:\\profile\\research\\workspace\\output\\person_b0_end_to_end_capability_and_bottleneck_study_20260830\\pre_reference\\full_stream_p0_graded_p0_q95_edges.parquet",
+          "D:\\profile\\research\\workspace\\tasks\\person_physics_guided_image_domain_study_20260824\\run_p1e_single_frame_position_specificity.py"
+        ]
+      }
+    },
+    {
+      "check": "F150_frozen_source",
+      "pass": true,
+      "detail": "e80bd4ae8ff808c290340a1452c35f3fe72099051b7742178ad85ea902a90967"
+    },
+    {
+      "check": "F150_parameter_tuning_false",
+      "pass": true,
+      "detail": false
+    },
+    {
+      "check": "F150_checkpoint_hidden",
+      "pass": true,
+      "detail": {
+        "manual_geometry_files_read": [
+          "D:\\profile\\research\\workspace\\output\\r02_local_boundary_observability_20260902\\pre_reference\\isolated_seed_inputs\\F150.json"
+        ],
+        "manual_frame_ids_available_to_process": [
+          150
+        ],
+        "other_checkpoint_geometry_read": false,
+        "runtime_inputs": [
+          "D:\\profile\\research\\workspace\\tasks\\r02_manual_seed_temporal_propagation_20260902\\run_manual_seed_temporal_propagation.py",
+          "D:\\profile\\research\\workspace\\output\\person_terg_r2_runtime_grounding_and_full_stream_hypothesis_management_20260830\\pre_reference\\full_stream_frame_registry_pre_reference.parquet",
+          "D:\\profile\\research\\workspace\\output\\person_b0_end_to_end_capability_and_bottleneck_study_20260830\\pre_reference\\full_stream_p0_graded_p0_q95_edges.parquet",
+          "D:\\profile\\research\\workspace\\tasks\\person_physics_guided_image_domain_study_20260824\\run_p1e_single_frame_position_specificity.py"
+        ]
+      }
+    },
+    {
+      "check": "F183_frozen_source",
+      "pass": true,
+      "detail": "e80bd4ae8ff808c290340a1452c35f3fe72099051b7742178ad85ea902a90967"
+    },
+    {
+      "check": "F183_parameter_tuning_false",
+      "pass": true,
+      "detail": false
+    },
+    {
+      "check": "F183_checkpoint_hidden",
+      "pass": true,
+      "detail": {
+        "manual_geometry_files_read": [
+          "D:\\profile\\research\\workspace\\output\\r02_local_boundary_observability_20260902\\pre_reference\\isolated_seed_inputs\\F183.json"
+        ],
+        "manual_frame_ids_available_to_process": [
+          183
+        ],
+        "other_checkpoint_geometry_read": false,
+        "runtime_inputs": [
+          "D:\\profile\\research\\workspace\\tasks\\r02_manual_seed_temporal_propagation_20260902\\run_manual_seed_temporal_propagation.py",
+          "D:\\profile\\research\\workspace\\output\\person_terg_r2_runtime_grounding_and_full_stream_hypothesis_management_20260830\\pre_reference\\full_stream_frame_registry_pre_reference.parquet",
+          "D:\\profile\\research\\workspace\\output\\person_b0_end_to_end_capability_and_bottleneck_study_20260830\\pre_reference\\full_stream_p0_graded_p0_q95_edges.parquet",
+          "D:\\profile\\research\\workspace\\tasks\\person_physics_guided_image_domain_study_20260824\\run_p1e_single_frame_position_specificity.py"
+        ]
+      }
+    },
+    {
+      "check": "F264_frozen_source",
+      "pass": true,
+      "detail": "e80bd4ae8ff808c290340a1452c35f3fe72099051b7742178ad85ea902a90967"
+    },
+    {
+      "check": "F264_parameter_tuning_false",
+      "pass": true,
+      "detail": false
+    },
+    {
+      "check": "F264_checkpoint_hidden",
+      "pass": true,
+      "detail": {
+        "manual_geometry_files_read": [
+          "D:\\profile\\research\\workspace\\output\\r02_local_boundary_observability_20260902\\pre_reference\\isolated_seed_inputs\\F264.json"
+        ],
+        "manual_frame_ids_available_to_process": [
+          264
+        ],
+        "other_checkpoint_geometry_read": false,
+        "runtime_inputs": [
+          "D:\\profile\\research\\workspace\\tasks\\r02_manual_seed_temporal_propagation_20260902\\run_manual_seed_temporal_propagation.py",
+          "D:\\profile\\research\\workspace\\output\\person_terg_r2_runtime_grounding_and_full_stream_hypothesis_management_20260830\\pre_reference\\full_stream_frame_registry_pre_reference.parquet",
+          "D:\\profile\\research\\workspace\\output\\person_b0_end_to_end_capability_and_bottleneck_study_20260830\\pre_reference\\full_stream_p0_graded_p0_q95_edges.parquet",
+          "D:\\profile\\research\\workspace\\tasks\\person_physics_guided_image_domain_study_20260824\\run_p1e_single_frame_position_specificity.py"
+        ]
+      }
+    },
+    {
+      "check": "F454_frozen_source",
+      "pass": true,
+      "detail": "e80bd4ae8ff808c290340a1452c35f3fe72099051b7742178ad85ea902a90967"
+    },
+    {
+      "check": "F454_parameter_tuning_false",
+      "pass": true,
+      "detail": false
+    },
+    {
+      "check": "F454_checkpoint_hidden",
+      "pass": true,
+      "detail": {
+        "manual_geometry_files_read": [
+          "D:\\profile\\research\\workspace\\output\\r02_local_boundary_observability_20260902\\pre_reference\\isolated_seed_inputs\\F454.json"
+        ],
+        "manual_frame_ids_available_to_process": [
+          454
+        ],
+        "other_checkpoint_geometry_read": false,
+        "runtime_inputs": [
+          "D:\\profile\\research\\workspace\\tasks\\r02_manual_seed_temporal_propagation_20260902\\run_manual_seed_temporal_propagation.py",
+          "D:\\profile\\research\\workspace\\output\\person_terg_r2_runtime_grounding_and_full_stream_hypothesis_management_20260830\\pre_reference\\full_stream_frame_registry_pre_reference.parquet",
+          "D:\\profile\\research\\workspace\\output\\person_b0_end_to_end_capability_and_bottleneck_study_20260830\\pre_reference\\full_stream_p0_graded_p0_q95_edges.parquet",
+          "D:\\profile\\research\\workspace\\tasks\\person_physics_guided_image_domain_study_20260824\\run_p1e_single_frame_position_specificity.py"
+        ]
+      }
+    },
+    {
+      "check": "post_audit_references_freeze",
+      "pass": true,
+      "detail": "351d791efe4734e1b315486e16a842b7a1d48067eb0afb0745d3fb580b2a9ad2"
+    },
+    {
+      "check": "post_audit_created_after_freeze",
+      "pass": true,
+      "detail": {
+        "freeze_mtime_ns": 1788346364475422400,
+        "audit_mtime_ns": 1788346887511048600
+      }
+    },
+    {
+      "check": "f66_conflict_recorded",
+      "pass": true,
+      "detail": [
+        {
+          "case_id": "F66_NATURAL_OVERLAP_CONFLICT",
+          "figure": "F066_NATURAL_OVERLAP_SHAPE_CONFLICT.png",
+          "seed_frame": "62_vs_150",
+          "frame_or_range": "F66",
+          "algorithm_state": "SUPPORTED_BY_BOTH_PATHS",
+          "visual_verdict": "FALSE_SUPPORT_CURVE_STATE",
+          "semantic_ridge_switch_confirmed": "False",
+          "false_support_confirmed": "True",
+          "note": "F62-forward retains the entrance curve while F150-backward imports a rigid near-horizontal state; both cannot be the correct full boundary state."
+        }
+      ]
+    },
+    {
+      "check": "f66_conflict_verdict",
+      "pass": true,
+      "detail": {
+        "case_id": "F66_NATURAL_OVERLAP_CONFLICT",
+        "figure": "F066_NATURAL_OVERLAP_SHAPE_CONFLICT.png",
+        "seed_frame": "62_vs_150",
+        "frame_or_range": "F66",
+        "algorithm_state": "SUPPORTED_BY_BOTH_PATHS",
+        "visual_verdict": "FALSE_SUPPORT_CURVE_STATE",
+        "semantic_ridge_switch_confirmed": "False",
+        "false_support_confirmed": "True",
+        "note": "F62-forward retains the entrance curve while F150-backward imports a rigid near-horizontal state; both cannot be the correct full boundary state."
+      }
+    },
+    {
+      "check": "manual_visual_review_complete",
+      "pass": true,
+      "detail": 19
+    },
+    {
+      "check": "figure_exists",
+      "pass": true,
+      "detail": "R02_LOCAL_BOUNDARY_OBSERVABILITY_TIMELINE.png"
+    },
+    {
+      "check": "figure_exists",
+      "pass": true,
+      "detail": "ENTRANCE_F057_F068_CURVE_EVOLUTION.png"
+    },
+    {
+      "check": "figure_exists",
+      "pass": true,
+      "detail": "F066_NATURAL_OVERLAP_SHAPE_CONFLICT.png"
+    },
+    {
+      "check": "figure_exists",
+      "pass": true,
+      "detail": "CHECKPOINT_COMPARISON_ATLAS.png"
+    },
+    {
+      "check": "figure_exists",
+      "pass": true,
+      "detail": "STOP_REASON_ATLAS.png"
+    },
+    {
+      "check": "figure_exists",
+      "pass": true,
+      "detail": "F062_process_review.png"
+    },
+    {
+      "check": "figure_exists",
+      "pass": true,
+      "detail": "F150_process_review.png"
+    },
+    {
+      "check": "figure_exists",
+      "pass": true,
+      "detail": "F183_process_review.png"
+    },
+    {
+      "check": "figure_exists",
+      "pass": true,
+      "detail": "F264_process_review.png"
+    },
+    {
+      "check": "figure_exists",
+      "pass": true,
+      "detail": "F454_process_review.png"
+    },
+    {
+      "check": "final_records_false_support",
+      "pass": true,
+      "detail": {
+        "checkpoint_crossings": 6,
+        "checkpoint_consistent": 3,
+        "checkpoint_inconsistent": 3,
+        "natural_overlap_audits": 3,
+        "natural_overlap_consistent": 0,
+        "confirmed_semantic_ridge_switch_count": 0,
+        "confirmed_near_far_reversal_count": 0,
+        "confirmed_false_support_curve_state_count": 1,
+        "strongest_false_support_case": {
+          "frame": 66,
+          "paths": [
+            "F62_FORWARD",
+            "F150_BACKWARD"
+          ],
+          "verdict": "FALSE_SUPPORT_CURVE_STATE",
+          "max_node_median_disagreement_m": 0.11560599999999965,
+          "max_node_disagreement_m": 0.41707099999999997,
+          "max_shape_rms_m": 0.1828175025611994
+        },
+        "strongest_premature_stop_candidate": {
+          "frame": 67,
+          "seed": 62,
+          "reason": "SAR_BOUNDARY_NEAR:BOUNDARY_RESPONSE_TOO_WEAK",
+          "verdict": "HUMAN_VISIBLE_TRACE_REMAINS_BUT_CONSERVATIVE_STOP_IS_SAFER"
+        },
+        "strongest_checkpoint_disagreement": {
+          "seed_frame": 454,
+          "direction": "BACKWARD",
+          "checkpoint_frame": 427,
+          "boundary_count": 2,
+          "both_boundary_metrics_available": true,
+          "both_boundary_frozen_0p12_pass": false,
+          "max_node_median_abs_disagreement_m": 0.18305317095794482,
+          "max_node_max_abs_disagreement_m": 0.29126719207484886,
+          "max_shape_rms_m": 0.07347089613023923
+        },
+        "manual_visual_verdict_count": 19
+      }
+    },
+    {
+      "check": "optional_context_not_overclaimed",
+      "pass": true,
+      "detail": {
+        "sparse_anchors_initialize_local_propagation": "YES",
+        "weak_evidence_stop_without_silent_error": "PARTIALLY_ESTABLISHED",
+        "curved_to_straight_naturally_followed": "NO_CURRENT_RIGID_STATE_IS_A_PRIMARY_FAILURE_MODE",
+        "optional_scene_geometry_context_qualified": "NO_NOT_YET"
+      }
+    },
+    {
+      "check": "report_exists",
+      "pass": true,
+      "detail": "D:\\profile\\research\\workspace\\output\\r02_local_boundary_observability_20260902\\REPORT.md"
+    },
+    {
+      "check": "scope_r04_accessed_false",
+      "pass": true,
+      "detail": false
+    },
+    {
+      "check": "scope_person_experiment_run_false",
+      "pass": true,
+      "detail": false
+    },
+    {
+      "check": "scope_tree_experiment_run_false",
+      "pass": true,
+      "detail": false
+    },
+    {
+      "check": "scope_final_localization_run_false",
+      "pass": true,
+      "detail": false
+    },
+    {
+      "check": "scope_r04_accessed_false",
+      "pass": true,
+      "detail": false
+    },
+    {
+      "check": "scope_person_experiment_run_false",
+      "pass": true,
+      "detail": false
+    },
+    {
+      "check": "scope_tree_experiment_run_false",
+      "pass": true,
+      "detail": false
+    },
+    {
+      "check": "scope_final_localization_run_false",
+      "pass": true,
+      "detail": false
+    },
+    {
+      "check": "scope_r04_accessed_false",
+      "pass": true,
+      "detail": false
+    },
+    {
+      "check": "scope_person_experiment_run_false",
+      "pass": true,
+      "detail": false
+    },
+    {
+      "check": "scope_tree_experiment_run_false",
+      "pass": true,
+      "detail": false
+    },
+    {
+      "check": "scope_final_localization_run_false",
+      "pass": true,
+      "detail": false
+    },
+    {
+      "check": "strict_json_and_jsonl",
+      "pass": true,
+      "detail": {
+        "json": 21,
+        "jsonl": 13
+      }
+    },
+    {
+      "check": "no_raw_manual_filename_copied",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "no_raw_manual_file_hash_copied",
+      "pass": true,
+      "detail": []
+    }
+  ]
+}

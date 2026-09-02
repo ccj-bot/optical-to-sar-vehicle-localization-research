@@ -1,0 +1,160 @@
+{
+  "schema": "R02_ISOLATED_SEED_LOCAL_OBSERVABILITY_RUN_V1",
+  "seed_frame": 150,
+  "seed_file": "D:\\profile\\research\\workspace\\output\\r02_local_boundary_observability_20260902\\pre_reference\\isolated_seed_inputs\\F150.json",
+  "seed_file_sha256": "f09edb865129944ac1bad78bf34703dbce2e7fb68a9523ef1f7c4227c20d2131",
+  "input_disclosure": {
+    "manual_geometry_files_read": [
+      "D:\\profile\\research\\workspace\\output\\r02_local_boundary_observability_20260902\\pre_reference\\isolated_seed_inputs\\F150.json"
+    ],
+    "manual_frame_ids_available_to_process": [
+      150
+    ],
+    "other_checkpoint_geometry_read": false,
+    "runtime_inputs": [
+      "D:\\profile\\research\\workspace\\tasks\\r02_manual_seed_temporal_propagation_20260902\\run_manual_seed_temporal_propagation.py",
+      "D:\\profile\\research\\workspace\\output\\person_terg_r2_runtime_grounding_and_full_stream_hypothesis_management_20260830\\pre_reference\\full_stream_frame_registry_pre_reference.parquet",
+      "D:\\profile\\research\\workspace\\output\\person_b0_end_to_end_capability_and_bottleneck_study_20260830\\pre_reference\\full_stream_p0_graded_p0_q95_edges.parquet",
+      "D:\\profile\\research\\workspace\\tasks\\person_physics_guided_image_domain_study_20260824\\run_p1e_single_frame_position_specificity.py"
+    ]
+  },
+  "theta_corridor_deg": [
+    -24.0,
+    8.0
+  ],
+  "theta_node_count": 17,
+  "expected_seed_pair_separation_m": 1.9914243795101587,
+  "segments": [
+    {
+      "seed_frame": 150,
+      "path_kind": "PAIR_SAFE_FROZEN",
+      "direction": "BACKWARD",
+      "object_type": "NEAR_AND_FAR",
+      "start_frame": 66,
+      "end_frame": 150,
+      "frame_count": 85,
+      "natural_stop": {
+        "direction": "F150_BACKWARD_PAIR_SAFE",
+        "source_frame": 66,
+        "destination_frame": 65,
+        "status": "PROPAGATION_AMBIGUOUS",
+        "reasons": [
+          "SAR_BOUNDARY_FAR:BOUNDARY_RESPONSE_TOO_WEAK",
+          "SAR_BOUNDARY_FAR:BOUNDARY_SUPPORT_TOO_FRAGMENTED"
+        ]
+      }
+    },
+    {
+      "seed_frame": 150,
+      "path_kind": "BOUNDARY_INDEPENDENT_DIAGNOSTIC",
+      "direction": "BACKWARD",
+      "object_type": "SAR_BOUNDARY_NEAR",
+      "start_frame": 62,
+      "end_frame": 150,
+      "frame_count": 89,
+      "natural_stop": {
+        "seed_frame": 150,
+        "path_kind": "BOUNDARY_INDEPENDENT_DIAGNOSTIC",
+        "direction": "BACKWARD",
+        "object_type": "SAR_BOUNDARY_NEAR",
+        "source_frame": 62,
+        "destination_frame": 61,
+        "status": "PROPAGATION_AMBIGUOUS",
+        "reasons": [
+          "BOUNDARY_RESPONSE_TOO_WEAK"
+        ]
+      }
+    },
+    {
+      "seed_frame": 150,
+      "path_kind": "BOUNDARY_INDEPENDENT_DIAGNOSTIC",
+      "direction": "BACKWARD",
+      "object_type": "SAR_BOUNDARY_FAR",
+      "start_frame": 66,
+      "end_frame": 150,
+      "frame_count": 85,
+      "natural_stop": {
+        "seed_frame": 150,
+        "path_kind": "BOUNDARY_INDEPENDENT_DIAGNOSTIC",
+        "direction": "BACKWARD",
+        "object_type": "SAR_BOUNDARY_FAR",
+        "source_frame": 66,
+        "destination_frame": 65,
+        "status": "PROPAGATION_AMBIGUOUS",
+        "reasons": [
+          "BOUNDARY_RESPONSE_TOO_WEAK",
+          "BOUNDARY_SUPPORT_TOO_FRAGMENTED"
+        ]
+      }
+    },
+    {
+      "seed_frame": 150,
+      "path_kind": "PAIR_SAFE_FROZEN",
+      "direction": "FORWARD",
+      "object_type": "NEAR_AND_FAR",
+      "start_frame": 150,
+      "end_frame": 164,
+      "frame_count": 15,
+      "natural_stop": {
+        "direction": "F150_FORWARD_PAIR_SAFE",
+        "source_frame": 164,
+        "destination_frame": 165,
+        "status": "PROPAGATION_AMBIGUOUS",
+        "reasons": [
+          "SAR_BOUNDARY_FAR:BOUNDARY_RESPONSE_TOO_WEAK"
+        ]
+      }
+    },
+    {
+      "seed_frame": 150,
+      "path_kind": "BOUNDARY_INDEPENDENT_DIAGNOSTIC",
+      "direction": "FORWARD",
+      "object_type": "SAR_BOUNDARY_NEAR",
+      "start_frame": 150,
+      "end_frame": 282,
+      "frame_count": 133,
+      "natural_stop": {
+        "seed_frame": 150,
+        "path_kind": "BOUNDARY_INDEPENDENT_DIAGNOSTIC",
+        "direction": "FORWARD",
+        "object_type": "SAR_BOUNDARY_NEAR",
+        "source_frame": 282,
+        "destination_frame": 283,
+        "status": "PROPAGATION_AMBIGUOUS",
+        "reasons": [
+          "P0_UNAVAILABLE"
+        ]
+      }
+    },
+    {
+      "seed_frame": 150,
+      "path_kind": "BOUNDARY_INDEPENDENT_DIAGNOSTIC",
+      "direction": "FORWARD",
+      "object_type": "SAR_BOUNDARY_FAR",
+      "start_frame": 150,
+      "end_frame": 164,
+      "frame_count": 15,
+      "natural_stop": {
+        "seed_frame": 150,
+        "path_kind": "BOUNDARY_INDEPENDENT_DIAGNOSTIC",
+        "direction": "FORWARD",
+        "object_type": "SAR_BOUNDARY_FAR",
+        "source_frame": 164,
+        "destination_frame": 165,
+        "status": "PROPAGATION_AMBIGUOUS",
+        "reasons": [
+          "BOUNDARY_RESPONSE_TOO_WEAK"
+        ]
+      }
+    }
+  ],
+  "frozen_source_sha256": "e80bd4ae8ff808c290340a1452c35f3fe72099051b7742178ad85ea902a90967",
+  "parameter_tuning": false,
+  "curve_shape_update": "NONE_RIGID_SCALAR_SHIFT_ONLY",
+  "pair_safe_geometry_accepted_for_optional_context": true,
+  "boundary_independent_geometry_is_diagnostic_only": true,
+  "r04_accessed": false,
+  "person_experiment_run": false,
+  "tree_experiment_run": false,
+  "final_localization_run": false
+}

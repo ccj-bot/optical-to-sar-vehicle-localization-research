@@ -1,0 +1,99 @@
+{
+  "seed_frame": 62,
+  "boundaries": [
+    {
+      "schema": "R02_ISOLATED_LOCAL_BOUNDARY_SEED_V1",
+      "run_id": "R02ZF",
+      "sar_frame_index": 62,
+      "sar_timestamp_ms": 2067,
+      "object_type": "SAR_BOUNDARY_NEAR",
+      "points": [
+        [
+          431.122,
+          449.722
+        ],
+        [
+          455.858,
+          449.288
+        ],
+        [
+          495.783,
+          447.986
+        ],
+        [
+          532.018,
+          439.524
+        ],
+        [
+          570.641,
+          428.024
+        ],
+        [
+          608.612,
+          412.836
+        ],
+        [
+          652.659,
+          386.581
+        ]
+      ],
+      "confidence_state": "CONFIDENT",
+      "source_geometry_status": "DRAFT",
+      "derived_geometry_status": "USER_CONFIRMED_SEMANTIC_CHECKPOINT",
+      "source_event_id": "e7dc628c-06cc-478c-b382-3a6fcf34c1af",
+      "source_revision": 12,
+      "source_manual_path": "D:\\profile\\research\\workspace\\output\\r02_boundary_multibracket_replication_20260902\\repair_user_annotations\\manual_static_scene_annotations.jsonl",
+      "source_manual_sha256": "00c795d6f1997324aa087537ef19a9ac9566400a2cc36ff24c40d9ed63c84feb",
+      "other_checkpoint_geometry_included": false,
+      "person_gt": false,
+      "final_localization": false
+    },
+    {
+      "schema": "R02_ISOLATED_LOCAL_BOUNDARY_SEED_V1",
+      "run_id": "R02ZF",
+      "sar_frame_index": 62,
+      "sar_timestamp_ms": 2067,
+      "object_type": "SAR_BOUNDARY_FAR",
+      "points": [
+        [
+          441.575,
+          390.841
+        ],
+        [
+          486.027,
+          388.976
+        ],
+        [
+          533.968,
+          377.863
+        ],
+        [
+          557.573,
+          367.966
+        ],
+        [
+          579.961,
+          357.908
+        ],
+        [
+          601.7,
+          343.956
+        ],
+        [
+          621.898,
+          332.924
+        ]
+      ],
+      "confidence_state": "CONFIDENT",
+      "source_geometry_status": "COMPLETE",
+      "derived_geometry_status": "USER_CONFIRMED_SEMANTIC_CHECKPOINT",
+      "source_event_id": "7a8d3791-3e94-4a8b-9f0a-1d1b0d505791",
+      "source_revision": 8,
+      "source_manual_path": "D:\\profile\\research\\workspace\\output\\r02_boundary_multibracket_replication_20260902\\repair_user_annotations\\manual_static_scene_annotations.jsonl",
+      "source_manual_sha256": "00c795d6f1997324aa087537ef19a9ac9566400a2cc36ff24c40d9ed63c84feb",
+      "other_checkpoint_geometry_included": false,
+      "person_gt": false,
+      "final_localization": false
+    }
+  ]
+}

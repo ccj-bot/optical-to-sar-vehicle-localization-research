@@ -1,0 +1,343 @@
+{
+  "schema": "R02_LOCAL_BOUNDARY_OBSERVABILITY_REVIEW_PACK_MANIFEST_V1",
+  "pack_filename": "R02_LOCAL_BOUNDARY_OBSERVABILITY_REVIEW_PACK_20260902.zip",
+  "raw_manual_jsonl_included": false,
+  "file_count": 67,
+  "files": [
+    {
+      "workspace_relative_path": "logs/20260902_r02_local_boundary_observability.md",
+      "bytes": 3757,
+      "sha256": "ff9b18d56a194c4eca7f6b7c30ab2cfa380d8dab004e9d4267029215de49cb41"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/FINAL_SUMMARY.json",
+      "bytes": 7925,
+      "sha256": "93bd7f6c19f2bb6f9f819f234c126a9a515785420ad92315b2cc855f4698b2b0"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/PRE_REFERENCE_FREEZE_MANIFEST.json",
+      "bytes": 9910,
+      "sha256": "351d791efe4734e1b315486e16a842b7a1d48067eb0afb0745d3fb580b2a9ad2"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/REPORT.md",
+      "bytes": 6101,
+      "sha256": "8928cb922e24fb951d24e1e912b945beab4ef37fb21515c92a41c77de8e39763"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/VALIDATION_REPORT.json",
+      "bytes": 35540,
+      "sha256": "c45289951da3c6d724fc8b9340b411f90990fa275eec3ee79a17c4aff6b36758"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/figures/CHECKPOINT_COMPARISON_ATLAS.png",
+      "bytes": 5099167,
+      "sha256": "3859734de0cf8a83c20705367765fd2aef4a9c4013a7f367e4f1aaf890decd99"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/figures/ENTRANCE_F057_F068_CURVE_EVOLUTION.png",
+      "bytes": 10764964,
+      "sha256": "f4e9c9547a2f0c1ffe65b3867c954d86711eec42fe3d15cda4cadd656301732d"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/figures/F062_process_review.png",
+      "bytes": 6337802,
+      "sha256": "38c1475629573e448cea5331b45f611016d75eafb80c955f5f80009e530b011d"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/figures/F066_NATURAL_OVERLAP_SHAPE_CONFLICT.png",
+      "bytes": 2734954,
+      "sha256": "95d629e043d2b4dd56985e900cde715b2f205d19f828f8e06f645e25dfcd8421"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/figures/F150_process_review.png",
+      "bytes": 6931749,
+      "sha256": "edf96b62bfe96893dcc2e7515b342b7a478f028a561effcdc27ac239bc20c02a"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/figures/F183_process_review.png",
+      "bytes": 6653295,
+      "sha256": "37ba21c01065bd0d1640e51e82300798939746acd9238180cd59545d592d72c2"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/figures/F264_process_review.png",
+      "bytes": 7520943,
+      "sha256": "2d1885b546227ebddb8b5969da1cf485a92abf1220232e34eb9cc81d900841a9"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/figures/F454_process_review.png",
+      "bytes": 6378132,
+      "sha256": "884dcdf021c873f609ea86f1bf808cd1c5e587b91e692fee6c3afed02b75e259"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/figures/R02_LOCAL_BOUNDARY_OBSERVABILITY_TIMELINE.png",
+      "bytes": 79885,
+      "sha256": "6f487cfcba8cc74b222715829ab0efdaf588f1d53d3d09987e987aefe3a90f2a"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/figures/STOP_REASON_ATLAS.png",
+      "bytes": 6487673,
+      "sha256": "ce0e5b7c3eb9e76d9ce1fb4546d5b42fbbff4d919d40340404c87256df59e859"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/post_freeze_audit/CHECKPOINT_GEOMETRY_AUDIT.csv",
+      "bytes": 2226,
+      "sha256": "6b5a22ae40dc62fb51c00fd2fad482e3f0301ba98175b329f1b6601441964b1e"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/post_freeze_audit/CHECKPOINT_PAIR_AUDIT.csv",
+      "bytes": 741,
+      "sha256": "0744ee94366006339f7c571ff590afc997158d7666078f7745e188706eeeda63"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/post_freeze_audit/COMPUTED_AUDIT_SUMMARY.json",
+      "bytes": 4631,
+      "sha256": "51f1b7f46aa742a3bf706d3f5c2ecaf979a46cdd372be73e7b4baaefe8aa62f3"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/post_freeze_audit/MANUAL_SEMANTIC_CHECKPOINT_INVENTORY.jsonl",
+      "bytes": 17286,
+      "sha256": "fa9a25a0d2054d8455ece080257c1032f25c783e535654a5713b98bf02908b27"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/post_freeze_audit/MANUAL_VISUAL_VERDICTS.csv",
+      "bytes": 4491,
+      "sha256": "7f56cd82adc855c56c2c4a5e54b444e38eb759cb3cb45d7539bd5fbcfe3a3f07"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/post_freeze_audit/NATURAL_SEGMENT_OVERLAP_AUDIT.csv",
+      "bytes": 506,
+      "sha256": "f8277b9427e652c08dd146efc26457a83c8af07bab95856dbf57c45a5a556f0f"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/post_freeze_audit/REPRESENTATION_AUDIT.md",
+      "bytes": 1046,
+      "sha256": "fc52cd056ef80e11d62fb1aac760b61e2e49a94f84ec3d49b1c756c62ecb4bdf"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/post_freeze_audit/VISUAL_REVIEW_CASES.csv",
+      "bytes": 2728,
+      "sha256": "6c5faff0eb7833e73a59c3ec386c53ca601c044dfeb72fd6e53d66bdebb6017c"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/ALL_BOUNDARY_INDEPENDENT_PATHS.jsonl",
+      "bytes": 1528079,
+      "sha256": "951186061492558c35d236bcc4da5e4f8d869c25b35d5586c5d5a03b31017050"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/ALL_PAIR_SAFE_PATHS.jsonl",
+      "bytes": 1029328,
+      "sha256": "74d32790164edf9de30edf3d7297fe2127c6b2c0edf85a30e9d00f6011e11b22"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/FULL_R02_LOCAL_OBSERVABILITY_TIMELINE.csv",
+      "bytes": 24762,
+      "sha256": "af828d23882b2df18830a40e531a5c939dc6dd2b94d890da7ec5ca6f719a7a63"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/LOCAL_SEGMENTS.csv",
+      "bytes": 9235,
+      "sha256": "23e27ead66fcaf7072007bb5d8750404f37db768de4e8401a32580ee0e2f05b0"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/PAIR_SAFE_SUPPORTED_COMPONENTS.csv",
+      "bytes": 178,
+      "sha256": "41e3ad19ebe3bf11f3d9b48d3a487543bf1468cc990c8563683245d64e928c59"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/PRE_REFERENCE_SUMMARY.json",
+      "bytes": 1532,
+      "sha256": "feef328426ae4138a318ebbe001e4cfcdcb4b8b2fa21b68591712661b1a665a0"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/SEED_INPUT_MANIFEST.json",
+      "bytes": 3528,
+      "sha256": "37491ef4ed03b732e45837f1f5712332c15a26d23de753db6ceaf9f2e5087770"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/STOP_EVENTS.json",
+      "bytes": 9499,
+      "sha256": "7396b16edf13ef3779c55feb648d1d17613c1c3749c8e8ad24034167fa385b5d"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/isolated_seed_inputs/F062.json",
+      "bytes": 2673,
+      "sha256": "efc5e3440a4b57745a75f04c4ce9fc9af0724f04c8b2f0c0a7f48fffb07fd6ae"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/isolated_seed_inputs/F150.json",
+      "bytes": 2049,
+      "sha256": "f09edb865129944ac1bad78bf34703dbce2e7fb68a9523ef1f7c4227c20d2131"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/isolated_seed_inputs/F183.json",
+      "bytes": 2050,
+      "sha256": "fc65d8377c8fa47ea74a968f510ee23f1dc2a072bf9c874e27966f70476a6cc2"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/isolated_seed_inputs/F264.json",
+      "bytes": 2306,
+      "sha256": "5067b2b1ce49e4a5f59fe2c4d93142e453fea745249ef464198ee6665d729706"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/isolated_seed_inputs/F454.json",
+      "bytes": 2368,
+      "sha256": "ae3c2d2119f046737d75cdd97f8b0b412096d8e37e854bb4377f2b66202c7f6c"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F062/RUN_SUMMARY.json",
+      "bytes": 5582,
+      "sha256": "24cc524e361ddcfabbe5e70b9629336b00f8b70ad6e7a47718bf8bfc8577d66b"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F062/boundary_independent_paths.jsonl",
+      "bytes": 33697,
+      "sha256": "0c8e8784cef8b94ddbd8641b3dbc9d32293c9611b93d23a594d1f72462ab3a5e"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F062/frame_diagnostics.csv",
+      "bytes": 11610,
+      "sha256": "1d732a4d3180addb7f458224e898d809d50b8215854b7af65ce48a62b3f81c75"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F062/pair_safe_paths.jsonl",
+      "bytes": 23050,
+      "sha256": "73b4604c449c8f1b3d8fcddc140e655c0f822da9496e3e720729a6bae7aa1663"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F062/stop_events.json",
+      "bytes": 1978,
+      "sha256": "44c9fb73defefe1560d901a4745f0557bb1d025334b70ba61e69835e1f7b7e02"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F150/RUN_SUMMARY.json",
+      "bytes": 5556,
+      "sha256": "5833e26a347c82987114f468ac5d819e7bff882e281a1d740792e5b56f00ee2d"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F150/boundary_independent_paths.jsonl",
+      "bytes": 373081,
+      "sha256": "fda6d442de683728a670d0190c3ffa7ec2b9a545e9c58874f3a3c6c50a93b867"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F150/frame_diagnostics.csv",
+      "bytes": 128715,
+      "sha256": "4ecf6cfa07cafa5f71500566057f4a841d3e7c0a48682e160b56f80edb93d02e"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F150/pair_safe_paths.jsonl",
+      "bytes": 228745,
+      "sha256": "9a4a32235da6ca66aeb5079536308b25ced25844702ee56d80633b6aad258e02"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F150/stop_events.json",
+      "bytes": 1935,
+      "sha256": "5cc32cdd95fcd3ede7fe5daa65b3e37d7d839ab8a23938f3b667fa75248a45fe"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F183/RUN_SUMMARY.json",
+      "bytes": 5515,
+      "sha256": "5d232f4600e14bb9bde5b43c610fec1cf2b3d293409be9d232d1366601f73f92"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F183/boundary_independent_paths.jsonl",
+      "bytes": 412481,
+      "sha256": "a92cdcca66f83915a6bd42f9dda36dca1d3693902318a1c7d042bf015b87d839"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F183/frame_diagnostics.csv",
+      "bytes": 124850,
+      "sha256": "8105d130a80e10c6ed24cde025589fbe39a0e632fc252dafb85a137f37216e3a"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F183/pair_safe_paths.jsonl",
+      "bytes": 244303,
+      "sha256": "ac6bb2ad1d12ad1fd19b5c74997595b4042c21d239845f335fab44ea0fb296d8"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F183/stop_events.json",
+      "bytes": 1894,
+      "sha256": "13952c1cde08155660d87867cb487e9e9df951f00ffda4194217f133835e7997"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F264/RUN_SUMMARY.json",
+      "bytes": 5452,
+      "sha256": "1c1fdc1cfa9a03fcd7e639e8261811c2d5a4aca12f3ec3853ac5135235e8923e"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F264/boundary_independent_paths.jsonl",
+      "bytes": 480663,
+      "sha256": "0234ddaf7f0218ba616c70122a885b221b153504d62559aa7c292bedd40b8928"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F264/frame_diagnostics.csv",
+      "bytes": 130661,
+      "sha256": "adbac4bdc07daf4690a6c8a70567e11951903b8caa485cd7f261ead44107a254"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F264/pair_safe_paths.jsonl",
+      "bytes": 307383,
+      "sha256": "8e65e892fa9dd0acccb99f6a170928aacadde76955904b234a6efa8a24840fcb"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F264/stop_events.json",
+      "bytes": 1838,
+      "sha256": "5dbd0898128d133c9b747f856d3056fbae5b1d1234247ce34f93687b58d64648"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F454/RUN_SUMMARY.json",
+      "bytes": 5490,
+      "sha256": "82f2c501d3b1f8bdb9e2ffb797301d7f73f182ddc1d42872c95b451ed50e4256"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F454/boundary_independent_paths.jsonl",
+      "bytes": 228157,
+      "sha256": "07a6e1f0b4a850f00313c37a08a02428ee1447d7bbe31560bc533cd1f51afcf9"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F454/frame_diagnostics.csv",
+      "bytes": 75258,
+      "sha256": "236f17c647e6b3796b1f311cddb9afc1709cfd7171d4cf00ee3e6ec38a192a34"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F454/pair_safe_paths.jsonl",
+      "bytes": 225847,
+      "sha256": "a8b5e9c9f9e3758bf528aa20062bfa69f277197254cfc3efa9c5e726518e887c"
+    },
+    {
+      "workspace_relative_path": "output/r02_local_boundary_observability_20260902/pre_reference/runs/F454/stop_events.json",
+      "bytes": 1866,
+      "sha256": "f10548007e8757fcb635e79cb73df5b7be65e30049a6cb3dea32610896d28408"
+    },
+    {
+      "workspace_relative_path": "tasks/r02_local_boundary_observability_20260902/README.md",
+      "bytes": 2266,
+      "sha256": "4a7510f9a171a2f5d0cf9a3f6e66e7ed992fa09b1339af5ad20f71d9a1feaf37"
+    },
+    {
+      "workspace_relative_path": "tasks/r02_local_boundary_observability_20260902/audit_and_render_local_observability.py",
+      "bytes": 32068,
+      "sha256": "488fd6a53bd772f8a63941e1c8196508a05b52a9750fc5535deeed005d40337c"
+    },
+    {
+      "workspace_relative_path": "tasks/r02_local_boundary_observability_20260902/build_review_pack.py",
+      "bytes": 2262,
+      "sha256": "6e8b6d23528493f460951f57f7d01303a4b77a366416067319ec9848b0b47040"
+    },
+    {
+      "workspace_relative_path": "tasks/r02_local_boundary_observability_20260902/finalize_local_observability.py",
+      "bytes": 24874,
+      "sha256": "0cb26f01452ef9bb7e459e1a638e5fd63ddb066d443ab5bab5f88640889bd82c"
+    },
+    {
+      "workspace_relative_path": "tasks/r02_local_boundary_observability_20260902/run_pre_reference_local_observability.py",
+      "bytes": 23784,
+      "sha256": "2a1dd75a808e5ba3bc51f34aae6d3cfc04ab35150dea79a12e7df515b7ba776c"
+    },
+    {
+      "workspace_relative_path": "tasks/r02_local_boundary_observability_20260902/validate_local_observability.py",
+      "bytes": 10259,
+      "sha256": "b8d9e7bcd308c334cb0e26419f5c2262447a99528447fa0bedc559678dec4a58"
+    }
+  ]
+}

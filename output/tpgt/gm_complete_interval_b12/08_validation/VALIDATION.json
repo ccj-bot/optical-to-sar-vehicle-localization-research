@@ -1,0 +1,14 @@
+{
+  "status": "PASS_WITH_REVIEW_GATE",
+  "optical_only_selection": "PASS",
+  "sar_opened": false,
+  "car_candidate_counts": {
+    "GM_RM011": 14,
+    "GM_RM017": 4,
+    "GM_RM019": 8
+  },
+  "person_detection_count": 91,
+  "person_track_count": 15,
+  "human_core_intervals": 0,
+  "old_person_scout_audit_rows": 6
+}

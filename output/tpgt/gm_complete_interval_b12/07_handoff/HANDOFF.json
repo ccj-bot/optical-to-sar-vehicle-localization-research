@@ -1,0 +1,10 @@
+{
+  "task": "TPGT-GM-B1.2",
+  "status": "PENDING_HUMAN_REVIEW_BEFORE_MAPPING",
+  "car_interval_candidates": "D:\\profile\\research\\wt_b12\\output\\tpgt\\gm_complete_interval_b12\\01_car_interval_candidates\\COMPLETE_CAR_INTERVAL_CANDIDATES.csv",
+  "complete_car_core_intervals": "D:\\profile\\research\\wt_b12\\output\\tpgt\\gm_complete_interval_b12\\01_car_interval_candidates\\COMPLETE_CAR_CORE_INTERVALS.csv",
+  "person_tracks": "D:\\profile\\research\\wt_b12\\output\\tpgt\\gm_complete_interval_b12\\04_person_rescout\\GM17_PERSON_PROVISIONAL_TRACKS.csv",
+  "media_manifest": "D:\\profile\\research\\wt_b12\\output\\tpgt\\gm_complete_interval_b12\\06_review\\media_manifest.csv",
+  "sar_opened": false,
+  "next_step": "Human review only; no mapping in this run"
+}

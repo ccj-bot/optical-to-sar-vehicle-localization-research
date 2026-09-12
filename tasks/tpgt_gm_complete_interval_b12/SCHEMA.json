@@ -1,0 +1,17 @@
+{
+  "task": "TPGT-GM-B1.2",
+  "car_interval_candidate_status": [
+    "AUTO_INTERVAL_CANDIDATE",
+    "HUMAN_ACCEPT_COMPLETE_CORE",
+    "HUMAN_REJECT",
+    "AMBIGUOUS",
+    "DEFERRED_TRUNCATED",
+    "VEHICLE_NO_SAR_REFERENCE"
+  ],
+  "person_review_status": ["REVIEW_REQUIRED", "ACCEPT_PERSON_RESEARCH_CANDIDATE", "REJECT", "AMBIGUOUS"],
+  "provenance_rule": "Producer full_visible and bbox-origin fields are proxies with retained provenance; they are not human truth.",
+  "selection_domain": "optical_only",
+  "forbidden_inputs": ["SAR_GT", "SAR_manual_reference", "SAR_residual", "IoU", "SAR_brightness", "mapping_quality"],
+  "car_candidate_columns": ["scene", "vehicle_id", "interval_id", "frame_start", "frame_end", "frame_count", "support_type", "identity_status", "body_complete_status", "boundary_status", "occlusion_status", "bbox_semantics", "source_provenance", "auto_priority", "human_review_status", "human_note"],
+  "person_track_columns": ["provisional_person_id", "frame_start", "frame_end", "support_count", "gap_count", "max_gap", "median_bbox_height", "boundary_contact_fraction", "identity_clarity", "body_completeness", "auto_priority", "human_review_status", "notes"]
+}

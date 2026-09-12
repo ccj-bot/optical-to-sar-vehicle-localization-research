@@ -1,0 +1,72 @@
+{
+  "kind": "TPGT_OBSERVATION_WORKBENCH_DELIVERY_QA",
+  "events": [
+    {
+      "event_hypothesis_id": "E1A_899fea6cb26d4a25",
+      "blind_no_open_book_request": true,
+      "native_images_loaded": true,
+      "roi_round_trip_reload": "OK",
+      "serialization_export_reload": "OK",
+      "bookmark_and_revision": "OK",
+      "contact_sheet": "OK",
+      "open_book_registry_loaded_only_after_navigation": true,
+      "forward_reverse_step": "OK"
+    },
+    {
+      "event_hypothesis_id": "E1A_fb9b2b8ac5504522",
+      "blind_no_open_book_request": true,
+      "native_images_loaded": true,
+      "roi_round_trip_reload": "OK",
+      "serialization_export_reload": "OK",
+      "bookmark_and_revision": "OK",
+      "contact_sheet": "covered_by_two_clean_anchors",
+      "open_book_registry_loaded_only_after_navigation": true,
+      "forward_reverse_step": "OK"
+    },
+    {
+      "event_hypothesis_id": "E1A_d0a799aebda9689f",
+      "blind_no_open_book_request": true,
+      "native_images_loaded": true,
+      "roi_round_trip_reload": "OK",
+      "serialization_export_reload": "OK",
+      "bookmark_and_revision": "OK",
+      "contact_sheet": "covered_by_two_clean_anchors",
+      "open_book_registry_loaded_only_after_navigation": true,
+      "forward_reverse_step": "OK"
+    },
+    {
+      "event_hypothesis_id": "E1A_3520f2a29d6f636f",
+      "blind_no_open_book_request": true,
+      "native_images_loaded": true,
+      "roi_round_trip_reload": "OK",
+      "serialization_export_reload": "OK",
+      "bookmark_and_revision": "OK",
+      "contact_sheet": "OK",
+      "open_book_registry_loaded_only_after_navigation": true,
+      "forward_reverse_step": "OK"
+    },
+    {
+      "event_hypothesis_id": "E1A_c994e59a370a09b4",
+      "blind_no_open_book_request": true,
+      "native_images_loaded": true,
+      "roi_round_trip_reload": "OK",
+      "serialization_export_reload": "OK",
+      "bookmark_and_revision": "OK",
+      "contact_sheet": "covered_by_two_clean_anchors",
+      "open_book_registry_loaded_only_after_navigation": true,
+      "forward_reverse_step": "OK"
+    },
+    {
+      "event_hypothesis_id": "E1A_79b0263a150b69e3",
+      "blind_no_open_book_request": true,
+      "native_images_loaded": true,
+      "roi_round_trip_reload": "OK",
+      "serialization_export_reload": "OK",
+      "bookmark_and_revision": "OK",
+      "contact_sheet": "covered_by_two_clean_anchors",
+      "open_book_registry_loaded_only_after_navigation": true,
+      "forward_reverse_step": "OK"
+    }
+  ],
+  "complete": true
+}

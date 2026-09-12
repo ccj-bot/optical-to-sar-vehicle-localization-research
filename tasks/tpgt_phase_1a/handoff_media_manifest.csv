@@ -1,0 +1,3 @@
+artifact,observation_id,run_id,event_hypothesis_id,source_media,frame_index,semantics
+output/tpgt/phase_1a/observation_workbench/audit/E1A_899fea6cb26d4a25_qa_contact_sheet.jpg,E1A_899fea6cb26d4a25_OBS_1789197153693,R35ZF,E1A_899fea6cb26d4a25,output/tpgt/phase_1a/evidence_packs/E1A_899fea6cb26d4a25/sar_pseudocolor_frames/000000.png,0,synthetic delivery QA contact sheet; not scientific observation
+output/tpgt/phase_1a/observation_workbench/audit/E1A_3520f2a29d6f636f_qa_contact_sheet.jpg,E1A_3520f2a29d6f636f_OBS_1789197160281,R01ZF,E1A_3520f2a29d6f636f,output/tpgt/phase_1a/evidence_packs/E1A_3520f2a29d6f636f/sar_pseudocolor_frames/000000.png,0,synthetic delivery QA contact sheet; not scientific observation

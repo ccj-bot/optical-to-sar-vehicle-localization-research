@@ -1,0 +1,27 @@
+{
+  "type": "object",
+  "required": [
+    "target_annotation_id",
+    "run_id",
+    "domain",
+    "identity_semantics",
+    "frame_start",
+    "frame_end",
+    "source",
+    "provenance"
+  ],
+  "properties": {
+    "domain": {
+      "const": "CAR"
+    },
+    "visibility_state": {
+      "type": "string"
+    },
+    "truncation_state": {
+      "type": "string"
+    },
+    "occlusion_state": {
+      "type": "string"
+    }
+  }
+}

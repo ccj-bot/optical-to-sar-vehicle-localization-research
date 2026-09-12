@@ -1,0 +1,56 @@
+{
+  "schema": "TPGT_OBSERVATION_REVISION_SET_v0.1",
+  "event_hypothesis_id": "E1A_899fea6cb26d4a25",
+  "revisions": [
+    {
+      "schema_version": "TPGT_OBSERVATION_RECORD_v0.1",
+      "observation_id": "E1A_899fea6cb26d4a25_OBS_1789197153693",
+      "event_hypothesis_id": "E1A_899fea6cb26d4a25",
+      "domain": "CAR",
+      "run_id": "R35ZF",
+      "revision": 1,
+      "observation_phase": "PRE_OPEN_BOOK",
+      "view_mode": "BLIND_OBSERVATION",
+      "sar_frame_start": 0,
+      "sar_frame_end": 201,
+      "spatial_marks": [
+        {
+          "mark_id": "E1A_899fea6cb26d4a25_M001",
+          "geometry_type": "RECT",
+          "frame_index": 0,
+          "native_image_width": 1024,
+          "native_image_height": 592,
+          "role": "STRUCTURE",
+          "note": "",
+          "x1": 204.7999641833811,
+          "y1": 118.39998209169055,
+          "x2": 409.5999283667622,
+          "y2": 266.39998209169056
+        }
+      ],
+      "morphology": [],
+      "transitions": [],
+      "continuity": "UNCERTAIN",
+      "human_certainty": "AMBIGUOUS",
+      "bookmarks": [
+        {
+          "bookmark_type": "CHANGE",
+          "sar_frame_index": 0,
+          "note": ""
+        }
+      ],
+      "observation_text": "",
+      "display_semantics": {
+        "sar_source": "decoded pseudocolor source-video pixels",
+        "gray_is_bgr2gray_derived": true
+      },
+      "sync_semantics": "Nominal per-stream FPS only; optical-SAR zero offset/drift are unverified; frame index equality is not assumed.",
+      "created_at": "2026-09-12T07:12:33.693Z",
+      "updated_at": "2026-09-12T07:12:33.693Z",
+      "provenance": {
+        "source_basis": "Phase 1A evidence pack",
+        "blind_revision_immutable": true
+      }
+    }
+  ]
+}

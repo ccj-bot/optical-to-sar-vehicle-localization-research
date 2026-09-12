@@ -1,0 +1,5 @@
+{
+  "schema_version": "TPGT_IDENTITY_VISIBILITY_ANNOTATION_v0.1",
+  "annotations": [],
+  "semantics": "Read-only/importable Open-book condition information; never auto-mapped to SAR response."
+}

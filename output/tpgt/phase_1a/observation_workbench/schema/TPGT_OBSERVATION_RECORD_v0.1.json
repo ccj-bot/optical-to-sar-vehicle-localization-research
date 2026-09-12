@@ -1,0 +1,110 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "TPGT_OBSERVATION_RECORD_v0.1",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "schema_version",
+    "observation_id",
+    "event_hypothesis_id",
+    "domain",
+    "run_id",
+    "revision",
+    "observation_phase",
+    "sar_frame_start",
+    "sar_frame_end",
+    "spatial_marks",
+    "morphology",
+    "transitions",
+    "continuity",
+    "human_certainty",
+    "bookmarks",
+    "observation_text",
+    "display_semantics",
+    "sync_semantics",
+    "created_at",
+    "updated_at",
+    "provenance"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "TPGT_OBSERVATION_RECORD_v0.1"
+    },
+    "domain": {
+      "enum": [
+        "CAR",
+        "PERSON",
+        "UNKNOWN"
+      ]
+    },
+    "observation_phase": {
+      "enum": [
+        "PRE_OPEN_BOOK",
+        "POST_OPEN_BOOK"
+      ]
+    },
+    "spatial_marks": {
+      "type": "array"
+    },
+    "morphology": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "POINT_LIKE",
+          "COMPACT_REGION",
+          "ELONGATED_REGION",
+          "BAND_LIKE",
+          "MULTI_COMPONENT",
+          "DIFFUSE_REGION",
+          "BOUNDARY_ATTACHED",
+          "UNCLEAR",
+          "OTHER"
+        ]
+      }
+    },
+    "transitions": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "APPEAR",
+          "DISAPPEAR",
+          "SHIFT",
+          "ELONGATE",
+          "CONTRACT",
+          "SPLIT",
+          "MERGE",
+          "DOMINANT_SWITCH",
+          "DISPLAY_BRIGHTNESS_INCREASE",
+          "DISPLAY_BRIGHTNESS_DECREASE",
+          "INTERMITTENT",
+          "NO_CLEAR_CHANGE",
+          "UNCERTAIN",
+          "OTHER"
+        ]
+      }
+    },
+    "continuity": {
+      "enum": [
+        "CONTINUOUS",
+        "INTERMITTENT",
+        "SINGLE_FRAME",
+        "UNCERTAIN"
+      ]
+    },
+    "human_certainty": {
+      "enum": [
+        "CLEAR",
+        "LIKELY",
+        "AMBIGUOUS"
+      ]
+    },
+    "display_semantics": {
+      "type": "object",
+      "properties": {
+        "gray_is_bgr2gray_derived": {
+          "const": true
+        }
+      }
+    }
+  }
+}

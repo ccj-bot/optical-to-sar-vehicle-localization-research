@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "required": [
+    "schema_version",
+    "event_hypothesis_id",
+    "interpretation_text"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "TPGT_INTERPRETATION_CANDIDATE_v0.1"
+    },
+    "possible_hypotheses": {
+      "type": [
+        "string",
+        "array"
+      ]
+    }
+  }
+}

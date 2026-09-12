@@ -1,0 +1,17 @@
+{
+  "schema_version": "TPGT_OBSERVATION_WORKBENCH_BUILD_v0.1",
+  "events": [
+    "E1A_899fea6cb26d4a25",
+    "E1A_fb9b2b8ac5504522",
+    "E1A_d0a799aebda9689f",
+    "E1A_3520f2a29d6f636f",
+    "E1A_c994e59a370a09b4",
+    "E1A_79b0263a150b69e3"
+  ],
+  "asset_sha256": {
+    "workbench.css": "ca33f3e07a7ecf10a63598f0771ab99b95fd48c373fd9b7f9f4883b5b3aee596",
+    "workbench.js": "551a33f6870ada194c3709f5bc08bf93538c123ecc0b59d9edbafe465f2fd142"
+  },
+  "blind_page_does_not_load_open_book_registry": true,
+  "queue_sha256": "0c66b1ab434e50f709d63fce50bd4cb87dea892d48dd7deb2083c7776982df19"
+}

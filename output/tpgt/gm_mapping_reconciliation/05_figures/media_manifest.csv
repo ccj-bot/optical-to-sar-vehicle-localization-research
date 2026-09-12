@@ -1,0 +1,22 @@
+run,event,source_media,frame_index,observation_id,visual_asset,notes
+TPGT-GM-B1,GM_RM011_TIME,D:\profile\research\data\GM_RM011\GM_RM011_frames,0-367,TIME_CONTRACT,GM_RM011/01_optical_anchor_time_vs_sar_anchor_time.png,aggregate optical/SAR nominal correspondence
+TPGT-GM-B1,GM_RM011_TIME,D:\profile\research\data\GM_RM011\GM_RM011_frames,0-367,TIME_CONTRACT,GM_RM011/02_time_residual_vs_sequence_position.png,aggregate nominal residual
+TPGT-GM-B1,GM_RM011_O2S,D:\profile\research\data\GM_RM011\GM_RM011_frames,0-367,O2S_CONTRACT,GM_RM011/03_optical_horizontal_vs_sar_azimuth.png,no eligible scene-specific anchors
+TPGT-GM-B1,GM_RM011_O2S,D:\profile\research\data\GM_RM011\GM_RM011_frames,0-367,O2S_CONTRACT,GM_RM011/04_mapping_residual_vs_optical_u.png,no eligible scene-specific anchors
+TPGT-GM-B1,GM_RM011_O2S,D:\profile\research\data\GM_RM011\GM_RM011_frames,0-367,O2S_CONTRACT,GM_RM011/05_mapping_residual_vs_time.png,no eligible scene-specific anchors
+TPGT-GM-B1,GM_RM011_O2S,D:\profile\research\data\GM_RM011\GM_RM011_frames,0-367,O2S_CONTRACT,GM_RM011/06_residual_distribution.png,no eligible scene-specific anchors
+TPGT-GM-B1,GM_RM011_O2S,D:\profile\research\data\GM_RM011\GM_RM011_frames,0-367,O2S_CONTRACT,GM_RM011/07_historical_vs_rebuilt_formula.png,historical proxy shown as diagnostic only
+TPGT-GM-B1,GM_RM017_TIME,D:\profile\research\data\GM_RM017\GM_RM017_frames,0-367,TIME_CONTRACT,GM_RM017/01_optical_anchor_time_vs_sar_anchor_time.png,aggregate optical/SAR nominal correspondence
+TPGT-GM-B1,GM_RM017_TIME,D:\profile\research\data\GM_RM017\GM_RM017_frames,0-367,TIME_CONTRACT,GM_RM017/02_time_residual_vs_sequence_position.png,aggregate nominal residual
+TPGT-GM-B1,GM_RM017_O2S,D:\profile\research\data\GM_RM017\GM_RM017_frames,154-188,O2S_CONTRACT,GM_RM017/03_optical_horizontal_vs_sar_azimuth.png,20 development and 45 held-out anchor domain
+TPGT-GM-B1,GM_RM017_O2S,D:\profile\research\data\GM_RM017\GM_RM017_frames,154-188,O2S_CONTRACT,GM_RM017/04_mapping_residual_vs_optical_u.png,GT/manual-reference derived residual
+TPGT-GM-B1,GM_RM017_O2S,D:\profile\research\data\GM_RM017\GM_RM017_frames,154-188,O2S_CONTRACT,GM_RM017/05_mapping_residual_vs_time.png,GT/manual-reference derived residual
+TPGT-GM-B1,GM_RM017_O2S,D:\profile\research\data\GM_RM017\GM_RM017_frames,154-188,O2S_CONTRACT,GM_RM017/06_residual_distribution.png,GT/manual-reference derived residual
+TPGT-GM-B1,GM_RM017_O2S,D:\profile\research\data\GM_RM017\GM_RM017_frames,154-188,O2S_CONTRACT,GM_RM017/07_historical_vs_rebuilt_formula.png,development fit versus historical proxy
+TPGT-GM-B1,GM_RM019_TIME,D:\profile\research\data\GM_RM019\GM_RM019_frames,0-367,TIME_CONTRACT,GM_RM019/01_optical_anchor_time_vs_sar_anchor_time.png,aggregate optical/SAR nominal correspondence
+TPGT-GM-B1,GM_RM019_TIME,D:\profile\research\data\GM_RM019\GM_RM019_frames,0-367,TIME_CONTRACT,GM_RM019/02_time_residual_vs_sequence_position.png,aggregate nominal residual
+TPGT-GM-B1,GM_RM019_O2S,D:\profile\research\data\GM_RM019\GM_RM019_frames,0-367,O2S_CONTRACT,GM_RM019/03_optical_horizontal_vs_sar_azimuth.png,no eligible scene-specific anchors
+TPGT-GM-B1,GM_RM019_O2S,D:\profile\research\data\GM_RM019\GM_RM019_frames,0-367,O2S_CONTRACT,GM_RM019/04_mapping_residual_vs_optical_u.png,no eligible scene-specific anchors
+TPGT-GM-B1,GM_RM019_O2S,D:\profile\research\data\GM_RM019\GM_RM019_frames,0-367,O2S_CONTRACT,GM_RM019/05_mapping_residual_vs_time.png,no eligible scene-specific anchors
+TPGT-GM-B1,GM_RM019_O2S,D:\profile\research\data\GM_RM019\GM_RM019_frames,0-367,O2S_CONTRACT,GM_RM019/06_residual_distribution.png,no eligible scene-specific anchors
+TPGT-GM-B1,GM_RM019_O2S,D:\profile\research\data\GM_RM019\GM_RM019_frames,0-367,O2S_CONTRACT,GM_RM019/07_historical_vs_rebuilt_formula.png,historical proxy shown as diagnostic only

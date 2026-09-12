@@ -1,0 +1,507 @@
+{
+  "task": "TPGT-GM-B1",
+  "scenes": {
+    "GM_RM011": {
+      "optical": {
+        "directory": "D:\\profile\\research\\data\\GM_RM011\\GM_RM011_frames",
+        "exists": true,
+        "count": 368,
+        "min_index": 0,
+        "max_index": 367,
+        "missing_indices": [],
+        "duplicate_indices": [],
+        "dimension_counts": {
+          "(800, 600)": 368
+        },
+        "decode_errors": [],
+        "samples": [
+          {
+            "file": "D:\\profile\\research\\data\\GM_RM011\\GM_RM011_frames\\000000.png",
+            "sha256": "0231c58d0961e5251eb82af1a560d3ad9a4d1657eec84b772ce64d99f1286259",
+            "image": {
+              "width": 800,
+              "height": 600,
+              "mode": "RGB",
+              "format": "PNG"
+            }
+          },
+          {
+            "file": "D:\\profile\\research\\data\\GM_RM011\\GM_RM011_frames\\000184.png",
+            "sha256": "15aea66237197b1f91996702d336c745ad413e3fe077f51344be47c40d1402dd",
+            "image": {
+              "width": 800,
+              "height": 600,
+              "mode": "RGB",
+              "format": "PNG"
+            }
+          },
+          {
+            "file": "D:\\profile\\research\\data\\GM_RM011\\GM_RM011_frames\\000367.png",
+            "sha256": "c972f73a277b38eb5a2714a3133592acd0b84d841cd9687c860d01b92a889912",
+            "image": {
+              "width": 800,
+              "height": 600,
+              "mode": "RGB",
+              "format": "PNG"
+            }
+          }
+        ]
+      },
+      "sar_pseudocolor": {
+        "directory": "D:\\profile\\research\\data\\GM_RM011\\GM_RM011_SARframes",
+        "exists": true,
+        "count": 766,
+        "min_index": 0,
+        "max_index": 765,
+        "missing_indices": [],
+        "duplicate_indices": [],
+        "dimension_counts": {
+          "(2308, 1334)": 766
+        },
+        "decode_errors": [],
+        "samples": [
+          {
+            "file": "D:\\profile\\research\\data\\GM_RM011\\GM_RM011_SARframes\\000000.png",
+            "sha256": "646fa6648dd0720710604ebde202271fc5761f6003a77a6c69df6ab396da6f5d",
+            "image": {
+              "width": 2308,
+              "height": 1334,
+              "mode": "RGB",
+              "format": "PNG"
+            }
+          },
+          {
+            "file": "D:\\profile\\research\\data\\GM_RM011\\GM_RM011_SARframes\\000383.png",
+            "sha256": "ab308928a2b88c9c866be87f9b45bc165fe6d2ae942c58dbcef609e4a2aed0f5",
+            "image": {
+              "width": 2308,
+              "height": 1334,
+              "mode": "RGB",
+              "format": "PNG"
+            }
+          },
+          {
+            "file": "D:\\profile\\research\\data\\GM_RM011\\GM_RM011_SARframes\\000765.png",
+            "sha256": "dfa18ad96768c4096421258853c71f137a847e63b0bc4c7965de9831733c04d8",
+            "image": {
+              "width": 2308,
+              "height": 1334,
+              "mode": "RGB",
+              "format": "PNG"
+            }
+          }
+        ]
+      },
+      "sar_gray": {
+        "directory": "D:\\profile\\research\\data\\GM_RM011\\GM_RM011_SARframes_gray",
+        "exists": true,
+        "count": 766,
+        "min_index": 0,
+        "max_index": 765,
+        "missing_indices": [],
+        "duplicate_indices": [],
+        "dimension_counts": {
+          "(2308, 1334)": 766
+        },
+        "decode_errors": [],
+        "samples": [
+          {
+            "file": "D:\\profile\\research\\data\\GM_RM011\\GM_RM011_SARframes_gray\\000000.png",
+            "sha256": "7eb197d80a6deccc38bc0cc7ec47febe48e028a5febcd2046ba24a246522a75a",
+            "image": {
+              "width": 2308,
+              "height": 1334,
+              "mode": "RGB",
+              "format": "PNG"
+            }
+          },
+          {
+            "file": "D:\\profile\\research\\data\\GM_RM011\\GM_RM011_SARframes_gray\\000383.png",
+            "sha256": "5f6941325b65fa6d5d95f3c5fcda90830040a52a927e31c90bf83e2f8b0f24d4",
+            "image": {
+              "width": 2308,
+              "height": 1334,
+              "mode": "RGB",
+              "format": "PNG"
+            }
+          },
+          {
+            "file": "D:\\profile\\research\\data\\GM_RM011\\GM_RM011_SARframes_gray\\000765.png",
+            "sha256": "b24efca8310c18ed16ba86d2fbc35e2d61ace0f66b337d060f28dccb678c88c6",
+            "image": {
+              "width": 2308,
+              "height": 1334,
+              "mode": "RGB",
+              "format": "PNG"
+            }
+          }
+        ]
+      },
+      "manifest_counts": {
+        "optical": 369,
+        "sar": 1538
+      },
+      "pseudo_gray_relation": {
+        "status": "SAME_FRAME_INDEX_AND_DIMENSION;DETERMINISTIC_PIXEL_DERIVATION_NOT_PROVEN",
+        "shape_pseudocolor": [
+          1334,
+          2308,
+          3
+        ],
+        "shape_gray": [
+          1334,
+          2308
+        ],
+        "equal_luma_fraction_frame_000000": 0.08745995286585477,
+        "correlation_luma_gray": -0.9297888441735866
+      },
+      "gt_reference": {
+        "source": "D:\\profile\\research\\optical-sar-visual-diagnosis-sar-foundation\\manifests\\oty2\\oty2_s0_sar_gt_quality_audit.csv",
+        "note": "manual/reference audit rows are research evidence, not response-center truth"
+      },
+      "mask": {
+        "status": "shared deterministic display/fan mask referenced by historical contracts; raw mask file not identified in scoped workspace",
+        "origin_px": [
+          1154.0,
+          1330.6
+        ],
+        "hash": null
+      }
+    },
+    "GM_RM017": {
+      "optical": {
+        "directory": "D:\\profile\\research\\data\\GM_RM017\\GM_RM017_frames",
+        "exists": true,
+        "count": 368,
+        "min_index": 0,
+        "max_index": 367,
+        "missing_indices": [],
+        "duplicate_indices": [],
+        "dimension_counts": {
+          "(800, 600)": 368
+        },
+        "decode_errors": [],
+        "samples": [
+          {
+            "file": "D:\\profile\\research\\data\\GM_RM017\\GM_RM017_frames\\000000.png",
+            "sha256": "0a38bf961426f81c14488984c2c729d3c3b9f4353779785422408278246ceb6d",
+            "image": {
+              "width": 800,
+              "height": 600,
+              "mode": "RGB",
+              "format": "PNG"
+            }
+          },
+          {
+            "file": "D:\\profile\\research\\data\\GM_RM017\\GM_RM017_frames\\000184.png",
+            "sha256": "8657acddd5650ddba60b3bc16a7910adcfbeccd9700e27fbec76aa8e9760bd60",
+            "image": {
+              "width": 800,
+              "height": 600,
+              "mode": "RGB",
+              "format": "PNG"
+            }
+          },
+          {
+            "file": "D:\\profile\\research\\data\\GM_RM017\\GM_RM017_frames\\000367.png",
+            "sha256": "2a0b6adb596bac967bb8f0992f9b91325464c04a1ddd4440238e63913a933778",
+            "image": {
+              "width": 800,
+              "height": 600,
+              "mode": "RGB",
+              "format": "PNG"
+            }
+          }
+        ]
+      },
+      "sar_pseudocolor": {
+        "directory": "D:\\profile\\research\\data\\GM_RM017\\GM_RM017_SARframes",
+        "exists": true,
+        "count": 766,
+        "min_index": 0,
+        "max_index": 765,
+        "missing_indices": [],
+        "duplicate_indices": [],
+        "dimension_counts": {
+          "(2308, 1334)": 766
+        },
+        "decode_errors": [],
+        "samples": [
+          {
+            "file": "D:\\profile\\research\\data\\GM_RM017\\GM_RM017_SARframes\\000000.png",
+            "sha256": "6b3e83fe7edff2e31aaf8fddb0f792fc8067d0d1875c40816f36197199e6922d",
+            "image": {
+              "width": 2308,
+              "height": 1334,
+              "mode": "RGB",
+              "format": "PNG"
+            }
+          },
+          {
+            "file": "D:\\profile\\research\\data\\GM_RM017\\GM_RM017_SARframes\\000383.png",
+            "sha256": "ec174228429dbe01c5687b1f0485af1d760071bc6a3adad6a94ed445de882b18",
+            "image": {
+              "width": 2308,
+              "height": 1334,
+              "mode": "RGB",
+              "format": "PNG"
+            }
+          },
+          {
+            "file": "D:\\profile\\research\\data\\GM_RM017\\GM_RM017_SARframes\\000765.png",
+            "sha256": "60fba8db2fde930c68ab2554f837e9b2f7c04483b79a811069adae3e05a65fbd",
+            "image": {
+              "width": 2308,
+              "height": 1334,
+              "mode": "RGB",
+              "format": "PNG"
+            }
+          }
+        ]
+      },
+      "sar_gray": {
+        "directory": "D:\\profile\\research\\data\\GM_RM017\\GM_RM017_SARframes_gray",
+        "exists": true,
+        "count": 766,
+        "min_index": 0,
+        "max_index": 765,
+        "missing_indices": [],
+        "duplicate_indices": [],
+        "dimension_counts": {
+          "(2308, 1334)": 766
+        },
+        "decode_errors": [],
+        "samples": [
+          {
+            "file": "D:\\profile\\research\\data\\GM_RM017\\GM_RM017_SARframes_gray\\000000.png",
+            "sha256": "ec9cce02fcc77e1ac819491a97d6b38c78e36c4c20e041645c61bcdf055aded7",
+            "image": {
+              "width": 2308,
+              "height": 1334,
+              "mode": "RGB",
+              "format": "PNG"
+            }
+          },
+          {
+            "file": "D:\\profile\\research\\data\\GM_RM017\\GM_RM017_SARframes_gray\\000383.png",
+            "sha256": "209b6f307a16eb21f52f28f244c36c735b474fd4fde3e9786f89761219494c64",
+            "image": {
+              "width": 2308,
+              "height": 1334,
+              "mode": "RGB",
+              "format": "PNG"
+            }
+          },
+          {
+            "file": "D:\\profile\\research\\data\\GM_RM017\\GM_RM017_SARframes_gray\\000765.png",
+            "sha256": "ab93f554961b07dbd7784bafa0537edf6573b9a477ff0190ff52c87ebe0183bc",
+            "image": {
+              "width": 2308,
+              "height": 1334,
+              "mode": "RGB",
+              "format": "PNG"
+            }
+          }
+        ]
+      },
+      "manifest_counts": {
+        "optical": 369,
+        "sar": 1538
+      },
+      "pseudo_gray_relation": {
+        "status": "SAME_FRAME_INDEX_AND_DIMENSION;DETERMINISTIC_PIXEL_DERIVATION_NOT_PROVEN",
+        "shape_pseudocolor": [
+          1334,
+          2308,
+          3
+        ],
+        "shape_gray": [
+          1334,
+          2308
+        ],
+        "equal_luma_fraction_frame_000000": 0.06155111352469346,
+        "correlation_luma_gray": -0.9279281695451319
+      },
+      "gt_reference": {
+        "source": "D:\\profile\\research\\optical-sar-visual-diagnosis-sar-foundation\\manifests\\oty2\\oty2_s0_sar_gt_quality_audit.csv",
+        "note": "manual/reference audit rows are research evidence, not response-center truth"
+      },
+      "mask": {
+        "status": "shared deterministic display/fan mask referenced by historical contracts; raw mask file not identified in scoped workspace",
+        "origin_px": [
+          1154.0,
+          1330.6
+        ],
+        "hash": null
+      }
+    },
+    "GM_RM019": {
+      "optical": {
+        "directory": "D:\\profile\\research\\data\\GM_RM019\\GM_RM019_frames",
+        "exists": true,
+        "count": 368,
+        "min_index": 0,
+        "max_index": 367,
+        "missing_indices": [],
+        "duplicate_indices": [],
+        "dimension_counts": {
+          "(800, 600)": 368
+        },
+        "decode_errors": [],
+        "samples": [
+          {
+            "file": "D:\\profile\\research\\data\\GM_RM019\\GM_RM019_frames\\000000.png",
+            "sha256": "7f77c4470e4524039ac2e299b2330ac218483ff2264355dcdc0e3342bd96c4ab",
+            "image": {
+              "width": 800,
+              "height": 600,
+              "mode": "RGB",
+              "format": "PNG"
+            }
+          },
+          {
+            "file": "D:\\profile\\research\\data\\GM_RM019\\GM_RM019_frames\\000184.png",
+            "sha256": "8526808d4e0799841bcae2c1035d2be27b95eb3c6eb5d019a235e52b8eb5580c",
+            "image": {
+              "width": 800,
+              "height": 600,
+              "mode": "RGB",
+              "format": "PNG"
+            }
+          },
+          {
+            "file": "D:\\profile\\research\\data\\GM_RM019\\GM_RM019_frames\\000367.png",
+            "sha256": "cdcbf0af671f9e2fc788e2f6f1620d7373a7d1cbc2f2c588a3a919da7a9856ac",
+            "image": {
+              "width": 800,
+              "height": 600,
+              "mode": "RGB",
+              "format": "PNG"
+            }
+          }
+        ]
+      },
+      "sar_pseudocolor": {
+        "directory": "D:\\profile\\research\\data\\GM_RM019\\GM_RM019_SARframes",
+        "exists": true,
+        "count": 766,
+        "min_index": 0,
+        "max_index": 765,
+        "missing_indices": [],
+        "duplicate_indices": [],
+        "dimension_counts": {
+          "(2308, 1334)": 766
+        },
+        "decode_errors": [],
+        "samples": [
+          {
+            "file": "D:\\profile\\research\\data\\GM_RM019\\GM_RM019_SARframes\\000000.png",
+            "sha256": "42177bf925cbcf331d1b9d9d61b9d6ab3295574565a417af2e968012928fabff",
+            "image": {
+              "width": 2308,
+              "height": 1334,
+              "mode": "RGB",
+              "format": "PNG"
+            }
+          },
+          {
+            "file": "D:\\profile\\research\\data\\GM_RM019\\GM_RM019_SARframes\\000383.png",
+            "sha256": "d26eaf9b669b030decf86e701f70099562c561e6975593ad32384e951247422a",
+            "image": {
+              "width": 2308,
+              "height": 1334,
+              "mode": "RGB",
+              "format": "PNG"
+            }
+          },
+          {
+            "file": "D:\\profile\\research\\data\\GM_RM019\\GM_RM019_SARframes\\000765.png",
+            "sha256": "7142438f290c68b291a63de67f81f4ed2dbb530beccf0652699b607ab5591373",
+            "image": {
+              "width": 2308,
+              "height": 1334,
+              "mode": "RGB",
+              "format": "PNG"
+            }
+          }
+        ]
+      },
+      "sar_gray": {
+        "directory": "D:\\profile\\research\\data\\GM_RM019\\GM_RM019_SARframes_gray",
+        "exists": true,
+        "count": 766,
+        "min_index": 0,
+        "max_index": 765,
+        "missing_indices": [],
+        "duplicate_indices": [],
+        "dimension_counts": {
+          "(2308, 1334)": 766
+        },
+        "decode_errors": [],
+        "samples": [
+          {
+            "file": "D:\\profile\\research\\data\\GM_RM019\\GM_RM019_SARframes_gray\\000000.png",
+            "sha256": "010845ddc079e3fc944412a7ff847e4d412fd533f281655d4a115165ba7a7490",
+            "image": {
+              "width": 2308,
+              "height": 1334,
+              "mode": "RGB",
+              "format": "PNG"
+            }
+          },
+          {
+            "file": "D:\\profile\\research\\data\\GM_RM019\\GM_RM019_SARframes_gray\\000383.png",
+            "sha256": "33d94dbf36b1e2f57e64eae8758ee17a1daac1aa970da589f4cd1f19783aa37b",
+            "image": {
+              "width": 2308,
+              "height": 1334,
+              "mode": "RGB",
+              "format": "PNG"
+            }
+          },
+          {
+            "file": "D:\\profile\\research\\data\\GM_RM019\\GM_RM019_SARframes_gray\\000765.png",
+            "sha256": "ead64be4a41e0b4850c65aaee38330dd5ac04afff4f43ab500b16eb213912d6f",
+            "image": {
+              "width": 2308,
+              "height": 1334,
+              "mode": "RGB",
+              "format": "PNG"
+            }
+          }
+        ]
+      },
+      "manifest_counts": {
+        "optical": 369,
+        "sar": 1538
+      },
+      "pseudo_gray_relation": {
+        "status": "SAME_FRAME_INDEX_AND_DIMENSION;DETERMINISTIC_PIXEL_DERIVATION_NOT_PROVEN",
+        "shape_pseudocolor": [
+          1334,
+          2308,
+          3
+        ],
+        "shape_gray": [
+          1334,
+          2308
+        ],
+        "equal_luma_fraction_frame_000000": 0.03808375275100751,
+        "correlation_luma_gray": -0.9150656496571982
+      },
+      "gt_reference": {
+        "source": "D:\\profile\\research\\optical-sar-visual-diagnosis-sar-foundation\\manifests\\oty2\\oty2_s0_sar_gt_quality_audit.csv",
+        "note": "manual/reference audit rows are research evidence, not response-center truth"
+      },
+      "mask": {
+        "status": "shared deterministic display/fan mask referenced by historical contracts; raw mask file not identified in scoped workspace",
+        "origin_px": [
+          1154.0,
+          1330.6
+        ],
+        "hash": null
+      }
+    }
+  },
+  "source_manifest": "D:\\profile\\research\\optical-sar-visual-diagnosis-sar-foundation\\manifests\\oty2\\oty2_p0_data_asset_manifest.csv"
+}

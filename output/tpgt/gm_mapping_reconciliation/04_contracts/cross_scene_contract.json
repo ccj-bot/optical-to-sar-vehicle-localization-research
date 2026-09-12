@@ -1,0 +1,17 @@
+{
+  "shared": {
+    "sar_display_transform": true,
+    "nominal_fps_assumptions": true
+  },
+  "scene_specific_or_unresolved": {
+    "exact_sync": true,
+    "optical_to_azimuth_calibration": true,
+    "mapping_uncertainty": true
+  },
+  "scenes": [
+    "GM_RM011",
+    "GM_RM017",
+    "GM_RM019"
+  ],
+  "status": "NO_FORCED_GLOBAL_MAPPING"
+}

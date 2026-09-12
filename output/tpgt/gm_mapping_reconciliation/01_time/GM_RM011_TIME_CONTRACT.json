@@ -1,0 +1,82 @@
+{
+  "scene": "GM_RM011",
+  "optical_fps": 24.0,
+  "sar_fps": 50.0,
+  "frame_zero_semantics": "stored PNG indices; optical and SAR index zero are not independently hardware-registered",
+  "exact_sync_status": "UNKNOWN",
+  "nominal_mapping": {
+    "formula": "j_center = round(i_o * 50 / 24)",
+    "status": "NOMINAL_MAPPING_HYPOTHESIS",
+    "common_start": "UNFROZEN"
+  },
+  "tested_models": {
+    "T0_common_start_fixed_fps": {
+      "residual_sar_frames": {
+        "mean": 0.4610507246376811,
+        "std": 0.28787679754906853,
+        "min": 0.0,
+        "max": 0.9166666666666856
+      },
+      "residual_ms": {
+        "p50": 10.0,
+        "p95": 18.333333333333144,
+        "max": 18.333333333333712
+      },
+      "evidence": "historical generated correspondence table; not independent synchronization"
+    },
+    "T1_fixed_offset": {
+      "status": "NOT_IDENTIFIABLE_FROM_COMMON_START_DERIVED_ROWS",
+      "offset_range_ms": [
+        0.0,
+        18.333333333334423
+      ]
+    },
+    "T2_affine": {
+      "a_s_per_s": 0.9999985552515166,
+      "b_s": 0.009232060798869192,
+      "residual_ms_p95_abs": 9.218805231533445,
+      "status": "DESCRIPTIVE_ONLY"
+    },
+    "T3_piecewise_local": {
+      "status": "NOT_JUSTIFIED",
+      "reason": "no independent anchor series demonstrating systematic residual drift"
+    }
+  },
+  "preferred_operational_model": "T0_NOMINAL_MAPPING_WITH_LOCAL_SAMPLE_WINDOW",
+  "residual_summary": {
+    "row_count": 368,
+    "local_two_step_rate_computed_from_table": 1.0,
+    "local_two_step_rate_historical_audit": 0.786,
+    "historical_fixed_offset_reliable": false
+  },
+  "uncertainty": {
+    "status": "UNKNOWN",
+    "recommended_use": "sample-local SAR window; do not collapse to one exact frame"
+  },
+  "anchor_provenance": {
+    "nominal_pair": 368,
+    "manual_reference_anchor": 0,
+    "measured_exact_sync": 0,
+    "historical_algorithm_pair": 368
+  },
+  "valid_domain": {
+    "optical_frame_index": [
+      0,
+      367
+    ],
+    "sar_center_frame": [
+      0,
+      765
+    ]
+  },
+  "runtime_permission": {
+    "time_corridor": true,
+    "exact_frame_selection": false,
+    "hardware_sync_claim": false
+  },
+  "limitations": [
+    "common-start and FPS are source-confirmed operational assumptions only",
+    "reviewed pair does not prove global fixed offset",
+    "nearby SAR window must retain local drift"
+  ]
+}

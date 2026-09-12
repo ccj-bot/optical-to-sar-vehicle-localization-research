@@ -1,0 +1,63 @@
+{
+  "lineage_validation": {
+    "status": "PASS_WITH_SOURCE_GAPS_REPORTED",
+    "checks": [
+      {
+        "mapping_id": "T_OPT_TIME",
+        "source_exists": true,
+        "producer_exists": true
+      },
+      {
+        "mapping_id": "T_SAR_TIME",
+        "source_exists": true,
+        "producer_exists": true
+      },
+      {
+        "mapping_id": "D_FAN_POLAR",
+        "source_exists": true,
+        "producer_exists": true
+      },
+      {
+        "mapping_id": "O2S_GLOBAL_PROXY",
+        "source_exists": true,
+        "producer_exists": true
+      }
+    ],
+    "note": "historical formulas are traceable; some producer paths are outside active workspace"
+  },
+  "coordinate_roundtrip": {
+    "status": "PASS",
+    "points": 4,
+    "max_roundtrip_error_px": 0.0,
+    "formula": "fan_polar forward/inverse"
+  },
+  "time_model_validation": {
+    "status": "INSUFFICIENT_INDEPENDENT_ANCHORS",
+    "note": "T0-T2 residuals are computed from common-start-derived correspondence rows; no independent train/holdout sync split"
+  },
+  "scene_holdout": {
+    "status": "NOT_APPLICABLE_FOR_SHARED_MODEL",
+    "note": "shared mapping is not promoted; GM017-only fit remains open-book diagnostic"
+  },
+  "leakage_audit": {
+    "GM_RM011": {
+      "GT_USED": false,
+      "MANUAL_REFERENCE_USED": false,
+      "SAR_RESPONSE_USED": false,
+      "HISTORICAL_SELECTION_USED": false
+    },
+    "GM_RM017": {
+      "GT_USED": true,
+      "MANUAL_REFERENCE_USED": true,
+      "SAR_RESPONSE_USED": false,
+      "HISTORICAL_SELECTION_USED": false
+    },
+    "GM_RM019": {
+      "GT_USED": false,
+      "MANUAL_REFERENCE_USED": false,
+      "SAR_RESPONSE_USED": false,
+      "HISTORICAL_SELECTION_USED": false
+    }
+  },
+  "status": "PASS_WITH_CONSERVATIVE_UNRESOLVED_FIELDS"
+}

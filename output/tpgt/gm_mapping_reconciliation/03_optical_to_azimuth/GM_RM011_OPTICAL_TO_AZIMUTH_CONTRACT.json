@@ -1,0 +1,29 @@
+{
+  "status": "UNRESOLVED_NO_MAPPING_ELIGIBLE_ANCHORS",
+  "input_semantics": "optical horizontal coordinate not formally linked",
+  "output_semantics": "SAR display azimuth",
+  "formula": null,
+  "valid_domain": null,
+  "uncertainty": null,
+  "uses_gt": false,
+  "uses_manual_GT": false,
+  "uses_manual_SAR_reference": false,
+  "uses_optical_manual_annotation": false,
+  "uses_SAR_response": false,
+  "runtime_permission": {
+    "observation_alignment": false,
+    "open_book_comparison": false,
+    "search_corridor": false,
+    "exact_target_localization": false
+  },
+  "limitations": [
+    "no scene-specific mapping-eligible anchors in scoped evidence",
+    "global historical proxy is diagnostic only and cannot be promoted"
+  ],
+  "scene": "GM_RM011",
+  "anchor_counts": {
+    "all_usable": 0,
+    "development": 0,
+    "heldout": 0
+  }
+}

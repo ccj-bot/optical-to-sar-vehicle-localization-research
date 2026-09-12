@@ -1,0 +1,56 @@
+{
+  "status": "DEVELOPMENT_CALIBRATED_OPEN_BOOK_ONLY",
+  "input_semantics": "optical bbox horizontal center u_optical_px",
+  "output_semantics": "SAR display fan azimuth theta_deg",
+  "formula": "theta_deg = 0.091778579 * u_optical_px + -40.421051199",
+  "coefficients": {
+    "k_deg_per_px": 0.09177857930104247,
+    "b_deg": -40.421051198962864
+  },
+  "valid_domain": [
+    154.305,
+    620.881
+  ],
+  "uncertainty": {
+    "development_mae_deg": 0.46218480135946133,
+    "development_rmse_deg": 0.5879778752518541,
+    "heldout_count": 45,
+    "heldout_mae_deg": 0.861931625632684,
+    "heldout_rmse_deg": 0.9820094093037374,
+    "heldout_p95_abs_deg": 1.6624932544228626,
+    "corridor_recommendation": "theta_hat +/- max(heldout p95, 2 deg)"
+  },
+  "uses_gt": true,
+  "uses_manual_GT": true,
+  "uses_manual_SAR_reference": true,
+  "uses_optical_manual_annotation": true,
+  "uses_SAR_response": false,
+  "runtime_permission": {
+    "observation_alignment": false,
+    "open_book_comparison": true,
+    "search_corridor": false,
+    "exact_target_localization": false
+  },
+  "limitations": [
+    "one scene only",
+    "development fit uses one vehicle/pose family",
+    "held-out rows remain research reference, not deployment validation",
+    "not a final SAR box mapping"
+  ],
+  "quadratic_comparison": {
+    "formula": "theta = c0 + c1*u + c2*u^2",
+    "coefficients": [
+      -1.4054210878284293e-05,
+      0.10260110550072667,
+      -42.22614982761247
+    ],
+    "heldout_mae_deg": 0.7795263939733129,
+    "decision": "retain linear unless independent evidence supports nonlinearity"
+  },
+  "scene": "GM_RM017",
+  "anchor_counts": {
+    "all_usable": 65,
+    "development": 20,
+    "heldout": 45
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "status": "PENDING_HUMAN_REVIEW",
+  "auto_candidate_vehicle_counts": {
+    "GM_RM011": 1,
+    "GM_RM017": 4,
+    "GM_RM019": 1
+  },
+  "human_confirmed_count": 0,
+  "reason": "review decisions are not inferred from detector/frame-state output"
+}

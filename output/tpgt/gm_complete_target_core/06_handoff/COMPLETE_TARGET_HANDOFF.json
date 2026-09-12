@@ -1,0 +1,14 @@
+{
+  "task": "TPGT-GM-B1.1",
+  "status": "PENDING_HUMAN_REVIEW_BEFORE_SAR_MAPPING",
+  "complete_car_core_panel": "D:\\profile\\research\\wt_b11\\output\\tpgt\\gm_complete_target_core\\02_complete_car_core\\COMPLETE_CAR_CORE_PANEL.csv",
+  "person_core_candidates": "D:\\profile\\research\\wt_b11\\output\\tpgt\\gm_complete_target_core\\06_handoff\\GM_PERSON_CORE_CANDIDATES.csv",
+  "a_line_interface": "read-only handoff only; no A-line files modified",
+  "recommended_events": [],
+  "limitations": [
+    "no human review decisions supplied",
+    "mapping validation withheld until frozen complete core",
+    "PERSON motion UNKNOWN",
+    "no truncation/difficult-target analysis"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "status": "BLOCKED_NO_HUMAN_FROZEN_CORE_PANEL",
+  "frozen_mapping": {
+    "formula": "theta=0.09177857930104247*u-40.421051198963",
+    "applied": false,
+    "reason": "COMPLETE_CAR_CORE_PANEL contains no HUMAN_CONFIRMED_COMPLETE rows"
+  },
+  "scene_specific_models": {
+    "GM_RM011": {
+      "status": "BLOCKED_NO_FROZEN_CORE"
+    },
+    "GM_RM017": {
+      "status": "BLOCKED_NO_FROZEN_CORE"
+    },
+    "GM_RM019": {
+      "status": "BLOCKED_NO_FROZEN_CORE"
+    }
+  },
+  "shared_models": {
+    "global_single_line": "NOT_RUN",
+    "shared_slope_scene_intercept": "NOT_RUN",
+    "scene_specific_slope_intercept": "NOT_RUN"
+  },
+  "vehicle_level_holdout": "INSUFFICIENT_INDEPENDENT_VEHICLES",
+  "corridor": "NOT_ESTABLISHED",
+  "sar_reference_opened": false,
+  "leakage_audit": {
+    "SAR_GT_USED": false,
+    "MAPPING_RESIDUAL_USED_FOR_SELECTION": false,
+    "SAR_RESPONSE_USED": false
+  }
+}

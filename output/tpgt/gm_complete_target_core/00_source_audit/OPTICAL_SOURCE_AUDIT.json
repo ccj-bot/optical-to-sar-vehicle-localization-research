@@ -1,0 +1,114 @@
+{
+  "registry_source": "D:\\profile\\research\\optical-sar-visual-diagnosis-data-foundation\\manifests\\oty2\\oty2_p1e_canonical_optical_vehicle_registry.csv",
+  "frame_state_source": "D:\\profile\\research\\optical-sar-visual-diagnosis-data-foundation\\manifests\\oty2\\oty2_p1e_canonical_vehicle_frame_states.csv",
+  "scenes": {
+    "GM_RM011": {
+      "canonical_vehicle_count": 14,
+      "frame_state_rows": 5152,
+      "vehicle_ids": [
+        "GM_RM011:PV001",
+        "GM_RM011:PV002",
+        "GM_RM011:PV003",
+        "GM_RM011:PV004",
+        "GM_RM011:PV005",
+        "GM_RM011:PV006",
+        "GM_RM011:PV007",
+        "GM_RM011:PV008",
+        "GM_RM011:PV009",
+        "GM_RM011:PV010",
+        "GM_RM011:PV011",
+        "GM_RM011:PV012",
+        "GM_RM011:PV013",
+        "GM_RM011:PV014"
+      ],
+      "selection_inputs": [
+        "optical frame states",
+        "canonical optical identity",
+        "reference optical bbox",
+        "visibility",
+        "boundary contact",
+        "temporal support"
+      ],
+      "selection_forbidden": [
+        "SAR GT",
+        "SAR residual",
+        "IoU",
+        "SAR brightness",
+        "historical SAR quality",
+        "previous selector output"
+      ]
+    },
+    "GM_RM017": {
+      "canonical_vehicle_count": 4,
+      "frame_state_rows": 1472,
+      "vehicle_ids": [
+        "GM_RM017:PV001",
+        "GM_RM017:PV002",
+        "GM_RM017:PV003",
+        "GM_RM017:PV004"
+      ],
+      "selection_inputs": [
+        "optical frame states",
+        "canonical optical identity",
+        "reference optical bbox",
+        "visibility",
+        "boundary contact",
+        "temporal support"
+      ],
+      "selection_forbidden": [
+        "SAR GT",
+        "SAR residual",
+        "IoU",
+        "SAR brightness",
+        "historical SAR quality",
+        "previous selector output"
+      ]
+    },
+    "GM_RM019": {
+      "canonical_vehicle_count": 4,
+      "frame_state_rows": 1472,
+      "vehicle_ids": [
+        "GM_RM019:PV001",
+        "GM_RM019:PV002",
+        "GM_RM019:PV003",
+        "GM_RM019:PV004"
+      ],
+      "selection_inputs": [
+        "optical frame states",
+        "canonical optical identity",
+        "reference optical bbox",
+        "visibility",
+        "boundary contact",
+        "temporal support"
+      ],
+      "selection_forbidden": [
+        "SAR GT",
+        "SAR residual",
+        "IoU",
+        "SAR brightness",
+        "historical SAR quality",
+        "previous selector output"
+      ]
+    }
+  },
+  "semantic_reconciliation": {
+    "GM19_time_base": {
+      "optical_fps": 24.0,
+      "sar_gray_operational_fps": 50.0,
+      "sar_pseudocolor_encoded_display_fps": 48.300063,
+      "merge_status": "DO_NOT_MERGE_UNCONDITIONALLY"
+    },
+    "manifest_count_discrepancy": {
+      "raw_optical_primary_frames": 368,
+      "historical_manifest_optical_rows": 369,
+      "raw_sar_primary_pseudo_plus_gray": 1532,
+      "historical_manifest_sar_rows": 1538,
+      "explanation": "extra rows are source video/config/mask/annotation assets, not additional primary frames"
+    },
+    "mask": {
+      "status": "DERIVED_HISTORICAL_MASK_EVIDENCE_EXISTS;RAW_ARTIFACT_OR_UNIQUE_HASH_UNRESOLVED",
+      "not_claimed": "complete absence of mask"
+    },
+    "round_trip_semantics": "display fan formula implementation round-trip consistency; not physical calibration accuracy"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "status": "PASS_WITH_REVIEW_GATE",
+  "optical_selection_leakage": "PASS",
+  "sar_reference_opened_before_freeze": false,
+  "mapping_validation": "BLOCKED_NO_HUMAN_FROZEN_CORE_PANEL",
+  "person_scout": "NONE_FOUND",
+  "source_audit": {
+    "GM_RM011": {
+      "canonical_vehicle_count": 14,
+      "frame_state_rows": 5152,
+      "vehicle_ids": [
+        "GM_RM011:PV001",
+        "GM_RM011:PV002",
+        "GM_RM011:PV003",
+        "GM_RM011:PV004",
+        "GM_RM011:PV005",
+        "GM_RM011:PV006",
+        "GM_RM011:PV007",
+        "GM_RM011:PV008",
+        "GM_RM011:PV009",
+        "GM_RM011:PV010",
+        "GM_RM011:PV011",
+        "GM_RM011:PV012",
+        "GM_RM011:PV013",
+        "GM_RM011:PV014"
+      ],
+      "selection_inputs": [
+        "optical frame states",
+        "canonical optical identity",
+        "reference optical bbox",
+        "visibility",
+        "boundary contact",
+        "temporal support"
+      ],
+      "selection_forbidden": [
+        "SAR GT",
+        "SAR residual",
+        "IoU",
+        "SAR brightness",
+        "historical SAR quality",
+        "previous selector output"
+      ]
+    },
+    "GM_RM017": {
+      "canonical_vehicle_count": 4,
+      "frame_state_rows": 1472,
+      "vehicle_ids": [
+        "GM_RM017:PV001",
+        "GM_RM017:PV002",
+        "GM_RM017:PV003",
+        "GM_RM017:PV004"
+      ],
+      "selection_inputs": [
+        "optical frame states",
+        "canonical optical identity",
+        "reference optical bbox",
+        "visibility",
+        "boundary contact",
+        "temporal support"
+      ],
+      "selection_forbidden": [
+        "SAR GT",
+        "SAR residual",
+        "IoU",
+        "SAR brightness",
+        "historical SAR quality",
+        "previous selector output"
+      ]
+    },
+    "GM_RM019": {
+      "canonical_vehicle_count": 4,
+      "frame_state_rows": 1472,
+      "vehicle_ids": [
+        "GM_RM019:PV001",
+        "GM_RM019:PV002",
+        "GM_RM019:PV003",
+        "GM_RM019:PV004"
+      ],
+      "selection_inputs": [
+        "optical frame states",
+        "canonical optical identity",
+        "reference optical bbox",
+        "visibility",
+        "boundary contact",
+        "temporal support"
+      ],
+      "selection_forbidden": [
+        "SAR GT",
+        "SAR residual",
+        "IoU",
+        "SAR brightness",
+        "historical SAR quality",
+        "previous selector output"
+      ]
+    }
+  }
+}

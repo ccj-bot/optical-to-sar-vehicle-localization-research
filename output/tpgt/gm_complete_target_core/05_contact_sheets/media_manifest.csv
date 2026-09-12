@@ -1,0 +1,9 @@
+run,event,source_media,frame_index,observation_id,visual_asset,modality,notes
+TPGT-GM-B1.1,GM_RM011_CAR,D:\profile\research\data\GM_RM011\GM_RM011_frames,284-315,GM_RM011:PV013,car/GM_RM011_PV013_optical_contact_sheet.png,optical,optical-only AUTO_CANDIDATE; no SAR shown
+TPGT-GM-B1.1,GM_RM017_CAR,D:\profile\research\data\GM_RM017\GM_RM017_frames,118-164,GM_RM017:PV001,car/GM_RM017_PV001_optical_contact_sheet.png,optical,optical-only AUTO_CANDIDATE; no SAR shown
+TPGT-GM-B1.1,GM_RM017_CAR,D:\profile\research\data\GM_RM017\GM_RM017_frames,145-185,GM_RM017:PV002,car/GM_RM017_PV002_optical_contact_sheet.png,optical,optical-only AUTO_CANDIDATE; no SAR shown
+TPGT-GM-B1.1,GM_RM017_CAR,D:\profile\research\data\GM_RM017\GM_RM017_frames,151-200,GM_RM017:PV003,car/GM_RM017_PV003_optical_contact_sheet.png,optical,optical-only AUTO_CANDIDATE; no SAR shown
+TPGT-GM-B1.1,GM_RM017_CAR,D:\profile\research\data\GM_RM017\GM_RM017_frames,162-214,GM_RM017:PV004,car/GM_RM017_PV004_optical_contact_sheet.png,optical,optical-only AUTO_CANDIDATE; no SAR shown
+TPGT-GM-B1.1,GM_RM019_CAR,D:\profile\research\data\GM_RM019\GM_RM019_frames,98-143,GM_RM019:PV003,car/GM_RM019_PV003_optical_contact_sheet.png,optical,optical-only AUTO_CANDIDATE; no SAR shown
+TPGT-GM-B1.1,GM_RM011_PERSON,D:\profile\research\data\GM_RM011\GM_RM011_frames,271,GM_RM011:PERSON_SCOUT_001,person/GM_RM011_person_271.png,optical,singleton detector observation; rejected pending human review
+TPGT-GM-B1.1,GM_RM017_PERSON,D:\profile\research\data\GM_RM017\GM_RM017_frames,164,GM_RM017:PERSON_SCOUT_002,person/GM_RM017_person_164.png,optical,singleton detector observation; rejected pending human review

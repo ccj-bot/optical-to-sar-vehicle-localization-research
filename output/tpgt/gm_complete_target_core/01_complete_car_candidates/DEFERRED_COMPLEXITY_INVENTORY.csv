@@ -1,0 +1,17 @@
+﻿scene,vehicle_id,frame_range,left_right_bottom_boundary,visibility,reason_deferred
+GM_RM011,GM_RM011:PV001,0-35,right_boundary,confirmed_with_partial_visibility,no >=3 interior full-visible frames with >=3-frame contiguous support; retained outside core
+GM_RM011,GM_RM011:PV002,0-4,right_boundary,confirmed_with_partial_visibility,no >=3 interior full-visible frames with >=3-frame contiguous support; retained outside core
+GM_RM011,GM_RM011:PV003,20-59,right_boundary,confirmed_with_partial_visibility,no >=3 interior full-visible frames with >=3-frame contiguous support; retained outside core
+GM_RM011,GM_RM011:PV004,39-87,right_boundary,confirmed_with_partial_visibility,no >=3 interior full-visible frames with >=3-frame contiguous support; retained outside core
+GM_RM011,GM_RM011:PV005,87-130,right_boundary,confirmed_with_partial_visibility,no >=3 interior full-visible frames with >=3-frame contiguous support; retained outside core
+GM_RM011,GM_RM011:PV006,110-140,right_boundary,confirmed_with_partial_visibility,no >=3 interior full-visible frames with >=3-frame contiguous support; retained outside core
+GM_RM011,GM_RM011:PV007,116-151,right_boundary,confirmed_with_partial_visibility,no >=3 interior full-visible frames with >=3-frame contiguous support; retained outside core
+GM_RM011,GM_RM011:PV008,135-166,right_boundary,confirmed_with_partial_visibility,no >=3 interior full-visible frames with >=3-frame contiguous support; retained outside core
+GM_RM011,GM_RM011:PV009,155-196,right_boundary,confirmed_with_partial_visibility,no >=3 interior full-visible frames with >=3-frame contiguous support; retained outside core
+GM_RM011,GM_RM011:PV010,211-245,right_boundary,confirmed_with_partial_visibility,no >=3 interior full-visible frames with >=3-frame contiguous support; retained outside core
+GM_RM011,GM_RM011:PV011,243-266,right_boundary,confirmed_with_partial_visibility,no >=3 interior full-visible frames with >=3-frame contiguous support; retained outside core
+GM_RM011,GM_RM011:PV012,262-292,right_boundary,confirmed_with_partial_visibility,no >=3 interior full-visible frames with >=3-frame contiguous support; retained outside core
+GM_RM011,GM_RM011:PV014,307-336,right_boundary,confirmed_with_partial_visibility,no >=3 interior full-visible frames with >=3-frame contiguous support; retained outside core
+GM_RM019,GM_RM019:PV001,0-14,right_boundary,confirmed_with_partial_visibility,no >=3 interior full-visible frames with >=3-frame contiguous support; retained outside core
+GM_RM019,GM_RM019:PV002,5-43,right_boundary,confirmed_with_partial_visibility,no >=3 interior full-visible frames with >=3-frame contiguous support; retained outside core
+GM_RM019,GM_RM019:PV004,149-183,right_boundary,confirmed_with_partial_visibility,no >=3 interior full-visible frames with >=3-frame contiguous support; retained outside core

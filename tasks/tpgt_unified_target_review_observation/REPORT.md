@@ -86,3 +86,15 @@ QA 结果写入 `output/tpgt/unified_target_review_observation/audit/unified_wor
 新增 `TPGT_SAR_LINKED_OPTICAL_PROPOSAL_v0.1` 与独立 checkbox。只有非 QA、显式 `CONFIRMED` 的 optical-SAR pair record 才允许显示为粉色虚线来源参考；DRAFT、UNVERIFIED、QA/synthetic 均只进入 audit，不能画框、不能创建 Human Target、不能覆盖人工 frame observation。
 
 当前审计发现已暴露场景的合格记录为 0。R01ZF 原生 SAR 人工框明确声明 `optical_pairing_status=UNVERIFIED_NOT_INCLUDED`，pairing readiness 为 false；paired workbench 中 2 条 pair record 位于 `export_ingest_qa`，已排除。因此 UI 会显示阻断原因，不会猜测“对应 YOLO 框”。审计结果位于 `audit/sar_linked_optical_proposal_audit.json`。
+
+## Optical annotation-frame workflow v0.4
+
+本轮按实际人工标注过程重新拆分了三种语义，不再把它们都压进 `visible/core interval`：
+
+1. `identity_segments`：人工确认哪些连续帧属于同一个 Human Target。可以一次确认起止帧，但不会给中间缺框帧生成 bbox。
+2. `frame_observations`：逐帧保存可见状态、bbox 及可共存的 `IMAGE_EDGE_TRUNCATED`、`NEAR_FIELD_TRUNCATED`、`OCCLUDED` 条件。截断手工框只表达真实可见支持区域。
+3. `formal_annotations[]`：目标完整可见后，人工把某一帧设为正式标注帧。该操作要求本帧有人工确认 bbox、`COMPLETE_VISIBLE`，且没有截断或遮挡条件；`primary_annotation_frame_index` 记录主标注帧。
+
+因此，建立目标的 anchor frame 不再自动等价于“完整可见正式标注”。YOLO 框仍只是可选框 proposal；正式标注的成立来自人工选择、逐帧状态确认和单独的“将当前完整帧设为正式标注帧”操作。
+
+浏览器自动化验证覆盖：从 detector 建立目标、三个条件同时保存、连续 identity 段保存、批量 identity 段不生成假框、正式标注帧保存、导出结构 contract，以及非 GM 场景帧数。结果为 10/10 PASS，见 `output/tpgt/unified_target_review_observation/audit/unified_workbench_qa.json`。

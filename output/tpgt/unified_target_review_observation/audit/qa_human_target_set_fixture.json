@@ -1,0 +1,115 @@
+{
+  "schema_version": "TPGT_OPTICAL_HUMAN_TARGET_SET_v0.1",
+  "scene_id": "GM_RM017",
+  "targets": {
+    "GM_RM017:HUMAN_CAR_001": {
+      "id": "GM_RM017:HUMAN_CAR_001",
+      "class": "truck",
+      "anchors": [
+        {
+          "frame_index": 117,
+          "bbox": {
+            "x1": 0.22070565819740295,
+            "y1": 272.1008605957031,
+            "x2": 54.674171447753906,
+            "y2": 377.46124267578125
+          },
+          "bbox_role": "VISIBLE_SUPPORT_ONLY",
+          "bbox_source": "YOLO26",
+          "created_at": "2026-09-13T07:38:55.418Z"
+        }
+      ],
+      "frame_observations": {
+        "117": {
+          "frame_index": 117,
+          "visibility_state": "COMPLETE_VISIBLE",
+          "condition_flags": [],
+          "bbox": {
+            "x1": 0.22070565819740295,
+            "y1": 272.1008605957031,
+            "x2": 54.674171447753906,
+            "y2": 377.46124267578125
+          },
+          "bbox_role": "FULL_VISIBLE_TARGET",
+          "bbox_source": "YOLO26",
+          "identity_relation": "SAME_TARGET_HUMAN_CONFIRMED",
+          "human_confirmed": true,
+          "note": "",
+          "identity_human_confirmed_at": "2026-09-13T07:38:55.490Z"
+        },
+        "118": {
+          "frame_index": 118,
+          "visibility_state": "UNKNOWN",
+          "condition_flags": [],
+          "bbox": null,
+          "bbox_role": "UNKNOWN",
+          "bbox_source": "NONE",
+          "identity_relation": "SAME_TARGET_HUMAN_CONFIRMED",
+          "human_confirmed": true,
+          "note": "",
+          "identity_human_confirmed_at": "2026-09-13T07:38:55.490Z"
+        },
+        "119": {
+          "frame_index": 119,
+          "visibility_state": "PARTIAL_VISIBLE",
+          "condition_flags": [
+            "IMAGE_EDGE_TRUNCATED",
+            "NEAR_FIELD_TRUNCATED",
+            "OCCLUDED"
+          ],
+          "bbox": null,
+          "bbox_role": "UNKNOWN",
+          "bbox_source": "NONE",
+          "identity_relation": "SAME_TARGET_HUMAN_CONFIRMED",
+          "human_confirmed": true,
+          "note": "",
+          "identity_human_confirmed_at": "2026-09-13T07:38:55.490Z"
+        }
+      },
+      "identity_segments": [
+        [
+          117,
+          119
+        ]
+      ],
+      "visible_segments": [
+        [
+          117,
+          117
+        ],
+        [
+          119,
+          119
+        ]
+      ],
+      "formal_annotations": [
+        {
+          "annotation_id": "GM_RM017:HUMAN_CAR_001:OPTICAL_FRAME_000117",
+          "frame_index": 117,
+          "bbox": {
+            "x1": 0.22070565819740295,
+            "y1": 272.1008605957031,
+            "x2": 54.674171447753906,
+            "y2": 377.46124267578125
+          },
+          "bbox_role": "FULL_VISIBLE_TARGET",
+          "bbox_source": "YOLO26",
+          "identity_relation": "SAME_TARGET_HUMAN_CONFIRMED",
+          "human_confirmed": true,
+          "marked_at": "2026-09-13T07:38:55.659Z"
+        }
+      ],
+      "primary_annotation_frame_index": 117,
+      "primary_core_interval": [
+        117,
+        117
+      ],
+      "research_status": "DEFER_COMPLEX",
+      "identity_relation": "AMBIGUOUS",
+      "frozen_revisions": [],
+      "created_at": "2026-09-13T07:38:55.418Z"
+    }
+  },
+  "active_target_id": "GM_RM017:HUMAN_CAR_001",
+  "updated_at": "2026-09-13T07:38:55.659Z"
+}

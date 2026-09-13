@@ -1,1 +1,84 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"TPGT Optical Human Target Set v0.1","type":"object","required":["scene_id","targets","active_target_id"],"properties":{"scene_id":{"type":"string"},"active_target_id":{"type":["string","null"]},"targets":{"type":"object","additionalProperties":{"$ref":"#/$defs/target"}}},"$defs":{"target":{"type":"object","required":["id","class","anchors","frame_observations","visible_segments","primary_core_interval","research_status","frozen_revisions"],"properties":{"id":{"type":"string"},"class":{"type":"string"},"anchors":{"type":"array"},"frame_observations":{"type":"object"},"visible_segments":{"type":"array","items":{"type":"array","prefixItems":[{"type":"integer"},{"type":"integer"}],"minItems":2,"maxItems":2}},"primary_core_interval":{"type":"array","prefixItems":[{"type":["integer","null"]},{"type":["integer","null"]}],"minItems":2,"maxItems":2},"research_status":{"type":"string"},"frozen_revisions":{"type":"array"}}}}}
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TPGT Optical Human Target Set v0.1",
+  "type": "object",
+  "required": ["schema_version", "scene_id", "targets", "active_target_id"],
+  "properties": {
+    "schema_version": {"const": "TPGT_OPTICAL_HUMAN_TARGET_SET_v0.1"},
+    "scene_id": {"type": "string"},
+    "active_target_id": {"type": ["string", "null"]},
+    "updated_at": {"type": "string"},
+    "targets": {"type": "object", "additionalProperties": {"$ref": "#/$defs/target"}}
+  },
+  "$defs": {
+    "bbox": {
+      "type": "object",
+      "required": ["x1", "y1", "x2", "y2"],
+      "properties": {
+        "x1": {"type": "number"}, "y1": {"type": "number"},
+        "x2": {"type": "number"}, "y2": {"type": "number"}
+      }
+    },
+    "segment": {
+      "type": "array",
+      "prefixItems": [{"type": "integer"}, {"type": "integer"}],
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "frameObservation": {
+      "type": "object",
+      "required": ["frame_index", "visibility_state", "condition_flags", "bbox", "bbox_role", "bbox_source", "identity_relation", "human_confirmed"],
+      "properties": {
+        "frame_index": {"type": "integer"},
+        "visibility_state": {"enum": ["COMPLETE_VISIBLE", "PARTIAL_VISIBLE", "VISIBLE_UNBOXED", "NOT_VISIBLE", "UNKNOWN"]},
+        "condition_flags": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"enum": ["IMAGE_EDGE_TRUNCATED", "NEAR_FIELD_TRUNCATED", "OCCLUDED"]}
+        },
+        "bbox": {"oneOf": [{"$ref": "#/$defs/bbox"}, {"type": "null"}]},
+        "bbox_role": {"enum": ["FULL_VISIBLE_TARGET", "VISIBLE_SUPPORT_ONLY", "UNKNOWN"]},
+        "bbox_source": {"enum": ["YOLO11", "YOLO26", "HUMAN_MANUAL", "HUMAN_ACCEPTED_MACHINE_PROPOSAL", "NONE"]},
+        "identity_relation": {"type": "string"},
+        "human_confirmed": {"type": "boolean"},
+        "note": {"type": "string"}
+      }
+    },
+    "formalAnnotation": {
+      "type": "object",
+      "required": ["annotation_id", "frame_index", "bbox", "bbox_role", "bbox_source", "human_confirmed", "marked_at"],
+      "properties": {
+        "annotation_id": {"type": "string"},
+        "frame_index": {"type": "integer"},
+        "bbox": {"$ref": "#/$defs/bbox"},
+        "bbox_role": {"const": "FULL_VISIBLE_TARGET"},
+        "bbox_source": {"type": "string"},
+        "human_confirmed": {"const": true},
+        "marked_at": {"type": "string"}
+      }
+    },
+    "target": {
+      "type": "object",
+      "required": ["id", "class", "anchors", "frame_observations", "identity_segments", "visible_segments", "formal_annotations", "primary_annotation_frame_index", "research_status", "frozen_revisions"],
+      "properties": {
+        "id": {"type": "string"},
+        "class": {"type": "string"},
+        "anchors": {"type": "array"},
+        "frame_observations": {"type": "object", "additionalProperties": {"$ref": "#/$defs/frameObservation"}},
+        "identity_segments": {"type": "array", "items": {"$ref": "#/$defs/segment"}},
+        "visible_segments": {"type": "array", "items": {"$ref": "#/$defs/segment"}},
+        "formal_annotations": {"type": "array", "items": {"$ref": "#/$defs/formalAnnotation"}},
+        "primary_annotation_frame_index": {"type": ["integer", "null"]},
+        "primary_core_interval": {
+          "description": "Compatibility field. In v0.2 UI this mirrors the primary annotation frame as [frame, frame].",
+          "type": "array",
+          "prefixItems": [{"type": ["integer", "null"]}, {"type": ["integer", "null"]}],
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "research_status": {"type": "string"},
+        "frozen_revisions": {"type": "array"}
+      }
+    }
+  }
+}

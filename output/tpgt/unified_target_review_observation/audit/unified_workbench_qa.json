@@ -1,13 +1,34 @@
 {
-  "kind": "TPGT_OPTICAL_MULTI_TARGET_QA",
+  "kind": "TPGT_OPTICAL_ANNOTATION_FRAME_WORKFLOW_QA",
   "checks": {
     "scene_groups": "PASS",
-    "multi_target_model": "PASS",
-    "default_overlays": "PASS",
-    "manual_box_tool": "PASS",
-    "visible_unboxed_enum": "PASS",
-    "target_list_ui": "PASS",
-    "manifest_non_gm_frame_count": "PASS_WITH_SCENE_COUNT"
+    "annotation_workflow_ui": "PASS",
+    "coexisting_condition_controls": "PASS",
+    "target_created_from_detection": "PASS",
+    "identity_segment_saved": "PASS",
+    "coexisting_conditions_saved": "PASS",
+    "formal_annotation_frame_saved": "PASS",
+    "no_fake_boxes_in_bulk_identity_range": "PASS",
+    "manifest_non_gm_frame_count": "PASS",
+    "export_contract_validation": "PASS"
+  },
+  "details": {
+    "tested_detection": {
+      "frame": 117,
+      "class_name": "truck",
+      "confidence": 0.7523945569992065,
+      "x1": 0.28626757860183716,
+      "y1": 271.4586181640625,
+      "x2": 81.68689727783203,
+      "y2": 375.87786865234375,
+      "det_id": "GM_RM017_000117_001",
+      "model": "YOLO11",
+      "source_model_detail": "YOLO11",
+      "scene": "GM_RM017",
+      "semantic_role": "PROPOSAL_ONLY_NOT_IDENTITY_TRUTH"
+    },
+    "tested_target_id": "GM_RM017:HUMAN_CAR_001",
+    "contract_errors": []
   },
   "complete": true
 }

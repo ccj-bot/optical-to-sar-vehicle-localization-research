@@ -1,7 +1,131 @@
 from pathlib import Path
 import json
 from playwright.sync_api import sync_playwright
-W=Path('D:/profile/research/workspace');O=W/'output/tpgt/unified_target_review_observation';A=O/'audit';A.mkdir(parents=True,exist_ok=True)
+
+W = Path("D:/profile/research/workspace")
+O = W / "output/tpgt/unified_target_review_observation"
+A = O / "audit"
+A.mkdir(parents=True, exist_ok=True)
+
+checks = {}
+details = {}
+qa_state = None
+
 with sync_playwright() as pw:
- b=pw.chromium.launch(executable_path='C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',headless=True);c=b.new_context(viewport={'width':1400,'height':900});p=c.new_page();p.goto('http://127.0.0.1:8780/workspace/output/tpgt/unified_target_review_observation/index.html');checks={'scene_groups':'PASS' if p.locator('.scene-card').count()>=5 else 'FAIL'};p.goto('http://127.0.0.1:8780/workspace/output/tpgt/unified_target_review_observation/TARGET_REVIEW_VIEW.html?scene=GM_RM017');p.wait_for_timeout(1000);checks['multi_target_model']='PASS';checks['default_overlays']='PASS' if p.locator('#yolo11Toggle').is_checked() and p.locator('#yolo26Toggle').is_checked() else 'FAIL';checks['manual_box_tool']='PASS' if p.locator('#manualBox').count()==1 else 'FAIL';checks['visible_unboxed_enum']='PASS' if p.locator('#frameState option[value=VISIBLE_UNBOXED]').count()==1 else 'FAIL';checks['target_list_ui']='PASS' if p.locator('#targetList').count()==1 and p.locator('#newTarget').count()==1 else 'FAIL';p.goto('http://127.0.0.1:8780/workspace/output/tpgt/unified_target_review_observation/TARGET_REVIEW_VIEW.html?scene=R35ZF');p.wait_for_timeout(1000);checks['manifest_non_gm_frame_count']='PASS_WITH_SCENE_COUNT';b.close()
-out={'kind':'TPGT_OPTICAL_MULTI_TARGET_QA','checks':checks,'complete':all(v.startswith('PASS') for v in checks.values())};(A/'unified_workbench_qa.json').write_text(json.dumps(out,ensure_ascii=False,indent=2),encoding='utf-8');print(json.dumps(out,ensure_ascii=False))
+    browser = pw.chromium.launch(
+        executable_path="C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe",
+        headless=True,
+    )
+    context = browser.new_context(viewport={"width": 1500, "height": 1000})
+    page = context.new_page()
+    page.goto("http://127.0.0.1:8780/workspace/output/tpgt/unified_target_review_observation/index.html")
+    checks["scene_groups"] = "PASS" if page.locator(".scene-card").count() >= 5 else "FAIL"
+
+    url = "http://127.0.0.1:8780/workspace/output/tpgt/unified_target_review_observation/TARGET_REVIEW_VIEW.html?scene=GM_RM017"
+    page.goto(url)
+    page.evaluate("localStorage.removeItem('TPGT_OPTICAL_HUMAN_TARGET_SET_GM_RM017')")
+    page.reload()
+    page.wait_for_timeout(500)
+
+    checks["annotation_workflow_ui"] = "PASS" if all(
+        page.locator(f"#{item}").count() == 1
+        for item in [
+            "targetList", "newTarget", "manualBox", "edgeTruncated", "nearTruncated",
+            "occluded", "identityStart", "identityEnd", "confirmIdentitySegment",
+            "markAnnotation", "importTargets", "exportTargets",
+        ]
+    ) else "FAIL"
+    checks["coexisting_condition_controls"] = "PASS" if all(
+        page.locator(f"#{item}").get_attribute("type") == "checkbox"
+        for item in ["edgeTruncated", "nearTruncated", "occluded"]
+    ) else "FAIL"
+
+    first_detection = page.evaluate("""
+      () => {
+        const s = window.TPGT_REVIEW_DATA.scenes.GM_RM017;
+        const all = [...(s.detections.yolo11 || []), ...(s.detections.yolo26 || [])];
+        return all[0] || null;
+      }
+    """)
+    if first_detection:
+        page.locator("#frameInput").fill(str(first_detection["frame"]))
+        page.locator("#jump").click()
+        page.locator("#newTarget").click()
+        canvas = page.locator("#overlay").bounding_box()
+        scene_size = page.evaluate("() => ({w: window.TPGT_REVIEW_DATA.scenes.GM_RM017.width, h: window.TPGT_REVIEW_DATA.scenes.GM_RM017.height})")
+        cx = (first_detection["x1"] + first_detection["x2"]) / 2
+        cy = (first_detection["y1"] + first_detection["y2"]) / 2
+        page.mouse.click(canvas["x"] + cx / scene_size["w"] * canvas["width"], canvas["y"] + cy / scene_size["h"] * canvas["height"])
+
+        start = first_detection["frame"]
+        end = min(start + 2, page.evaluate("() => window.TPGT_REVIEW_DATA.scenes.GM_RM017.frame_count - 1"))
+        page.locator("#identityStart").fill(str(start))
+        page.locator("#identityEnd").fill(str(end))
+        page.locator("#confirmIdentitySegment").click()
+
+        page.locator("#frameInput").fill(str(end))
+        page.locator("#jump").click()
+        for control in ["edgeTruncated", "nearTruncated", "occluded"]:
+            page.locator(f"#{control}").check()
+        page.locator("#frameState").select_option("PARTIAL_VISIBLE")
+        page.locator("#saveFrameState").click()
+
+        page.locator("#frameInput").fill(str(start))
+        page.locator("#jump").click()
+        for control in ["edgeTruncated", "nearTruncated", "occluded"]:
+            page.locator(f"#{control}").uncheck()
+        page.locator("#frameState").select_option("COMPLETE_VISIBLE")
+        page.locator("#saveFrameState").click()
+        page.locator("#markAnnotation").click()
+
+        state = page.evaluate("() => JSON.parse(localStorage.getItem('TPGT_OPTICAL_HUMAN_TARGET_SET_GM_RM017'))")
+        qa_state = state
+        target = next(iter(state["targets"].values()))
+        obs = target["frame_observations"][str(start)]
+        checks["target_created_from_detection"] = "PASS" if target["anchors"] and obs["bbox"] else "FAIL"
+        checks["identity_segment_saved"] = "PASS" if [start, end] in target["identity_segments"] else "FAIL"
+        checks["coexisting_conditions_saved"] = "PASS" if set(target["frame_observations"][str(end)]["condition_flags"]) == {
+            "IMAGE_EDGE_TRUNCATED", "NEAR_FIELD_TRUNCATED", "OCCLUDED"
+        } else "FAIL"
+        checks["formal_annotation_frame_saved"] = "PASS" if target["primary_annotation_frame_index"] == start and len(target["formal_annotations"]) == 1 else "FAIL"
+        checks["no_fake_boxes_in_bulk_identity_range"] = "PASS" if all(
+            target["frame_observations"][str(f)]["bbox"] is None for f in range(start + 1, end + 1)
+        ) else "FAIL"
+        details["tested_detection"] = first_detection
+        details["tested_target_id"] = target["id"]
+        page.screenshot(path=str(A / "optical_annotation_frame_workflow.png"), full_page=True)
+    else:
+        for key in ["target_created_from_detection", "identity_segment_saved", "formal_annotation_frame_saved", "no_fake_boxes_in_bulk_identity_range"]:
+            checks[key] = "FAIL_NO_DETECTION"
+
+    page.goto("http://127.0.0.1:8780/workspace/output/tpgt/unified_target_review_observation/TARGET_REVIEW_VIEW.html?scene=R35ZF")
+    page.wait_for_timeout(500)
+    checks["manifest_non_gm_frame_count"] = "PASS" if page.locator("#frameInput").get_attribute("max") == "297" else "FAIL"
+    browser.close()
+
+if qa_state is not None:
+    contract_errors = []
+    for required in ["schema_version", "scene_id", "targets", "active_target_id"]:
+        if required not in qa_state:
+            contract_errors.append(f"missing root field: {required}")
+    for target_id, target in qa_state.get("targets", {}).items():
+        for required in ["anchors", "frame_observations", "identity_segments", "visible_segments", "formal_annotations", "primary_annotation_frame_index", "frozen_revisions"]:
+            if required not in target:
+                contract_errors.append(f"{target_id} missing: {required}")
+        for frame_id, observation in target.get("frame_observations", {}).items():
+            if not isinstance(observation.get("condition_flags"), list):
+                contract_errors.append(f"{target_id} frame {frame_id}: condition_flags is not list")
+            if observation.get("bbox") is None and observation.get("bbox_source") != "NONE":
+                contract_errors.append(f"{target_id} frame {frame_id}: null bbox has non-NONE source")
+    checks["export_contract_validation"] = "PASS" if not contract_errors else "FAIL"
+    details["contract_errors"] = contract_errors
+    (A / "qa_human_target_set_fixture.json").write_text(json.dumps(qa_state, ensure_ascii=False, indent=2), encoding="utf-8")
+
+out = {
+    "kind": "TPGT_OPTICAL_ANNOTATION_FRAME_WORKFLOW_QA",
+    "checks": checks,
+    "details": details,
+    "complete": all(value == "PASS" for value in checks.values()),
+}
+(A / "unified_workbench_qa.json").write_text(json.dumps(out, ensure_ascii=False, indent=2), encoding="utf-8")
+print(json.dumps(out, ensure_ascii=False))

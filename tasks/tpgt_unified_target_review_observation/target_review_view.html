@@ -1,1 +1,98 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TPGT 光学目标复核</title><link rel="stylesheet" href="target_review.css"></head><body><main><a href="index.html">← 场景入口</a><h1>TPGT 光学目标复核</h1><div class="toolbar"><b id="sceneTitle"></b><button id="prev">上一帧</button><button id="next">下一帧</button><button id="play">播放</button><button id="pause">暂停</button><select id="speed"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="2">2×</option></select><input id="frameInput" type="number" min="0"><button id="jump">跳转</button><span id="frameInfo"></span></div><section class="review-layout"><article class="panel image-panel"><div class="stage"><img id="optical"><canvas id="overlay"></canvas></div><div class="legend"><label><input id="yolo11Toggle" type="checkbox" checked> YOLO11</label><label><input id="yolo26Toggle" type="checkbox" checked> YOLO26</label><label><input id="carToggle" type="checkbox" checked> 车辆</label><label><input id="personToggle" type="checkbox" checked> 人员</label><label><input id="confidenceToggle" type="checkbox" checked> 类别+置信度</label><label><input id="machineToggle" type="checkbox" checked> 机器同目标建议</label><button id="manualBox">手动画框</button></div></article><aside class="panel side"><h2>人工目标列表</h2><div id="targetList"></div><button id="newTarget">＋ 新建目标</button><button id="exportTargets">导出目标集 JSON</button><h2>当前目标</h2><div id="targetMeta">未选择</div><button id="accept">A 接受建议</button><button id="reselect">R 重新选择</button><select id="frameState"><option value="UNKNOWN">不确定</option><option value="COMPLETE_VISIBLE">完整可见</option><option value="PARTIAL_VISIBLE">部分可见</option><option value="OCCLUDED">遮挡</option><option value="VISIBLE_UNBOXED">可见但不框</option><option value="NOT_VISIBLE">不可见</option></select><select id="identityStatus"><option value="AMBIGUOUS">身份存疑</option><option value="CLEAR">身份明确</option></select><select id="admission"><option value="DEFER_COMPLEX">暂缓复杂目标</option><option value="ACCEPT_COMPLETE_CORE">纳入完整目标</option><option value="ACCEPT_OBSERVATION_ONLY">仅保留观察</option><option value="REJECT">排除</option></select><div class="hidden"><input id="visibleStart"><input id="visibleEnd"></div><div class="interval"><label>核心起 <input id="coreStart" type="number"></label><label>核心止 <input id="coreEnd" type="number"></label></div><button id="freeze" class="warn">冻结光学目标</button><div id="status"></div><details><summary>高级 / 来源信息</summary><div id="provenance" class="small"></div></details><a id="sarLink" class="hidden" href="#">进入 SAR 观察</a></aside></section><section class="panel timeline-panel"><div class="timeline" id="timeline"><div class="track"></div><div id="detBands"></div><div id="machineBands"></div><div id="humanBand" class="band human"></div><div id="coreBand" class="band core"></div><div id="startHandle" class="handle"></div><div id="endHandle" class="handle"></div></div></section></main><script src="target_review_data.js"></script><script src="target_review.js"></script><script>document.getElementById('exportTargets').onclick=()=>{const s=new URLSearchParams(location.search).get('scene')||'GM_RM017',x=localStorage.getItem('TPGT_OPTICAL_HUMAN_TARGET_SET_'+s)||'{}',a=document.createElement('a');a.href=URL.createObjectURL(new Blob([x],{type:'application/json'}));a.download='TPGT_OPTICAL_HUMAN_TARGET_SET_'+s+'.json';a.click()};</script></body></html>
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>TPGT 光学目标标注</title>
+  <link rel="stylesheet" href="target_review.css">
+</head>
+<body>
+<main>
+  <a href="index.html">← 场景入口</a>
+  <h1>TPGT 光学目标标注</h1>
+  <p class="workflow-hint">建立目标 → 确认连续同一目标帧段 → 逐帧记录截断/遮挡 → 在车辆完整可见时选定正式标注帧</p>
+  <div class="toolbar">
+    <b id="sceneTitle"></b>
+    <button id="prev">上一帧</button><button id="next">下一帧</button>
+    <button id="play">播放</button><button id="pause">暂停</button>
+    <select id="speed"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="2">2×</option></select>
+    <input id="frameInput" type="number" min="0"><button id="jump">跳转</button><span id="frameInfo"></span>
+  </div>
+  <section class="review-layout">
+    <article class="panel image-panel">
+      <div class="stage"><img id="optical"><canvas id="overlay"></canvas></div>
+      <div class="legend">
+        <label><input id="yolo11Toggle" type="checkbox" checked> YOLO11</label>
+        <label><input id="yolo26Toggle" type="checkbox" checked> YOLO26</label>
+        <label><input id="carToggle" type="checkbox" checked> 车辆</label>
+        <label><input id="personToggle" type="checkbox" checked> 人员</label>
+        <label><input id="confidenceToggle" type="checkbox" checked> 类别+置信度</label>
+        <label><input id="machineToggle" type="checkbox" checked> 机器同目标建议</label>
+        <button id="manualBox">手动画框</button>
+      </div>
+    </article>
+    <aside class="panel side">
+      <section class="side-section">
+        <h2>1. 人工目标</h2>
+        <div id="targetList"></div>
+        <div class="compact-row">
+          <select id="newTargetClass"><option value="car">车辆</option><option value="person">人员</option></select>
+          <button id="newTarget">＋ 新建目标</button>
+        </div>
+        <p class="muted">新建后点击 YOLO 框或手动画框。目标重新进画面时，先选中原目标再选框。</p>
+      </section>
+      <section class="side-section">
+        <h2>2. 当前目标</h2>
+        <div id="targetMeta">未选择</div>
+        <div class="compact-row"><button id="accept">A 接受机器建议</button><button id="reselect">R 重新选择框</button></div>
+        <h3>当前帧可见性</h3>
+        <select id="frameState">
+          <option value="UNKNOWN">不确定</option><option value="COMPLETE_VISIBLE">完整可见</option>
+          <option value="PARTIAL_VISIBLE">部分可见</option><option value="VISIBLE_UNBOXED">可见但不提供可靠框</option>
+          <option value="NOT_VISIBLE">不可见</option>
+        </select>
+        <h3>当前帧成像条件（可同时选择）</h3>
+        <div class="condition-grid">
+          <label><input id="edgeTruncated" type="checkbox"> 边缘截断</label>
+          <label><input id="nearTruncated" type="checkbox"> 近场截断</label>
+          <label><input id="occluded" type="checkbox"> 遮挡</label>
+        </div>
+        <button id="saveFrameState">保存当前帧状态</button>
+        <h3>连续同一目标帧段</h3>
+        <div class="interval">
+          <label>起始帧 <input id="identityStart" type="number" min="0"></label>
+          <label>结束帧 <input id="identityEnd" type="number" min="0"></label>
+        </div>
+        <div class="compact-row"><button id="startHere">起点＝当前帧</button><button id="endHere">终点＝当前帧</button></div>
+        <button id="confirmIdentitySegment">确认该连续段属于同一目标</button>
+        <p class="muted">只确认人工 identity 连续性，不会为缺框帧伪造 bbox。</p>
+        <h3>3. 正式标注帧</h3>
+        <button id="markAnnotation" class="primary">将当前完整帧设为正式标注帧</button>
+        <div id="annotationMeta" class="small"></div>
+        <p class="muted">要求当前帧有人工确认框、状态为“完整可见”，且未勾选截断或遮挡。</p>
+        <details>
+          <summary>研究状态 / 来源信息</summary>
+          <select id="identityStatus"><option value="AMBIGUOUS">身份存疑</option><option value="CLEAR">身份明确</option></select>
+          <select id="admission"><option value="DEFER_COMPLEX">暂缓复杂目标</option><option value="ACCEPT_COMPLETE_CORE">纳入完整目标</option><option value="ACCEPT_OBSERVATION_ONLY">仅保留观察</option><option value="REJECT">排除</option></select>
+          <div id="provenance" class="small"></div>
+        </details>
+        <button id="freeze" class="warn">冻结光学目标标注</button>
+        <div id="status"></div><a id="sarLink" class="hidden" href="#">进入 SAR 观察</a>
+      </section>
+      <section class="side-section">
+        <button id="exportTargets">导出目标集 JSON</button><button id="importTargets">载入目标集 JSON</button>
+        <input id="importFile" type="file" accept="application/json,.json" class="hidden">
+      </section>
+    </aside>
+  </section>
+  <section class="panel timeline-panel">
+    <div class="timeline-head"><span>当前目标时间线</span><span>蓝：同一目标连续段　黄：人工可见段　红：正式标注帧</span></div>
+    <div class="timeline" id="timeline">
+      <div class="track"></div><div id="identityBands"></div><div id="visibleBands"></div>
+      <div id="annotationMarks"></div><i id="playhead"></i>
+    </div>
+  </section>
+</main>
+<script src="target_review_data.js"></script><script src="target_review.js"></script>
+</body>
+</html>

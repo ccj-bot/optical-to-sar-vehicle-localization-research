@@ -1,0 +1,41 @@
+{
+  "schema_version": "B12_PROPOSAL_IMPORT_MANIFEST_v0.1",
+  "source_branch": "feature/tpgt-gm-complete-interval-b12",
+  "source_commit": "946e4750b998c3667d09bcf43fa05cb7b08d1e71",
+  "import_timestamp": "2026-09-13T03:06:30.298900+00:00",
+  "semantic_role": "PROPOSAL_ONLY",
+  "files": {
+    "car": {
+      "path": "output\\tpgt\\unified_target_review_observation\\proposals\\COMPLETE_CAR_INTERVAL_CANDIDATES.csv",
+      "source_branch": "feature/tpgt-gm-complete-interval-b12",
+      "source_commit": "946e4750b998c3667d09bcf43fa05cb7b08d1e71",
+      "source_path": "output/tpgt/gm_complete_interval_b12/01_car_interval_candidates/COMPLETE_CAR_INTERVAL_CANDIDATES.csv",
+      "sha256": "d2d1b8b6b38d43b55daefd2c34fe573f63084bb21e27f20c7f1a26a19aa0a56e",
+      "semantic_role": "PROPOSAL_ONLY_READ_ONLY"
+    },
+    "person_det": {
+      "path": "output\\tpgt\\unified_target_review_observation\\proposals\\GM17_PERSON_DETECTIONS.csv",
+      "source_branch": "feature/tpgt-gm-complete-interval-b12",
+      "source_commit": "946e4750b998c3667d09bcf43fa05cb7b08d1e71",
+      "source_path": "output/tpgt/gm_complete_interval_b12/04_person_rescout/GM17_PERSON_DETECTIONS.csv",
+      "sha256": "cf01ad6a1e1d3e41cd5580145fd8005ac27243bd4b6b43ed1b8347579999d4be",
+      "semantic_role": "PROPOSAL_ONLY_READ_ONLY"
+    },
+    "person_tracks": {
+      "path": "output\\tpgt\\unified_target_review_observation\\proposals\\GM17_PERSON_PROVISIONAL_TRACKS.csv",
+      "source_branch": "feature/tpgt-gm-complete-interval-b12",
+      "source_commit": "946e4750b998c3667d09bcf43fa05cb7b08d1e71",
+      "source_path": "output/tpgt/gm_complete_interval_b12/04_person_rescout/GM17_PERSON_PROVISIONAL_TRACKS.csv",
+      "sha256": "d4f578b777acf8029b85a6684a6816bc2acc684734b28dccc0c492e8952b0f0c",
+      "semantic_role": "PROPOSAL_ONLY_READ_ONLY"
+    },
+    "person_intervals": {
+      "path": "output\\tpgt\\unified_target_review_observation\\proposals\\GM17_PERSON_INTERVAL_CANDIDATES.csv",
+      "source_branch": "feature/tpgt-gm-complete-interval-b12",
+      "source_commit": "946e4750b998c3667d09bcf43fa05cb7b08d1e71",
+      "source_path": "output/tpgt/gm_complete_interval_b12/04_person_rescout/GM17_PERSON_INTERVAL_CANDIDATES.csv",
+      "sha256": "0cfc4ffd5f0e74b7654f21704a5bfb34bd452e8db4ff15d84608b7af34d7c7e3",
+      "semantic_role": "PROPOSAL_ONLY_READ_ONLY"
+    }
+  }
+}

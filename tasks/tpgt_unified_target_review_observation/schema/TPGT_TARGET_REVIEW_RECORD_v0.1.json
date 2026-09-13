@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "TPGT_TARGET_REVIEW_RECORD_v0.1",
+  "type": "object",
+  "required": ["schema_version","review_id","scene","domain","source_target_id","human_local_target_id","review_start_frame","review_end_frame","human_core_start_frame","human_core_end_frame","identity_status","body_completeness","boundary_state","occlusion_state","target_type","research_admission","proposal_source","proposal_interval","proposal_used_as_reference","record_created_at","revision_created_at"],
+  "properties": {
+    "schema_version": {"const": "TPGT_TARGET_REVIEW_RECORD_v0.1"},
+    "domain": {"enum": ["CAR","PERSON"]},
+    "identity_status": {"enum": ["CLEAR","LIKELY","AMBIGUOUS","REJECT"]},
+    "body_completeness": {"enum": ["COMPLETE","MOSTLY_COMPLETE","PARTIAL","UNKNOWN"]},
+    "boundary_state": {"enum": ["INTERIOR","EDGE_PARTIAL","TRUNCATED","UNKNOWN"]},
+    "occlusion_state": {"enum": ["CLEAR","MINOR","HEAVY","UNKNOWN"]},
+    "target_type": {"enum": ["CAR","TRUCK_OR_LARGE_VEHICLE","PERSON","OTHER","UNKNOWN"]},
+    "research_admission": {"enum": ["ACCEPT_COMPLETE_CORE","ACCEPT_OBSERVATION_ONLY","DEFER_COMPLEX","REJECT"]}
+  }
+}

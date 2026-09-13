@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "HUMAN_FROZEN_TARGET_v0.1",
+  "type": "object",
+  "required": ["schema_version","freeze_id","review_id","scene","domain","human_local_target_id","core_interval","review_revision","freeze_revision","frozen_at","review_provenance"],
+  "properties": {"schema_version":{"const":"HUMAN_FROZEN_TARGET_v0.1"},"core_interval":{"type":"array","minItems":2,"maxItems":2,"items":{"type":"integer"}}}
+}

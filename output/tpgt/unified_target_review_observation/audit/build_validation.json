@@ -1,0 +1,17 @@
+{
+  "complete": true,
+  "optical_frames": 368,
+  "sar_frames": 766,
+  "car_first_priority": [
+    "GM_RM017:PV002",
+    "GM_RM017:PV003",
+    "GM_RM017:PV004"
+  ],
+  "car_extra": [
+    "GM_RM017:PV001"
+  ],
+  "person_full_stream": true,
+  "b12_import_read_only": true,
+  "human_intervals_initially_empty": true,
+  "canonical_schema_unchanged": true
+}

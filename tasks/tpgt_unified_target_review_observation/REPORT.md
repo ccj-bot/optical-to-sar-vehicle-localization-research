@@ -70,3 +70,11 @@ QA 结果写入 `output/tpgt/unified_target_review_observation/audit/unified_wor
 本轮入口改为按场景 `GM_RM011 / GM_RM017 / GM_RM019`，每个场景直接打开 368 帧完整光学流。页面默认打开 YOLO11、YOLO26 和机器同目标建议，车辆/人员类别及置信度可独立切换；点击检测框只创建 `HUMAN_CAR_xxx` 或 `HUMAN_PERSON_xxx` 的人工 session，不代表 physical identity。
 
 机器建议采用轻量 IoU、中心距离、尺度连续性和类别一致性组合，允许 A 接受、R 重选、V/P/X 标记当前帧状态；用户可编辑 visible/core interval 并冻结光学目标。PERSON provisional ID 已移入来源语义，不再作为主 UI 对象。SAR 页面本轮未扩展。
+
+## Optical Review UX v0.3：多目标与无框观察
+
+当前保存模型为 `TPGT_OPTICAL_HUMAN_TARGET_SET_v0.1`：一个场景可以同时包含任意多个人工目标，每个目标独立维护 `anchors`、`frame_observations`、`visible_segments`、`primary_core_interval`、`research_status` 和 append-only `frozen_revisions`。切换目标不会覆盖其他目标，当前帧会同时显示所有已确认目标，当前目标高亮。
+
+无检测框时可使用 `MANUAL_OPTICAL_BBOX`；截断对象只保存真实可见支持框，不推断完整 physical box。也可以把本帧记为 `VISIBLE_UNBOXED`，此时 `bbox=null`。每帧状态保留 visibility、bbox、bbox_role、bbox_source、identity_relation 和 human_confirmed。
+
+场景入口由 `scene_manifest.json` 驱动，当前包含 GM_RM011/017/019、R35ZF、R01ZF。实际帧数为 GM 三场景 368、R35ZF 298、R01ZF 297；R35ZF/R01ZF 图像尺寸从真实文件读取为 3840×2160，未假定 GM 参数。new65 场景无统一 detector cache 时显示空 proposal，但人工复核仍可继续。

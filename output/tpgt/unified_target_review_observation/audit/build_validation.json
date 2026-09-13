@@ -3,9 +3,17 @@
   "scenes": [
     "GM_RM011",
     "GM_RM017",
-    "GM_RM019"
+    "GM_RM019",
+    "R35ZF",
+    "R01ZF"
   ],
-  "optical_frames_per_scene": 368,
+  "optical_frames": {
+    "GM_RM011": 368,
+    "GM_RM017": 368,
+    "GM_RM019": 368,
+    "R35ZF": 298,
+    "R01ZF": 297
+  },
   "detections": {
     "GM_RM011": {
       "YOLO11": 422,
@@ -18,6 +26,14 @@
     "GM_RM019": {
       "YOLO11": 334,
       "YOLO26": 288
+    },
+    "R35ZF": {
+      "YOLO11": 0,
+      "YOLO26": 0
+    },
+    "R01ZF": {
+      "YOLO11": 0,
+      "YOLO26": 0
     }
   },
   "b12_import_read_only": true,

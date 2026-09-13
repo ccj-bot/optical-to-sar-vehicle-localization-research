@@ -1,0 +1,60 @@
+{
+  "schema_version": "TPGT_OPTICAL_SCENE_MANIFEST_v0.1",
+  "scenes": [
+    {
+      "scene": "GM_RM011",
+      "frame_count": 368,
+      "width": 800,
+      "height": 600,
+      "fps": 24.0,
+      "detection_sources": {
+        "yolo11": 422,
+        "yolo26": 413
+      }
+    },
+    {
+      "scene": "GM_RM017",
+      "frame_count": 368,
+      "width": 800,
+      "height": 600,
+      "fps": 24.0,
+      "detection_sources": {
+        "yolo11": 215,
+        "yolo26": 215
+      }
+    },
+    {
+      "scene": "GM_RM019",
+      "frame_count": 368,
+      "width": 800,
+      "height": 600,
+      "fps": 24.0,
+      "detection_sources": {
+        "yolo11": 334,
+        "yolo26": 288
+      }
+    },
+    {
+      "scene": "R35ZF",
+      "frame_count": 298,
+      "width": 3840,
+      "height": 2160,
+      "fps": 18.0,
+      "detection_sources": {
+        "yolo11": 0,
+        "yolo26": 0
+      }
+    },
+    {
+      "scene": "R01ZF",
+      "frame_count": 297,
+      "width": 3840,
+      "height": 2160,
+      "fps": 18.0,
+      "detection_sources": {
+        "yolo11": 0,
+        "yolo26": 0
+      }
+    }
+  ]
+}

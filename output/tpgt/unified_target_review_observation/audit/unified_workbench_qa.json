@@ -1,13 +1,13 @@
 {
-  "kind": "TPGT_OPTICAL_TARGET_REVIEW_QA",
+  "kind": "TPGT_OPTICAL_MULTI_TARGET_QA",
   "checks": {
-    "scene_first_entry": "PASS",
-    "full_optical_0_367": "PASS",
-    "default_yolo_overlays": "PASS",
-    "chinese_compact_controls": "PASS",
-    "click_target_session": "PASS_WITH_MANUAL_POINT",
-    "keyboard_navigation": "PASS",
-    "sar_not_expanded": "PASS"
+    "scene_groups": "PASS",
+    "multi_target_model": "PASS",
+    "default_overlays": "PASS",
+    "manual_box_tool": "PASS",
+    "visible_unboxed_enum": "PASS",
+    "target_list_ui": "PASS",
+    "manifest_non_gm_frame_count": "PASS_WITH_SCENE_COUNT"
   },
   "complete": true
 }

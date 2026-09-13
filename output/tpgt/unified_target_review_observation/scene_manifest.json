@@ -41,8 +41,8 @@
       "height": 2160,
       "fps": 18.0,
       "detection_sources": {
-        "yolo11": 0,
-        "yolo26": 0
+        "yolo11": 4212,
+        "yolo26": 25
       }
     },
     {
@@ -52,8 +52,8 @@
       "height": 2160,
       "fps": 18.0,
       "detection_sources": {
-        "yolo11": 0,
-        "yolo26": 0
+        "yolo11": 77,
+        "yolo26": 205
       }
     }
   ]

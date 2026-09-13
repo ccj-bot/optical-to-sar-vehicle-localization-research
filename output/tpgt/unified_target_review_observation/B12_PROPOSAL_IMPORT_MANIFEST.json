@@ -2,7 +2,7 @@
   "schema_version": "B12_PROPOSAL_IMPORT_MANIFEST_v0.1",
   "source_branch": "feature/tpgt-gm-complete-interval-b12",
   "source_commit": "946e4750b998c3667d09bcf43fa05cb7b08d1e71",
-  "import_timestamp": "2026-09-13T03:06:30.298900+00:00",
+  "import_timestamp": "2026-09-13T05:35:44.383861+00:00",
   "semantic_role": "PROPOSAL_ONLY",
   "files": {
     "car": {
@@ -36,6 +36,22 @@
       "source_path": "output/tpgt/gm_complete_interval_b12/04_person_rescout/GM17_PERSON_INTERVAL_CANDIDATES.csv",
       "sha256": "0cfc4ffd5f0e74b7654f21704a5bfb34bd452e8db4ff15d84608b7af34d7c7e3",
       "semantic_role": "PROPOSAL_ONLY_READ_ONLY"
+    }
+  },
+  "detection_assets": {
+    "YOLO11": {
+      "GM_RM011": "D:\\profile\\research\\optical-sar-visual-diagnosis\\outputs\\oty0_yolo_detection_stream_audit_20260704_gm011_oty_stream\\oty0_yolo_detection_table.csv",
+      "GM_RM017": "D:\\profile\\research\\optical-sar-visual-diagnosis\\outputs\\oty0_yolo_detection_stream_audit_20260701_181317\\oty0_yolo_detection_table.csv",
+      "GM_RM019": "D:\\profile\\research\\optical-sar-visual-diagnosis\\outputs\\oty0_yolo_detection_stream_audit_20260701_170617\\oty0_yolo_detection_table.csv",
+      "R35ZF": "D:\\profile\\research\\workspace\\output\\new_scene_vehicle_temporal_segments_20260818\\full_65_identity_v2_20260818\\optical_vehicle_track_frames.csv",
+      "R01ZF": "D:\\profile\\research\\workspace\\output\\new_scene_vehicle_temporal_segments_20260818\\full_65_identity_v2_20260818\\optical_vehicle_track_frames.csv"
+    },
+    "YOLO26": {
+      "GM_RM011": "D:\\profile\\research\\optical-sar-visual-diagnosis\\outputs\\oty2_yolo26l_detector_quality_probe_20260704_231830\\oty0_yolo_detection_stream_audit_yolo26l_gm_rm011\\oty0_yolo_detection_table.csv",
+      "GM_RM017": "D:\\profile\\research\\optical-sar-visual-diagnosis\\outputs\\oty2_yolo26l_detector_quality_probe_20260704_231830\\oty0_yolo_detection_stream_audit_yolo26l_gm_rm017\\oty0_yolo_detection_table.csv",
+      "GM_RM019": "D:\\profile\\research\\optical-sar-visual-diagnosis\\outputs\\oty2_yolo26l_detector_quality_probe_20260704_231830\\oty0_yolo_detection_stream_audit_yolo26l_gm_rm019\\oty0_yolo_detection_table.csv",
+      "R35ZF": "D:\\profile\\research\\optical-sar-visual-diagnosis\\outputs\\oty2_yolo26l_detector_quality_probe_20260704_231830\\oty0_yolo_detection_stream_audit_yolo26l_r35zf\\oty0_yolo_detection_table.csv",
+      "R01ZF": "D:\\profile\\research\\optical-sar-visual-diagnosis\\outputs\\oty2_yolo26l_detector_quality_probe_20260704_231830\\oty0_yolo_detection_stream_audit_yolo26l_r01zf\\oty0_yolo_detection_table.csv"
     }
   }
 }

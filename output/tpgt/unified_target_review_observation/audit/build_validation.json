@@ -28,12 +28,12 @@
       "YOLO26": 288
     },
     "R35ZF": {
-      "YOLO11": 0,
-      "YOLO26": 0
+      "YOLO11": 4212,
+      "YOLO26": 25
     },
     "R01ZF": {
-      "YOLO11": 0,
-      "YOLO26": 0
+      "YOLO11": 77,
+      "YOLO26": 205
     }
   },
   "b12_import_read_only": true,

@@ -78,3 +78,5 @@ QA 结果写入 `output/tpgt/unified_target_review_observation/audit/unified_wor
 无检测框时可使用 `MANUAL_OPTICAL_BBOX`；截断对象只保存真实可见支持框，不推断完整 physical box。也可以把本帧记为 `VISIBLE_UNBOXED`，此时 `bbox=null`。每帧状态保留 visibility、bbox、bbox_role、bbox_source、identity_relation 和 human_confirmed。
 
 场景入口由 `scene_manifest.json` 驱动，当前包含 GM_RM011/017/019、R35ZF、R01ZF。实际帧数为 GM 三场景 368、R35ZF 298、R01ZF 297；R35ZF/R01ZF 图像尺寸从真实文件读取为 3840×2160，未假定 GM 参数。new65 场景无统一 detector cache 时显示空 proposal，但人工复核仍可继续。
+
+后续接入核对确认了可复用 detector cache：R35ZF 使用 4212 个车辆 proposal 与 25 个人员 proposal，R01ZF 使用 77 个车辆 proposal 与 205 个人员 proposal。Workbench 只导入 frame/class/confidence/bbox/model；历史 track/person/car ID 不进入 Human Target identity。

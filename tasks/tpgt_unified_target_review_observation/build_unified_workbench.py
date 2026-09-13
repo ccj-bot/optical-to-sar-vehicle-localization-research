@@ -29,7 +29,7 @@ def main():
    from PIL import Image
    with Image.open(files[0]) as im: width,height=im.size
   except Exception: width,height=800,600
-  scenes[s]={'scene':s,'frame_count':len(files),'width':width,'height':height,'fps':fps,'optical':[{'frame':i,'path':'/'+str(f).replace('D:/profile/research/data/','data/').replace('\\','/')} for i,f in enumerate(files)],'detections':{'yolo11':det(YOLO11[s],'YOLO11',s) if s in YOLO11 else [],'yolo26':det(YOLO26[s],'YOLO26',s) if s in YOLO26 else []}}
+  scenes[s]={'scene':s,'frame_count':len(files),'width':width,'height':height,'fps':fps,'optical':[{'frame':i,'path':'/'+f.absolute().relative_to(Path('D:/profile/research')).as_posix()} for i,f in enumerate(files)],'detections':{'yolo11':det(YOLO11[s],'YOLO11',s) if s in YOLO11 else [],'yolo26':det(YOLO26[s],'YOLO26',s) if s in YOLO26 else []}}
  cars=rd(PROP/'COMPLETE_CAR_INTERVAL_CANDIDATES.csv'); pdet=rd(PROP/'GM17_PERSON_DETECTIONS.csv'); ptr=rd(PROP/'GM17_PERSON_PROVISIONAL_TRACKS.csv'); pints=rd(PROP/'GM17_PERSON_INTERVAL_CANDIDATES.csv')
  data={'schema_version':'TPGT_OPTICAL_TARGET_REVIEW_DATA_v0.2','scenes':scenes,'proposals':{'cars':[r for r in cars if r.get('scene')=='GM_RM017'],'person_tracks':ptr,'person_intervals':pints,'person_detections':pdet},'sync_semantics':'Optical and SAR frame indices are separate; exact synchronization is unverified.','proposal_semantics':'All detector/track/interval layers are read-only proposals and never human truth.'}
  dump(OUT/'target_review_data.json',data); (OUT/'target_review_data.js').write_text('window.TPGT_REVIEW_DATA='+json.dumps(data,ensure_ascii=False,separators=(',',':'))+';',encoding='utf-8')

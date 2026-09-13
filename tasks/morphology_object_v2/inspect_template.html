@@ -1,0 +1,39 @@
+<!doctype html><html lang="zh"><meta charset="utf-8"><title>MorphologyObject inspector</title>
+<style>body{font:16px system-ui;margin:24px;background:#f3f4f6;color:#15212e}a{color:#19579e}h1{font-size:22px}.views{display:flex;gap:16px;flex-wrap:wrap}.view{flex:1;min-width:300px}canvas{width:100%;image-rendering:pixelated;background:#000}select{max-width:90%;padding:6px;margin:4px}pre{white-space:pre-wrap;max-height:380px;overflow:auto;background:white;padding:16px}img{max-width:100%}.warn{padding:12px;background:#fff2ce;line-height:1.6}label{white-space:nowrap}</style>
+<a href="../INDEX.html">← 案例目录</a><h1 id="title"></h1><p class="warn" id="note"></p>
+<p>左侧始终是 I0。右侧仅叠加选中的假设及原场见证；不输出车辆 Mask / 检测框，不做节点归属。GT chart 的 I0 是保留的双线性显示采样，不是原始幅度。</p>
+<label>结构层 <select id="kind"><option value="none">仅原场</option><option value="nuclei">nuclei</option><option value="segments">candidate segments</option><option value="relations">semantic relations</option><option value="dark_open_regions">dark / open witnesses</option></select></label>
+<label>单元 <select id="unit"></select></label><label>右侧底图 <select id="field"><option value="I0">I0 原场</option><option value="I2">Iσ=2 分析场</option></select></label>
+<label>暗区见证 <select id="region"><option value="0">I0 / fraction 0.2</option><option value="1">Iσ / fraction 0.2</option><option value="2">I0 / fraction 0.5</option><option value="3">Iσ / fraction 0.5</option></select></label>
+<div class="views"><div class="view"><p>I0（无覆盖）</p><canvas id="raw"></canvas></div><div class="view"><p>见证覆盖：橙=原场路径；青=平滑路径；绿=候选弦；紫=分析支持域；蓝=暗区</p><canvas id="overlay"></canvas></div></div>
+<p id="pixel"></p><pre id="details"></pre><p id="links"></p>
+<details><summary>展开 8 视图（含 merge tree；树叶编号回指图像）</summary><img id="panel" alt="object panels"></details>
+<details><summary>展开原场剖面和鞍路径图</summary><img id="witness" alt="raw-field witness panels"></details>
+<script id="data" type="application/json">__DATA__</script>
+<script>
+const data=JSON.parse(document.getElementById('data').textContent),o=data.object,A=data.arrays;
+const el=id=>document.getElementById(id),h=A.I0.length,w=A.I0[0].length;
+el('title').textContent=data.title;el('note').textContent=data.note+' | '+o.uncertainty.join('; ');
+const values=A.I0.flat(),lo=Math.min(...values),hi=Math.max(...values),segments=Object.fromEntries(o.segments.map(s=>[s.id,s]));
+for(const id of ['raw','overlay']){el(id).width=w;el(id).height=h;}
+el('panel').src=data.panel;el('witness').src=data.witness;
+for(const [label,url] of Object.entries(data.links)){let a=document.createElement('a');a.href=url;a.textContent=label;el('links').append(a,' · ');}
+function background(canvas,f){let c=canvas.getContext('2d'),im=c.createImageData(w,h);for(let y=0;y<h;y++)for(let x=0;x<w;x++){let j=4*(y*w+x),v=255*(f[y][x]-lo)/Math.max(1e-12,hi-lo);im.data[j]=im.data[j+1]=im.data[j+2]=v;im.data[j+3]=255;}c.putImageData(im,0,0);return c;}
+function line(c,xy,color,width=.7){if(!xy?.length)return;c.strokeStyle=color;c.lineWidth=width;c.beginPath();xy.forEach(([x,y],i)=>i?c.lineTo(x,y):c.moveTo(x,y));c.stroke();}
+function pixels(c,xy,color){c.fillStyle=color;for(const [x,y] of xy)c.fillRect(x,y,1,1);}
+function dot(c,xy,color){c.strokeStyle=color;c.lineWidth=.6;c.beginPath();c.arc(xy[0],xy[1],1.4,0,Math.PI*2);c.stroke();}
+function segment(c,s){pixels(c,s.geometry.support_xy,'rgba(210,100,245,.22)');line(c,s.geometry.polyline_xy,'#70ff76');}
+function summary(record){return JSON.stringify(record,(k,v)=>Array.isArray(v)&&v.length>12?`[${v.length} entries retained in JSON; geometry shown on image]`:v,2);}
+function draw(){background(el('raw'),A.I0);let c=background(el('overlay'),A[el('field').value]),kind=el('kind').value,pool=o[kind]||[],r=pool[Number(el('unit').value)];
+ if(!r){el('details').textContent=summary({full_field:o.full_field,metadata:o.observation_metadata,uncertainty:o.uncertainty});return;}
+ if(kind==='nuclei'){for(const n of pool)if(n.scale_px===r.scale_px)dot(c,n.xy,'#38787f');dot(c,r.xy,'yellow');dot(c,r.attributes.raw_neighbour_peak_xy,'orange');}
+ if(kind==='segments'){segment(c,r);line(c,r.raw_check.flank_left_xy,'orange',.4);line(c,r.raw_check.flank_right_xy,'orange',.4);}
+ if(kind==='relations'){segment(c,segments[r.source]);segment(c,segments[r.target]);line(c,[segments[r.source].geometry.center_xy,segments[r.target].geometry.center_xy],'yellow');if(r.witness.I0_merge){line(c,r.witness.I0_merge.path_xy,'orange');line(c,r.witness.I_sigma_merge.path_xy,'cyan');}}
+ if(kind==='dark_open_regions'){let region=r.regions[Number(el('region').value)];pixels(c,region.pixels_xy,'rgba(55,150,255,.4)');line(c,r.cross_section_xy,'cyan');dot(c,r.seed_xy,'yellow');}
+ el('details').textContent=summary(r);
+}
+function populate(){el('unit').replaceChildren();(o[el('kind').value]||[]).forEach((r,i)=>{let opt=document.createElement('option');opt.value=i;opt.textContent=r.id+' | '+(Array.isArray(r.type)?r.type.join(' + '):r.type);el('unit').append(opt);});draw();}
+el('kind').onchange=populate;for(const id of ['unit','field','region'])el(id).onchange=draw;
+el('overlay').onmousemove=e=>{let b=e.target.getBoundingClientRect(),x=Math.min(w-1,Math.floor((e.clientX-b.left)*w/b.width)),y=Math.min(h-1,Math.floor((e.clientY-b.top)*h/b.height));el('pixel').textContent=`x=${x}, y=${y}, I0=${A.I0[y][x]}, Iσ=${A.I2[y][x]}`;};
+draw();window.inspectorReady=true;
+</script></html>

@@ -1,0 +1,12 @@
+{
+  "freeze_version": "20260914_before_wide_decode",
+  "visual_gate": "A059 field-backed main band, opposite weak group and dark cross-section reviewed; weak group centerline only partially supported",
+  "id": "GM17_F344_WIDE_ONCE",
+  "image": "GM_RM017/GM_RM017_SARframes_gray/000344.png",
+  "observation_xyxy": [990, 900, 1290, 1080],
+  "coordinates": "native SAR canvas, half-open, no rotation, no resizing",
+  "position_provenance": "analyst coarse location chosen after prior GM review, not blind; no claim of independent shell generation",
+  "prohibited_runtime_inputs": ["GT geometry", "GT sample index", "GT objects", "previous labels or group anchors"],
+  "expansion_policy": "one window only; no adaptation, translation or widening after outcomes",
+  "budget_policy": "object_core frozen budget stop; keep unresolved field and primitives, do not increase budget"
+}

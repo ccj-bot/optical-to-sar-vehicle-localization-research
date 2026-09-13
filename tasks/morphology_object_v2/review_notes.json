@@ -1,0 +1,14 @@
+{
+  "semantics": "Posthoc visual audit, not core input, automated acceptance or family labels. Coordinates refer to displayed GT chart, not physical vehicle front/rear.",
+  "cases": {
+    "GM_RM017_f0344_g151": "A059: S80_1 / S65_1 follow the strong upper band at group level. S65_2 joins weak lower fragments but its straight chord crosses dark interruptions. R1_2 supports a visually opposed grouping, not a continuous bridge or common physical ownership. The dark seed has an interpretable cross-section, but its region leaks to all four boundaries.",
+    "GM_RM017_f0330_g115": "A021 / PV002: the lower side and bright right end are visible. S65_2 is an oblique chord through the group's upper shoulder rather than the full lower ridge. Tiny upper and right-edge proposals do not establish a complete opposite side. Boundary ownership unresolved.",
+    "GM_RM017_f0353_g177": "A085 / PV002: upper three short fragments and lower end-dominant groups recur. Their relative sides are interpretable. S80_5 / S65_8 shortcut the lower curved/fragmented support; no continuous ridge accepted. The large blue region is not a recovered vehicle interior.",
+    "GM_RM017_f0378_g254": "A162 / PV002: several lower fragments remain visible but no segment passes the predeclared elongated-support proposal convention. MORPHOLOGY_NOT_RECOVERED_AT_SEGMENT_LAYER. Compact groups and serial fragments are a missing primitive, not evidence of absent SAR response.",
+    "GM_RM011_f0256_g77": "A312: lower horizontal bars near y85 / y98 / y120 are partly expressed by S80_5, S65_6, S80_6 / S65_8. Upper vertical/curved structure is not represented. S65_7 is only an uncertain peripheral short proposal. Opposite is geometry-relative here, not a vehicle-side assignment.",
+    "GM_RM019_f0350_g332": "A441: upper group, lower right band and lower left fragment are image-backed; R0_1 / R3_4 express opposed groups, R1_2 / R4_5 lower serial fragments. Long S65_1 chord cuts across multiple upper layers. Dark cross-section is useful; region extent and individual bridges unresolved.",
+    "GM_RM017_f0344_g152": "A060 / M5: lower bright nuclei and a broken side are visible, but upper proposals do not justify a whole organization. MORPHOLOGY_UNCLEAR. An opposite label is still produced: graph availability is not morphological clarity or a vehicle claim."
+  },
+  "interventions": "A and C reveal false segments on replacement plateaus; E still produces opposite/serial labels after layout destruction. D preserves swapped block interiors but introduces seams. None is a physical counterfactual or a uniquely assigned node correspondence.",
+  "wide": "Fixed 300 x 180 native aperture: visible original main/opposite bands are not traced by a corresponding candidate segment. STOP_GRAPH_BUDGET preserves 2137 nuclei and 10 segments, but no relations; MORPHOLOGY_NOT_RECOVERED_AT_OBJECT_LAYER. Do not raise budget or move aperture."
+}

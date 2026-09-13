@@ -2,7 +2,7 @@
   "schema_version": "B12_PROPOSAL_IMPORT_MANIFEST_v0.1",
   "source_branch": "feature/tpgt-gm-complete-interval-b12",
   "source_commit": "946e4750b998c3667d09bcf43fa05cb7b08d1e71",
-  "import_timestamp": "2026-09-13T05:35:44.383861+00:00",
+  "import_timestamp": "2026-09-13T08:02:20.244751+00:00",
   "semantic_role": "PROPOSAL_ONLY",
   "files": {
     "car": {
@@ -52,6 +52,14 @@
       "GM_RM019": "D:\\profile\\research\\optical-sar-visual-diagnosis\\outputs\\oty2_yolo26l_detector_quality_probe_20260704_231830\\oty0_yolo_detection_stream_audit_yolo26l_gm_rm019\\oty0_yolo_detection_table.csv",
       "R35ZF": "D:\\profile\\research\\optical-sar-visual-diagnosis\\outputs\\oty2_yolo26l_detector_quality_probe_20260704_231830\\oty0_yolo_detection_stream_audit_yolo26l_r35zf\\oty0_yolo_detection_table.csv",
       "R01ZF": "D:\\profile\\research\\optical-sar-visual-diagnosis\\outputs\\oty2_yolo26l_detector_quality_probe_20260704_231830\\oty0_yolo_detection_stream_audit_yolo26l_r01zf\\oty0_yolo_detection_table.csv"
+    },
+    "PERSON_RESCOUT": {
+      "GM_RM017": {
+        "path": "D:\\profile\\research\\workspace\\output\\tpgt\\unified_target_review_observation\\proposals\\GM17_PERSON_DETECTIONS.csv",
+        "rows": 91,
+        "source": "YOLO11l/full_368_frame_rescout",
+        "semantic_role": "PROPOSAL_ONLY_NOT_IDENTITY_TRUTH"
+      }
     }
   }
 }

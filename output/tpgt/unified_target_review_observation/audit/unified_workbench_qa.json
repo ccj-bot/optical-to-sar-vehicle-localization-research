@@ -2,6 +2,7 @@
   "kind": "TPGT_OPTICAL_ANNOTATION_FRAME_WORKFLOW_QA",
   "checks": {
     "scene_groups": "PASS",
+    "gm17_frame231_vehicle_and_person_streams": "PASS",
     "annotation_workflow_ui": "PASS",
     "coexisting_condition_controls": "PASS",
     "target_created_from_detection": "PASS",
@@ -13,6 +14,10 @@
     "export_contract_validation": "PASS"
   },
   "details": {
+    "gm17_frame231_counts": {
+      "person": 2,
+      "vehicle": 0
+    },
     "tested_detection": {
       "frame": 117,
       "class_name": "truck",

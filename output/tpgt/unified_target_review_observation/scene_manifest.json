@@ -19,8 +19,9 @@
       "height": 600,
       "fps": 24.0,
       "detection_sources": {
-        "yolo11": 215,
-        "yolo26": 215
+        "yolo11": 306,
+        "yolo26": 215,
+        "person_rescout": 91
       }
     },
     {

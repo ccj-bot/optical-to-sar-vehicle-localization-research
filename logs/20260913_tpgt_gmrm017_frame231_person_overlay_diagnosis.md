@@ -1,7 +1,7 @@
 # GM_RM017 frame 231 PERSON overlay diagnosis
 
 - Date: 2026-09-13
-- Scope: read-only diagnosis; no detector or UI implementation changed.
+- Initial scope: read-only diagnosis. Follow-up resolution wires the existing PERSON proposal source into the optical overlay; detector inference itself was not changed.
 - Workspace: `D:\profile\research\workspace`
 - Interpreter: `D:\MINICONDA\envs\py311\python.exe`
 - `old_work` was not used.
@@ -22,3 +22,7 @@ Their source is `YOLO11l / full_368_frame_rescout`. The builder currently stores
 ## Boundary
 
 These boxes remain detector proposals only. Wiring them into the overlay must not promote provisional PERSON tracks or detections to Human Target identity.
+
+## Resolution
+
+The builder now adapts the source `frame` field and merges the 91 PERSON rows into the GM_RM017 optical scene detection stream for rendering. The browser QA confirms two PERSON proposals at frame 231 and keeps the source/proposal-only provenance.

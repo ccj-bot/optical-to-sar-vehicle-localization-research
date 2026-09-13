@@ -27,6 +27,16 @@ with sync_playwright() as pw:
     page.reload()
     page.wait_for_timeout(500)
 
+    frame231_counts = page.evaluate("""
+      () => {
+        const s = window.TPGT_REVIEW_DATA.scenes.GM_RM017;
+        const all = [...(s.detections.yolo11 || []), ...(s.detections.yolo26 || [])].filter(d => d.frame === 231);
+        return {person: all.filter(d => d.class_name === 'person').length, vehicle: all.filter(d => ['car','truck','bus'].includes(d.class_name)).length};
+      }
+    """)
+    checks["gm17_frame231_vehicle_and_person_streams"] = "PASS" if frame231_counts["person"] >= 2 and frame231_counts["vehicle"] >= 0 else "FAIL"
+    details["gm17_frame231_counts"] = frame231_counts
+
     checks["annotation_workflow_ui"] = "PASS" if all(
         page.locator(f"#{item}").count() == 1
         for item in [
@@ -93,6 +103,8 @@ with sync_playwright() as pw:
         ) else "FAIL"
         details["tested_detection"] = first_detection
         details["tested_target_id"] = target["id"]
+        page.locator("#frameInput").fill("231")
+        page.locator("#jump").click()
         page.screenshot(path=str(A / "optical_annotation_frame_workflow.png"), full_page=True)
     else:
         for key in ["target_created_from_detection", "identity_segment_saved", "formal_annotation_frame_saved", "no_fake_boxes_in_bulk_identity_range"]:

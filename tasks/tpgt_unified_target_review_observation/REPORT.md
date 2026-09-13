@@ -98,3 +98,9 @@ QA 结果写入 `output/tpgt/unified_target_review_observation/audit/unified_wor
 因此，建立目标的 anchor frame 不再自动等价于“完整可见正式标注”。YOLO 框仍只是可选框 proposal；正式标注的成立来自人工选择、逐帧状态确认和单独的“将当前完整帧设为正式标注帧”操作。
 
 浏览器自动化验证覆盖：从 detector 建立目标、三个条件同时保存、连续 identity 段保存、批量 identity 段不生成假框、正式标注帧保存、导出结构 contract，以及非 GM 场景帧数。结果为 10/10 PASS，见 `output/tpgt/unified_target_review_observation/audit/unified_workbench_qa.json`。
+
+## GM_RM017 PERSON overlay wiring
+
+第 231 帧的人物未显示，诊断确认不是图像中没有检测，而是原 YOLO11/YOLO26 scene cache 生成时只保留 `car/bus/truck`（class IDs `[2,5,7]`）。已有 `GM17_PERSON_DETECTIONS.csv` 的 91 条 `full_368_frame_rescout` PERSON proposal 原先只放在顶层 `proposals.person_detections`，页面 overlay 没有读取。
+
+本轮将该文件作为独立的 read-only PERSON proposal source 接入 GM_RM017 的 scene detection stream。第 231 帧现在显示 2 条 PERSON proposal（置信度约 0.85、0.87）；其来源字段仍保留为 `source_model_detail=full_368_frame_rescout`，不会升级为 Human Target identity。QA 增加 `gm17_frame231_vehicle_and_person_streams`，全套检查仍为 PASS。

@@ -20,7 +20,7 @@
       "YOLO26": 413
     },
     "GM_RM017": {
-      "YOLO11": 215,
+      "YOLO11": 306,
       "YOLO26": 215
     },
     "GM_RM019": {
@@ -36,6 +36,8 @@
       "YOLO26": 205
     }
   },
+  "gm17_person_rescout_rows": 91,
+  "gm17_frame231_person_proposals": 2,
   "b12_import_read_only": true,
   "human_intervals_initially_empty": true,
   "canonical_schema_unchanged": true

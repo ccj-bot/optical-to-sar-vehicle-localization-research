@@ -64,3 +64,9 @@ QA 结果写入 `output/tpgt/unified_target_review_observation/audit/unified_wor
 ## 明确未做
 
 未重跑 YOLO，未修改 CAR/PERSON tracker，未生成 B1.2 candidates，未做 mapping fit/residual、truncation correction、mechanism/M001、selector/ranking/score/IoU、自动 SAR box 或最终 localization。
+
+## Optical Review UX v0.2
+
+本轮入口改为按场景 `GM_RM011 / GM_RM017 / GM_RM019`，每个场景直接打开 368 帧完整光学流。页面默认打开 YOLO11、YOLO26 和机器同目标建议，车辆/人员类别及置信度可独立切换；点击检测框只创建 `HUMAN_CAR_xxx` 或 `HUMAN_PERSON_xxx` 的人工 session，不代表 physical identity。
+
+机器建议采用轻量 IoU、中心距离、尺度连续性和类别一致性组合，允许 A 接受、R 重选、V/P/X 标记当前帧状态；用户可编辑 visible/core interval 并冻结光学目标。PERSON provisional ID 已移入来源语义，不再作为主 UI 对象。SAR 页面本轮未扩展。

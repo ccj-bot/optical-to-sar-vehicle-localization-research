@@ -1,16 +1,25 @@
 {
   "complete": true,
-  "optical_frames": 368,
-  "sar_frames": 766,
-  "car_first_priority": [
-    "GM_RM017:PV002",
-    "GM_RM017:PV003",
-    "GM_RM017:PV004"
+  "scenes": [
+    "GM_RM011",
+    "GM_RM017",
+    "GM_RM019"
   ],
-  "car_extra": [
-    "GM_RM017:PV001"
-  ],
-  "person_full_stream": true,
+  "optical_frames_per_scene": 368,
+  "detections": {
+    "GM_RM011": {
+      "YOLO11": 422,
+      "YOLO26": 413
+    },
+    "GM_RM017": {
+      "YOLO11": 215,
+      "YOLO26": 215
+    },
+    "GM_RM019": {
+      "YOLO11": 334,
+      "YOLO26": 288
+    }
+  },
   "b12_import_read_only": true,
   "human_intervals_initially_empty": true,
   "canonical_schema_unchanged": true

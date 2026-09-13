@@ -96557,6 +96557,40 @@
       }
     }
   },
+  "sar_linked_optical_proposals": {
+    "schema_version": "TPGT_SAR_LINKED_OPTICAL_PROPOSAL_v0.1",
+    "eligible": [],
+    "blocked": [
+      {
+        "scene": "GM_RM011",
+        "status": "NO_EXPLICIT_PAIR_RECORD",
+        "reason": "NO_CONFIRMED_NON_QA_OPTICAL_SAR_PAIR"
+      },
+      {
+        "scene": "GM_RM017",
+        "status": "NO_EXPLICIT_PAIR_RECORD",
+        "reason": "NO_CONFIRMED_NON_QA_OPTICAL_SAR_PAIR"
+      },
+      {
+        "scene": "GM_RM019",
+        "status": "NO_EXPLICIT_PAIR_RECORD",
+        "reason": "NO_CONFIRMED_NON_QA_OPTICAL_SAR_PAIR"
+      },
+      {
+        "scene": "R35ZF",
+        "status": "NO_EXPLICIT_PAIR_RECORD",
+        "reason": "NO_CONFIRMED_NON_QA_OPTICAL_SAR_PAIR"
+      },
+      {
+        "scene": "R01ZF",
+        "status": "NOMINAL_INDEX_FPS_ZERO_OFFSET_UNVERIFIED",
+        "reason": "SYNC_NOT_VERIFIED:NOMINAL_INDEX_FPS_ZERO_OFFSET_UNVERIFIED"
+      }
+    ],
+    "excluded_qa_records": 2,
+    "eligibility_rule": "CONFIRMED_EXPLICIT_PAIR_AND_NON_QA_ONLY",
+    "semantics": "SAR linkage is context provenance only; never Human Target identity or bbox truth."
+  },
   "proposals": {
     "cars": [
       {

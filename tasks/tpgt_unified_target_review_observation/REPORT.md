@@ -80,3 +80,9 @@ QA 结果写入 `output/tpgt/unified_target_review_observation/audit/unified_wor
 场景入口由 `scene_manifest.json` 驱动，当前包含 GM_RM011/017/019、R35ZF、R01ZF。实际帧数为 GM 三场景 368、R35ZF 298、R01ZF 297；R35ZF/R01ZF 图像尺寸从真实文件读取为 3840×2160，未假定 GM 参数。new65 场景无统一 detector cache 时显示空 proposal，但人工复核仍可继续。
 
 后续接入核对确认了可复用 detector cache：R35ZF 使用 4212 个车辆 proposal 与 25 个人员 proposal，R01ZF 使用 77 个车辆 proposal 与 205 个人员 proposal。Workbench 只导入 frame/class/confidence/bbox/model；历史 track/person/car ID 不进入 Human Target identity。
+
+## 历史 SAR 关联光学候选层
+
+新增 `TPGT_SAR_LINKED_OPTICAL_PROPOSAL_v0.1` 与独立 checkbox。只有非 QA、显式 `CONFIRMED` 的 optical-SAR pair record 才允许显示为粉色虚线来源参考；DRAFT、UNVERIFIED、QA/synthetic 均只进入 audit，不能画框、不能创建 Human Target、不能覆盖人工 frame observation。
+
+当前审计发现已暴露场景的合格记录为 0。R01ZF 原生 SAR 人工框明确声明 `optical_pairing_status=UNVERIFIED_NOT_INCLUDED`，pairing readiness 为 false；paired workbench 中 2 条 pair record 位于 `export_ingest_qa`，已排除。因此 UI 会显示阻断原因，不会猜测“对应 YOLO 框”。审计结果位于 `audit/sar_linked_optical_proposal_audit.json`。

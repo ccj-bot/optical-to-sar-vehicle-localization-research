@@ -8,7 +8,7 @@
 
 先看下图四个局部案例。每行左为原场，中为实际支撑像素及端点，右为间隔上的 I0 剖面。青色虚线只是取样位置，绝不是亮桥。G4/G73/G96/G13 均为计算后人工选择的说明案例，不是程序 winner。
 
-![主带、弱带、竞争方向和打乱图的具体支撑](../output/local_support_probe/figures/FOCUSED_GROUP_CASES.png)
+![主带、弱带、竞争方向和打乱图的具体支撑](local_support_probe_assets/FOCUSED_GROUP_CASES.png)
 
 因此，本轮的进展是“可检查的局部支撑和断裂”，尚不是“已经忠实表达整车组织”。下一步应继续完善 primitive 的二维宽度和方向歧义，仅做小范围 grouping 试验，不回到完整 MorphologyObject 关系扩张。
 
@@ -40,7 +40,7 @@ native 实验直接截取灰度源图 000344.png，同一坐标像素值完全�
 | W2 | 60.7556 | 3300 | 4.259 | 接受 |
 | W3 | 58.0051 | 5795 | 1.549 | 拒绝 |
 
-![旧水平变化、连通吞并及整段拒绝](../output/local_support_probe/figures/BASELINE_LEVELS_AND_REJECTION.png)
+![旧水平变化、连通吞并及整段拒绝](local_support_probe_assets/BASELINE_LEVELS_AND_REJECTION.png)
 
 这是该具体组件的失败链，不是一般车辆判别统计。q65 下该组件在三个窗口都被拒绝；稳定的空输出不是恢复成功。预算不是这里的主因，primitive 本身已丢掉条带。
 
@@ -78,9 +78,9 @@ G73 的五条实际片段位于弱带约 x=37–80,y=61–63，既有串列也�
 
 ## 5. shuffled 与平台：哪里改善，哪里仍失败
 
-![原图的连续场与实际局部支撑](../output/local_support_probe/figures/A059_original_support.png)
+![原图的连续场与实际局部支撑](local_support_probe_assets/A059_original_support.png)
 
-![相同灰度多重集的 shuffled 支撑](../output/local_support_probe/figures/A059_shuffled_support.png)
+![相同灰度多重集的 shuffled 支撑](local_support_probe_assets/A059_shuffled_support.png)
 
 shuffled G13 的 F0_32（y56,x82–84）和 F0_34（y59,x74–78）真实存在，并能给出同向排列和低谷剖面。这些不是捏造像素，却仍是偶然几何。故“同向 + 有间隔 + 有谷”不能自动升级成 original 的高级组织。本轮阻止了无支撑 chord 冒充连续结构，但**没有解决随机片段被误解成高层组织**。分歧开始出现在局部 group 的语义提升，而不仅是支撑是否真实。
 
@@ -94,7 +94,7 @@ A 的11483个最低平台像素没有 oriented support；C 恒值平台区域经
 
 ## 6. native aperture stability：支撑稳定不等于整体解析成功
 
-![同一 native 主侧的三窗口结果](../output/local_support_probe/figures/NATIVE_MAIN.png)
+![同一 native 主侧的三窗口结果](local_support_probe_assets/NATIVE_MAIN.png)
 
 ![同一 native 弱侧的三窗口结果](../output/local_support_probe/figures/NATIVE_WEAK.png)
 
@@ -106,7 +106,7 @@ A 的11483个最低平台像素没有 oriented support；C 恒值平台区域经
 
 旧 q65/q80 levelset 在 W1→W3 共同9px内部改变1981/1987像素，旧被接受 q80 支撑改变2430像素。局部提案因此比整窗分位数稳定，但窄数字方向和严格原场条件也可能漏掉宽弱肩、弯曲及任意角度结构。稳定不等于完整。
 
-![边界和内部支撑变化定位](../output/local_support_probe/figures/NATIVE_STABILITY.png)
+![边界和内部支撑变化定位](local_support_probe_assets/NATIVE_STABILITY.png)
 
 ## 7. 表示负担、验证与被撤回的初稿
 

@@ -60,7 +60,8 @@ def main():
     report=CODE_ROOT/'docs/local_support_probe_20260914.md'
     if report.exists():
         (OUT/'REPORT.md').write_text(report.read_text(encoding='utf8').replace(
-            '../output/local_support_probe/', ''), encoding='utf8')
+            '../output/local_support_probe/', '').replace(
+            'local_support_probe_assets/', 'figures/'), encoding='utf8')
     print('Image-first review entry and named witness figures complete.')
 
 

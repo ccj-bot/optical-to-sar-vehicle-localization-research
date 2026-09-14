@@ -10,6 +10,10 @@
     "coexisting_conditions_saved": "PASS",
     "formal_annotation_frame_saved": "PASS",
     "no_fake_boxes_in_bulk_identity_range": "PASS",
+    "overlapping_proposal_chooser": "PASS",
+    "clear_frame_box_preserves_identity": "PASS",
+    "remove_frame_splits_identity": "PASS",
+    "remove_identity_range_trims_segment": "PASS",
     "manifest_non_gm_frame_count": "PASS",
     "export_contract_validation": "PASS"
   },
@@ -17,6 +21,11 @@
     "gm17_frame231_counts": {
       "person": 2,
       "vehicle": 0
+    },
+    "overlap_fixture": {
+      "frame": 117,
+      "x": 27.48021951317787,
+      "y": 323.98936462402344
     },
     "tested_detection": {
       "frame": 117,

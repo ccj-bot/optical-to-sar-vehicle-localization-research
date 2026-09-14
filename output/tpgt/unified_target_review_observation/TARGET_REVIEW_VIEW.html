@@ -45,6 +45,15 @@
         <h2>2. 当前目标</h2>
         <div id="targetMeta">未选择</div>
         <div class="compact-row"><button id="accept">A 接受机器建议</button><button id="reselect">R 重新选择框</button></div>
+        <div id="proposalChooser" class="proposal-chooser hidden">
+          <b>此处有多个候选框，请选择：</b>
+          <div id="proposalChoices"></div>
+          <button id="cancelProposalChoice">取消选择</button>
+        </div>
+        <div class="compact-row frame-actions">
+          <button id="clearFrameBox">清除本帧框</button>
+          <button id="removeFrameFromTarget" class="danger-button">从目标移除本帧</button>
+        </div>
         <h3>当前帧可见性</h3>
         <select id="frameState">
           <option value="UNKNOWN">不确定</option><option value="COMPLETE_VISIBLE">完整可见</option>
@@ -65,6 +74,7 @@
         </div>
         <div class="compact-row"><button id="startHere">起点＝当前帧</button><button id="endHere">终点＝当前帧</button></div>
         <button id="confirmIdentitySegment">确认该连续段属于同一目标</button>
+        <button id="removeIdentityRange" class="danger-button">从目标移除上述帧段</button>
         <p class="muted">只确认人工 identity 连续性，不会为缺框帧伪造 bbox。</p>
         <h3>3. 正式标注帧</h3>
         <button id="markAnnotation" class="primary">将当前完整帧设为正式标注帧</button>
@@ -75,6 +85,7 @@
           <select id="identityStatus"><option value="AMBIGUOUS">身份存疑</option><option value="CLEAR">身份明确</option></select>
           <select id="admission"><option value="DEFER_COMPLEX">暂缓复杂目标</option><option value="ACCEPT_COMPLETE_CORE">纳入完整目标</option><option value="ACCEPT_OBSERVATION_ONLY">仅保留观察</option><option value="REJECT">排除</option></select>
           <div id="provenance" class="small"></div>
+          <button id="deleteTarget" class="danger-button">删除整个目标</button>
         </details>
         <button id="freeze" class="warn">冻结光学目标标注</button>
         <div id="status"></div><a id="sarLink" class="hidden" href="#">进入 SAR 观察</a>

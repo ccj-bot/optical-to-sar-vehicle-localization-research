@@ -42,7 +42,9 @@ with sync_playwright() as pw:
         for item in [
             "targetList", "newTarget", "manualBox", "edgeTruncated", "nearTruncated",
             "occluded", "identityStart", "identityEnd", "confirmIdentitySegment",
-            "markAnnotation", "importTargets", "exportTargets",
+            "markAnnotation", "importTargets", "exportTargets", "proposalChooser",
+            "clearFrameBox", "removeFrameFromTarget", "deleteTarget",
+            "removeIdentityRange",
         ]
     ) else "FAIL"
     checks["coexisting_condition_controls"] = "PASS" if all(
@@ -66,6 +68,8 @@ with sync_playwright() as pw:
         cx = (first_detection["x1"] + first_detection["x2"]) / 2
         cy = (first_detection["y1"] + first_detection["y2"]) / 2
         page.mouse.click(canvas["x"] + cx / scene_size["w"] * canvas["width"], canvas["y"] + cy / scene_size["h"] * canvas["height"])
+        if page.locator("#proposalChooser").is_visible():
+            page.locator(".proposal-choice").first.click()
 
         start = first_detection["frame"]
         end = min(start + 2, page.evaluate("() => window.TPGT_REVIEW_DATA.scenes.GM_RM017.frame_count - 1"))
@@ -101,6 +105,62 @@ with sync_playwright() as pw:
         checks["no_fake_boxes_in_bulk_identity_range"] = "PASS" if all(
             target["frame_observations"][str(f)]["bbox"] is None for f in range(start + 1, end + 1)
         ) else "FAIL"
+
+        overlapping = page.evaluate("""
+          () => {
+            const s = window.TPGT_REVIEW_DATA.scenes.GM_RM017;
+            const all = [...(s.detections.yolo11 || []), ...(s.detections.yolo26 || [])].filter(d => d.class_name !== 'person');
+            for (let i = 0; i < all.length; i++) for (let k = i + 1; k < all.length; k++) {
+              const a = all[i], b = all[k];
+              if (a.frame !== b.frame) continue;
+              const x1 = Math.max(a.x1, b.x1), y1 = Math.max(a.y1, b.y1);
+              const x2 = Math.min(a.x2, b.x2), y2 = Math.min(a.y2, b.y2);
+              if (x2 > x1 && y2 > y1) return {frame: a.frame, x: (x1 + x2) / 2, y: (y1 + y2) / 2};
+            }
+            return null;
+          }
+        """)
+        if overlapping:
+            page.locator("#frameInput").fill(str(overlapping["frame"]))
+            page.locator("#jump").click()
+            canvas = page.locator("#overlay").bounding_box()
+            page.mouse.click(canvas["x"] + overlapping["x"] / scene_size["w"] * canvas["width"], canvas["y"] + overlapping["y"] / scene_size["h"] * canvas["height"])
+            checks["overlapping_proposal_chooser"] = "PASS" if page.locator("#proposalChooser").is_visible() and page.locator(".proposal-choice").count() >= 2 else "FAIL"
+            details["overlap_fixture"] = overlapping
+            page.screenshot(path=str(A / "overlap_proposal_chooser.png"), full_page=True)
+            page.locator("#cancelProposalChoice").click()
+        else:
+            checks["overlapping_proposal_chooser"] = "FAIL_NO_OVERLAP_FIXTURE"
+
+        page.locator("#frameInput").fill(str(start))
+        page.locator("#jump").click()
+        page.locator("#clearFrameBox").click()
+        cleared = page.evaluate("() => JSON.parse(localStorage.getItem('TPGT_OPTICAL_HUMAN_TARGET_SET_GM_RM017'))")
+        cleared_target = next(iter(cleared["targets"].values()))
+        checks["clear_frame_box_preserves_identity"] = "PASS" if (
+            cleared_target["frame_observations"][str(start)]["bbox"] is None
+            and [start, end] in cleared_target["identity_segments"]
+            and not cleared_target["formal_annotations"]
+        ) else "FAIL"
+
+        page.locator("#frameInput").fill(str(end))
+        page.locator("#jump").click()
+        page.once("dialog", lambda dialog: dialog.accept())
+        page.locator("#removeFrameFromTarget").click()
+        removed = page.evaluate("() => JSON.parse(localStorage.getItem('TPGT_OPTICAL_HUMAN_TARGET_SET_GM_RM017'))")
+        removed_target = next(iter(removed["targets"].values()))
+        checks["remove_frame_splits_identity"] = "PASS" if (
+            str(end) not in removed_target["frame_observations"]
+            and [start, end - 1] in removed_target["identity_segments"]
+        ) else "FAIL"
+
+        page.locator("#identityStart").fill(str(end - 1))
+        page.locator("#identityEnd").fill(str(end))
+        page.once("dialog", lambda dialog: dialog.accept())
+        page.locator("#removeIdentityRange").click()
+        range_removed = page.evaluate("() => JSON.parse(localStorage.getItem('TPGT_OPTICAL_HUMAN_TARGET_SET_GM_RM017'))")
+        range_target = next(iter(range_removed["targets"].values()))
+        checks["remove_identity_range_trims_segment"] = "PASS" if [start, end - 2] in range_target["identity_segments"] else "FAIL"
         details["tested_detection"] = first_detection
         details["tested_target_id"] = target["id"]
         page.locator("#frameInput").fill("231")

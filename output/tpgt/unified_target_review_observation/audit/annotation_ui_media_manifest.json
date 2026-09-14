@@ -10,6 +10,16 @@
       "frame_index": 117,
       "observation_id": "GM_RM017:HUMAN_CAR_001",
       "note": "Headless browser validation screenshot. Detector box and generated target are QA fixtures only and are not scientific labels."
+    },
+    {
+      "artifact": "audit/overlap_proposal_chooser.png",
+      "evidence_role": "UI_QA_NOT_RESEARCH_OBSERVATION",
+      "run": "GM_RM017",
+      "event": "OVERLAPPING_PROPOSAL_EXPLICIT_SELECTION_QA",
+      "source_media": "scene_manifest:GM_RM017.optical",
+      "frame_index": 117,
+      "observation_id": "GM_RM017:HUMAN_CAR_001",
+      "note": "Validates explicit user selection among overlapping detector proposals. All boxes and target state are QA fixtures only."
     }
   ]
 }

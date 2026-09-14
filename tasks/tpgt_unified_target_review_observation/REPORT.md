@@ -104,3 +104,9 @@ QA 结果写入 `output/tpgt/unified_target_review_observation/audit/unified_wor
 第 231 帧的人物未显示，诊断确认不是图像中没有检测，而是原 YOLO11/YOLO26 scene cache 生成时只保留 `car/bus/truck`（class IDs `[2,5,7]`）。已有 `GM17_PERSON_DETECTIONS.csv` 的 91 条 `full_368_frame_rescout` PERSON proposal 原先只放在顶层 `proposals.person_detections`，页面 overlay 没有读取。
 
 本轮将该文件作为独立的 read-only PERSON proposal source 接入 GM_RM017 的 scene detection stream。第 231 帧现在显示 2 条 PERSON proposal（置信度约 0.85、0.87）；其来源字段仍保留为 `source_model_detail=full_368_frame_rescout`，不会升级为 Human Target identity。QA 增加 `gm17_frame231_vehicle_and_person_streams`，全套检查仍为 PASS。
+
+## Overlap selection and correction controls
+
+当多个 YOLO proposal 在同一点重叠时，页面现在显示候选列表（模型、类别、置信度、框尺寸），鼠标悬停可在图中预览，必须由用户明确选中一个候选。已有目标只列出同一目标域（PERSON 或 vehicle family）的候选，避免把人员框写入车辆目标。
+
+纠错操作分层：`CLEAR_FRAME_BBOX` 只清除当前帧 bbox 并保留 identity；`REMOVE_FRAME_FROM_TARGET` 删除单帧 observation 并在该帧拆分连续 identity segment；`REMOVE_FRAME_RANGE_FROM_TARGET` 可批量移除错误尾段或中间段；整个未冻结目标可删除，但快照保存在 `deleted_targets`。冻结目标禁止直接删除。编辑历史随导出 JSON 保存。

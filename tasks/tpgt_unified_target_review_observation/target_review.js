@@ -24,6 +24,8 @@
   let mode = 'select';
   let manualDrag = null;
   let pendingNewTarget = false;
+  let pendingChoices = [];
+  let previewChoiceIndex = null;
 
   function blankReview() {
     return {
@@ -50,6 +52,8 @@
     review.schema_version = 'TPGT_OPTICAL_HUMAN_TARGET_SET_v0.1';
     review.scene_id = sceneId;
     review.targets = review.targets || {};
+    review.edit_history = review.edit_history || [];
+    review.deleted_targets = review.deleted_targets || [];
     for (const target of Object.values(review.targets)) {
       target.anchors = target.anchors || [];
       target.frame_observations = target.frame_observations || {};
@@ -84,6 +88,16 @@
 
   function detections(f) {
     return ['yolo11', 'yolo26'].flatMap(model => (scene.detections?.[model] || []).filter(d => d.frame === f));
+  }
+
+  function detectionVisible(detection) {
+    const hiddenModel = (detection.model === 'YOLO11' && !$('yolo11Toggle').checked) || (detection.model === 'YOLO26' && !$('yolo26Toggle').checked);
+    const hiddenClass = (detection.class_name === 'person' && !$('personToggle').checked) || (detection.class_name !== 'person' && !$('carToggle').checked);
+    return !hiddenModel && !hiddenClass;
+  }
+
+  function sameTargetDomain(targetClass, detectionClass) {
+    return (targetClass === 'person') === (detectionClass === 'person');
   }
 
   function boxCopy(box) {
@@ -131,6 +145,60 @@
       else last[1] = Math.max(last[1], segment[1]);
     }
     return merged;
+  }
+
+  function removeFrameFromSegments(segments, removedFrame) {
+    return removeRangeFromSegments(segments, removedFrame, removedFrame);
+  }
+
+  function removeRangeFromSegments(segments, removedStart, removedEnd) {
+    const result = [];
+    for (const [start, end] of segments || []) {
+      if (removedEnd < start || removedStart > end) result.push([start, end]);
+      else {
+        if (start < removedStart) result.push([start, removedStart - 1]);
+        if (removedEnd < end) result.push([removedEnd + 1, end]);
+      }
+    }
+    return result;
+  }
+
+  function updatePrimaryAnnotation(target) {
+    target.formal_annotations.sort((a, b) => a.frame_index - b.frame_index);
+    if (!target.formal_annotations.some(item => item.frame_index === target.primary_annotation_frame_index)) {
+      target.primary_annotation_frame_index = target.formal_annotations.at(-1)?.frame_index ?? null;
+    }
+    target.primary_core_interval = target.primary_annotation_frame_index == null
+      ? [null, null]
+      : [target.primary_annotation_frame_index, target.primary_annotation_frame_index];
+  }
+
+  function clearProposalChooser() {
+    pendingChoices = [];
+    previewChoiceIndex = null;
+    $('proposalChooser').classList.add('hidden');
+    $('proposalChoices').innerHTML = '';
+  }
+
+  function showProposalChooser(choices) {
+    pendingChoices = choices;
+    previewChoiceIndex = 0;
+    $('proposalChooser').classList.remove('hidden');
+    $('proposalChoices').innerHTML = choices.map((detection, index) => {
+      const width = Math.round(detection.x2 - detection.x1);
+      const height = Math.round(detection.y2 - detection.y1);
+      return `<button class="proposal-choice" data-choice="${index}">${index + 1}. ${detection.model} · ${zh[detection.class_name] || detection.class_name} · 置信度 ${detection.confidence.toFixed(2)} · ${width}×${height}</button>`;
+    }).join('');
+    document.querySelectorAll('.proposal-choice').forEach(button => {
+      button.onmouseenter = () => {previewChoiceIndex = Number(button.dataset.choice); draw();};
+      button.onclick = () => {
+        const selected = pendingChoices[Number(button.dataset.choice)];
+        clearProposalChooser();
+        useBox(selected, selected.model, selected.class_name);
+      };
+    });
+    setStatus(`此处命中 ${choices.length} 个候选框，请在右侧选择；鼠标移到候选项可预览。`);
+    draw();
   }
 
   function visibleSegments(target) {
@@ -266,9 +334,7 @@
     context.clearRect(0, 0, canvas.width, canvas.height);
 
     for (const detection of detections(frame)) {
-      const hiddenModel = (detection.model === 'YOLO11' && !$('yolo11Toggle').checked) || (detection.model === 'YOLO26' && !$('yolo26Toggle').checked);
-      const hiddenClass = (detection.class_name === 'person' && !$('personToggle').checked) || (detection.class_name !== 'person' && !$('carToggle').checked);
-      if (hiddenModel || hiddenClass) continue;
+      if (!detectionVisible(detection)) continue;
       context.strokeStyle = detection.model === 'YOLO11' ? '#43c8ff' : '#ff9f5b';
       context.lineWidth = 2;
       context.strokeRect(detection.x1, detection.y1, detection.x2 - detection.x1, detection.y2 - detection.y1);
@@ -296,6 +362,18 @@
       context.setLineDash([10, 7]);
       context.strokeRect(machineProposal.x1, machineProposal.y1, machineProposal.x2 - machineProposal.x1, machineProposal.y2 - machineProposal.y1);
       context.restore();
+    }
+
+    if (pendingChoices.length && previewChoiceIndex != null) {
+      const preview = pendingChoices[previewChoiceIndex];
+      if (preview && preview.frame === frame) {
+        context.save();
+        context.strokeStyle = '#fff36b';
+        context.lineWidth = 7;
+        context.setLineDash([16, 8]);
+        context.strokeRect(preview.x1, preview.y1, preview.x2 - preview.x1, preview.y2 - preview.y1);
+        context.restore();
+      }
     }
 
     $('sceneTitle').textContent = sceneId;
@@ -339,6 +417,7 @@
   }
 
   function useBox(box, source, className) {
+    clearProposalChooser();
     if (pendingNewTarget || !active()) createTarget(className || $('newTargetClass').value, box, source);
     else {
       recordBox(active(), frame, box, source);
@@ -372,12 +451,17 @@
   $('overlay').onclick = event => {
     if (mode === 'manual') return;
     const point = canvasPoint(event);
-    const detection = detections(frame).filter(d => point.x >= d.x1 && point.x <= d.x2 && point.y >= d.y1 && point.y <= d.y2).sort((a, b) => area(a) - area(b))[0];
-    if (!detection) {
+    const currentTarget = active();
+    const hits = detections(frame).filter(d => detectionVisible(d))
+      .filter(d => !currentTarget || pendingNewTarget || sameTargetDomain(currentTarget.class, d.class_name))
+      .filter(d => point.x >= d.x1 && point.x <= d.x2 && point.y >= d.y1 && point.y <= d.y2)
+      .sort((a, b) => area(a) - area(b));
+    if (!hits.length) {
       setStatus('这里没有可选 detector 框；可以使用“手动画框”。', true);
       return;
     }
-    useBox(detection, detection.model, detection.class_name);
+    if (hits.length === 1) useBox(hits[0], hits[0].model, hits[0].class_name);
+    else showProposalChooser(hits);
   };
 
   $('manualBox').onclick = () => {
@@ -386,6 +470,7 @@
   };
 
   $('newTarget').onclick = () => {
+    clearProposalChooser();
     review.active_target_id = null;
     pendingNewTarget = true;
     mode = 'select';
@@ -398,6 +483,73 @@
     if (!active()) return setStatus('请先从目标列表选择已有目标。', true);
     mode = 'select';
     setStatus('请点击当前帧中的另一个 detector 框，或点击“手动画框”；它会关联到当前已有目标。');
+  };
+
+  $('cancelProposalChoice').onclick = () => {
+    clearProposalChooser();
+    setStatus('已取消候选框选择。');
+    draw();
+  };
+
+  $('clearFrameBox').onclick = () => {
+    const target = active();
+    const observation = target?.frame_observations?.[frame];
+    if (!target || !observation?.bbox) return setStatus('当前目标在本帧没有可清除的框。', true);
+    review.edit_history.push({
+      operation: 'CLEAR_FRAME_BBOX',
+      target_id: target.id,
+      frame_index: frame,
+      previous_observation: structuredClone(observation),
+      edited_at: new Date().toISOString()
+    });
+    target.anchors = target.anchors.filter(anchor => anchor.frame_index !== frame);
+    target.formal_annotations = target.formal_annotations.filter(annotation => annotation.frame_index !== frame);
+    observation.bbox = null;
+    observation.bbox_source = 'NONE';
+    observation.bbox_role = 'UNKNOWN';
+    if (['COMPLETE_VISIBLE', 'PARTIAL_VISIBLE'].includes(observation.visibility_state)) observation.visibility_state = 'VISIBLE_UNBOXED';
+    updatePrimaryAnnotation(target);
+    target.visible_segments = visibleSegments(target);
+    save();
+    setStatus(`已清除 ${target.id} 第 ${frame} 帧的框；identity 归属仍保留。`);
+    draw();
+  };
+
+  $('removeFrameFromTarget').onclick = () => {
+    const target = active();
+    const observation = target?.frame_observations?.[frame];
+    const isInSegment = target?.identity_segments?.some(([start, end]) => frame >= start && frame <= end);
+    if (!target || (!observation && !isInSegment)) return setStatus('当前帧没有该目标的 observation 或 identity 归属。', true);
+    if (!confirm(`确认把第 ${frame} 帧从 ${target.id} 中移除？连续段会在这里截断或拆分。`)) return;
+    review.edit_history.push({
+      operation: 'REMOVE_FRAME_FROM_TARGET',
+      target_id: target.id,
+      frame_index: frame,
+      previous_observation: observation ? structuredClone(observation) : null,
+      edited_at: new Date().toISOString()
+    });
+    delete target.frame_observations[frame];
+    target.anchors = target.anchors.filter(anchor => anchor.frame_index !== frame);
+    target.identity_segments = removeFrameFromSegments(target.identity_segments, frame);
+    target.formal_annotations = target.formal_annotations.filter(annotation => annotation.frame_index !== frame);
+    updatePrimaryAnnotation(target);
+    target.visible_segments = visibleSegments(target);
+    save();
+    setStatus(`第 ${frame} 帧已从 ${target.id} 移除。`);
+    draw();
+  };
+
+  $('deleteTarget').onclick = () => {
+    const target = active();
+    if (!target) return setStatus('当前没有选中目标。', true);
+    if (target.frozen_revisions.length) return setStatus('该目标已有冻结 revision，不能直接删除；请保留并在后续 revision 中标记排除。', true);
+    if (!confirm(`确认删除整个目标 ${target.id}？此操作与“移除本帧”不同。`)) return;
+    review.deleted_targets.push({target_id: target.id, target_snapshot: structuredClone(target), deleted_at: new Date().toISOString()});
+    delete review.targets[target.id];
+    review.active_target_id = Object.keys(review.targets)[0] || null;
+    save();
+    setStatus(`${target.id} 已删除；原记录保存在导出 JSON 的 deleted_targets 中。`);
+    draw();
   };
 
   $('accept').onclick = () => {
@@ -450,6 +602,37 @@
     target.identity_segments = mergeSegments([...(target.identity_segments || []), [start, end]]);
     save();
     setStatus(`已确认第 ${start}–${end} 帧属于同一人工目标；没有 bbox 的帧仍保持 bbox=null。`);
+    draw();
+  };
+
+  $('removeIdentityRange').onclick = () => {
+    const target = active();
+    if (!target) return setStatus('请先建立或选择人工目标。', true);
+    let start = Number($('identityStart').value);
+    let end = Number($('identityEnd').value);
+    if (!Number.isInteger(start) || !Number.isInteger(end)) return setStatus('请填写要移除的起始帧和结束帧。', true);
+    [start, end] = [Math.min(start, end), Math.max(start, end)];
+    if (start < 0 || end >= scene.frame_count) return setStatus('移除帧段超出场景范围。', true);
+    if (!confirm(`确认从 ${target.id} 移除第 ${start}–${end} 帧？范围内的 observation、anchor 和正式标注也会移除。`)) return;
+    const removedObservations = {};
+    for (let f = start; f <= end; f++) {
+      if (target.frame_observations[f]) removedObservations[f] = structuredClone(target.frame_observations[f]);
+      delete target.frame_observations[f];
+    }
+    review.edit_history.push({
+      operation: 'REMOVE_FRAME_RANGE_FROM_TARGET',
+      target_id: target.id,
+      frame_range: [start, end],
+      previous_observations: removedObservations,
+      edited_at: new Date().toISOString()
+    });
+    target.anchors = target.anchors.filter(anchor => anchor.frame_index < start || anchor.frame_index > end);
+    target.identity_segments = removeRangeFromSegments(target.identity_segments, start, end);
+    target.formal_annotations = target.formal_annotations.filter(annotation => annotation.frame_index < start || annotation.frame_index > end);
+    updatePrimaryAnnotation(target);
+    target.visible_segments = visibleSegments(target);
+    save();
+    setStatus(`已从 ${target.id} 移除第 ${start}–${end} 帧。`);
     draw();
   };
 
@@ -506,13 +689,14 @@
   };
 
   function moveFrame(delta) {
+    clearProposalChooser();
     frame = Math.max(0, Math.min(scene.frame_count - 1, frame + delta));
     draw();
   }
 
   $('prev').onclick = () => moveFrame(-1);
   $('next').onclick = () => moveFrame(1);
-  $('jump').onclick = () => {frame = Math.max(0, Math.min(scene.frame_count - 1, Number($('frameInput').value) || 0)); draw();};
+  $('jump').onclick = () => {clearProposalChooser(); frame = Math.max(0, Math.min(scene.frame_count - 1, Number($('frameInput').value) || 0)); draw();};
   $('play').onclick = () => {
     clearInterval(timer);
     timer = setInterval(() => {
@@ -525,6 +709,7 @@
   ['yolo11Toggle', 'yolo26Toggle', 'carToggle', 'personToggle', 'confidenceToggle', 'machineToggle'].forEach(id => $(id).onchange = draw);
 
   $('timeline').onclick = event => {
+    clearProposalChooser();
     const rect = $('timeline').getBoundingClientRect();
     frame = Math.max(0, Math.min(scene.frame_count - 1, Math.round((event.clientX - rect.left) / rect.width * (scene.frame_count - 1))));
     draw();

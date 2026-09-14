@@ -8,6 +8,8 @@
     "scene_id": {"type": "string"},
     "active_target_id": {"type": ["string", "null"]},
     "updated_at": {"type": "string"},
+    "edit_history": {"type": "array", "items": {"type": "object"}},
+    "deleted_targets": {"type": "array", "items": {"type": "object"}},
     "targets": {"type": "object", "additionalProperties": {"$ref": "#/$defs/target"}}
   },
   "$defs": {

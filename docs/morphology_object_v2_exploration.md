@@ -13,6 +13,8 @@
 
 优先打开 [可交互案例目录](../output/morphology_object_v2/INDEX.html)。每页左侧固定 I0；右侧可逐个选择核、段、关系、暗区，查看真实支持像素、原场/平滑场鞍路径和 JSON。浏览器交互验证覆盖全部 20 页。
 
+没有本地完整输出时，可先看 [已提交的小型示例包](../tasks/morphology_object_v2/examples/README.md)：约2.6 MB，包含 A059 原图和同源打乱反例的完整结构/场数据，以及干预和宽窗口说明图。不依赖原始数据目录，也不把局部示例当成全量结果。
+
 ![A059 可回指原图的关系检查器](../output/morphology_object_v2/figures/INSPECTOR_QA.png)
 
 ## 1. 资产、边界与实际实验量

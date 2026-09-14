@@ -1,0 +1,68 @@
+{
+  "scope": "one GT-conditioned observation, one same-source shuffle; two contextual figures",
+  "records": [
+    {
+      "label": "A059_original",
+      "original_source_record_sha256": "d5d516053a71b49e957b4e7c270a748c58df2318d06524190ac0905ddec34ab0",
+      "record": "A059_original_object.json.gz",
+      "field": "A059_original_field.npz",
+      "object_id": "GM_RM017_f0344_g151",
+      "I0_shape": [
+        74,
+        160
+      ]
+    },
+    {
+      "label": "A059_shuffled",
+      "original_source_record_sha256": "8a63d8da2d1bc0b26e2ae1ebedc563d0972c4c52581238b6e22ab5d07384dd03",
+      "record": "A059_shuffled_object.json.gz",
+      "field": "A059_shuffled_field.npz",
+      "object_id": "GM_RM017_f0344_g151__E_layout_shuffled",
+      "I0_shape": [
+        74,
+        160
+      ]
+    }
+  ],
+  "files": {
+    "A059_interventions.png": {
+      "bytes": 549527,
+      "sha256": "2a794ab397641bfbcab0f492da1edd4f3f5344d39fce0a849021c189fabf0421"
+    },
+    "A059_original.png": {
+      "bytes": 240719,
+      "sha256": "1ea0e04ddcea67e74fdc4de5dd9bb17a6111aeecf0d16a6d400ddd768a227868"
+    },
+    "A059_original_field.npz": {
+      "bytes": 322299,
+      "sha256": "04fdfcf76b2a1dba1b13d5e29583de86436728dac87e528b6ca1ec7425852c78"
+    },
+    "A059_original_object.json.gz": {
+      "bytes": 170981,
+      "sha256": "5f5f7dcf2a801136d051c1251b790d810878ab572d0fdb7b029988923aa7b3d3"
+    },
+    "A059_shuffled.png": {
+      "bytes": 431165,
+      "sha256": "e5ea0609697d28b95aebb9f9f1cf0ca3948d4b3d967ffcd5f24131e8ea0250ff"
+    },
+    "A059_shuffled_field.npz": {
+      "bytes": 352358,
+      "sha256": "119b3f891d1e42a6f9c9800f47b00b8a2c6e6e36f50c1f852292afd8fddac795"
+    },
+    "A059_shuffled_object.json.gz": {
+      "bytes": 249267,
+      "sha256": "ed1fd55e447e9fcee983a1b7278cc443e6b343ec644526079f5fea9072e084bd"
+    },
+    "WIDE_posthoc.png": {
+      "bytes": 283601,
+      "sha256": "530a10e8c4c34b888ece3b304d7613095b7d8d6332aeed972e94d1bc2145e16f"
+    }
+  },
+  "payload_bytes": 2599917,
+  "validation": "NPZ bytes unchanged; complete JSON gzip roundtrip; exact histogram and inverse permutation",
+  "nonclaims": [
+    "not native amplitude",
+    "no final Mask or detection box",
+    "wide figure is posthoc; wide runtime data not bundled"
+  ]
+}

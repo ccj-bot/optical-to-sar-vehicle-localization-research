@@ -4,6 +4,12 @@ This is a new exploratory stage on feature/oty2-sar-vehicle-morphology-object.
 It does not edit earlier experiments. Run from workspace root using the existing
 py311 interpreter; CPU only. No archive/old_work dependency.
 
+For a small committed, data-root-independent example, start with
+[examples/README.md](examples/README.md): A059 original plus its shuffled
+counterexample, full losslessly compressed object records, exact fields and
+four explanatory figures (about 2.6 MB payload). This is an explicit exception
+to keeping generated data local; the full experiment remains uncommitted.
+
 ```
 python tasks/morphology_object_v2/run_gt.py
 python tasks/morphology_object_v2/intervene.py

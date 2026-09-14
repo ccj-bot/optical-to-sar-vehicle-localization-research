@@ -109,4 +109,6 @@ QA 结果写入 `output/tpgt/unified_target_review_observation/audit/unified_wor
 
 当多个 YOLO proposal 在同一点重叠时，页面现在显示候选列表（模型、类别、置信度、框尺寸），鼠标悬停可在图中预览，必须由用户明确选中一个候选。已有目标只列出同一目标域（PERSON 或 vehicle family）的候选，避免把人员框写入车辆目标。
 
+为解决“重叠太多，图上点不到想要的框”，当前帧全部 detector proposal 还会常驻显示在右侧候选列表；用户可不依赖图像点击，直接从列表选择目标框，悬停列表项会在图像中高亮对应框。
+
 纠错操作分层：`CLEAR_FRAME_BBOX` 只清除当前帧 bbox 并保留 identity；`REMOVE_FRAME_FROM_TARGET` 删除单帧 observation 并在该帧拆分连续 identity segment；`REMOVE_FRAME_RANGE_FROM_TARGET` 可批量移除错误尾段或中间段；整个未冻结目标可删除，但快照保存在 `deleted_targets`。冻结目标禁止直接删除。编辑历史随导出 JSON 保存。

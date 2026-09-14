@@ -26,6 +26,7 @@
   let pendingNewTarget = false;
   let pendingChoices = [];
   let previewChoiceIndex = null;
+  let currentPreviewIndex = null;
 
   function blankReview() {
     return {
@@ -178,6 +179,29 @@
     previewChoiceIndex = null;
     $('proposalChooser').classList.add('hidden');
     $('proposalChoices').innerHTML = '';
+  }
+
+  function renderCurrentFrameCandidates(target) {
+    const list = $('currentFrameCandidateList');
+    const choices = detections(frame).filter(detectionVisible);
+    currentPreviewIndex = null;
+    if (!choices.length) {
+      list.className = 'candidate-list muted';
+      list.textContent = '当前帧没有 detector 候选；可以使用“手动画框”。';
+      return;
+    }
+    list.className = 'candidate-list';
+    list.innerHTML = choices.map((detection, index) => {
+      const incompatible = target && !pendingNewTarget && !sameTargetDomain(target.class, detection.class_name);
+      const width = Math.round(detection.x2 - detection.x1);
+      const height = Math.round(detection.y2 - detection.y1);
+      return `<button class="candidate-choice ${incompatible ? 'incompatible' : ''}" data-candidate="${index}" ${incompatible ? 'disabled title="当前目标类别不匹配"' : ''}>${index + 1}. ${detection.model} · ${zh[detection.class_name] || detection.class_name} · 置信度 ${detection.confidence.toFixed(2)} · ${width}×${height}</button>`;
+    }).join('');
+    document.querySelectorAll('.candidate-choice').forEach(button => {
+      button.onmouseenter = () => {currentPreviewIndex = Number(button.dataset.candidate); draw();};
+      button.onmouseleave = () => {currentPreviewIndex = null; draw();};
+      button.onclick = () => useBox(choices[Number(button.dataset.candidate)], choices[Number(button.dataset.candidate)].model, choices[Number(button.dataset.candidate)].class_name);
+    });
   }
 
   function showProposalChooser(choices) {
@@ -375,6 +399,18 @@
         context.restore();
       }
     }
+    if (currentPreviewIndex != null) {
+      const currentCandidates = detections(frame).filter(detectionVisible);
+      const preview = currentCandidates[currentPreviewIndex];
+      if (preview) {
+        context.save();
+        context.strokeStyle = '#fff36b';
+        context.lineWidth = 8;
+        context.setLineDash([18, 8]);
+        context.strokeRect(preview.x1, preview.y1, preview.x2 - preview.x1, preview.y2 - preview.y1);
+        context.restore();
+      }
+    }
 
     $('sceneTitle').textContent = sceneId;
     $('frameInfo').textContent = `第 ${frame} 帧 / ${scene.frame_count - 1}`;
@@ -383,6 +419,7 @@
     $('identityStart').max = scene.frame_count - 1;
     $('identityEnd').max = scene.frame_count - 1;
     renderTargetList();
+    renderCurrentFrameCandidates(target);
 
     if (target) {
       const observation = target.frame_observations[frame] || {};

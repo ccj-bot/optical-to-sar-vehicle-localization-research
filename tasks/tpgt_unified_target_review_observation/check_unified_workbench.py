@@ -43,6 +43,7 @@ with sync_playwright() as pw:
             "targetList", "newTarget", "manualBox", "edgeTruncated", "nearTruncated",
             "occluded", "identityStart", "identityEnd", "confirmIdentitySegment",
             "markAnnotation", "importTargets", "exportTargets", "proposalChooser",
+            "currentFrameCandidates", "currentFrameCandidateList",
             "clearFrameBox", "removeFrameFromTarget", "deleteTarget",
             "removeIdentityRange",
         ]

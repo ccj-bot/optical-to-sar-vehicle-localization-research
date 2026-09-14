@@ -12,6 +12,7 @@
 ## Post-change
 
 - Overlapping visible proposals now open an explicit chooser with model, class, confidence, and box size. Hovering a choice previews its bbox in yellow.
+- All visible proposals for the current frame are now listed persistently in the right panel, so selection does not depend on hitting a pixel inside an overlapping bbox. Hovering a list item previews the corresponding bbox.
 - Existing targets only show proposals from the same target domain (PERSON versus vehicle family).
 - Added `CLEAR_FRAME_BBOX`, preserving identity while removing the bbox.
 - Added `REMOVE_FRAME_FROM_TARGET`, deleting one observation and splitting/trimming identity segments.

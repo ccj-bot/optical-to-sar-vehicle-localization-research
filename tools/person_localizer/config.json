@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "version": "0.1.0rc8",
+  "input_gate": {
+    "enabled": true,
+    "min_height_fraction": 0.05,
+    "min_bbox_aspect_ratio": 1.2,
+    "border_margin_native_px": 0.5,
+    "min_usable_observations": 7,
+    "policy_status": "EXPERIMENTAL_INPUT_QUALITY_POLICY_NOT_METRIC_RANGE_CALIBRATION",
+    "vehicle_overlap": {
+      "enabled": true,
+      "max_person_covered_fraction": 0.5,
+      "weights": "models/yolov8s.pt",
+      "class_ids": [2,3,5,7],
+      "confidence": 0.25,
+      "image_size": 1280,
+      "device": 0
+    }
+  },
+  "work_width": 1024,
+  "min_optical_observations": 7,
+  "half_A_window": 3,
+  "central_half_angle_deg": 30.0,
+  "fan_half_angle_deg": 55.0,
+  "minimum_radius_work_px": 25.0,
+  "small_sigma": 0.8874320052671996,
+  "large_sigma": 10.649184063206395,
+  "blur_multipliers": [0, 1, 2, 4, 8],
+  "folds": 5,
+  "timing_uncertainty_ms": 250.0,
+  "mapping": {"k": 0.02666536443690682, "b": -45.502258572693094, "optical_width": 3840, "status": "R01 development fit; nominal synchronization unverified"},
+  "motion": {"feature_radius_min": 300.0, "half_angle_deg": 45.0, "max_corners": 1600, "quality": 0.01, "min_distance": 7, "block_size": 7, "window": 31, "levels": 4, "cycle_tolerance_px": 1.0, "holdout_tile_px": 64, "exclude_optical_anchor_bands": true},
+  "maximum_joint_models": 2000000,
+  "maximum_basis_elements": 60000000,
+  "geometry_modes": {
+    "1024x592": {"center_x_px": 511.74532586922845, "center_y_px": 590.7763512520755, "radius_px": 591.3403167097985},
+    "2048x1182": {"center_x_px": 1023.7110889805733, "center_y_px": 1181.954008481479, "radius_px": 1182.7187681667297}
+  }
+}

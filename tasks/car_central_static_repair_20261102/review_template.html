@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>R35 三车连续标注 · 修订 v2</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#eef2f5;color:#153044;font:16px/1.6 'Microsoft YaHei',sans-serif}main{max-width:1320px;margin:auto;padding:24px}h1{font-size:28px;margin:0 0 8px}p{margin:6px 0 18px}.card{background:white;border-radius:12px;padding:18px;margin:18px 0;box-shadow:0 3px 18px #1231}.bar{display:flex;gap:10px;align-items:center;flex-wrap:wrap}button,select{font:inherit;background:#f6f9fc;border:1px solid #9aafbd;border-radius:6px;padding:6px 12px;cursor:pointer}button:hover{background:#dbeaf5}input[type=range]{flex:1;min-width:200px}#sar,#optical,video{width:100%;height:auto;display:block;border-radius:6px}#optical{margin-top:12px}#frame{font-weight:bold;min-width:95px}.legend{display:flex;gap:22px;flex-wrap:wrap}.legend b{background:#123246;padding:2px 10px;border-radius:5px}.muted{color:#536d7c;font-size:14px}a{color:#075e93}.caption{font-size:14px;margin:8px 0}.pair{display:grid;grid-template-columns:1fr 1fr;gap:12px}.pair img{width:100%}@media(max-width:850px){main{padding:12px}.pair{grid-template-columns:1fr}h1{font-size:23px}}
+</style>
+<main>
+<h1>R35 三车连续标注 · 修订 v2</h1>
+<p>SAR358–494，137帧。已修订连续位置与方向，并逐帧检查三车区域。虚线框的长宽沿用358人工参考，弱远端尚未独立重测。</p>
+<div class="legend"><b style="color:#ffff4f">002 白色SUV</b><b style="color:#ef7cfa">003 灰色轿车</b><b style="color:#35f7b1">005 橙色车</b></div>
+<section class="card">
+<div class="bar"><button id="prev">上一帧</button><button id="play">播放</button><button id="next">下一帧</button><span id="frame"></span><input id="slider" type="range" min="358" max="494" value="440" aria-label="SAR帧"><select id="mode" aria-label="显示方式"><option value="new">修订版</option><option value="compare">左右对照</option><option value="raw">无框原图</option></select></div>
+<div class="bar" style="margin:10px 0"><span class="muted">快速查看</span><button data-jump="358">358</button><button data-jump="400">400</button><button data-jump="420">420</button><button data-jump="440">440</button><button data-jump="460">460</button><button data-jump="494">494</button><label><input id="showopt" type="checkbox"> 同看光学</label></div>
+<img id="sar" alt="当前SAR原图或标注"><div id="optic-wrap" hidden><div id="opt-caption" class="caption"></div><img id="optical" alt="名义邻近光学帧"></div>
+<p class="muted">键盘左右键逐帧。播放为8帧/秒慢放，源SAR为30帧/秒。光学只用于对象与场景对照，名义配对不代表严格同步。</p>
+</section>
+<section class="card"><h2 style="font-size:20px;margin-top:0">完整前后对照视频</h2><video controls preload="metadata" poster="keyframes/COMPARE_440.png" src="BEFORE_AFTER.mp4"></video><p class="muted">左为旧版，右为修订版。原数据、358人工框和旧结果保留。</p></section>
+<section class="card"><a href="ANNOTATIONS.json">逐帧标注 JSON</a> · <a href="START_HERE.md">方法与剩余限制</a> · <a href="KEYFRAME_REVISIONS.json">16个关键时相</a></section>
+</main>
+<script>
+const frames=__FRAMES__;
+const slider=document.getElementById('slider'),mode=document.getElementById('mode'),sar=document.getElementById('sar'),optical=document.getElementById('optical');let timer=null;
+function show(){const f=Number(slider.value),r=frames[f-358];document.getElementById('frame').textContent='SAR '+f;const pad=String(f).padStart(6,'0');sar.src=mode.value==='raw'?r.raw:mode.value==='compare'?'compare_frames/'+pad+'.jpg':'sar_frames/'+pad+'.jpg';document.getElementById('optic-wrap').hidden=!document.getElementById('showopt').checked;if(document.getElementById('showopt').checked){optical.src=r.optical;document.getElementById('opt-caption').textContent='光学 '+r.optical_frame+' · 名义时间差 '+r.delta_ms.toFixed(1)+' ms';}}
+function step(n){slider.value=Math.max(358,Math.min(494,Number(slider.value)+n));show()}
+document.getElementById('prev').onclick=()=>step(-1);document.getElementById('next').onclick=()=>step(1);slider.oninput=show;mode.onchange=show;document.getElementById('showopt').onchange=show;
+document.querySelectorAll('[data-jump]').forEach(b=>b.onclick=()=>{slider.value=b.dataset.jump;show()});
+document.getElementById('play').onclick=()=>{if(timer){clearInterval(timer);timer=null;document.getElementById('play').textContent='播放'}else{timer=setInterval(()=>{if(Number(slider.value)===494)slider.value=358;else slider.value=Number(slider.value)+1;show()},125);document.getElementById('play').textContent='暂停'}};
+document.addEventListener('keydown',e=>{if(e.key==='ArrowRight'){e.preventDefault();step(1)}if(e.key==='ArrowLeft'){e.preventDefault();step(-1)}});show();
+</script></html>

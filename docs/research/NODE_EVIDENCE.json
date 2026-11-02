@@ -1,0 +1,132 @@
+{
+  "review_date": "2026-11-02",
+  "sources": [
+    {
+      "id": "E01",
+      "source_repository": "workspace",
+      "source_relative_path": "00_project_control/14_GM17_NONREGRESSION_AND_FAILURE_LEDGER.md",
+      "sha256": "448cd7a3beb1a20215e9cd36f00c327fb319339d44108d95f2ee2723c8937ab5",
+      "meaning": "候选相关测量与固定中心的缺口",
+      "source_distributed_with_this_release": false,
+      "role": "EXISTING_SOURCE_RECORD_NOT_NEW_EXPERIMENT"
+    },
+    {
+      "id": "E02",
+      "source_repository": "workspace",
+      "source_relative_path": "output/gm17_temporal_logic_design_20261020/CORE_EDGE_ADDENDUM.md",
+      "sha256": "717eb5906ddcb3ef3e03124a6d78e3c3cc66d2a388f031bc4fb27de7c8c4880f",
+      "meaning": "核心与外围设计及竞争解释",
+      "source_distributed_with_this_release": false,
+      "role": "EXISTING_SOURCE_RECORD_NOT_NEW_EXPERIMENT"
+    },
+    {
+      "id": "E03",
+      "source_repository": "workspace",
+      "source_relative_path": "output/gm17_core_persistence_probe_20261020/REPORT.md",
+      "sha256": "f890525b6a5cf2b6bc8f5cb15bbece15941bd4054310709300656a6977728aad",
+      "meaning": "267条件位置与18个非模板时刻",
+      "source_distributed_with_this_release": false,
+      "role": "EXISTING_SOURCE_RECORD_NOT_NEW_EXPERIMENT"
+    },
+    {
+      "id": "E04",
+      "source_repository": "workspace",
+      "source_relative_path": "output/cross_time_predictive_20261023/RECAP.md",
+      "sha256": "7afcab9fbb6b1466a52399ffd9b4a7831402f3d0cddc86b5123d5859cdd2d396",
+      "meaning": "补偿累积、错亮带反例与宽度不可辨识",
+      "source_distributed_with_this_release": false,
+      "role": "EXISTING_SOURCE_RECORD_NOT_NEW_EXPERIMENT"
+    },
+    {
+      "id": "E05",
+      "source_repository": "workspace",
+      "source_relative_path": "output/temporal_subject_evolution_20261024/run_v2_visible/REPORT.md",
+      "sha256": "487cfde47f277ef42da1c38542c49e052eb1591dcf3835f5f4892eadf3b1d172",
+      "meaning": "时序回溯及精确可见域修订",
+      "source_distributed_with_this_release": false,
+      "role": "EXISTING_SOURCE_RECORD_NOT_NEW_EXPERIMENT"
+    },
+    {
+      "id": "E06",
+      "source_repository": "workspace",
+      "source_relative_path": "output/conditional_vehicle_loop_20261024/REPORT.md",
+      "sha256": "93858aa46bd5189a69a2545084339323b712de4672dc251621706ed05eaf6fec",
+      "meaning": "初始化后双车SAR反馈闭环",
+      "source_distributed_with_this_release": false,
+      "role": "EXISTING_SOURCE_RECORD_NOT_NEW_EXPERIMENT"
+    },
+    {
+      "id": "E07",
+      "source_repository": "workspace",
+      "source_relative_path": "output/manual_guided_localization_20261029/REPORT.md",
+      "sha256": "df1314f3adbfcd3d19286b763dd3598e26cfd94b6474938c7577ff8d9932bbe3",
+      "meaning": "人工预览纠正及模型推偏",
+      "source_distributed_with_this_release": false,
+      "role": "EXISTING_SOURCE_RECORD_NOT_NEW_EXPERIMENT"
+    },
+    {
+      "id": "E08",
+      "source_repository": "workspace",
+      "source_relative_path": "output/person_runtime_integration_20261029/REPORT.md",
+      "sha256": "5781436d9e02967b542c92fc41dd5ea377705eedeae228a0d31e951fe09f12c5",
+      "meaning": "rc9集成、HOLD断链和负对照",
+      "source_distributed_with_this_release": false,
+      "role": "EXISTING_SOURCE_RECORD_NOT_NEW_EXPERIMENT"
+    },
+    {
+      "id": "E09",
+      "source_repository": "workspace",
+      "source_relative_path": "output/person_multiscene_baseline_v1_20261029_verification_final/VERIFICATION.json",
+      "sha256": "4b0bf6137849f288cc6e26997c509b939bf0c519324a65f9773149023d4e05e3",
+      "meaning": "六景冻结入口核验",
+      "source_distributed_with_this_release": false,
+      "role": "EXISTING_SOURCE_RECORD_NOT_NEW_EXPERIMENT"
+    },
+    {
+      "id": "E10",
+      "source_repository": "workspace",
+      "source_relative_path": "output/car_data_contract_r35_20261030/START_HERE.md",
+      "sha256": "d26e75b07b207e90e4110f4aed51e91859f427632750a610fdbebdde34e36225",
+      "meaning": "R35规范数据合同",
+      "source_distributed_with_this_release": false,
+      "role": "EXISTING_SOURCE_RECORD_NOT_NEW_EXPERIMENT"
+    },
+    {
+      "id": "E11",
+      "source_repository": "workspace",
+      "source_relative_path": "output/car_consolidation_20261102/START_HERE.md",
+      "sha256": "51dbbbf98b7dca98f5996f3ac61629beca1ad1d57d1aaa6c7a65c3c78636df57",
+      "meaning": "v1后段漂移与代码核对",
+      "source_distributed_with_this_release": false,
+      "role": "EXISTING_SOURCE_RECORD_NOT_NEW_EXPERIMENT"
+    },
+    {
+      "id": "E12",
+      "source_repository": "workspace",
+      "source_relative_path": "output/car_central_static_repair_20261102/VISUAL_REVIEW.md",
+      "sha256": "c979a33ace349a16be056ecf5bc9b593495143f2655707cd05b27e9beab96f89",
+      "meaning": "v2实际视觉审核与继承范围",
+      "source_distributed_with_this_release": false,
+      "role": "EXISTING_SOURCE_RECORD_NOT_NEW_EXPERIMENT"
+    },
+    {
+      "id": "E13",
+      "source_repository": "workspace",
+      "source_relative_path": "output/car_bright_band_margin_20261102/START_HERE.md",
+      "sha256": "b546f8d8dda207797a447a3079885e0cfc0700aac2ecf330ee56670b72c09deb",
+      "meaning": "v3亮带侧单端6px余量",
+      "source_distributed_with_this_release": false,
+      "role": "EXISTING_SOURCE_RECORD_NOT_NEW_EXPERIMENT"
+    },
+    {
+      "id": "E14",
+      "source_repository": "sar-spatial-observability",
+      "source_relative_path": "reports/sar_only/THEORY_SEMANTICS_REVIEW_20261030.md",
+      "sha256": "7ca2a472a89bf3add2ab90f542f909e3e322e53fe0c8d05393ca3b982cbec4b8",
+      "meaning": "独立SAR理论—测量语义复核",
+      "source_distributed_with_this_release": false,
+      "role": "EXISTING_SOURCE_RECORD_NOT_NEW_EXPERIMENT"
+    }
+  ],
+  "availability": "Local source reports and data retained outside this source release; node narrative preserves exact scope and limits."
+}

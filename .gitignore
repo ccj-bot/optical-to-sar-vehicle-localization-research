@@ -18,3 +18,13 @@ artifacts/
 node_modules/
 
 .codex
+
+# Reviewed exclusions from the2026-11-02 inventory
+models/
+review_packs/*.zip
+**/*_venv/
+tasks/person_depthpro_distance_20261026/deps/
+*.part
+.env
+.env.*
+tools/setup_claude_multimodel.py

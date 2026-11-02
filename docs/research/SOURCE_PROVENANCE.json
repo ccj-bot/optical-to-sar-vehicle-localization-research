@@ -1,0 +1,689 @@
+{
+  "scope": "SOURCE_AND_RESEARCH_RECORD_ONLY",
+  "candidate_files": [
+    {
+      "path": "docs/research/STATUS_20261102.md",
+      "batch": "01_docs",
+      "source": "tasks/research_github_preparation_20261102/drafts/STATUS_20261102.md",
+      "source_sha256": "9f0c8c1d159166e2e0149b1e3bb141d8de801f7c95618f3715feb5ff18b85e29",
+      "candidate_sha256": "8cc3365623110268930043cc8a031c20fb25a7c9b648cb4ec78e8761ddae3aa2",
+      "bytes": 3433,
+      "changes": [
+        "Publication semantic review links, archived-status clarification or explanatory note added"
+      ]
+    },
+    {
+      "path": "docs/research/FINDINGS_AND_OPEN_QUESTIONS.md",
+      "batch": "01_docs",
+      "source": "tasks/research_github_preparation_20261102/drafts/FINDINGS_AND_OPEN_QUESTIONS.md",
+      "source_sha256": "97e6225921a2799c3a08744a419ebc666ebf622eefdf44c8b4ad2bcc745f8068",
+      "candidate_sha256": "32303d5746cd525e900894b62c975ad02e8ff280237422fdb1f9da87a037b282",
+      "bytes": 3165,
+      "changes": []
+    },
+    {
+      "path": "docs/research/REPRODUCIBILITY.md",
+      "batch": "01_docs",
+      "source": "tasks/research_github_preparation_20261102/drafts/REPRODUCIBILITY.md",
+      "source_sha256": "72a2c427790bbd30ea52f86b6dab9f63b19002b813259dd687755afb94326af2",
+      "candidate_sha256": "0b1304282515b02cea6d57ce691ce0a0005ca0463e9cc446da8b39817e7682aa",
+      "bytes": 2834,
+      "changes": []
+    },
+    {
+      "path": "docs/research/ARTIFACTS.md",
+      "batch": "01_docs",
+      "source": "tasks/research_github_preparation_20261102/drafts/ARTIFACTS.md",
+      "source_sha256": "d9affdcca49bda84398d1d21529f507cf8e19fdc6560b9c7666d6f31c8a7dbf1",
+      "candidate_sha256": "92c7949bcd923e2a6d0aef00fcdd3ebce7dda8a27450bdcba481f87516bc9a28",
+      "bytes": 968,
+      "changes": []
+    },
+    {
+      "path": "README.md",
+      "batch": "01_docs",
+      "source": "tasks/research_github_preparation_20261102/drafts/README.md",
+      "source_sha256": "53f6118d06c015da0a5e5eb604fec43437483130cd6ac488b38469618d3e3a53",
+      "candidate_sha256": "c8ed8bb49c3c7b06a36482fbba5e2dbb4e814836514ca35108fbc4e26bb305e1",
+      "bytes": 2442,
+      "changes": [
+        "Publication semantic review links, archived-status clarification or explanatory note added"
+      ]
+    },
+    {
+      "path": "docs/research/HISTORICAL_README_PRE_20261102.md",
+      "batch": "01_docs",
+      "source": "README.md",
+      "source_sha256": "b62063c1dcc0f30edf7e6d05530bcefb970c1fc6dd7af54c95f5822bfae13a57",
+      "candidate_sha256": "700603ba8a3550f279b6759b6584408653ce3f286c5c1bab48d20921ac4a669a",
+      "bytes": 3053,
+      "changes": [
+        "Publication semantic review links, archived-status clarification or explanatory note added"
+      ]
+    },
+    {
+      "path": ".gitignore",
+      "batch": "01_docs",
+      "source": ".gitignore",
+      "source_sha256": "6332e0292471b6eef22f277c713ec005460be3b755d55eada437ff78a95eed3c",
+      "candidate_sha256": "f492be71b510667ea5a6b879cf2d4e42777237d7fc599474ef6d80d0ad7f2428",
+      "bytes": 399,
+      "changes": [
+        "Proposed exclusions for observed runtime/vendor/model/config assets; live ignore file untouched"
+      ]
+    },
+    {
+      "path": "tools/person_localizer/__init__.py",
+      "batch": "02_person",
+      "source": "output/person_multiscene_baseline_v1_20261029/runtime/person_localizer/__init__.py",
+      "source_sha256": "b2fc1157b3e2a1386c981b39b39896b64685469c7a55354845fe8dc170326211",
+      "candidate_sha256": "b2fc1157b3e2a1386c981b39b39896b64685469c7a55354845fe8dc170326211",
+      "bytes": 93,
+      "changes": []
+    },
+    {
+      "path": "tools/person_localizer/amplitude_factors.py",
+      "batch": "02_person",
+      "source": "output/person_multiscene_baseline_v1_20261029/runtime/person_localizer/amplitude_factors.py",
+      "source_sha256": "25256f7f87befa8d6548460abdb64399034914e7807483fa9e61412c0a2a0dae",
+      "candidate_sha256": "25256f7f87befa8d6548460abdb64399034914e7807483fa9e61412c0a2a0dae",
+      "bytes": 4783,
+      "changes": []
+    },
+    {
+      "path": "tools/person_localizer/annotation_states.py",
+      "batch": "02_person",
+      "source": "output/person_multiscene_baseline_v1_20261029/runtime/person_localizer/annotation_states.py",
+      "source_sha256": "e10e5ce33c8b72219ca8d6a1300f923f72ad8d689f4968b4fdb19a35b92260de",
+      "candidate_sha256": "e10e5ce33c8b72219ca8d6a1300f923f72ad8d689f4968b4fdb19a35b92260de",
+      "bytes": 9498,
+      "changes": []
+    },
+    {
+      "path": "tools/person_localizer/cli.py",
+      "batch": "02_person",
+      "source": "output/person_multiscene_baseline_v1_20261029/runtime/person_localizer/cli.py",
+      "source_sha256": "df4f9c5609d76568633dd01608e2c2373902a09d5a830092dc0a46062ed60081",
+      "candidate_sha256": "df4f9c5609d76568633dd01608e2c2373902a09d5a830092dc0a46062ed60081",
+      "bytes": 4783,
+      "changes": []
+    },
+    {
+      "path": "tools/person_localizer/config.json",
+      "batch": "02_person",
+      "source": "output/person_multiscene_baseline_v1_20261029/runtime/person_localizer/config.json",
+      "source_sha256": "c6beb07f23aa21915c94789bb4c3cf86077b9304607b949a10deb05565cc28cb",
+      "candidate_sha256": "2c25384ef02d450902994b9c01d665906c92deee2a2fdab61b72dfb8504d8aad",
+      "bytes": 1683,
+      "changes": [
+        "Only detector-weight file path changed; numeric parameters retained"
+      ]
+    },
+    {
+      "path": "tools/person_localizer/eligibility.py",
+      "batch": "02_person",
+      "source": "output/person_multiscene_baseline_v1_20261029/runtime/person_localizer/eligibility.py",
+      "source_sha256": "862a7595804705453bf78028f1103452fa5010934608e7d09735198106478d5a",
+      "candidate_sha256": "862a7595804705453bf78028f1103452fa5010934608e7d09735198106478d5a",
+      "bytes": 10419,
+      "changes": []
+    },
+    {
+      "path": "tools/person_localizer/image_support.py",
+      "batch": "02_person",
+      "source": "output/person_multiscene_baseline_v1_20261029/runtime/person_localizer/image_support.py",
+      "source_sha256": "f4ada141945b5ba6432a2784a31ace08304474deae6120f9e1d4390536b04e9e",
+      "candidate_sha256": "f4ada141945b5ba6432a2784a31ace08304474deae6120f9e1d4390536b04e9e",
+      "bytes": 2911,
+      "changes": []
+    },
+    {
+      "path": "tools/person_localizer/initialization.py",
+      "batch": "02_person",
+      "source": "output/person_multiscene_baseline_v1_20261029/runtime/person_localizer/initialization.py",
+      "source_sha256": "e114869d95c5aa762a12ac5ec64fc80a00df3911bff00b9934a0610a436a71af",
+      "candidate_sha256": "e114869d95c5aa762a12ac5ec64fc80a00df3911bff00b9934a0610a436a71af",
+      "bytes": 2701,
+      "changes": []
+    },
+    {
+      "path": "tools/person_localizer/numerics.py",
+      "batch": "02_person",
+      "source": "output/person_multiscene_baseline_v1_20261029/runtime/person_localizer/numerics.py",
+      "source_sha256": "4b5c2f622d216949ef9c90c9f336fcb27ca9c7a00b331f7a8cd9e5d82a76b11a",
+      "candidate_sha256": "4b5c2f622d216949ef9c90c9f336fcb27ca9c7a00b331f7a8cd9e5d82a76b11a",
+      "bytes": 6822,
+      "changes": []
+    },
+    {
+      "path": "tools/person_localizer/optical_tracking.py",
+      "batch": "02_person",
+      "source": "output/person_multiscene_baseline_v1_20261029/runtime/person_localizer/optical_tracking.py",
+      "source_sha256": "db7f89b4310994aa619b09270ceb3451bdcc21acee3d0bc3d5929e17af87473b",
+      "candidate_sha256": "db7f89b4310994aa619b09270ceb3451bdcc21acee3d0bc3d5929e17af87473b",
+      "bytes": 13125,
+      "changes": []
+    },
+    {
+      "path": "tools/person_localizer/pipeline.py",
+      "batch": "02_person",
+      "source": "output/person_multiscene_baseline_v1_20261029/runtime/person_localizer/pipeline.py",
+      "source_sha256": "e2ebd45f7a1f74906ee02cec963d6ba5909e048b34969a235f0516fe8e17fcd4",
+      "candidate_sha256": "e2ebd45f7a1f74906ee02cec963d6ba5909e048b34969a235f0516fe8e17fcd4",
+      "bytes": 23806,
+      "changes": []
+    },
+    {
+      "path": "tools/person_localizer/README.md",
+      "batch": "02_person",
+      "source": "output/person_multiscene_baseline_v1_20261029/runtime/person_localizer/README.md",
+      "source_sha256": "2b35407bdcd1be485f524d007f8363d76a0eb4194ebd4dec6e7ce19fc30e677a",
+      "candidate_sha256": "7b4899114be7612b3ba3e2464d00824245f82dd4b7ccb2254c3281ac7d948ba2",
+      "bytes": 11912,
+      "changes": [
+        "Remove machine-specific path from candidate copy"
+      ]
+    },
+    {
+      "path": "tools/person_localizer/recovery.py",
+      "batch": "02_person",
+      "source": "output/person_multiscene_baseline_v1_20261029/runtime/person_localizer/recovery.py",
+      "source_sha256": "34692d3be934f6f927d789621543055784d703f2bc3e1a4b8ed8802497104cdd",
+      "candidate_sha256": "34692d3be934f6f927d789621543055784d703f2bc3e1a4b8ed8802497104cdd",
+      "bytes": 11111,
+      "changes": []
+    },
+    {
+      "path": "tools/person_localizer/recovery_runner.py",
+      "batch": "02_person",
+      "source": "output/person_multiscene_baseline_v1_20261029/runtime/person_localizer/recovery_runner.py",
+      "source_sha256": "7181b66a22d3d9d1c2189535f8f4cf77af2b43f87930a92a18e3b1972d1443af",
+      "candidate_sha256": "7181b66a22d3d9d1c2189535f8f4cf77af2b43f87930a92a18e3b1972d1443af",
+      "bytes": 14512,
+      "changes": []
+    },
+    {
+      "path": "tools/person_localizer/response_dag.py",
+      "batch": "02_person",
+      "source": "output/person_multiscene_baseline_v1_20261029/runtime/person_localizer/response_dag.py",
+      "source_sha256": "145aefc36dd80f02eea1d98213378582d5f80c37f06c5cdeca0e7ea8713b5a55",
+      "candidate_sha256": "145aefc36dd80f02eea1d98213378582d5f80c37f06c5cdeca0e7ea8713b5a55",
+      "bytes": 3388,
+      "changes": []
+    },
+    {
+      "path": "tools/person_localizer/response_episode.py",
+      "batch": "02_person",
+      "source": "output/person_multiscene_baseline_v1_20261029/runtime/person_localizer/response_episode.py",
+      "source_sha256": "f683be925b548f86accc17ba7cf68f4bd212a75e108293ed335635877bc59a60",
+      "candidate_sha256": "f683be925b548f86accc17ba7cf68f4bd212a75e108293ed335635877bc59a60",
+      "bytes": 4888,
+      "changes": []
+    },
+    {
+      "path": "tools/person_localizer/sequence_lifecycle.py",
+      "batch": "02_person",
+      "source": "output/person_multiscene_baseline_v1_20261029/runtime/person_localizer/sequence_lifecycle.py",
+      "source_sha256": "da5e67cd9a134441a8ed011beb5ffcb19cb5e8c9993f387d4eceffe2cc31c3f7",
+      "candidate_sha256": "da5e67cd9a134441a8ed011beb5ffcb19cb5e8c9993f387d4eceffe2cc31c3f7",
+      "bytes": 3276,
+      "changes": []
+    },
+    {
+      "path": "tools/person_localizer/sequence_runner.py",
+      "batch": "02_person",
+      "source": "output/person_multiscene_baseline_v1_20261029/runtime/person_localizer/sequence_runner.py",
+      "source_sha256": "e0fa499c32a83156382d24a33d97bbfffabaf1ec5d2ec3d388ff49ddc4408110",
+      "candidate_sha256": "e0fa499c32a83156382d24a33d97bbfffabaf1ec5d2ec3d388ff49ddc4408110",
+      "bytes": 31530,
+      "changes": []
+    },
+    {
+      "path": "tools/person_localizer/TEMPORAL_FACTORS.md",
+      "batch": "02_person",
+      "source": "output/person_multiscene_baseline_v1_20261029/runtime/person_localizer/TEMPORAL_FACTORS.md",
+      "source_sha256": "9270d8ff030237da0f1e9896be0793b81c4dc93923555fbb00a382131c2e0c45",
+      "candidate_sha256": "3cad3de68d2c3f8aa8630a8b654f5fa67549940ce22c19cec603c57ad333411d",
+      "bytes": 3495,
+      "changes": [
+        "Add dated-history banner to superseded rc7 integration status"
+      ]
+    },
+    {
+      "path": "tools/person_localizer/temporal_factors.py",
+      "batch": "02_person",
+      "source": "output/person_multiscene_baseline_v1_20261029/runtime/person_localizer/temporal_factors.py",
+      "source_sha256": "09476741836bb3e9491a85175bef3eb4e01c60eb77bbcd674aa05f70893b5d59",
+      "candidate_sha256": "09476741836bb3e9491a85175bef3eb4e01c60eb77bbcd674aa05f70893b5d59",
+      "bytes": 8216,
+      "changes": []
+    },
+    {
+      "path": "tools/person_localizer/vehicle_context.py",
+      "batch": "02_person",
+      "source": "output/person_multiscene_baseline_v1_20261029/runtime/person_localizer/vehicle_context.py",
+      "source_sha256": "3c4e525bc997aa85cac3e09a37d44bdba1f6c85a66edb4d77856ebd05d849297",
+      "candidate_sha256": "3c4e525bc997aa85cac3e09a37d44bdba1f6c85a66edb4d77856ebd05d849297",
+      "bytes": 6331,
+      "changes": []
+    },
+    {
+      "path": "tools/person_localizer/vehicle_gate.py",
+      "batch": "02_person",
+      "source": "output/person_multiscene_baseline_v1_20261029/runtime/person_localizer/vehicle_gate.py",
+      "source_sha256": "d531ed8adedd8404cc148003fe2b1a2c37ef898916b33f62832d262c83014c30",
+      "candidate_sha256": "d531ed8adedd8404cc148003fe2b1a2c37ef898916b33f62832d262c83014c30",
+      "bytes": 2288,
+      "changes": []
+    },
+    {
+      "path": "tools/person_localizer/visibility_lifecycle.py",
+      "batch": "02_person",
+      "source": "output/person_multiscene_baseline_v1_20261029/runtime/person_localizer/visibility_lifecycle.py",
+      "source_sha256": "d16e662e9327f63696361e2ac4fee0e2ea0fdda43104d1249b2cc4249d150c1c",
+      "candidate_sha256": "d16e662e9327f63696361e2ac4fee0e2ea0fdda43104d1249b2cc4249d150c1c",
+      "bytes": 4899,
+      "changes": []
+    },
+    {
+      "path": "tasks/person_multiscene_baseline_v1_20261029/baseline_launcher.py",
+      "batch": "02_person",
+      "source": "tasks/person_multiscene_baseline_v1_20261029/baseline_launcher.py",
+      "source_sha256": "f4e65a1d2471e1e993979077d7a145e2a7eb766b5044a242776fae31c0a838fc",
+      "candidate_sha256": "f4e65a1d2471e1e993979077d7a145e2a7eb766b5044a242776fae31c0a838fc",
+      "bytes": 6698,
+      "changes": []
+    },
+    {
+      "path": "tasks/person_multiscene_baseline_v1_20261029/build_release.py",
+      "batch": "02_person",
+      "source": "tasks/person_multiscene_baseline_v1_20261029/build_release.py",
+      "source_sha256": "86590b91e2ebefd62ff910be2f8da9926cf12aea55e91f95b2e4e56bc75ea6c7",
+      "candidate_sha256": "86590b91e2ebefd62ff910be2f8da9926cf12aea55e91f95b2e4e56bc75ea6c7",
+      "bytes": 9162,
+      "changes": []
+    },
+    {
+      "path": "tasks/person_multiscene_baseline_v1_20261029/README.md",
+      "batch": "02_person",
+      "source": "tasks/person_multiscene_baseline_v1_20261029/README.md",
+      "source_sha256": "0af244d41300d2a7a7c5cb4547d58f0816600b41cf1c88fc88e11badd56e466c",
+      "candidate_sha256": "151924ad1cf0e4f755d1d8f52f01db37b8430e554a7e07d760a8c619b2fd08f2",
+      "bytes": 1962,
+      "changes": [
+        "Remove machine-specific path from candidate copy"
+      ]
+    },
+    {
+      "path": "tasks/person_multiscene_baseline_v1_20261029/verify_release.py",
+      "batch": "02_person",
+      "source": "tasks/person_multiscene_baseline_v1_20261029/verify_release.py",
+      "source_sha256": "80d50f90f45fca24f1ed4417a7c45c38c1ec32b538a78dc84ab48560e1c2fbbb",
+      "candidate_sha256": "80d50f90f45fca24f1ed4417a7c45c38c1ec32b538a78dc84ab48560e1c2fbbb",
+      "bytes": 6062,
+      "changes": []
+    },
+    {
+      "path": "tools/car_data_contract/__init__.py",
+      "batch": "03_car",
+      "source": "output/car_data_contract_r35_20261030/runtime/car_data_contract/__init__.py",
+      "source_sha256": "5f35c4fe760deea78c2b879e32c456e4e9c787675f469835312bf7962665955f",
+      "candidate_sha256": "5f35c4fe760deea78c2b879e32c456e4e9c787675f469835312bf7962665955f",
+      "bytes": 253,
+      "changes": []
+    },
+    {
+      "path": "tools/car_data_contract/dataset.py",
+      "batch": "03_car",
+      "source": "output/car_data_contract_r35_20261030/runtime/car_data_contract/dataset.py",
+      "source_sha256": "55f4f1bc2ab18c97f3d2c2a29b932e6fa0fef74df2e956b58a43ab67f4ff7e8b",
+      "candidate_sha256": "55f4f1bc2ab18c97f3d2c2a29b932e6fa0fef74df2e956b58a43ab67f4ff7e8b",
+      "bytes": 5691,
+      "changes": []
+    },
+    {
+      "path": "tools/car_data_contract/geometry.py",
+      "batch": "03_car",
+      "source": "output/car_data_contract_r35_20261030/runtime/car_data_contract/geometry.py",
+      "source_sha256": "11238661e7bf8680d9cc822d8afbe64e143d2de3f9f33b3c64e554fc96ce3003",
+      "candidate_sha256": "11238661e7bf8680d9cc822d8afbe64e143d2de3f9f33b3c64e554fc96ce3003",
+      "bytes": 884,
+      "changes": []
+    },
+    {
+      "path": "tasks/car_data_contract_r35_20261030/build.py",
+      "batch": "03_car",
+      "source": "tasks/car_data_contract_r35_20261030/build.py",
+      "source_sha256": "0133bba00e1c8a543716c4e9c5b64169bb33f79a051b67984c4342bd0d29b30f",
+      "candidate_sha256": "0133bba00e1c8a543716c4e9c5b64169bb33f79a051b67984c4342bd0d29b30f",
+      "bytes": 707,
+      "changes": []
+    },
+    {
+      "path": "tasks/car_data_contract_r35_20261030/document.py",
+      "batch": "03_car",
+      "source": "tasks/car_data_contract_r35_20261030/document.py",
+      "source_sha256": "589b766d288b1d8ee2279d25112c38afa9c3d778dbba42e1221df9a3bc7f8fc8",
+      "candidate_sha256": "9fd5fe17104ff630750493e3b85f05b8ebfbdfb101814764ae7d0b0f894d4a3f",
+      "bytes": 15026,
+      "changes": [
+        "Remove machine-specific path from candidate copy"
+      ]
+    },
+    {
+      "path": "tasks/car_data_contract_r35_20261030/enhance.py",
+      "batch": "03_car",
+      "source": "tasks/car_data_contract_r35_20261030/enhance.py",
+      "source_sha256": "9b643cb01280448213c65d502789c1b5c67c73bc238c28e949387bba1d603622",
+      "candidate_sha256": "9b643cb01280448213c65d502789c1b5c67c73bc238c28e949387bba1d603622",
+      "bytes": 15807,
+      "changes": []
+    },
+    {
+      "path": "tasks/car_data_contract_r35_20261030/normalize.py",
+      "batch": "03_car",
+      "source": "tasks/car_data_contract_r35_20261030/normalize.py",
+      "source_sha256": "6b4a3989db121120cec5fa77fce029e9ce549bd13146d17f82a8dc9e1ab63160",
+      "candidate_sha256": "9780b5a5b1a1224190c16c5e1a6da1dff8434d022a66395e7d551e5354c77c53",
+      "bytes": 24618,
+      "changes": [
+        "Replace absolute workspace root with repository-relative script root"
+      ]
+    },
+    {
+      "path": "tasks/car_data_contract_r35_20261030/README.md",
+      "batch": "03_car",
+      "source": "tasks/car_data_contract_r35_20261030/README.md",
+      "source_sha256": "f4d36ad620d3b17c01d0a505afd03d0327abbae12e5a3f500c448262b5afd51e",
+      "candidate_sha256": "b044873a7eaaedaf55a9e898499acd6b7414cf6b8669f5c88959d5cdd288ce1f",
+      "bytes": 1643,
+      "changes": [
+        "Remove machine-specific path from candidate copy"
+      ]
+    },
+    {
+      "path": "tasks/car_data_contract_r35_20261030/seal.py",
+      "batch": "03_car",
+      "source": "tasks/car_data_contract_r35_20261030/seal.py",
+      "source_sha256": "2678ca767753d32bb66f2198d9c69b45f95193df1fa31f41239e99942d3b0e9a",
+      "candidate_sha256": "2678ca767753d32bb66f2198d9c69b45f95193df1fa31f41239e99942d3b0e9a",
+      "bytes": 1184,
+      "changes": []
+    },
+    {
+      "path": "tasks/car_data_contract_r35_20261030/verify.py",
+      "batch": "03_car",
+      "source": "tasks/car_data_contract_r35_20261030/verify.py",
+      "source_sha256": "0c76dc089dea71207841f96818bc06174d28507217829a33218b3111a28a0c12",
+      "candidate_sha256": "0c76dc089dea71207841f96818bc06174d28507217829a33218b3111a28a0c12",
+      "bytes": 9837,
+      "changes": []
+    },
+    {
+      "path": "tasks/car_central_static_annotation_20261101/annotate.py",
+      "batch": "03_car",
+      "source": "tasks/car_central_static_annotation_20261101/annotate.py",
+      "source_sha256": "f13f6a0c33c35d6d6ba52e21a72e9c248e374ef9b1cec4c44983bd3e7ba8c9eb",
+      "candidate_sha256": "f13f6a0c33c35d6d6ba52e21a72e9c248e374ef9b1cec4c44983bd3e7ba8c9eb",
+      "bytes": 12736,
+      "changes": []
+    },
+    {
+      "path": "tasks/car_central_static_annotation_20261101/README.md",
+      "batch": "03_car",
+      "source": "tasks/car_central_static_annotation_20261101/README.md",
+      "source_sha256": "7d7a9d940e3da70c7e813e6d652c6f3f7f19dae599103299c3b1fd2632f11d82",
+      "candidate_sha256": "fb05d6d03538de9b1e34f079d2bcf2d36f575ef8fa247a891c0e5304c275ac70",
+      "bytes": 2448,
+      "changes": [
+        "Remove machine-specific path from candidate copy",
+        "Explicitly retain user-rejected late drift and superseding v2/v3 status"
+      ]
+    },
+    {
+      "path": "tasks/car_central_static_annotation_20261101/scout.py",
+      "batch": "03_car",
+      "source": "tasks/car_central_static_annotation_20261101/scout.py",
+      "source_sha256": "3e67125739a16fc6a87dabb7a133352484ac43175c4bcdf8f813c0156cbedb42",
+      "candidate_sha256": "3e67125739a16fc6a87dabb7a133352484ac43175c4bcdf8f813c0156cbedb42",
+      "bytes": 3815,
+      "changes": []
+    },
+    {
+      "path": "tasks/car_central_static_repair_20261102/build_revision.py",
+      "batch": "03_car",
+      "source": "tasks/car_central_static_repair_20261102/build_revision.py",
+      "source_sha256": "67c84d4b6a557b2254c0878a06d195d196e49303eb04faf5ee4431b4b401c17e",
+      "candidate_sha256": "67c84d4b6a557b2254c0878a06d195d196e49303eb04faf5ee4431b4b401c17e",
+      "bytes": 6660,
+      "changes": []
+    },
+    {
+      "path": "tasks/car_central_static_repair_20261102/check_page.py",
+      "batch": "03_car",
+      "source": "tasks/car_central_static_repair_20261102/check_page.py",
+      "source_sha256": "9e64bb6b085fc91afab4f7aae583bf455647caf413b6157e8e214659a114a090",
+      "candidate_sha256": "9e64bb6b085fc91afab4f7aae583bf455647caf413b6157e8e214659a114a090",
+      "bytes": 3087,
+      "changes": []
+    },
+    {
+      "path": "tasks/car_central_static_repair_20261102/deliver.py",
+      "batch": "03_car",
+      "source": "tasks/car_central_static_repair_20261102/deliver.py",
+      "source_sha256": "48a5030b64cde042285ad9ef01f93c88c198897abe224869d5583ed8786777dd",
+      "candidate_sha256": "42e95c12313843847a0fed8b3e273e1cd50d0347e40fd8a585f611e3b229ca1d",
+      "bytes": 9468,
+      "changes": [
+        "Remove machine-specific path from candidate copy"
+      ]
+    },
+    {
+      "path": "tasks/car_central_static_repair_20261102/finalize.py",
+      "batch": "03_car",
+      "source": "tasks/car_central_static_repair_20261102/finalize.py",
+      "source_sha256": "bcdaa430b051939f74c1420457853fc57d0de0b07c6783a6c15da27da0685c1f",
+      "candidate_sha256": "bcdaa430b051939f74c1420457853fc57d0de0b07c6783a6c15da27da0685c1f",
+      "bytes": 2315,
+      "changes": []
+    },
+    {
+      "path": "tasks/car_central_static_repair_20261102/pose_navigation.py",
+      "batch": "03_car",
+      "source": "tasks/car_central_static_repair_20261102/pose_navigation.py",
+      "source_sha256": "573abb3d8d16ab253fd93fbd670b5c183facbf79eb5c9fa60342895ac3ebd55b",
+      "candidate_sha256": "573abb3d8d16ab253fd93fbd670b5c183facbf79eb5c9fa60342895ac3ebd55b",
+      "bytes": 3272,
+      "changes": []
+    },
+    {
+      "path": "tasks/car_central_static_repair_20261102/review.py",
+      "batch": "03_car",
+      "source": "tasks/car_central_static_repair_20261102/review.py",
+      "source_sha256": "9123034e0f60c9c281ec6198ad7fe1ea0c1d67f109d45d961cf68131857daad3",
+      "candidate_sha256": "9123034e0f60c9c281ec6198ad7fe1ea0c1d67f109d45d961cf68131857daad3",
+      "bytes": 4747,
+      "changes": []
+    },
+    {
+      "path": "tasks/car_central_static_repair_20261102/review_template.html",
+      "batch": "03_car",
+      "source": "tasks/car_central_static_repair_20261102/review_template.html",
+      "source_sha256": "9b2341ce3251482841747e3abb51b59599d72ba95b66429267d71d6e5c09b938",
+      "candidate_sha256": "9b2341ce3251482841747e3abb51b59599d72ba95b66429267d71d6e5c09b938",
+      "bytes": 4945,
+      "changes": []
+    },
+    {
+      "path": "tasks/car_central_static_repair_20261102/RUN.md",
+      "batch": "03_car",
+      "source": "tasks/car_central_static_repair_20261102/RUN.md",
+      "source_sha256": "24d9ad30d95fd849eda7e380d5c0090d3445fb13061d39d51eaace20b0367fba",
+      "candidate_sha256": "671e2d384c3c8b7b80fc15296df7b3d9583dafbd1d40647ae410ea06eb55475f",
+      "bytes": 2668,
+      "changes": [
+        "Remove machine-specific path from candidate copy"
+      ]
+    },
+    {
+      "path": "tasks/car_central_static_repair_20261102/track_diagnostic.py",
+      "batch": "03_car",
+      "source": "tasks/car_central_static_repair_20261102/track_diagnostic.py",
+      "source_sha256": "53dca04a7260d1fb47e4a6a668be55f4f5e9b89b934afd7af6d70c3d7b95e925",
+      "candidate_sha256": "53dca04a7260d1fb47e4a6a668be55f4f5e9b89b934afd7af6d70c3d7b95e925",
+      "bytes": 4384,
+      "changes": []
+    },
+    {
+      "path": "tasks/car_central_static_repair_20261102/VISUAL_REVIEW.md",
+      "batch": "03_car",
+      "source": "tasks/car_central_static_repair_20261102/VISUAL_REVIEW.md",
+      "source_sha256": "c979a33ace349a16be056ecf5bc9b593495143f2655707cd05b27e9beab96f89",
+      "candidate_sha256": "c979a33ace349a16be056ecf5bc9b593495143f2655707cd05b27e9beab96f89",
+      "bytes": 2438,
+      "changes": []
+    },
+    {
+      "path": "tasks/car_bright_band_margin_20261102/build.py",
+      "batch": "03_car",
+      "source": "tasks/car_bright_band_margin_20261102/build.py",
+      "source_sha256": "9fa5b1cc571079c58e0a5e3f1f74693cf4849f5910e075bcdce3f1def6129037",
+      "candidate_sha256": "f8a9e909262960a92ae00f632f9e15262123074a8bb8b11e6a175038cb4a5d82",
+      "bytes": 11818,
+      "changes": [
+        "Remove machine-specific path from candidate copy"
+      ]
+    },
+    {
+      "path": "tasks/car_bright_band_margin_20261102/finalize.py",
+      "batch": "03_car",
+      "source": "tasks/car_bright_band_margin_20261102/finalize.py",
+      "source_sha256": "aa95013c48b359af42c36b128dbc9c93864578e51bcecd710aef4ac015e6e7d5",
+      "candidate_sha256": "aa95013c48b359af42c36b128dbc9c93864578e51bcecd710aef4ac015e6e7d5",
+      "bytes": 2934,
+      "changes": []
+    },
+    {
+      "path": "tasks/car_bright_band_margin_20261102/RUN.md",
+      "batch": "03_car",
+      "source": "tasks/car_bright_band_margin_20261102/RUN.md",
+      "source_sha256": "8a5ca677ba65abf8b44b332c8fa839148ef23c454d015e06649d20688ea92743",
+      "candidate_sha256": "016f3dcaa9a327e34280f0a5ccab546bcb6367b3498a648e772851558a133cd0",
+      "bytes": 1255,
+      "changes": [
+        "Remove machine-specific path from candidate copy"
+      ]
+    },
+    {
+      "path": "tasks/car_bright_band_margin_20261102/VISUAL_REVIEW.md",
+      "batch": "03_car",
+      "source": "tasks/car_bright_band_margin_20261102/VISUAL_REVIEW.md",
+      "source_sha256": "7cd6f412354c6280e916a6c75393d4ae1973d4fab3eabb7e3de8d952335951c3",
+      "candidate_sha256": "7cd6f412354c6280e916a6c75393d4ae1973d4fab3eabb7e3de8d952335951c3",
+      "bytes": 936,
+      "changes": []
+    },
+    {
+      "path": "tools/car_data_contract/README.md",
+      "batch": "03_car",
+      "source": "new_reviewed_document",
+      "source_sha256": null,
+      "candidate_sha256": "2979f945abc46b3c1eef22cf843c1227ac80444c3c018c1cb6b9ab21f46a796b",
+      "bytes": 939,
+      "changes": []
+    },
+    {
+      "path": "tasks/car_central_static_repair_20261102/README.md",
+      "batch": "03_car",
+      "source": "new_reviewed_document",
+      "source_sha256": null,
+      "candidate_sha256": "72852beb5f0bcc319cdf3e69e70a8cc8cd74b3a9e9f2895bcbbceed5bd01ca0e",
+      "bytes": 1019,
+      "changes": [
+        "Publication semantic review links, archived-status clarification or explanatory note added"
+      ]
+    },
+    {
+      "path": "tasks/car_bright_band_margin_20261102/README.md",
+      "batch": "03_car",
+      "source": "new_reviewed_document",
+      "source_sha256": null,
+      "candidate_sha256": "db44c2213dbadcf5493d5279635d471193e0d8a9f358516e6a8406d141bca80c",
+      "bytes": 1023,
+      "changes": [
+        "Publication semantic review links, archived-status clarification or explanatory note added"
+      ]
+    },
+    {
+      "path": "docs/research/environment.observed.json",
+      "batch": "01_docs",
+      "source": "new_reviewed_document",
+      "source_sha256": null,
+      "candidate_sha256": "431852b9e0cb42ceab59ecdb8d8ab2d6c488a741bce18734a1db978d5841f679",
+      "bytes": 431,
+      "changes": []
+    }
+  ],
+  "external_evidence": [
+    {
+      "local_external_evidence": "output/person_runtime_integration_20261029/REPORT.md",
+      "sha256": "5781436d9e02967b542c92fc41dd5ea377705eedeae228a0d31e951fe09f12c5",
+      "included_in_git": false
+    },
+    {
+      "local_external_evidence": "output/person_multiscene_baseline_v1_20261029_verification_final/VERIFICATION.json",
+      "sha256": "4b0bf6137849f288cc6e26997c509b939bf0c519324a65f9773149023d4e05e3",
+      "included_in_git": false
+    },
+    {
+      "local_external_evidence": "output/car_data_contract_r35_20261030/START_HERE.md",
+      "sha256": "d26e75b07b207e90e4110f4aed51e91859f427632750a610fdbebdde34e36225",
+      "included_in_git": false
+    },
+    {
+      "local_external_evidence": "output/car_central_static_repair_20261102/START_HERE.md",
+      "sha256": "2427305026993bdddc5221a0da00d62b14207664d08eb4400604ea169d73dc37",
+      "included_in_git": false
+    },
+    {
+      "local_external_evidence": "output/car_bright_band_margin_20261102/START_HERE.md",
+      "sha256": "b546f8d8dda207797a447a3079885e0cfc0700aac2ecf330ee56670b72c09deb",
+      "included_in_git": false
+    },
+    {
+      "local_external_evidence": "output/cross_time_predictive_20261023/RECAP.md",
+      "sha256": "7afcab9fbb6b1466a52399ffd9b4a7831402f3d0cddc86b5123d5859cdd2d396",
+      "included_in_git": false
+    },
+    {
+      "local_external_evidence": "output/gm17_core_persistence_probe_20261020/REPORT.md",
+      "sha256": "f890525b6a5cf2b6bc8f5cb15bbece15941bd4054310709300656a6977728aad",
+      "included_in_git": false
+    },
+    {
+      "local_external_evidence": "output/manual_guided_localization_20261029/REPORT.md",
+      "sha256": "df1314f3adbfcd3d19286b763dd3598e26cfd94b6474938c7577ff8d9932bbe3",
+      "included_in_git": false
+    },
+    {
+      "local_external_evidence": "output/temporal_subject_evolution_20261024/run_v2_visible/REPORT.md",
+      "sha256": "487cfde47f277ef42da1c38542c49e052eb1591dcf3835f5f4892eadf3b1d172",
+      "included_in_git": false
+    },
+    {
+      "local_external_evidence": "output/conditional_vehicle_loop_20261024/REPORT.md",
+      "sha256": "93858aa46bd5189a69a2545084339323b712de4672dc251621706ed05eaf6fec",
+      "included_in_git": false
+    }
+  ],
+  "excluded": "Source media, weights, labels, generated outputs, credentials, local environment and assistant configuration",
+  "adaptations": "Only repository-relative path/prose changes and a single external weight path; numeric localization code retained.",
+  "publication_review": {
+    "date": "2026-11-02",
+    "new_nodes": 14,
+    "semantic_review_items": 18,
+    "new_scientific_experiments": false,
+    "independent_third_party_review": false,
+    "node_evidence": "NODE_EVIDENCE.json"
+  }
+}

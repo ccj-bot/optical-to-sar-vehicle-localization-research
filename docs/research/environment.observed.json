@@ -1,0 +1,18 @@
+{
+  "python": "3.11.14",
+  "status": "OBSERVED_LOCAL_ENVIRONMENT_NOT_CROSS_PLATFORM_LOCK",
+  "packages": {
+    "numpy": "1.26.4",
+    "scipy": "1.17.1",
+    "pandas": "2.3.3",
+    "opencv-python": "4.13.0.92",
+    "Pillow": "11.3.0",
+    "threadpoolctl": "3.6.0",
+    "ultralytics": "8.4.21"
+  },
+  "optional_car_packages": {
+    "pyarrow": "24.0.0",
+    "matplotlib": "3.10.8",
+    "imageio-ffmpeg": "0.6.0"
+  }
+}
